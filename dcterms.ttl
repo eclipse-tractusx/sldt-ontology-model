@@ -1,0 +1,25 @@
+#################################################################
+# Dublin Core in TTL/RDF/OWL FORMAT
+#################################################################
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+@base dcterms: .
+
+dcterms: rdf:type owl:Ontology ;
+    cx:description "The Dublin Core introduces meta-attributes for documentation purposes"@en ;
+    cx:title "Dublin Core" ;
+    owl:versionInfo "0.5.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
