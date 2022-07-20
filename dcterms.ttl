@@ -8,6 +8,7 @@
 
 @base dcterms: .
 
+## http://purl.org/dc/terms/
 dcterms: rdf:type owl:Ontology ;
     cx:description "The Dublin Core introduces meta-attributes for documentation purposes"@en ;
     cx:title "Dublin Core" ;
