@@ -1,5 +1,8 @@
 #################################################################
 # Catena-X "Common" Domain Ontology in TTL/RDF/OWL FORMAT
+# See copyright notice in the top folder
+# See authors file in the top folder
+# See license file in the top folder
 #################################################################
 
 @prefix cx: <https://github.com/catenax-ng/product-knowledge/cx.ttl#> .

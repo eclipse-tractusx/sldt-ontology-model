@@ -1,5 +1,8 @@
 #################################################################
 # Dublin Core in TTL/RDF/OWL FORMAT
+# See copyright notice in the top folder
+# See authors file in the top folder
+# See license file in the top folder
 #################################################################
 
 @prefix dcterms: <http://purl.org/dc/terms/> .

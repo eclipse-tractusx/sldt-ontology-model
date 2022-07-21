@@ -2,6 +2,12 @@
 
 This is the home of the Catena-X Ontology (or CX Ontology)
 
+## Notice
+
+* see copyright notice in the top folder
+* see license file in the top folder
+* see authors file in the top folder
+
 ## What's this?
 
 The CX Ontology is a versioned folder of domain ontology files.
