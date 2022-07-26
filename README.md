@@ -10,7 +10,7 @@ This is the home of the Catena-X Ontology (or CX Ontology)
 
 ## What's this?
 
-The CX Ontology is a versioned folder of domain ontology files.
+The CX Ontology is a versioned folder of domain ontology files (and tools to process them)
 
 Each domain ontology file is written in a format named [Turtle (TTL)](https://www.w3.org/TeamSubmission/turtle/).
 Following the [Resource Description Framework (RDF)](https://en.wikipedia.org/wiki/Resource_Description_Framework), these files defines 
@@ -25,9 +25,9 @@ Domain ontologies can refer to concepts of other domains/prefixes. Relations are
 
 ## Contents
 
+- [Ontology Tools](tools)
 - [Dublin Core Meta-Model (dcterms)](dcterms.ttl)
 - [Catena-X Common Domain (cx)](cx.ttl)
-
 
 
 
