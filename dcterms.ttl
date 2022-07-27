@@ -12,7 +12,7 @@
 @base <http://purl.org/dc/terms/> .
 
 dcterms: rdf:type owl:Ontology ;
-    dcterms:description "The Dublin Core introduces meta-attributes for documentation purposes"@en ;
+    dcterms:description "The Dublin Core introduces meta-attributes for documentation purposes."@en ;
     dcterms:title "Dublin Core" ;
     owl:versionInfo "0.5.1" .
 
@@ -22,13 +22,13 @@ dcterms: rdf:type owl:Ontology ;
 
 ###  http://purl.org/dc/terms/description
 dcterms:description rdf:type owl:AnnotationProperty ;
-                    dcterms:description "Description of the ontology element."@en ;
+                    dcterms:description "The Description is an internationalized single paragraph/sentence attribute which defines the ontology element."@en ;
                     dcterms:title "Dublin Core Description" .
 
 
 ###  http://purl.org/dc/terms/title
 dcterms:title rdf:type owl:AnnotationProperty ;
-              dcterms:description "Title of the ontology element."@en ;
+              dcterms:description "The Title is an (English) noun which may be used to generate artifacts (such as RDF concepts, Java classes, ...)."@en ;
               dcterms:title "Dublin Core Title" .
 
 
