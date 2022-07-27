@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-var bpnl = "BPNL00000003AYRE";
+var bpnl = "BPNL00000003COJN";
 var input = '../../infrastructure/provider/resources/dtc_codes.json';
 var inputText=fs.readFileSync(input, 'utf8');
 var dtcs=JSON.parse(inputText);
