@@ -1,11 +1,11 @@
 const fs = require('fs');
 
 var bpnl = "BPNL00000003COJN";
-var input = '../../infrastructure/provider/resources/dtc_codes.json';
+var input = '../../dataspace/agents/provisioning/resources/dtc_codes.json';
 var inputText=fs.readFileSync(input, 'utf8');
 var dtcs=JSON.parse(inputText);
 
-var output = '../../infrastructure/provider/resources/dtc.sql';
+var output = '../../dataspace/agents/provisioning/resources/dtc.sql';
 
 var write = function(text, append) {
     if(append) {
