@@ -34,6 +34,7 @@ cx-diag:Code rdf:type owl:DatatypeProperty ;
 
 cx-diag:Description rdf:type owl:DatatypeProperty ;
     dcterms:description "The Description of a Diagnostic Trouble Code (DTC) is an interationalized paragraph/sentence describing a trouble condition."@en ;
+    dcterms:description "Deutsche Beschreibung."@de ;
     dcterms:title "DTC Description" ;
     rdfs:domain cx-diag:DTC ;
     rdfs:range xsd:string .
@@ -56,7 +57,7 @@ cx-diag:DiagnosedPart rdf:type owl:Class ;
     rdfs:subClassOf cx:Asset .
 
 cx-diag:EnDenomination rdf:type owl:DatatypeProperty ;
-    dcterms:description "The EnDenomination of a Diagnosed Part is what?."@en ;
+    dcterms:description "The EnDenomination of a Diagnosed Part is an internationalized unique name."@en ;
     dcterms:title "Diagnosed Part EnDenomination" ;
     rdfs:domain cx-diag:DiagnosedPart ;
     rdfs:range xsd:string .
@@ -68,7 +69,7 @@ cx-diag:Classification rdf:type owl:DatatypeProperty ;
     rdfs:range xsd:string .
 
 cx-diag:Category rdf:type owl:DatatypeProperty ;
-    dcterms:description "The Category of a Diagnosed Part is what?."@en ;
+    dcterms:description "The Category of a Diagnosed Part categorizes the part in a hierarchy."@en ;
     dcterms:title "Diagnosed Part Category" ;
     rdfs:domain cx-diag:DiagnosedPart ;
     rdfs:range xsd:string .
