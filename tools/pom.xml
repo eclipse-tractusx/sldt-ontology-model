@@ -3,9 +3,16 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.catenax.knowledge</groupId>
+    <groupId>io.catenax.knowledge.ontology</groupId>
     <artifactId>tools</artifactId>
-    <version>0.5.1-SNAPSHOT</version>
+
+    <parent>
+      <groupId>io.catenax.knowledge</groupId>
+      <artifactId>ontology</artifactId>
+      <version>0.5.2-SNAPSHOT</version>
+      <relativePath>../pom.xml</relativePath>
+    </parent>
+
     <description>Catena-X Knowledge Agent Ontology Tools</description>
     <url>http://catena-x.net/</url>
 
