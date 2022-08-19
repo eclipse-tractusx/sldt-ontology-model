@@ -14,7 +14,7 @@ var write = function(text, append) {
     } else {
         fs.writeFileSync(output,text,'utf8');
     }
-}
+};
 
 write('DROP SCHEMA IF EXISTS "dtc" CASCADE;',false);
 write('CREATE SCHEMA "dtc";',true);
