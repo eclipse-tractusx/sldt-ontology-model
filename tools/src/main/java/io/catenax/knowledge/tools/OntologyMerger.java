@@ -38,7 +38,9 @@ public class OntologyMerger {
       ArrayList<OWLOntology> imports=new ArrayList();
 
       for(int count=0;count<args.length;count++) {
-         imports.add(manager.loadOntologyFromOntologyDocument(new FileInputStream(args[count])));
+         try(FileInputStream fi=new FileInputStream(args[count])) {
+            imports.add(manager.loadOntologyFromOntologyDocument(fi));
+         }
       }
       
       OWLOntology newOntology = manager.createOntology(IRI.create("https://github.com/catenax-ng/product-knowledge"),imports,true);

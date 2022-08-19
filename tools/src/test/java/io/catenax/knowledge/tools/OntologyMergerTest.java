@@ -8,6 +8,9 @@ package io.catenax.knowledge.tools;
 
 import org.junit.jupiter.api.Test;
 import java.io.ByteArrayOutputStream;
+
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
 import java.io.ByteArrayInputStream;
 import org.w3c.dom.*;
 import javax.xml.parsers.*;
@@ -31,6 +34,7 @@ public class OntologyMergerTest {
         DocumentBuilder builder = factory.newDocumentBuilder();
         ByteArrayInputStream input = new ByteArrayInputStream(result.getBytes("UTF-8"));
         Document doc = builder.parse(input);
+        assertNotNull(doc,"The ontology xml could be successfully parsed.");
     }
 
 }
