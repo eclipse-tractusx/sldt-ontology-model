@@ -28,12 +28,18 @@ Run the following command to merge the CX ontology to the standard output.
 java -jar target/tools-0.5.1-SNAPSHOT.jar ../*.ttl
 ```
 
-### JSON2Sql Converter
+### JSON Converters
 
 Run the following command to convert a given json file into an SQL script.
 
 ```console
 node src/main/node/json2Sql.js
+```
+
+Run the following command to convert a given json file into separate data jsons
+
+```console
+node src/main/node/json2json.js
 ```
 
 ## Contents

@@ -1,3 +1,9 @@
+//
+// Tool to split a DTC service json into sql commands
+// See copyright notice in the top folder
+// See authors file in the top folder
+// See license file in the top folder
+//
 const fs = require('fs');
 
 var bpnl = "BPNL00000003COJN";
