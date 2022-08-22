@@ -17,7 +17,7 @@ var output3 = '../../dataspace/agents/provisioning/resources/dtc_codes_part.json
 
 var write = function(path,obj) {
     fs.writeFileSync(path,JSON.stringify(obj),'utf8');
-}
+};
 
 dtcs.meta.bpnl=bpnl;
 
