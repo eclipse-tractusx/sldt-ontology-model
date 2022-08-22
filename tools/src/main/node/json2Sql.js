@@ -1,3 +1,9 @@
+//
+// Tool to split a DTC service json into sql commands
+// See copyright notice in the top folder
+// See authors file in the top folder
+// See license file in the top folder
+//
 const fs = require('fs');
 
 var bpnl = "BPNL00000003COJN";
@@ -14,7 +20,7 @@ var write = function(text, append) {
     } else {
         fs.writeFileSync(output,text,'utf8');
     }
-}
+};
 
 write('DROP SCHEMA IF EXISTS "dtc" CASCADE;',false);
 write('CREATE SCHEMA "dtc";',true);

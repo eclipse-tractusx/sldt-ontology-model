@@ -1,0 +1,20 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>io.catenax.knowledge</groupId>
+    <artifactId>ontology</artifactId>
+    <packaging>pom</packaging>
+    <parent>
+        <groupId>io.catenax</groupId>
+        <artifactId>knowledge</artifactId>
+        <version>0.5.2-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>    
+    </parent>
+    <name>Catena-X Knowledge Agents Ontology</name>
+    <dependencies>
+    </dependencies>
+    <properties>
+    </properties>
+    <modules>
+       <module>tools</module>
+    </modules>
+</project>
