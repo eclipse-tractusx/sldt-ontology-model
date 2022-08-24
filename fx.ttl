@@ -39,6 +39,12 @@ cx-fx:targetUri rdf:type owl:DatatypeProperty ;
     rdfs:domain cx-fx:Function ;
     rdfs:range xsd:string .
 
+cx-fx:invocationMethod rdf:type owl:DatatypeProperty ;
+    dcterms:description "The Invocation Method of a function describes how the actual endpoint is called. Only needed in implementation descriptions."@en ;
+    dcterms:title "Invocation Method" ;
+    rdfs:domain cx-fx:Function ;
+    rdfs:range xsd:string .
+
 cx-fx:argumentName rdf:type owl:DatatypeProperty ;
     dcterms:description "The Argument Name of an argument maps a node to an actual endpoint argument. Only needed in implementation descriptions."@en ;
     dcterms:title "Argument Name" ;
