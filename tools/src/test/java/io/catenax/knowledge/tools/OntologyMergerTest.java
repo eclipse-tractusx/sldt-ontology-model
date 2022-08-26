@@ -28,7 +28,7 @@ public class OntologyMergerTest {
     @Test
     public void testMerger() throws Exception {
         ByteArrayOutputStream out=new ByteArrayOutputStream();
-        merger.run(new String[] {"../cx.ttl","../dcterms.ttl" },out);
+        merger.run(new String[] {"../cx.ttl","../diagnosis.ttl" },out);
         String result=new String(out.toByteArray());
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
