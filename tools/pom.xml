@@ -13,7 +13,8 @@
       <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <description>Catena-X Knowledge Agent Ontology Tools</description>
+    <name>Catena-X Knowledge Agent Ontology Tools</name>
+    <description>Builds the Toolsuite around the Ontology</description>
     <url>http://catena-x.net/</url>
 
     <organization>
@@ -26,8 +27,6 @@
         <finalName>${symbolic.name}-${project.version}</finalName>
         <filter.main.resources>true</filter.main.resources>
         <skipTests>false</skipTests>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
     <dependencies>
