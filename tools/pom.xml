@@ -13,7 +13,7 @@
       <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <name>Catena-X Knowledge Agent Ontology Tools</name>
+    <name>Catena-X Knowledge Agents Ontology Tools</name>
     <description>Builds the Toolsuite around the Ontology</description>
     <url>http://catena-x.net/</url>
 
