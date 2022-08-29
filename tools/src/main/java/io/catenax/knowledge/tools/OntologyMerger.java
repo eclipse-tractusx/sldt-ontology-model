@@ -14,6 +14,7 @@ import java.io.BufferedOutputStream;
 import java.io.BufferedWriter;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
@@ -62,7 +63,7 @@ public class OntologyMerger {
             bos=new ByteArrayOutputStream();
             transformer.transform(new StreamSource(bis), new StreamResult(bos));
          }
-         outStream.println(new String(bos.toByteArray()));
+         //outStream.println(new String(bos.toByteArray()));
          outStream.flush();
       } finally {
          if(outStream!=System.out) {
@@ -78,9 +79,7 @@ public class OntologyMerger {
       ArrayList<OWLOntology> imports=new ArrayList();
 
       for(int count=0;count<args.length;count++) {
-         try(FileInputStream fi=new FileInputStream(args[count])) {
-            imports.add(manager.loadOntologyFromOntologyDocument(fi));
-         }
+         imports.add(manager.loadOntologyFromOntologyDocument(new File(args[count])));
       }
       
       OWLOntology newOntology = manager.createOntology(IRI.create("https://github.com/catenax-ng/product-knowledge"),imports,false);

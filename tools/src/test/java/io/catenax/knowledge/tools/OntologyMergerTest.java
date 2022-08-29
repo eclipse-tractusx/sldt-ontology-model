@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Test;
 import java.io.ByteArrayOutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
@@ -33,8 +34,8 @@ public class OntologyMergerTest {
         String[] fileList=Files.list(Path.of("../"))
             .filter( path -> path.toFile().getName().endsWith(".ttl"))
             .map( path -> path.toFile().getAbsolutePath())
-            .collect(Collectors::asArray);
-        merger.run(fileList).map( path -> path.getFile()).collect()new String[] {"../cx.ttl","../diagnosis.ttl" },out);
+            .collect(Collectors.toList()).toArray(new String[0]);
+        merger.run(fileList,out);
         String result=new String(out.toByteArray());
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
