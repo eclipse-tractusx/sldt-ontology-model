@@ -16,7 +16,7 @@
   <xsl:template match="/rdf:RDF">
 { 
     "nodes":[<xsl:for-each select="owl:Class">
-      { "data": { "id": "<xsl:value-of select="@rdf:about"/>", "category": "<xsl:value-of select="substring-before(@rdf:about, '#')"/>", "label": "<xsl:value-of select="rdfs:label"/>" }, "position": { "x": 0, "y": 0 } }<xsl:if test="position() != last()"><xsl:text>,</xsl:text></xsl:if>
+      { "data": { "id": "<xsl:value-of select="@rdf:about"/>", "category": "<xsl:value-of select="substring-before(@rdf:about, '#')"/>", "label": "<xsl:value-of select="rdfs:label"/>" } }<xsl:if test="position() != last()"><xsl:text>,</xsl:text></xsl:if>
     </xsl:for-each>],
     "edges":[<xsl:for-each select="owl:ObjectProperty">
       { "data": { "source": "<xsl:value-of select="rdfs:domain/@rdf:resource"/>", "type":"relation", "target": "<xsl:value-of select="rdfs:range/@rdf:resource"/>", "category": "<xsl:value-of select="substring-before(@rdf:about, '#')"/>", "label": "<xsl:value-of select="rdfs:label"/>" } } ,

@@ -60,8 +60,8 @@ public class OntologyMerger {
             ByteArrayInputStream bis=new ByteArrayInputStream(bos.toByteArray());
             bos=new ByteArrayOutputStream();
             transformer.transform(new StreamSource(bis), new StreamResult(bos));
-         }
-         //outStream.println(new String(bos.toByteArray()));
+         } 
+         outStream.println(new String(bos.toByteArray()));
          outStream.flush();
       } finally {
          if(outStream!=System.out) {
