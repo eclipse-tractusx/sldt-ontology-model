@@ -10,16 +10,11 @@ import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.util.OWLOntologyMerger;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 
-import java.io.BufferedOutputStream;
-import java.io.BufferedWriter;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.OutputStream;
-import java.io.OutputStreamWriter;
 import java.io.PrintStream;
-import java.io.Writer;
 import java.util.ArrayList;
 
 import javax.xml.transform.Transformer;
@@ -39,7 +34,7 @@ public class OntologyMerger {
 
    /** 
     * run the merge command on the given files and output the result to the console  
-    * @param files a set of filenames
+    * @param args a set of arguments
     */
    public void run(String[] args) throws Exception {
       ArrayList<String> remainingArgs=new ArrayList<String>();
@@ -48,7 +43,10 @@ public class OntologyMerger {
       try {
          for(int count=0;count<args.length;count++) {
             if("-styleSheet".equals(args[count])) {
-               styleSheet=args[++count];
+               ++count;
+               if(count<args.length) {
+                  styleSheet=args[count];
+               }
             } else {
                remainingArgs.add(args[count]);
             }
@@ -74,6 +72,8 @@ public class OntologyMerger {
 
    /** 
     * run the merge command on the given files with the given output stream
+    * @param args filenames
+    * @param out stream to render the ontology into
     */
    public void run(String[] args, OutputStream out) throws Exception {
       ArrayList<OWLOntology> imports=new ArrayList();
@@ -86,7 +86,10 @@ public class OntologyMerger {
       newOntology.getOWLOntologyManager().saveOntology(newOntology, out);
    }
 
-   /** main entry */
+   /** 
+    * main entry 
+    * @param args command line arguments 
+    */
    public static void main(String[] args) throws Exception {
       new OntologyMerger().run(args);
    }
