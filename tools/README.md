@@ -25,7 +25,7 @@ mvn package
 Run the following command to merge the CX ontology to the standard output.
 
 ```console
-java -jar target/tools-0.5.4-SNAPSHOT.jar ../*_ontology.ttl
+java -jar target/tools-0.5.4-SNAPSHOT.jar ../*_ontology.ttl 
 ```
 
 To run the merger with a stylesheet, for example to render the ontology as a graph
