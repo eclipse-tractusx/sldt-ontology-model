@@ -64,7 +64,7 @@ def convert_all_csv_files():
         convert_csv_file(ontology)
 
 if __name__ == '__main__':
-    convert_all_numbers_files()
+    #convert_all_numbers_files()
     convert_all_csv_files()
     merge_ontology()
     convert_ontology_to_csv()
