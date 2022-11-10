@@ -317,34 +317,16 @@ cx:PersonalInformation a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/person_ontology.ttl> ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Personal_data> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:personalTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:personalTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:personalTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:personalTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:academicTitle ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:academicTitle ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:personalTitle ;
+            owl:onProperty cx:jobTitle ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:personalTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:personalTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:gender ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:deathPlace ;
@@ -356,7 +338,19 @@ cx:PersonalInformation a owl:Class ;
             owl:onProperty cx:personalTitle ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
+            owl:onProperty cx:jobTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:jobTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty cx:academicTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:academicTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:birthPlace ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:personalTitle ;
@@ -365,55 +359,28 @@ cx:PersonalInformation a owl:Class ;
             owl:onProperty cx:academicTitle ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:jobTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:nickname ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:gender ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:academicTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:personalTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:personalTitle ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:birthDate ;
             owl:someValuesFrom xsd:date ],
         [ a owl:Restriction ;
-            owl:onProperty cx:academicTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:academicTitle ;
+            owl:onProperty cx:nickname ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:personalTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:academicTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:academicTitle ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:jobTitle ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:jobTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:academicTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:personalTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:personalTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:personalTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:personalTitle ;
+            owl:onProperty cx:birthPlace ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:deathDate ;
@@ -422,7 +389,13 @@ cx:PersonalInformation a owl:Class ;
             owl:onProperty cx:academicTitle ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:gender ;
+            owl:onProperty cx:jobTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:personalTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:personalTitle ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:academicTitle ;
@@ -431,67 +404,49 @@ cx:PersonalInformation a owl:Class ;
             owl:onProperty cx:gender ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:jobTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:jobTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:personalTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:personalTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:personalTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:personalTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:birthPlace ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:personalTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:jobTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:personalTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:jobTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:jobTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:nickname ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:gender ;
+            owl:onProperty cx:academicTitle ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:deathPlace ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
+            owl:onProperty cx:personalTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:personalTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:nickname ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:personalTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:personalTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty cx:gender ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:birthPlace ;
-            owl:someValuesFrom xsd:string ],
+            owl:onProperty cx:birthDate ;
+            owl:someValuesFrom xsd:date ],
         [ a owl:Restriction ;
             owl:onProperty cx:personalTitle ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:personalTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:academicTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:gender ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:deathDate ;
             owl:someValuesFrom xsd:date ],
         [ a owl:Restriction ;
-            owl:onProperty cx:jobTitle ;
+            owl:onProperty cx:academicTitle ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:personalTitle ;
@@ -500,6 +455,33 @@ cx:PersonalInformation a owl:Class ;
             owl:onProperty cx:age ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
+            owl:onProperty cx:personalTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:personalTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:jobTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:gender ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:personalTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:personalTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:jobTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:jobTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:academicTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty cx:jobTitle ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
@@ -509,37 +491,55 @@ cx:PersonalInformation a owl:Class ;
             owl:onProperty cx:personalTitle ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
+            owl:onProperty cx:personalTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:academicTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:personalTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:gender ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:personalTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:personalTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:personalTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:academicTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:personalTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:academicTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty cx:jobTitle ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:personalTitle ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:personalTitle ;
+            owl:onProperty cx:gender ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:personalTitle ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:academicTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:academicTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:birthDate ;
-            owl:someValuesFrom xsd:date ],
-        [ a owl:Restriction ;
             owl:onProperty cx:personalTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:academicTitle ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:jobTitle ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:personalTitle ;
+            owl:onProperty cx:jobTitle ;
             owl:someValuesFrom xsd:string ],
         cx:Information ;
     skos:altLabel "Persönliche Daten"@de,
@@ -623,35 +623,17 @@ cx:Person a owl:Class ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Person>,
         schema:Person ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:maidenName ;
+            owl:onProperty cx:lastName ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:isCitizenOf ;
-            owl:someValuesFrom cx:Country ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:maidenName ;
+            owl:onProperty cx:firstName ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:middleName ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:lastName ;
+            owl:onProperty cx:maidenName ;
             owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:fullName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:lastName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:fullName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:fullName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:isCitizenOf ;
-            owl:someValuesFrom cx:Country ],
         [ a owl:Restriction ;
             owl:onProperty cx:lastName ;
             owl:someValuesFrom xsd:string ],
@@ -659,18 +641,87 @@ cx:Person a owl:Class ;
             owl:onProperty cx:maidenName ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
+            owl:onProperty cx:maidenName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:fullName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:lastName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:lastName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:fullName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:fullName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty cx:firstName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:maidenName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:fullName ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:speaks ;
             owl:someValuesFrom cx:Language ],
         [ a owl:Restriction ;
+            owl:onProperty cx:maidenName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:fullName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:isCitizenOf ;
+            owl:someValuesFrom cx:Country ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:fullName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:fullName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:lastName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:lastName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty cx:lastName ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:maidenName ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
+            owl:onProperty cx:fullName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:lastName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:lastName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:lastName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:lastName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:lastName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:fullName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:lastName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty cx:maidenName ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
@@ -680,40 +731,7 @@ cx:Person a owl:Class ;
             owl:onProperty cx:lastName ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:fullName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:lastName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:lastName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:maidenName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:lastName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:lastName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:firstName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:fullName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:fullName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:lastName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:middleName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:fullName ;
+            owl:onProperty cx:personId ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:maidenName ;
@@ -725,37 +743,19 @@ cx:Person a owl:Class ;
             owl:onProperty cx:lastName ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:personId ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:maidenName ;
-            owl:someValuesFrom xsd:string ],
+            owl:onProperty cx:isCitizenOf ;
+            owl:someValuesFrom cx:Country ],
         [ a owl:Restriction ;
             owl:onProperty cx:lastName ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:lastName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:lastName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:lastName ;
+            owl:onProperty cx:middleName ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:lastName ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:maidenName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:lastName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:fullName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:fullName ;
             owl:someValuesFrom xsd:string ],
         owl:Thing ;
     skos:prefLabel "Person"@de,
@@ -763,7 +763,7 @@ cx:Person a owl:Class ;
 
 <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/person_ontology.ttl> a owl:Ontology ;
     dc:creator "Zazralt Magic" ;
-    dc:date "2022-11-04"^^xsd:date ;
+    dc:date "2022-11-10"^^xsd:date ;
     dc:title "Person Ontology" ;
     owl:versionInfo "0.0.1" .
 

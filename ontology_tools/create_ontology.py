@@ -42,10 +42,12 @@ def get_ontology_list(tables_path, file_ext='csv'):
 def convert_numbers_file(ontology):
     numbers_file = numbers_path + '/' + ontology + '_ontology.numbers'
     print('# converting: ', numbers_file)
-    df = read_numbers2df(numbers_file).dropna(how='all').fillna('')  # necessary
+    df = read_numbers2df(numbers_file)#.dropna(how='all').fillna('')  # necessary
     if (df.columns.isna().sum() > 0):
         print('- found empty column names in', ontology)
     df.to_csv(tables_path+'/'+ontology+'_ontology.csv', index=False)
+    df.to_csv(tables_path + '/' + ontology + '_ontology.csv', index=False)
+    #df.to_excel(tables_path + '/' + ontology + '_ontology.xlsx', index=False)
 
 def convert_csv_file(ontology): # convert_ontology('vehice_component')
     ontology = ontology.replace(' ', '_')
@@ -64,7 +66,7 @@ def convert_all_csv_files():
         convert_csv_file(ontology)
 
 if __name__ == '__main__':
-    #convert_all_numbers_files()
+    convert_all_numbers_files()
     convert_all_csv_files()
     merge_ontology()
     convert_ontology_to_csv()
