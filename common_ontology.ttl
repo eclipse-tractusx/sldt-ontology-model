@@ -1116,10 +1116,10 @@ cx:worksFor a owl:ObjectProperty ;
 cx:Asset a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:isProvisionedBy ;
+            owl:onProperty cx:isOwnedBy ;
             owl:someValuesFrom cx:BusinessPartner ],
         [ a owl:Restriction ;
-            owl:onProperty cx:isOwnedBy ;
+            owl:onProperty cx:isProvisionedBy ;
             owl:someValuesFrom cx:BusinessPartner ],
         cx:ImmaterialThing ;
     skos:definition "An Asset is any artifact that is provisioned/owned/attributed to some Catena-X Business Partner."@en ;
@@ -1148,11 +1148,11 @@ cx:Contact a owl:Class ;
 cx:Customer a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:purchasesFrom ;
-            owl:someValuesFrom cx:Seller ],
-        [ a owl:Restriction ;
             owl:onProperty cx:purchases ;
             owl:someValuesFrom cx:Product ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:purchasesFrom ;
+            owl:someValuesFrom cx:Seller ],
         cx:Person ;
     skos:prefLabel "Kunde"@de,
         "Customer"@en .
@@ -1161,10 +1161,10 @@ cx:DinStandard a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl> ;
     rdfs:seeAlso <https://de.wikipedia.org/wiki/Deutsches_Institut_f%C3%BCr_Normung> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:dinNumber ;
+            owl:onProperty cx:dinName ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:dinName ;
+            owl:onProperty cx:dinNumber ;
             owl:someValuesFrom xsd:string ],
         cx:TechnicalStandard ;
     skos:altLabel "DIN"@en,
@@ -1428,10 +1428,10 @@ cx:Offer a owl:Class ;
     rdfs:seeAlso schema:Offer ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty cx:isOfferedBy ;
-            owl:someValuesFrom cx:Person ],
+            owl:someValuesFrom cx:Organisation ],
         [ a owl:Restriction ;
             owl:onProperty cx:isOfferedBy ;
-            owl:someValuesFrom cx:Organisation ],
+            owl:someValuesFrom cx:Person ],
         cx:Event ;
     skos:altLabel "offering"@en ;
     skos:prefLabel "Offer"@en .
@@ -1485,17 +1485,17 @@ cx:Manufacturer a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl> ;
     rdfs:seeAlso schema:manufacturer ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:manufacturerName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:manufacturerId ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:produces ;
             owl:someValuesFrom cx:Product ],
         [ a owl:Restriction ;
+            owl:onProperty cx:manufacturerName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty cx:isSuppliedBy ;
             owl:someValuesFrom cx:Supplier ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:manufacturerId ;
+            owl:someValuesFrom xsd:string ],
         cx:Role ;
     skos:prefLabel "Hersteller"@de,
         "Manufacturer"@en .
@@ -1530,7 +1530,7 @@ cx:Supplier a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl> ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Vendor> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:supplierId ;
+            owl:onProperty cx:supplierName ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:supplies ;
@@ -1539,7 +1539,7 @@ cx:Supplier a owl:Class ;
             owl:onProperty cx:suppliesTo ;
             owl:someValuesFrom cx:Manufacturer ],
         [ a owl:Restriction ;
-            owl:onProperty cx:supplierName ;
+            owl:onProperty cx:supplierId ;
             owl:someValuesFrom xsd:string ],
         cx:Role ;
     skos:altLabel "provider"@en,
@@ -1567,14 +1567,14 @@ cx:BusinessPartner a owl:Class ;
             owl:onProperty cx:hasConnector ;
             owl:someValuesFrom cx:EclipseDataspaceConnector ],
         [ a owl:Restriction ;
-            owl:onProperty cx:hasRole ;
-            owl:someValuesFrom cx:Role ],
-        [ a owl:Restriction ;
             owl:onProperty cx:businessPartnerNumberType ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:businessPartnerNumber ;
             owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:hasRole ;
+            owl:someValuesFrom cx:Role ],
         [ a owl:Restriction ;
             owl:onProperty cx:businessPartnerNumber ;
             owl:someValuesFrom xsd:string ],
@@ -1737,29 +1737,29 @@ cx:Event a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl> ;
     rdfs:seeAlso schema:Event ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:eventId ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:actionName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:eventLocation ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:eventType ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:actionId ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:eventDuration ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
-            owl:onProperty cx:eventName ;
+            owl:onProperty cx:eventType ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:eventId ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:eventLocation ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:eventDate ;
             owl:someValuesFrom xsd:date ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:actionName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:eventName ;
+            owl:someValuesFrom xsd:string ],
         owl:Thing ;
     owl:disjointWith cx:Action,
         cx:ImmaterialThing,
@@ -1784,10 +1784,10 @@ cx:Process a owl:Class ;
             owl:someValuesFrom cx:Action ],
         [ a owl:Restriction ;
             owl:onProperty cx:isInvolvedIn ;
-            owl:someValuesFrom cx:Action ],
+            owl:someValuesFrom cx:Process ],
         [ a owl:Restriction ;
             owl:onProperty cx:isInvolvedIn ;
-            owl:someValuesFrom cx:Process ],
+            owl:someValuesFrom cx:Action ],
         owl:Thing ;
     owl:disjointWith cx:Action,
         cx:Event,
@@ -1807,12 +1807,6 @@ cx:MaterialThing a owl:Class ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Philosophy_of_matter>,
         schema:Thing ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:isPortionOf ;
-            owl:someValuesFrom cx:MaterialThing ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:isPortionOf ;
-            owl:someValuesFrom cx:MaterialThing ],
-        [ a owl:Restriction ;
             owl:onProperty cx:hasPortion ;
             owl:someValuesFrom cx:MaterialThing ],
         [ a owl:Restriction ;
@@ -1820,6 +1814,12 @@ cx:MaterialThing a owl:Class ;
             owl:someValuesFrom cx:MaterialThing ],
         [ a owl:Restriction ;
             owl:onProperty cx:hasPortion ;
+            owl:someValuesFrom cx:MaterialThing ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:isPortionOf ;
+            owl:someValuesFrom cx:MaterialThing ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:isPortionOf ;
             owl:someValuesFrom cx:MaterialThing ],
         [ a owl:Restriction ;
             owl:onProperty cx:isPortionOf ;
@@ -1859,11 +1859,11 @@ cx:Organisation a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl> ;
     rdfs:seeAlso schema:Organization ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:isMemberOf ;
-            owl:someValuesFrom cx:Consortium ],
-        [ a owl:Restriction ;
             owl:onProperty cx:makesOffer ;
             owl:someValuesFrom cx:Offer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:isMemberOf ;
+            owl:someValuesFrom cx:Consortium ],
         owl:Thing ;
     owl:disjointWith cx:Action,
         cx:Event,
@@ -1918,11 +1918,11 @@ cx:Product a owl:Class ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Product_>,
         schema:Product ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:price ;
-            owl:someValuesFrom xsd:float ],
-        [ a owl:Restriction ;
             owl:onProperty cx:hasBrand ;
             owl:someValuesFrom cx:Brand ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:price ;
+            owl:someValuesFrom xsd:float ],
         owl:Thing ;
     owl:disjointWith cx:Action,
         cx:Event,
@@ -1939,7 +1939,7 @@ cx:Product a owl:Class ;
 
 <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl> a owl:Ontology ;
     dc:creator "Zazralt Magic" ;
-    dc:date "2022-11-04"^^xsd:date ;
+    dc:date "2022-11-10"^^xsd:date ;
     dc:description "The Catena-X common ontology contains all domain-independent classes, attributes and relations." ;
     dc:title "Common Ontology" ;
     owl:versionInfo "0.0.1" .

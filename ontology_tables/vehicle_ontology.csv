@@ -8,6 +8,7 @@ type,identifier,parents,relation_from,relation_to,name_en,name_de,definition_en,
 # description,Ontology for vehicles in the automotive industry.,,,,,,,,,,,
 # import,common ontology,,,,,,,,,,,
 # import,part ontology,,,,,,,,,,,
+,,,,,,,,,,,,
 class,vehicle,final product,,,,Fahrzeug,A vehicle is a motor-powered road vehicle that transports people or cargo (not operated on rails).,"car, motorcycle, truck","we include only motorised road vehicles, i.e. we exclude: aircrafts, watercraft, railway vehicle, human powered vehicles","motor vehicle, road vehicle, motorised vehicle","Kraftfahrzeug (KFZ), Motorfahrzeug (MFZ), Straßenfahrzeug",https://en.wikipedia.org/wiki/Motor_vehicle
 attribute,vehicle identification number,identifier,vehicle,xsd:string,,Fahrzeug-Identifizierungsnummer,The Vehicle Identification Number (VIN) is a unique serial number used by the automotive industry to identify individual motor vehicles.,,17-digit unique identifier,vehicle identification number (VIN),"Fahrzeugidentifikationsnummer (FIN), Fahrgestellnummer","https://en.wikipedia.org/wiki/Vehicle_identification_number, https://schema.org/vehicleIdentificationNumber"
 attribute,vehicle type code,,vehicle,xsd:string,,Typschlüssel,Is a unique identifier for vehicle types.,,,model type code,"Typ-Schlüssel, Typenschlüssel, Fahrzeugtyp",
@@ -15,41 +16,59 @@ attribute,vehicle description,,vehicle,xsd:string,,,,,,,,
 attribute,vehicle configuration,,vehicle,xsd:string,,,"A short text indicating the configuration of the vehicle, e.g. '5dr hatchback ST 2.5 MT 225 hp' or 'limited edition'.",,,,,https://schema.org/vehicleConfiguration
 attribute,vehicle special usage,,vehicle,xsd:string,,,"Indicates whether the vehicle has been used for special purposes, like commercial rental, driving school, or as a taxi. The legislation in many countries requires this information to be revealed when offering a car for sale.",,,,,https://schema.org/vehicleSpecialUsage
 relation,is made by,,vehicle,vehicle manufacturer,,,,,,,,
+,,,,,,,,,,,,
 class,vehicle manufacturer,manufacturer,,,,Fahrzeughersteller,,"Audi, BMW, Mercedes, Volkswagen",,original equipment manufacturer (OEM),,
+,,,,,,,,,,,,
 class,passenger vehicle,vehicle,,,,Passagierfahrzeug,A vehicle that transports people.,car,"< 9 passengers, Klasse M",,Straßenpersonenfahrzeug,
 relation,transports,,passenger vehicle,passenger,,,,,,,,
+,,,,,,,,,,,,
 class,transport vehicle,vehicle,,,,Transportfahrzeug,A vehicle that transports cargo.,truck,"Klasse N, O","cargo vehicle, road freight vehicle",Straßengüterfahrzeug,https://en.wikipedia.org/wiki/Cargo
 relation,transports,,transport vehicle,cargo,,,,,,,,
+,,,,,,,,,,,,
 class,commercial vehicle,vehicle,,,,Nutzfahrzeug,A vehicle that transports people or cargo for payment.,,> 9 passengers,,"Nutzfahrzeug (NFZ), Nutzkraftwagen (NKW)",https://en.wikipedia.org/wiki/Commercial_vehicle
 relation,is owned by,,commercial vehicle,organisation,,,,,,,,
+,,,,,,,,,,,,
 class,road,place,,,,Straße,,,,,,"https://en.wikipedia.org/wiki/Road, https://en.wikipedia.org/wiki/Mode_of_transport"
 relation,drives on,,vehicle,road,,,,,,,,
+,,,,,,,,,,,,
 class,highway,place,,,,Autobahn,,,,,,"https://en.wikipedia.org/wiki/Controlled-access_highway, https://de.wikipedia.org/wiki/Autobahn"
 relation,drives on,,vehicle,road,,,,,,,,
+,,,,,,,,,,,,
 class,passenger,person,,,,Fahrgast ,,,,occupant,"Passagier, Insasse",
 relation,transports,,vehicle,passenger,,,,,,,,
 relation,is transported by,,passenger,vehicle,,,,,,,,
+,,,,,,,,,,,,
 class,cargo,material thing,,,,Fracht,,,,goods,"Ladung, Cargo, Frachtgut, Transportgut",https://en.wikipedia.org/wiki/Cargo
 relation,transports,,transport vehicle,cargo,,,,,,,,
 relation,is transported by,,cargo,transport vehicle,,,,,,,,
+,,,,,,,,,,,,
 class,owner,person,,,,Besitzer,,,,,,
 relation,owns,,owner,vehicle,,,,,,,,
+,,,,,,,,,,,,
 class,driver,person,,,,Fahrer,,,,,,
 relation,drives,,driver,vehicle,,,,,,,,
+,,,,,,,,,,,,
 class,truck driver,driver,,,,Lastwagenfahrer,,,,,,https://en.wikipedia.org/wiki/Truck_driver
 relation,drives,,truck driver,"truck, van",,,,,,,,
+,,,,,,,,,,,,
 class,bus driver,driver,,,,Busfahrer,,,,,,https://en.wikipedia.org/wiki/Bus_driver
 relation,drives,,bus driver,"bus, coach",,,,,,,,
+,,,,,,,,,,,,
 class,private vehicle,vehicle,,,,Privatfahrzeug,A vehicle that is used for private purposes.,passenger car,ownership,,,
 relation,is owned by,,private vehicle,person,,,,,,,,
+,,,,,,,,,,,,
 class,company vehicle,car,,,,Firmenwagen,A vehicle that is used for commercial purposes.,,ownership,company car,Dienstwagen,"https://de.wikipedia.org/wiki/Firmenwagen, https://en.wikipedia.org/wiki/Take-home_vehicle"
 relation,is owned by,,company vehicle,organisation,,,,,,,,
+,,,,,,,,,,,,
 class,fleet,immaterial thing,,,,Flotte,,,,,,
 class,fleet vehicle,vehicle,,,,Flottenfahrzeug,A vehicle that is part of a fleet.,"rental car, taxi",usage,,,https://en.wikipedia.org/wiki/Fleet_vehicle
 relation,is part of,,fleet vehicle,fleet,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
 class,car,passenger vehicle,,,,Auto,"4-wheeled, < 9 passengers",,,"passenger car, automobile","Personenkraftwagen (PKW), Automobil, Karre",https://en.wikipedia.org/wiki/Car
 class,motorcycle,passenger vehicle,,,,Motorrad,"2, 3, 4-wheeled motorcycle, max 400kg",,Klasse L,,Kraftrad,https://en.wikipedia.org/wiki/Motorcycle
 class,moped,motorcycle,,,,Kleinkraftrad,< 50ccm,,Klasse L,,Kraftrad,https://de.wikipedia.org/wiki/Kleinkraftrad
+,,,,,,,,,,,,
 class,multi-purpose vehicle ,"passenger vehicle, commercial vehicle",,,Minivan,Van,"< 9 passengers, based on car platform, to transport passengers","V-class, VW T6",,"multi-purpose vehicle (MPV), van, multi utility vehicle (MUV), Asian Utility Vehicle (AUV)","Transporter, Kleintransporter, Kleinbus",https://en.wikipedia.org/wiki/Minivan
 class,large multi-purpose vehicle,multi-purpose vehicle ,,,Large MPV,Van,large MPV,"S-Max, Sharan, Alhambra, Galaxy, Espace",,,"Großraumlimousine, Großraum-Van",https://en.wikipedia.org/wiki/M-segment#Large_MPVs
 class,compact multi-purpose vehicle,multi-purpose vehicle ,,,Compact MPV,Kompaktvan,"mid-sized MPV, middle size, C-segment","2er, B-class, Touran, C-Max, Picasso, Scenic, Zafira, Jogger",,,,https://en.wikipedia.org/wiki/Compact_MPV
@@ -61,8 +80,10 @@ class,bus,"passenger vehicle, commercial vehicle",,,,Bus,"> 24 passengers, seate
 class,coach,"passenger vehicle, commercial vehicle",,,,Reisebus,"> 24 passengers, only seated",,,motorcoach,Fernbus,https://en.wikipedia.org/wiki/Coach_(bus)
 class,recreational vehicle,passenger vehicle,,,,Wohnmobil,"< 10 passengers, only seated",,,"recreational vehicle (RV), motorhome, campervan",,"https://en.wikipedia.org/wiki/Recreational_vehicle, https://en.wikipedia.org/wiki/Motorhome, https://en.wikipedia.org/wiki/Campervan"
 class,off-road vehicle,passenger vehicle,,,,,,,,,,https://en.wikipedia.org/wiki/Off-road_vehicle
+,,,,,,,,,,,,
 class,light transport vehicle,transport vehicle,,,,,< 3.5 tons,"Sprinter, Ducato, Transit",Klasse N,light commercial vehicle (LCV),,https://en.wikipedia.org/wiki/Light_commercial_vehicle
 class,heavy transport vehicle,transport vehicle,,,,,> 3.5 tons,,Klasse N,"large goods vehicle (LGV), or heavy goods vehicle (HGV)",,https://en.wikipedia.org/wiki/Large_goods_vehicle
+,,,,,,,,,,,,
 class,van,"light transport vehicle, commercial vehicle",,,,Kleintransporter,,"Sprinter, Ducato, Crafter, Transit, Jumpy",,full-size van,Lieferwagen,https://en.wikipedia.org/wiki/Van
 class,panel van,van,,,,Kastenwagen,,,,,,https://en.wikipedia.org/wiki/Panel_van
 class,conversion van,van,,,,Umbauwagen,A conversion van is a full-sized cargo van that is sent to third-party companies to be outfitted with various luxuries for road trips and camping.,,,,,https://en.wikipedia.org/wiki/Conversion_van
@@ -76,6 +97,7 @@ class,four-axle semi-trailer truck,semi-trailer truck,,,,,,,,,,
 class,five-axle semi-trailer truck,semi-trailer truck,,,,,,,,,,
 class,six-axle semi-trailer truck,semi-trailer truck,,,,,,,,,,
 class,seven-axle semi-trailer truck,semi-trailer truck,,,,,,,,,,
+,,,,,,,,,,,,
 class,special vehicle,vehicle,,,,Sonderfahrzeug,,disabled vehicle,usage,special-purpose vehicle,,
 class,self-driving car,"special vehicle, car",,,,Selbstfahrendes Kraftfahrzeug,,,usage,automatised vehicle,automatisiertes Fahrzeug,https://en.wikipedia.org/wiki/Self-driving_car
 class,armoured car,"special vehicle, car",,,,Sonderschutzfahrzeug,,,usage,,gepanzertes Auto,https://en.wikipedia.org/wiki/Armored_car_(VIP)
@@ -94,6 +116,7 @@ class,concrete mixer truck,"special vehicle, truck",,,,Fahrmischer,,,usage,,,"h
 class,dump truck,"special vehicle, truck",,,,Muldenkipper,,,usage,,,https://en.wikipedia.org/wiki/Dump_truck
 class,flatbed truck,"special vehicle, truck",,,,Pritschenwagen,,,usage,,,https://en.wikipedia.org/wiki/Flatbed_truck
 class,logging truck,"special vehicle, truck",,,,Langholztransporter,,,usage,timber lorry,,https://en.wikipedia.org/wiki/Logging_truck
+,,,,,,,,,,,,
 class,internal combustion engine vehicle,vehicle,,,,,,,,internal combustion engine vehicle (ICEV),,
 relation,has part,,internal combustion engine vehicle,engine,,,,,,,,
 class,diesel vehicle,internal combustion engine vehicle,,,,Dieselfahrzeug,uses diesel,,,,,https://en.wikipedia.org/wiki/Diesel_engine
@@ -103,15 +126,18 @@ relation,has part,,petrol vehicle,petrol engine,,,,,,,,
 class,natural gas vehicle,internal combustion engine vehicle,,,,Erdgasfahrzeug,,,,natural gas vehicle (NGV),,
 class,compressed natural gas vehicle,natural gas vehicle,,,,CNG Fahrzeug,,,,,,https://en.wikipedia.org/wiki/Compressed_natural_gas
 class,liquefied natural gas vehicle,natural gas vehicle,,,,LNG Fahrzeug,,,,,,https://en.wikipedia.org/wiki/Liquefied_natural_gas
+,,,,,,,,,,,,
 class,electric vehicle,vehicle,,,,,,,,,,
 relation,has part,,electric vehicle,high voltage battery,,,,,,,,
 relation,has part,,electric vehicle,electric motor,,,,,,,,
+,,,,,,,,,,,,
 class,Battery Electric Vehicle,electric vehicle,,,,,"are powered solely by an electric motor, using electricity stored in an on-board battery.",,,Battery Electric Vehicle (BEV),,https://en.wikipedia.org/wiki/Battery_electric_vehicle
 class,Hybrid Electric Vehicle,electric vehicle,,,,,"combine an internal combustion engine and an electric motor that assists the conventional engine, for example during vehicle acceleration. ",,,Hybrid Electric Vehicle (HEV),,https://en.wikipedia.org/wiki/Hybrid_electric_vehicle
 class,Plug-in Hybrid Electric Vehicle,electric vehicle,,,,,are powered by an electric motor and an internal combustion engine that work together or separately.,,,"Plug-in Hybrid Electric Vehicle (PHEV), new energy vehicle (NEV)",,https://en.wikipedia.org/wiki/Plug-in_electric_vehicle
 class,Fuel Cell Electric Vehicle,electric vehicle,,,,,,,,"Fuel Cell Electric Vehicle (FCEV), fuel cell vehicle (FCV)",,https://en.wikipedia.org/wiki/Fuel_cell_vehicle
 class,Range extended electric vehicle,electric vehicle,,,,,,,,Range extended electric vehicle (REEV),,
 class,mild hybrid electric vehicle,electric vehicle,,,,,,,,mild hybrid electric vehicle (MHEV),,
+,,,,,,,,,,,,
 class,euro car segment,classification,,,,Euro Fahrzeugsegment,Car classification by market segment.,,,,,"https://en.wikipedia.org/wiki/Euro_Car_Segment, https://en.wikipedia.org/wiki/Vehicle_size_class"
 relation,has euro car segment,,vehicle,euro car segment,,,,,,,,
 euro car segment,A,,,,mini car,Kleinstwagen,,"Smart, Up, 500, Panda, Twingo",,"minicompact car, city car",,https://en.wikipedia.org/wiki/A-segment
@@ -123,6 +149,7 @@ euro car segment,F,,,,luxury car,Luxusklasse,,"7er, S-class, A8",,"full-size lux
 euro car segment,J,,,,sport utility car,Geländewagen,,"X5, Wrangler",,sport utility vehicle (SUV),,https://en.wikipedia.org/wiki/Sport_utility_vehicle
 euro car segment,M,,,,multi-purpose car,Mehrzweckfahrzeuge,,"Sharan, Sprinter",,,,https://en.wikipedia.org/wiki/M-segment
 euro car segment,S,,,,sports coupé,Sportwagen,,"Z4, TT",,roadster sport,,https://en.wikipedia.org/wiki/S-segment
+,,,,,,,,,,,,
 class,EU vehicle class,classification,,,,,,,,,,"https://de.wikipedia.org/wiki/EG-Fahrzeugklasse, https://en.wikipedia.org/wiki/Vehicle_category#EU_classification"
 EU vehicle class,L,,,,motorcycle,Leichte KFZ,,,,,,
 EU vehicle class,M,,,,motor vehicle,,"min 4 wheels (car, bus, camper)",,,carriage of passengers,Personenbeförderung,
@@ -135,6 +162,7 @@ EU vehicle class,N2,,,,medium truck,,> 3.5 t and < 12 t,,,,,https://en.wikipedia
 EU vehicle class,N3,,,,large truck,,> 12 t,,,,,https://en.wikipedia.org/wiki/Large_goods_vehicle
 EU vehicle class,O,,,,trailer,Anhänger,,,,,,
 EU vehicle class,G,,,,off-road,Geländewagen,max 9 passengers,,,,,
+,,,,,,,,,,,,
 class,US truck class,classification,,,,,commercial truck classification is determined based on the vehicle's gross vehicle weight rating (GVWR),,,,,https://en.wikipedia.org/wiki/Truck_classification
 US truck class,1.0,,,,,,< 6 klbs (2.7 t),,,,,
 US truck class,2.0,,,,,,< 10 klbs (4.5 t),,,,,
@@ -144,6 +172,7 @@ US truck class,5.0,,,,,,< 19.5 klbs (8.8 t),,,,,
 US truck class,6.0,,,,,,< 26 klbs (11.8 t),,,,,
 US truck class,7.0,,,,,,< 33 klbs (15 t),,,,,
 US truck class,8.0,,,,,,> 33 klbs (15 t),,,,,
+,,,,,,,,,,,,
 class,EU driving licence class,classification,,,,,,,,,,"https://en.wikipedia.org/wiki/European_driving_licence, https://de.wikipedia.org/wiki/Führerschein_(EU-Recht)"
 EU driving licence class,AM,,,,moped,Kleinkraftrad,"< 4kW, < 50 ccm, < 45 km/h",,moped,,,
 EU driving licence class,A1,,,,motorcycle,Kraftrad,"< 11kW, > 50 ccm, < 125 ccm",,motorcycle,,,
@@ -155,6 +184,7 @@ EU driving licence class,C1,,,,truck,Kraftfahrzeug,"< 7.5 t, < 10 passengers",,l
 EU driving licence class,C,,,,truck,Kraftfahrzeug,"> 7.5 t, < 10 passengers",,large goods vehicle,,,
 EU driving licence class,D1,,,,bus,Omnibus,"< 17 passengers, < 8 m",,large passenger vehicle,,,
 EU driving licence class,D,,,,bus,Omnibus,> 9 passengers,,large passenger vehicle,,,
+,,,,,,,,,,,,
 class,ACRISS category,classification,,,,,,,,Association of Car Rental Industry Systems Standards (ACRISS),,"https://en.wikipedia.org/wiki/Association_of_Car_Rental_Industry_Systems_Standards, https://de.wikipedia.org/wiki/Mietwagenklassifizierung, https://schema.org/acrissCode"
 ACRISS category,M,,,,Mini,,,,,,,
 ACRISS category,N,,,,Mini Elite,,,,,,,

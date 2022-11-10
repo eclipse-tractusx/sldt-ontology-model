@@ -7,34 +7,45 @@ type,identifier,parents,relation_from,relation_to,name_en,name_de,definition_en,
 # contributor,,,,,,,,,,,,,
 # description,,,,,,,,,,,,,
 # import,common ontology,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
 class,vehicle component,component,,,,Fahrzeugkomponente,A component that is assembled into a vehicle or a vehicle component.,"engine, body, chassis",,"part, component","Fahrzeug Bauteil, Fahrzeugteil, Komponente, Bauteil, Teil",,vehicle
+,,,,,,,,,,,,,
 class,component manufacturer,manufacturer,,,,,,,,,,,
+,,,,,,,,,,,,,
 class,main component,component,,,,Hauptkomponente,,,,,,,
 class,generic component,component,,,,Allgemeine Komponente,,,,,,,
 class,structural component,component,,,,Strukturkomponente,,Fahrwerk,,,Mechanische Komponente,,
 class,electrical component,component,,,,Elektrokomponente,,,,,,,
 class,functional component,component,,,,Funktionskomponente,,,,,,,
 class,safety component,component,,,,Fahrzeugsicherheitskomponente,,,,,,https://en.wikipedia.org/wiki/Automotive_safety,
+,,,,,,,,,,,,,
 class,body,"vehicle component, main component",,,,Karosserie,,,,"carrosserie, body work, bodywork, coachwork, coach work",,https://de.wikipedia.org/wiki/Karosserie,vehicle
 class,powertrain,"vehicle component, main component",,,,Antriebsstrang,,,,"power train, drive, drivetrain, drive train, driveline","Antrieb, Antriebstrang",https://en.wikipedia.org/wiki/Drivetrain,vehicle
 class,chassis,"vehicle component, main component",,,,Fahrwerk,,,,"frame, base frame, undercarriage, vehicle frame, rolling chassis","Fahrgestell, Chassis, Untergestell, Rahmen",https://en.wikipedia.org/wiki/Chassis,vehicle
 class,vehicle electrical system,"vehicle component, main component, vehicle system",,,,Elektrosystem,,,,electronics,,https://en.wikipedia.org/wiki/Automotive_electronics,vehicle
+,,,,,,,,,,,,,
 class,electric powertrain,"vehicle component, main component",,,,Elektrischer Antriebsstrang,,,,"e-powertrain, electric drive, e-drive",Elektrischer Antrieb,,vehicle
 class,high voltage system,"vehicle component, vehicle system",,,,Hochvolt System,,,,high-voltage system,,,vehicle
 class,hybrid vehicle drivetrain,vehicle component,,,,Hybridantrieb,,,,,,https://en.wikipedia.org/wiki/Hybrid_vehicle_drivetrain,powertrain
+,,,,,,,,,,,,,
 class,vehicle system,vehicle component,,,,Fahrzeugsystem,,,,,,,
 class,mechatronic component,vehicle component,,,,,,,,,,,
+,,,,,,,,,,,,,
 class,vehicle sensor,vehicle component,,,,Fahrzeugsensor,,,,,,,
 class,vehicle actuator,vehicle component,,,,Fahrzeugaktuator,,,,,Aktor,https://de.wikipedia.org/wiki/Aktor,
 class,vehicle instrument,vehicle component,,,,Fahrzeuginstrument,,,,,,,interior
 class,vehicle control,vehicle component,,,,Fahrzeugsteuerung,,,,,,,interior
 class,vehicle switch,vehicle component,,,,Fahrzeugschalter,,,,,,,
+,,,,,,,,,,,,,
 class,pipe,generic component,,,,Rohr,,,,,,,
 class,hose,generic component,,,,Schlauch,,,,,,,
 class,line,generic component,,,,Leitung,,,,,,,
 class,gasket,generic component,,,,Flachdichtung,,,,,,,
 class,seal,generic component,,,,Dichtung,,,,,,,
 class,liquid seal,seal,,,,Flüssigdichtung,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
 class,hood,vehicle component,,,,Motorhaube,,,,bonnet,Kühlerhaube,https://en.wikipedia.org/wiki/Hood_(car),exterior
 class,trunk,vehicle component,,,,Kofferraum,,,,"boot, dickie, dicky, diggy",,https://en.wikipedia.org/wiki/Trunk_(car),exterior
 class,hatch,vehicle component,,,,Heckklappe,,,,tailgate,,https://de.wikipedia.org/wiki/Heckklappe,exterior
@@ -230,6 +241,7 @@ class,rim,"chassis component, vehicle component",,,,Felge,,,,alloy wheel,Autofel
 class,hubcap,"chassis component, vehicle component",,,,Radkappe,,,,hub cap,,https://en.wikipedia.org/wiki/Hubcap,wheel
 class,nut,"chassis component, vehicle component",,,,Radschraube,,,,"wheel nut, lug nut",,https://en.wikipedia.org/wiki/Lug_nut,wheel
 class,tire valve,"chassis component, vehicle component",,,,Reifenventil,,,,tyre valve,,,wheel
+,,,,,,,,,,,,,
 class,electric powertrain component,component,,,,Elektrische Antriebsstrangskomponente,,,,,,,electric powertrain
 class,high voltage battery,"electric powertrain component, vehicle component, functional component",,,,Hochvoltspeicher,,,,"battery, battery pack, high-voltage battery, high-voltage battery unit, high-voltage storage, HVS, HVB, traction battery, lithium-ion battery, HV battery, electric vehicle battery","Speicher, Hochvoltspeicher, HVS, Antriebsbatterie, Traktionsbatterie",https://en.wikipedia.org/wiki/Electric_vehicle_battery,electric powertrain
 class,safety box,"electric powertrain component, vehicle component",,,,Sicherheitsbox,,,,"S-box, s-box, s box",,,high voltage battery
@@ -264,6 +276,7 @@ class,charging unit,"electric powertrain component, vehicle component",,,,Ladeel
 class,high voltage connection,"electric powertrain component, vehicle component",,,,Hochvoltstecker,,,,high-voltage connection,,,charging system
 class,fuel cell stack,"electric powertrain component, vehicle component",,,,Brennstoffzellenstack,,,,,,,electric powertrain
 class,fuel cell,"electric powertrain component, vehicle component",,,,Brennstoffzelle,,,,,,https://en.wikipedia.org/wiki/Fuel_cell,electric powertrain
+,,,,,,,,,,,,,
 class,engine component,component,,,,Motorkomponente,,,,,,,powertrain
 class,drive unit,"engine component, vehicle component",,,,"Antrieb, Antriebseinheit","engine, electromotor",,,"propulsion, propulsion system, powerplant",,https://en.wikipedia.org/wiki/Propulsion,powertrain
 class,engine,"engine component, vehicle component, final product",,,,Motor,,,,"internal combustion engine (ICE), internal combustion (IC) engine",Verbrennungsmotor,https://en.wikipedia.org/wiki/Internal_combustion_engine,powertrain
@@ -370,6 +383,7 @@ class,fan,"engine component, vehicle component",,,,Ventilator,,,,,,https://en.wi
 class,fan clutch,"engine component, vehicle component",,,,Lüfterkupplung,,,,,,https://en.wikipedia.org/wiki/Fan_clutch,cooling system
 class,radiator,"engine component, vehicle component",,,,Autokühler,,,,,,https://en.wikipedia.org/wiki/Radiator_(engine_cooling),cooling system
 class,thermostat,"engine component, vehicle component",,,,Temperaturregler,,,,,,https://en.wikipedia.org/wiki/Thermostat,cooling system
+,,,,,,,,,,,,,
 class,powertrain component,component,,,,Antriebsstrangskomponente,,,,,,,powertrain
 class,transmission,"powertrain component, vehicle component",,,,Getriebe,,,,"gearbox, gear box",Fahrzeuggetriebe,https://en.wikipedia.org/wiki/Transmission_(mechanics),powertrain
 class,manual transmission,"transmission, vehicle component",,,,Schaltgetriebe,,,,"MT, manual gearbox, standard transmission, stick shift, stick",,https://en.wikipedia.org/wiki/Manual_transmission,powertrain
@@ -391,6 +405,7 @@ class,differential,"powertrain component, vehicle component",,,,Differential,,,,
 class,locking differential,"powertrain component, vehicle component",,,,Sperrdifferential,,,,,Selbstsperrdifferentialgetriebe,https://en.wikipedia.org/wiki/Locking_differential,powertrain
 class,rear axle differential,"powertrain component, vehicle component",,,,Hinterachsgetriebe,,,,,HAG,,powertrain
 class,output shaft,"powertrain component, vehicle component",,,,Ausgangswelle,,,,final drive shaft,Abtriebswelle,,powertrain
+,,,,,,,,,,,,,
 class,vehicle electrical component,component,,,,Elektronische Fahrzeugkomponente,,,,,,,vehicle electrical system
 class,lighting system,"vehicle electrical component, vehicle component, vehicle system",,,,Fahrzeugbeleuchtung,,,,lighting,Beleuchtung,https://en.wikipedia.org/wiki/Automotive_lighting,electrical system
 class,front light,"vehicle electrical component, vehicle component, vehicle sensor",,,,,,,,,,,lighting system
@@ -477,6 +492,7 @@ class,restraint system,"vehicle electrical component, vehicle component, safety 
 class,crash detection sensor,"vehicle electrical component, vehicle component, safety component, electrical component",,,,,,,,,,,electrical system
 class,can bus,"vehicle electrical component, vehicle component",,,CAN bus,,,,,Controller Area Network (CAN),,https://en.wikipedia.org/wiki/CAN_bus,electrical system
 class,error memory,"vehicle electrical component, vehicle component",,,,Fehlerspeicher,,,is stored in the EEPROM,fault memory,,https://de.wikipedia.org/wiki/Fehlerspeicher,electronic control unit
+,,,,,,,,,,,,,
 class,operating liquid,"operating material, liquid material",,,,Betriebsflüssigkeit,,,,,,,
 class,lubricant,operating liquid,,,,Schmierstoff,,,,,,,
 class,brake fluid,operating liquid,,,,Bremsflüssigkeit,,,,,,,
@@ -489,3 +505,5 @@ class,refrigerant,operating liquid,,,,Kältemittel,,,,,,,
 class,transmission oil,operating liquid,,,,Getriebeöl,,,,,,,
 class,reductant,operating liquid,,,,Reduktionsmittel,,,,,,,
 class,coolant,operating liquid,,,,Kühlmittel,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
