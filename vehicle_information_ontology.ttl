@@ -646,7 +646,7 @@ cx:adblueTankCapacity a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_information_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:subPropertyOf cx:numeric ;
-    skos:example "8.0"@en ;
+    skos:example "8"@en ;
     skos:note "in liter"@en ;
     skos:prefLabel "Adblue Tank Capacity"@en .
 
@@ -677,7 +677,7 @@ cx:batteryWeight a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_information_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx:integer ;
-    skos:example "250.0"@en ;
+    skos:example "250"@en ;
     skos:note "in kilogramms"@en ;
     skos:prefLabel "Battery Weight"@en .
 
@@ -704,7 +704,7 @@ cx:cargoVolume a owl:DatatypeProperty ;
     rdfs:subPropertyOf cx:numeric ;
     skos:altLabel "cargo capacity"@en ;
     skos:definition "The available volume for cargo or luggage. For automobiles, this is usually the trunk volume."@en ;
-    skos:example "500.0"@en ;
+    skos:example "500"@en ;
     skos:note "in liters"@en ;
     skos:prefLabel "Cargo Volume"@en .
 
@@ -723,7 +723,7 @@ cx:co2Emissions a owl:DatatypeProperty ;
     rdfs:seeAlso schema:emissionsCO2 ;
     rdfs:subPropertyOf cx:integer ;
     skos:definition "The CO2 emissions in g/km. When used in combination with a QuantitativeValue, put \"g/km\" into the unitText property of that value, since there is no UN/CEFACT Common Code for \"g/km\"."@en ;
-    skos:example "130.0"@en ;
+    skos:example "130"@en ;
     skos:note "in g/km"@en ;
     skos:prefLabel "Co2 Emissions"@en .
 
@@ -734,7 +734,7 @@ cx:co2EmissionsWltp a owl:DatatypeProperty ;
     rdfs:seeAlso schema:emissionsCO2 ;
     rdfs:subPropertyOf cx:integer ;
     skos:definition "The CO2 emissions in g/km. When used in combination with a QuantitativeValue, put \"g/km\" into the unitText property of that value, since there is no UN/CEFACT Common Code for \"g/km\"."@en ;
-    skos:example "130.0"@en ;
+    skos:example "130"@en ;
     skos:note "in g/km"@en ;
     skos:prefLabel "Co2 Emissions Wltp"@en .
 
@@ -798,7 +798,7 @@ cx:engineMaxPower a owl:DatatypeProperty ;
     rdfs:subPropertyOf cx:numeric ;
     skos:altLabel "Nennleistung"@de ;
     skos:definition "The power of the vehicle's engine. Typical unit code: KWT for kilowatt, BHP for brake horsepower, N12 for metric horsepower"@en ;
-    skos:example "150.0"@en ;
+    skos:example "150"@en ;
     skos:note "in horsepower"@en ;
     skos:prefLabel "Leistung"@de,
         "Engine Max Power"@en .
@@ -832,7 +832,7 @@ cx:expectedLifetime a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_information_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx:integer ;
-    skos:example "12.0"@en ;
+    skos:example "12"@en ;
     skos:note "in years"@en ;
     skos:prefLabel "Lebensdauer"@de,
         "Expected Lifetime"@en .
@@ -842,7 +842,7 @@ cx:expectedLifetimeMileage a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_information_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx:integer ;
-    skos:example "150000.0"@en ;
+    skos:example "150000"@en ;
     skos:note "in kilometers"@en ;
     skos:prefLabel "Laufleistung"@de,
         "Expected Lifetime Mileage"@en .
@@ -880,7 +880,7 @@ cx:fuelTankCapacity a owl:DatatypeProperty ;
     rdfs:seeAlso schema:fuelCapacity ;
     rdfs:subPropertyOf cx:numeric ;
     skos:definition "The capacity of the fuel tank or in the case of electric cars, the battery. If there are multiple components for storage, this should indicate the total of all storage of the same type."@en ;
-    skos:example "50.0"@en ;
+    skos:example "50"@en ;
     skos:note "in liter"@en ;
     skos:prefLabel "Tankinhalt"@de,
         "Fuel Tank Capacity"@en .
@@ -1000,7 +1000,7 @@ cx:maxPayload a owl:DatatypeProperty ;
     rdfs:seeAlso schema:payload ;
     rdfs:subPropertyOf cx:numeric ;
     skos:definition "The permitted weight of passengers and cargo, EXCLUDING the weight of the empty vehicle."@en ;
-    skos:example "100.0"@en ;
+    skos:example "100"@en ;
     skos:note "in kilogramms"@en ;
     skos:prefLabel "Max Payload"@en .
 
@@ -1010,7 +1010,7 @@ cx:maxTowingCapacity a owl:DatatypeProperty ;
     rdfs:range xsd:double ;
     rdfs:seeAlso <https://de.wikipedia.org/wiki/Anh%C3%A4ngelast> ;
     rdfs:subPropertyOf cx:numeric ;
-    skos:example "1300.0"@en ;
+    skos:example "1300"@en ;
     skos:note "in kilogramms"@en ;
     skos:prefLabel "Anhängelast"@de,
         "Max Towing Capacity"@en .
@@ -1075,7 +1075,7 @@ cx:roadNoise a owl:DatatypeProperty ;
     rdfs:range xsd:integer ;
     rdfs:seeAlso <https://de.wikipedia.org/wiki/Fahrger%C3%A4usch> ;
     rdfs:subPropertyOf cx:integer ;
-    skos:example "71.0"@en ;
+    skos:example "71"@en ;
     skos:note "in dB"@en ;
     skos:prefLabel "Fahrgeräusch"@de,
         "Road Noise"@en .
@@ -1098,7 +1098,7 @@ cx:stationaryNoise a owl:DatatypeProperty ;
     rdfs:range xsd:integer ;
     rdfs:seeAlso <https://de.wikipedia.org/wiki/Fahrger%C3%A4usch> ;
     rdfs:subPropertyOf cx:integer ;
-    skos:example "71.0"@en ;
+    skos:example "71"@en ;
     skos:note "in dB"@en ;
     skos:prefLabel "Standgeräusch"@de,
         "Stationary Noise"@en .
@@ -1163,7 +1163,7 @@ cx:vehicleBreaking a owl:DatatypeProperty ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Brake> ;
     rdfs:subPropertyOf cx:integer ;
     skos:definition "The time needed to decelerate the vehicle from 100 to 0 km/h."@en ;
-    skos:example "5.0"@en ;
+    skos:example "5"@en ;
     skos:note "in seconds"@en ;
     skos:prefLabel "Bremsung"@de,
         "Vehicle Breaking"@en .
@@ -1177,7 +1177,7 @@ cx:vehicleCurbWeight a owl:DatatypeProperty ;
     skos:altLabel "Leermasse"@de,
         "kerb weight"@en ;
     skos:definition "The total mass of a vehicle with standard equipment and all necessary operating consumables such as motor oil, transmission oil, brake fluid, coolant, air conditioning refrigerant, and sometimes a full tank of fuel, while not loaded with either passengers or cargo."@en ;
-    skos:example "1500.0"@en ;
+    skos:example "1500"@en ;
     skos:note "in kilogramms"@en ;
     skos:prefLabel "Leergewicht"@de,
         "Vehicle Curb Weight"@en .
@@ -1188,7 +1188,7 @@ cx:vehicleCurrentAge a owl:DatatypeProperty ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx:integer ;
     skos:definition "The current age of the vehicle in years."@en ;
-    skos:example "3.0"@en ;
+    skos:example "3"@en ;
     skos:note "in years"@en ;
     skos:prefLabel "Fahrzeugalter"@de,
         "Vehicle Current Age"@en .
@@ -1207,7 +1207,7 @@ cx:vehicleCurrentMileage a owl:DatatypeProperty ;
     rdfs:seeAlso schema:mileageFromOdometer ;
     rdfs:subPropertyOf cx:integer ;
     skos:definition "The current mileage of the vehicle in km."@en ;
-    skos:example "1000.0"@en ;
+    skos:example "1000"@en ;
     skos:note "in kilometers"@en ;
     skos:prefLabel "Kilometerstand"@de,
         "Vehicle Current Mileage"@en .
@@ -1306,7 +1306,7 @@ cx:vehicleMaxSpeed a owl:DatatypeProperty ;
     rdfs:subPropertyOf cx:integer ;
     skos:altLabel "top speed"@en ;
     skos:definition "The speed range of the vehicle. If the vehicle is powered by an engine, the upper limit of the speed range (indicated by maxValue should be the maximum speed achievable under regular conditions."@en ;
-    skos:example "250.0"@en ;
+    skos:example "250"@en ;
     skos:note "in km/h"@en ;
     skos:prefLabel "Höchst­geschwindigkeit"@de,
         "Vehicle Max Speed"@en .
@@ -1389,7 +1389,7 @@ cx:vehicleRange a owl:DatatypeProperty ;
     rdfs:range xsd:integer ;
     rdfs:seeAlso <https://www.wikidata.org/wiki/Property:P2073> ;
     rdfs:subPropertyOf cx:integer ;
-    skos:example "650.0"@en ;
+    skos:example "650"@en ;
     skos:note "in kilometers"@en ;
     skos:prefLabel "Reichweite"@de,
         "Vehicle Range"@en .
@@ -1399,7 +1399,7 @@ cx:vehicleRangeWltp a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_information_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx:integer ;
-    skos:example "650.0"@en ;
+    skos:example "650"@en ;
     skos:note "in kilometers"@en ;
     skos:prefLabel "Vehicle Range Wltp"@en .
 
@@ -1456,7 +1456,7 @@ cx:warrantyMaxDuration a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_information_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx:integer ;
-    skos:example "48.0"@en ;
+    skos:example "48"@en ;
     skos:note "in months"@en ;
     skos:prefLabel "Warranty Max Duration"@en .
 
@@ -1465,7 +1465,7 @@ cx:warrantyMaxMileage a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_information_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx:integer ;
-    skos:example "50000.0"@en ;
+    skos:example "50000"@en ;
     skos:note "in kilometers"@en ;
     skos:prefLabel "Warranty Max Mileage"@en .
 
@@ -1502,9 +1502,6 @@ cx:SteeringWheelPosition a owl:Class ;
 cx:VehicleChassisInformation a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_information_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:numberOfDriveAxles ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
             owl:onProperty cx:numberOfAxles ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
@@ -1512,6 +1509,9 @@ cx:VehicleChassisInformation a owl:Class ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
             owl:onProperty cx:numberOfAxles ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:numberOfDriveAxles ;
             owl:someValuesFrom xsd:integer ],
         cx:VehicleInformation ;
     skos:prefLabel "Vehicle Chassis Information"@en .
@@ -1519,10 +1519,10 @@ cx:VehicleChassisInformation a owl:Class ;
 cx:VehicleInfotainmentInformation a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_information_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:hasRadio ;
+            owl:onProperty cx:hasNavigation ;
             owl:someValuesFrom xsd:boolean ],
         [ a owl:Restriction ;
-            owl:onProperty cx:hasNavigation ;
+            owl:onProperty cx:hasRadio ;
             owl:someValuesFrom xsd:boolean ],
         cx:VehicleInformation ;
     skos:prefLabel "Vehicle Infotainment Information"@en .
@@ -1530,10 +1530,10 @@ cx:VehicleInfotainmentInformation a owl:Class ;
 cx:VehicleLifetimeInformation a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_information_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:expectedLifetimeMileage ;
+            owl:onProperty cx:expectedLifetime ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
-            owl:onProperty cx:expectedLifetime ;
+            owl:onProperty cx:expectedLifetimeMileage ;
             owl:someValuesFrom xsd:integer ],
         cx:VehicleInformation ;
     skos:prefLabel "Vehicle Lifetime Information"@en .
@@ -1552,10 +1552,10 @@ cx:VehicleLightingInformation a owl:Class ;
 cx:VehicleWarrantyInformation a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_information_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:warrantyMaxDuration ;
+            owl:onProperty cx:warrantyMaxMileage ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
-            owl:onProperty cx:warrantyMaxMileage ;
+            owl:onProperty cx:warrantyMaxDuration ;
             owl:someValuesFrom xsd:integer ],
         cx:VehicleInformation ;
     skos:prefLabel "Vehicle Warranty Information"@en .
@@ -1631,7 +1631,7 @@ cx:engineMaxTorque a owl:DatatypeProperty ;
         schema:torque ;
     rdfs:subPropertyOf cx:numeric ;
     skos:definition "The torque  of the vehicle's engine."@en ;
-    skos:example "200.0"@en ;
+    skos:example "200"@en ;
     skos:note "in Nm"@en ;
     skos:prefLabel "Drehmoment"@de,
         "Engine Max Torque"@en .
@@ -1774,7 +1774,7 @@ cx:vehicleAcceleration a owl:DatatypeProperty ;
         schema:accelerationTime ;
     rdfs:subPropertyOf cx:integer ;
     skos:definition "The time needed to accelerate the vehicle from 0 to 100 km/h."@en ;
-    skos:example "5.0"@en ;
+    skos:example "5"@en ;
     skos:note "in seconds"@en ;
     skos:prefLabel "Beschleunigung"@de,
         "Vehicle Acceleration"@en .
@@ -1808,7 +1808,7 @@ cx:vehicleWeight a owl:DatatypeProperty ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Vehicle_weight>,
         schema:weight ;
     rdfs:subPropertyOf cx:numeric ;
-    skos:example "1500.0"@en ;
+    skos:example "1500"@en ;
     skos:note "in kilogramms"@en ;
     skos:prefLabel "Fahrzeuggewicht"@de,
         "Vehicle Weight"@en .
@@ -2041,7 +2041,7 @@ cx:fuelConsumptionCity a owl:DatatypeProperty ;
     rdfs:subPropertyOf cx:numeric ;
     skos:altLabel "fuel economy city"@en,
         "urban consumption"@en ;
-    skos:example "8.0"@en ;
+    skos:example "8"@en ;
     skos:prefLabel "Kraftstoff­verbrauch in der Stadt"@de,
         "Fuel Consumption City"@en .
 
@@ -2055,7 +2055,7 @@ cx:fuelConsumptionCombined a owl:DatatypeProperty ;
     skos:altLabel "fuel economy combined"@en,
         "mixed consumption"@en ;
     skos:definition "The amount of fuel consumed for traveling a particular distance or temporal duration with the given vehicle ."@en ;
-    skos:example "5.0"@en ;
+    skos:example "5"@en ;
     skos:prefLabel "kombinierter Kraftstoff­verbrauch"@de,
         "Fuel Consumption Combined"@en .
 
@@ -2068,7 +2068,7 @@ cx:fuelConsumptionHighway a owl:DatatypeProperty ;
     rdfs:subPropertyOf cx:numeric ;
     skos:altLabel "extra-urban consumption"@en,
         "fuel economy highway"@en ;
-    skos:example "4.0"@en ;
+    skos:example "4"@en ;
     skos:prefLabel "Kraftstoff­verbrauch auf der Autobahn"@de,
         "Fuel Consumption Highway"@en .
 
@@ -2112,31 +2112,31 @@ cx:VehicleBodyInformation a owl:Class ;
             owl:onProperty cx:bodyStyle ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
+            owl:onProperty cx:euroCarSegment ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:numberOfDoors ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:euroCarSegment ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:euroCarSegment ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:bodyStyle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:numberOfDoors ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
             owl:onProperty cx:vehicleDragCoefficient ;
             owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
-            owl:onProperty cx:numberOfDoors ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:numberOfDoors ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:euroCarSegment ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:euroCarSegment ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:bodyStyle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:bodyStyle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:euroCarSegment ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:vehicleExteriorColor ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:bodyStyle ;
             owl:someValuesFrom xsd:string ],
         cx:VehicleInformation ;
     skos:prefLabel "Vehicle Body Information"@en .
@@ -2147,7 +2147,7 @@ cx:VehicleCurrentState a owl:Class ;
             owl:onProperty cx:vehicleCurrentLocation ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleOperatingHours ;
+            owl:onProperty cx:vehicleCurrentAge ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleCurrentStateDateTime ;
@@ -2156,7 +2156,7 @@ cx:VehicleCurrentState a owl:Class ;
             owl:onProperty cx:vehicleCurrentMileage ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleCurrentAge ;
+            owl:onProperty cx:vehicleOperatingHours ;
             owl:someValuesFrom xsd:integer ],
         cx:VehicleInformation ;
     skos:prefLabel "Vehicle Current State"@en .
@@ -2164,23 +2164,23 @@ cx:VehicleCurrentState a owl:Class ;
 cx:VehicleBatteryInformation a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_information_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:batteryCapacity ;
+            owl:onProperty cx:batteryWeight ;
             owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:chargingTime ;
+            owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
             owl:onProperty cx:batteryType ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:chargingTime ;
+            owl:onProperty cx:electricConsumption ;
             owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
             owl:onProperty cx:electricPower ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
-            owl:onProperty cx:batteryWeight ;
+            owl:onProperty cx:batteryCapacity ;
             owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:electricConsumption ;
-            owl:someValuesFrom xsd:double ],
         cx:VehicleInformation ;
     skos:prefLabel "Vehicle Battery Information"@en .
 
@@ -2232,34 +2232,37 @@ cx:DriveWheelType a owl:Class ;
 cx:VehicleInteriorInformation a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_information_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:vehicleInteriorType ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:numberOfPassengers ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:numberOfStandingPlaces ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
             owl:onProperty cx:numberOfSeats ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
             owl:onProperty cx:numberOfSeats ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
-            owl:onProperty cx:airConditioningType ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:vehicleInteriorType ;
             owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:numberOfSeats ;
+            owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleInteriorColor ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleInteriorType ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:numberOfSeats ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:numberOfSeatRows ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:numberOfStandingPlaces ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:numberOfPassengers ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:numberOfSeatRows ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:numberOfStandingPlaces ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
             owl:onProperty cx:numberOfSeats ;
@@ -2267,6 +2270,12 @@ cx:VehicleInteriorInformation a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty cx:numberOfPassengers ;
             owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:numberOfSeats ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:airConditioningType ;
+            owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:numberOfPassengers ;
             owl:someValuesFrom xsd:integer ],
@@ -2274,31 +2283,22 @@ cx:VehicleInteriorInformation a owl:Class ;
             owl:onProperty cx:airConditioningType ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
+            owl:onProperty cx:numberOfSeats ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleInteriorType ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleInteriorType ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty cx:numberOfStandingPlaces ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:numberOfSeats ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
             owl:onProperty cx:numberOfPassengers ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:numberOfSeatRows ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:numberOfStandingPlaces ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:numberOfSeats ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:numberOfSeats ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:numberOfSeats ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:numberOfSeats ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:numberOfSeatRows ;
             owl:someValuesFrom xsd:integer ],
         cx:VehicleInformation ;
     skos:prefLabel "Vehicle Interior Information"@en .
@@ -2312,7 +2312,7 @@ cx:VehiclePowertrainInformation a owl:Class ;
             owl:onProperty cx:driveWheelType ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:driveWheelType ;
+            owl:onProperty cx:powertrainLayout ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:numberOfForwardGears ;
@@ -2321,31 +2321,22 @@ cx:VehiclePowertrainInformation a owl:Class ;
             owl:onProperty cx:driveWheelType ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
+            owl:onProperty cx:numberOfForwardGears ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
             owl:onProperty cx:steeringWheelPosition ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:driveWheelType ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:steeringType ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:powertrainLayout ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:powertrainLayout ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:driveWheelType ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:driveWheelType ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleTransmission ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleTransmission ;
+            owl:onProperty cx:clutchType ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:driveWheelType ;
@@ -2360,26 +2351,35 @@ cx:VehiclePowertrainInformation a owl:Class ;
             owl:onProperty cx:steeringType ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:clutchType ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:driveWheelType ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:clutchType ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:numberOfForwardGears ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:driveWheelType ;
+            owl:onProperty cx:powertrainLayout ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:steeringWheelPosition ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
+            owl:onProperty cx:driveWheelType ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:driveWheelType ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleTransmission ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:clutchType ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty cx:numberOfForwardGears ;
             owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:driveWheelType ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:driveWheelType ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:steeringType ;
+            owl:someValuesFrom xsd:string ],
         cx:VehicleInformation ;
     skos:prefLabel "Vehicle Powertrain Information"@en .
 
@@ -2389,30 +2389,6 @@ cx:VehicleRegistrationInformation a owl:Class ;
         <https://en.wikipedia.org/wiki/Vehicle_register>,
         <https://en.wikipedia.org/wiki/Vehicle_registration_certificate> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:vehicleTypeCodeNumber ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleRegistrationPlate ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleRegistrationOwner ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleRegistrationPlate ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleRegistrationPlate ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleRegistrationLocation ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleRegistrationPlate ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleRegistrationPlate ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:vehicleRegistrationPlate ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
@@ -2425,28 +2401,52 @@ cx:VehicleRegistrationInformation a owl:Class ;
             owl:onProperty cx:vehicleRegistrationPlate ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
+            owl:onProperty cx:vehicleTypeCodeNumber ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleRegistrationPlate ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleRegistrationPlate ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleRegistrationPlate ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleRegistrationPlate ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:manufacturerKeyNumber ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleRegistrationPlate ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleRegistrationOwner ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleTypeCodeNumber ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleRegistrationPlate ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleRegistrationPlate ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleRegistrationPlate ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:manufacturerKeyNumber ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty cx:vehicleRegistrationPlate ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleRegistrationDate ;
             owl:someValuesFrom xsd:date ],
         [ a owl:Restriction ;
-            owl:onProperty cx:manufacturerKeyNumber ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleRegistrationPlate ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleRegistrationPlate ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:manufacturerKeyNumber ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleRegistrationPlate ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleTypeCodeNumber ;
+            owl:onProperty cx:vehicleRegistrationLocation ;
             owl:someValuesFrom xsd:string ],
         cx:VehicleInformation ;
     skos:note "EU directive 1999/37/EC"@en ;
@@ -2455,25 +2455,25 @@ cx:VehicleRegistrationInformation a owl:Class ;
 cx:VehicleSuspensionInformation a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_information_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:rearSuspension ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:rim ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:tire ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:frontSuspension ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:assistanceSystem ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:rearSpringType ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
+            owl:onProperty cx:frontSuspension ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty cx:frontSpringType ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:rim ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:rearSuspension ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:assistanceSystem ;
             owl:someValuesFrom xsd:string ],
         cx:VehicleInformation ;
     skos:prefLabel "Vehicle Suspension Information"@en .
@@ -2481,31 +2481,31 @@ cx:VehicleSuspensionInformation a owl:Class ;
 cx:WorldManufacturerIdentifier a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_information_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:worldManufacturerCountry ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:worldManufacturerName ;
+            owl:onProperty cx:worldManufacturerId ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:worldManufacturerRegion ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:worldManufacturerName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:worldManufacturerName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:worldManufacturerId ;
+            owl:onProperty cx:worldManufacturerCountry ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:sameAs ;
             owl:someValuesFrom cx:BusinessPartner ],
         [ a owl:Restriction ;
+            owl:onProperty cx:worldManufacturerRegion ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty cx:worldManufacturerId ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:worldManufacturerRegion ;
+            owl:onProperty cx:worldManufacturerName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:worldManufacturerName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:worldManufacturerName ;
             owl:someValuesFrom xsd:string ],
         cx:VehicleInformation ;
     skos:definition "The company that produced the vehicle encoded in the VIN."@en ;
@@ -2543,7 +2543,7 @@ cx:grossVehicleMass a owl:DatatypeProperty ;
         "GVWR"@en,
         "Gross Vehicle Weight Rating"@en,
         "gross vehicle mass"@en ;
-    skos:example "1300.0"@en ;
+    skos:example "1300"@en ;
     skos:note "in kilogramms"@en ;
     skos:prefLabel "zulässiges Gesamtgewicht"@de,
         "Gross Vehicle Mass"@en .
@@ -2590,16 +2590,16 @@ cx:FuelType a owl:Class ;
 cx:VehiclePerformanceInformation a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_information_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:vehicleBreaking ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:electricRangeWltp ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
             owl:onProperty cx:electricRange ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
-            owl:onProperty cx:stationaryNoise ;
+            owl:onProperty cx:roadNoise ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleMaxSpeed ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleAcceleration ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleRangeWltp ;
@@ -2608,13 +2608,13 @@ cx:VehiclePerformanceInformation a owl:Class ;
             owl:onProperty cx:vehicleRange ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleAcceleration ;
+            owl:onProperty cx:electricRangeWltp ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
-            owl:onProperty cx:roadNoise ;
+            owl:onProperty cx:stationaryNoise ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleMaxSpeed ;
+            owl:onProperty cx:vehicleBreaking ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleAcceleration ;
@@ -2637,7 +2637,10 @@ cx:BodyStyle a owl:Class ;
 cx:VehicleFuelInformation a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_information_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:fuelConsumptionCombined ;
+            owl:onProperty cx:fuelConsumptionHighway ;
+            owl:someValuesFrom xsd:double ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:fuelConsumptionCity ;
             owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
             owl:onProperty cx:euEnergyLabel ;
@@ -2649,38 +2652,11 @@ cx:VehicleFuelInformation a owl:Class ;
             owl:onProperty cx:fuelConsumptionHighway ;
             owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
-            owl:onProperty cx:emissionClass ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:fuelConsumptionCity ;
-            owl:someValuesFrom xsd:double ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:fuelConsumptionCity ;
-            owl:someValuesFrom xsd:double ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:fuelConsumptionCombined ;
-            owl:someValuesFrom xsd:double ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:euEnergyLabel ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:euEnergyLabel ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:adblueTankCapacity ;
-            owl:someValuesFrom xsd:double ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:fuelTankCapacity ;
-            owl:someValuesFrom xsd:double ],
-        [ a owl:Restriction ;
             owl:onProperty cx:co2EmissionsWltp ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
-            owl:onProperty cx:emissionClass ;
+            owl:onProperty cx:euEnergyLabel ;
             owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:fuelConsumptionCombined ;
-            owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
             owl:onProperty cx:co2Emissions ;
             owl:someValuesFrom xsd:integer ],
@@ -2688,20 +2664,41 @@ cx:VehicleFuelInformation a owl:Class ;
             owl:onProperty cx:euEnergyLabel ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:fuelConsumptionHighway ;
+            owl:onProperty cx:fuelConsumptionCity ;
             owl:someValuesFrom xsd:double ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:euEnergyLabel ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:euEnergyLabel ;
-            owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:fuelConsumptionCity ;
             owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
+            owl:onProperty cx:fuelTankCapacity ;
+            owl:someValuesFrom xsd:double ],
+        [ a owl:Restriction ;
             owl:onProperty cx:euEnergyLabel ;
             owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:emissionClass ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:emissionClass ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:euEnergyLabel ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:fuelConsumptionCombined ;
+            owl:someValuesFrom xsd:double ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:euEnergyLabel ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:fuelType ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:fuelConsumptionHighway ;
+            owl:someValuesFrom xsd:double ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:fuelConsumptionCity ;
+            owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
             owl:onProperty cx:euEnergyLabel ;
             owl:someValuesFrom xsd:string ],
@@ -2712,29 +2709,32 @@ cx:VehicleFuelInformation a owl:Class ;
             owl:onProperty cx:fuelConsumptionCombined ;
             owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
-            owl:onProperty cx:fuelType ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:euEnergyLabel ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:fuelConsumptionCity ;
+            owl:onProperty cx:fuelConsumptionCombined ;
             owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
             owl:onProperty cx:euEnergyLabel ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
+            owl:onProperty cx:euEnergyLabel ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty cx:fuelType ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:euEnergyLabel ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:euEnergyLabel ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:fuelConsumptionHighway ;
+            owl:onProperty cx:fuelConsumptionCombined ;
             owl:someValuesFrom xsd:double ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:euEnergyLabel ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:adblueTankCapacity ;
+            owl:someValuesFrom xsd:double ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:euEnergyLabel ;
+            owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:fuelEfficiency ;
             owl:someValuesFrom xsd:double ],
@@ -2743,55 +2743,43 @@ cx:VehicleFuelInformation a owl:Class ;
     skos:prefLabel "Vehicle Fuel Information"@en .
 
 cx:Vehicle rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cx:hasVehicleModel ;
+            owl:someValuesFrom cx:VehicleModel ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:hasVehicleBrand ;
+            owl:someValuesFrom cx:VehicleBrand ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:hasVehicleManufacturer ;
+            owl:someValuesFrom cx:VehicleManufacturer ],
+        [ a owl:Restriction ;
             owl:onProperty cx:hasTransmissionType ;
             owl:someValuesFrom cx:TransmissionType ],
         [ a owl:Restriction ;
             owl:onProperty cx:hasBodyStyle ;
             owl:someValuesFrom cx:BodyStyle ],
         [ a owl:Restriction ;
-            owl:onProperty cx:hasVehicleCargo ;
-            owl:someValuesFrom cx:VehicleCargoInformation ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:hasVehicleBrand ;
-            owl:someValuesFrom cx:VehicleBrand ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:hasVehicleModel ;
-            owl:someValuesFrom cx:VehicleModel ],
-        [ a owl:Restriction ;
             owl:onProperty cx:hasWorldManufacturerIdentifier ;
             owl:someValuesFrom cx:WorldManufacturerIdentifier ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:hasVehicleManufacturer ;
-            owl:someValuesFrom cx:VehicleManufacturer ],
         [ a owl:Restriction ;
             owl:onProperty cx:isSoldAt ;
             owl:someValuesFrom cx:VehicleDealer ],
         [ a owl:Restriction ;
-            owl:onProperty cx:hasVehicleDimensions ;
-            owl:someValuesFrom cx:VehicleDimensionInformation ],
-        [ a owl:Restriction ;
             owl:onProperty cx:isVariantOf ;
-            owl:someValuesFrom cx:VehicleModel ] .
+            owl:someValuesFrom cx:VehicleModel ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:hasVehicleCargo ;
+            owl:someValuesFrom cx:VehicleCargoInformation ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:hasVehicleDimensions ;
+            owl:someValuesFrom cx:VehicleDimensionInformation ] .
 
 cx:VehicleCargoInformation a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_information_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:grossVehicleMass ;
+            owl:onProperty cx:trunkVolume ;
             owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
-            owl:onProperty cx:maxAxleLoad ;
-            owl:someValuesFrom xsd:double ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:grossVehicleMass ;
-            owl:someValuesFrom xsd:double ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:trailerWeight ;
-            owl:someValuesFrom xsd:double ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:tongueWeight ;
-            owl:someValuesFrom xsd:double ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:grossVehicleMass ;
+            owl:onProperty cx:passengerVolume ;
             owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
             owl:onProperty cx:grossVehicleMass ;
@@ -2800,10 +2788,28 @@ cx:VehicleCargoInformation a owl:Class ;
             owl:onProperty cx:maxTowingCapacity ;
             owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
-            owl:onProperty cx:weightTotal ;
+            owl:onProperty cx:grossVehicleMass ;
+            owl:someValuesFrom xsd:double ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:grossVehicleMass ;
             owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
             owl:onProperty cx:tongueWeight ;
+            owl:someValuesFrom xsd:double ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:cargoVolume ;
+            owl:someValuesFrom xsd:double ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:grossVehicleMass ;
+            owl:someValuesFrom xsd:double ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:maxAxleLoad ;
+            owl:someValuesFrom xsd:double ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:tongueWeight ;
+            owl:someValuesFrom xsd:double ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:weightTotal ;
             owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
             owl:onProperty cx:maxPayload ;
@@ -2815,16 +2821,10 @@ cx:VehicleCargoInformation a owl:Class ;
             owl:onProperty cx:grossVehicleMass ;
             owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
-            owl:onProperty cx:trunkVolume ;
-            owl:someValuesFrom xsd:double ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:cargoVolume ;
-            owl:someValuesFrom xsd:double ],
-        [ a owl:Restriction ;
             owl:onProperty cx:grossVehicleMass ;
             owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
-            owl:onProperty cx:passengerVolume ;
+            owl:onProperty cx:trailerWeight ;
             owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
             owl:onProperty cx:grossVehicleMass ;
@@ -2835,43 +2835,43 @@ cx:VehicleCargoInformation a owl:Class ;
 cx:VehicleDimensionInformation a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_information_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:vehicleWheelbase ;
-            owl:someValuesFrom xsd:double ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDryWeight ;
+            owl:onProperty cx:frontBrakeDiscDiameter ;
             owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleWeight ;
             owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleWheelbase ;
+            owl:onProperty cx:vehicleWeight ;
             owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleTurningRadius ;
             owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleLength ;
-            owl:someValuesFrom xsd:double ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:frontBrakeDiscDiameter ;
-            owl:someValuesFrom xsd:double ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:frontBrakeDiscDiameter ;
-            owl:someValuesFrom xsd:double ],
-        [ a owl:Restriction ;
             owl:onProperty cx:vehicleGroundClearance ;
-            owl:someValuesFrom xsd:double ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleCurbWeight ;
-            owl:someValuesFrom xsd:double ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleWeight ;
             owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleHeight ;
             owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDryWeight ;
+            owl:someValuesFrom xsd:double ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:frontBrakeDiscDiameter ;
+            owl:someValuesFrom xsd:double ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleCurbWeight ;
+            owl:someValuesFrom xsd:double ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleLength ;
+            owl:someValuesFrom xsd:double ],
+        [ a owl:Restriction ;
             owl:onProperty cx:vehicleWidth ;
+            owl:someValuesFrom xsd:double ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleWheelbase ;
+            owl:someValuesFrom xsd:double ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleWheelbase ;
             owl:someValuesFrom xsd:double ],
         cx:VehicleInformation ;
     skos:prefLabel "Dimensions"@en .
@@ -2879,14 +2879,14 @@ cx:VehicleDimensionInformation a owl:Class ;
 cx:VehicleProductionInformation a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_information_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:listPrice ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:purchasePrice ;
-            owl:someValuesFrom xsd:integer ],
+            owl:onProperty cx:vehicleDeliveryDate ;
+            owl:someValuesFrom xsd:date ],
         [ a owl:Restriction ;
             owl:onProperty cx:listPrice ;
             owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleProductionDate ;
+            owl:someValuesFrom xsd:date ],
         [ a owl:Restriction ;
             owl:onProperty cx:listPrice ;
             owl:someValuesFrom xsd:integer ],
@@ -2894,11 +2894,11 @@ cx:VehicleProductionInformation a owl:Class ;
             owl:onProperty cx:vehicleAssemblyCountry ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleCountryOption ;
-            owl:someValuesFrom xsd:string ],
+            owl:onProperty cx:listPrice ;
+            owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleOrderDate ;
-            owl:someValuesFrom xsd:date ],
+            owl:onProperty cx:listPrice ;
+            owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleCountryOption ;
             owl:someValuesFrom xsd:string ],
@@ -2909,26 +2909,14 @@ cx:VehicleProductionInformation a owl:Class ;
             owl:onProperty cx:vehicleProductionYear ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleProductionDate ;
-            owl:someValuesFrom xsd:date ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDeliveryDate ;
-            owl:someValuesFrom xsd:date ],
-        [ a owl:Restriction ;
             owl:onProperty cx:deliveryPrice ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:listPrice ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehiclePurchaseDate ;
             owl:someValuesFrom xsd:date ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleCountryOption ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDeliveryCountry ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:listPrice ;
-            owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleAssemblyPlant ;
             owl:someValuesFrom xsd:string ],
@@ -2936,11 +2924,23 @@ cx:VehicleProductionInformation a owl:Class ;
             owl:onProperty cx:listPrice ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
-            owl:onProperty cx:listPrice ;
-            owl:someValuesFrom xsd:integer ],
+            owl:onProperty cx:vehicleCountryOption ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleCountryOption ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleOrderDate ;
+            owl:someValuesFrom xsd:date ],
         [ a owl:Restriction ;
             owl:onProperty cx:listPrice ;
             owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:purchasePrice ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDeliveryCountry ;
+            owl:someValuesFrom xsd:string ],
         cx:VehicleInformation ;
     skos:prefLabel "Vehicle Production Information"@en .
 
@@ -3007,6 +3007,93 @@ cx:vehicleRegistrationPlate a owl:DatatypeProperty ;
 cx:VehicleModel a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_information_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelVariant ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModel ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelVariant ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelVariant ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelVariant ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:previousVehicleModel ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelEndOfProduction ;
+            owl:someValuesFrom xsd:date ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleBrand ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelVariant ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty cx:vehicleModelVariant ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
@@ -3016,49 +3103,43 @@ cx:VehicleModel a owl:Class ;
             owl:onProperty cx:vehicleModelSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleModelVariant ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleModelStartOfProduction ;
             owl:someValuesFrom xsd:date ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModel ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelGeneration ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleBrand ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelVariant ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelVariant ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleDevelopmentSeries ;
@@ -3067,7 +3148,25 @@ cx:VehicleModel a owl:Class ;
             owl:onProperty cx:vehicleModelSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelVariant ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleDevelopmentSeries ;
@@ -3076,7 +3175,28 @@ cx:VehicleModel a owl:Class ;
             owl:onProperty cx:vehicleDevelopmentSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelVariant ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleModelArchitecture ;
@@ -3085,49 +3205,16 @@ cx:VehicleModel a owl:Class ;
             owl:onProperty cx:vehicleModelSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModel ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelVariant ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:vehicleDevelopmentSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleModelSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelVariant ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:vehicleModelSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleBrand ;
@@ -3136,8 +3223,110 @@ cx:VehicleModel a owl:Class ;
             owl:onProperty cx:vehicleModelSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelEndOfProduction ;
-            owl:someValuesFrom xsd:date ],
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelVariant ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModel ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModel ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModel ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModel ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelVariant ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelVariant ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleModel ;
             owl:someValuesFrom xsd:string ],
@@ -3151,157 +3340,7 @@ cx:VehicleModel a owl:Class ;
             owl:onProperty cx:vehicleModelSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleBrand ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:vehicleModelVariant ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelVariant ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelVariant ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModel ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelVariant ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelVariant ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelVariant ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleModelGeneration ;
@@ -3313,6 +3352,21 @@ cx:VehicleModel a owl:Class ;
             owl:onProperty cx:vehicleModelSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModel ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty cx:vehicleDevelopmentSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
@@ -3323,6 +3377,108 @@ cx:VehicleModel a owl:Class ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelVariant ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelVariant ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelVariant ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelVariant ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleDevelopmentSeries ;
@@ -3337,268 +3493,22 @@ cx:VehicleModel a owl:Class ;
             owl:onProperty cx:vehicleDevelopmentSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:vehicleModelSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelVariant ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelVariant ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelVariant ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleBrand ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelVariant ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModel ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleBrand ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModel ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelVariant ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleBrand ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:vehicleModelVariant ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleModelSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelVariant ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModel ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModel ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelVariant ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelVariant ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleModelSeries ;
@@ -3607,24 +3517,57 @@ cx:VehicleModel a owl:Class ;
             owl:onProperty cx:vehicleModelGeneration ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelVariant ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelVariant ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelVariant ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty cx:vehicleModel ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelVariant ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:vehicleDevelopmentSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
@@ -3634,46 +3577,31 @@ cx:VehicleModel a owl:Class ;
             owl:onProperty cx:vehicleModelSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelVariant ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelGeneration ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModelSeries ;
+            owl:onProperty cx:vehicleModel ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleBrand ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty cx:vehicleDevelopmentSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModel ;
+            owl:onProperty cx:vehicleModelSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:previousVehicleModel ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleModel ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleDevelopmentSeries ;
@@ -3691,7 +3619,52 @@ cx:VehicleModel a owl:Class ;
             owl:onProperty cx:vehicleModelSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelVariant ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelVariant ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModel ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleModelSeries ;
@@ -3700,19 +3673,40 @@ cx:VehicleModel a owl:Class ;
             owl:onProperty cx:vehicleModelVariant ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
+            owl:onProperty cx:vehicleBrand ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty cx:vehicleModelSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleModelSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:onProperty cx:vehicleModelSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleDevelopmentSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModel ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleModelSeries ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleDevelopmentSeries ;
@@ -3722,6 +3716,12 @@ cx:VehicleModel a owl:Class ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleModelSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDevelopmentSeries ;
             owl:someValuesFrom xsd:string ],
         cx:VehicleInformation ;
     skos:altLabel "general information"@en ;
@@ -3730,59 +3730,62 @@ cx:VehicleModel a owl:Class ;
 cx:VehicleEngineInformation a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_information_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:engineForm ;
+            owl:onProperty cx:numberOfValves ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:engineTypeCode ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:engineFuelInjection ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:engineManufacturer ;
+            owl:onProperty cx:enginePosition ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:engineFamily ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:engineForm ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:enginePerformanceClass ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:engineFuelInjection ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:enginePerformanceClass ;
+            owl:onProperty cx:engineGeneration ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:engineMaxTorque ;
+            owl:someValuesFrom xsd:double ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:engineMaxTorque ;
+            owl:someValuesFrom xsd:double ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:enginePosition ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:enginePosition ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:engineDisplacement ;
             owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
-            owl:onProperty cx:engineAspiration ;
+            owl:onProperty cx:engineFamily ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:engineVersion ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:engineAlignment ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:engineFamily ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:engineGeneration ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:engineName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:numberOfCylinders ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
-            owl:onProperty cx:engineGeneration ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:engineTypeCode ;
-            owl:someValuesFrom xsd:string ],
+            owl:onProperty cx:numberOfCylinders ;
+            owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
             owl:onProperty cx:engineForm ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:numberOfCylinders ;
-            owl:someValuesFrom xsd:integer ],
+            owl:onProperty cx:engineManufacturer ;
+            owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:engineAspiration ;
             owl:someValuesFrom xsd:string ],
@@ -3790,11 +3793,65 @@ cx:VehicleEngineInformation a owl:Class ;
             owl:onProperty cx:numberOfCylinders ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
-            owl:onProperty cx:enginePosition ;
+            owl:onProperty cx:engineManufacturer ;
             owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:engineAlignment ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:enginePerformanceClass ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:numberOfCylinders ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:numberOfCylinders ;
+            owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
             owl:onProperty cx:engineMaxPower ;
             owl:someValuesFrom xsd:double ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:enginePerformanceClass ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:engineAspiration ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:engineName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:engineForm ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:engineSeries ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:enginePerformanceClass ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:engineName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:engineForm ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:engineFamily ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:numberOfCylinders ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:engineForm ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:engineManufacturer ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:camshaftValvetrainConfiguration ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:engineGeneration ;
+            owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:bore ;
             owl:someValuesFrom xsd:double ],
@@ -3802,89 +3859,32 @@ cx:VehicleEngineInformation a owl:Class ;
             owl:onProperty cx:engineForm ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:engineFamily ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:enginePosition ;
+            owl:onProperty cx:engineForm ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:stroke ;
             owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
-            owl:onProperty cx:numberOfValves ;
-            owl:someValuesFrom xsd:integer ],
+            owl:onProperty cx:engineCompressionRatio ;
+            owl:someValuesFrom xsd:double ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:engineForm ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:engineFuelInjection ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:engineManufacturer ;
+            owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:engineDisplacement ;
             owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
-            owl:onProperty cx:engineSeries ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:engineAlignment ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:engineFamily ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:engineManufacturer ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:engineManufacturer ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:numberOfCylinders ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
             owl:onProperty cx:engineForm ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:engineCompressionRatio ;
-            owl:someValuesFrom xsd:double ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:engineManufacturer ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:enginePerformanceClass ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:enginePosition ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:numberOfCylinders ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:engineAlignment ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:engineForm ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:engineVersion ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:engineGeneration ;
             owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:engineForm ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:camshaftValvetrainConfiguration ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:numberOfCylinders ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:engineName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:engineMaxTorque ;
-            owl:someValuesFrom xsd:double ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:engineForm ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:engineMaxTorque ;
-            owl:someValuesFrom xsd:double ],
         cx:VehicleInformation ;
     skos:definition "Information about the engine or engines of the vehicle."@en ;
     skos:prefLabel "Vehicle Engine Information"@en .
@@ -3975,7 +3975,7 @@ cx:vehicleModelSeries a owl:DatatypeProperty ;
 <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_information_ontology.ttl> a owl:Ontology ;
     dc:contributor "Rolf Bosse, Jörg Schulz" ;
     dc:creator "Zazralt Magic" ;
-    dc:date "2022-11-10"^^xsd:date ;
+    dc:date "2022-11-25"^^xsd:date ;
     dc:description "The vehicle information ontology contains the product master data." ;
     dc:title "Vehicle Information Ontology" ;
     owl:imports <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl>,

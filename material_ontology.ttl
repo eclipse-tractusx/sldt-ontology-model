@@ -544,20 +544,20 @@ cx:EngineeringMaterial a owl:Class ;
             owl:onProperty cx:isMadeOf ;
             owl:someValuesFrom cx:RawMaterial ],
         [ a owl:Restriction ;
-            owl:onProperty cx:contains ;
-            owl:someValuesFrom cx:RawMaterial ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:isPartOf ;
-            owl:someValuesFrom cx:Product ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:engineeringMaterialNumber ;
-            owl:someValuesFrom xsd:string ],
+            owl:onProperty cx:participatesIn ;
+            owl:someValuesFrom cx:Process ],
         [ a owl:Restriction ;
             owl:onProperty cx:engineeringMaterialName ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:participatesIn ;
-            owl:someValuesFrom cx:Process ],
+            owl:onProperty cx:contains ;
+            owl:someValuesFrom cx:RawMaterial ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:engineeringMaterialNumber ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:isPartOf ;
+            owl:someValuesFrom cx:Product ],
         cx:IntermediateProduct ;
     skos:altLabel "engineered material"@en,
         "engineering material"@en,
@@ -611,7 +611,7 @@ cx:RawMaterial a owl:Class ;
 
 <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/material_ontology.ttl> a owl:Ontology ;
     dc:creator "Zazralt Magic" ;
-    dc:date "2022-11-10"^^xsd:date ;
+    dc:date "2022-11-25"^^xsd:date ;
     dc:description "Material ontology in the context of supply and value chain of the automotive industry. Exchange of material information and knowledge." ;
     dc:title "Material Ontology" ;
     owl:imports <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl> ;

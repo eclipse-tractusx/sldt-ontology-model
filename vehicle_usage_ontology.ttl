@@ -150,7 +150,7 @@ cx:mileage a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_usage_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx:integer ;
-    skos:example "123.0"@en ;
+    skos:example "123"@en ;
     skos:note "in kilometers"@en ;
     skos:prefLabel "Kilometerstand"@de,
         "Mileage"@en .
@@ -180,35 +180,35 @@ cx:VehicleEnvironment a owl:Class ;
 cx:VehicleUsage a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_usage_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:maxSpeed ;
+            owl:onProperty cx:maxRotationalSpeed ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
-            owl:onProperty cx:maxRotationalSpeed ;
+            owl:onProperty cx:mileage ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:maxDeceleration ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
             owl:onProperty cx:fuelConsumption ;
             owl:someValuesFrom xsd:double ],
         [ a owl:Restriction ;
-            owl:onProperty cx:mileage ;
+            owl:onProperty cx:mileageDate ;
+            owl:someValuesFrom xsd:date ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:maxSpeed ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
             owl:onProperty cx:gearSwitching ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:maxDeceleration ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
             owl:onProperty cx:maxAcceleration ;
             owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:mileageDate ;
-            owl:someValuesFrom xsd:date ],
         cx:Event ;
     skos:prefLabel "Vehicle Usage"@en .
 
 <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_usage_ontology.ttl> a owl:Ontology ;
     dc:creator "Zazralt Magic" ;
-    dc:date "2022-11-10"^^xsd:date ;
+    dc:date "2022-11-25"^^xsd:date ;
     dc:title "Vehicle Usage Ontology" ;
     owl:imports <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl> ;
     owl:versionInfo "0.0.1" .
