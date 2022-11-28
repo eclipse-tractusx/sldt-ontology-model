@@ -10,6 +10,7 @@ Note: Ontology file names are written in snake_case and contain the **domain nam
 by the suffix '**_ontology**', hence follow the convention _domain_ontology_.
 
 ## Create classes, relations and attributes
+![ontology_creation](https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/ontology_tables/ontology_image.png)
 Now open the ontology table file and start creating the classes, relations and attributes.
 
 ### Add Metadata

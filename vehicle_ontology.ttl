@@ -820,10 +820,10 @@ cx:TruckDriver a owl:Class ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Truck_driver> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty cx:drives ;
-            owl:someValuesFrom cx:Truck ],
+            owl:someValuesFrom cx:Van ],
         [ a owl:Restriction ;
             owl:onProperty cx:drives ;
-            owl:someValuesFrom cx:Van ],
+            owl:someValuesFrom cx:Truck ],
         cx:Driver ;
     skos:prefLabel "Lastwagenfahrer"@de,
         "Truck Driver"@en .
@@ -1281,13 +1281,58 @@ cx:Vehicle a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_ontology.ttl> ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Motor_vehicle> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cx:vehicleTypeCode ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleIdentificationNumber ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDescription ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:drivesOn ;
+            owl:someValuesFrom cx:Road ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleTypeCode ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:isMadeBy ;
+            owl:someValuesFrom cx:VehicleManufacturer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleIdentificationNumber ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:transports ;
+            owl:someValuesFrom cx:Passenger ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleTypeCode ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleIdentificationNumber ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty cx:vehicleIdentificationNumber ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleIdentificationNumber ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleSpecialUsage ;
+            owl:onProperty cx:vehicleIdentificationNumber ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleIdentificationNumber ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:drivesOn ;
+            owl:someValuesFrom cx:Road ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleIdentificationNumber ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleIdentificationNumber ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleIdentificationNumber ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleIdentificationNumber ;
@@ -1299,56 +1344,11 @@ cx:Vehicle a owl:Class ;
             owl:onProperty cx:vehicleConfiguration ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleIdentificationNumber ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:transports ;
-            owl:someValuesFrom cx:Passenger ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleIdentificationNumber ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:isMadeBy ;
-            owl:someValuesFrom cx:VehicleManufacturer ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleIdentificationNumber ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDescription ;
+            owl:onProperty cx:vehicleSpecialUsage ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:hasEuroCarSegment ;
             owl:someValuesFrom cx:EuroCarSegment ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleTypeCode ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleIdentificationNumber ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:drivesOn ;
-            owl:someValuesFrom cx:Road ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleIdentificationNumber ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleTypeCode ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleTypeCode ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleIdentificationNumber ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:drivesOn ;
-            owl:someValuesFrom cx:Road ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleIdentificationNumber ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleIdentificationNumber ;
-            owl:someValuesFrom xsd:string ],
         cx:FinalProduct ;
     skos:altLabel "KFZ"@de,
         "Kraftfahrzeug"@de,
@@ -1369,7 +1369,7 @@ cx:Vehicle a owl:Class ;
 <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_ontology.ttl> a owl:Ontology ;
     dc:contributor "Rolf Bosse, Jörg Schulz" ;
     dc:creator "Zazralt Magic" ;
-    dc:date "2022-11-25"^^xsd:date ;
+    dc:date "2022-11-28"^^xsd:date ;
     dc:description "Ontology for vehicles in the automotive industry." ;
     dc:title "Vehicle Ontology" ;
     owl:imports <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl>,

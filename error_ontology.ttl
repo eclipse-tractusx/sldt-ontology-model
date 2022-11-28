@@ -347,16 +347,16 @@ cx:VehicleError a owl:Class ;
             owl:someValuesFrom cx:Vehicle ],
         [ a owl:Restriction ;
             owl:onProperty cx:isInvolvedIn ;
-            owl:someValuesFrom cx:VehicleComponent ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:isInvolvedIn ;
             owl:someValuesFrom cx:DiagnosticTroubleCode ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:isInvolvedIn ;
-            owl:someValuesFrom cx:Part ],
         [ a owl:Restriction ;
             owl:onProperty cx:errorMileage ;
             owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:isInvolvedIn ;
+            owl:someValuesFrom cx:VehicleComponent ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:isInvolvedIn ;
+            owl:someValuesFrom cx:Part ],
         cx:Error ;
     skos:prefLabel "Fahrzeugfehler"@de,
         "Vehicle Error"@en .
@@ -365,14 +365,8 @@ cx:Error a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/error_ontology.ttl> ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Error> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:errorId ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:isDefinedBy ;
-            owl:someValuesFrom cx:BusinessPartner ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:errorClass ;
-            owl:someValuesFrom xsd:string ],
+            owl:onProperty cx:errorStartDate ;
+            owl:someValuesFrom xsd:date ],
         [ a owl:Restriction ;
             owl:onProperty cx:isTypedBy ;
             owl:someValuesFrom cx:ErrorType ],
@@ -383,29 +377,35 @@ cx:Error a owl:Class ;
             owl:onProperty cx:errorId ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:errorDescription ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:hasSolution ;
             owl:someValuesFrom cx:ErrorSolution ],
         [ a owl:Restriction ;
-            owl:onProperty cx:errorName ;
+            owl:onProperty cx:errorClass ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:errorStartDate ;
-            owl:someValuesFrom xsd:date ],
+            owl:onProperty cx:errorDescription ;
+            owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:isCausedBy ;
-            owl:someValuesFrom cx:ErrorCause ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:isLocatedIn ;
-            owl:someValuesFrom cx:ErrorPosition ],
+            owl:onProperty cx:errorId ;
+            owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:hasEffect ;
             owl:someValuesFrom cx:ErrorEffect ],
         [ a owl:Restriction ;
             owl:onProperty cx:isLocatedIn ;
+            owl:someValuesFrom cx:ErrorPosition ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:isCausedBy ;
+            owl:someValuesFrom cx:ErrorCause ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:isLocatedIn ;
             owl:someValuesFrom cx:ErrorLocation ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:errorName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:isDefinedBy ;
+            owl:someValuesFrom cx:BusinessPartner ],
         cx:ImmaterialThing ;
     skos:altLabel "defect"@en,
         "failure"@en,
@@ -418,7 +418,7 @@ cx:Error a owl:Class ;
 
 <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/error_ontology.ttl> a owl:Ontology ;
     dc:creator "Zazralt Magic" ;
-    dc:date "2022-11-25"^^xsd:date ;
+    dc:date "2022-11-28"^^xsd:date ;
     dc:title "Error Ontology" ;
     owl:imports <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl> ;
     owl:versionInfo "0.0.1" .

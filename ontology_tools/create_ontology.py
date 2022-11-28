@@ -67,7 +67,7 @@ def get_ontology_list(tables_path, file_ext='csv'):
     print('# found nfiles:', len(files))
     return ontology_list
 
-def convert_table_file(ontology, file_ext): # convert_ontology('vehice_component')
+def convert_table_file(ontology, file_ext='xlsx'): # convert_ontology('vehice_component')
     ontology = ontology.replace(' ', '_')
     df = pd.read_excel(tables_path+'/'+ontology+'_ontology.'+file_ext, dtype=str).dropna(how='all').fillna('')  # necessary
     ttl_file = ontology_path + '/' + ontology + '_ontology.ttl'

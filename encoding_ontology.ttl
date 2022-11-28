@@ -131,22 +131,22 @@ cx:translates a owl:ObjectProperty ;
 cx:VariableLengthToken a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/encoding_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cx:tokenMinLength ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
             owl:onProperty cx:tokenMaxLength ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
             owl:onProperty cx:tokenMaxLength ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:tokenMinLength ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:tokenMinLength ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
             owl:onProperty cx:tokeSeparator ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
             owl:onProperty cx:tokenMaxLength ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:tokenMinLength ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
             owl:onProperty cx:tokenMinLength ;
@@ -217,11 +217,11 @@ cx:tokenOrder a owl:DatatypeProperty ;
 cx:TokenDictionary a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/encoding_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:tokenKey ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:translates ;
             owl:someValuesFrom cx:Token ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:tokenKey ;
+            owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:tokenValue ;
             owl:someValuesFrom xsd:string ],
@@ -250,29 +250,29 @@ cx:Encoding a owl:Class ;
             owl:onProperty cx:encodingRange ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:numberOfTokens ;
-            owl:someValuesFrom xsd:integer ],
+            owl:onProperty cx:encodingName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:encodingStandard ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:encodingRange ;
+            owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:numberOfDigits ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
-            owl:onProperty cx:encodingRange ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:encodingRange ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:isEncodedBy ;
             owl:someValuesFrom cx:Token ],
         [ a owl:Restriction ;
-            owl:onProperty cx:encodingStandard ;
+            owl:onProperty cx:encodingRange ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:encodingExample ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:encodingName ;
-            owl:someValuesFrom xsd:string ],
+            owl:onProperty cx:numberOfTokens ;
+            owl:someValuesFrom xsd:integer ],
         cx:ImmaterialThing ;
     skos:altLabel "encoding"@en ;
     skos:definition "Information to decode the meaning of a code that is given in a string."@en ;
@@ -283,17 +283,20 @@ cx:Token a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/encoding_ontology.ttl> ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Lexical_analysis#Tokenization> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:maps ;
-            owl:someValuesFrom <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#owl:Thing> ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:tokenOrder ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:tokenOrder ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
             owl:onProperty cx:tokenRange ;
             owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:encodes ;
+            owl:someValuesFrom cx:Encoding ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:tokenOrder ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:tokenOrder ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:tokenOrder ;
+            owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
             owl:onProperty cx:tokenRange ;
             owl:someValuesFrom xsd:string ],
@@ -304,14 +307,11 @@ cx:Token a owl:Class ;
             owl:onProperty cx:tokenRange ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:encodes ;
-            owl:someValuesFrom cx:Encoding ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:tokenOrder ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
             owl:onProperty cx:tokenRange ;
             owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:maps ;
+            owl:someValuesFrom <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#owl:Thing> ],
         [ a owl:Restriction ;
             owl:onProperty cx:tokenRange ;
             owl:someValuesFrom xsd:string ],
@@ -325,7 +325,7 @@ cx:Token a owl:Class ;
 
 <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/encoding_ontology.ttl> a owl:Ontology ;
     dc:creator "Zazralt Magic" ;
-    dc:date "2022-11-25"^^xsd:date ;
+    dc:date "2022-11-28"^^xsd:date ;
     dc:description "An encoding provides information how to decode a code string, i.e. how to split its tokens and map its keys to its values." ;
     dc:title "Encoding Ontology" ;
     owl:versionInfo "0.0.1" .
