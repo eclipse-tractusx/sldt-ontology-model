@@ -5,7 +5,7 @@ Find a suitable ontology **domain name**, e.g. _vehicle test_, and create ontolo
 ```
 create_ontology_table('vehicle test', 'Max Mustermann')
 ```
-Now, the file vehicle_ontology.csv is created under the folder ontology/ontology_tables/.
+Now, the excel file vehicle_ontology.xlsx is created under the folder ontology/ontology_tables/.
 Note: Ontology file names are written in snake_case and contain the **domain name** followed
 by the suffix '**_ontology**', hence follow the convention _domain_ontology_.
 
@@ -15,7 +15,7 @@ Now open the ontology table file and start creating the classes, relations and a
 ### Add Metadata
 1. Name coauthors in **# contributor**.
 2. Name the scope of the ontology in **# description**, state also the _business questions_ here.
-3. Name other ontologies that needs to be imported in **# import**.
+3. Name other ontologies that need to be imported in **# import**.
 
 ### Create classes
 A class depicts kinds of things, it is a set of individuals and maps to data tables.
@@ -39,7 +39,7 @@ This reads then as the following triple: _engine -is part of-> vehicle_.
 Note: the relation should always contain a **verb**, so that complete, meaningful statements 
 are given by the triples.
 
-### Create attribute
+### Create attributes
 An attribute is a data field with data type that belongs to a class and maps to data columns.
 
 1. Add a new row in ontology table for a new attribute.
@@ -58,17 +58,17 @@ An annotation is a human-readable element that helps to understand the meaning o
 The names and synonyms are specified in both English and German.
 Note: Annotations are **not** necessary for relations.
 
-## Convert csv file to turtle file
+## Convert table file to turtle file
 Execute the script with the domain name:
 ```
-convert_csv_file('vehicle_test')
+convert_table_file('vehicle_test')
 ```
 Then, the file vehicle_ontology.ttl is created under the folder ontology/.
 
 # CX Ontology
-## Convert all csv files to turtle files
+## Convert all table files to turtle files
 ```
-convert_all_csv_files()
+convert_all_table_files()
 ```
 
 ## Merge ontologies to CX ontology
@@ -82,7 +82,3 @@ The merged ontology is written in the file **cx_ontology.ttl** in the folder ont
 * [**Protege**](https://protege.stanford.edu/) is an open-source ontology editor. 
 It can be used as a viewer (e.g. taxnomoy/class hierarchy).
 * [**Webvowl**](http://vowl.visualdataweb.org/webvowl.html) is an ontology viewer (editor).
-
-## CSV Editor
-* Excel
-* Numbers (OSX)
