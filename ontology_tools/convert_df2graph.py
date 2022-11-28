@@ -248,6 +248,14 @@ def convert_df2graph(df=None, mapping=None, ontology_name='', csv_file='', ttl_f
     for index, row in mapping[mapping['usage'] == 'schema'].iterrows():
         df = df.rename(columns={row['simple_name']: row['rdf_name']})
 
+    # rename column names to attributes
+    for col in df.columns:
+        if not col.__contains__(':'):
+            camel_col = col.title().replace('_', '')
+            camel_col = prefix+':'+camel_col[0].lower()+camel_col[1:]
+            print('# renaming column:',col, camel_col)
+            df = df.rename(columns={col: camel_col})
+
     # clean all columns
     for col in df.columns:
         if type(df[col][0]) == str:
