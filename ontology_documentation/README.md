@@ -68,7 +68,7 @@ relations, attributes. It corresponds to a
 | **class**      | owl:Class            | class       | class       | table   | entity type       |        |
 | **relation**   | owl:ObjectProrperty  | association | association | key     | relationship type |        |
 | **attribute**  | owl:DatatypeProperty | field       | attribute   | column  | attribute type    | field  |
-| **individual** | individual           | instance    | object,     | row     | -                 | record |
+| **individual** | individual           | instance    | object      | row     | entity            | record |
 
 #### Ontology Domain
 The **scope** of a domain-specific ontology is called **domain**. This can encompass:
@@ -84,15 +84,20 @@ Three model layers:
 ### Individual
 ### Class
 ### Relation
-domain and range
+* association, 
+* composition (part-of), 
+* aggregation (has-a), 
+* inheritance (is-a)
 
-association, composition (part-of), aggregation (has-a), inheritance (is-a)
+#### Domain of a Relation
+
+#### Range of a Relation
 
 ### Attribute
 
 ### Triple
 A triple is statement consisting of **subject**-**predicate**-**object** that is defined by [RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework).
-It is the basic unit of [triplestores](https://en.wikipedia.org/wiki/Triplestore).
+It is the basic unit of a [triplestore](https://en.wikipedia.org/wiki/Triplestore).
 
 ### Knowledge Graph
 A [knowledge graph](https://en.wikipedia.org/wiki/Knowledge_graph) is a
@@ -110,6 +115,10 @@ and LPG ([Neo4j](https://de.wikipedia.org/wiki/Neo4j), [Tinkerpop](https://tinke
 # Ontology Modelling Standards
 
 ## Language
+* bilingual (en, de)
+* use generic terms for identifiers (domain-independent)
+* use business terms for prefLabel (domain-specific)
+* specify always annotations fully (definition, example, synonyms)
 
 ## Naming Convention
 Ontology modelling is an iterative, continuous development process. It is always subject to potential changes in the
@@ -118,15 +127,15 @@ A semantic model is only useful, when it is used by someone (application integra
 
 | **convention**  |  **identifier**  |   **name_en**  |    **name_de**    |
 |-----------------|:----------------:|:--------------:|:-----------------:|
-| language        | English          | English        | German            |
-| readability     | machine-readable | human-readable | human-readable    |
-| terms           | generic terms    | business terms | business terms    |
-| character range | [A-z0-9]         | [A-z0-9 -]     | [A-z0-9 -ÄäÖöÜüß] |
-| separator       | none             | whitespace     | whitespace        |
-| class case      | PascalCase       | Title Case     | Title Case        |
-| relation case   | camelCase        | lower case     | lower case        |
-| attribute case  | camelCase        | Title Case     | Title Case        |
-| acronyms        | no               | yes            | yes               |
+| **language**        | English          | English        | German            |
+| **readability**     | machine-readable | human-readable | human-readable    |
+| **terms**           | generic terms    | business terms | business terms    |
+| **character range** | [A-z0-9]         | [A-z0-9 -]     | [A-z0-9 -ÄäÖöÜüß] |
+| **separator**       | none             | whitespace     | whitespace        |
+| **class case**      | PascalCase       | Title Case     | Title Case        |
+| **relation case**   | camelCase        | lower case     | lower case        |
+| **attribute case**  | camelCase        | Title Case     | Title Case        |
+| **acronyms**        | no               | yes            | yes               |
 
 ## Ontology Table Schema
 | **simple_name** | **rdf_name**       |
@@ -150,6 +159,8 @@ A semantic model is only useful, when it is used by someone (application integra
 ## Ontology Scoping
 * modular, reusable, non-redundant
 
+### Business Question
+
 ## Open-world assumption
 [Open-world assumption](https://en.wikipedia.org/wiki/Open-world_assumption)
 
@@ -158,8 +169,46 @@ Annotations
 
 ## Ontology Merging
 
+#### Individual Identifier
+* class + '_' + primary_key
+* mapping -> template
+
 ## Collision
 [name collision](https://en.wikipedia.org/wiki/Name_collision)
 
 ## Data Normalisation
 [Normalisation](https://en.wikipedia.org/wiki/Database_normalization) is necessary to minimise the redudnancy.
+
+## Decisions
+### Instances or Subclasses
+* cx:VehiclePlant cx:isOfType cx:PlantType_VehiclePlant
+* cx:VehiclePlant owl:subClassOf cx:Plant
+
+### Generic or Specific Relation Names
+
+### Instances or Attributes
+* cx:Vehicle cx:hasColor cx:Color_Blue
+* cx:Vehicle cx:hasColor "blue"
+
+### Generic or Specific Attributes
+* plant + id
+* plant + plant_id
+
+### Number of allowed Datatypes
+* string, integer
+* string, int, integer, ...
+
+### Everything is a Concept
+* cx:Vehicle rdf:type owl:Class; skos:Concept
+
+### Link vs. Use External Ontologies
+* cx:Person owl:equivalentClass foaf:Person
+
+### Single vs. Multiple Namespaces
+* cx vs. cx, cx-vehicle, cx-common
+
+### Open vs. Closed Compound Words
+* data set vs. dataset
+
+### Hyphenation
+* E-mail vs. Email
