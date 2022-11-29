@@ -2,13 +2,15 @@ import os
 from rdflib.namespace import RDF, RDFS, OWL, DC
 from rdflib import Graph, URIRef, Literal
 from datetime import date
+import sys
 from ontology.ontology_tools.settings import cx, cx_url, cx_file, mapping_path
 
-
-def merge_ontology(path='ontology', folder = 'ontology', file_out = 'cx_ontology.ttl'):
+def merge_ontology(path='ontology', folder = 'ontology', file_out = 'cx_ontology.ttl', files = None):
 
     # get file list
-    files = os.listdir(folder)
+    if (files is None):
+        files = os.listdir(folder)
+
     files.sort()
 
     # start
@@ -39,3 +41,5 @@ def merge_ontology(path='ontology', folder = 'ontology', file_out = 'cx_ontology
     print('# writing: ', folder+'/'+file_out)
     g.serialize(destination=folder+'/'+file_out, format='turtle')
 
+if __name__ == '__main__':
+  merge_ontology(files=sys.argv[1:])
