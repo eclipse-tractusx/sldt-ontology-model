@@ -11,7 +11,6 @@ import org.semanticweb.owlapi.formats.RDFXMLDocumentFormat;
 import org.semanticweb.owlapi.model.*;
 
 import de.uni_stuttgart.vis.vowl.owl2vowl.Owl2Vowl;
-import de.uni_stuttgart.vis.vowl.owl2vowl.converter.OntologyConverter;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
 
@@ -49,7 +48,7 @@ public class OntologyMerger {
    /** 
     * run the merge command on the given files and output the result to the console  
     * @param args a set of arguments
-    * @param printstream to use for output 
+    * @param outStream to use for output 
     */
     public void run(String[] args, PrintStream outStream) throws Exception {
       ArrayList<String> remainingArgs=new ArrayList<>();
