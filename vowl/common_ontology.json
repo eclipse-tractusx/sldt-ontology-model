@@ -17,7 +17,7 @@
     "description": {
       "undefined": "The Catena-X Common Ontology describes the Dataspace."
     },
-    "version": "0.6.4-SNAPSHOT",
+    "version": "0.7.1-SNAPSHOT",
     "author": [
       "Zazralt Magic (BMW)",
       "Oguzhan Balandi (TSY)"
