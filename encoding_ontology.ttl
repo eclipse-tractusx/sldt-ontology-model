@@ -5,6 +5,13 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+cx:maps a owl:ObjectProperty ;
+    rdfs:domain cx:Token ;
+    rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/encoding_ontology.ttl> ;
+    skos:definition "Token that maps directly to individuals of a class."@en ;
+    skos:example "part number"@en ;
+    skos:prefLabel "maps"@en .
+
 cx:FixedLengthToken a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/encoding_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -66,14 +73,6 @@ cx:isTranslatedBy a owl:ObjectProperty ;
     skos:prefLabel "wird übersetzt"@de,
         "is translated by"@en .
 
-cx:maps a owl:ObjectProperty ;
-    rdfs:domain cx:Token ;
-    rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/encoding_ontology.ttl> ;
-    rdfs:range owl:Thing ;
-    skos:definition "Token that maps directly to individuals of a class."@en ;
-    skos:example "part number"@en ;
-    skos:prefLabel "maps"@en .
-
 cx:numberOfDigits a owl:DatatypeProperty ;
     rdfs:domain cx:Encoding ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/encoding_ontology.ttl> ;
@@ -131,15 +130,6 @@ cx:translates a owl:ObjectProperty ;
 cx:VariableLengthToken a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/encoding_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:tokenMinLength ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:tokenMaxLength ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:tokenMaxLength ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
             owl:onProperty cx:tokeSeparator ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
@@ -150,6 +140,15 @@ cx:VariableLengthToken a owl:Class ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
             owl:onProperty cx:tokenMinLength ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:tokenMaxLength ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:tokenMinLength ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:tokenMaxLength ;
             owl:someValuesFrom xsd:integer ],
         cx:Token ;
     skos:definition "Token length is variable."@en ;
@@ -247,32 +246,32 @@ cx:Encoding a owl:Class ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Code>,
         <https://en.wikipedia.org/wiki/Identifier> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:encodingRange ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:encodingName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:encodingStandard ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:encodingRange ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:numberOfDigits ;
             owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:isEncodedBy ;
-            owl:someValuesFrom cx:Token ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:encodingRange ;
-            owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:encodingExample ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
+            owl:onProperty cx:isEncodedBy ;
+            owl:someValuesFrom cx:Token ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:encodingName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:encodingRange ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:encodingRange ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty cx:numberOfTokens ;
             owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:encodingRange ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:encodingStandard ;
+            owl:someValuesFrom xsd:string ],
         cx:ImmaterialThing ;
     skos:altLabel "encoding"@en ;
     skos:definition "Information to decode the meaning of a code that is given in a string."@en ;
@@ -286,14 +285,17 @@ cx:Token a owl:Class ;
             owl:onProperty cx:tokenRange ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:encodes ;
-            owl:someValuesFrom cx:Encoding ],
+            owl:onProperty cx:tokenRange ;
+            owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:tokenOrder ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
             owl:onProperty cx:tokenOrder ;
             owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:tokenRange ;
+            owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:tokenOrder ;
             owl:someValuesFrom xsd:integer ],
@@ -307,14 +309,8 @@ cx:Token a owl:Class ;
             owl:onProperty cx:tokenRange ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:tokenRange ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:maps ;
-            owl:someValuesFrom <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#owl:Thing> ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:tokenRange ;
-            owl:someValuesFrom xsd:string ],
+            owl:onProperty cx:encodes ;
+            owl:someValuesFrom cx:Encoding ],
         [ a owl:Restriction ;
             owl:onProperty cx:tokenRange ;
             owl:someValuesFrom xsd:string ],
@@ -325,7 +321,7 @@ cx:Token a owl:Class ;
 
 <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/encoding_ontology.ttl> a owl:Ontology ;
     dc:creator "Zazralt Magic" ;
-    dc:date "2022-11-28"^^xsd:date ;
+    dc:date "2023-02-11"^^xsd:date ;
     dc:description "An encoding provides information how to decode a code string, i.e. how to split its tokens and map its keys to its values." ;
     dc:title "Encoding Ontology" ;
     owl:versionInfo "0.0.1" .

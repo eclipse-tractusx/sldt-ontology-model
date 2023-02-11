@@ -1,6 +1,7 @@
 import pandas as pd
 from rdflib import Graph, URIRef, Literal, Namespace, BNode
 from ontology.ontology_tools.settings import cx_url, cx_file, mapping_path
+from ontology.ontology_tools.write_formatted_excel import write_formatted_excel
 
 def create_mapping_table(mapping_name = 'name', mapping_classes = ['vehicle']):
 
@@ -30,6 +31,11 @@ def create_mapping_table(mapping_name = 'name', mapping_classes = ['vehicle']):
     df = pd.concat([df_template, df])
 
     # write csv file
-    csv_file = mapping_path+'/'+mapping_name.lower().replace(' ', '_')+'_mapping.csv'
-    print('# writing: ', csv_file)
-    df.to_csv(csv_file, index=False)
+    # csv_file = mapping_path+'/'+mapping_name.lower().replace(' ', '_')+'_mapping.csv'
+    # print('# writing: ', csv_file)
+    # df.to_csv(csv_file, index=False)
+
+    xlsx_file = mapping_path+'/'+mapping_name.lower().replace(' ', '_')+'_mapping.xlsx'
+    print('# writing: ', xlsx_file)
+    #df.to_excel(xlsx_file, index=False)
+    write_formatted_excel(df, xlsx_file)

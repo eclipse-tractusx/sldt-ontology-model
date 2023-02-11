@@ -711,10 +711,10 @@ cx:BusDriver a owl:Class ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Bus_driver> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty cx:drives ;
-            owl:someValuesFrom cx:Bus ],
+            owl:someValuesFrom cx:Coach ],
         [ a owl:Restriction ;
             owl:onProperty cx:drives ;
-            owl:someValuesFrom cx:Coach ],
+            owl:someValuesFrom cx:Bus ],
         cx:Driver ;
     skos:prefLabel "Busfahrer"@de,
         "Bus Driver"@en .
@@ -820,10 +820,10 @@ cx:TruckDriver a owl:Class ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Truck_driver> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty cx:drives ;
-            owl:someValuesFrom cx:Van ],
+            owl:someValuesFrom cx:Truck ],
         [ a owl:Restriction ;
             owl:onProperty cx:drives ;
-            owl:someValuesFrom cx:Truck ],
+            owl:someValuesFrom cx:Van ],
         cx:Driver ;
     skos:prefLabel "Lastwagenfahrer"@de,
         "Truck Driver"@en .
@@ -1163,10 +1163,10 @@ cx:ElectricVehicle a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty cx:hasPart ;
-            owl:someValuesFrom cx:HighVoltageBattery ],
+            owl:someValuesFrom cx:ElectricMotor ],
         [ a owl:Restriction ;
             owl:onProperty cx:hasPart ;
-            owl:someValuesFrom cx:ElectricMotor ],
+            owl:someValuesFrom cx:HighVoltageBattery ],
         cx:Vehicle ;
     skos:prefLabel "Electric Vehicle"@en .
 
@@ -1284,16 +1284,10 @@ cx:Vehicle a owl:Class ;
             owl:onProperty cx:vehicleTypeCode ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleIdentificationNumber ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:vehicleDescription ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:drivesOn ;
-            owl:someValuesFrom cx:Road ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleTypeCode ;
+            owl:onProperty cx:vehicleIdentificationNumber ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:isMadeBy ;
@@ -1302,18 +1296,6 @@ cx:Vehicle a owl:Class ;
             owl:onProperty cx:vehicleIdentificationNumber ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:transports ;
-            owl:someValuesFrom cx:Passenger ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleTypeCode ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleIdentificationNumber ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleIdentificationNumber ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:vehicleIdentificationNumber ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
@@ -1326,13 +1308,34 @@ cx:Vehicle a owl:Class ;
             owl:onProperty cx:drivesOn ;
             owl:someValuesFrom cx:Road ],
         [ a owl:Restriction ;
+            owl:onProperty cx:vehicleTypeCode ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:transports ;
+            owl:someValuesFrom cx:Passenger ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:drivesOn ;
+            owl:someValuesFrom cx:Road ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:hasEuroCarSegment ;
+            owl:someValuesFrom cx:EuroCarSegment ],
+        [ a owl:Restriction ;
             owl:onProperty cx:vehicleIdentificationNumber ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleSpecialUsage ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleIdentificationNumber ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleIdentificationNumber ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleIdentificationNumber ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleTypeCode ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehicleIdentificationNumber ;
@@ -1344,11 +1347,8 @@ cx:Vehicle a owl:Class ;
             owl:onProperty cx:vehicleConfiguration ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:vehicleSpecialUsage ;
+            owl:onProperty cx:vehicleIdentificationNumber ;
             owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:hasEuroCarSegment ;
-            owl:someValuesFrom cx:EuroCarSegment ],
         cx:FinalProduct ;
     skos:altLabel "KFZ"@de,
         "Kraftfahrzeug"@de,
@@ -1369,7 +1369,7 @@ cx:Vehicle a owl:Class ;
 <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/vehicle_ontology.ttl> a owl:Ontology ;
     dc:contributor "Rolf Bosse, Jörg Schulz" ;
     dc:creator "Zazralt Magic" ;
-    dc:date "2022-11-28"^^xsd:date ;
+    dc:date "2023-02-11"^^xsd:date ;
     dc:description "Ontology for vehicles in the automotive industry." ;
     dc:title "Vehicle Ontology" ;
     owl:imports <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl>,

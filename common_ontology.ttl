@@ -891,11 +891,11 @@ cx:Employee a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl> ;
     rdfs:seeAlso schema:employee ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:worksFor ;
-            owl:someValuesFrom cx:Organisation ],
-        [ a owl:Restriction ;
             owl:onProperty cx:employeeId ;
             owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:worksFor ;
+            owl:someValuesFrom cx:Organisation ],
         cx:Person ;
     skos:prefLabel "Mitarbeiter"@de,
         "Employee"@en .
@@ -945,10 +945,10 @@ cx:IsoStandard a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl> ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/International_Organization_for_Standardization> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:isoNumber ;
+            owl:onProperty cx:isoName ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:isoName ;
+            owl:onProperty cx:isoNumber ;
             owl:someValuesFrom xsd:string ],
         cx:TechnicalStandard ;
     skos:altLabel "ISO"@en,
@@ -1079,10 +1079,10 @@ cx:EclipseDataspaceConnector a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl> ;
     rdfs:seeAlso <https://projects.eclipse.org/proposals/eclipse-dataspace-connector> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:eclipseDataspaceConnectorId ;
+            owl:onProperty cx:eclipseDataspaceConnectorUrl ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:eclipseDataspaceConnectorUrl ;
+            owl:onProperty cx:eclipseDataspaceConnectorId ;
             owl:someValuesFrom xsd:string ],
         cx:ImmaterialThing ;
     skos:altLabel "EDC"@en,
@@ -1130,17 +1130,17 @@ cx:Manufacturer a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl> ;
     rdfs:seeAlso schema:manufacturer ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:produces ;
-            owl:someValuesFrom cx:Product ],
-        [ a owl:Restriction ;
             owl:onProperty cx:isSuppliedBy ;
             owl:someValuesFrom cx:Supplier ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:manufacturerName ;
+            owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:manufacturerId ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:manufacturerName ;
-            owl:someValuesFrom xsd:string ],
+            owl:onProperty cx:produces ;
+            owl:someValuesFrom cx:Product ],
         cx:Role ;
     skos:prefLabel "Hersteller"@de,
         "Manufacturer"@en .
@@ -1155,6 +1155,9 @@ cx:Supplier a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl> ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Vendor> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cx:supplierName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty cx:suppliesTo ;
             owl:someValuesFrom cx:Manufacturer ],
         [ a owl:Restriction ;
@@ -1163,9 +1166,6 @@ cx:Supplier a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty cx:supplies ;
             owl:someValuesFrom cx:Product ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:supplierName ;
-            owl:someValuesFrom xsd:string ],
         cx:Role ;
     skos:altLabel "provider"@en,
         "seller"@en,
@@ -1178,20 +1178,20 @@ cx:BusinessPartner a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl> ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Business_partner> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:businessPartnerNumber ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:hasRole ;
             owl:someValuesFrom cx:Role ],
         [ a owl:Restriction ;
-            owl:onProperty cx:businessPartnerNumber ;
-            owl:someValuesFrom xsd:string ],
+            owl:onProperty cx:hasConnector ;
+            owl:someValuesFrom cx:EclipseDataspaceConnector ],
         [ a owl:Restriction ;
             owl:onProperty cx:businessPartnerNumberType ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:hasConnector ;
-            owl:someValuesFrom cx:EclipseDataspaceConnector ],
+            owl:onProperty cx:businessPartnerNumber ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:businessPartnerNumber ;
+            owl:someValuesFrom xsd:string ],
         cx:Company ;
     skos:altLabel "BP"@en,
         "business partner"@en ;
@@ -1216,11 +1216,11 @@ cx:TechnicalStandard a owl:Class ;
     skos:prefLabel "Technical Standard"@en .
 
 cx:Person rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:hasContact ;
-            owl:someValuesFrom cx:Contact ],
-        [ a owl:Restriction ;
             owl:onProperty cx:isMemberOf ;
             owl:someValuesFrom cx:Project ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:hasContact ;
+            owl:someValuesFrom cx:Contact ],
         [ a owl:Restriction ;
             owl:onProperty cx:makesOffer ;
             owl:someValuesFrom cx:Offer ] .
@@ -1229,25 +1229,25 @@ cx:Event rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty cx:eventName ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:eventDate ;
-            owl:someValuesFrom xsd:date ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:actionName ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:eventId ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:eventDuration ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
             owl:onProperty cx:eventLocation ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:actionId ;
+            owl:onProperty cx:eventId ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:eventType ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:eventDate ;
+            owl:someValuesFrom xsd:date ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:actionId ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:actionName ;
             owl:someValuesFrom xsd:string ] .
 
 cx:Organisation rdfs:subClassOf [ a owl:Restriction ;
@@ -1279,7 +1279,7 @@ cx:Product rdfs:subClassOf [ a owl:Restriction ;
 
 <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl> a owl:Ontology ;
     dc:creator "Zazralt Magic" ;
-    dc:date "2022-11-28"^^xsd:date ;
+    dc:date "2023-02-11"^^xsd:date ;
     dc:description "The Catena-X common ontology contains all domain-independent classes, attributes and relations." ;
     dc:title "Common Ontology" ;
     owl:imports <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/upper_ontology.ttl> ;

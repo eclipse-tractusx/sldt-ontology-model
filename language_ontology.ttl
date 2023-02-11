@@ -1393,7 +1393,7 @@ cx:Person rdfs:subClassOf [ a owl:Restriction ;
 
 <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/language_ontology.ttl> a owl:Ontology ;
     dc:creator "Zazralt Magic" ;
-    dc:date "2022-11-28"^^xsd:date ;
+    dc:date "2023-02-11"^^xsd:date ;
     dc:description "List of all languages with their ISO codes." ;
     dc:title "Language Ontology" ;
     owl:versionInfo "0.0.1" .
