@@ -5,38 +5,11 @@ from ontology.ontology_tools.settings import ontology_path, tables_path, tools_p
 from ontology.ontology_tools.convert_df2graph import convert_df2graph
 from ontology.ontology_tools.merge_ontology import merge_ontology
 from ontology.ontology_tools.convert_ontology_to_csv import convert_ontology_to_csv
+from ontology.ontology_tools.write_formatted_excel import write_formatted_excel
 
 # read mapping
 mapping = pd.read_csv(tools_path + '/rdf_mapping.csv', dtype=str).dropna(how='all')
 schema = mapping[(mapping['usage'] == 'schema') & mapping['order'].notna()]['simple_name'].to_list()
-
-def write_formatted_excel(df, file='file.xlsx', sheet_name='Sheet1', column_width=15.83):
-    writer = pd.ExcelWriter(file, engine='xlsxwriter')
-    df.to_excel(writer, sheet_name=sheet_name, index=False)
-    workbook = writer.book
-    worksheet = writer.sheets[sheet_name]
-
-    # font format
-    column_format = workbook.add_format({'font_name': 'Helvetica Neue', 'font_size': '10'})
-    worksheet.set_column(0, len(df.columns)-1, column_width, column_format)
-
-    # class format
-    class_format = workbook.add_format({'font_color': 'blue', 'bold': True})
-    class_condition = {'type': 'cell', 'criteria': 'equal to', 'value': '"class"', 'format': class_format}
-    worksheet.conditional_format('A1:A999', class_condition)
-
-    # relation format
-    relation_format = workbook.add_format({'font_color': 'orange'})
-    relation_condition = {'type': 'cell', 'criteria': 'equal to', 'value': '"relation"', 'format': relation_format}
-    worksheet.conditional_format('A1:A999', relation_condition)
-
-    # attribute format
-    attribute_format = workbook.add_format({'font_color': 'purple'})
-    attribute_condition = {'type': 'cell', 'criteria': 'equal to', 'value': '"attribute"', 'format': attribute_format}
-    worksheet.conditional_format('A1:A999', attribute_condition)
-
-    # write format
-    writer.save()
 
 def create_ontology_table(domain='test', author='Max Mustermann', version = '0.0.1'):
     header = ['# prefix', '# namespace', '# title', '# version', '# author', '# contributor',
@@ -67,7 +40,7 @@ def get_ontology_list(tables_path, file_ext='csv'):
     print('# found nfiles:', len(files))
     return ontology_list
 
-def convert_table_file(ontology, file_ext='xlsx'): # convert_ontology('vehice_component')
+def convert_table_file(ontology, file_ext='xlsx'): # convert_table_file('vehice_component')
     ontology = ontology.replace(' ', '_')
     df = pd.read_excel(tables_path+'/'+ontology+'_ontology.'+file_ext, dtype=str).dropna(how='all').fillna('')  # necessary
     ttl_file = ontology_path + '/' + ontology + '_ontology.ttl'

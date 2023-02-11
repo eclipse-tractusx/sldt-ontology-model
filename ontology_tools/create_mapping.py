@@ -2,13 +2,15 @@ from ontology.ontology_tools.settings import mapping_path, cx_url
 from ontology.ontology_tools.ontology_tools import read_numbers2df, title_to_camel, title_to_pascal
 from rdflib import Graph, URIRef, Literal, Namespace, BNode
 from rdflib.namespace import RDF
+import pandas as pd
 
 def create_mapping(mapping_file, verbose = False):
     # no subject
     table_type_list = ["SQL2008", "Parquet", "CSV", "XPath", "JSONPath"]
 
     # read csv file
-    df = read_numbers2df(mapping_file).dropna(how='all').fillna('')
+    #df = read_numbers2df(mapping_file).dropna(how='all').fillna('')
+    df = pd.read_excel(mapping_file).dropna(how='all').fillna('')
 
     CX = Namespace(cx_url)
     RR = Namespace('http://www.w3.org/ns/r2rml#')
@@ -118,6 +120,9 @@ def create_mapping(mapping_file, verbose = False):
                 graph.add((bn_condition, RR.child, Literal(foreign_key)))  # child column
                 graph.add((bn_condition, RR.parent, Literal(primary_key))) # parent column
 
+    ttl_file = 'ontology/ontology_mapping/bamm_ess_incident_1_0_0_mapping.ttl'
+    graph.serialize(destination=ttl_file, format='turtle')
+
     return graph
 
 
@@ -128,7 +133,7 @@ def create_mapping(mapping_file, verbose = False):
 # graph.serialize(destination=ttl_file, format='turtle')
 
 
-mapping_file = mapping_path+'/bmw_test_mapping.numbers'
-ttl_file = mapping_path + '/bmw_test_mapping.ttl'#'/' + ontology + '_ontology.ttl'
-graph=create_mapping(mapping_file, verbose=True)
-graph.serialize(destination=ttl_file, format='turtle')
+# mapping_file = mapping_path+'/bmw_test_mapping.numbers'
+# ttl_file = mapping_path + '/bmw_test_mapping.ttl'#'/' + ontology + '_ontology.ttl'
+# graph=create_mapping(mapping_file, verbose=True)
+# graph.serialize(destination=ttl_file, format='turtle')

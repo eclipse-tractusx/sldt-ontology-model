@@ -100,7 +100,7 @@ cx:VehicleFleetData a owl:Class ;
 
 <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/progonsis_ontology.ttl> a owl:Ontology ;
     dc:creator "Zazralt Magic" ;
-    dc:date "2022-11-28"^^xsd:date ;
+    dc:date "2023-02-11"^^xsd:date ;
     dc:title "Progonsis Ontology" ;
     owl:imports <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl>,
         <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/diagnosis_ontology.ttl> ;
@@ -308,14 +308,32 @@ cx:VehiclePrognosis a owl:Class ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Prognosis>,
         <https://en.wikipedia.org/wiki/Prognostics> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:determines ;
-            owl:someValuesFrom cx:EngineHealthCondition ],
+            owl:onProperty cx:considers ;
+            owl:someValuesFrom cx:Vehicle ],
         [ a owl:Restriction ;
-            owl:onProperty cx:recommends ;
-            owl:someValuesFrom cx:ConditionBasedMaintenance ],
+            owl:onProperty cx:considers ;
+            owl:someValuesFrom cx:VehicleComponent ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:predicts ;
+            owl:someValuesFrom cx:RemainingUsefulLifetime ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:predicts ;
+            owl:someValuesFrom cx:VehicleError ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:uses ;
+            owl:someValuesFrom cx:VehicleDiagnosis ],
         [ a owl:Restriction ;
             owl:onProperty cx:considers ;
             owl:someValuesFrom cx:VehicleSystem ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehiclePrognosisCreator ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:uses ;
+            owl:someValuesFrom cx:PredictiveModel ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:determines ;
+            owl:someValuesFrom cx:VehicleHealthCondition ],
         [ a owl:Restriction ;
             owl:onProperty cx:vehiclePrognosisId ;
             owl:someValuesFrom xsd:string ],
@@ -323,41 +341,23 @@ cx:VehiclePrognosis a owl:Class ;
             owl:onProperty cx:predicts ;
             owl:someValuesFrom cx:Failure ],
         [ a owl:Restriction ;
-            owl:onProperty cx:predicts ;
-            owl:someValuesFrom cx:RemainingUsefulLifetime ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:determines ;
-            owl:someValuesFrom cx:VehicleHealthCondition ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:recommends ;
-            owl:someValuesFrom cx:PredictiveMaintenance ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehiclePrognosisCreator ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:predicts ;
-            owl:someValuesFrom cx:Breakdown ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:uses ;
-            owl:someValuesFrom cx:VehicleDiagnosis ],
+            owl:onProperty cx:vehiclePrognosisDate ;
+            owl:someValuesFrom xsd:date ],
         [ a owl:Restriction ;
             owl:onProperty cx:determines ;
             owl:someValuesFrom cx:BatteryHealthCondition ],
         [ a owl:Restriction ;
-            owl:onProperty cx:considers ;
-            owl:someValuesFrom cx:VehicleComponent ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehiclePrognosisDate ;
-            owl:someValuesFrom xsd:date ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:considers ;
-            owl:someValuesFrom cx:Vehicle ],
-        [ a owl:Restriction ;
             owl:onProperty cx:predicts ;
-            owl:someValuesFrom cx:VehicleError ],
+            owl:someValuesFrom cx:Breakdown ],
         [ a owl:Restriction ;
-            owl:onProperty cx:uses ;
-            owl:someValuesFrom cx:PredictiveModel ],
+            owl:onProperty cx:determines ;
+            owl:someValuesFrom cx:EngineHealthCondition ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:recommends ;
+            owl:someValuesFrom cx:PredictiveMaintenance ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:recommends ;
+            owl:someValuesFrom cx:ConditionBasedMaintenance ],
         cx:Process ;
     skos:altLabel "vehicle prognostics"@en ;
     skos:definition "prediction of the time at which a system or a component will malfunction"@en ;
