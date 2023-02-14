@@ -1,0 +1,5695 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "de", "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl", "http://www.w3.org/2001/XMLSchema" ],
+    "prefixList" : {
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "cx" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#",
+      "skos" : "http://www.w3.org/2004/02/skos/core#",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "dc" : "http://purl.org/dc/elements/1.1/",
+      "xml" : "http://www.w3.org/XML/1998/namespace",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "title" : {
+      "undefined" : "Incident Ontology"
+    },
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+    "version" : "0.0.1",
+    "author" : [ "Zazralt Magic" ],
+    "description" : {
+      "undefined" : "Environmental and Social Standards (ESS)"
+    },
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2023-02-11",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Zazralt Magic",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.0.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Incident Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "188",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "191",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "193",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "195",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "205",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "104",
+    "type" : "owl:Class"
+  }, {
+    "id" : "211",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "185",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "213",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "215",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "217",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "224",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "0",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "1",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#BusinessAddress",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusinessAddress"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "3",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "4",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentCausingCompany",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Verursachende Firma",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Causing Company",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "responsible company",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Company that caused the incident.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Rubbery Ltd.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IncidentCausingCompany"
+    },
+    "attributes" : [ "external" ],
+    "id" : "18",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#MedicalTreatment",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Medical Treatment",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MedicalTreatment"
+    },
+    "attributes" : [ "external" ],
+    "id" : "25",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#BatchPart",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BatchPart"
+    },
+    "attributes" : [ "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Process",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Process"
+    },
+    "individuals" : [ {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Process_IncidentManagement",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Incident Management",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "IM is activities of an organization to identify, analyze, and correct hazards to prevent a future re-occurrence.",
+          "type" : "label"
+        } ],
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://en.wikipedia.org/wiki/Incident_management",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Process_IncidentManagement"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentAffectedCompany",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Betroffene Firma",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Affected Company",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Company that is affected by the incident.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "impacted company",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "BMW",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IncidentAffectedCompany"
+    },
+    "attributes" : [ "external" ],
+    "id" : "49",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Organisation",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organisation"
+    },
+    "attributes" : [ "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentType",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Type",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IncidentType"
+    },
+    "individuals" : [ {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentType_Burglary",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "security incident",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Burglary",
+          "type" : "label"
+        } ],
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://en.wikipedia.org/wiki/Burglary",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IncidentType_Burglary"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentType_ForcedLabour",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "labour exploitation",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Forced Labour",
+          "type" : "label"
+        } ],
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://en.wikipedia.org/wiki/Forced_labour",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IncidentType_ForcedLabour"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentType_SafetyIncident",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "workplace incident",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Safety Incident",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IncidentType_SafetyIncident"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentType_HazardousMaterialIncident",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "environmental incident",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Hazardous Material Incident",
+          "type" : "label"
+        } ],
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://en.wikipedia.org/wiki/Dangerous_goods",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IncidentType_HazardousMaterialIncident"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentType_Deforestation",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "environmental incident",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Deforestation",
+          "type" : "label"
+        } ],
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://en.wikipedia.org/wiki/Deforestation",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IncidentType_Deforestation"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentType_ChildLabour",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "labour exploitation",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Child Labour",
+          "type" : "label"
+        } ],
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://en.wikipedia.org/wiki/Child_labour",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IncidentType_ChildLabour"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentType_WorkAccident",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "workplace incident",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Arbeitsunfall",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Work Accident",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "An employee is injured and required to take time off to recover from accident.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IncidentType_WorkAccident"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentType_ThreatIncident",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "workplace incident",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Threat Incident",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IncidentType_ThreatIncident"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentType_RiskIncident",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "workplace incident",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Risk Incident",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IncidentType_RiskIncident"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentType_MinorInjury",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "workplace incident",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Minor Injury",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Arbeitsverletzung",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "de",
+          "value" : "Betriebsunfall",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "workplace accident",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "de",
+          "value" : "Berufsunfall",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "An employee is injured, but don't need to take time off to recover from minor injury.",
+          "type" : "label"
+        } ],
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://en.wikipedia.org/wiki/Work_accident",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IncidentType_MinorInjury"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentType_ChemicalIncident",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "environmental incident",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Chemical Incident",
+          "type" : "label"
+        } ],
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://en.wikipedia.org/wiki/Chemical_accident",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IncidentType_ChemicalIncident"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentType_Pollution",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "environmental incident",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Pollution",
+          "type" : "label"
+        } ],
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://en.wikipedia.org/wiki/Pollution",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IncidentType_Pollution"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentType_IllegalLogging",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "environmental incident",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Illegal Logging",
+          "type" : "label"
+        } ],
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://en.wikipedia.org/wiki/Illegal_logging",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IncidentType_IllegalLogging"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentType_UnsafeAct",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "workplace incident",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Unsafe Act",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IncidentType_UnsafeAct"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentType_WasteDisposal",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "environmental incident",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Waste Disposal",
+          "type" : "label"
+        } ],
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://en.wikipedia.org/wiki/Waste_management",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IncidentType_WasteDisposal"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentType_Sickness",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "workplace incident",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Sickness",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Krankheitsfall",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "illness",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "de",
+          "value" : "Krankheit",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IncidentType_Sickness"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentType_FatalityIncident",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "workplace incident",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Fatality Incident",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Tödlicher Unfall",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IncidentType_FatalityIncident"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentType_HumanRightsViolation",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "social incident",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Human Rights Violation",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IncidentType_HumanRightsViolation"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentType_HazardIncident",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "workplace incident",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Hazard Incident",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IncidentType_HazardIncident"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentType_WorkingCondition",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "social incident",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Working Condition",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IncidentType_WorkingCondition"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentType_Theft",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "security incident",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Theft",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IncidentType_Theft"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentType_NearMiss",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "workplace incident",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Near Miss",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Beinaheunfall",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "near hit",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "close call",
+          "type" : "label"
+        } ],
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://en.wikipedia.org/wiki/Near_miss_",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IncidentType_NearMiss"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentType_Loss",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "security incident",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Loss",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IncidentType_Loss"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentType_LabourExploitation",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "social incident",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Labour Exploitation",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "exploitation of labour",
+          "type" : "label"
+        } ],
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://en.wikipedia.org/wiki/Exploitation_of_labour",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IncidentType_LabourExploitation"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "51",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentWitness",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Witness",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Zeuge",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A person who observed the incident.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "evewitness",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "de",
+        "value" : "Augenzeuge",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Witness",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IncidentWitness"
+    },
+    "attributes" : [ "external" ],
+    "id" : "53",
+    "superClasses" : [ "54" ]
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentAffectedPerson",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Betroffene Person",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Affected Person",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Person that is affected by the incident.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IncidentAffectedPerson"
+    },
+    "attributes" : [ "external" ],
+    "id" : "56",
+    "superClasses" : [ "54", "74" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "18", "67" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "83"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentReportReception",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Report Reception",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IncidentReportReception"
+    },
+    "attributes" : [ "external" ],
+    "id" : "59",
+    "superClasses" : [ "26" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "49", "56" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "93"
+  }, {
+    "instances" : 0,
+    "union" : [ "18", "67" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "94"
+  }, {
+    "instances" : 0,
+    "union" : [ "50", "19" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "95"
+  }, {
+    "instances" : 0,
+    "union" : [ "50", "19" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "77",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "98", "99" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "97"
+  }, {
+    "instances" : 0,
+    "union" : [ "49", "18", "44" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "100"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "101", "102" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "31"
+  }, {
+    "instances" : 0,
+    "union" : [ "49", "18", "10", "44" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "30"
+  }, {
+    "instances" : 0,
+    "union" : [ "49", "56" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "103"
+  }, {
+    "instances" : 0,
+    "union" : [ "104", "35", "105", "106", "107", "19" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Role",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Role"
+    },
+    "individuals" : [ {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Role_IncidentManager",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Incident Manager",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Role_IncidentManager"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Role_IncidentResponseTeam",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Incident Response Team",
+          "type" : "label"
+        } ],
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://en.wikipedia.org/wiki/Incident_response_team",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Role_IncidentResponseTeam"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "70",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "111",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Place",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Place"
+    },
+    "attributes" : [ "external" ],
+    "id" : "102"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#BusinessContact",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusinessContact"
+    },
+    "attributes" : [ "external" ],
+    "id" : "99"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentReport",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Vorfallsbericht",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Report",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "de",
+        "value" : "Bericht",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "incident record",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An incident report is a document that contains specific details about an unplanned or unusal event that occurred somewhere.",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Incident_report",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IncidentReport"
+    },
+    "attributes" : [ "external" ],
+    "id" : "42",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "119",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "121",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Information",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Information"
+    },
+    "subClasses" : [ "42", "51" ],
+    "attributes" : [ "external" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "125",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Event",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "subClasses" : [ "59", "25", "10" ],
+    "attributes" : [ "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#SerializedPart",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SerializedPart"
+    },
+    "attributes" : [ "external" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "131",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#SocialIncident",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Social Incident",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SocialIncident"
+    },
+    "attributes" : [ "external" ],
+    "id" : "61",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "130",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "132",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#EnvironmentalIncident",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Environmental Incident",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EnvironmentalIncident"
+    },
+    "attributes" : [ "external" ],
+    "id" : "63",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#SecurityIncident",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Security Incident",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Sicherheitsvorfall",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SecurityIncident"
+    },
+    "attributes" : [ "external" ],
+    "id" : "65",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "137",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "140",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "154",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Part",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Part"
+    },
+    "attributes" : [ "external" ],
+    "id" : "107"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Company",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Company"
+    },
+    "subClasses" : [ "49", "18" ],
+    "attributes" : [ "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#WorkplaceIncident",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Arbeitsvorfall",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Workplace Incident",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WorkplaceIncident"
+    },
+    "attributes" : [ "external" ],
+    "id" : "82",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "157",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "159",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "114",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "165",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "167",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "169",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "171",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "174",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "177",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Employee",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Employee"
+    },
+    "subClasses" : [ "67", "56" ],
+    "attributes" : [ "external" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "176",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "181",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#RawMaterial",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RawMaterial"
+    },
+    "attributes" : [ "external" ],
+    "id" : "105"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Incident",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Vorfall",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "de",
+        "value" : "Zwischenfall",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "incident information",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "de",
+        "value" : "Vorfall",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "de",
+        "value" : "Störfall",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An incident is an event that could disrupt an organization's operations, services or functions.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Incident"
+    },
+    "subClasses" : [ "82", "61", "63", "65" ],
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#StreetAddress",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StreetAddress"
+    },
+    "attributes" : [ "external" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "188",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Contact",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Contact"
+    },
+    "attributes" : [ "external" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "142",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentReporter",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Reporter",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IncidentReporter"
+    },
+    "attributes" : [ "external" ],
+    "id" : "44",
+    "superClasses" : [ "54" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "191",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "110",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "193",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "128",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "162",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "195",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#IncidentCausingPerson",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Causing Person",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Verursachende Person",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Person that caused the incident.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IncidentCausingPerson"
+    },
+    "attributes" : [ "external" ],
+    "id" : "67",
+    "superClasses" : [ "54", "74" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "205",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Product",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Product"
+    },
+    "attributes" : [ "external" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "211",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "72",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "185",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "213",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "215",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "217",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Person",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "subClasses" : [ "67", "53", "56", "44" ],
+    "attributes" : [ "external" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "224",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  } ],
+  "property" : [ {
+    "id" : "9",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "117",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "118",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "122",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "123",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "124",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "126",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "127",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "133",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "134",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "135",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "136",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "138",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "139",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "141",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "143",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "144",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "145",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "146",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "147",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "148",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "149",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "150",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "151",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "152",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "153",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "155",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "156",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "158",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "160",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "161",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "163",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "164",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "166",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "168",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "170",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "172",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "173",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "175",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "178",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "179",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "180",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "182",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "183",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "184",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "186",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "187",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "189",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "190",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "192",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "194",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "196",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "197",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "198",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "199",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "200",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "201",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "202",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "203",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "204",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "206",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "207",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "208",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "209",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "210",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "212",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "214",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "216",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "218",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "219",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "220",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "221",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "222",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "223",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "225",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "226",
+    "type" : "owl:someValuesFrom"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentImpact",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Auswirkung",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Impact",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentImpact"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#date",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "date"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isLocatedIn",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "31",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is located in",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "9a47b3c8-b6d4-44f1-99ba-6bdb33916cac",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isLocatedIn"
+    },
+    "domain" : "30",
+    "attributes" : [ "object", "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#medicalTreatmentDescription",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "21",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Medical Treatment Description",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "medicalTreatmentDescription"
+    },
+    "domain" : "25",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentRisk",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "28",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Risk",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Risiko",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentRisk"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#medicalTreatmentName",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "24",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Medical Treatment Name",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "medicalTreatmentName"
+    },
+    "domain" : "25",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentInjury",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "3",
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "what",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Verletzung",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Injury",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Person is injured due to the incident.",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Injury",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentInjury"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "39"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isAffectedIn",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "42",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is affected in",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isAffectedIn"
+    },
+    "domain" : "41",
+    "attributes" : [ "object", "external" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentReporterCompany",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "45",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Reporter Company",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentReporterCompany"
+    },
+    "domain" : "44",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentReportEvidenceAttachment",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "20",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Report Evidence Attachment",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Attached files as evidence of incident .",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "telnet://192.0.2.16:80/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentReportEvidenceAttachment"
+    },
+    "domain" : "42",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#identifier",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "identifier"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "47"
+  }, {
+    "range" : "54",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "range" : "54",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentReportReceptionDateTime",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "12",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Report Reception Date Time",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentReportReceptionDateTime"
+    },
+    "domain" : "59",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "58"
+  }, {
+    "range" : "10",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "range" : "10",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
+  }, {
+    "range" : "10",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
+  }, {
+    "range" : "54",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
+  }, {
+    "range" : "54",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#dateTime",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "dateTime"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentReportAnonymousFlag",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "72",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Report Anonymous Flag",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "False",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentReportAnonymousFlag"
+    },
+    "domain" : "42",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentDamage",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "11",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Damage",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Beschädigung",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Property is damaged due to the incident.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "harm",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Damage",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentDamage"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "73"
+  }, {
+    "range" : "19",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#title",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "title"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "76"
+  }, {
+    "range" : "19",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "range" : "74",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
+  }, {
+    "range" : "74",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "range" : "10",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "range" : "52",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  }, {
+    "range" : "52",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  }, {
+    "range" : "26",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "range" : "26",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87"
+  }, {
+    "range" : "26",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "88"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentHazard",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "33",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Gefahr",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Hazard",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Hazard",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentHazard"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "89"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentType",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "22",
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "what",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Typ",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Type",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "environmental",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "human rights",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentType"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "90"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentReportId",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "92",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Report Id",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "9f47b3c8-b6d4-44f1-99ba-6bdb33916cac",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentReportId"
+    },
+    "domain" : "42",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "91"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentCause",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "110",
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "why",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Cause",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Ursache",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Cause of the incident.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentCause"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "109"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#name",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "112"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentReportReceptionDateTime",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "114",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Report Reception Date Time",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentReportReceptionDateTime"
+    },
+    "domain" : "59",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "113"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasContact",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "97",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has contact",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasContact"
+    },
+    "domain" : "100",
+    "attributes" : [ "object", "external" ],
+    "id" : "115"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isAffectedBy",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is affected by",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isAffectedBy"
+    },
+    "domain" : "56",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "116"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isAffectedIn",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "42",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is affected in",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isAffectedIn"
+    },
+    "domain" : "104",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "117"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#boolean",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "boolean"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "118"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentReportId",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "119",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Report Id",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "9f47b3c8-b6d4-44f1-99ba-6bdb33916cac",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentReportId"
+    },
+    "domain" : "42",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "120"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentReportAnonymousFlag",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "121",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Report Anonymous Flag",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "False",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentReportAnonymousFlag"
+    },
+    "domain" : "42",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "122"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isCreatedBy",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "44",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is created by",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isCreatedBy"
+    },
+    "domain" : "42",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "123"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isReceivedBy",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "50",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is received by",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isReceivedBy"
+    },
+    "domain" : "42",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "124"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentReportDateTime",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "125",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Report Date Time",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "2022-08-31T23:22:12Z",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentReportDateTime"
+    },
+    "domain" : "42",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "126"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentReporterSignature",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "128",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Reporter Signature",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentReporterSignature"
+    },
+    "domain" : "44",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "127"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentReportEvidenceAttachment",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "130",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Report Evidence Attachment",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Attached files as evidence of incident .",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "telnet://192.0.2.16:80/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentReportEvidenceAttachment"
+    },
+    "domain" : "42",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "129"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#notifiedAuthority",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "132",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Notified Authority",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "ambulance",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "fire department",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "police",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "notifiedAuthority"
+    },
+    "domain" : "42",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "133"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentReportStatus",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "131",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Report Status",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "draft",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "sent",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "received",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentReportStatus"
+    },
+    "domain" : "42",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "134"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isReceivedBy",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is received by",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isReceivedBy"
+    },
+    "domain" : "42",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "135"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#medicalTreatmentDescription",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "137",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Medical Treatment Description",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "medicalTreatmentDescription"
+    },
+    "domain" : "25",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "136"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isProvidedFor",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is provided for",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isProvidedFor"
+    },
+    "domain" : "25",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "138"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentSeverity",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "140",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Severity",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Schweregrad",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentSeverity"
+    },
+    "domain" : "10",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "139"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentDescription",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "142",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Beschreibung",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Description",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Child labour at production site of the rubber producer in Brazil",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentDescription"
+    },
+    "domain" : "10",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "141"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentDateTime",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "14",
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "when",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Date Time",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Zeitpunkt",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Date and time when incident occurred.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "2022-08-31T00:00:00Z",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentDateTime"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "143"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isAffectedIn",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "42",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is affected in",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isAffectedIn"
+    },
+    "domain" : "107",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "144"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#causes",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "causes",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "is responsible for",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "causes"
+    },
+    "domain" : "67",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "145"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isLocatedIn",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "102",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is located in",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "9a47b3c8-b6d4-44f1-99ba-6bdb33916cac",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isLocatedIn"
+    },
+    "domain" : "10",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "146"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isAffectedBy",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is affected by",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isAffectedBy"
+    },
+    "domain" : "103",
+    "attributes" : [ "object", "external" ],
+    "id" : "147"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isAffectedIn",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "42",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is affected in",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isAffectedIn"
+    },
+    "domain" : "106",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "148"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isAffectedIn",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "42",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is affected in",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isAffectedIn"
+    },
+    "domain" : "35",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "149"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasContact",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "98",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has contact",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasContact"
+    },
+    "domain" : "44",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "150"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#receives",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "42",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "receives",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "receives"
+    },
+    "domain" : "19",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "151"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isAffectedIn",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "42",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is affected in",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isAffectedIn"
+    },
+    "domain" : "19",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "152"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isLocatedIn",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "101",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is located in",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "9a47b3c8-b6d4-44f1-99ba-6bdb33916cac",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isLocatedIn"
+    },
+    "domain" : "44",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "153"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#description",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "description"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "155"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentReporterId",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "154",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Reporter Id",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Testuser",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentReporterId"
+    },
+    "domain" : "44",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "156"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentReporterCompany",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "157",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Reporter Company",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentReporterCompany"
+    },
+    "domain" : "44",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "158"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentReporterName",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "13",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Reporter Name",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Greenpeace",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentReporterName"
+    },
+    "domain" : "44",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "160"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentPrevention",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "162",
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "how",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Prevention",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Vorbeugung",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Measures how the incident can be prevented in the future.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentPrevention"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "161"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentReporterSignature",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "159",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Reporter Signature",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentReporterSignature"
+    },
+    "domain" : "44",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "163"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#witnessed",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "witnessed",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "witnessed"
+    },
+    "domain" : "53",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "164"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentReporterName",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "165",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Reporter Name",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Greenpeace",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentReporterName"
+    },
+    "domain" : "44",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "166"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentRisk",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "167",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Risk",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Risiko",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentRisk"
+    },
+    "domain" : "10",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "168"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentImpact",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "169",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Auswirkung",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Impact",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentImpact"
+    },
+    "domain" : "10",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "170"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentTitle",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "0",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Titel",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Title",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Child labour on a rubber producer",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentTitle"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "172"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentCause",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "171",
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "why",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Cause",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Ursache",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Cause of the incident.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentCause"
+    },
+    "domain" : "10",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "173"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentDamage",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "176",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Damage",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Beschädigung",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Property is damaged due to the incident.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "harm",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Damage",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentDamage"
+    },
+    "domain" : "10",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "175"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentType",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "174",
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "what",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Typ",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Type",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "environmental",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "human rights",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentType"
+    },
+    "domain" : "10",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "178"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentReporterId",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "27",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Reporter Id",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Testuser",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentReporterId"
+    },
+    "domain" : "44",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "179"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isWitnessedBy",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "53",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is witnessed by",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isWitnessedBy"
+    },
+    "domain" : "10",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "180"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentHazard",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "177",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Gefahr",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Hazard",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Hazard",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentHazard"
+    },
+    "domain" : "10",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "182"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isCausedBy",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "18",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is caused by",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isCausedBy"
+    },
+    "domain" : "10",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "183"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentUrgency",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "185",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Dringlichkeit",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Urgency",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "criticality",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "high",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "low",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentUrgency"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "184"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#type",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "111",
+    "label" : {
+      "IRI-based" : "type"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "186"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#affects",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "affects",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "affects"
+    },
+    "domain" : "10",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "187"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentUrgency",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "181",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Dringlichkeit",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Urgency",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "criticality",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "high",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "low",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentUrgency"
+    },
+    "domain" : "10",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "189"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentInjury",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "191",
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "what",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Verletzung",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Injury",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Person is injured due to the incident.",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Injury",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentInjury"
+    },
+    "domain" : "10",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "190"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentDateTime",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "188",
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "when",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Date Time",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Zeitpunkt",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Date and time when incident occurred.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "2022-08-31T00:00:00Z",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentDateTime"
+    },
+    "domain" : "10",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "192"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentReportStatus",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "16",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Report Status",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "draft",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "sent",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "received",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentReportStatus"
+    },
+    "domain" : "42",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "194"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentDescription",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "32",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Beschreibung",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Description",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Child labour at production site of the rubber producer in Brazil",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentDescription"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "196"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentDuration",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "15",
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "how long",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Dauer",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Duration",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "1 week",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentDuration"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "197"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isAffectedBy",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is affected by",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isAffectedBy"
+    },
+    "domain" : "49",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "198"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isAffectedIn",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "42",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is affected in",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isAffectedIn"
+    },
+    "domain" : "105",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "199"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isLocatedIn",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is located in",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "9a47b3c8-b6d4-44f1-99ba-6bdb33916cac",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isLocatedIn"
+    },
+    "domain" : "18",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "200"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasContact",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "99",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has contact",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasContact"
+    },
+    "domain" : "18",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "201"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#causes",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "causes",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "is responsible for",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "causes"
+    },
+    "domain" : "18",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "202"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#receives",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "42",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "receives",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "receives"
+    },
+    "domain" : "50",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "203"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#medicalTreatmentName",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "205",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Medical Treatment Name",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "medicalTreatmentName"
+    },
+    "domain" : "25",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "204"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#receives",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "42",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "receives",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "receives"
+    },
+    "domain" : "95",
+    "attributes" : [ "object", "external" ],
+    "id" : "206"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#notifiedAuthority",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "17",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Notified Authority",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "ambulance",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "fire department",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "police",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "notifiedAuthority"
+    },
+    "domain" : "42",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "207"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isLocatedIn",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is located in",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "9a47b3c8-b6d4-44f1-99ba-6bdb33916cac",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isLocatedIn"
+    },
+    "domain" : "49",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "208"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasContact",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "99",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has contact",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasContact"
+    },
+    "domain" : "49",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "209"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentReportDateTime",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "195",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Report Date Time",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "2022-08-31T23:22:12Z",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentReportDateTime"
+    },
+    "domain" : "42",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "210"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isCausedBy",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "67",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is caused by",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isCausedBy"
+    },
+    "domain" : "10",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "212"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentDuration",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "213",
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "how long",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Dauer",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Duration",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "1 week",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentDuration"
+    },
+    "domain" : "10",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "214"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentTitle",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "215",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Titel",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Title",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Child labour on a rubber producer",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentTitle"
+    },
+    "domain" : "10",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "216"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentLocation",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "217",
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "where",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Ort",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Location",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "location of incident",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentLocation"
+    },
+    "domain" : "10",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "218"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentLocation",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "211",
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "where",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Ort",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Location",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "location of incident",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentLocation"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "219"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentSeverity",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "193",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Severity",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Schweregrad",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentSeverity"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "220"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#affects",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "49",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "affects",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "affects"
+    },
+    "domain" : "10",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "221"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#causes",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "causes",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "is responsible for",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "causes"
+    },
+    "domain" : "83",
+    "attributes" : [ "object", "external" ],
+    "id" : "222"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#incidentPrevention",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "224",
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "how",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Incident Prevention",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Vorbeugung",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Measures how the incident can be prevented in the future.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "incidentPrevention"
+    },
+    "domain" : "10",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "223"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isLocatedIn",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "101",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is located in",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "9a47b3c8-b6d4-44f1-99ba-6bdb33916cac",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isLocatedIn"
+    },
+    "domain" : "10",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "225"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isRecordedBy",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "42",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is recorded by",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isRecordedBy"
+    },
+    "domain" : "10",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "226"
+  } ]
+}
