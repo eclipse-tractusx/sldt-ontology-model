@@ -44,13 +44,13 @@ public class OntologyConverterTest {
         }
         String json=exporter.getConvertedJson();
         JsonNode value= jsonMapper.readTree(json);
-        // two classes: Process and Action
-        assertEquals(2,((ArrayNode) value.get("class")).size(),"Correct class size");
-        // two classes: Process and Action
-        assertEquals(2,((ArrayNode) value.get("classAttribute")).size(),"Correct classAttribute size");
+        // two classes: Process, Action and 1 Type string
+        assertEquals(3,((ArrayNode) value.get("class")).size(),"Correct class size");
+        // two classes: Process and Action and 1 Type string
+        assertEquals(3,((ArrayNode) value.get("classAttribute")).size(),"Correct classAttribute size");
         // two properties: disjointness and someValues
-        assertEquals(2,((ArrayNode) value.get("property")).size(),"Correct property size");
+        assertEquals(3,((ArrayNode) value.get("property")).size(),"Correct property size");
         // two properties: disjointness and someValues
-        assertEquals(2,((ArrayNode) value.get("propertyAttribute")).size(),"Correct propertyAttribute size");
+        assertEquals(3,((ArrayNode) value.get("propertyAttribute")).size(),"Correct propertyAttribute size");
     }
 }

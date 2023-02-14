@@ -40,10 +40,16 @@ cx:isInvolvedIn a owl:ObjectProperty,
 
 cx:Process a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/upper_ontology.ttl> ;
-    rdfs:subClassOf owl:Thing ;
+    rdfs:subClassOf [ a owl:Restriction ;
+                      owl:onProperty cx:processNumber ;
+                      owl:someValuesFrom xsd:string ], owl:Thing ;
     owl:disjointWith cx:Action ;
     skos:definition "A process is a set of activities that interact to produce a result; it has inputs and outputs, and a sequence of steps that in some way transform the inputs into the outputs."@en ;
     skos:note "top level class"@en ;
     skos:prefLabel "Prozess"@de,
         "Process"@en .
 
+cx:processNumber a owl:DatatypeProperty ;
+    rdfs:domain cx:Process ;
+    rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/upper_ontology.ttl> ;
+    rdfs:range xsd:string .

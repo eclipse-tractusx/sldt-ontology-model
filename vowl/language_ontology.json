@@ -52,85 +52,57 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "5",
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "7",
-    "type" : "rdfs:Datatype"
+    "type" : "owl:Class"
   }, {
-    "id" : "9",
-    "type" : "rdfs:Datatype"
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
   }, {
     "id" : "13",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "12",
     "type" : "owl:Class"
   }, {
     "id" : "15",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "11",
-    "type" : "owl:Class"
-  }, {
-    "id" : "4",
-    "type" : "owl:Class"
-  }, {
-    "id" : "2",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "25",
-    "type" : "owl:Class"
-  }, {
-    "id" : "21",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "17",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "1",
+    "id" : "16",
     "type" : "owl:Thing"
   }, {
-    "id" : "26",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "19",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "23",
+    "id" : "17",
     "type" : "rdfs:Datatype"
   } ],
   "classAttribute" : [ {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "5",
+    "id" : "2",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "7",
+    "id" : "4",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "9",
-    "label" : {
-      "IRI-based" : "anyURI"
-    }
-  }, {
-    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country",
-    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Country"
-    },
-    "attributes" : [ "external" ],
-    "id" : "13"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "15",
+    "id" : "6",
     "label" : {
       "IRI-based" : "anyURI"
     }
@@ -142,7 +114,16 @@
       "IRI-based" : "Person"
     },
     "attributes" : [ "external" ],
-    "id" : "11"
+    "id" : "7"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Country"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language",
     "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
@@ -162,13 +143,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Sprache",
+        "language" : "en",
+        "value" : "Language",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Language",
+        "language" : "de",
+        "value" : "Sprache",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -194,31 +175,6 @@
       "IRI-based" : "Language"
     },
     "individuals" : [ {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Greek",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Griechisch",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Greek",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q9129",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Language_Greek"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_French",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
@@ -244,29 +200,29 @@
         "IRI-based" : "Language_French"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Spanish",
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Greek",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Spanish",
+          "language" : "de",
+          "value" : "Griechisch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Spanisch",
+          "language" : "en",
+          "value" : "Greek",
           "type" : "label"
         } ],
         "wikidata" : [ {
           "identifier" : "wikidata",
           "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q1321",
+          "value" : "http://www.wikidata.org/entity/Q9129",
           "type" : "iri"
         } ]
       },
       "labels" : {
-        "IRI-based" : "Language_Spanish"
+        "IRI-based" : "Language_Greek"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Kyrgyz",
@@ -294,29 +250,29 @@
         "IRI-based" : "Language_Kyrgyz"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Dzongkha",
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Spanish",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Dzongkha",
+          "language" : "en",
+          "value" : "Spanish",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Dzongkha",
+          "language" : "de",
+          "value" : "Spanisch",
           "type" : "label"
         } ],
         "wikidata" : [ {
           "identifier" : "wikidata",
           "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q33081",
+          "value" : "http://www.wikidata.org/entity/Q1321",
           "type" : "iri"
         } ]
       },
       "labels" : {
-        "IRI-based" : "Language_Dzongkha"
+        "IRI-based" : "Language_Spanish"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Uzbek",
@@ -344,29 +300,29 @@
         "IRI-based" : "Language_Uzbek"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Cornish",
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Dzongkha",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
           "language" : "de",
-          "value" : "Kornisch",
+          "value" : "Dzongkha",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
           "language" : "en",
-          "value" : "Cornish",
+          "value" : "Dzongkha",
           "type" : "label"
         } ],
         "wikidata" : [ {
           "identifier" : "wikidata",
           "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q25289",
+          "value" : "http://www.wikidata.org/entity/Q33081",
           "type" : "iri"
         } ]
       },
       "labels" : {
-        "IRI-based" : "Language_Cornish"
+        "IRI-based" : "Language_Dzongkha"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Corsican",
@@ -374,13 +330,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Corsican",
+          "language" : "de",
+          "value" : "Korsisch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Korsisch",
+          "language" : "en",
+          "value" : "Corsican",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -419,18 +375,43 @@
         "IRI-based" : "Language_Bosnian"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Ukrainian",
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Cornish",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
           "language" : "en",
-          "value" : "Ukrainian",
+          "value" : "Cornish",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
           "language" : "de",
+          "value" : "Kornisch",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q25289",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Language_Cornish"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Ukrainian",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
           "value" : "Ukrainisch",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Ukrainian",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -494,31 +475,6 @@
         "IRI-based" : "Language_Mongolian"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Danish",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Dänisch",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Danish",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q9035",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Language_Danish"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Kirundi",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
@@ -549,13 +505,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Deutsch",
+          "language" : "en",
+          "value" : "German",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "German",
+          "language" : "de",
+          "value" : "Deutsch",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -569,18 +525,43 @@
         "IRI-based" : "Language_German"
       }
     }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Danish",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Dänisch",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Danish",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q9035",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Language_Danish"
+      }
+    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Czech",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Czech",
+          "language" : "de",
+          "value" : "Tschechisch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Tschechisch",
+          "language" : "en",
+          "value" : "Czech",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -599,12 +580,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Akan",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Akan",
           "type" : "label"
         } ],
@@ -669,31 +650,6 @@
         "IRI-based" : "Language_Tamil"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_WestFrisian",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Westfriesisch",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "West Frisian",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q27175",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Language_WestFrisian"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Russian",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
@@ -719,17 +675,42 @@
         "IRI-based" : "Language_Russian"
       }
     }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_WestFrisian",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "West Frisian",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Westfriesisch",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q27175",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Language_WestFrisian"
+      }
+    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Hausa",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Hausa",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Hausa",
           "type" : "label"
         } ],
@@ -749,12 +730,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Bambara",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Bambara",
           "type" : "label"
         } ],
@@ -774,13 +755,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Nordsamisch",
+          "language" : "en",
+          "value" : "Northern Sami",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Northern Sami",
+          "language" : "de",
+          "value" : "Nordsamisch",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -824,12 +805,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Oromo",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Oromo",
           "type" : "label"
         } ],
@@ -849,13 +830,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Kazakh",
+          "language" : "de",
+          "value" : "Kasachisch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Kasachisch",
+          "language" : "en",
+          "value" : "Kazakh",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -874,12 +855,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Bislama",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Bislama",
           "type" : "label"
         } ],
@@ -899,13 +880,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Tahitian",
+          "language" : "de",
+          "value" : "Tahitianisch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Tahitianisch",
+          "language" : "en",
+          "value" : "Tahitian",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -924,13 +905,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Tschuwaschisch",
+          "language" : "en",
+          "value" : "Chuvash",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Chuvash",
+          "language" : "de",
+          "value" : "Tschuwaschisch",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -999,12 +980,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Inuktitut",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Inuktitut",
           "type" : "label"
         } ],
@@ -1024,12 +1005,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Inupiaq",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Inupiaq",
           "type" : "label"
         } ],
@@ -1074,13 +1055,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Walloon",
+          "language" : "de",
+          "value" : "Wallonisch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Wallonisch",
+          "language" : "en",
+          "value" : "Walloon",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -1099,12 +1080,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Khmer",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Khmer",
           "type" : "label"
         } ],
@@ -1117,31 +1098,6 @@
       },
       "labels" : {
         "IRI-based" : "Language_Khmer"
-      }
-    }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Gujarati",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Gujarati",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Gujarati",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q5137",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Language_Gujarati"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Ndonga",
@@ -1169,18 +1125,43 @@
         "IRI-based" : "Language_Ndonga"
       }
     }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Gujarati",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Gujarati",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Gujarati",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q5137",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Language_Gujarati"
+      }
+    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Belarusian",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Belarussisch",
+          "language" : "en",
+          "value" : "Belarusian",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Belarusian",
+          "language" : "de",
+          "value" : "Belarussisch",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -1199,12 +1180,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Bokmål",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Bokmål",
           "type" : "label"
         } ],
@@ -1224,13 +1205,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Guarani",
+          "language" : "de",
+          "value" : "Guaraní",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Guaraní",
+          "language" : "en",
+          "value" : "Guarani",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -1274,13 +1255,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Burmese",
+          "language" : "de",
+          "value" : "Birmanisch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Birmanisch",
+          "language" : "en",
+          "value" : "Burmese",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -1299,13 +1280,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Swazi",
+          "language" : "de",
+          "value" : "Siswati",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Siswati",
+          "language" : "en",
+          "value" : "Swazi",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -1344,42 +1325,17 @@
         "IRI-based" : "Language_Ido"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Igbo",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Igbo",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Igbo",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q33578",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Language_Igbo"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Yoruba",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Yoruba",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Yoruba",
           "type" : "label"
         } ],
@@ -1394,29 +1350,29 @@
         "IRI-based" : "Language_Yoruba"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Persian",
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Igbo",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Persian",
+          "language" : "de",
+          "value" : "Igbo",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Persisch",
+          "language" : "en",
+          "value" : "Igbo",
           "type" : "label"
         } ],
         "wikidata" : [ {
           "identifier" : "wikidata",
           "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q9168",
+          "value" : "http://www.wikidata.org/entity/Q33578",
           "type" : "iri"
         } ]
       },
       "labels" : {
-        "IRI-based" : "Language_Persian"
+        "IRI-based" : "Language_Igbo"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Romansh",
@@ -1444,18 +1400,43 @@
         "IRI-based" : "Language_Romansh"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Pashto",
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Persian",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
           "language" : "en",
-          "value" : "Pashto",
+          "value" : "Persian",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
           "language" : "de",
+          "value" : "Persisch",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q9168",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Language_Persian"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Pashto",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
           "value" : "Paschtu",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Pashto",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -1499,13 +1480,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Scottish Gaelic",
+          "language" : "de",
+          "value" : "Schottisch-Gälisch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Schottisch-Gälisch",
+          "language" : "en",
+          "value" : "Scottish Gaelic",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -1517,31 +1498,6 @@
       },
       "labels" : {
         "IRI-based" : "Language_ScottishGaelic"
-      }
-    }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Lao",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Lao",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Laotisch",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q9211",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Language_Lao"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Malay",
@@ -1567,6 +1523,31 @@
       },
       "labels" : {
         "IRI-based" : "Language_Malay"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Lao",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Lao",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Laotisch",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q9211",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Language_Lao"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Hebrew",
@@ -1599,13 +1580,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Abkhaz",
+          "language" : "de",
+          "value" : "Abchasisch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Abchasisch",
+          "language" : "en",
+          "value" : "Abkhaz",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -1617,6 +1598,31 @@
       },
       "labels" : {
         "IRI-based" : "Language_Abkhaz"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Bengali",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Bengali",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Bengali",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q9610",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Language_Bengali"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_AzerbaijaniLanguage",
@@ -1644,29 +1650,29 @@
         "IRI-based" : "Language_AzerbaijaniLanguage"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Bengali",
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Tibetan",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
           "language" : "en",
-          "value" : "Bengali",
+          "value" : "Tibetan",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
           "language" : "de",
-          "value" : "Bengali",
+          "value" : "Tibetisch",
           "type" : "label"
         } ],
         "wikidata" : [ {
           "identifier" : "wikidata",
           "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q9610",
+          "value" : "http://www.wikidata.org/entity/Q34271",
           "type" : "iri"
         } ]
       },
       "labels" : {
-        "IRI-based" : "Language_Bengali"
+        "IRI-based" : "Language_Tibetan"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Sundanese",
@@ -1694,67 +1700,17 @@
         "IRI-based" : "Language_Sundanese"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Tibetan",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Tibetisch",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Tibetan",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q34271",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Language_Tibetan"
-      }
-    }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Macedonian",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Macedonian",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Mazedonisch",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q9296",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Language_Macedonian"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Kwanyama",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Kwanyama",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Kwanyama",
           "type" : "label"
         } ],
@@ -1794,18 +1750,43 @@
         "IRI-based" : "Language_Somali"
       }
     }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Macedonian",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Macedonian",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Mazedonisch",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q9296",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Language_Macedonian"
+      }
+    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Icelandic",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Isländisch",
+          "language" : "en",
+          "value" : "Icelandic",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Icelandic",
+          "language" : "de",
+          "value" : "Isländisch",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -1824,13 +1805,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Turkmen",
+          "language" : "de",
+          "value" : "Turkmenisch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Turkmenisch",
+          "language" : "en",
+          "value" : "Turkmen",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -1849,13 +1830,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Xhosa",
+          "language" : "de",
+          "value" : "IsiXhosa",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "IsiXhosa",
+          "language" : "en",
+          "value" : "Xhosa",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -1874,12 +1855,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Sindhi",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Sindhi",
           "type" : "label"
         } ],
@@ -1894,43 +1875,18 @@
         "IRI-based" : "Language_Sindhi"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Occitan",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Occitan",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Okzitanisch",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q14185",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Language_Occitan"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_NorthernNdebele",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Nord-Ndebele",
+          "language" : "en",
+          "value" : "Northern Ndebele",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Northern Ndebele",
+          "language" : "de",
+          "value" : "Nord-Ndebele",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -1969,18 +1925,43 @@
         "IRI-based" : "Language_Tagalog"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Maltese",
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Occitan",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
           "language" : "de",
-          "value" : "Maltesisch",
+          "value" : "Okzitanisch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
           "language" : "en",
+          "value" : "Occitan",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q14185",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Language_Occitan"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Maltese",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
           "value" : "Maltese",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Maltesisch",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -1999,13 +1980,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Avestan",
+          "language" : "de",
+          "value" : "Avestisch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Avestisch",
+          "language" : "en",
+          "value" : "Avestan",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -2024,12 +2005,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Esperanto",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Esperanto",
           "type" : "label"
         } ],
@@ -2099,12 +2080,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Nepali",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Nepali",
           "type" : "label"
         } ],
@@ -2124,12 +2105,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Telugu",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Telugu",
           "type" : "label"
         } ],
@@ -2194,31 +2175,6 @@
         "IRI-based" : "Language_Breton"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Tatar",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Tatar",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Tatarisch",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q25285",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Language_Tatar"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Basque",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
@@ -2244,18 +2200,43 @@
         "IRI-based" : "Language_Basque"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Assamese",
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Tatar",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
           "language" : "de",
-          "value" : "Assamesisch",
+          "value" : "Tatarisch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
           "language" : "en",
+          "value" : "Tatar",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q25285",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Language_Tatar"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Assamese",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
           "value" : "Assamese",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Assamesisch",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -2274,13 +2255,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Latvian",
+          "language" : "de",
+          "value" : "Lettisch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Lettisch",
+          "language" : "en",
+          "value" : "Latvian",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -2299,13 +2280,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Chinesisch",
+          "language" : "en",
+          "value" : "Chinese",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Chinese",
+          "language" : "de",
+          "value" : "Chinesisch",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -2324,12 +2305,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Sanskrit",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Sanskrit",
           "type" : "label"
         } ],
@@ -2394,31 +2375,6 @@
         "IRI-based" : "Language_Thai"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Lingala",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Lingala",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Lingala",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q36217",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Language_Lingala"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_HaitianCreole",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
@@ -2444,17 +2400,42 @@
         "IRI-based" : "Language_HaitianCreole"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Hindi",
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Lingala",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
           "language" : "de",
-          "value" : "Hindi",
+          "value" : "Lingala",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
           "language" : "en",
+          "value" : "Lingala",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q36217",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Language_Lingala"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Hindi",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Hindi",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
           "value" : "Hindi",
           "type" : "label"
         } ],
@@ -2474,12 +2455,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Bihari",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Bihari",
           "type" : "label"
         } ],
@@ -2499,13 +2480,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Korean",
+          "language" : "de",
+          "value" : "Koreanisch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Koreanisch",
+          "language" : "en",
+          "value" : "Korean",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -2649,13 +2630,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Swedish",
+          "language" : "de",
+          "value" : "Schwedisch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Schwedisch",
+          "language" : "en",
+          "value" : "Swedish",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -2674,13 +2655,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Vietnamese",
+          "language" : "de",
+          "value" : "Vietnamesisch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Vietnamesisch",
+          "language" : "en",
+          "value" : "Vietnamese",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -2699,13 +2680,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Norwegian",
+          "language" : "de",
+          "value" : "Norwegisch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Norwegisch",
+          "language" : "en",
+          "value" : "Norwegian",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -2749,13 +2730,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Awarisch",
+          "language" : "en",
+          "value" : "Avaric",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Avaric",
+          "language" : "de",
+          "value" : "Awarisch",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -2799,12 +2780,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Ojibwe",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Ojibwe",
           "type" : "label"
         } ],
@@ -2824,13 +2805,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Ossetian",
+          "language" : "de",
+          "value" : "Ossetisch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Ossetisch",
+          "language" : "en",
+          "value" : "Ossetian",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -2844,43 +2825,18 @@
         "IRI-based" : "Language_Ossetian"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Venda",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Venda",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Tshivenda",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q32704",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Language_Venda"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Catalan",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Katalanisch",
+          "language" : "en",
+          "value" : "Catalan",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Catalan",
+          "language" : "de",
+          "value" : "Katalanisch",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -2919,6 +2875,31 @@
         "IRI-based" : "Language_Polish"
       }
     }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Venda",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Tshivenda",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Venda",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q32704",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Language_Venda"
+      }
+    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Tswana",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
@@ -2944,31 +2925,6 @@
         "IRI-based" : "Language_Tswana"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Luxembourgish",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Luxembourgish",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Luxemburgisch",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q9051",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Language_Luxembourgish"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_ModernGreek",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
@@ -2992,6 +2948,31 @@
       },
       "labels" : {
         "IRI-based" : "Language_ModernGreek"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Luxembourgish",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Luxembourgish",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Luxemburgisch",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q9051",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Language_Luxembourgish"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Lithuanian",
@@ -3049,12 +3030,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Hiri Motu",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Hiri Motu",
           "type" : "label"
         } ],
@@ -3074,12 +3055,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Cree",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Cree",
           "type" : "label"
         } ],
@@ -3099,13 +3080,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Arabisch",
+          "language" : "en",
+          "value" : "Arabic",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Arabic",
+          "language" : "de",
+          "value" : "Arabisch",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -3117,56 +3098,6 @@
       },
       "labels" : {
         "IRI-based" : "Language_Arabic"
-      }
-    }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Kanuri",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Kanuri",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Kanuri",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q36094",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Language_Kanuri"
-      }
-    }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Armenian",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Armenian",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Armenisch",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q8785",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Language_Armenian"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Romanian",
@@ -3194,18 +3125,68 @@
         "IRI-based" : "Language_Romanian"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Yiddish",
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Armenian",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
           "language" : "en",
-          "value" : "Yiddish",
+          "value" : "Armenian",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
           "language" : "de",
+          "value" : "Armenisch",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q8785",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Language_Armenian"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Kanuri",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Kanuri",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Kanuri",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q36094",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Language_Kanuri"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Yiddish",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
           "value" : "Jiddisch",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Yiddish",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -3219,17 +3200,42 @@
         "IRI-based" : "Language_Yiddish"
       }
     }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_SouthernNdebele",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Süd-Ndebele",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Southern Ndebele",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q36785",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Language_SouthernNdebele"
+      }
+    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Malagasy",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Malagasy",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Malagasy",
           "type" : "label"
         } ],
@@ -3244,43 +3250,18 @@
         "IRI-based" : "Language_Malagasy"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_SouthernNdebele",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Southern Ndebele",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Süd-Ndebele",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q36785",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Language_SouthernNdebele"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Welsh",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Walisisch",
+          "language" : "en",
+          "value" : "Welsh",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Welsh",
+          "language" : "de",
+          "value" : "Walisisch",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -3324,12 +3305,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Malayalam",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Malayalam",
           "type" : "label"
         } ],
@@ -3399,12 +3380,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Volapük",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Volapük",
           "type" : "label"
         } ],
@@ -3424,12 +3405,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Swahili",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Swahili",
           "type" : "label"
         } ],
@@ -3449,13 +3430,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Kiluba",
+          "language" : "en",
+          "value" : "Luba-Katanga",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Luba-Katanga",
+          "language" : "de",
+          "value" : "Kiluba",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -3469,43 +3450,18 @@
         "IRI-based" : "Language_LubaKatanga"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Turkish",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Türkisch",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Turkish",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q256",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Language_Turkish"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Bashkir",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Baschkirisch",
+          "language" : "en",
+          "value" : "Bashkir",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Bashkir",
+          "language" : "de",
+          "value" : "Baschkirisch",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -3519,29 +3475,29 @@
         "IRI-based" : "Language_Bashkir"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Chechen",
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Turkish",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
           "language" : "en",
-          "value" : "Chechen",
+          "value" : "Turkish",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
           "language" : "de",
-          "value" : "Tschetschenisch",
+          "value" : "Türkisch",
           "type" : "label"
         } ],
         "wikidata" : [ {
           "identifier" : "wikidata",
           "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q33350",
+          "value" : "http://www.wikidata.org/entity/Q256",
           "type" : "iri"
         } ]
       },
       "labels" : {
-        "IRI-based" : "Language_Chechen"
+        "IRI-based" : "Language_Turkish"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Dhivehi",
@@ -3569,17 +3525,42 @@
         "IRI-based" : "Language_Dhivehi"
       }
     }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Chechen",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Chechen",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Tschetschenisch",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q33350",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Language_Chechen"
+      }
+    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Manx",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Manx",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Manx",
           "type" : "label"
         } ],
@@ -3599,13 +3580,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Kurdish",
+          "language" : "de",
+          "value" : "kurdische Sprachen",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "kurdische Sprachen",
+          "language" : "en",
+          "value" : "Kurdish",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -3624,13 +3605,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Limburgisch",
+          "language" : "en",
+          "value" : "Limburgish",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Limburgish",
+          "language" : "de",
+          "value" : "Limburgisch",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -3649,12 +3630,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Nynorsk",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Nynorsk",
           "type" : "label"
         } ],
@@ -3667,31 +3648,6 @@
       },
       "labels" : {
         "IRI-based" : "Language_Nynorsk"
-      }
-    }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Aragonese",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Aragonesisch",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Aragonese",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q8765",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Language_Aragonese"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Shona",
@@ -3719,17 +3675,42 @@
         "IRI-based" : "Language_Shona"
       }
     }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Aragonese",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Aragonesisch",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Aragonese",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q8765",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Language_Aragonese"
+      }
+    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Tigrinya",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Tigrinya",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Tigrinya",
           "type" : "label"
         } ],
@@ -3774,13 +3755,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Amharisch",
+          "language" : "en",
+          "value" : "Amharic",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Amharic",
+          "language" : "de",
+          "value" : "Amharisch",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -3799,13 +3780,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Hungarian",
+          "language" : "de",
+          "value" : "Ungarisch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Ungarisch",
+          "language" : "en",
+          "value" : "Hungarian",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -3849,13 +3830,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Grönländisch",
+          "language" : "en",
+          "value" : "Greenlandic",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Greenlandic",
+          "language" : "de",
+          "value" : "Grönländisch",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -3874,13 +3855,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Panjabi",
+          "language" : "en",
+          "value" : "Punjabi",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Punjabi",
+          "language" : "de",
+          "value" : "Panjabi",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -3899,13 +3880,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Latin",
+          "language" : "de",
+          "value" : "Latein",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Latein",
+          "language" : "en",
+          "value" : "Latin",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -3924,12 +3905,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Komi",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Komi",
           "type" : "label"
         } ],
@@ -3949,13 +3930,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Singhalesisch",
+          "language" : "en",
+          "value" : "Sinhala",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Sinhala",
+          "language" : "de",
+          "value" : "Singhalesisch",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -4024,13 +4005,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Finnisch",
+          "language" : "en",
+          "value" : "Finnish",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Finnish",
+          "language" : "de",
+          "value" : "Finnisch",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -4074,13 +4055,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Niederländisch",
+          "language" : "en",
+          "value" : "Dutch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Dutch",
+          "language" : "de",
+          "value" : "Niederländisch",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -4099,13 +4080,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Slovak",
+          "language" : "de",
+          "value" : "Slowakisch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Slowakisch",
+          "language" : "en",
+          "value" : "Slovak",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -4124,13 +4105,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Tadschikisch",
+          "language" : "en",
+          "value" : "Tajik",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Tajik",
+          "language" : "de",
+          "value" : "Tadschikisch",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -4224,13 +4205,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Herero",
+          "language" : "de",
+          "value" : "Otjiherero",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Otjiherero",
+          "language" : "en",
+          "value" : "Herero",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -4324,13 +4305,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Bulgarisch",
+          "language" : "en",
+          "value" : "Bulgarian",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Bulgarian",
+          "language" : "de",
+          "value" : "Bulgarisch",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -4344,43 +4325,18 @@
         "IRI-based" : "Language_Bulgarian"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Albanian",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Albanisch",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Albanian",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q8748",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Language_Albanian"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Portuguese",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Portuguese",
+          "language" : "de",
+          "value" : "Portugiesisch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Portugiesisch",
+          "language" : "en",
+          "value" : "Portuguese",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -4392,6 +4348,31 @@
       },
       "labels" : {
         "IRI-based" : "Language_Portuguese"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Albanian",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Albanian",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Albanisch",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q8748",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Language_Albanian"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Croatian",
@@ -4424,12 +4405,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Luganda",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Luganda",
           "type" : "label"
         } ],
@@ -4524,13 +4505,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Uigurisch",
+          "language" : "en",
+          "value" : "Uyghur",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Uyghur",
+          "language" : "de",
+          "value" : "Uigurisch",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -4574,13 +4555,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Old Church Slavonic",
+          "language" : "de",
+          "value" : "Altkirchenslawisch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Altkirchenslawisch",
+          "language" : "en",
+          "value" : "Old Church Slavonic",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -4599,12 +4580,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Quechua",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Quechua",
           "type" : "label"
         } ],
@@ -4624,13 +4605,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Italian",
+          "language" : "de",
+          "value" : "Italienisch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Italienisch",
+          "language" : "en",
+          "value" : "Italian",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -4649,13 +4630,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Church Slavonic",
+          "language" : "de",
+          "value" : "Kirchenslawisch",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Kirchenslawisch",
+          "language" : "en",
+          "value" : "Church Slavonic",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -4667,6 +4648,31 @@
       },
       "labels" : {
         "IRI-based" : "Language_ChurchSlavonic"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Nuosu",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Nuosu-Sprache",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Nuosu",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q34235",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Language_Nuosu"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Wolof",
@@ -4692,31 +4698,6 @@
       },
       "labels" : {
         "IRI-based" : "Language_Wolof"
-      }
-    }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Nuosu",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Nuosu",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Nuosu-Sprache",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q34235",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Language_Nuosu"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Aymara",
@@ -4769,31 +4750,6 @@
         "IRI-based" : "Language_Nauruan"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Ewe",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Ewe",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Ewe",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q30005",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Language_Ewe"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Kashmiri",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
@@ -4817,6 +4773,31 @@
       },
       "labels" : {
         "IRI-based" : "Language_Kashmiri"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Ewe",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Ewe",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Ewe",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q30005",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Language_Ewe"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Language_Samoan",
@@ -4845,11 +4826,11 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "4",
-    "superClasses" : [ "25" ]
+    "id" : "1",
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "2",
+    "id" : "13",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -4861,106 +4842,60 @@
     "label" : {
       "IRI-based" : "Skill"
     },
-    "subClasses" : [ "4" ],
+    "subClasses" : [ "1" ],
     "attributes" : [ "external" ],
-    "id" : "25"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "21",
-    "label" : {
-      "IRI-based" : "string"
-    }
+    "id" : "12"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "17",
+    "id" : "15",
     "label" : {
       "IRI-based" : "anyURI"
     }
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "1",
+    "id" : "16",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "26",
+    "id" : "17",
     "label" : {
       "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "19",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "23",
-    "label" : {
-      "IRI-based" : "anyURI"
     }
   } ],
   "property" : [ {
     "id" : "0",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "3",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "6",
+    "id" : "5",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "8",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "10",
+    "id" : "9",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "12",
-    "type" : "owl:someValuesFrom"
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "14",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "16",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "18",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "20",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "22",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "24",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "27",
     "type" : "owl:someValuesFrom"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#name",
-    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-    "range" : "2",
-    "label" : {
-      "IRI-based" : "name"
-    },
-    "domain" : "1",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "0"
-  }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#languageName",
     "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-    "range" : "5",
+    "range" : "2",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -4978,13 +4913,13 @@
     "label" : {
       "IRI-based" : "languageName"
     },
-    "domain" : "4",
-    "attributes" : [ "someValues", "external", "datatype" ],
-    "id" : "3"
+    "domain" : "1",
+    "attributes" : [ "datatype", "external", "someValues" ],
+    "id" : "0"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#languageCode2",
     "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-    "range" : "7",
+    "range" : "4",
     "annotations" : {
       "note" : [ {
         "identifier" : "note",
@@ -5020,13 +4955,13 @@
     "label" : {
       "IRI-based" : "languageCode2"
     },
-    "domain" : "4",
-    "attributes" : [ "someValues", "external", "datatype" ],
-    "id" : "6"
+    "domain" : "1",
+    "attributes" : [ "datatype", "external", "someValues" ],
+    "id" : "3"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#languageCode3",
     "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-    "range" : "9",
+    "range" : "6",
     "annotations" : {
       "note" : [ {
         "identifier" : "note",
@@ -5062,13 +4997,13 @@
     "label" : {
       "IRI-based" : "languageCode3"
     },
-    "domain" : "4",
-    "attributes" : [ "someValues", "external", "datatype" ],
-    "id" : "8"
+    "domain" : "1",
+    "attributes" : [ "datatype", "external", "someValues" ],
+    "id" : "5"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isUnderstoodBy",
     "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-    "range" : "11",
+    "range" : "7",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -5078,26 +5013,26 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "wird verstanden",
+        "language" : "en",
+        "value" : "is understood by",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "is understood by",
+        "language" : "de",
+        "value" : "wird verstanden",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "isUnderstoodBy"
     },
-    "domain" : "4",
-    "attributes" : [ "someValues", "external", "object" ],
-    "id" : "10"
+    "domain" : "1",
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "8"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#understands",
     "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-    "range" : "4",
+    "range" : "1",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -5120,9 +5055,14 @@
     "label" : {
       "IRI-based" : "understands"
     },
-    "domain" : "11",
-    "attributes" : [ "someValues", "external", "object" ],
-    "id" : "12"
+    "domain" : "7",
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "9"
+  }, {
+    "range" : "12",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "11"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#wikidata",
     "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
@@ -5144,150 +5084,13 @@
     "label" : {
       "IRI-based" : "wikidata"
     },
-    "domain" : "13",
-    "attributes" : [ "someValues", "external", "datatype" ],
+    "domain" : "10",
+    "attributes" : [ "datatype", "external", "someValues" ],
     "id" : "14"
-  }, {
-    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#languageCode3",
-    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-    "range" : "17",
-    "annotations" : {
-      "note" : [ {
-        "identifier" : "note",
-        "language" : "en",
-        "value" : "ISO 639-2",
-        "type" : "label"
-      } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/language_ontology.ttl",
-        "type" : "iri"
-      } ],
-      "prefLabel" : [ {
-        "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Language Code 3",
-        "type" : "label"
-      } ],
-      "seeAlso" : [ {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "https://en.wikipedia.org/wiki/ISO_639-2",
-        "type" : "iri"
-      } ],
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "deu",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "languageCode3"
-    },
-    "domain" : "4",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "16"
-  }, {
-    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#languageCode2",
-    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-    "range" : "19",
-    "annotations" : {
-      "note" : [ {
-        "identifier" : "note",
-        "language" : "en",
-        "value" : "ISO 639-1",
-        "type" : "label"
-      } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/language_ontology.ttl",
-        "type" : "iri"
-      } ],
-      "prefLabel" : [ {
-        "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Language Code 2",
-        "type" : "label"
-      } ],
-      "seeAlso" : [ {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "https://en.wikipedia.org/wiki/ISO_639-1",
-        "type" : "iri"
-      } ],
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "de",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "languageCode2"
-    },
-    "domain" : "4",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "18"
-  }, {
-    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#languageName",
-    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-    "range" : "21",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/language_ontology.ttl",
-        "type" : "iri"
-      } ],
-      "prefLabel" : [ {
-        "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Language Name",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "languageName"
-    },
-    "domain" : "4",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "20"
-  }, {
-    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#wikidata",
-    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-    "range" : "23",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/language_ontology.ttl",
-        "type" : "iri"
-      } ],
-      "prefLabel" : [ {
-        "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Wikidata",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "wikidata"
-    },
-    "domain" : "13",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "22"
-  }, {
-    "range" : "25",
-    "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "24"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#speaks",
     "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-    "range" : "4",
+    "range" : "1",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -5297,21 +5100,21 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "spricht",
+        "language" : "en",
+        "value" : "speaks",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "speaks",
+        "language" : "de",
+        "value" : "spricht",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "speaks"
     },
-    "domain" : "11",
-    "attributes" : [ "someValues", "external", "object" ],
-    "id" : "27"
+    "domain" : "7",
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "18"
   } ]
 }
