@@ -1,5 +1,5 @@
 //
-// Tool to merge ontologies into single file
+// Catena-X Ontology Tools
 // See copyright notice in the top folder
 // See authors file in the top folder
 // See license file in the top folder
@@ -10,8 +10,6 @@ import de.uni_stuttgart.vis.vowl.owl2vowl.export.types.BackupExporter;
 import org.semanticweb.owlapi.formats.RDFJsonLDDocumentFormat;
 import org.semanticweb.owlapi.formats.RDFXMLDocumentFormat;
 import org.semanticweb.owlapi.model.*;
-
-import de.uni_stuttgart.vis.vowl.owl2vowl.Owl2Vowl;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
 

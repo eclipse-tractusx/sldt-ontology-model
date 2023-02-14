@@ -1,5 +1,5 @@
 //
-// Test the tool to merge ontologies into single file
+// Catena-X Ontology Tools
 // See copyright notice in the top folder
 // See authors file in the top folder
 // See license file in the top folder

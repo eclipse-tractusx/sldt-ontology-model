@@ -1,5 +1,5 @@
 //
-// Tool to convert ontologies into visual graph state
+// Catena-X Ontology Tools
 // See copyright notice in the top folder
 // See authors file in the top folder
 // See license file in the top folder
@@ -8,7 +8,6 @@ package io.catenax.knowledge.tools;
 
 import de.uni_stuttgart.vis.vowl.owl2vowl.converter.Converter;
 import de.uni_stuttgart.vis.vowl.owl2vowl.converter.OWLAPI_MissingImportsListener;
-import de.uni_stuttgart.vis.vowl.owl2vowl.model.data.VowlData;
 
 import de.uni_stuttgart.vis.vowl.owl2vowl.export.types.Exporter;
 import de.uni_stuttgart.vis.vowl.owl2vowl.export.types.JsonGenerator;
@@ -55,6 +54,7 @@ import org.semanticweb.owlapi.search.EntitySearcher;
 import org.semanticweb.owlapi.util.OWLOntologyWalker;
 
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Set;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -427,6 +427,7 @@ public class OntologyConverter implements Converter {
             preLoadOntology();
         }
         vowlData = new VowlData();
+
         vowlData.setOwlManager(manager);
         // TODO Probably the parsing could be automated via class annotation and
         // annotation parsing.
@@ -476,6 +477,7 @@ public class OntologyConverter implements Converter {
         if (vowlData == null) {
             convert();
         }
+        vowlData.setExport(true);
         jsonGenerator.execute(vowlData);
         jsonGenerator.export(exporter);
         releaseMemory();
