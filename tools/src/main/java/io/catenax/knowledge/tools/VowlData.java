@@ -46,11 +46,11 @@ public class VowlData extends de.uni_stuttgart.vis.vowl.owl2vowl.model.data.Vowl
     /** filters entities based on redundancies */
     public boolean filter(Map<IRI, AbstractEntity> entities, AbstractEntity entity) {
         if (entity instanceof VowlObjectProperty && entity.getType().equals("owl:objectProperty")) {
-            if (((VowlObjectProperty) entity).getDomains().size() <= 1) {
+            if (((VowlObjectProperty) entity).getDomains().size() == 1) {
                 return false;
             }
         } else if (entity instanceof VowlDatatypeProperty && entity.getType().equals("owl:datatypeProperty")) {
-            if (((VowlDatatypeProperty) entity).getDomains().size() <= 1) {
+            if (((VowlDatatypeProperty) entity).getDomains().size() == 1) {
                 return false;
             }
         } else if (entity instanceof DatatypeReference && entity.getType().equals("rdfs:Datatype")) {

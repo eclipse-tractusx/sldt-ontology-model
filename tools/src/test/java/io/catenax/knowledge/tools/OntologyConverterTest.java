@@ -32,7 +32,7 @@ public class OntologyConverterTest {
      * read the CX ontology, merge it and understand it as an xml document
      */
     @Test
-    public void testConverter() throws Exception {
+    public void testRestrictions() throws Exception {
         OWLOntology ontology=manager.loadOntologyFromOntologyDocument(new File("src/test/resources/restrictions_ontology.ttl"));
         OntologyConverter converter=new OntologyConverter(ontology);
         converter.clearLoadingMsg();
@@ -52,5 +52,29 @@ public class OntologyConverterTest {
         assertEquals(3,((ArrayNode) value.get("property")).size(),"Correct property size");
         // two properties: disjointness and someValues
         assertEquals(3,((ArrayNode) value.get("propertyAttribute")).size(),"Correct propertyAttribute size");
+    }
+
+    /**
+     * read the CX ontology, merge it and understand it as an xml document
+     */
+    @Test
+    public void testUnions() throws Exception {
+        OWLOntology ontology=manager.loadOntologyFromOntologyDocument(new File("src/test/resources/unions_ontology.ttl"));
+        OntologyConverter converter=new OntologyConverter(ontology);
+        converter.clearLoadingMsg();
+        BackupExporter exporter = new BackupExporter();
+        try {
+            converter.export(exporter);
+        } catch (Exception var3) {
+            throw new IllegalStateException(var3);
+        }
+        String json=exporter.getConvertedJson();
+        JsonNode value= jsonMapper.readTree(json);
+        // two classes: Process, Action and 2 anonymous unions
+        assertEquals(4,((ArrayNode) value.get("class")).size(),"Correct class size");
+        assertEquals(4,((ArrayNode) value.get("classAttribute")).size(),"Correct classAttribute size");
+        // 6 concrete rels
+        assertEquals(6,((ArrayNode) value.get("property")).size(),"Correct property size");
+        assertEquals(6,((ArrayNode) value.get("propertyAttribute")).size(),"Correct propertyAttribute size");
     }
 }

@@ -146,16 +146,16 @@
         "value" : "Place",
         "type" : "label"
       } ],
-      "altLabel" : [ {
-        "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "location",
-        "type" : "label"
-      } ],
       "definition" : [ {
         "identifier" : "definition",
         "language" : "en",
         "value" : "A place is a specific location.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "location",
         "type" : "label"
       } ],
       "example" : [ {
@@ -195,12 +195,12 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
+        "language" : "de",
         "value" : "Organisation",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
+        "language" : "en",
         "value" : "Organisation",
         "type" : "label"
       } ],
@@ -299,26 +299,6 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "tangible",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "concrete object",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "physical object",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "material object",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "en",
         "value" : "physical",
         "type" : "label"
       }, {
@@ -329,7 +309,27 @@
       }, {
         "identifier" : "altLabel",
         "language" : "en",
+        "value" : "concrete object",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "tangible",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "physical object",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "en",
         "value" : "material",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "material object",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -352,12 +352,12 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "en",
-        "value" : "substance",
+        "value" : "object",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "equipment",
+        "value" : "substance",
         "type" : "label"
       }, {
         "identifier" : "example",
@@ -367,7 +367,7 @@
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "object",
+        "value" : "equipment",
         "type" : "label"
       } ]
     },
@@ -410,16 +410,16 @@
         "value" : "Action",
         "type" : "label"
       } ],
-      "altLabel" : [ {
-        "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "activity",
-        "type" : "label"
-      } ],
       "definition" : [ {
         "identifier" : "definition",
         "language" : "en",
         "value" : "An action is an activity or movement that is done in order to achieve a goal.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "activity",
         "type" : "label"
       } ]
     },
@@ -447,12 +447,12 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
+        "language" : "en",
         "value" : "Product",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
+        "language" : "de",
         "value" : "Product",
         "type" : "label"
       } ],
@@ -465,12 +465,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://schema.org/Product",
+        "value" : "https://en.wikipedia.org/wiki/Product_",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://en.wikipedia.org/wiki/Product_",
+        "value" : "https://schema.org/Product",
         "type" : "iri"
       } ]
     },
@@ -498,13 +498,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Prozess",
+        "language" : "en",
+        "value" : "Process",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Process",
+        "language" : "de",
+        "value" : "Prozess",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -522,32 +522,32 @@
   }, {
     "instances" : 0,
     "union" : [ "1", "7" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "42"
   }, {
     "instances" : 0,
     "union" : [ "1", "7" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "44"
   }, {
     "instances" : 0,
     "union" : [ "48", "49" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "47"
   }, {
     "instances" : 0,
     "union" : [ "51", "52", "53" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "50"
   }, {
     "instances" : 0,
     "union" : [ "1", "7" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "55"
   }, {
     "instances" : 0,
     "union" : [ "58", "59", "60" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "57"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
@@ -588,25 +588,25 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
+        "language" : "de",
         "value" : "Person",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Person",
-        "type" : "label"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
         "language" : "en",
-        "value" : "A person is a human being.",
+        "value" : "Person",
         "type" : "label"
       } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
         "value" : "people",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A person is a human being.",
         "type" : "label"
       } ],
       "example" : [ {
@@ -665,22 +665,7 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "non-material",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "non-physical object",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "immaterial",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "immaterial entity",
+        "value" : "intangible",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
@@ -690,7 +675,7 @@
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "intangible",
+        "value" : "non-material",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
@@ -700,18 +685,33 @@
       }, {
         "identifier" : "altLabel",
         "language" : "en",
+        "value" : "immaterial entity",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "non-physical object",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "en",
         "value" : "immaterial object",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "immaterial",
         "type" : "label"
       } ],
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://schema.org/Intangible",
+        "value" : "https://en.wikipedia.org/wiki/Non-physical_entity",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://en.wikipedia.org/wiki/Non-physical_entity",
+        "value" : "https://schema.org/Intangible",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -722,27 +722,17 @@
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "domain",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "feeling",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "object",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
         "value" : "idea",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "information",
+        "value" : "plan",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "domain",
         "type" : "label"
       }, {
         "identifier" : "example",
@@ -752,7 +742,17 @@
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "plan",
+        "value" : "feeling",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "information",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "object",
         "type" : "label"
       } ]
     },
@@ -955,7 +955,7 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "12"
   }, {
-    "range" : "7",
+    "range" : "1",
     "domain" : "14",
     "attributes" : [ "anonymous", "object" ],
     "id" : "13"
@@ -970,7 +970,7 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "16"
   }, {
-    "range" : "1",
+    "range" : "7",
     "domain" : "14",
     "attributes" : [ "anonymous", "object" ],
     "id" : "17"
@@ -1038,16 +1038,16 @@
         "value" : "is portion of",
         "type" : "label"
       } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "portion-mass relation",
-        "type" : "label"
-      } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
         "value" : "some of",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "portion-mass relation",
         "type" : "label"
       } ],
       "example" : [ {
@@ -1066,7 +1066,7 @@
       "IRI-based" : "isPortionOf"
     },
     "domain" : "19",
-    "attributes" : [ "transitive", "object", "external", "someValues" ],
+    "attributes" : [ "external", "transitive", "object", "someValues" ],
     "id" : "27"
   }, {
     "range" : "2",
@@ -1132,13 +1132,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "hat Portion",
+        "language" : "en",
+        "value" : "has portion",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "has portion",
+        "language" : "de",
+        "value" : "hat Portion",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -1152,7 +1152,7 @@
       "IRI-based" : "hasPortion"
     },
     "domain" : "19",
-    "attributes" : [ "transitive", "object", "external", "someValues" ],
+    "attributes" : [ "external", "transitive", "object", "someValues" ],
     "id" : "38"
   }, {
     "range" : "5",
@@ -1225,7 +1225,7 @@
       "IRI-based" : "isInvolvedIn"
     },
     "domain" : "7",
-    "attributes" : [ "transitive", "object", "external", "someValues" ],
+    "attributes" : [ "external", "transitive", "object", "someValues" ],
     "id" : "45"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isInvolvedIn",
@@ -1278,7 +1278,7 @@
       "IRI-based" : "isInvolvedIn"
     },
     "domain" : "7",
-    "attributes" : [ "transitive", "object", "external", "someValues" ],
+    "attributes" : [ "external", "transitive", "object", "someValues" ],
     "id" : "46"
   }, {
     "range" : "3",
@@ -1341,7 +1341,7 @@
       "IRI-based" : "isInvolvedIn"
     },
     "domain" : "42",
-    "attributes" : [ "transitive", "object", "external" ],
+    "attributes" : [ "external", "transitive", "object" ],
     "id" : "63"
   }, {
     "range" : "5",
@@ -1388,7 +1388,7 @@
       "IRI-based" : "longitude"
     },
     "domain" : "2",
-    "attributes" : [ "datatype", "external", "someValues" ],
+    "attributes" : [ "external", "datatype", "someValues" ],
     "id" : "68"
   }, {
     "range" : "7",
@@ -1446,7 +1446,7 @@
       "IRI-based" : "isInvolvedIn"
     },
     "domain" : "1",
-    "attributes" : [ "transitive", "object", "external", "someValues" ],
+    "attributes" : [ "external", "transitive", "object", "someValues" ],
     "id" : "70"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isInvolvedIn",
@@ -1499,7 +1499,7 @@
       "IRI-based" : "isInvolvedIn"
     },
     "domain" : "1",
-    "attributes" : [ "transitive", "object", "external", "someValues" ],
+    "attributes" : [ "external", "transitive", "object", "someValues" ],
     "id" : "71"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#latitude",
@@ -1541,7 +1541,7 @@
       "IRI-based" : "latitude"
     },
     "domain" : "2",
-    "attributes" : [ "datatype", "external", "someValues" ],
+    "attributes" : [ "external", "datatype", "someValues" ],
     "id" : "72"
   }, {
     "range" : "3",

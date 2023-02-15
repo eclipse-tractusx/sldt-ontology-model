@@ -157,16 +157,27 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Country",
-        "type" : "label"
-      }, {
-        "identifier" : "prefLabel",
         "language" : "de",
         "value" : "Land",
         "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Country",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A country is a political state, nation, or territory which is controlled by a government.",
+        "type" : "label"
       } ],
       "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "states",
+        "type" : "label"
+      }, {
         "identifier" : "altLabel",
         "language" : "en",
         "value" : "countries",
@@ -175,17 +186,6 @@
         "identifier" : "altLabel",
         "language" : "en",
         "value" : "state",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "states",
-        "type" : "label"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "A country is a political state, nation, or territory which is controlled by a government.",
         "type" : "label"
       } ],
       "wikidata" : [ {
@@ -241,12 +241,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Bahrain",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Bahrain",
           "type" : "label"
         } ],
@@ -266,13 +266,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Salomonen",
+          "language" : "en",
+          "value" : "Solomon Islands",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Solomon Islands",
+          "language" : "de",
+          "value" : "Salomonen",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -316,12 +316,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Mali",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Mali",
           "type" : "label"
         } ],
@@ -334,31 +334,6 @@
       },
       "labels" : {
         "IRI-based" : "Country_Mali"
-      }
-    }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_UnitedStatesMinorOutlyingIslands",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "United States Minor Outlying Islands",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "United States Minor Outlying Islands",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q16645",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_UnitedStatesMinorOutlyingIslands"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_CapeVerde",
@@ -384,6 +359,31 @@
       },
       "labels" : {
         "IRI-based" : "Country_CapeVerde"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_UnitedStatesMinorOutlyingIslands",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "United States Minor Outlying Islands",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "United States Minor Outlying Islands",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q16645",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_UnitedStatesMinorOutlyingIslands"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Serbia",
@@ -416,13 +416,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Irland",
+          "language" : "en",
+          "value" : "Ireland",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Ireland",
+          "language" : "de",
+          "value" : "Irland",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -491,12 +491,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Burundi",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Burundi",
           "type" : "label"
         } ],
@@ -541,13 +541,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Georgien",
+          "language" : "en",
+          "value" : "Georgia",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Georgia",
+          "language" : "de",
+          "value" : "Georgien",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -566,12 +566,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Mayotte",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Mayotte",
           "type" : "label"
         } ],
@@ -584,6 +584,31 @@
       },
       "labels" : {
         "IRI-based" : "Country_Mayotte"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_SaintBarthlemy",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Saint-Barthélemy",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Saint Barthélemy",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q25362",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_SaintBarthlemy"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Yemen",
@@ -611,43 +636,18 @@
         "IRI-based" : "Country_Yemen"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_SaintBarthlemy",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Saint Barthélemy",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Saint-Barthélemy",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q25362",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_SaintBarthlemy"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_CzechRepublic",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Tschechien",
+          "language" : "en",
+          "value" : "Czech Republic",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Czech Republic",
+          "language" : "de",
+          "value" : "Tschechien",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -666,12 +666,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Barbados",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Barbados",
           "type" : "label"
         } ],
@@ -716,13 +716,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Cuba",
+          "language" : "de",
+          "value" : "Kuba",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Kuba",
+          "language" : "en",
+          "value" : "Cuba",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -741,13 +741,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "South Georgia and the South Sandwich Islands",
+          "language" : "de",
+          "value" : "Südgeorgien und die Südlichen Sandwichinseln",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Südgeorgien und die Südlichen Sandwichinseln",
+          "language" : "en",
+          "value" : "South Georgia and the South Sandwich Islands",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -791,13 +791,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Ungarn",
+          "language" : "en",
+          "value" : "Hungary",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Hungary",
+          "language" : "de",
+          "value" : "Ungarn",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -866,13 +866,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Südkorea",
+          "language" : "en",
+          "value" : "South Korea",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "South Korea",
+          "language" : "de",
+          "value" : "Südkorea",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -891,13 +891,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Norway",
+          "language" : "de",
+          "value" : "Norwegen",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Norwegen",
+          "language" : "en",
+          "value" : "Norway",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -941,12 +941,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Laos",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Laos",
           "type" : "label"
         } ],
@@ -986,31 +986,6 @@
         "IRI-based" : "Country_Tanzania"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_BosniaAndHerzegovina",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Bosnien und Herzegowina",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Bosnia and Herzegovina",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q225",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_BosniaAndHerzegovina"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_HeardIslandAndMcdonaldIslands",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
@@ -1036,17 +1011,42 @@
         "IRI-based" : "Country_HeardIslandAndMcdonaldIslands"
       }
     }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_BosniaAndHerzegovina",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Bosnia and Herzegovina",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Bosnien und Herzegowina",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q225",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_BosniaAndHerzegovina"
+      }
+    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Vanuatu",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Vanuatu",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Vanuatu",
           "type" : "label"
         } ],
@@ -1066,13 +1066,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Französisch-Polynesien",
+          "language" : "en",
+          "value" : "French Polynesia",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "French Polynesia",
+          "language" : "de",
+          "value" : "Französisch-Polynesien",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -1216,13 +1216,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Aserbaidschan",
+          "language" : "en",
+          "value" : "Azerbaijan",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Azerbaijan",
+          "language" : "de",
+          "value" : "Aserbaidschan",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -1266,12 +1266,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Curaçao",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Curaçao",
           "type" : "label"
         } ],
@@ -1336,31 +1336,6 @@
         "IRI-based" : "Country_Australia"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Comoros",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Komoren",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Comoros",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q970",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_Comoros"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Myanmar",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
@@ -1386,18 +1361,43 @@
         "IRI-based" : "Country_Myanmar"
       }
     }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Comoros",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Komoren",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Comoros",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q970",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_Comoros"
+      }
+    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Austria",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Austria",
+          "language" : "de",
+          "value" : "Österreich",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Österreich",
+          "language" : "en",
+          "value" : "Austria",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -1416,13 +1416,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Argentinien",
+          "language" : "en",
+          "value" : "Argentina",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Argentina",
+          "language" : "de",
+          "value" : "Argentinien",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -1441,13 +1441,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Polen",
+          "language" : "en",
+          "value" : "Poland",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Poland",
+          "language" : "de",
+          "value" : "Polen",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -1491,12 +1491,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Sierra Leone",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Sierra Leone",
           "type" : "label"
         } ],
@@ -1541,12 +1541,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Botswana",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Botswana",
           "type" : "label"
         } ],
@@ -1566,13 +1566,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Papua New Guinea",
+          "language" : "de",
+          "value" : "Papua-Neuguinea",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Papua-Neuguinea",
+          "language" : "en",
+          "value" : "Papua New Guinea",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -1584,6 +1584,31 @@
       },
       "labels" : {
         "IRI-based" : "Country_PapuaNewGuinea"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Kenya",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Kenya",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Kenia",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q114",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_Kenya"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Runion",
@@ -1611,29 +1636,29 @@
         "IRI-based" : "Country_Runion"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Kenya",
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_RepublicOfTheCongo",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
           "language" : "de",
-          "value" : "Kenia",
+          "value" : "Republik Kongo",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
           "language" : "en",
-          "value" : "Kenya",
+          "value" : "Republic of the Congo",
           "type" : "label"
         } ],
         "wikidata" : [ {
           "identifier" : "wikidata",
           "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q114",
+          "value" : "http://www.wikidata.org/entity/Q971",
           "type" : "iri"
         } ]
       },
       "labels" : {
-        "IRI-based" : "Country_Kenya"
+        "IRI-based" : "Country_RepublicOfTheCongo"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Gabon",
@@ -1661,43 +1686,18 @@
         "IRI-based" : "Country_Gabon"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_RepublicOfTheCongo",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Republik Kongo",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Republic of the Congo",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q971",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_RepublicOfTheCongo"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Armenia",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Armenia",
+          "language" : "de",
+          "value" : "Armenien",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Armenien",
+          "language" : "en",
+          "value" : "Armenia",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -1716,13 +1716,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Antigua und Barbuda",
+          "language" : "en",
+          "value" : "Antigua and Barbuda",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Antigua and Barbuda",
+          "language" : "de",
+          "value" : "Antigua und Barbuda",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -1741,12 +1741,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Åland",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Åland",
           "type" : "label"
         } ],
@@ -1766,12 +1766,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Angola",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Angola",
           "type" : "label"
         } ],
@@ -1791,12 +1791,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Sri Lanka",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Sri Lanka",
           "type" : "label"
         } ],
@@ -1816,12 +1816,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Tonga",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Tonga",
           "type" : "label"
         } ],
@@ -1841,13 +1841,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Saudi Arabia",
+          "language" : "de",
+          "value" : "Saudi-Arabien",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Saudi-Arabien",
+          "language" : "en",
+          "value" : "Saudi Arabia",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -1866,12 +1866,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Cayman Islands",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Cayman Islands",
           "type" : "label"
         } ],
@@ -1916,12 +1916,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Guinea-Bissau",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Guinea-Bissau",
           "type" : "label"
         } ],
@@ -2016,12 +2016,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Belize",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Belize",
           "type" : "label"
         } ],
@@ -2034,31 +2034,6 @@
       },
       "labels" : {
         "IRI-based" : "Country_Belize"
-      }
-    }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Malaysia",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Malaysia",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Malaysia",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q833",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_Malaysia"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Bangladesh",
@@ -2084,6 +2059,31 @@
       },
       "labels" : {
         "IRI-based" : "Country_Bangladesh"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Malaysia",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Malaysia",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Malaysia",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q833",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_Malaysia"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Russia",
@@ -2166,13 +2166,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Faroe Islands",
+          "language" : "de",
+          "value" : "Färöer",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Färöer",
+          "language" : "en",
+          "value" : "Faroe Islands",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -2191,13 +2191,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Cameroon",
+          "language" : "de",
+          "value" : "Kamerun",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Kamerun",
+          "language" : "en",
+          "value" : "Cameroon",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -2216,13 +2216,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Iceland",
+          "language" : "de",
+          "value" : "Island",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Island",
+          "language" : "en",
+          "value" : "Iceland",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -2241,13 +2241,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Norfolk Island",
+          "language" : "de",
+          "value" : "Norfolkinsel",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Norfolkinsel",
+          "language" : "en",
+          "value" : "Norfolk Island",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -2316,13 +2316,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Colombia",
+          "language" : "de",
+          "value" : "Kolumbien",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Kolumbien",
+          "language" : "en",
+          "value" : "Colombia",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -2341,12 +2341,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Guam",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Guam",
           "type" : "label"
         } ],
@@ -2366,12 +2366,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Macau",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Macau",
           "type" : "label"
         } ],
@@ -2391,12 +2391,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Malta",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Malta",
           "type" : "label"
         } ],
@@ -2416,13 +2416,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Fiji",
+          "language" : "de",
+          "value" : "Fidschi",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Fidschi",
+          "language" : "en",
+          "value" : "Fiji",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -2441,13 +2441,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "United States of America",
+          "language" : "de",
+          "value" : "Vereinigte Staaten",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Vereinigte Staaten",
+          "language" : "en",
+          "value" : "United States of America",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -2491,12 +2491,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Isle of Man",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Isle of Man",
           "type" : "label"
         } ],
@@ -2516,13 +2516,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Indonesia",
+          "language" : "de",
+          "value" : "Indonesien",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Indonesien",
+          "language" : "en",
+          "value" : "Indonesia",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -2534,6 +2534,31 @@
       },
       "labels" : {
         "IRI-based" : "Country_Indonesia"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Grenada",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Grenada",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Grenada",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q769",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_Grenada"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_CteDIvoire",
@@ -2561,29 +2586,29 @@
         "IRI-based" : "Country_CteDIvoire"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Grenada",
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Bermuda",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Grenada",
+          "language" : "en",
+          "value" : "Bermuda",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Grenada",
+          "language" : "de",
+          "value" : "Bermuda",
           "type" : "label"
         } ],
         "wikidata" : [ {
           "identifier" : "wikidata",
           "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q769",
+          "value" : "http://www.wikidata.org/entity/Q23635",
           "type" : "iri"
         } ]
       },
       "labels" : {
-        "IRI-based" : "Country_Grenada"
+        "IRI-based" : "Country_Bermuda"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Guernsey",
@@ -2611,43 +2636,18 @@
         "IRI-based" : "Country_Guernsey"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Bermuda",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Bermuda",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Bermuda",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q23635",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_Bermuda"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Egypt",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Egypt",
+          "language" : "de",
+          "value" : "Ägypten",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Ägypten",
+          "language" : "en",
+          "value" : "Egypt",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -2661,43 +2661,18 @@
         "IRI-based" : "Country_Egypt"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Niger",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Niger",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Niger",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q1032",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_Niger"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Morocco",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Marokko",
+          "language" : "en",
+          "value" : "Morocco",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Morocco",
+          "language" : "de",
+          "value" : "Marokko",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -2711,29 +2686,29 @@
         "IRI-based" : "Country_Morocco"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Vietnam",
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Niger",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
           "language" : "de",
-          "value" : "Vietnam",
+          "value" : "Niger",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
           "language" : "en",
-          "value" : "Vietnam",
+          "value" : "Niger",
           "type" : "label"
         } ],
         "wikidata" : [ {
           "identifier" : "wikidata",
           "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q881",
+          "value" : "http://www.wikidata.org/entity/Q1032",
           "type" : "iri"
         } ]
       },
       "labels" : {
-        "IRI-based" : "Country_Vietnam"
+        "IRI-based" : "Country_Niger"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Cambodia",
@@ -2761,17 +2736,42 @@
         "IRI-based" : "Country_Cambodia"
       }
     }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Vietnam",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Vietnam",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Vietnam",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q881",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_Vietnam"
+      }
+    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Turkmenistan",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Turkmenistan",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Turkmenistan",
           "type" : "label"
         } ],
@@ -2784,31 +2784,6 @@
       },
       "labels" : {
         "IRI-based" : "Country_Turkmenistan"
-      }
-    }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Liberia",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Liberia",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Liberia",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q1014",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_Liberia"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_NewZealand",
@@ -2836,6 +2811,56 @@
         "IRI-based" : "Country_NewZealand"
       }
     }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Liberia",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Liberia",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Liberia",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q1014",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_Liberia"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Cyprus",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Republik Zypern",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Cyprus",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q229",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_Cyprus"
+      }
+    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_WallisAndFutuna",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
@@ -2859,31 +2884,6 @@
       },
       "labels" : {
         "IRI-based" : "Country_WallisAndFutuna"
-      }
-    }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Cyprus",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Cyprus",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Republik Zypern",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q229",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_Cyprus"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_FederatedStatesOfMicronesia",
@@ -2936,31 +2936,6 @@
         "IRI-based" : "Country_Japan"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Taiwan",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Republik China",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Taiwan",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q865",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_Taiwan"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Tokelau",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
@@ -2986,29 +2961,29 @@
         "IRI-based" : "Country_Tokelau"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Djibouti",
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Taiwan",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Djibouti",
+          "language" : "de",
+          "value" : "Republik China",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Dschibuti",
+          "language" : "en",
+          "value" : "Taiwan",
           "type" : "label"
         } ],
         "wikidata" : [ {
           "identifier" : "wikidata",
           "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q977",
+          "value" : "http://www.wikidata.org/entity/Q865",
           "type" : "iri"
         } ]
       },
       "labels" : {
-        "IRI-based" : "Country_Djibouti"
+        "IRI-based" : "Country_Taiwan"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_TheBahamas",
@@ -3034,6 +3009,31 @@
       },
       "labels" : {
         "IRI-based" : "Country_TheBahamas"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Djibouti",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Dschibuti",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Djibouti",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q977",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_Djibouti"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Canada",
@@ -3136,31 +3136,6 @@
         "IRI-based" : "Country_BritishIndianOceanTerritory"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_WesternSahara",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Westsahara",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Western Sahara",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q6250",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_WesternSahara"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_AntarcticTreatyArea",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
@@ -3184,6 +3159,31 @@
       },
       "labels" : {
         "IRI-based" : "Country_AntarcticTreatyArea"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_WesternSahara",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Western Sahara",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Westsahara",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q6250",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_WesternSahara"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Eritrea",
@@ -3216,13 +3216,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Qatar",
+          "language" : "de",
+          "value" : "Katar",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Katar",
+          "language" : "en",
+          "value" : "Qatar",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -3241,12 +3241,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Andorra",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Andorra",
           "type" : "label"
         } ],
@@ -3266,13 +3266,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "North Macedonia",
+          "language" : "de",
+          "value" : "Nordmazedonien",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Nordmazedonien",
+          "language" : "en",
+          "value" : "North Macedonia",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -3286,42 +3286,17 @@
         "IRI-based" : "Country_NorthMacedonia"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Iran",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Iran",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Iran",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q794",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_Iran"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Benin",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Benin",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Benin",
           "type" : "label"
         } ],
@@ -3334,6 +3309,31 @@
       },
       "labels" : {
         "IRI-based" : "Country_Benin"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Iran",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Iran",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Iran",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q794",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_Iran"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Guatemala",
@@ -3416,13 +3416,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "North Korea",
+          "language" : "de",
+          "value" : "Nordkorea",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Nordkorea",
+          "language" : "en",
+          "value" : "North Korea",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -3466,13 +3466,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Jamaica",
+          "language" : "de",
+          "value" : "Jamaika",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Jamaika",
+          "language" : "en",
+          "value" : "Jamaica",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -3484,31 +3484,6 @@
       },
       "labels" : {
         "IRI-based" : "Country_Jamaica"
-      }
-    }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Senegal",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Senegal",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Senegal",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q1041",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_Senegal"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Belgium",
@@ -3536,29 +3511,54 @@
         "IRI-based" : "Country_Belgium"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Paraguay",
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Senegal",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
           "language" : "de",
-          "value" : "Paraguay",
+          "value" : "Senegal",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
           "language" : "en",
-          "value" : "Paraguay",
+          "value" : "Senegal",
           "type" : "label"
         } ],
         "wikidata" : [ {
           "identifier" : "wikidata",
           "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q733",
+          "value" : "http://www.wikidata.org/entity/Q1041",
           "type" : "iri"
         } ]
       },
       "labels" : {
-        "IRI-based" : "Country_Paraguay"
+        "IRI-based" : "Country_Senegal"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_FrenchSouthernAndAntarcticLands",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "French Southern and Antarctic Lands",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Französische Süd- und Antarktisgebiete",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q129003",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_FrenchSouthernAndAntarcticLands"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Chile",
@@ -3586,29 +3586,29 @@
         "IRI-based" : "Country_Chile"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_FrenchSouthernAndAntarcticLands",
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Paraguay",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
           "language" : "en",
-          "value" : "French Southern and Antarctic Lands",
+          "value" : "Paraguay",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
           "language" : "de",
-          "value" : "Französische Süd- und Antarktisgebiete",
+          "value" : "Paraguay",
           "type" : "label"
         } ],
         "wikidata" : [ {
           "identifier" : "wikidata",
           "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q129003",
+          "value" : "http://www.wikidata.org/entity/Q733",
           "type" : "iri"
         } ]
       },
       "labels" : {
-        "IRI-based" : "Country_FrenchSouthernAndAntarcticLands"
+        "IRI-based" : "Country_Paraguay"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_CookIslands",
@@ -3641,12 +3641,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Ghana",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Ghana",
           "type" : "label"
         } ],
@@ -3659,6 +3659,81 @@
       },
       "labels" : {
         "IRI-based" : "Country_Ghana"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Israel",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Israel",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Israel",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q801",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_Israel"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Spain",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Spanien",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Spain",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q29",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_Spain"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_India",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "India",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Indien",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q668",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_India"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Jersey",
@@ -3686,92 +3761,17 @@
         "IRI-based" : "Country_Jersey"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Israel",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Israel",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Israel",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q801",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_Israel"
-      }
-    }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Spain",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Spain",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Spanien",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q29",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_Spain"
-      }
-    }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_India",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Indien",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "India",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q668",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_India"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Uganda",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Uganda",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Uganda",
           "type" : "label"
         } ],
@@ -3784,6 +3784,31 @@
       },
       "labels" : {
         "IRI-based" : "Country_Uganda"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Nigeria",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Nigeria",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Nigeria",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q1033",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_Nigeria"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Brazil",
@@ -3811,42 +3836,17 @@
         "IRI-based" : "Country_Brazil"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Nigeria",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Nigeria",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Nigeria",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q1033",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_Nigeria"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Nepal",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Nepal",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Nepal",
           "type" : "label"
         } ],
@@ -3886,31 +3886,6 @@
         "IRI-based" : "Country_Luxembourg"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Somalia",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Somalia",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Somalia",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q1045",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_Somalia"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Brunei",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
@@ -3934,6 +3909,31 @@
       },
       "labels" : {
         "IRI-based" : "Country_Brunei"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Somalia",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Somalia",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Somalia",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q1045",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_Somalia"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Iraq",
@@ -3991,13 +3991,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Seychellen",
+          "language" : "en",
+          "value" : "Seychelles",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Seychelles",
+          "language" : "de",
+          "value" : "Seychellen",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -4036,6 +4036,56 @@
         "IRI-based" : "Country_Lesotho"
       }
     }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_SaintHelenaAscensionAndTristanDaCunha",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Saint Helena, Ascension and Tristan da Cunha",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "St. Helena, Ascension und Tristan da Cunha",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q192184",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_SaintHelenaAscensionAndTristanDaCunha"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_TimorLeste",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Timor-Leste",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Osttimor",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q574",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_TimorLeste"
+      }
+    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_ElSalvador",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
@@ -4061,68 +4111,18 @@
         "IRI-based" : "Country_ElSalvador"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_TimorLeste",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Osttimor",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Timor-Leste",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q574",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_TimorLeste"
-      }
-    }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_SaintHelenaAscensionAndTristanDaCunha",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "St. Helena, Ascension und Tristan da Cunha",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Saint Helena, Ascension and Tristan da Cunha",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q192184",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_SaintHelenaAscensionAndTristanDaCunha"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_BouvetIsland",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Bouvetinsel",
+          "language" : "en",
+          "value" : "Bouvet Island",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Bouvet Island",
+          "language" : "de",
+          "value" : "Bouvetinsel",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -4191,12 +4191,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Ukraine",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Ukraine",
           "type" : "label"
         } ],
@@ -4266,12 +4266,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Liechtenstein",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Liechtenstein",
           "type" : "label"
         } ],
@@ -4286,43 +4286,18 @@
         "IRI-based" : "Country_Liechtenstein"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_SvalbardAndJanMayen",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Svalbard und Jan Mayen",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Svalbard and Jan Mayen",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q842829",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_SvalbardAndJanMayen"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_StateOfPalestine",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Staat Palästina",
+          "language" : "en",
+          "value" : "State of Palestine",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "State of Palestine",
+          "language" : "de",
+          "value" : "Staat Palästina",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -4336,18 +4311,43 @@
         "IRI-based" : "Country_StateOfPalestine"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_ChristmasIsland",
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_SvalbardAndJanMayen",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
           "language" : "en",
-          "value" : "Christmas Island",
+          "value" : "Svalbard and Jan Mayen",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
           "language" : "de",
+          "value" : "Svalbard und Jan Mayen",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q842829",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_SvalbardAndJanMayen"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_ChristmasIsland",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
           "value" : "Weihnachtsinsel",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Christmas Island",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -4366,12 +4366,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Peru",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Peru",
           "type" : "label"
         } ],
@@ -4391,13 +4391,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Madagaskar",
+          "language" : "en",
+          "value" : "Madagascar",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Madagascar",
+          "language" : "de",
+          "value" : "Madagaskar",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -4416,12 +4416,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Palau",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Palau",
           "type" : "label"
         } ],
@@ -4491,13 +4491,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "South Sudan",
+          "language" : "de",
+          "value" : "Südsudan",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Südsudan",
+          "language" : "en",
+          "value" : "South Sudan",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -4516,12 +4516,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Suriname",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Suriname",
           "type" : "label"
         } ],
@@ -4541,13 +4541,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Mozambique",
+          "language" : "de",
+          "value" : "Mosambik",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Mosambik",
+          "language" : "en",
+          "value" : "Mozambique",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -4641,13 +4641,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "São Tomé und Príncipe",
+          "language" : "en",
+          "value" : "São Tomé and Príncipe",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "São Tomé and Príncipe",
+          "language" : "de",
+          "value" : "São Tomé und Príncipe",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -4666,13 +4666,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Falklandinseln",
+          "language" : "en",
+          "value" : "Falkland Islands",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Falkland Islands",
+          "language" : "de",
+          "value" : "Falklandinseln",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -4716,13 +4716,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Zambia",
+          "language" : "de",
+          "value" : "Sambia",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Sambia",
+          "language" : "en",
+          "value" : "Zambia",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -4766,13 +4766,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Democratic Republic of the Congo",
+          "language" : "de",
+          "value" : "Demokratische Republik Kongo",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Demokratische Republik Kongo",
+          "language" : "en",
+          "value" : "Democratic Republic of the Congo",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -4841,13 +4841,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Albania",
+          "language" : "de",
+          "value" : "Albanien",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Albanien",
+          "language" : "en",
+          "value" : "Albania",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -4891,12 +4891,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Togo",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Togo",
           "type" : "label"
         } ],
@@ -4909,6 +4909,31 @@
       },
       "labels" : {
         "IRI-based" : "Country_Togo"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_SaintKittsAndNevis",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Saint Kitts and Nevis",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "St. Kitts und Nevis",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q763",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_SaintKittsAndNevis"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Oman",
@@ -4936,43 +4961,18 @@
         "IRI-based" : "Country_Oman"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_SaintKittsAndNevis",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "St. Kitts und Nevis",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Saint Kitts and Nevis",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q763",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_SaintKittsAndNevis"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Tajikistan",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Tadschikistan",
+          "language" : "en",
+          "value" : "Tajikistan",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Tajikistan",
+          "language" : "de",
+          "value" : "Tadschikistan",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -4991,12 +4991,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Ecuador",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Ecuador",
           "type" : "label"
         } ],
@@ -5091,13 +5091,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Französisch-Guayana",
+          "language" : "en",
+          "value" : "French Guiana",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "French Guiana",
+          "language" : "de",
+          "value" : "Französisch-Guayana",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -5166,13 +5166,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Griechenland",
+          "language" : "en",
+          "value" : "Greece",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Greece",
+          "language" : "de",
+          "value" : "Griechenland",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -5191,12 +5191,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Mauritius",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Mauritius",
           "type" : "label"
         } ],
@@ -5266,13 +5266,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Saint Vincent and the Grenadines",
+          "language" : "de",
+          "value" : "St. Vincent und die Grenadinen",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "St. Vincent und die Grenadinen",
+          "language" : "en",
+          "value" : "Saint Vincent and the Grenadines",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -5291,13 +5291,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "United States Virgin Islands",
+          "language" : "de",
+          "value" : "Amerikanische Jungferninseln",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Amerikanische Jungferninseln",
+          "language" : "en",
+          "value" : "United States Virgin Islands",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -5316,13 +5316,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Kasachstan",
+          "language" : "en",
+          "value" : "Kazakhstan",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Kazakhstan",
+          "language" : "de",
+          "value" : "Kasachstan",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -5391,13 +5391,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "United Arab Emirates",
+          "language" : "de",
+          "value" : "Vereinigte Arabische Emirate",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Vereinigte Arabische Emirate",
+          "language" : "en",
+          "value" : "United Arab Emirates",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -5466,13 +5466,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Kokosinseln",
+          "language" : "en",
+          "value" : "Cocos  Islands",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Cocos  Islands",
+          "language" : "de",
+          "value" : "Kokosinseln",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -5491,13 +5491,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Trinidad und Tobago",
+          "language" : "en",
+          "value" : "Trinidad and Tobago",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Trinidad and Tobago",
+          "language" : "de",
+          "value" : "Trinidad und Tobago",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -5516,13 +5516,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Slovenia",
+          "language" : "de",
+          "value" : "Slowenien",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Slowenien",
+          "language" : "en",
+          "value" : "Slovenia",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -5541,13 +5541,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Lithuania",
+          "language" : "de",
+          "value" : "Litauen",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Litauen",
+          "language" : "en",
+          "value" : "Lithuania",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -5566,13 +5566,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Tunisia",
+          "language" : "de",
+          "value" : "Tunesien",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Tunesien",
+          "language" : "en",
+          "value" : "Tunisia",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -5591,13 +5591,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Vereinigtes Königreich",
+          "language" : "en",
+          "value" : "United Kingdom",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "United Kingdom",
+          "language" : "de",
+          "value" : "Vereinigtes Königreich",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -5741,13 +5741,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Saint-Martin",
+          "language" : "en",
+          "value" : "Saint Martin",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Saint Martin",
+          "language" : "de",
+          "value" : "Saint-Martin",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -5791,12 +5791,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Haiti",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Haiti",
           "type" : "label"
         } ],
@@ -5816,13 +5816,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Lebanon",
+          "language" : "de",
+          "value" : "Libanon",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Libanon",
+          "language" : "en",
+          "value" : "Lebanon",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -5834,6 +5834,56 @@
       },
       "labels" : {
         "IRI-based" : "Country_Lebanon"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Montenegro",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Montenegro",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Montenegro",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q236",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_Montenegro"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Uruguay",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Uruguay",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Uruguay",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q77",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_Uruguay"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Mexico",
@@ -5861,67 +5911,17 @@
         "IRI-based" : "Country_Mexico"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Uruguay",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Uruguay",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Uruguay",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q77",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_Uruguay"
-      }
-    }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Montenegro",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Montenegro",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Montenegro",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q236",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_Montenegro"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Nauru",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Nauru",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Nauru",
           "type" : "label"
         } ],
@@ -5941,12 +5941,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Eswatini",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Eswatini",
           "type" : "label"
         } ],
@@ -6016,13 +6016,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Ruanda",
+          "language" : "en",
+          "value" : "Rwanda",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Rwanda",
+          "language" : "de",
+          "value" : "Ruanda",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -6041,13 +6041,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Vatikanstadt",
+          "language" : "en",
+          "value" : "Vatican City",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Vatican City",
+          "language" : "de",
+          "value" : "Vatikanstadt",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -6066,12 +6066,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Burkina Faso",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Burkina Faso",
           "type" : "label"
         } ],
@@ -6084,31 +6084,6 @@
       },
       "labels" : {
         "IRI-based" : "Country_BurkinaFaso"
-      }
-    }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_BritishVirginIslands",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "British Virgin Islands",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Britische Jungferninseln",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q25305",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_BritishVirginIslands"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_DominicanRepublic",
@@ -6134,6 +6109,31 @@
       },
       "labels" : {
         "IRI-based" : "Country_DominicanRepublic"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_BritishVirginIslands",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "British Virgin Islands",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Britische Jungferninseln",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q25305",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_BritishVirginIslands"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_PuertoRico",
@@ -6216,12 +6216,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Nicaragua",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Nicaragua",
           "type" : "label"
         } ],
@@ -6241,12 +6241,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Guadeloupe",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Guadeloupe",
           "type" : "label"
         } ],
@@ -6266,12 +6266,12 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Martinique",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Martinique",
           "type" : "label"
         } ],
@@ -6286,17 +6286,42 @@
         "IRI-based" : "Country_Martinique"
       }
     }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_CaribbeanNetherlands",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Caribbean Netherlands",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Karibische Niederlande",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q27561",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_CaribbeanNetherlands"
+      }
+    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Monaco",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
           "value" : "Monaco",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
+          "language" : "de",
           "value" : "Monaco",
           "type" : "label"
         } ],
@@ -6336,43 +6361,18 @@
         "IRI-based" : "Country_SanMarino"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_CaribbeanNetherlands",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Karibische Niederlande",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Caribbean Netherlands",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q27561",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_CaribbeanNetherlands"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Bulgaria",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Bulgarien",
+          "language" : "en",
+          "value" : "Bulgaria",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Bulgaria",
+          "language" : "de",
+          "value" : "Bulgarien",
           "type" : "label"
         } ],
         "wikidata" : [ {
@@ -6384,6 +6384,31 @@
       },
       "labels" : {
         "IRI-based" : "Country_Bulgaria"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Kiribati",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Kiribati",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Kiribati",
+          "type" : "label"
+        } ],
+        "wikidata" : [ {
+          "identifier" : "wikidata",
+          "language" : "undefined",
+          "value" : "http://www.wikidata.org/entity/Q710",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Country_Kiribati"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Afghanistan",
@@ -6410,31 +6435,6 @@
       "labels" : {
         "IRI-based" : "Country_Afghanistan"
       }
-    }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Country_Kiribati",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Kiribati",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Kiribati",
-          "type" : "label"
-        } ],
-        "wikidata" : [ {
-          "identifier" : "wikidata",
-          "language" : "undefined",
-          "value" : "http://www.wikidata.org/entity/Q710",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Country_Kiribati"
-      }
     } ],
     "attributes" : [ "external" ],
     "id" : "2",
@@ -6442,12 +6442,12 @@
   }, {
     "instances" : 0,
     "union" : [ "2", "6" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "18"
   }, {
     "instances" : 0,
     "union" : [ "2", "5" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "19"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
@@ -6483,25 +6483,25 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Hauptstadt",
-        "type" : "label"
-      }, {
-        "identifier" : "prefLabel",
         "language" : "en",
         "value" : "Capital City",
         "type" : "label"
-      } ],
-      "altLabel" : [ {
-        "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "capital",
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Hauptstadt",
         "type" : "label"
       } ],
       "definition" : [ {
         "identifier" : "definition",
         "language" : "en",
         "value" : "A capital city is a city that serves as the primary political and administrative center of a country or region.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "capital",
         "type" : "label"
       } ],
       "wikidata" : [ {
@@ -6542,13 +6542,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Kontinent",
+        "language" : "en",
+        "value" : "Continent",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Continent",
+        "language" : "de",
+        "value" : "Kontinent",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -6609,13 +6609,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "City",
+        "language" : "de",
+        "value" : "Stadt",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Stadt",
+        "language" : "en",
+        "value" : "City",
         "type" : "label"
       } ],
       "wikidata" : [ {
@@ -6727,7 +6727,7 @@
       "IRI-based" : "countryName"
     },
     "domain" : "2",
-    "attributes" : [ "datatype", "external", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "1"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#countryCode2",
@@ -6780,7 +6780,7 @@
       "IRI-based" : "countryCode2"
     },
     "domain" : "2",
-    "attributes" : [ "datatype", "external", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "7"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#wikidata",
@@ -6804,7 +6804,7 @@
       "IRI-based" : "wikidata"
     },
     "domain" : "2",
-    "attributes" : [ "datatype", "external", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "9"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#countryNumber",
@@ -6857,7 +6857,7 @@
       "IRI-based" : "countryNumber"
     },
     "domain" : "2",
-    "attributes" : [ "datatype", "external", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "11"
   }, {
     "range" : "6",
@@ -6891,7 +6891,7 @@
       "IRI-based" : "hasCapitalCity"
     },
     "domain" : "2",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "object", "external" ],
     "id" : "16"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#countryCode3",
@@ -6906,13 +6906,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Country Code 3",
+        "language" : "de",
+        "value" : "Ländercode 3",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Ländercode 3",
+        "language" : "en",
+        "value" : "Country Code 3",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -6944,7 +6944,7 @@
       "IRI-based" : "countryCode3"
     },
     "domain" : "2",
-    "attributes" : [ "datatype", "external", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "17"
   }, {
     "range" : "4",
@@ -6969,13 +6969,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Stadtname",
+        "language" : "en",
+        "value" : "City Name",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "City Name",
+        "language" : "de",
+        "value" : "Stadtname",
         "type" : "label"
       } ]
     },
@@ -6983,7 +6983,7 @@
       "IRI-based" : "cityName"
     },
     "domain" : "6",
-    "attributes" : [ "datatype", "external", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "26"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isLocatedIn",
@@ -7007,7 +7007,7 @@
       "IRI-based" : "isLocatedIn"
     },
     "domain" : "18",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "27"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isLocatedIn",
@@ -7031,7 +7031,7 @@
       "IRI-based" : "isLocatedIn"
     },
     "domain" : "6",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "object", "external" ],
     "id" : "28"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isLocatedIn",
@@ -7055,7 +7055,7 @@
       "IRI-based" : "isLocatedIn"
     },
     "domain" : "2",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "object", "external" ],
     "id" : "29"
   } ]
 }

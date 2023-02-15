@@ -199,13 +199,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Token mit variabler Länge",
+        "language" : "en",
+        "value" : "Variable Length Token",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Variable Length Token",
+        "language" : "de",
+        "value" : "Token mit variabler Länge",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -394,12 +394,12 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
+        "language" : "de",
         "value" : "Token",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
+        "language" : "en",
         "value" : "Token",
         "type" : "label"
       } ],
@@ -436,13 +436,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Fixed Length Token",
+        "language" : "de",
+        "value" : "Token mit fester Länge",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Token mit fester Länge",
+        "language" : "en",
+        "value" : "Fixed Length Token",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -555,7 +555,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "en",
-        "value" : "2",
+        "value" : "1",
         "type" : "label"
       }, {
         "identifier" : "example",
@@ -565,7 +565,7 @@
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "1",
+        "value" : "2",
         "type" : "label"
       } ]
     },
@@ -661,17 +661,17 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "en",
-        "value" : "1",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
         "value" : "3",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "en",
         "value" : "2",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "1",
         "type" : "label"
       } ]
     },
@@ -718,12 +718,12 @@
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "alphabetic",
+        "value" : "numeric",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "numeric",
+        "value" : "alphabetic",
         "type" : "label"
       } ]
     },
@@ -746,13 +746,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Anzahl der Stellen",
+        "language" : "en",
+        "value" : "Number Of Digits",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Number Of Digits",
+        "language" : "de",
+        "value" : "Anzahl der Stellen",
         "type" : "label"
       } ],
       "altLabel" : [ {
@@ -863,13 +863,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Encodierungsbeispiel",
+        "language" : "en",
+        "value" : "Encoding Example",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Encoding Example",
+        "language" : "de",
+        "value" : "Encodierungsbeispiel",
         "type" : "label"
       } ],
       "example" : [ {
@@ -933,13 +933,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "übersetzt",
+        "language" : "en",
+        "value" : "translates",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "translates",
+        "language" : "de",
+        "value" : "übersetzt",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -987,24 +987,19 @@
         "value" : "Token Length",
         "type" : "label"
       } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "Fixed number of digits.",
-        "type" : "label"
-      } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
         "value" : "number of characters",
         "type" : "label"
       } ],
-      "example" : [ {
-        "identifier" : "example",
+      "definition" : [ {
+        "identifier" : "definition",
         "language" : "en",
-        "value" : "1",
+        "value" : "Fixed number of digits.",
         "type" : "label"
-      }, {
+      } ],
+      "example" : [ {
         "identifier" : "example",
         "language" : "en",
         "value" : "2",
@@ -1013,6 +1008,11 @@
         "identifier" : "example",
         "language" : "en",
         "value" : "3",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "1",
         "type" : "label"
       } ]
     },
@@ -1063,7 +1063,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "en",
-        "value" : "[A-z",
+        "value" : "alphanumeric",
         "type" : "label"
       }, {
         "identifier" : "example",
@@ -1078,7 +1078,7 @@
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "alphanumeric",
+        "value" : "[A-z",
         "type" : "label"
       }, {
         "identifier" : "example",
@@ -1259,17 +1259,17 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "en",
+        "value" : "1",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
         "value" : "2",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "en",
         "value" : "3",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "1",
         "type" : "label"
       } ]
     },

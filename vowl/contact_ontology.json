@@ -295,7 +295,7 @@
     "id" : "284",
     "type" : "owl:Class"
   }, {
-    "id" : "288",
+    "id" : "286",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "242",
@@ -397,7 +397,7 @@
     "id" : "366",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "290",
+    "id" : "289",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "375",
@@ -490,7 +490,7 @@
     "id" : "240",
     "type" : "owl:Class"
   }, {
-    "id" : "287",
+    "id" : "288",
     "type" : "owl:Class"
   }, {
     "id" : "345",
@@ -565,10 +565,7 @@
     "id" : "54",
     "type" : "owl:Class"
   }, {
-    "id" : "459",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "461",
+    "id" : "460",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "39",
@@ -584,6 +581,9 @@
     "type" : "owl:Class"
   }, {
     "id" : "465",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "467",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "105",
@@ -681,19 +681,39 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Material Thing",
+        "language" : "de",
+        "value" : "Materielles Ding",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Materielles Ding",
+        "language" : "en",
+        "value" : "Material Thing",
         "type" : "label"
       } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
+        "value" : "concrete object",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "en",
         "value" : "physical",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "material",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "material entity",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "physical object",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
@@ -705,26 +725,6 @@
         "language" : "en",
         "value" : "material object",
         "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "concrete object",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "material",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "physical object",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "material entity",
-        "type" : "label"
       } ],
       "definition" : [ {
         "identifier" : "definition",
@@ -735,25 +735,15 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://schema.org/Thing",
+        "value" : "https://en.wikipedia.org/wiki/Philosophy_of_matter",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://en.wikipedia.org/wiki/Philosophy_of_matter",
+        "value" : "https://schema.org/Thing",
         "type" : "iri"
       } ],
       "example" : [ {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "substance",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "object",
-        "type" : "label"
-      }, {
         "identifier" : "example",
         "language" : "en",
         "value" : "product",
@@ -762,6 +752,16 @@
         "identifier" : "example",
         "language" : "en",
         "value" : "equipment",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "substance",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "object",
         "type" : "label"
       } ]
     },
@@ -877,7 +877,7 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "AAA",
+          "value" : "Triple A",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -887,7 +887,7 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Triple A",
+          "value" : "AAA",
           "type" : "label"
         } ],
         "seeAlso" : [ {
@@ -914,7 +914,7 @@
   }, {
     "instances" : 0,
     "union" : [ "30", "90" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "89"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Service",
@@ -929,13 +929,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Dienstleistung",
+        "language" : "en",
+        "value" : "Service",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Service",
+        "language" : "de",
+        "value" : "Dienstleistung",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -966,7 +966,7 @@
   }, {
     "instances" : 0,
     "union" : [ "96", "97", "98", "99" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "95"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -978,7 +978,7 @@
   }, {
     "instances" : 0,
     "union" : [ "101", "15" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "100"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Application",
@@ -1037,6 +1037,12 @@
         "value" : "Final Product",
         "type" : "label"
       } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A product that is ready for sale.",
+        "type" : "label"
+      } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
@@ -1048,21 +1054,15 @@
         "value" : "finished product",
         "type" : "label"
       } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "A product that is ready for sale.",
-        "type" : "label"
-      } ],
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://en.wikipedia.org/wiki/Final_good",
+        "value" : "https://en.wikipedia.org/wiki/Final_product",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://en.wikipedia.org/wiki/Final_product",
+        "value" : "https://en.wikipedia.org/wiki/Final_good",
         "type" : "iri"
       } ]
     },
@@ -1116,13 +1116,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Process",
+        "language" : "de",
+        "value" : "Prozess",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Prozess",
+        "language" : "en",
+        "value" : "Process",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -1141,12 +1141,12 @@
   }, {
     "instances" : 0,
     "union" : [ "120", "121", "122" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "119"
   }, {
     "instances" : 0,
     "union" : [ "30", "90" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "124"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -1158,7 +1158,7 @@
   }, {
     "instances" : 0,
     "union" : [ "48", "77" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "126"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Disposer",
@@ -1192,7 +1192,7 @@
   }, {
     "instances" : 0,
     "union" : [ "2", "39" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "129"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -1204,7 +1204,7 @@
   }, {
     "instances" : 0,
     "union" : [ "131", "132" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "130"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#Classification",
@@ -1233,7 +1233,7 @@
   }, {
     "instances" : 0,
     "union" : [ "30", "90" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "136"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -1245,12 +1245,12 @@
   }, {
     "instances" : 0,
     "union" : [ "138", "37", "15" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "137"
   }, {
     "instances" : 0,
     "union" : [ "142", "143", "144" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "141"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -1262,12 +1262,12 @@
   }, {
     "instances" : 0,
     "union" : [ "5", "64", "37", "15" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "145"
   }, {
     "instances" : 0,
     "union" : [ "5", "115" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "148"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -1279,7 +1279,7 @@
   }, {
     "instances" : 0,
     "union" : [ "74", "110" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "149"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#FinancialService",
@@ -1349,7 +1349,7 @@
   }, {
     "instances" : 0,
     "union" : [ "48", "77" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "152"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -1414,12 +1414,12 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
+        "language" : "en",
         "value" : "Organisation",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
+        "language" : "de",
         "value" : "Organisation",
         "type" : "label"
       } ],
@@ -1484,13 +1484,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Distributor",
+        "language" : "de",
+        "value" : "Vertreiber",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Vertreiber",
+        "language" : "en",
+        "value" : "Distributor",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -1994,32 +1994,6 @@
         "IRI-based" : "SiDerivedUnit_Farad"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#SiDerivedUnit_Ohm",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "note" : [ {
-          "identifier" : "note",
-          "language" : "en",
-          "value" : "resistance, impedance, reactance",
-          "type" : "label"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Ohm",
-          "type" : "label"
-        } ],
-        "altLabel" : [ {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Ω",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "SiDerivedUnit_Ohm"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#SiDerivedUnit_Tesla",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
@@ -2070,6 +2044,32 @@
       },
       "labels" : {
         "IRI-based" : "SiDerivedUnit_Gray"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#SiDerivedUnit_Ohm",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "resistance, impedance, reactance",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Ohm",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Ω",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SiDerivedUnit_Ohm"
       }
     }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#SiDerivedUnit_Watt",
@@ -2230,25 +2230,25 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Action",
-        "type" : "label"
-      }, {
-        "identifier" : "prefLabel",
         "language" : "de",
         "value" : "Handlung",
         "type" : "label"
-      } ],
-      "altLabel" : [ {
-        "identifier" : "altLabel",
+      }, {
+        "identifier" : "prefLabel",
         "language" : "en",
-        "value" : "activity",
+        "value" : "Action",
         "type" : "label"
       } ],
       "definition" : [ {
         "identifier" : "definition",
         "language" : "en",
         "value" : "An action is an activity or movement that is done in order to achieve a goal.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "activity",
         "type" : "label"
       } ]
     },
@@ -2270,13 +2270,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Dienstleister",
+        "language" : "en",
+        "value" : "Service Provider",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Service Provider",
+        "language" : "de",
+        "value" : "Dienstleister",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -2305,13 +2305,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Private Contact",
+        "language" : "de",
+        "value" : "Privatkontakt",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Privatkontakt",
+        "language" : "en",
+        "value" : "Private Contact",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -2346,13 +2346,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Reseller",
+        "language" : "de",
+        "value" : "Wiederverkäufer",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Wiederverkäufer",
+        "language" : "en",
+        "value" : "Reseller",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -2481,12 +2481,12 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "OPC Unified Architecture",
+          "value" : "OPC UA",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "OPC UA",
+          "value" : "OPC Unified Architecture",
           "type" : "label"
         } ],
         "seeAlso" : [ {
@@ -2517,13 +2517,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Component Supplier",
+        "language" : "de",
+        "value" : "Komponentlieferant",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Komponentlieferant",
+        "language" : "en",
+        "value" : "Component Supplier",
         "type" : "label"
       } ]
     },
@@ -2618,12 +2618,12 @@
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "supplier",
+        "value" : "seller",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "seller",
+        "value" : "supplier",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -2696,13 +2696,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Address",
+        "language" : "de",
+        "value" : "Adresse",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Adresse",
+        "language" : "en",
+        "value" : "Address",
         "type" : "label"
       } ]
     },
@@ -2797,13 +2797,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Place",
+        "language" : "de",
+        "value" : "Ort",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Ort",
+        "language" : "en",
+        "value" : "Place",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -2895,18 +2895,7 @@
         "value" : "Intermediate Product",
         "type" : "label"
       } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "An intermediate product is a product that is used as a raw material or ingredient in the production of other products.",
-        "type" : "label"
-      } ],
       "altLabel" : [ {
-        "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "producer goods",
-        "type" : "label"
-      }, {
         "identifier" : "altLabel",
         "language" : "en",
         "value" : "semi-finished products",
@@ -2914,7 +2903,18 @@
       }, {
         "identifier" : "altLabel",
         "language" : "en",
+        "value" : "producer goods",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "en",
         "value" : "intermediate goods",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An intermediate product is a product that is used as a raw material or ingredient in the production of other products.",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -2991,17 +2991,17 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "en",
+        "value" : "telephone number",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
         "value" : "network address",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "en",
         "value" : "email address",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "telephone number",
         "type" : "label"
       }, {
         "identifier" : "example",
@@ -3120,17 +3120,17 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "de",
-        "value" : "Rücklieferadresse",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "de",
-        "value" : "Anschrift des Absenders",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "de",
         "value" : "Rücksendeadresse",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "de",
+        "value" : "Antwortadresse",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "de",
+        "value" : "Rücklieferadresse",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
@@ -3140,7 +3140,7 @@
       }, {
         "identifier" : "altLabel",
         "language" : "de",
-        "value" : "Antwortadresse",
+        "value" : "Anschrift des Absenders",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -3255,12 +3255,12 @@
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "P.O. box",
+        "value" : "postal box",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "postal box",
+        "value" : "P.O. box",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -3309,7 +3309,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "288",
+    "id" : "286",
     "label" : {
       "IRI-based" : "string"
     }
@@ -3408,12 +3408,12 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "Vorordnung",
+        "value" : "Gesetz",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "Gesetz",
+        "value" : "Vorordnung",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -3504,13 +3504,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Private Customer",
+        "language" : "de",
+        "value" : "Privatkunde",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Privatkunde",
+        "language" : "en",
+        "value" : "Private Customer",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -3620,32 +3620,32 @@
   }, {
     "instances" : 0,
     "union" : [ "37", "15", "207" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "1"
   }, {
     "instances" : 0,
     "union" : [ "62", "16", "37" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "326"
   }, {
     "instances" : 0,
     "union" : [ "37", "15" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "328"
   }, {
     "instances" : 0,
     "union" : [ "27", "52", "193", "56", "60" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "331"
   }, {
     "instances" : 0,
     "union" : [ "37", "15" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "333"
   }, {
     "instances" : 0,
     "union" : [ "151", "81", "335" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "334"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#BillingAddress",
@@ -3660,13 +3660,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Billing Address",
+        "language" : "de",
+        "value" : "Rechnungsadresse",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Rechnungsadresse",
+        "language" : "en",
+        "value" : "Billing Address",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -3697,12 +3697,12 @@
   }, {
     "instances" : 0,
     "union" : [ "81", "138" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "336"
   }, {
     "instances" : 0,
     "union" : [ "37", "15" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "118"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#float",
@@ -3724,13 +3724,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Employee",
+        "language" : "de",
+        "value" : "Mitarbeiter",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Mitarbeiter",
+        "language" : "en",
+        "value" : "Employee",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -3770,13 +3770,13 @@
       } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
-        "language" : "de",
-        "value" : "Endnutzer",
+        "language" : "en",
+        "value" : "end user",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "end user",
+        "language" : "de",
+        "value" : "Endnutzer",
         "type" : "label"
       } ]
     },
@@ -3848,8 +3848,8 @@
       } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
-        "language" : "de",
-        "value" : "elektronische Visitenkarte",
+        "language" : "en",
+        "value" : "Virtual Contact File",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
@@ -3858,8 +3858,8 @@
         "type" : "label"
       }, {
         "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "Virtual Contact File",
+        "language" : "de",
+        "value" : "elektronische Visitenkarte",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -3888,24 +3888,24 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Street Address",
+        "language" : "de",
+        "value" : "Anschrift",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Anschrift",
+        "language" : "en",
+        "value" : "Street Address",
         "type" : "label"
       } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
-        "language" : "de",
-        "value" : "physische Adresse",
+        "language" : "en",
+        "value" : "physical address",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "physical address",
+        "language" : "de",
+        "value" : "physische Adresse",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
@@ -3927,12 +3927,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://schema.org/streetAddress",
+        "value" : "https://en.wikipedia.org/wiki/Address",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://en.wikipedia.org/wiki/Address",
+        "value" : "https://schema.org/streetAddress",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -3994,7 +3994,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "290",
+    "id" : "289",
     "label" : {
       "IRI-based" : "string"
     }
@@ -4097,12 +4097,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://schema.org/Product",
+        "value" : "https://en.wikipedia.org/wiki/Product_",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://en.wikipedia.org/wiki/Product_",
+        "value" : "https://schema.org/Product",
         "type" : "iri"
       } ]
     },
@@ -4161,12 +4161,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://schema.org/unitCode",
+        "value" : "https://schema.org/unitText",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://schema.org/unitText",
+        "value" : "https://schema.org/unitCode",
         "type" : "iri"
       } ]
     },
@@ -4492,38 +4492,6 @@
         "IRI-based" : "SiBaseUnit_Candela"
       }
     }, {
-      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#SiBaseUnit_Ampere",
-      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-      "annotations" : {
-        "note" : [ {
-          "identifier" : "note",
-          "language" : "en",
-          "value" : "electric current",
-          "type" : "label"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Ampere",
-          "type" : "label"
-        } ],
-        "altLabel" : [ {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "A",
-          "type" : "label"
-        } ],
-        "seeAlso" : [ {
-          "identifier" : "seeAlso",
-          "language" : "undefined",
-          "value" : "https://en.wikipedia.org/wiki/Ampere",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "SiBaseUnit_Ampere"
-      }
-    }, {
       "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#SiBaseUnit_Second",
       "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
       "annotations" : {
@@ -4555,6 +4523,38 @@
       "labels" : {
         "IRI-based" : "SiBaseUnit_Second"
       }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#SiBaseUnit_Ampere",
+      "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "electric current",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Ampere",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "A",
+          "type" : "label"
+        } ],
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://en.wikipedia.org/wiki/Ampere",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SiBaseUnit_Ampere"
+      }
     } ],
     "attributes" : [ "external" ],
     "id" : "393",
@@ -4572,19 +4572,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Geschäftsadresse",
-        "type" : "label"
-      }, {
-        "identifier" : "prefLabel",
         "language" : "en",
         "value" : "Business Address",
         "type" : "label"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "An address where a person works or an organisations is located.",
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Geschäftsadresse",
         "type" : "label"
       } ],
       "altLabel" : [ {
@@ -4601,6 +4595,12 @@
         "identifier" : "altLabel",
         "language" : "en",
         "value" : "job address",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An address where a person works or an organisations is located.",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -4686,30 +4686,30 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Asset Administration Shell",
+          "language" : "de",
+          "value" : "Verwaltungsschale",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
+          "language" : "en",
+          "value" : "Asset Administration Shell",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
           "value" : "Verwaltungsschale",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "VWS",
           "type" : "label"
         } ],
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
           "value" : "The AAS is the digital representation of an asset .",
-          "type" : "label"
-        } ],
-        "altLabel" : [ {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "VWS",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Verwaltungsschale",
           "type" : "label"
         } ],
         "seeAlso" : [ {
@@ -4739,13 +4739,19 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Goods",
+        "language" : "de",
+        "value" : "Güter",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Güter",
+        "language" : "en",
+        "value" : "Goods",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "tangible, transferable product",
         "type" : "label"
       } ],
       "altLabel" : [ {
@@ -4757,12 +4763,6 @@
         "identifier" : "altLabel",
         "language" : "en",
         "value" : "good",
-        "type" : "label"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "tangible, transferable product",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -4830,13 +4830,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Verwerter",
+        "language" : "en",
+        "value" : "Recycler",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Recycler",
+        "language" : "de",
+        "value" : "Verwerter",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -4865,13 +4865,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Manufacturer",
+        "language" : "de",
+        "value" : "Hersteller",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Hersteller",
+        "language" : "en",
+        "value" : "Manufacturer",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -5014,27 +5014,7 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "non-material",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "en",
         "value" : "immaterial",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "immaterial entity",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "non-physical object",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "intangible",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
@@ -5044,12 +5024,32 @@
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "mental",
+        "value" : "non-material",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "intangible",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "non-physical object",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "immaterial entity",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "en",
         "value" : "immaterial object",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "mental",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -5061,28 +5061,18 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://en.wikipedia.org/wiki/Non-physical_entity",
+        "value" : "https://schema.org/Intangible",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://schema.org/Intangible",
+        "value" : "https://en.wikipedia.org/wiki/Non-physical_entity",
         "type" : "iri"
       } ],
       "example" : [ {
         "identifier" : "example",
         "language" : "en",
-        "value" : "information",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "knowledge",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "feeling",
+        "value" : "concept",
         "type" : "label"
       }, {
         "identifier" : "example",
@@ -5092,22 +5082,32 @@
       }, {
         "identifier" : "example",
         "language" : "en",
+        "value" : "object",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "feeling",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
         "value" : "idea",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "concept",
+        "value" : "knowledge",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "information",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "en",
         "value" : "plan",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "object",
         "type" : "label"
       } ]
     },
@@ -5169,21 +5169,21 @@
         "value" : "Geschäftspartner",
         "type" : "label"
       } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "A Business Partner is a legal entity that is part of the Catena-X network or that stands in a relevant relation to a Catena-X Business Partner.",
-        "type" : "label"
-      } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "BP",
+        "value" : "business partner",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "business partner",
+        "value" : "BP",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A Business Partner is a legal entity that is part of the Catena-X network or that stands in a relevant relation to a Catena-X Business Partner.",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -5195,12 +5195,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "en",
-        "value" : "BMW",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "Mercedes",
+        "value" : "Audi",
         "type" : "label"
       }, {
         "identifier" : "example",
@@ -5210,7 +5205,12 @@
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "Audi",
+        "value" : "BMW",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Mercedes",
         "type" : "label"
       } ]
     },
@@ -5218,7 +5218,7 @@
       "IRI-based" : "BusinessPartner"
     },
     "attributes" : [ "external" ],
-    "id" : "287",
+    "id" : "288",
     "superClasses" : [ "39" ]
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#SystemOfMeasurement",
@@ -5233,13 +5233,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "System Of Measurement",
+        "language" : "de",
+        "value" : "Einheitensystem",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Einheitensystem",
+        "language" : "en",
+        "value" : "System Of Measurement",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -5306,12 +5306,12 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "Deutsches Institut für Normung",
+        "value" : "DIN",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "DIN",
+        "value" : "Deutsches Institut für Normung",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -5340,24 +5340,24 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "European Norm",
+        "language" : "de",
+        "value" : "Europäische Norm",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Europäische Norm",
+        "language" : "en",
+        "value" : "European Norm",
         "type" : "label"
       } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "European Norm",
+        "value" : "EN",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "EN",
+        "value" : "European Norm",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -5386,13 +5386,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Geschäftskunde",
+        "language" : "en",
+        "value" : "Business Customer",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Business Customer",
+        "language" : "de",
+        "value" : "Geschäftskunde",
         "type" : "label"
       } ]
     },
@@ -5458,12 +5458,12 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "ISO",
+        "value" : "International Organization for Standardization",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "International Organization for Standardization",
+        "value" : "ISO",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -5506,13 +5506,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Servicekontakt",
+        "language" : "en",
+        "value" : "Service Contact",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Service Contact",
+        "language" : "de",
+        "value" : "Servicekontakt",
         "type" : "label"
       } ]
     },
@@ -5557,13 +5557,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Verkäufer",
+        "language" : "en",
+        "value" : "Seller",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Seller",
+        "language" : "de",
+        "value" : "Verkäufer",
         "type" : "label"
       } ],
       "altLabel" : [ {
@@ -5574,12 +5574,12 @@
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "salesman",
+        "value" : "saleswoman",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "saleswoman",
+        "value" : "salesman",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -5660,13 +5660,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Logistics",
+        "language" : "de",
+        "value" : "Logistik",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Logistik",
+        "language" : "en",
+        "value" : "Logistics",
         "type" : "label"
       } ]
     },
@@ -5722,12 +5722,12 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "de",
-        "value" : "Lieferanschrift",
+        "value" : "Empfängeranschrift",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "de",
-        "value" : "Empfängeranschrift",
+        "value" : "Lieferanschrift",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
@@ -5762,14 +5762,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "459",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "461",
+    "id" : "460",
     "label" : {
       "IRI-based" : "string"
     }
@@ -5786,31 +5779,31 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Unternehmen",
+        "language" : "en",
+        "value" : "Company",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Company",
+        "language" : "de",
+        "value" : "Unternehmen",
         "type" : "label"
       } ],
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://en.wikipedia.org/wiki/Company",
+        "value" : "https://schema.org/Corporation",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://schema.org/Corporation",
+        "value" : "https://en.wikipedia.org/wiki/Company",
         "type" : "iri"
       } ]
     },
     "label" : {
       "IRI-based" : "Company"
     },
-    "subClasses" : [ "287", "324" ],
+    "subClasses" : [ "288", "324" ],
     "attributes" : [ "external" ],
     "id" : "39",
     "superClasses" : [ "37" ]
@@ -5847,8 +5840,8 @@
       } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
-        "language" : "de",
-        "value" : "SI System",
+        "language" : "en",
+        "value" : "international system of units",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
@@ -5857,8 +5850,8 @@
         "type" : "label"
       }, {
         "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "international system of units",
+        "language" : "de",
+        "value" : "SI System",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -5882,6 +5875,13 @@
       "IRI-based" : "string"
     }
   }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "467",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#PostalAddress",
     "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
     "instances" : 0,
@@ -5894,16 +5894,26 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Postal Address",
-        "type" : "label"
-      }, {
-        "identifier" : "prefLabel",
         "language" : "de",
         "value" : "Postanschrift",
         "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Postal Address",
+        "type" : "label"
       } ],
       "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "post address",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "de",
+        "value" : "Postanschrift",
+        "type" : "label"
+      }, {
         "identifier" : "altLabel",
         "language" : "en",
         "value" : "mailing address",
@@ -5911,17 +5921,7 @@
       }, {
         "identifier" : "altLabel",
         "language" : "de",
-        "value" : "Postanschrift",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "de",
         "value" : "Postadresse",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "post address",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -5956,13 +5956,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Meldeadresse",
+        "language" : "en",
+        "value" : "Legal Address",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Legal Address",
+        "language" : "de",
+        "value" : "Meldeadresse",
         "type" : "label"
       } ],
       "altLabel" : [ {
@@ -5972,18 +5972,18 @@
         "type" : "label"
       }, {
         "identifier" : "altLabel",
+        "language" : "de",
+        "value" : "Firmenanschrift",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
         "language" : "en",
         "value" : "registered address",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "de",
-        "value" : "Firmenanschrift",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "de",
-        "value" : "gesetzlicher Wohnsitz",
+        "value" : "juristische Anschrift",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
@@ -5993,7 +5993,7 @@
       }, {
         "identifier" : "altLabel",
         "language" : "de",
-        "value" : "juristische Anschrift",
+        "value" : "gesetzlicher Wohnsitz",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -6039,8 +6039,8 @@
       } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "Small and medium-sized enterprise",
+        "language" : "de",
+        "value" : "KMU",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
@@ -6049,8 +6049,8 @@
         "type" : "label"
       }, {
         "identifier" : "altLabel",
-        "language" : "de",
-        "value" : "KMU",
+        "language" : "en",
+        "value" : "Small and medium-sized enterprise",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
@@ -6162,13 +6162,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Kunde",
+        "language" : "en",
+        "value" : "Customer",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Customer",
+        "language" : "de",
+        "value" : "Kunde",
         "type" : "label"
       } ]
     },
@@ -6186,18 +6186,23 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/contact_ontology.ttl",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/contact_ontology.ttl",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl",
         "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
         "language" : "de",
         "value" : "Kontaktdaten",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Contact",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
@@ -6209,36 +6214,11 @@
         "language" : "en",
         "value" : "Contact",
         "type" : "label"
-      }, {
-        "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Contact",
-        "type" : "label"
       } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "contact data",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "de",
-        "value" : "Visitenkarte",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "contact point",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "de",
-        "value" : "Kontaktdaten",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "de",
-        "value" : "Kontaktinformation",
+        "value" : "contact information",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
@@ -6248,7 +6228,27 @@
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "contact information",
+        "value" : "contact point",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "contact data",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "de",
+        "value" : "Kontaktinformation",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "de",
+        "value" : "Kontaktdaten",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "de",
+        "value" : "Visitenkarte",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -6325,12 +6325,12 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "IDS",
+        "value" : "international data space",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "international data space",
+        "value" : "IDS",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -6359,13 +6359,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Privatadresse",
+        "language" : "en",
+        "value" : "Private Address",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Private Address",
+        "language" : "de",
+        "value" : "Privatadresse",
         "type" : "label"
       } ],
       "altLabel" : [ {
@@ -6376,22 +6376,22 @@
       }, {
         "identifier" : "altLabel",
         "language" : "de",
+        "value" : "Wohnanschrift",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "de",
         "value" : "Wohnadresse",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "home adress",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "de",
-        "value" : "Wohnanschrift",
+        "value" : "residential address",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "residential address",
+        "value" : "home adress",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -6481,13 +6481,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Montage",
+        "language" : "en",
+        "value" : "Assembly",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Assembly",
+        "language" : "de",
+        "value" : "Montage",
         "type" : "label"
       } ]
     },
@@ -6970,10 +6970,10 @@
     "id" : "285",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "286",
+    "id" : "287",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "289",
+    "id" : "290",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "293",
@@ -7306,7 +7306,10 @@
     "id" : "458",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "460",
+    "id" : "459",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "461",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "462",
@@ -7316,9 +7319,6 @@
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "466",
-    "type" : "owl:someValuesFrom"
-  }, {
-    "id" : "467",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "468",
@@ -7407,12 +7407,12 @@
       "IRI-based" : "supplies"
     },
     "domain" : "4",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "3"
   }, {
     "range" : "8",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "6"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasBillingAddress",
@@ -7436,12 +7436,12 @@
       "IRI-based" : "hasBillingAddress"
     },
     "domain" : "10",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "9"
   }, {
     "range" : "8",
     "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "12"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isMemberOf",
@@ -7464,12 +7464,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/upper_ontology.ttl",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/upper_ontology.ttl",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl",
         "type" : "iri"
       } ],
       "prefLabel" : [ {
@@ -7488,15 +7488,21 @@
         "value" : "is member of",
         "type" : "label"
       } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "member-collection relation, spatial or social",
+        "type" : "label"
+      } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "is member of",
+        "language" : "de",
+        "value" : "war Mitglied von",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "de",
-        "value" : "war Mitglied von",
+        "value" : "ist Mitglied von",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
@@ -7505,14 +7511,8 @@
         "type" : "label"
       }, {
         "identifier" : "altLabel",
-        "language" : "de",
-        "value" : "ist Mitglied von",
-        "type" : "label"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
         "language" : "en",
-        "value" : "member-collection relation, spatial or social",
+        "value" : "is member of",
         "type" : "label"
       } ],
       "wikidata" : [ {
@@ -7537,12 +7537,12 @@
       "IRI-based" : "isMemberOf"
     },
     "domain" : "15",
-    "attributes" : [ "transitive", "external", "object", "someValues" ],
+    "attributes" : [ "transitive", "someValues", "external", "object" ],
     "id" : "14"
   }, {
     "range" : "8",
     "domain" : "19",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "18"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#makesOffer",
@@ -7572,32 +7572,32 @@
       "IRI-based" : "makesOffer"
     },
     "domain" : "15",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "20"
   }, {
     "range" : "4",
     "domain" : "23",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "22"
   }, {
     "range" : "15",
     "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "24"
   }, {
     "range" : "28",
     "domain" : "27",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "26"
   }, {
     "range" : "15",
     "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "29"
   }, {
     "range" : "28",
     "domain" : "32",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "31"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasContact",
@@ -7631,7 +7631,7 @@
       "IRI-based" : "hasContact"
     },
     "domain" : "15",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "33"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasBusinessAddress",
@@ -7665,22 +7665,22 @@
       "IRI-based" : "hasBusinessAddress"
     },
     "domain" : "15",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "35"
   }, {
     "range" : "37",
     "domain" : "16",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "36"
   }, {
     "range" : "37",
     "domain" : "39",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "38"
   }, {
     "range" : "37",
     "domain" : "42",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "41"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#suppliesTo",
@@ -7704,12 +7704,12 @@
       "IRI-based" : "suppliesTo"
     },
     "domain" : "4",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "43"
   }, {
     "range" : "46",
     "domain" : "45",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "44"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasPostOfficeBox",
@@ -7733,12 +7733,12 @@
       "IRI-based" : "hasPostOfficeBox"
     },
     "domain" : "48",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "47"
   }, {
     "range" : "30",
     "domain" : "52",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "51"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasDeliveryAddress",
@@ -7762,12 +7762,12 @@
       "IRI-based" : "hasDeliveryAddress"
     },
     "domain" : "48",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "53"
   }, {
     "range" : "30",
     "domain" : "56",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "55"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#postOfficeBoxNumber",
@@ -7802,27 +7802,27 @@
       "IRI-based" : "postOfficeBoxNumber"
     },
     "domain" : "49",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "57"
   }, {
     "range" : "30",
     "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "59"
   }, {
     "range" : "37",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "61"
   }, {
     "range" : "65",
     "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "63"
   }, {
     "range" : "37",
     "domain" : "67",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "66"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasContact",
@@ -7856,12 +7856,12 @@
       "IRI-based" : "hasContact"
     },
     "domain" : "64",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "68"
   }, {
     "range" : "37",
     "domain" : "70",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "69"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#supplierId",
@@ -7885,12 +7885,12 @@
       "IRI-based" : "supplierId"
     },
     "domain" : "4",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "71"
   }, {
     "range" : "37",
     "domain" : "74",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "73"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#supplierName",
@@ -7914,17 +7914,17 @@
       "IRI-based" : "supplierName"
     },
     "domain" : "4",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "75"
   }, {
     "range" : "82",
     "domain" : "81",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "80"
   }, {
     "range" : "82",
     "domain" : "49",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "83"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasReturnAddress",
@@ -7948,12 +7948,12 @@
       "IRI-based" : "hasReturnAddress"
     },
     "domain" : "48",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "84"
   }, {
     "range" : "30",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "86"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#receiverFullName",
@@ -7968,13 +7968,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Empfänger vollständiger Name",
+        "language" : "en",
+        "value" : "Receiver Full Name",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Receiver Full Name",
+        "language" : "de",
+        "value" : "Empfänger vollständiger Name",
         "type" : "label"
       } ],
       "example" : [ {
@@ -7988,7 +7988,7 @@
       "IRI-based" : "receiverFullName"
     },
     "domain" : "81",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "93"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasReturnAddress",
@@ -8012,12 +8012,12 @@
       "IRI-based" : "hasReturnAddress"
     },
     "domain" : "77",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "102"
   }, {
     "range" : "76",
     "domain" : "65",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "103"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasPostalAddress",
@@ -8041,12 +8041,12 @@
       "IRI-based" : "hasPostalAddress"
     },
     "domain" : "77",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "104"
   }, {
     "range" : "76",
     "domain" : "77",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "106"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasPostOfficeBox",
@@ -8070,12 +8070,12 @@
       "IRI-based" : "hasPostOfficeBox"
     },
     "domain" : "77",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "107"
   }, {
     "range" : "78",
     "domain" : "79",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "108"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#purchases",
@@ -8099,12 +8099,12 @@
       "IRI-based" : "purchases"
     },
     "domain" : "110",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "109"
   }, {
     "range" : "64",
     "domain" : "91",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "111"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#purchasesFrom",
@@ -8128,12 +8128,12 @@
       "IRI-based" : "purchasesFrom"
     },
     "domain" : "110",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "112"
   }, {
     "range" : "64",
     "domain" : "92",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "113"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#makesOffer",
@@ -8198,7 +8198,7 @@
       "IRI-based" : "receiverLastName"
     },
     "domain" : "81",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "123"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#buildingNumber",
@@ -8219,13 +8219,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Gebäudenummer",
+        "language" : "en",
+        "value" : "Building Number",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Building Number",
+        "language" : "de",
+        "value" : "Gebäudenummer",
         "type" : "label"
       } ],
       "example" : [ {
@@ -8239,7 +8239,7 @@
       "IRI-based" : "buildingNumber"
     },
     "domain" : "81",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "127"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#county",
@@ -8297,7 +8297,7 @@
       "IRI-based" : "county"
     },
     "domain" : "81",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "134"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#buildingLevel",
@@ -8318,19 +8318,19 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Stockwerk",
+        "language" : "en",
+        "value" : "Building Level",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Building Level",
+        "language" : "de",
+        "value" : "Stockwerk",
         "type" : "label"
       } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
-        "language" : "de",
-        "value" : "Geschoß",
+        "language" : "en",
+        "value" : "story",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
@@ -8344,8 +8344,8 @@
         "type" : "label"
       }, {
         "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "story",
+        "language" : "de",
+        "value" : "Geschoß",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -8365,7 +8365,7 @@
       "IRI-based" : "buildingLevel"
     },
     "domain" : "81",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "139"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#fullStreetAddress",
@@ -8412,7 +8412,7 @@
       "IRI-based" : "fullStreetAddress"
     },
     "domain" : "81",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "146"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isLocatedIn",
@@ -8434,12 +8434,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/address_ontology.ttl",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/upper_ontology.ttl",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/upper_ontology.ttl",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/address_ontology.ttl",
         "type" : "iri"
       } ],
       "prefLabel" : [ {
@@ -8487,68 +8487,17 @@
       "IRI-based" : "isLocatedIn"
     },
     "domain" : "81",
-    "attributes" : [ "transitive", "external", "object", "someValues" ],
+    "attributes" : [ "transitive", "someValues", "external", "object" ],
     "id" : "150"
   }, {
     "range" : "5",
     "domain" : "155",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "154"
-  }, {
-    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#mobileNumber",
-    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-    "range" : "157",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/contact_ontology.ttl",
-        "type" : "iri"
-      } ],
-      "prefLabel" : [ {
-        "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Handynummer",
-        "type" : "label"
-      }, {
-        "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Mobile Number",
-        "type" : "label"
-      } ],
-      "altLabel" : [ {
-        "identifier" : "altLabel",
-        "language" : "de",
-        "value" : "Handy",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "mobile",
-        "type" : "label"
-      } ],
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "+49  4567890",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "mobileNumber"
-    },
-    "domain" : "34",
-    "attributes" : [ "external", "datatype", "someValues" ],
-    "id" : "156"
-  }, {
-    "range" : "160",
-    "domain" : "159",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "158"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#affiliation",
     "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-    "range" : "162",
+    "range" : "157",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -8573,7 +8522,58 @@
       "IRI-based" : "affiliation"
     },
     "domain" : "34",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "156"
+  }, {
+    "range" : "160",
+    "domain" : "159",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#mobileNumber",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "162",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/contact_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "de",
+        "value" : "Handynummer",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Mobile Number",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "mobile",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "de",
+        "value" : "Handy",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "+49  4567890",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "mobileNumber"
+    },
+    "domain" : "34",
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "161"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasPostOfficeBox",
@@ -8626,17 +8626,17 @@
   }, {
     "range" : "81",
     "domain" : "11",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "167"
   }, {
     "range" : "81",
     "domain" : "169",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "168"
   }, {
     "range" : "81",
     "domain" : "172",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "171"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#website",
@@ -8689,17 +8689,17 @@
       "IRI-based" : "website"
     },
     "domain" : "34",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "173"
   }, {
     "range" : "5",
     "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "175"
   }, {
     "range" : "5",
     "domain" : "65",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "176"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#xing",
@@ -8746,17 +8746,17 @@
       "IRI-based" : "xing"
     },
     "domain" : "34",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "177"
   }, {
     "range" : "5",
     "domain" : "180",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "179"
   }, {
     "range" : "5",
     "domain" : "164",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "181"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#contactName",
@@ -8791,12 +8791,12 @@
       "IRI-based" : "contactName"
     },
     "domain" : "34",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "182"
   }, {
     "range" : "5",
     "domain" : "115",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "183"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isInvolvedIn",
@@ -8826,16 +8826,16 @@
         "value" : "beteiligt in",
         "type" : "label"
       } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "process-process relation",
-        "type" : "label"
-      } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
         "value" : "feature-activity",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "process-process relation",
         "type" : "label"
       } ],
       "example" : [ {
@@ -8849,12 +8849,12 @@
       "IRI-based" : "isInvolvedIn"
     },
     "domain" : "30",
-    "attributes" : [ "transitive", "external", "object", "someValues" ],
+    "attributes" : [ "transitive", "someValues", "external", "object" ],
     "id" : "184"
   }, {
     "range" : "81",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "185"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isInvolvedIn",
@@ -8884,16 +8884,16 @@
         "value" : "beteiligt in",
         "type" : "label"
       } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "process-process relation",
-        "type" : "label"
-      } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
         "value" : "feature-activity",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "process-process relation",
         "type" : "label"
       } ],
       "example" : [ {
@@ -8907,12 +8907,12 @@
       "IRI-based" : "isInvolvedIn"
     },
     "domain" : "30",
-    "attributes" : [ "transitive", "external", "object", "someValues" ],
+    "attributes" : [ "transitive", "someValues", "external", "object" ],
     "id" : "186"
   }, {
     "range" : "81",
     "domain" : "85",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "187"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasLocation",
@@ -8936,12 +8936,12 @@
       "IRI-based" : "hasLocation"
     },
     "domain" : "34",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "188"
   }, {
     "range" : "81",
     "domain" : "105",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "189"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasStreetAddress",
@@ -8965,7 +8965,7 @@
       "IRI-based" : "hasStreetAddress"
     },
     "domain" : "34",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "190"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#contactId",
@@ -8980,13 +8980,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Kontakt Id",
+        "language" : "en",
+        "value" : "Contact Id",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Contact Id",
+        "language" : "de",
+        "value" : "Kontakt Id",
         "type" : "label"
       } ],
       "example" : [ {
@@ -9000,17 +9000,17 @@
       "IRI-based" : "contactId"
     },
     "domain" : "34",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "192"
   }, {
     "range" : "191",
     "domain" : "195",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "194"
   }, {
     "range" : "191",
     "domain" : "197",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "196"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasBusinessAddress",
@@ -9044,12 +9044,12 @@
       "IRI-based" : "hasBusinessAddress"
     },
     "domain" : "37",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "198"
   }, {
     "range" : "200",
     "domain" : "21",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "199"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isMemberOf",
@@ -9072,12 +9072,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/upper_ontology.ttl",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/upper_ontology.ttl",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl",
         "type" : "iri"
       } ],
       "prefLabel" : [ {
@@ -9096,15 +9096,21 @@
         "value" : "is member of",
         "type" : "label"
       } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "member-collection relation, spatial or social",
+        "type" : "label"
+      } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "is member of",
+        "language" : "de",
+        "value" : "war Mitglied von",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "de",
-        "value" : "war Mitglied von",
+        "value" : "ist Mitglied von",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
@@ -9113,14 +9119,8 @@
         "type" : "label"
       }, {
         "identifier" : "altLabel",
-        "language" : "de",
-        "value" : "ist Mitglied von",
-        "type" : "label"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
         "language" : "en",
-        "value" : "member-collection relation, spatial or social",
+        "value" : "is member of",
         "type" : "label"
       } ],
       "wikidata" : [ {
@@ -9145,22 +9145,22 @@
       "IRI-based" : "isMemberOf"
     },
     "domain" : "37",
-    "attributes" : [ "transitive", "external", "object", "someValues" ],
+    "attributes" : [ "transitive", "someValues", "external", "object" ],
     "id" : "201"
   }, {
     "range" : "200",
     "domain" : "48",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "202"
   }, {
     "range" : "90",
     "domain" : "37",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "203"
   }, {
     "range" : "200",
     "domain" : "205",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "204"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasBusinessAddress",
@@ -9194,32 +9194,32 @@
       "IRI-based" : "hasBusinessAddress"
     },
     "domain" : "207",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "206"
   }, {
     "range" : "49",
     "domain" : "172",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "208"
   }, {
     "range" : "90",
     "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "209"
   }, {
     "range" : "81",
     "domain" : "54",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "210"
   }, {
     "range" : "37",
     "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "211"
   }, {
     "range" : "191",
     "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "212"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#produces",
@@ -9243,12 +9243,12 @@
       "IRI-based" : "produces"
     },
     "domain" : "56",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "213"
   }, {
     "range" : "191",
     "domain" : "46",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "214"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasContact",
@@ -9282,12 +9282,12 @@
       "IRI-based" : "hasContact"
     },
     "domain" : "37",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "215"
   }, {
     "range" : "191",
     "domain" : "116",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "216"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasAddress",
@@ -9311,12 +9311,12 @@
       "IRI-based" : "hasAddress"
     },
     "domain" : "37",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "217"
   }, {
     "range" : "191",
     "domain" : "34",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "218"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#makesOffer",
@@ -9346,22 +9346,22 @@
       "IRI-based" : "makesOffer"
     },
     "domain" : "37",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "219"
   }, {
     "range" : "37",
     "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "220"
   }, {
     "range" : "116",
     "domain" : "82",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "221"
   }, {
     "range" : "116",
     "domain" : "223",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "222"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#eclipseDataspaceConnectorUrl",
@@ -9385,37 +9385,37 @@
       "IRI-based" : "eclipseDataspaceConnectorUrl"
     },
     "domain" : "225",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "224"
   }, {
     "range" : "138",
     "domain" : "151",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "227"
   }, {
     "range" : "138",
     "domain" : "193",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "228"
   }, {
     "range" : "30",
     "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "229"
   }, {
     "range" : "138",
     "domain" : "231",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "230"
   }, {
     "range" : "90",
     "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "232"
   }, {
     "range" : "207",
     "domain" : "234",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "233"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasAddress",
@@ -9439,12 +9439,12 @@
       "IRI-based" : "hasAddress"
     },
     "domain" : "15",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "235"
   }, {
     "range" : "28",
     "domain" : "99",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "236"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isoNumber",
@@ -9468,17 +9468,17 @@
       "IRI-based" : "isoNumber"
     },
     "domain" : "19",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "237"
   }, {
     "range" : "28",
     "domain" : "240",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "239"
   }, {
     "range" : "28",
     "domain" : "242",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "241"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isoName",
@@ -9502,17 +9502,17 @@
       "IRI-based" : "isoName"
     },
     "domain" : "19",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "243"
   }, {
     "range" : "28",
     "domain" : "246",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "245"
   }, {
     "range" : "28",
     "domain" : "166",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "247"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#eclipseDataspaceConnectorId",
@@ -9536,37 +9536,37 @@
       "IRI-based" : "eclipseDataspaceConnectorId"
     },
     "domain" : "225",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "248"
   }, {
     "range" : "28",
     "domain" : "96",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "251"
   }, {
     "range" : "28",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "252"
   }, {
     "range" : "37",
     "domain" : "15",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "253"
   }, {
     "range" : "28",
     "domain" : "97",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "254"
   }, {
     "range" : "90",
     "domain" : "15",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "255"
   }, {
     "range" : "28",
     "domain" : "98",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "256"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasPrivateAddress",
@@ -9576,12 +9576,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/address_ontology.ttl",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/contact_ontology.ttl",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/contact_ontology.ttl",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/address_ontology.ttl",
         "type" : "iri"
       } ],
       "prefLabel" : [ {
@@ -9600,17 +9600,17 @@
       "IRI-based" : "hasPrivateAddress"
     },
     "domain" : "15",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "257"
   }, {
     "range" : "28",
     "domain" : "250",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "258"
   }, {
     "range" : "76",
     "domain" : "200",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "260"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasContact",
@@ -9649,7 +9649,7 @@
   }, {
     "range" : "15",
     "domain" : "76",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "262"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isPortionOf",
@@ -9671,13 +9671,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Portion von",
+        "language" : "en",
+        "value" : "is portion of",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "is portion of",
+        "language" : "de",
+        "value" : "Portion von",
         "type" : "label"
       } ],
       "altLabel" : [ {
@@ -9695,12 +9695,12 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "en",
-        "value" : "cm-meter",
+        "value" : "slice-cake",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "slice-cake",
+        "value" : "cm-meter",
         "type" : "label"
       } ]
     },
@@ -9708,7 +9708,7 @@
       "IRI-based" : "isPortionOf"
     },
     "domain" : "76",
-    "attributes" : [ "transitive", "external", "object", "someValues" ],
+    "attributes" : [ "transitive", "someValues", "external", "object" ],
     "id" : "263"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#companyName",
@@ -9733,13 +9733,13 @@
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Firmenname",
+        "language" : "en",
+        "value" : "Company Name",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Company Name",
+        "language" : "de",
+        "value" : "Firmenname",
         "type" : "label"
       } ]
     },
@@ -9747,7 +9747,7 @@
       "IRI-based" : "companyName"
     },
     "domain" : "39",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "266"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasPortion",
@@ -9788,12 +9788,12 @@
       "IRI-based" : "hasPortion"
     },
     "domain" : "76",
-    "attributes" : [ "transitive", "external", "object", "someValues" ],
+    "attributes" : [ "transitive", "someValues", "external", "object" ],
     "id" : "267"
   }, {
     "range" : "37",
     "domain" : "76",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "268"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isOfferedBy",
@@ -9823,7 +9823,7 @@
       "IRI-based" : "isOfferedBy"
     },
     "domain" : "21",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "269"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#purchases",
@@ -9877,12 +9877,12 @@
       "IRI-based" : "isOfferedBy"
     },
     "domain" : "21",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "271"
   }, {
     "range" : "98",
     "domain" : "96",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "272"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#sells",
@@ -9906,7 +9906,7 @@
       "IRI-based" : "sells"
     },
     "domain" : "96",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "273"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#technicalStandardStandardNumber",
@@ -9930,7 +9930,7 @@
       "IRI-based" : "technicalStandardStandardNumber"
     },
     "domain" : "8",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "275"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#disposes",
@@ -9954,7 +9954,7 @@
       "IRI-based" : "disposes"
     },
     "domain" : "32",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "276"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#worksFor",
@@ -9978,7 +9978,7 @@
       "IRI-based" : "worksFor"
     },
     "domain" : "278",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "277"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#technicalStandardStandardName",
@@ -10002,7 +10002,7 @@
       "IRI-based" : "technicalStandardStandardName"
     },
     "domain" : "8",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "281"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#employeeId",
@@ -10026,7 +10026,7 @@
       "IRI-based" : "employeeId"
     },
     "domain" : "278",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "283"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#produces",
@@ -10050,42 +10050,12 @@
       "IRI-based" : "produces"
     },
     "domain" : "52",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "285"
-  }, {
-    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#businessPartnerNumberType",
-    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-    "range" : "288",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl",
-        "type" : "iri"
-      } ],
-      "prefLabel" : [ {
-        "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "BPNL Type",
-        "type" : "label"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "The  Business Partner Number Type describes strings following the pattern 'BPNL{8}{4}'.",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "businessPartnerNumberType"
-    },
-    "domain" : "287",
-    "attributes" : [ "external", "datatype", "someValues" ],
-    "id" : "286"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#businessPartnerNumber",
     "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-    "range" : "290",
+    "range" : "289",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -10097,6 +10067,12 @@
         "identifier" : "prefLabel",
         "language" : "en",
         "value" : "BPNL",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The  Business Partner Number is a unique identifier following the pattern 'BPNL{8}{4}'.",
         "type" : "label"
       } ],
       "altLabel" : [ {
@@ -10109,24 +10085,42 @@
         "language" : "en",
         "value" : "business partner number long",
         "type" : "label"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "The  Business Partner Number is a unique identifier following the pattern 'BPNL{8}{4}'.",
-        "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "businessPartnerNumber"
     },
-    "domain" : "287",
-    "attributes" : [ "external", "datatype", "someValues" ],
-    "id" : "289"
+    "domain" : "288",
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "287"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasConnector",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "225",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has connector",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasConnector"
+    },
+    "domain" : "288",
+    "attributes" : [ "someValues", "external", "object" ],
+    "id" : "290"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isOwnedBy",
     "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-    "range" : "287",
+    "range" : "288",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -10145,7 +10139,7 @@
       "IRI-based" : "isOwnedBy"
     },
     "domain" : "294",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "293"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#produces",
@@ -10169,12 +10163,12 @@
       "IRI-based" : "produces"
     },
     "domain" : "60",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "295"
   }, {
-    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasConnector",
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#businessPartnerNumberType",
     "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-    "range" : "225",
+    "range" : "286",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -10185,20 +10179,26 @@
       "prefLabel" : [ {
         "identifier" : "prefLabel",
         "language" : "en",
-        "value" : "has connector",
+        "value" : "BPNL Type",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The  Business Partner Number Type describes strings following the pattern 'BPNL{8}{4}'.",
         "type" : "label"
       } ]
     },
     "label" : {
-      "IRI-based" : "hasConnector"
+      "IRI-based" : "businessPartnerNumberType"
     },
-    "domain" : "287",
-    "attributes" : [ "external", "object", "someValues" ],
+    "domain" : "288",
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "296"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isProvisionedBy",
     "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-    "range" : "287",
+    "range" : "288",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -10223,7 +10223,7 @@
       "IRI-based" : "isProvisionedBy"
     },
     "domain" : "294",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "297"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#enName",
@@ -10247,7 +10247,7 @@
       "IRI-based" : "enName"
     },
     "domain" : "13",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "299"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#companyName",
@@ -10272,13 +10272,13 @@
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Firmenname",
+        "language" : "en",
+        "value" : "Company Name",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Company Name",
+        "language" : "de",
+        "value" : "Firmenname",
         "type" : "label"
       } ]
     },
@@ -10286,7 +10286,7 @@
       "IRI-based" : "companyName"
     },
     "domain" : "2",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "301"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#enNumber",
@@ -10310,7 +10310,7 @@
       "IRI-based" : "enNumber"
     },
     "domain" : "13",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "303"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isInvolvedIn",
@@ -10340,16 +10340,16 @@
         "value" : "beteiligt in",
         "type" : "label"
       } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "process-process relation",
-        "type" : "label"
-      } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
         "value" : "feature-activity",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "process-process relation",
         "type" : "label"
       } ],
       "example" : [ {
@@ -10387,12 +10387,12 @@
       "IRI-based" : "dinNumber"
     },
     "domain" : "7",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "308"
   }, {
     "range" : "5",
     "domain" : "76",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "310"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#dinName",
@@ -10416,52 +10416,52 @@
       "IRI-based" : "dinName"
     },
     "domain" : "7",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "311"
   }, {
     "range" : "90",
     "domain" : "76",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "312"
   }, {
     "range" : "138",
     "domain" : "76",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "313"
   }, {
     "range" : "25",
     "domain" : "76",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "314"
   }, {
     "range" : "30",
     "domain" : "76",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "315"
   }, {
     "range" : "90",
     "domain" : "138",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "316"
   }, {
     "range" : "234",
     "domain" : "284",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "318"
   }, {
     "range" : "15",
     "domain" : "138",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "319"
   }, {
     "range" : "39",
-    "domain" : "287",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "288",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "321"
   }, {
     "range" : "39",
     "domain" : "324",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "323"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#longitude",
@@ -10503,17 +10503,17 @@
       "IRI-based" : "longitude"
     },
     "domain" : "138",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "325"
   }, {
     "range" : "34",
     "domain" : "101",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "327"
   }, {
     "range" : "34",
     "domain" : "207",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "329"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#sells",
@@ -10559,12 +10559,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/address_ontology.ttl",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/upper_ontology.ttl",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/upper_ontology.ttl",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/address_ontology.ttl",
         "type" : "iri"
       } ],
       "prefLabel" : [ {
@@ -10612,27 +10612,27 @@
       "IRI-based" : "isLocatedIn"
     },
     "domain" : "138",
-    "attributes" : [ "transitive", "external", "object", "someValues" ],
+    "attributes" : [ "transitive", "someValues", "external", "object" ],
     "id" : "332"
   }, {
     "range" : "37",
     "domain" : "138",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "337"
   }, {
     "range" : "138",
     "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "338"
-  }, {
-    "range" : "30",
-    "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "339"
   }, {
     "range" : "90",
     "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "339"
+  }, {
+    "range" : "30",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "340"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#latitude",
@@ -10674,12 +10674,12 @@
       "IRI-based" : "latitude"
     },
     "domain" : "138",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "342"
   }, {
     "range" : "345",
     "domain" : "344",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "343"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasBrand",
@@ -10703,72 +10703,72 @@
       "IRI-based" : "hasBrand"
     },
     "domain" : "5",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "346"
   }, {
     "range" : "25",
     "domain" : "225",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "348"
   }, {
     "range" : "138",
     "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "349"
   }, {
     "range" : "25",
     "domain" : "351",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "350"
   }, {
-    "range" : "25",
+    "range" : "15",
     "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "352"
   }, {
     "range" : "25",
     "domain" : "345",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "353"
   }, {
-    "range" : "15",
+    "range" : "25",
     "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "354"
   }, {
     "range" : "25",
     "domain" : "78",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "355"
   }, {
     "range" : "25",
     "domain" : "357",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "356"
   }, {
     "range" : "25",
     "domain" : "307",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "358"
   }, {
     "range" : "25",
     "domain" : "34",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "359"
   }, {
     "range" : "25",
     "domain" : "160",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "360"
   }, {
     "range" : "25",
     "domain" : "191",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "361"
   }, {
     "range" : "25",
     "domain" : "364",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "363"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#price",
@@ -10798,7 +10798,7 @@
       "IRI-based" : "price"
     },
     "domain" : "5",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "367"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasContact",
@@ -10832,7 +10832,7 @@
       "IRI-based" : "hasContact"
     },
     "domain" : "5",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "368"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasRole",
@@ -10855,38 +10855,38 @@
     "label" : {
       "IRI-based" : "hasRole"
     },
-    "domain" : "287",
-    "attributes" : [ "external", "object", "someValues" ],
+    "domain" : "288",
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "369"
   }, {
     "range" : "37",
     "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "370"
   }, {
     "range" : "5",
     "domain" : "200",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "371"
   }, {
     "range" : "30",
     "domain" : "200",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "372"
   }, {
     "range" : "90",
     "domain" : "200",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "373"
   }, {
     "range" : "25",
     "domain" : "347",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "374"
   }, {
     "range" : "25",
     "domain" : "28",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "376"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#actionName",
@@ -10910,27 +10910,27 @@
       "IRI-based" : "actionName"
     },
     "domain" : "200",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "377"
   }, {
     "range" : "25",
     "domain" : "379",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "378"
   }, {
     "range" : "25",
     "domain" : "382",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "381"
   }, {
     "range" : "25",
     "domain" : "384",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "383"
   }, {
     "range" : "25",
     "domain" : "291",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "386"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#eventType",
@@ -10954,27 +10954,27 @@
       "IRI-based" : "eventType"
     },
     "domain" : "200",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "387"
   }, {
     "range" : "25",
     "domain" : "114",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "388"
   }, {
     "range" : "25",
     "domain" : "294",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "389"
   }, {
     "range" : "25",
     "domain" : "292",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "390"
   }, {
     "range" : "25",
     "domain" : "392",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "391"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#eventDuration",
@@ -11004,7 +11004,7 @@
       "IRI-based" : "eventDuration"
     },
     "domain" : "200",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "395"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#eventName",
@@ -11028,12 +11028,12 @@
       "IRI-based" : "eventName"
     },
     "domain" : "200",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "396"
   }, {
     "range" : "37",
     "domain" : "200",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "397"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#eventId",
@@ -11057,42 +11057,42 @@
       "IRI-based" : "eventId"
     },
     "domain" : "200",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "398"
   }, {
     "range" : "15",
     "domain" : "200",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "400"
   }, {
     "range" : "25",
     "domain" : "200",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "401"
   }, {
     "range" : "160",
     "domain" : "393",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "402"
   }, {
     "range" : "15",
     "domain" : "74",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "403"
   }, {
     "range" : "15",
     "domain" : "304",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "404"
   }, {
     "range" : "15",
     "domain" : "110",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "405"
   }, {
     "range" : "15",
     "domain" : "278",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "407"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#eventDate",
@@ -11116,37 +11116,37 @@
       "IRI-based" : "eventDate"
     },
     "domain" : "200",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "408"
   }, {
     "range" : "62",
     "domain" : "410",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "409"
   }, {
     "range" : "25",
     "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "411"
   }, {
     "range" : "25",
     "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "412"
   }, {
     "range" : "25",
     "domain" : "259",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "413"
   }, {
     "range" : "25",
     "domain" : "133",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "414"
   }, {
     "range" : "138",
     "domain" : "200",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "416"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasAddress",
@@ -11170,7 +11170,7 @@
       "IRI-based" : "hasAddress"
     },
     "domain" : "138",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "417"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#eventLocation",
@@ -11194,12 +11194,12 @@
       "IRI-based" : "eventLocation"
     },
     "domain" : "200",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "418"
   }, {
     "range" : "138",
     "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "419"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isMemberOf",
@@ -11222,12 +11222,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/upper_ontology.ttl",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/upper_ontology.ttl",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl",
         "type" : "iri"
       } ],
       "prefLabel" : [ {
@@ -11246,15 +11246,21 @@
         "value" : "is member of",
         "type" : "label"
       } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "member-collection relation, spatial or social",
+        "type" : "label"
+      } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "is member of",
+        "language" : "de",
+        "value" : "war Mitglied von",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "de",
-        "value" : "war Mitglied von",
+        "value" : "ist Mitglied von",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
@@ -11263,14 +11269,8 @@
         "type" : "label"
       }, {
         "identifier" : "altLabel",
-        "language" : "de",
-        "value" : "ist Mitglied von",
-        "type" : "label"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
         "language" : "en",
-        "value" : "member-collection relation, spatial or social",
+        "value" : "is member of",
         "type" : "label"
       } ],
       "wikidata" : [ {
@@ -11343,7 +11343,7 @@
       "IRI-based" : "actionId"
     },
     "domain" : "200",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "423"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isLocatedIn",
@@ -11365,12 +11365,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/address_ontology.ttl",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/upper_ontology.ttl",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/upper_ontology.ttl",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/address_ontology.ttl",
         "type" : "iri"
       } ],
       "prefLabel" : [ {
@@ -11442,7 +11442,7 @@
       "IRI-based" : "sells"
     },
     "domain" : "98",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "425"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#companyName",
@@ -11467,13 +11467,13 @@
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Firmenname",
+        "language" : "en",
+        "value" : "Company Name",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Company Name",
+        "language" : "de",
+        "value" : "Firmenname",
         "type" : "label"
       } ]
     },
@@ -11481,7 +11481,7 @@
       "IRI-based" : "companyName"
     },
     "domain" : "129",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "427"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasAddress",
@@ -11527,12 +11527,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/address_ontology.ttl",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/upper_ontology.ttl",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/upper_ontology.ttl",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/address_ontology.ttl",
         "type" : "iri"
       } ],
       "prefLabel" : [ {
@@ -11580,7 +11580,7 @@
       "IRI-based" : "isLocatedIn"
     },
     "domain" : "81",
-    "attributes" : [ "transitive", "external", "object", "someValues" ],
+    "attributes" : [ "transitive", "someValues", "external", "object" ],
     "id" : "429"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#district",
@@ -11615,7 +11615,7 @@
       "IRI-based" : "district"
     },
     "domain" : "81",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "430"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#streetName",
@@ -11630,29 +11630,19 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Street",
+        "language" : "de",
+        "value" : "Straßenname",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Straßenname",
+        "language" : "en",
+        "value" : "Street",
         "type" : "label"
       } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
-        "language" : "de",
-        "value" : "Straße",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "de",
-        "value" : "Name einer Straße",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
         "language" : "en",
-        "value" : "odonym",
+        "value" : "road name",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
@@ -11662,7 +11652,12 @@
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "road name",
+        "value" : "odonym",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "road",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
@@ -11671,8 +11666,13 @@
         "type" : "label"
       }, {
         "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "road",
+        "language" : "de",
+        "value" : "Name einer Straße",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "de",
+        "value" : "Straße",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -11698,7 +11698,7 @@
       "IRI-based" : "streetName"
     },
     "domain" : "81",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "432"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#postalCode",
@@ -11713,19 +11713,19 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Postal Code",
+        "language" : "de",
+        "value" : "Postleitzahl",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Postleitzahl",
+        "language" : "en",
+        "value" : "Postal Code",
         "type" : "label"
       } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "zip code",
+        "value" : "postcode",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
@@ -11734,18 +11734,18 @@
         "type" : "label"
       }, {
         "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "post code",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
         "language" : "de",
         "value" : "Postleitzahl",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "postcode",
+        "value" : "post code",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "zip code",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -11770,7 +11770,7 @@
       "IRI-based" : "postalCode"
     },
     "domain" : "81",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "434"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#city",
@@ -11797,17 +11797,17 @@
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
+        "value" : "village",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "en",
         "value" : "municipality",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "en",
         "value" : "town",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "village",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -11827,7 +11827,7 @@
       "IRI-based" : "city"
     },
     "domain" : "81",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "436"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#apartmentNumber",
@@ -11874,7 +11874,7 @@
       "IRI-based" : "apartmentNumber"
     },
     "domain" : "81",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "438"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#finalCustomerId",
@@ -11898,7 +11898,7 @@
       "IRI-based" : "finalCustomerId"
     },
     "domain" : "74",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "440"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#receiverFirstName",
@@ -11913,13 +11913,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Receiver First Name",
+        "language" : "de",
+        "value" : "Empfänger Vorname",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Empfänger Vorname",
+        "language" : "en",
+        "value" : "Receiver First Name",
         "type" : "label"
       } ],
       "example" : [ {
@@ -11933,7 +11933,7 @@
       "IRI-based" : "receiverFirstName"
     },
     "domain" : "81",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "442"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#buildingName",
@@ -11974,7 +11974,7 @@
       "IRI-based" : "buildingName"
     },
     "domain" : "81",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "444"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#country",
@@ -11989,13 +11989,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Land",
+        "language" : "en",
+        "value" : "Country",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Country",
+        "language" : "de",
+        "value" : "Land",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -12015,7 +12015,7 @@
       "IRI-based" : "country"
     },
     "domain" : "81",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "446"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#houseNumber",
@@ -12030,13 +12030,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Hausnummer",
+        "language" : "en",
+        "value" : "Number",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Number",
+        "language" : "de",
+        "value" : "Hausnummer",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -12056,7 +12056,7 @@
       "IRI-based" : "houseNumber"
     },
     "domain" : "81",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "448"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#sells",
@@ -12080,7 +12080,7 @@
       "IRI-based" : "sells"
     },
     "domain" : "97",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "449"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#purchases",
@@ -12104,7 +12104,7 @@
       "IRI-based" : "purchases"
     },
     "domain" : "74",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "450"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#contactChannel",
@@ -12134,16 +12134,16 @@
         "value" : "Kontaktkanal",
         "type" : "label"
       } ],
-      "altLabel" : [ {
-        "identifier" : "altLabel",
-        "language" : "de",
-        "value" : "Kontaktweg",
-        "type" : "label"
-      } ],
       "definition" : [ {
         "identifier" : "definition",
         "language" : "en",
         "value" : "preference of contact channel",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "de",
+        "value" : "Kontaktweg",
         "type" : "label"
       } ],
       "example" : [ {
@@ -12162,7 +12162,7 @@
       "IRI-based" : "contactChannel"
     },
     "domain" : "34",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "451"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#email",
@@ -12177,24 +12177,24 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
+        "language" : "en",
         "value" : "Email",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
+        "language" : "de",
         "value" : "Email",
         "type" : "label"
       } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "electronic mail",
+        "value" : "e-mail",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "en",
-        "value" : "e-mail",
+        "value" : "electronic mail",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
@@ -12205,12 +12205,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://schema.org/email",
+        "value" : "https://en.wikipedia.org/wiki/Email",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://en.wikipedia.org/wiki/Email",
+        "value" : "https://schema.org/email",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -12224,7 +12224,7 @@
       "IRI-based" : "email"
     },
     "domain" : "34",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "453"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#contactLanguage",
@@ -12245,13 +12245,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Contact Language",
+        "language" : "de",
+        "value" : "Kontaktsprache",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Kontaktsprache",
+        "language" : "en",
+        "value" : "Contact Language",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -12269,12 +12269,12 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "en",
-        "value" : "de",
+        "value" : "en",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "en",
+        "value" : "de",
         "type" : "label"
       } ]
     },
@@ -12282,7 +12282,7 @@
       "IRI-based" : "contactLanguage"
     },
     "domain" : "34",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "455"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isInvolvedIn",
@@ -12312,16 +12312,16 @@
         "value" : "beteiligt in",
         "type" : "label"
       } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "process-process relation",
-        "type" : "label"
-      } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
         "value" : "feature-activity",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "process-process relation",
         "type" : "label"
       } ],
       "example" : [ {
@@ -12335,7 +12335,7 @@
       "IRI-based" : "isInvolvedIn"
     },
     "domain" : "90",
-    "attributes" : [ "transitive", "external", "object", "someValues" ],
+    "attributes" : [ "transitive", "someValues", "external", "object" ],
     "id" : "457"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isInvolvedIn",
@@ -12365,16 +12365,16 @@
         "value" : "beteiligt in",
         "type" : "label"
       } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "process-process relation",
-        "type" : "label"
-      } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
         "value" : "feature-activity",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "process-process relation",
         "type" : "label"
       } ],
       "example" : [ {
@@ -12388,12 +12388,12 @@
       "IRI-based" : "isInvolvedIn"
     },
     "domain" : "90",
-    "attributes" : [ "transitive", "external", "object", "someValues" ],
+    "attributes" : [ "transitive", "someValues", "external", "object" ],
     "id" : "458"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#contactHours",
     "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-    "range" : "461",
+    "range" : "460",
     "annotations" : {
       "note" : [ {
         "identifier" : "note",
@@ -12409,13 +12409,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Kontaktzeiten",
+        "language" : "en",
+        "value" : "Contact Hours",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Contact Hours",
+        "language" : "de",
+        "value" : "Kontaktzeiten",
         "type" : "label"
       } ],
       "altLabel" : [ {
@@ -12438,12 +12438,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://schema.org/hoursAvailable",
+        "value" : "https://en.wikipedia.org/wiki/Business_hours",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://en.wikipedia.org/wiki/Business_hours",
+        "value" : "https://schema.org/hoursAvailable",
         "type" : "iri"
       } ]
     },
@@ -12451,8 +12451,32 @@
       "IRI-based" : "contactHours"
     },
     "domain" : "34",
-    "attributes" : [ "external", "datatype", "someValues" ],
-    "id" : "460"
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "459"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isWrittenIn",
+    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
+    "range" : "45",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/contact_ontology.ttl",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is written in",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isWrittenIn"
+    },
+    "domain" : "34",
+    "attributes" : [ "someValues", "external", "object" ],
+    "id" : "461"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#telephoneNumber",
     "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
@@ -12494,12 +12518,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://en.wikipedia.org/wiki/Telephone_number",
+        "value" : "https://schema.org/telephone",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://schema.org/telephone",
+        "value" : "https://en.wikipedia.org/wiki/Telephone_number",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -12513,7 +12537,7 @@
       "IRI-based" : "telephoneNumber"
     },
     "domain" : "34",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "462"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#linkedIn",
@@ -12534,13 +12558,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Linked In",
+        "language" : "de",
+        "value" : "LinkedIn",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "LinkedIn",
+        "language" : "en",
+        "value" : "Linked In",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -12560,36 +12584,12 @@
       "IRI-based" : "linkedIn"
     },
     "domain" : "34",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "464"
-  }, {
-    "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isWrittenIn",
-    "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-    "range" : "45",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/contact_ontology.ttl",
-        "type" : "iri"
-      } ],
-      "prefLabel" : [ {
-        "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "is written in",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "isWrittenIn"
-    },
-    "domain" : "34",
-    "attributes" : [ "external", "object", "someValues" ],
-    "id" : "466"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#faxNumber",
     "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
-    "range" : "459",
+    "range" : "467",
     "annotations" : {
       "note" : [ {
         "identifier" : "note",
@@ -12605,13 +12605,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Fax Number",
+        "language" : "de",
+        "value" : "Faxnummer",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "de",
-        "value" : "Faxnummer",
+        "language" : "en",
+        "value" : "Fax Number",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -12631,8 +12631,8 @@
       "IRI-based" : "faxNumber"
     },
     "domain" : "34",
-    "attributes" : [ "external", "datatype", "someValues" ],
-    "id" : "467"
+    "attributes" : [ "someValues", "datatype", "external" ],
+    "id" : "466"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasPrivateAddress",
     "baseIri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl",
@@ -12641,12 +12641,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/address_ontology.ttl",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/contact_ontology.ttl",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/contact_ontology.ttl",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/address_ontology.ttl",
         "type" : "iri"
       } ],
       "prefLabel" : [ {
@@ -12689,7 +12689,7 @@
       "IRI-based" : "sells"
     },
     "domain" : "99",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "469"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#hasPrivateAddress",
@@ -12699,12 +12699,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/address_ontology.ttl",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/contact_ontology.ttl",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/contact_ontology.ttl",
+        "value" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/address_ontology.ttl",
         "type" : "iri"
       } ],
       "prefLabel" : [ {
@@ -12723,7 +12723,7 @@
       "IRI-based" : "hasPrivateAddress"
     },
     "domain" : "101",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "470"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#recycles",
@@ -12747,7 +12747,7 @@
       "IRI-based" : "recycles"
     },
     "domain" : "246",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "471"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#produces",
@@ -12771,7 +12771,7 @@
       "IRI-based" : "produces"
     },
     "domain" : "27",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "472"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#isSuppliedBy",
@@ -12795,7 +12795,7 @@
       "IRI-based" : "isSuppliedBy"
     },
     "domain" : "27",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "473"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#manufacturerName",
@@ -12819,7 +12819,7 @@
       "IRI-based" : "manufacturerName"
     },
     "domain" : "27",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "474"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#manufacturerId",
@@ -12843,7 +12843,7 @@
       "IRI-based" : "manufacturerId"
     },
     "domain" : "27",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "datatype", "external" ],
     "id" : "476"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#transport",
@@ -12867,7 +12867,7 @@
       "IRI-based" : "transport"
     },
     "domain" : "87",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "477"
   }, {
     "iri" : "https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#produces",
@@ -12891,7 +12891,7 @@
       "IRI-based" : "produces"
     },
     "domain" : "193",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "478"
   } ]
 }
