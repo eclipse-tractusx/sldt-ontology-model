@@ -517,14 +517,14 @@ cx:IncidentWitness a owl:Class ;
 cx:MedicalTreatment a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:isProvidedFor ;
-            owl:someValuesFrom cx:Incident ],
-        [ a owl:Restriction ;
             owl:onProperty cx:medicalTreatmentDescription ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:medicalTreatmentName ;
             owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:isProvidedFor ;
+            owl:someValuesFrom cx:Incident ],
         cx:Event ;
     skos:prefLabel "Medical Treatment"@en .
 
@@ -565,11 +565,11 @@ cx:IncidentAffectedCompany a owl:Class ;
             owl:onProperty cx:hasContact ;
             owl:someValuesFrom cx:BusinessContact ],
         [ a owl:Restriction ;
-            owl:onProperty cx:isAffectedBy ;
-            owl:someValuesFrom cx:Incident ],
-        [ a owl:Restriction ;
             owl:onProperty cx:isLocatedIn ;
             owl:someValuesFrom cx:BusinessAddress ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:isAffectedBy ;
+            owl:someValuesFrom cx:Incident ],
         cx:Company ;
     skos:altLabel "impacted company"@en ;
     skos:definition "Company that is affected by the incident."@en ;
@@ -583,11 +583,11 @@ cx:IncidentCausingCompany a owl:Class ;
             owl:onProperty cx:causes ;
             owl:someValuesFrom cx:Incident ],
         [ a owl:Restriction ;
-            owl:onProperty cx:hasContact ;
-            owl:someValuesFrom cx:BusinessContact ],
-        [ a owl:Restriction ;
             owl:onProperty cx:isLocatedIn ;
             owl:someValuesFrom cx:BusinessAddress ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:hasContact ;
+            owl:someValuesFrom cx:BusinessContact ],
         cx:Company ;
     skos:altLabel "responsible company"@en ;
     skos:definition "Company that caused the incident."@en ;
@@ -608,10 +608,10 @@ cx:isLocatedIn a owl:ObjectProperty ;
     skos:prefLabel "is located in"@en .
 
 cx:Company rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:receives ;
+            owl:onProperty cx:isAffectedIn ;
             owl:someValuesFrom cx:IncidentReport ],
         [ a owl:Restriction ;
-            owl:onProperty cx:isAffectedIn ;
+            owl:onProperty cx:receives ;
             owl:someValuesFrom cx:IncidentReport ] .
 
 cx:isAffectedIn a owl:ObjectProperty ;
@@ -628,23 +628,23 @@ cx:isAffectedIn a owl:ObjectProperty ;
 cx:IncidentReporter a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:incidentReporterSignature ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty cx:incidentReporterName ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:incidentReporterCompany ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
+            owl:onProperty cx:incidentReporterSignature ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:hasContact ;
+            owl:someValuesFrom cx:Contact ],
+        [ a owl:Restriction ;
             owl:onProperty cx:incidentReporterId ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:isLocatedIn ;
             owl:someValuesFrom cx:StreetAddress ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:hasContact ;
-            owl:someValuesFrom cx:Contact ],
         cx:Person ;
     skos:prefLabel "Incident Reporter"@en .
 
@@ -652,8 +652,8 @@ cx:IncidentReport a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl> ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Incident_report> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:isCreatedBy ;
-            owl:someValuesFrom cx:IncidentReporter ],
+            owl:onProperty cx:isReceivedBy ;
+            owl:someValuesFrom cx:Company ],
         [ a owl:Restriction ;
             owl:onProperty cx:notifiedAuthority ;
             owl:someValuesFrom xsd:string ],
@@ -661,35 +661,35 @@ cx:IncidentReport a owl:Class ;
             owl:onProperty cx:incidentReportAnonymousFlag ;
             owl:someValuesFrom xsd:boolean ],
         [ a owl:Restriction ;
+            owl:onProperty cx:isCreatedBy ;
+            owl:someValuesFrom cx:IncidentReporter ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:incidentReportId ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty cx:incidentReportDateTime ;
             owl:someValuesFrom xsd:dateTime ],
         [ a owl:Restriction ;
             owl:onProperty cx:incidentReportStatus ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
+            owl:onProperty cx:notifiedAuthority ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:notifiedAuthority ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:incidentReportStatus ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:isReceivedBy ;
+            owl:someValuesFrom cx:Organisation ],
+        [ a owl:Restriction ;
             owl:onProperty cx:incidentReportStatus ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:incidentReportEvidenceAttachment ;
             owl:someValuesFrom xsd:anyURI ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:isReceivedBy ;
-            owl:someValuesFrom cx:Organisation ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:incidentReportId ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:notifiedAuthority ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:incidentReportStatus ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:isReceivedBy ;
-            owl:someValuesFrom cx:Company ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:notifiedAuthority ;
-            owl:someValuesFrom xsd:string ],
         cx:Information ;
     skos:altLabel "Bericht"@de,
         "incident record"@en ;
@@ -705,17 +705,8 @@ cx:IncidentType a owl:Class ;
 cx:Incident a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:isWitnessedBy ;
-            owl:someValuesFrom cx:IncidentWitness ],
-        [ a owl:Restriction ;
             owl:onProperty cx:incidentImpact ;
             owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:isCausedBy ;
-            owl:someValuesFrom cx:IncidentCausingPerson ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:incidentDateTime ;
-            owl:someValuesFrom xsd:dateTime ],
         [ a owl:Restriction ;
             owl:onProperty cx:incidentCause ;
             owl:someValuesFrom xsd:string ],
@@ -723,32 +714,32 @@ cx:Incident a owl:Class ;
             owl:onProperty cx:incidentSeverity ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:incidentUrgency ;
+            owl:onProperty cx:incidentDescription ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:incidentHazard ;
+            owl:onProperty cx:incidentTitle ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:incidentRisk ;
-            owl:someValuesFrom xsd:string ],
+            owl:onProperty cx:affects ;
+            owl:someValuesFrom cx:IncidentAffectedPerson ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:isCausedBy ;
+            owl:someValuesFrom cx:IncidentCausingPerson ],
         [ a owl:Restriction ;
             owl:onProperty cx:incidentDuration ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:incidentUrgency ;
+            owl:onProperty cx:incidentPrevention ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:isLocatedIn ;
-            owl:someValuesFrom cx:StreetAddress ],
+            owl:someValuesFrom cx:Place ],
         [ a owl:Restriction ;
-            owl:onProperty cx:incidentLocation ;
+            owl:onProperty cx:incidentRisk ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:incidentType ;
             owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:isCausedBy ;
-            owl:someValuesFrom cx:IncidentCausingCompany ],
         [ a owl:Restriction ;
             owl:onProperty cx:incidentType ;
             owl:someValuesFrom xsd:string ],
@@ -756,29 +747,38 @@ cx:Incident a owl:Class ;
             owl:onProperty cx:incidentDamage ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:affects ;
-            owl:someValuesFrom cx:IncidentAffectedPerson ],
+            owl:onProperty cx:isCausedBy ;
+            owl:someValuesFrom cx:IncidentCausingCompany ],
         [ a owl:Restriction ;
-            owl:onProperty cx:incidentDescription ;
+            owl:onProperty cx:incidentUrgency ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:incidentLocation ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:isLocatedIn ;
-            owl:someValuesFrom cx:Place ],
+            owl:someValuesFrom cx:StreetAddress ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:affects ;
+            owl:someValuesFrom cx:IncidentAffectedCompany ],
         [ a owl:Restriction ;
             owl:onProperty cx:incidentInjury ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:incidentTitle ;
-            owl:someValuesFrom xsd:string ],
+            owl:onProperty cx:isWitnessedBy ;
+            owl:someValuesFrom cx:IncidentWitness ],
         [ a owl:Restriction ;
             owl:onProperty cx:isRecordedBy ;
             owl:someValuesFrom cx:IncidentReport ],
         [ a owl:Restriction ;
-            owl:onProperty cx:incidentPrevention ;
+            owl:onProperty cx:incidentHazard ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:affects ;
-            owl:someValuesFrom cx:IncidentAffectedCompany ],
+            owl:onProperty cx:incidentDateTime ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:incidentUrgency ;
+            owl:someValuesFrom xsd:string ],
         cx:Event ;
     skos:altLabel "Störfall"@de,
         "Vorfall"@de,
@@ -790,7 +790,7 @@ cx:Incident a owl:Class ;
 
 <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/incident_ontology.ttl> a owl:Ontology ;
     dc:creator "Zazralt Magic" ;
-    dc:date "2023-02-11"^^xsd:date ;
+    dc:date "2023-02-21"^^xsd:date ;
     dc:description "Environmental and Social Standards (ESS)" ;
     dc:title "Incident Ontology" ;
     owl:versionInfo "0.0.1" .
