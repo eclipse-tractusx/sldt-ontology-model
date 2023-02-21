@@ -215,19 +215,19 @@ cx:OnBoardDiagnostics2 a owl:Class ;
 
 cx:Vehicle rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty cx:hasInterface ;
-            owl:someValuesFrom cx:Telematics ],
+            owl:someValuesFrom cx:DataLinkConnector ],
         [ a owl:Restriction ;
             owl:onProperty cx:hasInterface ;
-            owl:someValuesFrom cx:DataLinkConnector ] .
+            owl:someValuesFrom cx:Telematics ] .
 
 cx:PossibleCause a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/diagnosis_ontology.ttl> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:hasActualCause ;
-            owl:someValuesFrom cx:ActualCause ],
-        [ a owl:Restriction ;
             owl:onProperty cx:hasCauseType ;
             owl:someValuesFrom cx:CauseType ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:hasActualCause ;
+            owl:someValuesFrom cx:ActualCause ],
         cx:ErrorCause ;
     skos:prefLabel "Possible Cause"@en .
 
@@ -236,20 +236,20 @@ cx:VehicleDiagnosis a owl:Class ;
     rdfs:seeAlso <https://de.wikipedia.org/wiki/Fehlerdiagnose>,
         <https://en.wikipedia.org/wiki/Diagnosis> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDiagnosisDate ;
+            owl:someValuesFrom xsd:date ],
+        [ a owl:Restriction ;
             owl:onProperty cx:hasDiagnosticTroubleCode ;
             owl:someValuesFrom cx:DiagnosticTroubleCode ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:vehicleDiagnosisLocation ;
+            owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:testingTechnician ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty cx:diagnoses ;
             owl:someValuesFrom cx:Vehicle ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDiagnosisLocation ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:vehicleDiagnosisDate ;
-            owl:someValuesFrom xsd:date ],
         cx:Process ;
     skos:definition "Vehicle diagnosis is the identification of a problem or the cause and location of a problem."@en ;
     skos:prefLabel "Fahrzeugdiagnose"@de,
@@ -259,20 +259,20 @@ cx:DiagnosticTroubleCode a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/diagnosis_ontology.ttl> ;
     rdfs:seeAlso <https://www.wikidata.org/wiki/Q5525576> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:hasEncoding ;
-            owl:someValuesFrom cx:Encoding ],
+            owl:onProperty cx:hasPossibleCause ;
+            owl:someValuesFrom cx:PossibleCause ],
         [ a owl:Restriction ;
             owl:onProperty cx:diagnosticTroubleCodeId ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:isStoredIn ;
-            owl:someValuesFrom cx:ErrorMemory ],
-        [ a owl:Restriction ;
             owl:onProperty cx:diagnosticTroubleCodeName ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:hasPossibleCause ;
-            owl:someValuesFrom cx:PossibleCause ],
+            owl:onProperty cx:hasEncoding ;
+            owl:someValuesFrom cx:Encoding ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:isStoredIn ;
+            owl:someValuesFrom cx:ErrorMemory ],
         cx:ImmaterialThing ;
     skos:altLabel "Fehlercode"@de,
         "DTC"@en,
@@ -285,7 +285,7 @@ cx:DiagnosticTroubleCode a owl:Class ;
 
 <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/diagnosis_ontology.ttl> a owl:Ontology ;
     dc:creator "Zazralt Magic" ;
-    dc:date "2023-02-11"^^xsd:date ;
+    dc:date "2023-02-21"^^xsd:date ;
     dc:description "Ontology for vehicle diagnosis." ;
     dc:title "Diagnosis Ontology" ;
     owl:imports <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/common_ontology.ttl>,

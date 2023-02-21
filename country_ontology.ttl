@@ -11,6 +11,7 @@ cx:Country_Afghanistan a cx:Country ;
         "Afghanistan"@en ;
     cx:countryCode2 "AF" ;
     cx:countryCode3 "AFG" ;
+    cx:countryName "Afghanistan" ;
     cx:countryNumber "4" ;
     cx:wikidata <http://www.wikidata.org/entity/Q889> .
 
@@ -19,6 +20,7 @@ cx:Country_Albania a cx:Country ;
         "Albania"@en ;
     cx:countryCode2 "AL" ;
     cx:countryCode3 "ALB" ;
+    cx:countryName "Albania" ;
     cx:countryNumber "8" ;
     cx:wikidata <http://www.wikidata.org/entity/Q222> .
 
@@ -27,6 +29,7 @@ cx:Country_Algeria a cx:Country ;
         "Algeria"@en ;
     cx:countryCode2 "DZ" ;
     cx:countryCode3 "DZA" ;
+    cx:countryName "Algeria" ;
     cx:countryNumber "12" ;
     cx:wikidata <http://www.wikidata.org/entity/Q262> .
 
@@ -35,6 +38,7 @@ cx:Country_AmericanSamoa a cx:Country ;
         "American Samoa"@en ;
     cx:countryCode2 "AS" ;
     cx:countryCode3 "ASM" ;
+    cx:countryName "American Samoa" ;
     cx:countryNumber "16" ;
     cx:wikidata <http://www.wikidata.org/entity/Q16641> .
 
@@ -43,6 +47,7 @@ cx:Country_Andorra a cx:Country ;
         "Andorra"@en ;
     cx:countryCode2 "AD" ;
     cx:countryCode3 "AND" ;
+    cx:countryName "Andorra" ;
     cx:countryNumber "20" ;
     cx:wikidata <http://www.wikidata.org/entity/Q228> .
 
@@ -51,6 +56,7 @@ cx:Country_Angola a cx:Country ;
         "Angola"@en ;
     cx:countryCode2 "AO" ;
     cx:countryCode3 "AGO" ;
+    cx:countryName "Angola" ;
     cx:countryNumber "24" ;
     cx:wikidata <http://www.wikidata.org/entity/Q916> .
 
@@ -59,6 +65,7 @@ cx:Country_Anguilla a cx:Country ;
         "Anguilla"@en ;
     cx:countryCode2 "AI" ;
     cx:countryCode3 "AIA" ;
+    cx:countryName "Anguilla" ;
     cx:countryNumber "660" ;
     cx:wikidata <http://www.wikidata.org/entity/Q25228> .
 
@@ -67,6 +74,7 @@ cx:Country_AntarcticTreatyArea a cx:Country ;
         "Antarctic Treaty area"@en ;
     cx:countryCode2 "AQ" ;
     cx:countryCode3 "ATA" ;
+    cx:countryName "Antarctic Treaty area" ;
     cx:countryNumber "10" ;
     cx:wikidata <http://www.wikidata.org/entity/Q21590062> .
 
@@ -75,6 +83,7 @@ cx:Country_AntiguaAndBarbuda a cx:Country ;
         "Antigua and Barbuda"@en ;
     cx:countryCode2 "AG" ;
     cx:countryCode3 "ATG" ;
+    cx:countryName "Antigua and Barbuda" ;
     cx:countryNumber "28" ;
     cx:wikidata <http://www.wikidata.org/entity/Q781> .
 
@@ -83,6 +92,7 @@ cx:Country_Argentina a cx:Country ;
         "Argentina"@en ;
     cx:countryCode2 "AR" ;
     cx:countryCode3 "ARG" ;
+    cx:countryName "Argentina" ;
     cx:countryNumber "32" ;
     cx:wikidata <http://www.wikidata.org/entity/Q414> .
 
@@ -91,6 +101,7 @@ cx:Country_Armenia a cx:Country ;
         "Armenia"@en ;
     cx:countryCode2 "AM" ;
     cx:countryCode3 "ARM" ;
+    cx:countryName "Armenia" ;
     cx:countryNumber "51" ;
     cx:wikidata <http://www.wikidata.org/entity/Q399> .
 
@@ -99,6 +110,7 @@ cx:Country_Aruba a cx:Country ;
         "Aruba"@en ;
     cx:countryCode2 "AW" ;
     cx:countryCode3 "ABW" ;
+    cx:countryName "Aruba" ;
     cx:countryNumber "533" ;
     cx:wikidata <http://www.wikidata.org/entity/Q21203> .
 
@@ -107,6 +119,7 @@ cx:Country_Australia a cx:Country ;
         "Australia"@en ;
     cx:countryCode2 "AU" ;
     cx:countryCode3 "AUS" ;
+    cx:countryName "Australia" ;
     cx:countryNumber "36" ;
     cx:wikidata <http://www.wikidata.org/entity/Q408> .
 
@@ -115,6 +128,7 @@ cx:Country_Austria a cx:Country ;
         "Austria"@en ;
     cx:countryCode2 "AT" ;
     cx:countryCode3 "AUT" ;
+    cx:countryName "Austria" ;
     cx:countryNumber "40" ;
     cx:wikidata <http://www.wikidata.org/entity/Q40> .
 
@@ -123,6 +137,7 @@ cx:Country_Azerbaijan a cx:Country ;
         "Azerbaijan"@en ;
     cx:countryCode2 "AZ" ;
     cx:countryCode3 "AZE" ;
+    cx:countryName "Azerbaijan" ;
     cx:countryNumber "31" ;
     cx:wikidata <http://www.wikidata.org/entity/Q227> .
 
@@ -131,6 +146,7 @@ cx:Country_Bahrain a cx:Country ;
         "Bahrain"@en ;
     cx:countryCode2 "BH" ;
     cx:countryCode3 "BHR" ;
+    cx:countryName "Bahrain" ;
     cx:countryNumber "48" ;
     cx:wikidata <http://www.wikidata.org/entity/Q398> .
 
@@ -139,6 +155,7 @@ cx:Country_Bangladesh a cx:Country ;
         "Bangladesh"@en ;
     cx:countryCode2 "BD" ;
     cx:countryCode3 "BGD" ;
+    cx:countryName "Bangladesh" ;
     cx:countryNumber "50" ;
     cx:wikidata <http://www.wikidata.org/entity/Q902> .
 
@@ -147,6 +164,7 @@ cx:Country_Barbados a cx:Country ;
         "Barbados"@en ;
     cx:countryCode2 "BB" ;
     cx:countryCode3 "BRB" ;
+    cx:countryName "Barbados" ;
     cx:countryNumber "52" ;
     cx:wikidata <http://www.wikidata.org/entity/Q244> .
 
@@ -155,6 +173,7 @@ cx:Country_Belarus a cx:Country ;
         "Belarus"@en ;
     cx:countryCode2 "BY" ;
     cx:countryCode3 "BLR" ;
+    cx:countryName "Belarus" ;
     cx:countryNumber "112" ;
     cx:wikidata <http://www.wikidata.org/entity/Q184> .
 
@@ -163,6 +182,7 @@ cx:Country_Belgium a cx:Country ;
         "Belgium"@en ;
     cx:countryCode2 "BE" ;
     cx:countryCode3 "BEL" ;
+    cx:countryName "Belgium" ;
     cx:countryNumber "56" ;
     cx:wikidata <http://www.wikidata.org/entity/Q31> .
 
@@ -171,6 +191,7 @@ cx:Country_Belize a cx:Country ;
         "Belize"@en ;
     cx:countryCode2 "BZ" ;
     cx:countryCode3 "BLZ" ;
+    cx:countryName "Belize" ;
     cx:countryNumber "84" ;
     cx:wikidata <http://www.wikidata.org/entity/Q242> .
 
@@ -179,6 +200,7 @@ cx:Country_Benin a cx:Country ;
         "Benin"@en ;
     cx:countryCode2 "BJ" ;
     cx:countryCode3 "BEN" ;
+    cx:countryName "Benin" ;
     cx:countryNumber "204" ;
     cx:wikidata <http://www.wikidata.org/entity/Q962> .
 
@@ -187,6 +209,7 @@ cx:Country_Bermuda a cx:Country ;
         "Bermuda"@en ;
     cx:countryCode2 "BM" ;
     cx:countryCode3 "BMU" ;
+    cx:countryName "Bermuda" ;
     cx:countryNumber "60" ;
     cx:wikidata <http://www.wikidata.org/entity/Q23635> .
 
@@ -195,6 +218,7 @@ cx:Country_Bhutan a cx:Country ;
         "Bhutan"@en ;
     cx:countryCode2 "BT" ;
     cx:countryCode3 "BTN" ;
+    cx:countryName "Bhutan" ;
     cx:countryNumber "64" ;
     cx:wikidata <http://www.wikidata.org/entity/Q917> .
 
@@ -203,6 +227,7 @@ cx:Country_Bolivia a cx:Country ;
         "Bolivia"@en ;
     cx:countryCode2 "BO" ;
     cx:countryCode3 "BOL" ;
+    cx:countryName "Bolivia" ;
     cx:countryNumber "68" ;
     cx:wikidata <http://www.wikidata.org/entity/Q750> .
 
@@ -211,6 +236,7 @@ cx:Country_BosniaAndHerzegovina a cx:Country ;
         "Bosnia and Herzegovina"@en ;
     cx:countryCode2 "BA" ;
     cx:countryCode3 "BIH" ;
+    cx:countryName "Bosnia and Herzegovina" ;
     cx:countryNumber "70" ;
     cx:wikidata <http://www.wikidata.org/entity/Q225> .
 
@@ -219,6 +245,7 @@ cx:Country_Botswana a cx:Country ;
         "Botswana"@en ;
     cx:countryCode2 "BW" ;
     cx:countryCode3 "BWA" ;
+    cx:countryName "Botswana" ;
     cx:countryNumber "72" ;
     cx:wikidata <http://www.wikidata.org/entity/Q963> .
 
@@ -227,6 +254,7 @@ cx:Country_BouvetIsland a cx:Country ;
         "Bouvet Island"@en ;
     cx:countryCode2 "BV" ;
     cx:countryCode3 "BVT" ;
+    cx:countryName "Bouvet Island" ;
     cx:countryNumber "74" ;
     cx:wikidata <http://www.wikidata.org/entity/Q23408> .
 
@@ -235,6 +263,7 @@ cx:Country_Brazil a cx:Country ;
         "Brazil"@en ;
     cx:countryCode2 "BR" ;
     cx:countryCode3 "BRA" ;
+    cx:countryName "Brazil" ;
     cx:countryNumber "76" ;
     cx:wikidata <http://www.wikidata.org/entity/Q155> .
 
@@ -243,6 +272,7 @@ cx:Country_BritishIndianOceanTerritory a cx:Country ;
         "British Indian Ocean Territory"@en ;
     cx:countryCode2 "IO" ;
     cx:countryCode3 "IOT" ;
+    cx:countryName "British Indian Ocean Territory" ;
     cx:countryNumber "86" ;
     cx:wikidata <http://www.wikidata.org/entity/Q43448> .
 
@@ -251,6 +281,7 @@ cx:Country_BritishVirginIslands a cx:Country ;
         "British Virgin Islands"@en ;
     cx:countryCode2 "VG" ;
     cx:countryCode3 "VGB" ;
+    cx:countryName "British Virgin Islands" ;
     cx:countryNumber "92" ;
     cx:wikidata <http://www.wikidata.org/entity/Q25305> .
 
@@ -259,6 +290,7 @@ cx:Country_Brunei a cx:Country ;
         "Brunei"@en ;
     cx:countryCode2 "BN" ;
     cx:countryCode3 "BRN" ;
+    cx:countryName "Brunei" ;
     cx:countryNumber "96" ;
     cx:wikidata <http://www.wikidata.org/entity/Q921> .
 
@@ -267,6 +299,7 @@ cx:Country_Bulgaria a cx:Country ;
         "Bulgaria"@en ;
     cx:countryCode2 "BG" ;
     cx:countryCode3 "BGR" ;
+    cx:countryName "Bulgaria" ;
     cx:countryNumber "100" ;
     cx:wikidata <http://www.wikidata.org/entity/Q219> .
 
@@ -275,6 +308,7 @@ cx:Country_BurkinaFaso a cx:Country ;
         "Burkina Faso"@en ;
     cx:countryCode2 "BF" ;
     cx:countryCode3 "BFA" ;
+    cx:countryName "Burkina Faso" ;
     cx:countryNumber "854" ;
     cx:wikidata <http://www.wikidata.org/entity/Q965> .
 
@@ -283,6 +317,7 @@ cx:Country_Burundi a cx:Country ;
         "Burundi"@en ;
     cx:countryCode2 "BI" ;
     cx:countryCode3 "BDI" ;
+    cx:countryName "Burundi" ;
     cx:countryNumber "108" ;
     cx:wikidata <http://www.wikidata.org/entity/Q967> .
 
@@ -291,6 +326,7 @@ cx:Country_Cambodia a cx:Country ;
         "Cambodia"@en ;
     cx:countryCode2 "KH" ;
     cx:countryCode3 "KHM" ;
+    cx:countryName "Cambodia" ;
     cx:countryNumber "116" ;
     cx:wikidata <http://www.wikidata.org/entity/Q424> .
 
@@ -299,6 +335,7 @@ cx:Country_Cameroon a cx:Country ;
         "Cameroon"@en ;
     cx:countryCode2 "CM" ;
     cx:countryCode3 "CMR" ;
+    cx:countryName "Cameroon" ;
     cx:countryNumber "120" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1009> .
 
@@ -307,6 +344,7 @@ cx:Country_Canada a cx:Country ;
         "Canada"@en ;
     cx:countryCode2 "CA" ;
     cx:countryCode3 "CAN" ;
+    cx:countryName "Canada" ;
     cx:countryNumber "124" ;
     cx:wikidata <http://www.wikidata.org/entity/Q16> .
 
@@ -315,6 +353,7 @@ cx:Country_CapeVerde a cx:Country ;
         "Cape Verde"@en ;
     cx:countryCode2 "CV" ;
     cx:countryCode3 "CPV" ;
+    cx:countryName "Cape Verde" ;
     cx:countryNumber "132" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1011> .
 
@@ -323,6 +362,7 @@ cx:Country_CaribbeanNetherlands a cx:Country ;
         "Caribbean Netherlands"@en ;
     cx:countryCode2 "BQ" ;
     cx:countryCode3 "BES" ;
+    cx:countryName "Caribbean Netherlands" ;
     cx:countryNumber "535" ;
     cx:wikidata <http://www.wikidata.org/entity/Q27561> .
 
@@ -331,6 +371,7 @@ cx:Country_CaymanIslands a cx:Country ;
         "Cayman Islands"@en ;
     cx:countryCode2 "KY" ;
     cx:countryCode3 "CYM" ;
+    cx:countryName "Cayman Islands" ;
     cx:countryNumber "136" ;
     cx:wikidata <http://www.wikidata.org/entity/Q5785> .
 
@@ -339,6 +380,7 @@ cx:Country_CentralAfricanRepublic a cx:Country ;
         "Central African Republic"@en ;
     cx:countryCode2 "CF" ;
     cx:countryCode3 "CAF" ;
+    cx:countryName "Central African Republic" ;
     cx:countryNumber "140" ;
     cx:wikidata <http://www.wikidata.org/entity/Q929> .
 
@@ -347,6 +389,7 @@ cx:Country_Chad a cx:Country ;
         "Chad"@en ;
     cx:countryCode2 "TD" ;
     cx:countryCode3 "TCD" ;
+    cx:countryName "Chad" ;
     cx:countryNumber "148" ;
     cx:wikidata <http://www.wikidata.org/entity/Q657> .
 
@@ -355,6 +398,7 @@ cx:Country_Chile a cx:Country ;
         "Chile"@en ;
     cx:countryCode2 "CL" ;
     cx:countryCode3 "CHL" ;
+    cx:countryName "Chile" ;
     cx:countryNumber "152" ;
     cx:wikidata <http://www.wikidata.org/entity/Q298> .
 
@@ -363,6 +407,7 @@ cx:Country_ChristmasIsland a cx:Country ;
         "Christmas Island"@en ;
     cx:countryCode2 "CX" ;
     cx:countryCode3 "CXR" ;
+    cx:countryName "Christmas Island" ;
     cx:countryNumber "162" ;
     cx:wikidata <http://www.wikidata.org/entity/Q31063> .
 
@@ -371,6 +416,7 @@ cx:Country_CocosKeelingIslands a cx:Country ;
         "Cocos  Islands"@en ;
     cx:countryCode2 "CC" ;
     cx:countryCode3 "CCK" ;
+    cx:countryName "Cocos  Islands" ;
     cx:countryNumber "166" ;
     cx:wikidata <http://www.wikidata.org/entity/Q36004> .
 
@@ -379,6 +425,7 @@ cx:Country_Colombia a cx:Country ;
         "Colombia"@en ;
     cx:countryCode2 "CO" ;
     cx:countryCode3 "COL" ;
+    cx:countryName "Colombia" ;
     cx:countryNumber "170" ;
     cx:wikidata <http://www.wikidata.org/entity/Q739> .
 
@@ -387,6 +434,7 @@ cx:Country_Comoros a cx:Country ;
         "Comoros"@en ;
     cx:countryCode2 "KM" ;
     cx:countryCode3 "COM" ;
+    cx:countryName "Comoros" ;
     cx:countryNumber "174" ;
     cx:wikidata <http://www.wikidata.org/entity/Q970> .
 
@@ -395,6 +443,7 @@ cx:Country_CookIslands a cx:Country ;
         "Cook Islands"@en ;
     cx:countryCode2 "CK" ;
     cx:countryCode3 "COK" ;
+    cx:countryName "Cook Islands" ;
     cx:countryNumber "184" ;
     cx:wikidata <http://www.wikidata.org/entity/Q26988> .
 
@@ -403,6 +452,7 @@ cx:Country_CostaRica a cx:Country ;
         "Costa Rica"@en ;
     cx:countryCode2 "CR" ;
     cx:countryCode3 "CRI" ;
+    cx:countryName "Costa Rica" ;
     cx:countryNumber "188" ;
     cx:wikidata <http://www.wikidata.org/entity/Q800> .
 
@@ -411,6 +461,7 @@ cx:Country_Croatia a cx:Country ;
         "Croatia"@en ;
     cx:countryCode2 "HR" ;
     cx:countryCode3 "HRV" ;
+    cx:countryName "Croatia" ;
     cx:countryNumber "191" ;
     cx:wikidata <http://www.wikidata.org/entity/Q224> .
 
@@ -419,6 +470,7 @@ cx:Country_CteDIvoire a cx:Country ;
         "Côte d'Ivoire"@en ;
     cx:countryCode2 "CI" ;
     cx:countryCode3 "CIV" ;
+    cx:countryName "Côte d'Ivoire" ;
     cx:countryNumber "384" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1008> .
 
@@ -427,6 +479,7 @@ cx:Country_Cuba a cx:Country ;
         "Cuba"@en ;
     cx:countryCode2 "CU" ;
     cx:countryCode3 "CUB" ;
+    cx:countryName "Cuba" ;
     cx:countryNumber "192" ;
     cx:wikidata <http://www.wikidata.org/entity/Q241> .
 
@@ -435,6 +488,7 @@ cx:Country_Curaao a cx:Country ;
         "Curaçao"@en ;
     cx:countryCode2 "CW" ;
     cx:countryCode3 "CUW" ;
+    cx:countryName "Curaçao" ;
     cx:countryNumber "531" ;
     cx:wikidata <http://www.wikidata.org/entity/Q25279> .
 
@@ -443,6 +497,7 @@ cx:Country_Cyprus a cx:Country ;
         "Cyprus"@en ;
     cx:countryCode2 "CY" ;
     cx:countryCode3 "CYP" ;
+    cx:countryName "Cyprus" ;
     cx:countryNumber "196" ;
     cx:wikidata <http://www.wikidata.org/entity/Q229> .
 
@@ -451,6 +506,7 @@ cx:Country_CzechRepublic a cx:Country ;
         "Czech Republic"@en ;
     cx:countryCode2 "CZ" ;
     cx:countryCode3 "CZE" ;
+    cx:countryName "Czech Republic" ;
     cx:countryNumber "203" ;
     cx:wikidata <http://www.wikidata.org/entity/Q213> .
 
@@ -459,6 +515,7 @@ cx:Country_DemocraticRepublicOfTheCongo a cx:Country ;
         "Democratic Republic of the Congo"@en ;
     cx:countryCode2 "CD" ;
     cx:countryCode3 "COD" ;
+    cx:countryName "Democratic Republic of the Congo" ;
     cx:countryNumber "180" ;
     cx:wikidata <http://www.wikidata.org/entity/Q974> .
 
@@ -467,6 +524,7 @@ cx:Country_Denmark a cx:Country ;
         "Denmark"@en ;
     cx:countryCode2 "DK" ;
     cx:countryCode3 "DNK" ;
+    cx:countryName "Denmark" ;
     cx:countryNumber "208" ;
     cx:wikidata <http://www.wikidata.org/entity/Q35> .
 
@@ -475,6 +533,7 @@ cx:Country_Djibouti a cx:Country ;
         "Djibouti"@en ;
     cx:countryCode2 "DJ" ;
     cx:countryCode3 "DJI" ;
+    cx:countryName "Djibouti" ;
     cx:countryNumber "262" ;
     cx:wikidata <http://www.wikidata.org/entity/Q977> .
 
@@ -483,6 +542,7 @@ cx:Country_Dominica a cx:Country ;
         "Dominica"@en ;
     cx:countryCode2 "DM" ;
     cx:countryCode3 "DMA" ;
+    cx:countryName "Dominica" ;
     cx:countryNumber "212" ;
     cx:wikidata <http://www.wikidata.org/entity/Q784> .
 
@@ -491,6 +551,7 @@ cx:Country_DominicanRepublic a cx:Country ;
         "Dominican Republic"@en ;
     cx:countryCode2 "DO" ;
     cx:countryCode3 "DOM" ;
+    cx:countryName "Dominican Republic" ;
     cx:countryNumber "214" ;
     cx:wikidata <http://www.wikidata.org/entity/Q786> .
 
@@ -499,6 +560,7 @@ cx:Country_Ecuador a cx:Country ;
         "Ecuador"@en ;
     cx:countryCode2 "EC" ;
     cx:countryCode3 "ECU" ;
+    cx:countryName "Ecuador" ;
     cx:countryNumber "218" ;
     cx:wikidata <http://www.wikidata.org/entity/Q736> .
 
@@ -507,6 +569,7 @@ cx:Country_Egypt a cx:Country ;
         "Egypt"@en ;
     cx:countryCode2 "EG" ;
     cx:countryCode3 "EGY" ;
+    cx:countryName "Egypt" ;
     cx:countryNumber "818" ;
     cx:wikidata <http://www.wikidata.org/entity/Q79> .
 
@@ -515,6 +578,7 @@ cx:Country_ElSalvador a cx:Country ;
         "El Salvador"@en ;
     cx:countryCode2 "SV" ;
     cx:countryCode3 "SLV" ;
+    cx:countryName "El Salvador" ;
     cx:countryNumber "222" ;
     cx:wikidata <http://www.wikidata.org/entity/Q792> .
 
@@ -523,6 +587,7 @@ cx:Country_EquatorialGuinea a cx:Country ;
         "Equatorial Guinea"@en ;
     cx:countryCode2 "GQ" ;
     cx:countryCode3 "GNQ" ;
+    cx:countryName "Equatorial Guinea" ;
     cx:countryNumber "226" ;
     cx:wikidata <http://www.wikidata.org/entity/Q983> .
 
@@ -531,6 +596,7 @@ cx:Country_Eritrea a cx:Country ;
         "Eritrea"@en ;
     cx:countryCode2 "ER" ;
     cx:countryCode3 "ERI" ;
+    cx:countryName "Eritrea" ;
     cx:countryNumber "232" ;
     cx:wikidata <http://www.wikidata.org/entity/Q986> .
 
@@ -539,6 +605,7 @@ cx:Country_Estonia a cx:Country ;
         "Estonia"@en ;
     cx:countryCode2 "EE" ;
     cx:countryCode3 "EST" ;
+    cx:countryName "Estonia" ;
     cx:countryNumber "233" ;
     cx:wikidata <http://www.wikidata.org/entity/Q191> .
 
@@ -547,6 +614,7 @@ cx:Country_Eswatini a cx:Country ;
         "Eswatini"@en ;
     cx:countryCode2 "SZ" ;
     cx:countryCode3 "SWZ" ;
+    cx:countryName "Eswatini" ;
     cx:countryNumber "748" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1050> .
 
@@ -555,6 +623,7 @@ cx:Country_Ethiopia a cx:Country ;
         "Ethiopia"@en ;
     cx:countryCode2 "ET" ;
     cx:countryCode3 "ETH" ;
+    cx:countryName "Ethiopia" ;
     cx:countryNumber "231" ;
     cx:wikidata <http://www.wikidata.org/entity/Q115> .
 
@@ -563,6 +632,7 @@ cx:Country_FalklandIslands a cx:Country ;
         "Falkland Islands"@en ;
     cx:countryCode2 "FK" ;
     cx:countryCode3 "FLK" ;
+    cx:countryName "Falkland Islands" ;
     cx:countryNumber "238" ;
     cx:wikidata <http://www.wikidata.org/entity/Q9648> .
 
@@ -571,6 +641,7 @@ cx:Country_FaroeIslands a cx:Country ;
         "Faroe Islands"@en ;
     cx:countryCode2 "FO" ;
     cx:countryCode3 "FRO" ;
+    cx:countryName "Faroe Islands" ;
     cx:countryNumber "234" ;
     cx:wikidata <http://www.wikidata.org/entity/Q4628> .
 
@@ -579,6 +650,7 @@ cx:Country_FederatedStatesOfMicronesia a cx:Country ;
         "Federated States of Micronesia"@en ;
     cx:countryCode2 "FM" ;
     cx:countryCode3 "FSM" ;
+    cx:countryName "Federated States of Micronesia" ;
     cx:countryNumber "583" ;
     cx:wikidata <http://www.wikidata.org/entity/Q702> .
 
@@ -587,6 +659,7 @@ cx:Country_Fiji a cx:Country ;
         "Fiji"@en ;
     cx:countryCode2 "FJ" ;
     cx:countryCode3 "FJI" ;
+    cx:countryName "Fiji" ;
     cx:countryNumber "242" ;
     cx:wikidata <http://www.wikidata.org/entity/Q712> .
 
@@ -595,6 +668,7 @@ cx:Country_Finland a cx:Country ;
         "Finland"@en ;
     cx:countryCode2 "FI" ;
     cx:countryCode3 "FIN" ;
+    cx:countryName "Finland" ;
     cx:countryNumber "246" ;
     cx:wikidata <http://www.wikidata.org/entity/Q33> .
 
@@ -603,6 +677,7 @@ cx:Country_France a cx:Country ;
         "France"@en ;
     cx:countryCode2 "FR" ;
     cx:countryCode3 "FRA" ;
+    cx:countryName "France" ;
     cx:countryNumber "250" ;
     cx:wikidata <http://www.wikidata.org/entity/Q142> .
 
@@ -611,6 +686,7 @@ cx:Country_FrenchGuiana a cx:Country ;
         "French Guiana"@en ;
     cx:countryCode2 "GF" ;
     cx:countryCode3 "GUF" ;
+    cx:countryName "French Guiana" ;
     cx:countryNumber "254" ;
     cx:wikidata <http://www.wikidata.org/entity/Q3769> .
 
@@ -619,6 +695,7 @@ cx:Country_FrenchPolynesia a cx:Country ;
         "French Polynesia"@en ;
     cx:countryCode2 "PF" ;
     cx:countryCode3 "PYF" ;
+    cx:countryName "French Polynesia" ;
     cx:countryNumber "258" ;
     cx:wikidata <http://www.wikidata.org/entity/Q30971> .
 
@@ -627,6 +704,7 @@ cx:Country_FrenchSouthernAndAntarcticLands a cx:Country ;
         "French Southern and Antarctic Lands"@en ;
     cx:countryCode2 "TF" ;
     cx:countryCode3 "ATF" ;
+    cx:countryName "French Southern and Antarctic Lands" ;
     cx:countryNumber "260" ;
     cx:wikidata <http://www.wikidata.org/entity/Q129003> .
 
@@ -635,6 +713,7 @@ cx:Country_Gabon a cx:Country ;
         "Gabon"@en ;
     cx:countryCode2 "GA" ;
     cx:countryCode3 "GAB" ;
+    cx:countryName "Gabon" ;
     cx:countryNumber "266" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1000> .
 
@@ -643,6 +722,7 @@ cx:Country_Georgia a cx:Country ;
         "Georgia"@en ;
     cx:countryCode2 "GE" ;
     cx:countryCode3 "GEO" ;
+    cx:countryName "Georgia" ;
     cx:countryNumber "268" ;
     cx:wikidata <http://www.wikidata.org/entity/Q230> .
 
@@ -651,6 +731,7 @@ cx:Country_Germany a cx:Country ;
         "Germany"@en ;
     cx:countryCode2 "DE" ;
     cx:countryCode3 "DEU" ;
+    cx:countryName "Germany" ;
     cx:countryNumber "276" ;
     cx:wikidata <http://www.wikidata.org/entity/Q183> .
 
@@ -659,6 +740,7 @@ cx:Country_Ghana a cx:Country ;
         "Ghana"@en ;
     cx:countryCode2 "GH" ;
     cx:countryCode3 "GHA" ;
+    cx:countryName "Ghana" ;
     cx:countryNumber "288" ;
     cx:wikidata <http://www.wikidata.org/entity/Q117> .
 
@@ -667,6 +749,7 @@ cx:Country_Gibraltar a cx:Country ;
         "Gibraltar"@en ;
     cx:countryCode2 "GI" ;
     cx:countryCode3 "GIB" ;
+    cx:countryName "Gibraltar" ;
     cx:countryNumber "292" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1410> .
 
@@ -675,6 +758,7 @@ cx:Country_Greece a cx:Country ;
         "Greece"@en ;
     cx:countryCode2 "GR" ;
     cx:countryCode3 "GRC" ;
+    cx:countryName "Greece" ;
     cx:countryNumber "300" ;
     cx:wikidata <http://www.wikidata.org/entity/Q41> .
 
@@ -683,6 +767,7 @@ cx:Country_Greenland a cx:Country ;
         "Greenland"@en ;
     cx:countryCode2 "GL" ;
     cx:countryCode3 "GRL" ;
+    cx:countryName "Greenland" ;
     cx:countryNumber "304" ;
     cx:wikidata <http://www.wikidata.org/entity/Q223> .
 
@@ -691,6 +776,7 @@ cx:Country_Grenada a cx:Country ;
         "Grenada"@en ;
     cx:countryCode2 "GD" ;
     cx:countryCode3 "GRD" ;
+    cx:countryName "Grenada" ;
     cx:countryNumber "308" ;
     cx:wikidata <http://www.wikidata.org/entity/Q769> .
 
@@ -699,6 +785,7 @@ cx:Country_Guadeloupe a cx:Country ;
         "Guadeloupe"@en ;
     cx:countryCode2 "GP" ;
     cx:countryCode3 "GLP" ;
+    cx:countryName "Guadeloupe" ;
     cx:countryNumber "312" ;
     cx:wikidata <http://www.wikidata.org/entity/Q17012> .
 
@@ -707,6 +794,7 @@ cx:Country_Guam a cx:Country ;
         "Guam"@en ;
     cx:countryCode2 "GU" ;
     cx:countryCode3 "GUM" ;
+    cx:countryName "Guam" ;
     cx:countryNumber "316" ;
     cx:wikidata <http://www.wikidata.org/entity/Q16635> .
 
@@ -715,6 +803,7 @@ cx:Country_Guatemala a cx:Country ;
         "Guatemala"@en ;
     cx:countryCode2 "GT" ;
     cx:countryCode3 "GTM" ;
+    cx:countryName "Guatemala" ;
     cx:countryNumber "320" ;
     cx:wikidata <http://www.wikidata.org/entity/Q774> .
 
@@ -723,6 +812,7 @@ cx:Country_Guernsey a cx:Country ;
         "Guernsey"@en ;
     cx:countryCode2 "GG" ;
     cx:countryCode3 "GGY" ;
+    cx:countryName "Guernsey" ;
     cx:countryNumber "831" ;
     cx:wikidata <http://www.wikidata.org/entity/Q25230> .
 
@@ -731,6 +821,7 @@ cx:Country_Guinea a cx:Country ;
         "Guinea"@en ;
     cx:countryCode2 "GN" ;
     cx:countryCode3 "GIN" ;
+    cx:countryName "Guinea" ;
     cx:countryNumber "324" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1006> .
 
@@ -739,6 +830,7 @@ cx:Country_GuineaBissau a cx:Country ;
         "Guinea-Bissau"@en ;
     cx:countryCode2 "GW" ;
     cx:countryCode3 "GNB" ;
+    cx:countryName "Guinea-Bissau" ;
     cx:countryNumber "624" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1007> .
 
@@ -747,6 +839,7 @@ cx:Country_Guyana a cx:Country ;
         "Guyana"@en ;
     cx:countryCode2 "GY" ;
     cx:countryCode3 "GUY" ;
+    cx:countryName "Guyana" ;
     cx:countryNumber "328" ;
     cx:wikidata <http://www.wikidata.org/entity/Q734> .
 
@@ -755,6 +848,7 @@ cx:Country_Haiti a cx:Country ;
         "Haiti"@en ;
     cx:countryCode2 "HT" ;
     cx:countryCode3 "HTI" ;
+    cx:countryName "Haiti" ;
     cx:countryNumber "332" ;
     cx:wikidata <http://www.wikidata.org/entity/Q790> .
 
@@ -763,6 +857,7 @@ cx:Country_HeardIslandAndMcdonaldIslands a cx:Country ;
         "Heard Island and McDonald Islands"@en ;
     cx:countryCode2 "HM" ;
     cx:countryCode3 "HMD" ;
+    cx:countryName "Heard Island and McDonald Islands" ;
     cx:countryNumber "334" ;
     cx:wikidata <http://www.wikidata.org/entity/Q131198> .
 
@@ -771,6 +866,7 @@ cx:Country_Honduras a cx:Country ;
         "Honduras"@en ;
     cx:countryCode2 "HN" ;
     cx:countryCode3 "HND" ;
+    cx:countryName "Honduras" ;
     cx:countryNumber "340" ;
     cx:wikidata <http://www.wikidata.org/entity/Q783> .
 
@@ -779,6 +875,7 @@ cx:Country_HongKong a cx:Country ;
         "Hong Kong"@en ;
     cx:countryCode2 "HK" ;
     cx:countryCode3 "HKG" ;
+    cx:countryName "Hong Kong" ;
     cx:countryNumber "344" ;
     cx:wikidata <http://www.wikidata.org/entity/Q8646> .
 
@@ -787,6 +884,7 @@ cx:Country_Hungary a cx:Country ;
         "Hungary"@en ;
     cx:countryCode2 "HU" ;
     cx:countryCode3 "HUN" ;
+    cx:countryName "Hungary" ;
     cx:countryNumber "348" ;
     cx:wikidata <http://www.wikidata.org/entity/Q28> .
 
@@ -795,6 +893,7 @@ cx:Country_Iceland a cx:Country ;
         "Iceland"@en ;
     cx:countryCode2 "IS" ;
     cx:countryCode3 "ISL" ;
+    cx:countryName "Iceland" ;
     cx:countryNumber "352" ;
     cx:wikidata <http://www.wikidata.org/entity/Q189> .
 
@@ -803,6 +902,7 @@ cx:Country_India a cx:Country ;
         "India"@en ;
     cx:countryCode2 "IN" ;
     cx:countryCode3 "IND" ;
+    cx:countryName "India" ;
     cx:countryNumber "356" ;
     cx:wikidata <http://www.wikidata.org/entity/Q668> .
 
@@ -811,6 +911,7 @@ cx:Country_Indonesia a cx:Country ;
         "Indonesia"@en ;
     cx:countryCode2 "ID" ;
     cx:countryCode3 "IDN" ;
+    cx:countryName "Indonesia" ;
     cx:countryNumber "360" ;
     cx:wikidata <http://www.wikidata.org/entity/Q252> .
 
@@ -819,6 +920,7 @@ cx:Country_Iran a cx:Country ;
         "Iran"@en ;
     cx:countryCode2 "IR" ;
     cx:countryCode3 "IRN" ;
+    cx:countryName "Iran" ;
     cx:countryNumber "364" ;
     cx:wikidata <http://www.wikidata.org/entity/Q794> .
 
@@ -827,6 +929,7 @@ cx:Country_Iraq a cx:Country ;
         "Iraq"@en ;
     cx:countryCode2 "IQ" ;
     cx:countryCode3 "IRQ" ;
+    cx:countryName "Iraq" ;
     cx:countryNumber "368" ;
     cx:wikidata <http://www.wikidata.org/entity/Q796> .
 
@@ -835,6 +938,7 @@ cx:Country_Ireland a cx:Country ;
         "Ireland"@en ;
     cx:countryCode2 "IE" ;
     cx:countryCode3 "IRL" ;
+    cx:countryName "Ireland" ;
     cx:countryNumber "372" ;
     cx:wikidata <http://www.wikidata.org/entity/Q27> .
 
@@ -843,6 +947,7 @@ cx:Country_IsleOfMan a cx:Country ;
         "Isle of Man"@en ;
     cx:countryCode2 "IM" ;
     cx:countryCode3 "IMN" ;
+    cx:countryName "Isle of Man" ;
     cx:countryNumber "833" ;
     cx:wikidata <http://www.wikidata.org/entity/Q9676> .
 
@@ -851,6 +956,7 @@ cx:Country_Israel a cx:Country ;
         "Israel"@en ;
     cx:countryCode2 "IL" ;
     cx:countryCode3 "ISR" ;
+    cx:countryName "Israel" ;
     cx:countryNumber "376" ;
     cx:wikidata <http://www.wikidata.org/entity/Q801> .
 
@@ -859,6 +965,7 @@ cx:Country_Italy a cx:Country ;
         "Italy"@en ;
     cx:countryCode2 "IT" ;
     cx:countryCode3 "ITA" ;
+    cx:countryName "Italy" ;
     cx:countryNumber "380" ;
     cx:wikidata <http://www.wikidata.org/entity/Q38> .
 
@@ -867,6 +974,7 @@ cx:Country_Jamaica a cx:Country ;
         "Jamaica"@en ;
     cx:countryCode2 "JM" ;
     cx:countryCode3 "JAM" ;
+    cx:countryName "Jamaica" ;
     cx:countryNumber "388" ;
     cx:wikidata <http://www.wikidata.org/entity/Q766> .
 
@@ -875,6 +983,7 @@ cx:Country_Japan a cx:Country ;
         "Japan"@en ;
     cx:countryCode2 "JP" ;
     cx:countryCode3 "JPN" ;
+    cx:countryName "Japan" ;
     cx:countryNumber "392" ;
     cx:wikidata <http://www.wikidata.org/entity/Q17> .
 
@@ -883,6 +992,7 @@ cx:Country_Jersey a cx:Country ;
         "Jersey"@en ;
     cx:countryCode2 "JE" ;
     cx:countryCode3 "JEY" ;
+    cx:countryName "Jersey" ;
     cx:countryNumber "832" ;
     cx:wikidata <http://www.wikidata.org/entity/Q785> .
 
@@ -891,6 +1001,7 @@ cx:Country_Jordan a cx:Country ;
         "Jordan"@en ;
     cx:countryCode2 "JO" ;
     cx:countryCode3 "JOR" ;
+    cx:countryName "Jordan" ;
     cx:countryNumber "400" ;
     cx:wikidata <http://www.wikidata.org/entity/Q810> .
 
@@ -899,6 +1010,7 @@ cx:Country_Kazakhstan a cx:Country ;
         "Kazakhstan"@en ;
     cx:countryCode2 "KZ" ;
     cx:countryCode3 "KAZ" ;
+    cx:countryName "Kazakhstan" ;
     cx:countryNumber "398" ;
     cx:wikidata <http://www.wikidata.org/entity/Q232> .
 
@@ -907,6 +1019,7 @@ cx:Country_Kenya a cx:Country ;
         "Kenya"@en ;
     cx:countryCode2 "KE" ;
     cx:countryCode3 "KEN" ;
+    cx:countryName "Kenya" ;
     cx:countryNumber "404" ;
     cx:wikidata <http://www.wikidata.org/entity/Q114> .
 
@@ -915,6 +1028,7 @@ cx:Country_Kiribati a cx:Country ;
         "Kiribati"@en ;
     cx:countryCode2 "KI" ;
     cx:countryCode3 "KIR" ;
+    cx:countryName "Kiribati" ;
     cx:countryNumber "296" ;
     cx:wikidata <http://www.wikidata.org/entity/Q710> .
 
@@ -923,6 +1037,7 @@ cx:Country_Kuwait a cx:Country ;
         "Kuwait"@en ;
     cx:countryCode2 "KW" ;
     cx:countryCode3 "KWT" ;
+    cx:countryName "Kuwait" ;
     cx:countryNumber "414" ;
     cx:wikidata <http://www.wikidata.org/entity/Q817> .
 
@@ -931,6 +1046,7 @@ cx:Country_Kyrgyzstan a cx:Country ;
         "Kyrgyzstan"@en ;
     cx:countryCode2 "KG" ;
     cx:countryCode3 "KGZ" ;
+    cx:countryName "Kyrgyzstan" ;
     cx:countryNumber "417" ;
     cx:wikidata <http://www.wikidata.org/entity/Q813> .
 
@@ -939,6 +1055,7 @@ cx:Country_Laos a cx:Country ;
         "Laos"@en ;
     cx:countryCode2 "LA" ;
     cx:countryCode3 "LAO" ;
+    cx:countryName "Laos" ;
     cx:countryNumber "418" ;
     cx:wikidata <http://www.wikidata.org/entity/Q819> .
 
@@ -947,6 +1064,7 @@ cx:Country_Latvia a cx:Country ;
         "Latvia"@en ;
     cx:countryCode2 "LV" ;
     cx:countryCode3 "LVA" ;
+    cx:countryName "Latvia" ;
     cx:countryNumber "428" ;
     cx:wikidata <http://www.wikidata.org/entity/Q211> .
 
@@ -955,6 +1073,7 @@ cx:Country_Lebanon a cx:Country ;
         "Lebanon"@en ;
     cx:countryCode2 "LB" ;
     cx:countryCode3 "LBN" ;
+    cx:countryName "Lebanon" ;
     cx:countryNumber "422" ;
     cx:wikidata <http://www.wikidata.org/entity/Q822> .
 
@@ -963,6 +1082,7 @@ cx:Country_Lesotho a cx:Country ;
         "Lesotho"@en ;
     cx:countryCode2 "LS" ;
     cx:countryCode3 "LSO" ;
+    cx:countryName "Lesotho" ;
     cx:countryNumber "426" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1013> .
 
@@ -971,6 +1091,7 @@ cx:Country_Liberia a cx:Country ;
         "Liberia"@en ;
     cx:countryCode2 "LR" ;
     cx:countryCode3 "LBR" ;
+    cx:countryName "Liberia" ;
     cx:countryNumber "430" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1014> .
 
@@ -979,6 +1100,7 @@ cx:Country_Libya a cx:Country ;
         "Libya"@en ;
     cx:countryCode2 "LY" ;
     cx:countryCode3 "LBY" ;
+    cx:countryName "Libya" ;
     cx:countryNumber "434" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1016> .
 
@@ -987,6 +1109,7 @@ cx:Country_Liechtenstein a cx:Country ;
         "Liechtenstein"@en ;
     cx:countryCode2 "LI" ;
     cx:countryCode3 "LIE" ;
+    cx:countryName "Liechtenstein" ;
     cx:countryNumber "438" ;
     cx:wikidata <http://www.wikidata.org/entity/Q347> .
 
@@ -995,6 +1118,7 @@ cx:Country_Lithuania a cx:Country ;
         "Lithuania"@en ;
     cx:countryCode2 "LT" ;
     cx:countryCode3 "LTU" ;
+    cx:countryName "Lithuania" ;
     cx:countryNumber "440" ;
     cx:wikidata <http://www.wikidata.org/entity/Q37> .
 
@@ -1003,6 +1127,7 @@ cx:Country_Luxembourg a cx:Country ;
         "Luxembourg"@en ;
     cx:countryCode2 "LU" ;
     cx:countryCode3 "LUX" ;
+    cx:countryName "Luxembourg" ;
     cx:countryNumber "442" ;
     cx:wikidata <http://www.wikidata.org/entity/Q32> .
 
@@ -1011,6 +1136,7 @@ cx:Country_Macau a cx:Country ;
         "Macau"@en ;
     cx:countryCode2 "MO" ;
     cx:countryCode3 "MAC" ;
+    cx:countryName "Macau" ;
     cx:countryNumber "446" ;
     cx:wikidata <http://www.wikidata.org/entity/Q14773> .
 
@@ -1019,6 +1145,7 @@ cx:Country_Madagascar a cx:Country ;
         "Madagascar"@en ;
     cx:countryCode2 "MG" ;
     cx:countryCode3 "MDG" ;
+    cx:countryName "Madagascar" ;
     cx:countryNumber "450" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1019> .
 
@@ -1027,6 +1154,7 @@ cx:Country_Malawi a cx:Country ;
         "Malawi"@en ;
     cx:countryCode2 "MW" ;
     cx:countryCode3 "MWI" ;
+    cx:countryName "Malawi" ;
     cx:countryNumber "454" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1020> .
 
@@ -1035,6 +1163,7 @@ cx:Country_Malaysia a cx:Country ;
         "Malaysia"@en ;
     cx:countryCode2 "MY" ;
     cx:countryCode3 "MYS" ;
+    cx:countryName "Malaysia" ;
     cx:countryNumber "458" ;
     cx:wikidata <http://www.wikidata.org/entity/Q833> .
 
@@ -1043,6 +1172,7 @@ cx:Country_Maldives a cx:Country ;
         "Maldives"@en ;
     cx:countryCode2 "MV" ;
     cx:countryCode3 "MDV" ;
+    cx:countryName "Maldives" ;
     cx:countryNumber "462" ;
     cx:wikidata <http://www.wikidata.org/entity/Q826> .
 
@@ -1051,6 +1181,7 @@ cx:Country_Mali a cx:Country ;
         "Mali"@en ;
     cx:countryCode2 "ML" ;
     cx:countryCode3 "MLI" ;
+    cx:countryName "Mali" ;
     cx:countryNumber "466" ;
     cx:wikidata <http://www.wikidata.org/entity/Q912> .
 
@@ -1059,6 +1190,7 @@ cx:Country_Malta a cx:Country ;
         "Malta"@en ;
     cx:countryCode2 "MT" ;
     cx:countryCode3 "MLT" ;
+    cx:countryName "Malta" ;
     cx:countryNumber "470" ;
     cx:wikidata <http://www.wikidata.org/entity/Q233> .
 
@@ -1067,6 +1199,7 @@ cx:Country_MarshallIslands a cx:Country ;
         "Marshall Islands"@en ;
     cx:countryCode2 "MH" ;
     cx:countryCode3 "MHL" ;
+    cx:countryName "Marshall Islands" ;
     cx:countryNumber "584" ;
     cx:wikidata <http://www.wikidata.org/entity/Q709> .
 
@@ -1075,6 +1208,7 @@ cx:Country_Martinique a cx:Country ;
         "Martinique"@en ;
     cx:countryCode2 "MQ" ;
     cx:countryCode3 "MTQ" ;
+    cx:countryName "Martinique" ;
     cx:countryNumber "474" ;
     cx:wikidata <http://www.wikidata.org/entity/Q17054> .
 
@@ -1083,6 +1217,7 @@ cx:Country_Mauritania a cx:Country ;
         "Mauritania"@en ;
     cx:countryCode2 "MR" ;
     cx:countryCode3 "MRT" ;
+    cx:countryName "Mauritania" ;
     cx:countryNumber "478" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1025> .
 
@@ -1091,6 +1226,7 @@ cx:Country_Mauritius a cx:Country ;
         "Mauritius"@en ;
     cx:countryCode2 "MU" ;
     cx:countryCode3 "MUS" ;
+    cx:countryName "Mauritius" ;
     cx:countryNumber "480" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1027> .
 
@@ -1099,6 +1235,7 @@ cx:Country_Mayotte a cx:Country ;
         "Mayotte"@en ;
     cx:countryCode2 "YT" ;
     cx:countryCode3 "MYT" ;
+    cx:countryName "Mayotte" ;
     cx:countryNumber "175" ;
     cx:wikidata <http://www.wikidata.org/entity/Q17063> .
 
@@ -1107,6 +1244,7 @@ cx:Country_Mexico a cx:Country ;
         "Mexico"@en ;
     cx:countryCode2 "MX" ;
     cx:countryCode3 "MEX" ;
+    cx:countryName "Mexico" ;
     cx:countryNumber "484" ;
     cx:wikidata <http://www.wikidata.org/entity/Q96> .
 
@@ -1115,6 +1253,7 @@ cx:Country_Moldova a cx:Country ;
         "Moldova"@en ;
     cx:countryCode2 "MD" ;
     cx:countryCode3 "MDA" ;
+    cx:countryName "Moldova" ;
     cx:countryNumber "498" ;
     cx:wikidata <http://www.wikidata.org/entity/Q217> .
 
@@ -1123,6 +1262,7 @@ cx:Country_Monaco a cx:Country ;
         "Monaco"@en ;
     cx:countryCode2 "MC" ;
     cx:countryCode3 "MCO" ;
+    cx:countryName "Monaco" ;
     cx:countryNumber "492" ;
     cx:wikidata <http://www.wikidata.org/entity/Q235> .
 
@@ -1131,6 +1271,7 @@ cx:Country_Mongolia a cx:Country ;
         "Mongolia"@en ;
     cx:countryCode2 "MN" ;
     cx:countryCode3 "MNG" ;
+    cx:countryName "Mongolia" ;
     cx:countryNumber "496" ;
     cx:wikidata <http://www.wikidata.org/entity/Q711> .
 
@@ -1139,6 +1280,7 @@ cx:Country_Montenegro a cx:Country ;
         "Montenegro"@en ;
     cx:countryCode2 "ME" ;
     cx:countryCode3 "MNE" ;
+    cx:countryName "Montenegro" ;
     cx:countryNumber "499" ;
     cx:wikidata <http://www.wikidata.org/entity/Q236> .
 
@@ -1147,6 +1289,7 @@ cx:Country_Montserrat a cx:Country ;
         "Montserrat"@en ;
     cx:countryCode2 "MS" ;
     cx:countryCode3 "MSR" ;
+    cx:countryName "Montserrat" ;
     cx:countryNumber "500" ;
     cx:wikidata <http://www.wikidata.org/entity/Q13353> .
 
@@ -1155,6 +1298,7 @@ cx:Country_Morocco a cx:Country ;
         "Morocco"@en ;
     cx:countryCode2 "MA" ;
     cx:countryCode3 "MAR" ;
+    cx:countryName "Morocco" ;
     cx:countryNumber "504" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1028> .
 
@@ -1163,6 +1307,7 @@ cx:Country_Mozambique a cx:Country ;
         "Mozambique"@en ;
     cx:countryCode2 "MZ" ;
     cx:countryCode3 "MOZ" ;
+    cx:countryName "Mozambique" ;
     cx:countryNumber "508" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1029> .
 
@@ -1171,6 +1316,7 @@ cx:Country_Myanmar a cx:Country ;
         "Myanmar"@en ;
     cx:countryCode2 "MM" ;
     cx:countryCode3 "MMR" ;
+    cx:countryName "Myanmar" ;
     cx:countryNumber "104" ;
     cx:wikidata <http://www.wikidata.org/entity/Q836> .
 
@@ -1178,6 +1324,7 @@ cx:Country_Namibia a cx:Country ;
     skos:prefLabel "Namibia"@de,
         "Namibia"@en ;
     cx:countryCode3 "NAM" ;
+    cx:countryName "Namibia" ;
     cx:countryNumber "516" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1030> .
 
@@ -1186,6 +1333,7 @@ cx:Country_Nauru a cx:Country ;
         "Nauru"@en ;
     cx:countryCode2 "NR" ;
     cx:countryCode3 "NRU" ;
+    cx:countryName "Nauru" ;
     cx:countryNumber "520" ;
     cx:wikidata <http://www.wikidata.org/entity/Q697> .
 
@@ -1194,6 +1342,7 @@ cx:Country_Nepal a cx:Country ;
         "Nepal"@en ;
     cx:countryCode2 "NP" ;
     cx:countryCode3 "NPL" ;
+    cx:countryName "Nepal" ;
     cx:countryNumber "524" ;
     cx:wikidata <http://www.wikidata.org/entity/Q837> .
 
@@ -1202,6 +1351,7 @@ cx:Country_Netherlands a cx:Country ;
         "Netherlands"@en ;
     cx:countryCode2 "NL" ;
     cx:countryCode3 "NLD" ;
+    cx:countryName "Netherlands" ;
     cx:countryNumber "528" ;
     cx:wikidata <http://www.wikidata.org/entity/Q55> .
 
@@ -1210,6 +1360,7 @@ cx:Country_NewCaledonia a cx:Country ;
         "New Caledonia"@en ;
     cx:countryCode2 "NC" ;
     cx:countryCode3 "NCL" ;
+    cx:countryName "New Caledonia" ;
     cx:countryNumber "540" ;
     cx:wikidata <http://www.wikidata.org/entity/Q33788> .
 
@@ -1218,6 +1369,7 @@ cx:Country_NewZealand a cx:Country ;
         "New Zealand"@en ;
     cx:countryCode2 "NZ" ;
     cx:countryCode3 "NZL" ;
+    cx:countryName "New Zealand" ;
     cx:countryNumber "554" ;
     cx:wikidata <http://www.wikidata.org/entity/Q664> .
 
@@ -1226,6 +1378,7 @@ cx:Country_Nicaragua a cx:Country ;
         "Nicaragua"@en ;
     cx:countryCode2 "NI" ;
     cx:countryCode3 "NIC" ;
+    cx:countryName "Nicaragua" ;
     cx:countryNumber "558" ;
     cx:wikidata <http://www.wikidata.org/entity/Q811> .
 
@@ -1234,6 +1387,7 @@ cx:Country_Niger a cx:Country ;
         "Niger"@en ;
     cx:countryCode2 "NE" ;
     cx:countryCode3 "NER" ;
+    cx:countryName "Niger" ;
     cx:countryNumber "562" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1032> .
 
@@ -1242,6 +1396,7 @@ cx:Country_Nigeria a cx:Country ;
         "Nigeria"@en ;
     cx:countryCode2 "NG" ;
     cx:countryCode3 "NGA" ;
+    cx:countryName "Nigeria" ;
     cx:countryNumber "566" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1033> .
 
@@ -1250,6 +1405,7 @@ cx:Country_Niue a cx:Country ;
         "Niue"@en ;
     cx:countryCode2 "NU" ;
     cx:countryCode3 "NIU" ;
+    cx:countryName "Niue" ;
     cx:countryNumber "570" ;
     cx:wikidata <http://www.wikidata.org/entity/Q34020> .
 
@@ -1258,6 +1414,7 @@ cx:Country_NorfolkIsland a cx:Country ;
         "Norfolk Island"@en ;
     cx:countryCode2 "NF" ;
     cx:countryCode3 "NFK" ;
+    cx:countryName "Norfolk Island" ;
     cx:countryNumber "574" ;
     cx:wikidata <http://www.wikidata.org/entity/Q31057> .
 
@@ -1266,6 +1423,7 @@ cx:Country_NorthKorea a cx:Country ;
         "North Korea"@en ;
     cx:countryCode2 "KP" ;
     cx:countryCode3 "PRK" ;
+    cx:countryName "North Korea" ;
     cx:countryNumber "408" ;
     cx:wikidata <http://www.wikidata.org/entity/Q423> .
 
@@ -1274,6 +1432,7 @@ cx:Country_NorthMacedonia a cx:Country ;
         "North Macedonia"@en ;
     cx:countryCode2 "MK" ;
     cx:countryCode3 "MKD" ;
+    cx:countryName "North Macedonia" ;
     cx:countryNumber "807" ;
     cx:wikidata <http://www.wikidata.org/entity/Q221> .
 
@@ -1282,6 +1441,7 @@ cx:Country_NorthernMarianaIslands a cx:Country ;
         "Northern Mariana Islands"@en ;
     cx:countryCode2 "MP" ;
     cx:countryCode3 "MNP" ;
+    cx:countryName "Northern Mariana Islands" ;
     cx:countryNumber "580" ;
     cx:wikidata <http://www.wikidata.org/entity/Q16644> .
 
@@ -1290,6 +1450,7 @@ cx:Country_Norway a cx:Country ;
         "Norway"@en ;
     cx:countryCode2 "NO" ;
     cx:countryCode3 "NOR" ;
+    cx:countryName "Norway" ;
     cx:countryNumber "578" ;
     cx:wikidata <http://www.wikidata.org/entity/Q20> .
 
@@ -1298,6 +1459,7 @@ cx:Country_Oman a cx:Country ;
         "Oman"@en ;
     cx:countryCode2 "OM" ;
     cx:countryCode3 "OMN" ;
+    cx:countryName "Oman" ;
     cx:countryNumber "512" ;
     cx:wikidata <http://www.wikidata.org/entity/Q842> .
 
@@ -1306,6 +1468,7 @@ cx:Country_Pakistan a cx:Country ;
         "Pakistan"@en ;
     cx:countryCode2 "PK" ;
     cx:countryCode3 "PAK" ;
+    cx:countryName "Pakistan" ;
     cx:countryNumber "586" ;
     cx:wikidata <http://www.wikidata.org/entity/Q843> .
 
@@ -1314,6 +1477,7 @@ cx:Country_Palau a cx:Country ;
         "Palau"@en ;
     cx:countryCode2 "PW" ;
     cx:countryCode3 "PLW" ;
+    cx:countryName "Palau" ;
     cx:countryNumber "585" ;
     cx:wikidata <http://www.wikidata.org/entity/Q695> .
 
@@ -1322,6 +1486,7 @@ cx:Country_Panama a cx:Country ;
         "Panama"@en ;
     cx:countryCode2 "PA" ;
     cx:countryCode3 "PAN" ;
+    cx:countryName "Panama" ;
     cx:countryNumber "591" ;
     cx:wikidata <http://www.wikidata.org/entity/Q804> .
 
@@ -1330,6 +1495,7 @@ cx:Country_PapuaNewGuinea a cx:Country ;
         "Papua New Guinea"@en ;
     cx:countryCode2 "PG" ;
     cx:countryCode3 "PNG" ;
+    cx:countryName "Papua New Guinea" ;
     cx:countryNumber "598" ;
     cx:wikidata <http://www.wikidata.org/entity/Q691> .
 
@@ -1338,6 +1504,7 @@ cx:Country_Paraguay a cx:Country ;
         "Paraguay"@en ;
     cx:countryCode2 "PY" ;
     cx:countryCode3 "PRY" ;
+    cx:countryName "Paraguay" ;
     cx:countryNumber "600" ;
     cx:wikidata <http://www.wikidata.org/entity/Q733> .
 
@@ -1346,6 +1513,7 @@ cx:Country_PeopleSRepublicOfChina a cx:Country ;
         "People's Republic of China"@en ;
     cx:countryCode2 "CN" ;
     cx:countryCode3 "CHN" ;
+    cx:countryName "People's Republic of China" ;
     cx:countryNumber "156" ;
     cx:wikidata <http://www.wikidata.org/entity/Q148> .
 
@@ -1354,6 +1522,7 @@ cx:Country_Peru a cx:Country ;
         "Peru"@en ;
     cx:countryCode2 "PE" ;
     cx:countryCode3 "PER" ;
+    cx:countryName "Peru" ;
     cx:countryNumber "604" ;
     cx:wikidata <http://www.wikidata.org/entity/Q419> .
 
@@ -1362,6 +1531,7 @@ cx:Country_Philippines a cx:Country ;
         "Philippines"@en ;
     cx:countryCode2 "PH" ;
     cx:countryCode3 "PHL" ;
+    cx:countryName "Philippines" ;
     cx:countryNumber "608" ;
     cx:wikidata <http://www.wikidata.org/entity/Q928> .
 
@@ -1370,6 +1540,7 @@ cx:Country_PitcairnIslands a cx:Country ;
         "Pitcairn Islands"@en ;
     cx:countryCode2 "PN" ;
     cx:countryCode3 "PCN" ;
+    cx:countryName "Pitcairn Islands" ;
     cx:countryNumber "612" ;
     cx:wikidata <http://www.wikidata.org/entity/Q35672> .
 
@@ -1378,6 +1549,7 @@ cx:Country_Poland a cx:Country ;
         "Poland"@en ;
     cx:countryCode2 "PL" ;
     cx:countryCode3 "POL" ;
+    cx:countryName "Poland" ;
     cx:countryNumber "616" ;
     cx:wikidata <http://www.wikidata.org/entity/Q36> .
 
@@ -1386,6 +1558,7 @@ cx:Country_Portugal a cx:Country ;
         "Portugal"@en ;
     cx:countryCode2 "PT" ;
     cx:countryCode3 "PRT" ;
+    cx:countryName "Portugal" ;
     cx:countryNumber "620" ;
     cx:wikidata <http://www.wikidata.org/entity/Q45> .
 
@@ -1394,6 +1567,7 @@ cx:Country_PuertoRico a cx:Country ;
         "Puerto Rico"@en ;
     cx:countryCode2 "PR" ;
     cx:countryCode3 "PRI" ;
+    cx:countryName "Puerto Rico" ;
     cx:countryNumber "630" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1183> .
 
@@ -1402,6 +1576,7 @@ cx:Country_Qatar a cx:Country ;
         "Qatar"@en ;
     cx:countryCode2 "QA" ;
     cx:countryCode3 "QAT" ;
+    cx:countryName "Qatar" ;
     cx:countryNumber "634" ;
     cx:wikidata <http://www.wikidata.org/entity/Q846> .
 
@@ -1410,6 +1585,7 @@ cx:Country_RepublicOfTheCongo a cx:Country ;
         "Republic of the Congo"@en ;
     cx:countryCode2 "CG" ;
     cx:countryCode3 "COG" ;
+    cx:countryName "Republic of the Congo" ;
     cx:countryNumber "178" ;
     cx:wikidata <http://www.wikidata.org/entity/Q971> .
 
@@ -1418,6 +1594,7 @@ cx:Country_Romania a cx:Country ;
         "Romania"@en ;
     cx:countryCode2 "RO" ;
     cx:countryCode3 "ROU" ;
+    cx:countryName "Romania" ;
     cx:countryNumber "642" ;
     cx:wikidata <http://www.wikidata.org/entity/Q218> .
 
@@ -1426,6 +1603,7 @@ cx:Country_Runion a cx:Country ;
         "Réunion"@en ;
     cx:countryCode2 "RE" ;
     cx:countryCode3 "REU" ;
+    cx:countryName "Réunion" ;
     cx:countryNumber "638" ;
     cx:wikidata <http://www.wikidata.org/entity/Q17070> .
 
@@ -1434,6 +1612,7 @@ cx:Country_Russia a cx:Country ;
         "Russia"@en ;
     cx:countryCode2 "RU" ;
     cx:countryCode3 "RUS" ;
+    cx:countryName "Russia" ;
     cx:countryNumber "643" ;
     cx:wikidata <http://www.wikidata.org/entity/Q159> .
 
@@ -1442,6 +1621,7 @@ cx:Country_Rwanda a cx:Country ;
         "Rwanda"@en ;
     cx:countryCode2 "RW" ;
     cx:countryCode3 "RWA" ;
+    cx:countryName "Rwanda" ;
     cx:countryNumber "646" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1037> .
 
@@ -1450,6 +1630,7 @@ cx:Country_SaintBarthlemy a cx:Country ;
         "Saint Barthélemy"@en ;
     cx:countryCode2 "BL" ;
     cx:countryCode3 "BLM" ;
+    cx:countryName "Saint Barthélemy" ;
     cx:countryNumber "652" ;
     cx:wikidata <http://www.wikidata.org/entity/Q25362> .
 
@@ -1458,6 +1639,7 @@ cx:Country_SaintHelenaAscensionAndTristanDaCunha a cx:Country ;
         "Saint Helena, Ascension and Tristan da Cunha"@en ;
     cx:countryCode2 "SH" ;
     cx:countryCode3 "SHN" ;
+    cx:countryName "Saint Helena, Ascension and Tristan da Cunha" ;
     cx:countryNumber "654" ;
     cx:wikidata <http://www.wikidata.org/entity/Q192184> .
 
@@ -1466,6 +1648,7 @@ cx:Country_SaintKittsAndNevis a cx:Country ;
         "Saint Kitts and Nevis"@en ;
     cx:countryCode2 "KN" ;
     cx:countryCode3 "KNA" ;
+    cx:countryName "Saint Kitts and Nevis" ;
     cx:countryNumber "659" ;
     cx:wikidata <http://www.wikidata.org/entity/Q763> .
 
@@ -1474,6 +1657,7 @@ cx:Country_SaintLucia a cx:Country ;
         "Saint Lucia"@en ;
     cx:countryCode2 "LC" ;
     cx:countryCode3 "LCA" ;
+    cx:countryName "Saint Lucia" ;
     cx:countryNumber "662" ;
     cx:wikidata <http://www.wikidata.org/entity/Q760> .
 
@@ -1482,6 +1666,7 @@ cx:Country_SaintMartin a cx:Country ;
         "Saint Martin"@en ;
     cx:countryCode2 "MF" ;
     cx:countryCode3 "MAF" ;
+    cx:countryName "Saint Martin" ;
     cx:countryNumber "663" ;
     cx:wikidata <http://www.wikidata.org/entity/Q126125> .
 
@@ -1490,6 +1675,7 @@ cx:Country_SaintPierreAndMiquelon a cx:Country ;
         "Saint Pierre and Miquelon"@en ;
     cx:countryCode2 "PM" ;
     cx:countryCode3 "SPM" ;
+    cx:countryName "Saint Pierre and Miquelon" ;
     cx:countryNumber "666" ;
     cx:wikidata <http://www.wikidata.org/entity/Q34617> .
 
@@ -1498,6 +1684,7 @@ cx:Country_SaintVincentAndTheGrenadines a cx:Country ;
         "Saint Vincent and the Grenadines"@en ;
     cx:countryCode2 "VC" ;
     cx:countryCode3 "VCT" ;
+    cx:countryName "Saint Vincent and the Grenadines" ;
     cx:countryNumber "670" ;
     cx:wikidata <http://www.wikidata.org/entity/Q757> .
 
@@ -1506,6 +1693,7 @@ cx:Country_Samoa a cx:Country ;
         "Samoa"@en ;
     cx:countryCode2 "WS" ;
     cx:countryCode3 "WSM" ;
+    cx:countryName "Samoa" ;
     cx:countryNumber "882" ;
     cx:wikidata <http://www.wikidata.org/entity/Q683> .
 
@@ -1514,6 +1702,7 @@ cx:Country_SanMarino a cx:Country ;
         "San Marino"@en ;
     cx:countryCode2 "SM" ;
     cx:countryCode3 "SMR" ;
+    cx:countryName "San Marino" ;
     cx:countryNumber "674" ;
     cx:wikidata <http://www.wikidata.org/entity/Q238> .
 
@@ -1522,6 +1711,7 @@ cx:Country_SaudiArabia a cx:Country ;
         "Saudi Arabia"@en ;
     cx:countryCode2 "SA" ;
     cx:countryCode3 "SAU" ;
+    cx:countryName "Saudi Arabia" ;
     cx:countryNumber "682" ;
     cx:wikidata <http://www.wikidata.org/entity/Q851> .
 
@@ -1530,6 +1720,7 @@ cx:Country_Senegal a cx:Country ;
         "Senegal"@en ;
     cx:countryCode2 "SN" ;
     cx:countryCode3 "SEN" ;
+    cx:countryName "Senegal" ;
     cx:countryNumber "686" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1041> .
 
@@ -1538,6 +1729,7 @@ cx:Country_Serbia a cx:Country ;
         "Serbia"@en ;
     cx:countryCode2 "RS" ;
     cx:countryCode3 "SRB" ;
+    cx:countryName "Serbia" ;
     cx:countryNumber "688" ;
     cx:wikidata <http://www.wikidata.org/entity/Q403> .
 
@@ -1546,6 +1738,7 @@ cx:Country_Seychelles a cx:Country ;
         "Seychelles"@en ;
     cx:countryCode2 "SC" ;
     cx:countryCode3 "SYC" ;
+    cx:countryName "Seychelles" ;
     cx:countryNumber "690" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1042> .
 
@@ -1554,6 +1747,7 @@ cx:Country_SierraLeone a cx:Country ;
         "Sierra Leone"@en ;
     cx:countryCode2 "SL" ;
     cx:countryCode3 "SLE" ;
+    cx:countryName "Sierra Leone" ;
     cx:countryNumber "694" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1044> .
 
@@ -1562,6 +1756,7 @@ cx:Country_Singapore a cx:Country ;
         "Singapore"@en ;
     cx:countryCode2 "SG" ;
     cx:countryCode3 "SGP" ;
+    cx:countryName "Singapore" ;
     cx:countryNumber "702" ;
     cx:wikidata <http://www.wikidata.org/entity/Q334> .
 
@@ -1570,6 +1765,7 @@ cx:Country_SintMaarten a cx:Country ;
         "Sint Maarten"@en ;
     cx:countryCode2 "SX" ;
     cx:countryCode3 "SXM" ;
+    cx:countryName "Sint Maarten" ;
     cx:countryNumber "534" ;
     cx:wikidata <http://www.wikidata.org/entity/Q26273> .
 
@@ -1578,6 +1774,7 @@ cx:Country_Slovakia a cx:Country ;
         "Slovakia"@en ;
     cx:countryCode2 "SK" ;
     cx:countryCode3 "SVK" ;
+    cx:countryName "Slovakia" ;
     cx:countryNumber "703" ;
     cx:wikidata <http://www.wikidata.org/entity/Q214> .
 
@@ -1586,6 +1783,7 @@ cx:Country_Slovenia a cx:Country ;
         "Slovenia"@en ;
     cx:countryCode2 "SI" ;
     cx:countryCode3 "SVN" ;
+    cx:countryName "Slovenia" ;
     cx:countryNumber "705" ;
     cx:wikidata <http://www.wikidata.org/entity/Q215> .
 
@@ -1594,6 +1792,7 @@ cx:Country_SoTomAndPrncipe a cx:Country ;
         "São Tomé and Príncipe"@en ;
     cx:countryCode2 "ST" ;
     cx:countryCode3 "STP" ;
+    cx:countryName "São Tomé and Príncipe" ;
     cx:countryNumber "678" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1039> .
 
@@ -1602,6 +1801,7 @@ cx:Country_SolomonIslands a cx:Country ;
         "Solomon Islands"@en ;
     cx:countryCode2 "SB" ;
     cx:countryCode3 "SLB" ;
+    cx:countryName "Solomon Islands" ;
     cx:countryNumber "90" ;
     cx:wikidata <http://www.wikidata.org/entity/Q685> .
 
@@ -1610,6 +1810,7 @@ cx:Country_Somalia a cx:Country ;
         "Somalia"@en ;
     cx:countryCode2 "SO" ;
     cx:countryCode3 "SOM" ;
+    cx:countryName "Somalia" ;
     cx:countryNumber "706" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1045> .
 
@@ -1618,6 +1819,7 @@ cx:Country_SouthAfrica a cx:Country ;
         "South Africa"@en ;
     cx:countryCode2 "ZA" ;
     cx:countryCode3 "ZAF" ;
+    cx:countryName "South Africa" ;
     cx:countryNumber "710" ;
     cx:wikidata <http://www.wikidata.org/entity/Q258> .
 
@@ -1626,6 +1828,7 @@ cx:Country_SouthGeorgiaAndTheSouthSandwichIslands a cx:Country ;
         "South Georgia and the South Sandwich Islands"@en ;
     cx:countryCode2 "GS" ;
     cx:countryCode3 "SGS" ;
+    cx:countryName "South Georgia and the South Sandwich Islands" ;
     cx:countryNumber "239" ;
     cx:wikidata <http://www.wikidata.org/entity/Q35086> .
 
@@ -1634,6 +1837,7 @@ cx:Country_SouthKorea a cx:Country ;
         "South Korea"@en ;
     cx:countryCode2 "KR" ;
     cx:countryCode3 "KOR" ;
+    cx:countryName "South Korea" ;
     cx:countryNumber "410" ;
     cx:wikidata <http://www.wikidata.org/entity/Q884> .
 
@@ -1642,6 +1846,7 @@ cx:Country_SouthSudan a cx:Country ;
         "South Sudan"@en ;
     cx:countryCode2 "SS" ;
     cx:countryCode3 "SSD" ;
+    cx:countryName "South Sudan" ;
     cx:countryNumber "728" ;
     cx:wikidata <http://www.wikidata.org/entity/Q958> .
 
@@ -1650,6 +1855,7 @@ cx:Country_Spain a cx:Country ;
         "Spain"@en ;
     cx:countryCode2 "ES" ;
     cx:countryCode3 "ESP" ;
+    cx:countryName "Spain" ;
     cx:countryNumber "724" ;
     cx:wikidata <http://www.wikidata.org/entity/Q29> .
 
@@ -1658,6 +1864,7 @@ cx:Country_SriLanka a cx:Country ;
         "Sri Lanka"@en ;
     cx:countryCode2 "LK" ;
     cx:countryCode3 "LKA" ;
+    cx:countryName "Sri Lanka" ;
     cx:countryNumber "144" ;
     cx:wikidata <http://www.wikidata.org/entity/Q854> .
 
@@ -1666,6 +1873,7 @@ cx:Country_StateOfPalestine a cx:Country ;
         "State of Palestine"@en ;
     cx:countryCode2 "PS" ;
     cx:countryCode3 "PSE" ;
+    cx:countryName "State of Palestine" ;
     cx:countryNumber "275" ;
     cx:wikidata <http://www.wikidata.org/entity/Q219060> .
 
@@ -1674,6 +1882,7 @@ cx:Country_Sudan a cx:Country ;
         "Sudan"@en ;
     cx:countryCode2 "SD" ;
     cx:countryCode3 "SDN" ;
+    cx:countryName "Sudan" ;
     cx:countryNumber "729" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1049> .
 
@@ -1682,6 +1891,7 @@ cx:Country_Suriname a cx:Country ;
         "Suriname"@en ;
     cx:countryCode2 "SR" ;
     cx:countryCode3 "SUR" ;
+    cx:countryName "Suriname" ;
     cx:countryNumber "740" ;
     cx:wikidata <http://www.wikidata.org/entity/Q730> .
 
@@ -1690,6 +1900,7 @@ cx:Country_SvalbardAndJanMayen a cx:Country ;
         "Svalbard and Jan Mayen"@en ;
     cx:countryCode2 "SJ" ;
     cx:countryCode3 "SJM" ;
+    cx:countryName "Svalbard and Jan Mayen" ;
     cx:countryNumber "744" ;
     cx:wikidata <http://www.wikidata.org/entity/Q842829> .
 
@@ -1698,6 +1909,7 @@ cx:Country_Sweden a cx:Country ;
         "Sweden"@en ;
     cx:countryCode2 "SE" ;
     cx:countryCode3 "SWE" ;
+    cx:countryName "Sweden" ;
     cx:countryNumber "752" ;
     cx:wikidata <http://www.wikidata.org/entity/Q34> .
 
@@ -1706,6 +1918,7 @@ cx:Country_Switzerland a cx:Country ;
         "Switzerland"@en ;
     cx:countryCode2 "CH" ;
     cx:countryCode3 "CHE" ;
+    cx:countryName "Switzerland" ;
     cx:countryNumber "756" ;
     cx:wikidata <http://www.wikidata.org/entity/Q39> .
 
@@ -1714,6 +1927,7 @@ cx:Country_Syria a cx:Country ;
         "Syria"@en ;
     cx:countryCode2 "SY" ;
     cx:countryCode3 "SYR" ;
+    cx:countryName "Syria" ;
     cx:countryNumber "760" ;
     cx:wikidata <http://www.wikidata.org/entity/Q858> .
 
@@ -1722,6 +1936,7 @@ cx:Country_Taiwan a cx:Country ;
         "Taiwan"@en ;
     cx:countryCode2 "TW" ;
     cx:countryCode3 "TWN" ;
+    cx:countryName "Taiwan" ;
     cx:countryNumber "158" ;
     cx:wikidata <http://www.wikidata.org/entity/Q865> .
 
@@ -1730,6 +1945,7 @@ cx:Country_Tajikistan a cx:Country ;
         "Tajikistan"@en ;
     cx:countryCode2 "TJ" ;
     cx:countryCode3 "TJK" ;
+    cx:countryName "Tajikistan" ;
     cx:countryNumber "762" ;
     cx:wikidata <http://www.wikidata.org/entity/Q863> .
 
@@ -1738,6 +1954,7 @@ cx:Country_Tanzania a cx:Country ;
         "Tanzania"@en ;
     cx:countryCode2 "TZ" ;
     cx:countryCode3 "TZA" ;
+    cx:countryName "Tanzania" ;
     cx:countryNumber "834" ;
     cx:wikidata <http://www.wikidata.org/entity/Q924> .
 
@@ -1746,6 +1963,7 @@ cx:Country_Thailand a cx:Country ;
         "Thailand"@en ;
     cx:countryCode2 "TH" ;
     cx:countryCode3 "THA" ;
+    cx:countryName "Thailand" ;
     cx:countryNumber "764" ;
     cx:wikidata <http://www.wikidata.org/entity/Q869> .
 
@@ -1754,6 +1972,7 @@ cx:Country_TheBahamas a cx:Country ;
         "The Bahamas"@en ;
     cx:countryCode2 "BS" ;
     cx:countryCode3 "BHS" ;
+    cx:countryName "The Bahamas" ;
     cx:countryNumber "44" ;
     cx:wikidata <http://www.wikidata.org/entity/Q778> .
 
@@ -1762,6 +1981,7 @@ cx:Country_TheGambia a cx:Country ;
         "The Gambia"@en ;
     cx:countryCode2 "GM" ;
     cx:countryCode3 "GMB" ;
+    cx:countryName "The Gambia" ;
     cx:countryNumber "270" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1005> .
 
@@ -1770,6 +1990,7 @@ cx:Country_TimorLeste a cx:Country ;
         "Timor-Leste"@en ;
     cx:countryCode2 "TL" ;
     cx:countryCode3 "TLS" ;
+    cx:countryName "Timor-Leste" ;
     cx:countryNumber "626" ;
     cx:wikidata <http://www.wikidata.org/entity/Q574> .
 
@@ -1778,6 +1999,7 @@ cx:Country_Togo a cx:Country ;
         "Togo"@en ;
     cx:countryCode2 "TG" ;
     cx:countryCode3 "TGO" ;
+    cx:countryName "Togo" ;
     cx:countryNumber "768" ;
     cx:wikidata <http://www.wikidata.org/entity/Q945> .
 
@@ -1786,6 +2008,7 @@ cx:Country_Tokelau a cx:Country ;
         "Tokelau"@en ;
     cx:countryCode2 "TK" ;
     cx:countryCode3 "TKL" ;
+    cx:countryName "Tokelau" ;
     cx:countryNumber "772" ;
     cx:wikidata <http://www.wikidata.org/entity/Q36823> .
 
@@ -1794,6 +2017,7 @@ cx:Country_Tonga a cx:Country ;
         "Tonga"@en ;
     cx:countryCode2 "TO" ;
     cx:countryCode3 "TON" ;
+    cx:countryName "Tonga" ;
     cx:countryNumber "776" ;
     cx:wikidata <http://www.wikidata.org/entity/Q678> .
 
@@ -1802,6 +2026,7 @@ cx:Country_TrinidadAndTobago a cx:Country ;
         "Trinidad and Tobago"@en ;
     cx:countryCode2 "TT" ;
     cx:countryCode3 "TTO" ;
+    cx:countryName "Trinidad and Tobago" ;
     cx:countryNumber "780" ;
     cx:wikidata <http://www.wikidata.org/entity/Q754> .
 
@@ -1810,6 +2035,7 @@ cx:Country_Tunisia a cx:Country ;
         "Tunisia"@en ;
     cx:countryCode2 "TN" ;
     cx:countryCode3 "TUN" ;
+    cx:countryName "Tunisia" ;
     cx:countryNumber "788" ;
     cx:wikidata <http://www.wikidata.org/entity/Q948> .
 
@@ -1818,6 +2044,7 @@ cx:Country_Turkey a cx:Country ;
         "Turkey"@en ;
     cx:countryCode2 "TR" ;
     cx:countryCode3 "TUR" ;
+    cx:countryName "Turkey" ;
     cx:countryNumber "792" ;
     cx:wikidata <http://www.wikidata.org/entity/Q43> .
 
@@ -1826,6 +2053,7 @@ cx:Country_Turkmenistan a cx:Country ;
         "Turkmenistan"@en ;
     cx:countryCode2 "TM" ;
     cx:countryCode3 "TKM" ;
+    cx:countryName "Turkmenistan" ;
     cx:countryNumber "795" ;
     cx:wikidata <http://www.wikidata.org/entity/Q874> .
 
@@ -1834,6 +2062,7 @@ cx:Country_TurksAndCaicosIslands a cx:Country ;
         "Turks and Caicos Islands"@en ;
     cx:countryCode2 "TC" ;
     cx:countryCode3 "TCA" ;
+    cx:countryName "Turks and Caicos Islands" ;
     cx:countryNumber "796" ;
     cx:wikidata <http://www.wikidata.org/entity/Q18221> .
 
@@ -1842,6 +2071,7 @@ cx:Country_Tuvalu a cx:Country ;
         "Tuvalu"@en ;
     cx:countryCode2 "TV" ;
     cx:countryCode3 "TUV" ;
+    cx:countryName "Tuvalu" ;
     cx:countryNumber "798" ;
     cx:wikidata <http://www.wikidata.org/entity/Q672> .
 
@@ -1850,6 +2080,7 @@ cx:Country_Uganda a cx:Country ;
         "Uganda"@en ;
     cx:countryCode2 "UG" ;
     cx:countryCode3 "UGA" ;
+    cx:countryName "Uganda" ;
     cx:countryNumber "800" ;
     cx:wikidata <http://www.wikidata.org/entity/Q1036> .
 
@@ -1858,6 +2089,7 @@ cx:Country_Ukraine a cx:Country ;
         "Ukraine"@en ;
     cx:countryCode2 "UA" ;
     cx:countryCode3 "UKR" ;
+    cx:countryName "Ukraine" ;
     cx:countryNumber "804" ;
     cx:wikidata <http://www.wikidata.org/entity/Q212> .
 
@@ -1866,6 +2098,7 @@ cx:Country_UnitedArabEmirates a cx:Country ;
         "United Arab Emirates"@en ;
     cx:countryCode2 "AE" ;
     cx:countryCode3 "ARE" ;
+    cx:countryName "United Arab Emirates" ;
     cx:countryNumber "784" ;
     cx:wikidata <http://www.wikidata.org/entity/Q878> .
 
@@ -1874,6 +2107,7 @@ cx:Country_UnitedKingdom a cx:Country ;
         "United Kingdom"@en ;
     cx:countryCode2 "GB" ;
     cx:countryCode3 "GBR" ;
+    cx:countryName "United Kingdom" ;
     cx:countryNumber "826" ;
     cx:wikidata <http://www.wikidata.org/entity/Q145> .
 
@@ -1882,6 +2116,7 @@ cx:Country_UnitedStatesMinorOutlyingIslands a cx:Country ;
         "United States Minor Outlying Islands"@en ;
     cx:countryCode2 "UM" ;
     cx:countryCode3 "UMI" ;
+    cx:countryName "United States Minor Outlying Islands" ;
     cx:countryNumber "581" ;
     cx:wikidata <http://www.wikidata.org/entity/Q16645> .
 
@@ -1890,6 +2125,7 @@ cx:Country_UnitedStatesOfAmerica a cx:Country ;
         "United States of America"@en ;
     cx:countryCode2 "US" ;
     cx:countryCode3 "USA" ;
+    cx:countryName "United States of America" ;
     cx:countryNumber "840" ;
     cx:wikidata <http://www.wikidata.org/entity/Q30> .
 
@@ -1898,6 +2134,7 @@ cx:Country_UnitedStatesVirginIslands a cx:Country ;
         "United States Virgin Islands"@en ;
     cx:countryCode2 "VI" ;
     cx:countryCode3 "VIR" ;
+    cx:countryName "United States Virgin Islands" ;
     cx:countryNumber "850" ;
     cx:wikidata <http://www.wikidata.org/entity/Q11703> .
 
@@ -1906,6 +2143,7 @@ cx:Country_Uruguay a cx:Country ;
         "Uruguay"@en ;
     cx:countryCode2 "UY" ;
     cx:countryCode3 "URY" ;
+    cx:countryName "Uruguay" ;
     cx:countryNumber "858" ;
     cx:wikidata <http://www.wikidata.org/entity/Q77> .
 
@@ -1914,6 +2152,7 @@ cx:Country_Uzbekistan a cx:Country ;
         "Uzbekistan"@en ;
     cx:countryCode2 "UZ" ;
     cx:countryCode3 "UZB" ;
+    cx:countryName "Uzbekistan" ;
     cx:countryNumber "860" ;
     cx:wikidata <http://www.wikidata.org/entity/Q265> .
 
@@ -1922,6 +2161,7 @@ cx:Country_Vanuatu a cx:Country ;
         "Vanuatu"@en ;
     cx:countryCode2 "VU" ;
     cx:countryCode3 "VUT" ;
+    cx:countryName "Vanuatu" ;
     cx:countryNumber "548" ;
     cx:wikidata <http://www.wikidata.org/entity/Q686> .
 
@@ -1930,6 +2170,7 @@ cx:Country_VaticanCity a cx:Country ;
         "Vatican City"@en ;
     cx:countryCode2 "VA" ;
     cx:countryCode3 "VAT" ;
+    cx:countryName "Vatican City" ;
     cx:countryNumber "336" ;
     cx:wikidata <http://www.wikidata.org/entity/Q237> .
 
@@ -1938,6 +2179,7 @@ cx:Country_Venezuela a cx:Country ;
         "Venezuela"@en ;
     cx:countryCode2 "VE" ;
     cx:countryCode3 "VEN" ;
+    cx:countryName "Venezuela" ;
     cx:countryNumber "862" ;
     cx:wikidata <http://www.wikidata.org/entity/Q717> .
 
@@ -1946,6 +2188,7 @@ cx:Country_Vietnam a cx:Country ;
         "Vietnam"@en ;
     cx:countryCode2 "VN" ;
     cx:countryCode3 "VNM" ;
+    cx:countryName "Vietnam" ;
     cx:countryNumber "704" ;
     cx:wikidata <http://www.wikidata.org/entity/Q881> .
 
@@ -1954,6 +2197,7 @@ cx:Country_WallisAndFutuna a cx:Country ;
         "Wallis and Futuna"@en ;
     cx:countryCode2 "WF" ;
     cx:countryCode3 "WLF" ;
+    cx:countryName "Wallis and Futuna" ;
     cx:countryNumber "876" ;
     cx:wikidata <http://www.wikidata.org/entity/Q35555> .
 
@@ -1962,6 +2206,7 @@ cx:Country_WesternSahara a cx:Country ;
         "Western Sahara"@en ;
     cx:countryCode2 "EH" ;
     cx:countryCode3 "ESH" ;
+    cx:countryName "Western Sahara" ;
     cx:countryNumber "732" ;
     cx:wikidata <http://www.wikidata.org/entity/Q6250> .
 
@@ -1970,6 +2215,7 @@ cx:Country_Yemen a cx:Country ;
         "Yemen"@en ;
     cx:countryCode2 "YE" ;
     cx:countryCode3 "YEM" ;
+    cx:countryName "Yemen" ;
     cx:countryNumber "887" ;
     cx:wikidata <http://www.wikidata.org/entity/Q805> .
 
@@ -1978,6 +2224,7 @@ cx:Country_Zambia a cx:Country ;
         "Zambia"@en ;
     cx:countryCode2 "ZM" ;
     cx:countryCode3 "ZMB" ;
+    cx:countryName "Zambia" ;
     cx:countryNumber "894" ;
     cx:wikidata <http://www.wikidata.org/entity/Q953> .
 
@@ -1986,6 +2233,7 @@ cx:Country_Zimbabwe a cx:Country ;
         "Zimbabwe"@en ;
     cx:countryCode2 "ZW" ;
     cx:countryCode3 "ZWE" ;
+    cx:countryName "Zimbabwe" ;
     cx:countryNumber "716" ;
     cx:wikidata <http://www.wikidata.org/entity/Q954> .
 
@@ -1994,6 +2242,7 @@ cx:Country_land a cx:Country ;
         "Åland"@en ;
     cx:countryCode2 "AX" ;
     cx:countryCode3 "ALA" ;
+    cx:countryName "Åland" ;
     cx:countryNumber "248" ;
     cx:wikidata <http://www.wikidata.org/entity/Q5689> .
 
@@ -2107,7 +2356,7 @@ cx:City a owl:Class ;
 
 <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/country_ontology.ttl> a owl:Ontology ;
     dc:creator "Zazralt Magic" ;
-    dc:date "2023-02-11"^^xsd:date ;
+    dc:date "2023-02-21"^^xsd:date ;
     dc:description "Ontology with countries. Which countires are in the world? What are their ISO codes?" ;
     dc:title "Country Ontology" ;
     owl:versionInfo "0.0.1" .
@@ -2116,26 +2365,26 @@ cx:Country a owl:Class ;
     rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/country_ontology.ttl> ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Country> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cx:isLocatedIn ;
-            owl:someValuesFrom cx:Continent ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:countryName ;
-            owl:someValuesFrom xsd:string ],
+            owl:onProperty cx:wikidata ;
+            owl:someValuesFrom xsd:anyURI ],
         [ a owl:Restriction ;
             owl:onProperty cx:countryNumber ;
             owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
-            owl:onProperty cx:hasCapitalCity ;
-            owl:someValuesFrom cx:CapitalCity ],
-        [ a owl:Restriction ;
-            owl:onProperty cx:countryCode3 ;
-            owl:someValuesFrom xsd:string ],
+            owl:onProperty cx:isLocatedIn ;
+            owl:someValuesFrom cx:Continent ],
         [ a owl:Restriction ;
             owl:onProperty cx:countryCode2 ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty cx:wikidata ;
-            owl:someValuesFrom xsd:anyURI ],
+            owl:onProperty cx:countryCode3 ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:hasCapitalCity ;
+            owl:someValuesFrom cx:CapitalCity ],
+        [ a owl:Restriction ;
+            owl:onProperty cx:countryName ;
+            owl:someValuesFrom xsd:string ],
         cx:Place ;
     skos:altLabel "countries"@en,
         "state"@en,
