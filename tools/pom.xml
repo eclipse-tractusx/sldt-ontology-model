@@ -3,17 +3,17 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.catenax.knowledge.ontology</groupId>
+    <groupId>org.eclipse.tractusx.ontology</groupId>
     <artifactId>tools</artifactId>
 
     <parent>
-      <groupId>io.catenax.knowledge</groupId>
+      <groupId>org.eclipse.tractusx</groupId>
       <artifactId>ontology</artifactId>
       <version>1.9.1-SNAPSHOT</version>
       <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <name>Catena-X Knowledge Agents Ontology Tools</name>
+    <name>Tractus-X Knowledge Agents Ontology Tools</name>
     <description>Builds the Toolsuite around the Ontology</description>
     <url>http://catena-x.net/</url>
 
@@ -23,7 +23,7 @@
     </organization>
 
     <properties>
-        <symbolic.name>io.catenax.knowledge.tools</symbolic.name>
+        <symbolic.name>org.eclipse.tractusx.ontology.tools</symbolic.name>
         <finalName>${symbolic.name}-${project.version}</finalName>
         <filter.main.resources>true</filter.main.resources>
         <skipTests>false</skipTests>
