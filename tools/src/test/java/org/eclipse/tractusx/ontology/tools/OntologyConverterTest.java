@@ -4,7 +4,7 @@
 // See authors file in the top folder
 // See license file in the top folder
 //
-package io.catenax.knowledge.tools;
+package org.eclipse.tractusx.ontology.tools;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

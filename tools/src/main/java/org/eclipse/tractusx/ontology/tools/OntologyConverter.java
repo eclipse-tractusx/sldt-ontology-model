@@ -4,7 +4,7 @@
 // See authors file in the top folder
 // See license file in the top folder
 //
-package io.catenax.knowledge.tools;
+package org.eclipse.tractusx.ontology.tools;
 
 import de.uni_stuttgart.vis.vowl.owl2vowl.converter.Converter;
 import de.uni_stuttgart.vis.vowl.owl2vowl.converter.OWLAPI_MissingImportsListener;
@@ -54,7 +54,6 @@ import org.semanticweb.owlapi.search.EntitySearcher;
 import org.semanticweb.owlapi.util.OWLOntologyWalker;
 
 import java.util.Collection;
-import java.util.Collections;
 import java.util.Set;
 import java.util.Map;
 import java.util.stream.Collectors;

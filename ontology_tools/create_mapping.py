@@ -1,5 +1,5 @@
-from ontology.ontology_tools.settings import mapping_path, cx_url
-from ontology.ontology_tools.ontology_tools import read_numbers2df, title_to_camel, title_to_pascal
+from ontology_tools.settings import mapping_path, cx_url
+from ontology_tools.ontology_tools import read_numbers2df, title_to_camel, title_to_pascal
 from rdflib import Graph, URIRef, Literal, Namespace, BNode
 from rdflib.namespace import RDF
 import pandas as pd

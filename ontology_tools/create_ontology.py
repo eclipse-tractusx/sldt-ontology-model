@@ -1,11 +1,11 @@
 import pandas as pd
 import os
 from os.path import exists
-from ontology.ontology_tools.settings import ontology_path, tables_path, tools_path, cx_url
-from ontology.ontology_tools.convert_df2graph import convert_df2graph
-from ontology.ontology_tools.merge_ontology import merge_ontology
-from ontology.ontology_tools.convert_ontology_to_csv import convert_ontology_to_csv
-from ontology.ontology_tools.write_formatted_excel import write_formatted_excel
+from ontology_tools.settings import ontology_path, tables_path, tools_path, cx_url
+from ontology_tools.convert_df2graph import convert_df2graph
+from ontology_tools.merge_ontology import merge_ontology
+from ontology_tools.convert_ontology_to_csv import convert_ontology_to_csv
+from ontology_tools.write_formatted_excel import write_formatted_excel
 
 # read mapping
 mapping = pd.read_csv(tools_path + '/rdf_mapping.csv', dtype=str).dropna(how='all')

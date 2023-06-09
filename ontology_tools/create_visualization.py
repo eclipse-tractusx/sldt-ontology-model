@@ -1,6 +1,6 @@
 import graphviz
 from rdflib import Graph, SKOS, OWL, RDFS
-from ontology.ontology_tools.settings import ontology_path, refactored_path
+from ontology_tools.settings import ontology_path, refactored_path
 
 # only for rectored ontologies
 def create_domain_ontology_visualization(domain_name):

@@ -4,7 +4,7 @@
 // See authors file in the top folder
 // See license file in the top folder
 //
-package io.catenax.knowledge.tools;
+package org.eclipse.tractusx.ontology.tools;
 
 import org.junit.jupiter.api.Test;
 import java.io.ByteArrayOutputStream;

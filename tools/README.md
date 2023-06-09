@@ -1,4 +1,4 @@
-# Catena-X Knowledge Agents (Hey Catena!) Ontology Tool Sources
+# Tractus-X Knowledge Agents (Hey Catena!) Ontology Tool Sources
 
 ## Notice
 
@@ -8,7 +8,7 @@
 
 ## What's this?
 
-The CX Ontology Tools are little helpers to deal with CX ontologies.
+The TX Ontology Tools are little helpers to deal with TX ontologies.
 
 ## Build
 

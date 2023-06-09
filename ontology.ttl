@@ -8,39 +8,54 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 dc:creator a owl:AnnotationProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> .
+    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/common_ontology.ttl>,
+        <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> .
 
 dc:date a owl:AnnotationProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> .
+    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/common_ontology.ttl>,
+        <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> .
 
 dc:description a owl:AnnotationProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> .
+    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/common_ontology.ttl>,
+        <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> .
 
 dc:title a owl:AnnotationProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> .
+    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/common_ontology.ttl>,
+        <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> .
 
 skos:altLabel a owl:AnnotationProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> .
+    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/common_ontology.ttl>,
+        <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> .
 
 skos:definition a owl:AnnotationProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> .
+    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/common_ontology.ttl>,
+        <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> .
 
 skos:example a owl:AnnotationProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> .
+    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/common_ontology.ttl>,
+        <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> .
 
 skos:prefLabel a owl:AnnotationProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> .
+    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/common_ontology.ttl>,
+        <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> .
 
 <https://catena-x.net/product-knowledge/ontology> a owl:Ontology ;
-    dc:creator "Catena-X Knowledge Agents Team" ;
-    dc:date "2023-05-19"^^xsd:date ;
-    dc:description "Catena-X Ontology for the Autmotive Industry." ;
-    dc:title "Catena-X Ontology" ;
+    dc:creator "Tractus-X Knowledge Agents Team" ;
+    dc:date "2023-06-09"^^xsd:date ;
+    dc:description "Tractus-X Ontology for the Autmotive Industry." ;
+    dc:title "Tractus-X Ontology" ;
     owl:imports <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/common_ontology.ttl>,
         <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> .
 
 cx-common:contentType a owl:DatatypeProperty ;
     rdfs:comment "This property describes in which format the data will be output, i.e. XML or JSON."@en ;
+    rdfs:domain cx-common:Asset ;
+    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/common_ontology.ttl> ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf owl:topDataProperty .
+
+cx-common:description a owl:DatatypeProperty ;
+    rdfs:comment "This property contains description of asset." ;
     rdfs:domain cx-common:Asset ;
     rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/common_ontology.ttl> ;
     rdfs:range xsd:string ;
@@ -77,9 +92,9 @@ cx-common:name a owl:DatatypeProperty ;
 
 cx-common:offers a owl:ObjectProperty ;
     rdfs:comment "This property refers to the offered assets."@en ;
-    rdfs:domain cx-common:BusinessPartner ;
+    rdfs:domain cx-common:DataspaceConnector ;
     rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/common_ontology.ttl> ;
-    rdfs:range cx-common:DataspaceConnector ;
+    rdfs:range cx-common:Asset ;
     rdfs:subPropertyOf owl:topObjectProperty .
 
 cx-common:protocol a owl:DatatypeProperty ;
@@ -118,7 +133,7 @@ cx-core:describesPhysicalObject a owl:ObjectProperty ;
     rdfs:subPropertyOf owl:topObjectProperty .
 
 cx-core:endDateTime a owl:DatatypeProperty ;
-    rdfs:label "end datatime"@en ;
+    rdfs:label "end dateTime"@en ;
     rdfs:comment "End time of the activity."@en ;
     rdfs:domain cx-core:Activity ;
     rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> ;
@@ -134,7 +149,9 @@ cx-core:hasParticipant a owl:ObjectProperty ;
     rdfs:subPropertyOf owl:topObjectProperty .
 
 cx-core:hosts a owl:ObjectProperty ;
+    rdfs:domain cx-core:Place ;
     rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> ;
+    rdfs:range cx-core:Activity ;
     rdfs:subPropertyOf owl:topObjectProperty .
 
 cx-core:id a owl:DatatypeProperty ;
@@ -146,9 +163,13 @@ cx-core:id a owl:DatatypeProperty ;
 cx-core:involvedIn a owl:ObjectProperty ;
     rdfs:label "involved in"@en ;
     rdfs:comment "This property describes in which activity the physical object is involved."@en ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> .
+    rdfs:domain cx-core:ConceptualObject,
+        cx-core:PhysicalObject ;
+    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> ;
+    rdfs:range cx-core:Activity .
 
 cx-core:name a owl:DatatypeProperty ;
+    rdfs:domain owl:Thing ;
     rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty .
@@ -185,12 +206,13 @@ cx-core:relatedToPlace a owl:ObjectProperty ;
     rdfs:range cx-core:Place .
 
 cx-core:role a owl:DatatypeProperty ;
+    rdfs:domain owl:Thing ;
     rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty .
 
 cx-core:startDateTime a owl:DatatypeProperty ;
-    rdfs:label "start datatime"@en ;
+    rdfs:label "start dateTime"@en ;
     rdfs:comment "Start time of the activity."@en ;
     rdfs:domain cx-core:Activity ;
     rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> ;
@@ -225,11 +247,6 @@ cx-common:SkillAsset a owl:Class ;
 cx-core:Address a owl:Class ;
     rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> .
 
-cx-core:PhysicalObject a owl:Class ;
-    rdfs:label "Physical Object"@en ;
-    dc:description "This class includes objects of a material nature, which are documentation units and have physical boundaries."@en ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> .
-
 cx-common:BusinessPartner a owl:Class ;
     rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/common_ontology.ttl> ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Business_partner> ;
@@ -243,8 +260,9 @@ cx-common:BusinessPartner a owl:Class ;
     skos:prefLabel "Geschäftspartner"@de,
         "Business Partner"@en .
 
-cx-core:Place a owl:Class ;
-    rdfs:comment "The class Place is determined by reference to the position of objects such as buildings, cities, or special geographic markers."@en ;
+cx-core:PhysicalObject a owl:Class ;
+    rdfs:label "Physical Object"@en ;
+    dc:description "This class includes objects of a material nature, which are documentation units and have physical boundaries."@en ;
     rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> .
 
 cx-common:DataspaceConnector a owl:Class ;
@@ -259,6 +277,10 @@ cx-core:Actor a owl:Class ;
     dc:description "This class comprises organization or people, either individually or in groups, who have the potential to perform intentional actions of kinds for which someone may be held responsible." ;
     rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> .
 
+cx-core:Place a owl:Class ;
+    rdfs:comment "The class Place is determined by reference to the position of objects such as buildings, cities, or special geographic markers."@en ;
+    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> .
+
 cx-core:ConceptualObject a owl:Class ;
     rdfs:label "Conceptual Object"@en ;
     dc:description "This class includes non-material products, human-produced data related to physical objects. The production of such information may have been supported by the use of technical tools."@en ;
@@ -268,9 +290,6 @@ cx-core:Activity a owl:Class ;
     rdfs:comment "This class comprises actions intentionally carried out by instances of Actor that result in changes of state in physical and conceptual objects."@en ;
     rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/core_ontology.ttl> ;
     owl:disjointUnionOf ( cx-core:Actor cx-core:Address cx-core:ConceptualObject cx-core:PhysicalObject cx-core:Place ) .
-
-owl:topObjectProperty rdfs:label "This property refers to the hosted activities in a place."@en,
-        "hosts"@en .
 
 cx-common:Asset a owl:Class ;
     rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/upper_level_ontologies/common_ontology.ttl> ;

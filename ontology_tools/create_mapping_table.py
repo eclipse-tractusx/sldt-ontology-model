@@ -1,7 +1,7 @@
 import pandas as pd
 from rdflib import Graph, URIRef, Literal, Namespace, BNode
-from ontology.ontology_tools.settings import cx_url, cx_file, mapping_path
-from ontology.ontology_tools.write_formatted_excel import write_formatted_excel
+from ontology_tools.settings import cx_url, cx_file, mapping_path
+from ontology_tools.write_formatted_excel import write_formatted_excel
 
 def create_mapping_table(mapping_name = 'name', mapping_classes = ['vehicle']):
 

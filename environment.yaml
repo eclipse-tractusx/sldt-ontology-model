@@ -1,0 +1,21 @@
+# Conda Environment for all python libraries
+# Create with a command line like
+#   conda env create -f environment.yaml
+# Activate with a command line like 
+#   conda activate knowledgeagents
+# See copyright notice in the top folder
+# See authors file in the top folder
+# See license file in the top folder
+name: knowledgeagents
+channels:
+  - defaults
+dependencies:
+  - python
+  - pip
+  - pip:
+    - rdflib
+    - pandas
+    - rdfpandas
+    - openpyxl
+    - xlsxwriter
+

@@ -4,8 +4,8 @@ import openpyxl
 import graphviz
 from os.path import exists
 from rdflib import Graph, URIRef, Literal, Namespace, RDF, OWL, RDFS, SKOS, DC
-from ontology.ontology_tools.create_ontology import write_formatted_excel
-from ontology.ontology_tools.settings import cx_url, cx_file, mapping_path, use_case_path
+from ontology_tools.create_ontology import write_formatted_excel
+from ontology_tools.settings import cx_url, cx_file, mapping_path, use_case_path
 
 def create_use_case_template(use_case_name):
     

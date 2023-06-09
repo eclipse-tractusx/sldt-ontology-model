@@ -1,6 +1,6 @@
 import pandas as pd
 from rdflib import Graph, URIRef, Literal
-from ontology.ontology_tools.settings import cx_url, cx_file, mapping_path
+from ontology_tools.settings import cx_url, cx_file, mapping_path
 
 def convert_ontology_to_csv():
 

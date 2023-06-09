@@ -3,9 +3,9 @@ from rdflib.namespace import RDF, RDFS, OWL, DC
 from rdflib import Graph, URIRef, Literal
 from datetime import date
 import sys
-from ontology.ontology_tools.settings import cx, cx_ontology, cx_url, cx_file, mapping_path
+from ontology_tools.settings import cx, cx_ontology, cx_url, cx_file, mapping_path
 
-def merge_ontology(path='ontology', folder = 'ontology', file_out = 'ontology.ttl', files = None):
+def merge_ontology(path='.', folder = '.', file_out = 'ontology.ttl', files = None):
 
     # get file list
     if (files is None):
@@ -33,10 +33,10 @@ def merge_ontology(path='ontology', folder = 'ontology', file_out = 'ontology.tt
     # add meta data
     ontology_iri = 'ontology'
     g = g.add((cx_ontology[ontology_iri], RDF.type, OWL.Ontology))
-    g = g.add((cx_ontology[ontology_iri], DC.title, Literal('Catena-X Ontology')))
+    g = g.add((cx_ontology[ontology_iri], DC.title, Literal('Tractus-X Ontology')))
     g = g.add((cx_ontology[ontology_iri], DC.date, Literal(date.today())))
-    g = g.add((cx_ontology[ontology_iri], DC.creator, Literal('Catena-X Knowledge Agents Team')))
-    g = g.add((cx_ontology[ontology_iri], DC.description, Literal('Catena-X Ontology for the Autmotive Industry.')))
+    g = g.add((cx_ontology[ontology_iri], DC.creator, Literal('Tractus-X Knowledge Agents Team')))
+    g = g.add((cx_ontology[ontology_iri], DC.description, Literal('Tractus-X Ontology for the Autmotive Industry.')))
     for file in files:
             if ((not file.startswith('.')) & file.endswith('_ontology.ttl') ) & (file != file_out):
                 g = g.add((cx_ontology[ontology_iri], OWL.imports, URIRef(cx_url+file)))
