@@ -75,6 +75,3 @@ Creating a merged ontology out of several domain ontologies may be done by invok
 python -m ontology_tools.merge_ontology upper_level_ontologies/*_ontology.ttl 
 ```
 
-
-
-
