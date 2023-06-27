@@ -1,4 +1,4 @@
-@prefix : <https://catena-x.net/product-knowledge/ontology/common#> .
+@prefix : <https://w3id.org/catenax/ontology/common#>.
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,10 +7,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix schema: <https://schema.org/> .
-@prefix cx-common: <https://catena-x.net/product-knowledge/ontology/common#> .
-@base <https://catena-x.net/product-knowledge/ontology/common> .
+@prefix cx-common: <https://w3id.org/catenax/ontology/common#> .
+@base <https://w3id.org/catenax/ontology/common#> .
 
-<https://catena-x.net/product-knowledge/ontology/common> rdf:type owl:Ontology ;
+<https://w3id.org/catenax/ontology/common> rdf:type owl:Ontology ;
                                                           dc:creator "Zazralt Magic" ;
                                                           dc:date "2023-05-23"^^xsd:date ;
                                                           dc:description "The common ontology describes the Dataspace connectors in detail. On the one hand, this includes the information from which Catena-X business partner the connectors are deployed. On the other hand, with which contracts which assets provide the connectors."@en ;

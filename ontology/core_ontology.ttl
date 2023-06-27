@@ -1,4 +1,3 @@
-@prefix : <https://catena-x.net/product-knowledge/ontology/core#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,8 +6,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix schema: <https://schema.org/> .
-@prefix cx-core: <https://catena-x.net/product-knowledge/ontology/core#> .
-@base <https://catena-x.net/product-knowledge/ontology/core> .
+@prefix cx-core: <https://w3id.org/catenax/ontology/core#> .
+@base <https://catena-x.net/product-knowledge/ontology/core#> .
+@prefix : <https://w3id.org/catenax/ontology/core#> .
 
 <https://catena-x.net/product-knowledge/ontology/core> rdf:type owl:Ontology ;
                                                         dc:creator "Oguzhan Balandi" ;
@@ -56,6 +56,16 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 #################################################################
 #    Object Properties
 #################################################################
+
+###  https://catena-x.net/product-knowledge/ontology/core#describedByConceptualObject
+cx-core:describedByConceptualObject rdf:type owl:ObjectProperty ;
+                                    rdfs:subPropertyOf owl:topObjectProperty ;
+                                    owl:inverseOf cx-core:describesPhysicalObject ;
+                                    rdfs:domain cx-core:PhysicalObject ;
+                                    rdfs:range cx-core:ConceptualObject ;
+                                    dc:description "Inverse of 'describes physical object' property."@en ;
+                                    skos:prefLabel "described by conceptual object"@en .
+
 
 ###  https://catena-x.net/product-knowledge/ontology/core#describesPhysicalObject
 cx-core:describesPhysicalObject rdf:type owl:ObjectProperty ;

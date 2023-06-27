@@ -113,7 +113,7 @@ All vocabularies used in the Catena-X Knowledge Agent approach to describe data 
 Domain ontologies are specific extensions of the core ontology, in which a specific domain is described in detail. Currently the following ontologies are developed and used in the Knowledge Agent Kit in different skills.
 
 * Part ontology
-* Vehicle ontology
+* [Vehicle ontology](vehicle_ontology.md)
 * Vehicle Information Ontology
 * Diagnosis ontology
 * Load spectrum ontology
