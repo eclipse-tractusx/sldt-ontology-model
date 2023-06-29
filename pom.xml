@@ -1,10 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Pom for building complete product
+  See copyright notice in the top folder
+  See authors file in the top folder
+  See license file in the top folder
+-->
 <project>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.eclipse.tractusx</groupId>
+    <groupId>io.catenax</groupId>
     <artifactId>ontology</artifactId>
     <packaging>pom</packaging>
-    <version>1.9.1-SNAPSHOT</version>
-    <name>Tractus-X Knowledge Agents Ontology</name>
+    <version>1.9.4-SNAPSHOT</version>
+    <name>Catena-X Knowledge Agents Ontology</name>
     <description>Project for all Ontology-Related Artifacts</description>
     <dependencies>
     </dependencies>
@@ -21,15 +28,15 @@
         <!-- REPO -->
         <repo>ghcr.io/catenax-ng/product-ontology/</repo>
         <platform>linux/amd64</platform>
+
     </properties>
+
     <modules>
        <module>tools</module>
     </modules>
 
-
-
     <dependencyManagement>
-        <dependencies>
+      <dependencies>
             <!-- BOMs -->
             <dependency>
                 <groupId>org.junit</groupId>
@@ -43,7 +50,6 @@
 
     <build>
         <pluginManagement>
-
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -57,7 +63,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-shade-plugin</artifactId>
-                    <version>3.4.1</version>
+                    <version>3.5.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
@@ -150,6 +156,7 @@
     </build>
 
 
+
     <repositories>
         <repository>
             <id>central</id>
@@ -157,18 +164,17 @@
             <url>https://repo1.maven.org/maven2</url>
         </repository>
         <repository> <!-- webvowl -->
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
+		      <id>jitpack.io</id>
+		      <url>https://jitpack.io</url>
+	    </repository>
     </repositories>
 
-
     <distributionManagement>
-        <repository>
-            <id>github</id>
-            <name>Catena-X Maven Repository on Github</name>
-            <url>https://maven.pkg.github.com/catenax-ng/product-ontology</url>
-        </repository>
+     <repository>
+       <id>github</id>
+       <name>Catena-X Maven Repository on Github</name>
+       <url>https://maven.pkg.github.com/catenax-ng/product-ontology</url>
+     </repository>
     </distributionManagement>
 
 </project>

@@ -4,6 +4,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix json: <https://json-schema.org/draft/2020-12/schema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix schema: <https://schema.org/> .
@@ -11,11 +12,12 @@
 @base <https://w3id.org/catenax/ontology/common#> .
 
 <https://w3id.org/catenax/ontology/common> rdf:type owl:Ontology ;
-                                                          dc:creator "Zazralt Magic" ;
-                                                          dc:date "2023-05-23"^^xsd:date ;
-                                                          dc:description "The common ontology describes the Dataspace connectors in detail. On the one hand, this includes the information from which Catena-X business partner the connectors are deployed. On the other hand, with which contracts which assets provide the connectors."@en ;
-                                                          dc:title "Common Ontology" ;
-                                                          owl:versionInfo "0.9.1" .
+                                           dc:contributor "Oguzhan Balandi" ;
+                                           dc:creator "Zazralt Magic" ;
+                                          dc:date "2023-05-23"^^xsd:date ;
+                                          dc:description "The common ontology describes the Dataspace connectors in detail. On the one hand, this includes the information from which Catena-X business partner the connectors are deployed. On the other hand, with which contracts which assets provide the connectors."@en ;
+                                          dc:title "Common Ontology" ;
+                                          owl:versionInfo "1.9.4" .
 
 #################################################################
 #    Annotation properties
@@ -52,6 +54,9 @@ skos:example rdf:type owl:AnnotationProperty .
 ###  http://www.w3.org/2004/02/skos/core#prefLabel
 skos:prefLabel rdf:type owl:AnnotationProperty .
 
+
+###  https://json-schema.org/draft/2020-12/schema#Object
+json:Object rdf:type rdfs:Datatype .
 
 #################################################################
 #    Object Properties
@@ -140,6 +145,23 @@ cx-common:url rdf:type owl:DatatypeProperty ;
               rdfs:domain cx-common:DataspaceConnector ;
               rdfs:range xsd:anyURI .
 
+
+###  https://catena-x.net/product-knowledge/ontology/common#authenticationInformation
+cx-common:authenticationInformation rdf:type owl:DatatypeProperty ;
+              rdfs:comment "Base property for all authentication informations.";
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain rdfs:Resource ;
+              rdfs:range xsd:string .
+
+###  https://catena-x.net/product-knowledge/ontology/common#authenticationCode
+cx-common:authenticationCode rdf:type owl:DatatypeProperty ;
+              rdfs:comment "An authentication code under which authentication information are transmitted.";
+              rdfs:subPropertyOf cx-common:authenticationInformation.
+
+###  https://catena-x.net/product-knowledge/ontology/common#authenticationKey
+cx-common:authenticationKey rdf:type owl:DatatypeProperty ;
+              rdfs:comment "An authentication key which encodes some authentication proof.";
+              rdfs:subPropertyOf cx-common:authenticationInformation.
 
 ###  https://catena-x.net/product-knowledge/ontology/common#version
 cx-common:version rdf:type owl:DatatypeProperty ;
