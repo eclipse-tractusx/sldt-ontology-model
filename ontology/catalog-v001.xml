@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="User Entered Import Resolution" name="file:common_ontology.ttl" uri="common_ontology.ttl"/>
+    <uri id="User Entered Import Resolution" name="file:core_ontology.ttl" uri="core_ontology.ttl"/>
+    <uri id="User Entered Import Resolution" name="file:vehicle_ontology.ttl" uri="vehicle_ontology.ttl"/>
+    <uri id="User Entered Import Resolution" name="file:function_ontology.ttl" uri="function_ontology.ttl"/>
+    <uri id="User Entered Import Resolution" name="file:reliability_ontology.ttl" uri="reliability_ontology.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
 </catalog>

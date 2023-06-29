@@ -17,7 +17,8 @@
                                              dc:date "2023-02-21"^^xsd:date ;
                                              dc:description "Ontology for vehicles in the automotive industry." ;
                                              dc:title "Vehicle Ontology" ;
-                                             owl:versionInfo "0.0.1" .
+                                             owl:imports <file:core_ontology.ttl>;
+                                             owl:versionInfo "1.9.4" .
 
 #################################################################
 #    Annotation properties
