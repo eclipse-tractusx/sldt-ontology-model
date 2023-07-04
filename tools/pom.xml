@@ -3,19 +3,11 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-<<<<<<< Updated upstream
-    <groupId>org.eclipse.tractusx.ontology</groupId>
-    <artifactId>tools</artifactId>
-
-    <parent>
-      <groupId>org.eclipse.tractusx</groupId>
-=======
     <groupId>io.catenax.ontology</groupId>
     <artifactId>tools</artifactId>
 
     <parent>
       <groupId>io.catenax</groupId>
->>>>>>> Stashed changes
       <artifactId>ontology</artifactId>
       <version>1.9.4-SNAPSHOT</version>
       <relativePath>../pom.xml</relativePath>
