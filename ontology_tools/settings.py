@@ -9,7 +9,7 @@ use_case_path = 'ontology/ontology_use_case'
 
 # namespace settigns
 from rdflib import Namespace
-cx_url = 'https://raw.github.com/eclipse-tractusx/ontology/main/'
-cx_ontology = Namespace("https://catena-x.net/product-knowledge/")
-cx = Namespace("https://catena-x.net/product-knowledge/ontology#")
+cx_url = 'file:'
+cx_ontology = Namespace("https://w3id.org/catenax/")
+cx = Namespace("https://w3id.org/catenax/ontology")
 cx_file = ontology_path + '/ontology.ttl'

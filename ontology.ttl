@@ -1,3 +1,4 @@
+@prefix cx-behaviour: <https://w3id.org/catenax/ontology/behaviour#> .
 @prefix cx-common: <https://w3id.org/catenax/ontology/common#> .
 @prefix cx-core: <https://w3id.org/catenax/ontology/core#> .
 @prefix cx-fx: <https://w3id.org/catenax/ontology/function#> .
@@ -14,108 +15,135 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 dc:contributor a owl:AnnotationProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> .
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl>,
+        <file:ontology/vehicle_ontology.ttl> .
 
 dc:creator a owl:AnnotationProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> .
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl>,
+        <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl>,
+        <file:ontology/vehicle_ontology.ttl> .
 
 dc:date a owl:AnnotationProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> .
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl>,
+        <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl>,
+        <file:ontology/vehicle_ontology.ttl> .
 
 dc:description a owl:AnnotationProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> .
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl>,
+        <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl>,
+        <file:ontology/vehicle_ontology.ttl> .
 
 dc:title a owl:AnnotationProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> .
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl>,
+        <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl>,
+        <file:ontology/vehicle_ontology.ttl> .
 
 skos:altLabel a owl:AnnotationProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> .
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl>,
+        <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl>,
+        <file:ontology/vehicle_ontology.ttl> .
 
 skos:definition a owl:AnnotationProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> .
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl>,
+        <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl>,
+        <file:ontology/vehicle_ontology.ttl> .
 
 skos:example a owl:AnnotationProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> .
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl>,
+        <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl>,
+        <file:ontology/vehicle_ontology.ttl> .
 
 skos:note a owl:AnnotationProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> .
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> .
 
 skos:prefLabel a owl:AnnotationProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> .
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl>,
+        <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl>,
+        <file:ontology/vehicle_ontology.ttl> .
 
 sh:shapesGraph a owl:ObjectProperty ;
     rdfs:comment "This property refers to a SHACL expression in which the RDF data Contraints are defined. In particular, the structure of the identifiers."@en ;
     rdfs:domain cx-common:Asset ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     rdfs:target rdfs:Resource .
 
-<https://catena-x.net/product-knowledge/ontology> a owl:Ontology ;
-    dc:creator "Tractus-X Knowledge Agents Team" ;
-    dc:date "2023-07-03"^^xsd:date ;
-    dc:description "Tractus-X Ontology for the Autmotive Industry." ;
-    dc:title "Tractus-X Ontology".
+<https://w3id.org/catenax/ontology> a owl:Ontology ;
+    dc:creator "Catena-X Knowledge Agents Team" ;
+    dc:date "2023-07-04"^^xsd:date ;
+    dc:description "Catena-X Ontology for the Autmotive Industry." ;
+    dc:title "Catena-X Ontology" .
+
+cx-behaviour:RemainingUsefulLife a cx-fx:Function ;
+    dc:description "Remaining Useful Life is a Prediction of the Estimated Mileage/Runtime until a Breakdown."@en ;
+    dc:title "Remaining Useful Life" ;
+    rdfs:isDefinedBy <file:ontology/behaviour_ontology.ttl> ;
+    cx-fx:input cx-behaviour:bodyClasses,
+        cx-behaviour:bodyCountsList,
+        cx-behaviour:classification,
+        cx-behaviour:component,
+        cx-behaviour:countingMethod,
+        cx-behaviour:countingUnit,
+        cx-behaviour:countingValue,
+        cx-behaviour:headerChannels,
+        cx-behaviour:metadata,
+        cx-behaviour:notification,
+        cx-behaviour:recipient,
+        cx-behaviour:recipientConnector,
+        cx-behaviour:sender,
+        cx-behaviour:senderConnector,
+        cx-behaviour:severity,
+        cx-behaviour:status,
+        cx-behaviour:statusDate,
+        cx-behaviour:statusMileage,
+        cx-behaviour:statusOperatingHours,
+        cx-behaviour:targetDate,
+        cx-behaviour:timeStamp ;
+    cx-fx:result cx-behaviour:response .
 
 cx-common:SkillDistribution%3Frun%3Dall a cx-common:SkillDistribution ;
     rdfs:comment "The skill may be invoked in any computing environment (provider or consumer)."@en ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     skos:prefLabel "All Distribution Mode"@en .
 
 cx-common:SkillDistribution%3Frun%3Dconsumer a cx-common:SkillDistribution ;
     rdfs:comment "The skill may only be invoked remote in the computing environment of the consumer."@en ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     skos:prefLabel "Consumer Distribution Mode"@en .
 
 cx-common:SkillDistribution%3Frun%3Dprovider a cx-common:SkillDistribution ;
     rdfs:comment "The skill may only be invoked local to the computing environment of the provider."@en ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     skos:prefLabel "Provider Distribution Mode"@en .
 
 cx-common:authenticationCode a owl:DatatypeProperty ;
     rdfs:comment "An authentication code under which authentication information are transmitted." ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     rdfs:subPropertyOf cx-common:authenticationInformation .
 
 cx-common:authenticationKey a owl:DatatypeProperty ;
     rdfs:comment "An authentication key which encodes some authentication proof." ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     rdfs:subPropertyOf cx-common:authenticationInformation .
 
 cx-common:contentType a owl:DatatypeProperty ;
     rdfs:comment "This property describes in which format the data will be output, i.e. XML or JSON."@en ;
     rdfs:domain cx-common:Asset ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty .
 
 cx-common:description a owl:DatatypeProperty ;
     rdfs:comment "This property contains description of asset." ;
     rdfs:domain cx-common:Asset ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty .
 
@@ -123,62 +151,62 @@ cx-common:hasDataspaceConnector a owl:ObjectProperty ;
     rdfs:label "has Dataspace Connector"@en ;
     rdfs:comment "This property describes which connectors belong to which business partners."@en ;
     rdfs:domain cx-common:BusinessPartner ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     rdfs:range cx-common:DataspaceConnector ;
     rdfs:subPropertyOf owl:topObjectProperty .
 
 cx-common:id a owl:DatatypeProperty ;
     rdfs:comment "This property contains unique identifier of Bussiness Partner/Connector/Asset."@en ;
     rdfs:domain owl:Thing ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty .
 
 cx-common:implementsProtocol a owl:DatatypeProperty ;
     rdfs:comment "This property refers to the network protocol implemented by the asset."@en ;
     rdfs:domain cx-common:Asset ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty .
 
 cx-common:isFederated a owl:DatatypeProperty ;
     rdfs:comment "If this property is set to true, it means that this connector will federate with other connectors."@en ;
     rdfs:domain cx-common:Asset ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     rdfs:range xsd:boolean ;
     rdfs:subPropertyOf owl:topDataProperty .
 
 cx-common:name a owl:DatatypeProperty ;
     rdfs:comment "This property contains name of asset."@en ;
     rdfs:domain cx-common:Asset ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty .
 
 cx-common:offers a owl:ObjectProperty ;
     rdfs:comment "This property refers to the offered assets."@en ;
     rdfs:domain cx-common:DataspaceConnector ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     rdfs:range cx-common:Asset ;
     rdfs:subPropertyOf owl:topObjectProperty .
 
 cx-common:publishedUnderContract a owl:ObjectProperty ;
     rdfs:comment "This property refers to the contract associated with the asset."@en ;
     rdfs:domain cx-common:Asset ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     rdfs:subPropertyOf owl:topObjectProperty ;
     rdfs:target cx-common:Contract .
 
 cx-common:url a owl:DatatypeProperty ;
     rdfs:domain cx-common:DataspaceConnector ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     rdfs:range xsd:anyURI ;
     rdfs:subPropertyOf owl:topDataProperty .
 
 cx-common:version a owl:DatatypeProperty ;
     rdfs:comment "This property contains version of asset."@en ;
     rdfs:domain cx-common:Asset ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty .
 
@@ -186,8 +214,8 @@ cx-core:endDateTime a owl:DatatypeProperty ;
     rdfs:label "end dateTime"@en ;
     rdfs:comment "End time of the activity."@en ;
     rdfs:domain cx-core:Activity ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl> ;
     rdfs:range xsd:dateTime ;
     rdfs:subPropertyOf owl:topDataProperty .
 
@@ -195,22 +223,22 @@ cx-core:hasParticipant a owl:ObjectProperty ;
     rdfs:label "has participant"@en ;
     rdfs:comment "This property describes the active or passive participation of instances of Actors in an Activity." ;
     rdfs:domain cx-core:Activity ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl> ;
     rdfs:range cx-core:Actor ;
     rdfs:subPropertyOf owl:topObjectProperty .
 
 cx-core:hosts a owl:ObjectProperty ;
     rdfs:domain cx-core:Place ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl> ;
     rdfs:range cx-core:Activity ;
     rdfs:subPropertyOf owl:topObjectProperty .
 
 cx-core:id a owl:DatatypeProperty ;
     rdfs:domain owl:Thing ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty .
 
@@ -219,14 +247,14 @@ cx-core:involvedIn a owl:ObjectProperty ;
     rdfs:comment "This property describes in which activity the physical object is involved."@en ;
     rdfs:domain cx-core:ConceptualObject,
         cx-core:PhysicalObject ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl> ;
     rdfs:range cx-core:Activity .
 
 cx-core:name a owl:DatatypeProperty ;
     rdfs:domain owl:Thing ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty .
 
@@ -234,8 +262,8 @@ cx-core:participatesIn a owl:ObjectProperty ;
     rdfs:label "participates in"@en ;
     rdfs:comment "Inverse of 'has participant'"@en ;
     rdfs:domain cx-core:Actor ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl> ;
     rdfs:range cx-core:Activity ;
     rdfs:subPropertyOf owl:topObjectProperty .
 
@@ -243,14 +271,14 @@ cx-core:relatedToPlace a owl:ObjectProperty ;
     rdfs:label "This property describes that an actor has a relationship to a particular place, such as reside, own, or manage, etc."@en,
         "related to place"@en ;
     rdfs:domain cx-core:Actor ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl> ;
     rdfs:range cx-core:Place .
 
 cx-core:role a owl:DatatypeProperty ;
     rdfs:domain owl:Thing ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty .
 
@@ -258,8 +286,8 @@ cx-core:startDateTime a owl:DatatypeProperty ;
     rdfs:label "start dateTime"@en ;
     rdfs:comment "Start time of the activity."@en ;
     rdfs:domain cx-core:Activity ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl> ;
     rdfs:range xsd:dateTime ;
     rdfs:subPropertyOf owl:topDataProperty .
 
@@ -267,14 +295,14 @@ cx-core:takesPlaceAt a owl:ObjectProperty ;
     rdfs:label "takes place at"@en ;
     rdfs:comment "This property describes the spatial location of an activity."@en ;
     rdfs:domain cx-core:Activity ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl> ;
     rdfs:range cx-core:Place .
 
 cx-fx:argumentName a owl:DatatypeProperty ;
     rdfs:comment "Determines the name or index of the function argument." ;
     rdfs:domain cx-fx:Argument ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/function_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/function_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:altLabel "Argument Name or Index"@en ;
@@ -285,7 +313,7 @@ cx-fx:argumentName a owl:DatatypeProperty ;
 cx-fx:batch a owl:DatatypeProperty ;
     rdfs:comment "Determines maximal batch size for function invocations. Default is '1' which means that each invocation is done separately"@en ;
     rdfs:domain cx-fx:Function ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/function_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/function_ontology.ttl> ;
     rdfs:range xsd:long ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:altLabel "Maximal Batch Size"@en ;
@@ -295,7 +323,7 @@ cx-fx:batch a owl:DatatypeProperty ;
 cx-fx:callbackAddress a owl:ObjectProperty ;
     rdfs:comment "Documents that a given resource exhibits a callback endpoint. The URI/IRI should resolve to some existing URL."@en ;
     rdfs:domain rdfs:Resource ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/function_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/function_ontology.ttl> ;
     rdfs:range rdfs:Resource ;
     skos:example <http://localhost:8888/callback> ;
     skos:prefLabel "Callback Address"@en .
@@ -304,7 +332,7 @@ cx-fx:callbackProperty a owl:DatatypeProperty ;
     rdfs:comment "Determines a (set of) paths in the input document and the output response under which the callback address (see <https://w3id.org/catenax/ontology/function#callbackAddress>) and the referring callback id will be transmitted."@en ;
     rdfs:domain cx-fx:Function,
         cx-fx:Result ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/function_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/function_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:altLabel "Function Callback ID/Address Property"@en ;
@@ -314,7 +342,7 @@ cx-fx:callbackProperty a owl:DatatypeProperty ;
 cx-fx:correlationInput a owl:ObjectProperty ;
     rdfs:comment "Correlates the <ttps://w3id.org/catenax/ontology/function#resultIdProperty> with a function argument."@en ;
     rdfs:domain cx-fx:Result ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/function_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/function_ontology.ttl> ;
     rdfs:range cx-fx:Argument ;
     skos:altLabel "Function Correlation ID Inputy"@en ;
     skos:prefLabel "Correlation ID Input"@en .
@@ -323,7 +351,7 @@ cx-fx:dataType a owl:ObjectProperty ;
     rdfs:comment "Determines the data type of an argument or return value." ;
     rdfs:domain cx-fx:Argument,
         cx-fx:ReturnValue ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/function_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/function_ontology.ttl> ;
     rdfs:range rdfs:Datatype ;
     rdfs:subPropertyOf owl:topObjectProperty ;
     skos:altLabel "Argument or Result Data Type"@en ;
@@ -334,7 +362,7 @@ cx-fx:dataType a owl:ObjectProperty ;
 cx-fx:default a owl:DatatypeProperty ;
     rdfs:comment "Determines a default for the given argument which is taken if this is a mandatory argument (see <https://w3id.org/catenax/ontology/function#mandatory>)"@en ;
     rdfs:domain cx-fx:Argument ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/function_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/function_ontology.ttl> ;
     rdfs:range xsd:anyType ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:altLabel "Argument Default"@en ;
@@ -345,14 +373,14 @@ cx-fx:default a owl:DatatypeProperty ;
 cx-fx:input a owl:ObjectProperty ;
     rdfs:comment "Describes the arguments of a function."@en ;
     rdfs:domain cx-fx:Function ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/function_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/function_ontology.ttl> ;
     rdfs:range cx-fx:Argument ;
     skos:prefLabel "Input Argument"@en .
 
 cx-fx:inputProperty a owl:DatatypeProperty ;
     rdfs:comment "Determines a path/name in the input document under which all input arguments are encoded. Default is '.'"@en ;
     rdfs:domain cx-fx:Function ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/function_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/function_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:altLabel "Function Input Property"@en ;
@@ -362,7 +390,7 @@ cx-fx:inputProperty a owl:DatatypeProperty ;
 cx-fx:invocationIdProperty a owl:DatatypeProperty ;
     rdfs:comment "Determines a (set of) paths in the input document under which the IRI of the invocation (instance of Function) will be transmitted."@en ;
     rdfs:domain cx-fx:Function ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/function_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/function_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:altLabel "Function Invocation ID Property"@en ;
@@ -372,7 +400,7 @@ cx-fx:invocationIdProperty a owl:DatatypeProperty ;
 cx-fx:invocationMethod a owl:DatatypeProperty ;
     rdfs:comment "Determines the invocation method of the function in case that the target service provides several possibilities."@en ;
     rdfs:domain cx-fx:Function ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/function_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/function_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:example "DEFAULT",
@@ -385,7 +413,7 @@ cx-fx:invocationMethod a owl:DatatypeProperty ;
 
 cx-fx:output a owl:ObjectProperty ;
     rdfs:domain cx-fx:Result ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/function_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/function_ontology.ttl> ;
     rdfs:range cx-fx:ReturnValue ;
     skos:altLabel "Function Return Output"@en ;
     skos:prefLabel "Output"@en .
@@ -393,7 +421,7 @@ cx-fx:output a owl:ObjectProperty ;
 cx-fx:outputProperty a owl:DatatypeProperty ;
     rdfs:comment "Determines a path/name in the output response under which all output arguments are encoded. Default is '.'"@en ;
     rdfs:domain cx-fx:Result ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/function_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/function_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:altLabel "Function Output Property"@en ;
@@ -403,7 +431,7 @@ cx-fx:outputProperty a owl:DatatypeProperty ;
 cx-fx:priority a owl:DatatypeProperty ;
     rdfs:comment "Determines the priority with which the argument is processed. Default is '10'"@en ;
     rdfs:domain cx-fx:Argument ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/function_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/function_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:altLabel "Argument Priority"@en ;
@@ -413,14 +441,14 @@ cx-fx:priority a owl:DatatypeProperty ;
 cx-fx:result a owl:ObjectProperty ;
     rdfs:comment "Describes the result of a function."@en ;
     rdfs:domain cx-fx:Function ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/function_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/function_ontology.ttl> ;
     rdfs:range cx-fx:Result ;
     skos:prefLabel "Output Result"@en .
 
 cx-fx:resultIdProperty a owl:DatatypeProperty ;
     rdfs:comment "Determines a path in the output response under which the IRI of the result component will be transmitted."@en ;
     rdfs:domain cx-fx:Result ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/function_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/function_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:altLabel "Function Result ID Property"@en ;
@@ -429,7 +457,7 @@ cx-fx:resultIdProperty a owl:DatatypeProperty ;
 
 cx-fx:supportsInvocation a owl:ObjectProperty ;
     rdfs:domain rdfs:Resource ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/function_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/function_ontology.ttl> ;
     rdfs:range cx-fx:Function ;
     skos:note "Documents that a given resource supports a certain function."@en ;
     skos:prefLabel "Function Support"@en .
@@ -437,7 +465,7 @@ cx-fx:supportsInvocation a owl:ObjectProperty ;
 cx-fx:targetUri a owl:ObjectProperty ;
     rdfs:comment "The target URI of the function should resolve to some existing service (URL)."@en ;
     rdfs:domain cx-fx:Function ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/function_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/function_ontology.ttl> ;
     rdfs:range rdfs:Resource ;
     skos:example <class:org.eclipse.tractusx.agents.remoting.TestFunction#test>,
         <http://tiera-backend:5005/api/rul>,
@@ -447,7 +475,7 @@ cx-fx:targetUri a owl:ObjectProperty ;
 cx-fx:valuePath a owl:DatatypeProperty ;
     rdfs:comment "Determines a path in the output response under which a return value is transmitted."@en ;
     rdfs:domain cx-fx:ReturnValue ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/function_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/function_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:altLabel "Function Result Value Path"@en ;
@@ -455,57 +483,57 @@ cx-fx:valuePath a owl:DatatypeProperty ;
     skos:prefLabel "Value Path"@en .
 
 cx-reliability:LoadSpectrumAnalysis a owl:Class ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:subClassOf cx-reliability:OnBoardTelematics ;
     skos:prefLabel "Load Spectrum Analysis"@en .
 
 cx-reliability:TelematicsResult a owl:Class ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:subClassOf cx-reliability:AnalysisResult ;
     skos:prefLabel "Telematics Result"@en .
 
 cx-reliability:analysedPart a owl:ObjectProperty ;
     rdfs:domain cx-reliability:Analysis ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:range cx-vehicle:Part ;
     rdfs:subPropertyOf cx-reliability:analysedObject ;
     skos:prefLabel "analysed Part"@en .
 
 cx-reliability:analysedVehicle a owl:ObjectProperty ;
     rdfs:domain cx-reliability:Analysis ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:range cx-vehicle:Vehicle ;
     rdfs:subPropertyOf cx-reliability:analysedObject ;
     skos:prefLabel "analysed Vehicle"@en .
 
 cx-reliability:channel a owl:ObjectProperty ;
     rdfs:domain cx-reliability:LoadSpectrum ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:range cx-reliability:LoadSpectrumChannel ;
     skos:prefLabel "load spectrum channel"@en .
 
 cx-reliability:channels a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:range json:Object .
 
 cx-reliability:class a owl:ObjectProperty ;
     rdfs:domain cx-reliability:LoadSpectrum ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:range cx-reliability:LoadSpectrumClass .
 
 cx-reliability:classes a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:range json:Object .
 
 cx-reliability:countingMethod a owl:DatatypeProperty ;
     rdfs:domain cx-reliability:LoadSpectrumValues ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:range xsd:string ;
     skos:prefLabel "Load Spectrum Counting Method"@en .
 
 cx-reliability:countingUnit a owl:DatatypeProperty ;
     rdfs:domain cx-reliability:LoadSpectrumValues ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:range xsd:string ;
     skos:example "frequency"@en,
         "seconds"@en ;
@@ -513,13 +541,13 @@ cx-reliability:countingUnit a owl:DatatypeProperty ;
 
 cx-reliability:countingValue a owl:DatatypeProperty ;
     rdfs:domain cx-reliability:LoadSpectrumValues ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:range xsd:string ;
     skos:prefLabel "Load Spectrum Counting Value"@en .
 
 cx-reliability:datetime a owl:DatatypeProperty ;
     rdfs:domain cx-reliability:LoadSpectrum ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:range xsd:dateTime ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:definition "start of the measurement of load spectrum"@en ;
@@ -528,7 +556,7 @@ cx-reliability:datetime a owl:DatatypeProperty ;
 
 cx-reliability:description a owl:DatatypeProperty ;
     rdfs:domain cx-reliability:LoadSpectrum ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:definition "details about the load spectrum: who, what, where, when, how?"@en ;
@@ -539,7 +567,7 @@ cx-reliability:description a owl:DatatypeProperty ;
 
 cx-reliability:endDatetime a owl:DatatypeProperty ;
     rdfs:domain cx-reliability:LoadSpectrum ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:range xsd:dateTime ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:definition "end of the measurement of load spectrum"@en ;
@@ -548,12 +576,12 @@ cx-reliability:endDatetime a owl:DatatypeProperty ;
 
 cx-reliability:hasValues a owl:ObjectProperty ;
     rdfs:domain cx-reliability:LoadSpectrum ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:range cx-reliability:LoadSpectrumValues .
 
 cx-reliability:id a owl:DatatypeProperty ;
     rdfs:domain cx-reliability:LoadSpectrum ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:prefLabel "Lastkollektiv Id"@de,
@@ -561,7 +589,7 @@ cx-reliability:id a owl:DatatypeProperty ;
 
 cx-reliability:index a owl:DatatypeProperty ;
     rdfs:domain cx-reliability:LoadSpectrumValues ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:range xsd:string ;
     skos:example "2"@en,
         "3]"@en,
@@ -570,7 +598,7 @@ cx-reliability:index a owl:DatatypeProperty ;
 
 cx-reliability:lowerLimit a owl:DatatypeProperty ;
     rdfs:domain cx-reliability:LoadSpectrumChannel ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:range xsd:float ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:example "-40"@en ;
@@ -578,7 +606,7 @@ cx-reliability:lowerLimit a owl:DatatypeProperty ;
 
 cx-reliability:mileageOfVehicle a owl:DatatypeProperty ;
     rdfs:domain cx-reliability:Analysis ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:prefLabel "Mileage of Vehicle"@en .
@@ -586,7 +614,7 @@ cx-reliability:mileageOfVehicle a owl:DatatypeProperty ;
 cx-reliability:name a owl:DatatypeProperty ;
     rdfs:domain cx-reliability:LoadSpectrum,
         cx-reliability:LoadSpectrumChannel ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:example "rotational speed"@en ;
@@ -595,30 +623,29 @@ cx-reliability:name a owl:DatatypeProperty ;
 
 cx-reliability:numberOfBins a owl:DatatypeProperty ;
     rdfs:domain cx-reliability:LoadSpectrumChannel ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:example "52"@en ;
     skos:prefLabel "Load Spectrum Channel Number Of Bins"@en .
 
-###  https://w3id.org/catenax/ontology/reliability#operatingHoursOfPart
-cx-reliability:operatingHoursOfPart rdf:type owl:DatatypeProperty ;
-                                    rdfs:subPropertyOf owl:topDataProperty ;
-                                    rdfs:domain cx-reliability:Analysis ;
-                                    rdfs:range xsd:float ;
-                                    skos:prefLabel "operating Hours of Part"@en .
+cx-reliability:operatingHoursOfPart a owl:DatatypeProperty ;
+    rdfs:domain cx-reliability:Analysis ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
+    rdfs:range xsd:float ;
+    rdfs:subPropertyOf owl:topDataProperty ;
+    skos:prefLabel "operating Hours of Part"@en .
 
-
-###  https://w3id.org/catenax/ontology/reliability#operatingHoursOfVehicle
-cx-reliability:operatingHoursOfVehicle rdf:type owl:DatatypeProperty ;
-                                       rdfs:subPropertyOf owl:topDataProperty ;
-                                       rdfs:domain cx-reliability:Analysis ;
-                                       rdfs:range xsd:float ;
-                                       skos:prefLabel "operating Hours of Vehicle"@en .
+cx-reliability:operatingHoursOfVehicle a owl:DatatypeProperty ;
+    rdfs:domain cx-reliability:Analysis ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
+    rdfs:range xsd:float ;
+    rdfs:subPropertyOf owl:topDataProperty ;
+    skos:prefLabel "operating Hours of Vehicle"@en .
 
 cx-reliability:result a owl:ObjectProperty ;
     rdfs:domain cx-reliability:Analysis ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:range cx-reliability:AnalysisResult ;
     rdfs:subPropertyOf cx-core:refersToConceptualObject ;
     skos:prefLabel "result"@en .
@@ -626,7 +653,7 @@ cx-reliability:result a owl:ObjectProperty ;
 cx-reliability:type a owl:DatatypeProperty ;
     rdfs:domain cx-reliability:LoadSpectrum,
         cx-reliability:LoadSpectrumChannel ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:example "count"@en,
@@ -636,20 +663,20 @@ cx-reliability:type a owl:DatatypeProperty ;
 
 cx-reliability:unit a owl:DatatypeProperty ;
     rdfs:domain cx-reliability:LoadSpectrumChannel ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:range xsd:string ;
     skos:prefLabel "Load Spectrum Channel Unit"@en .
 
 cx-reliability:upperLimit a owl:DatatypeProperty ;
     rdfs:domain cx-reliability:LoadSpectrumChannel ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:range xsd:float ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:example "220"@en ;
     skos:prefLabel "Load Spectrum Channel Upper Limit"@en .
 
 cx-reliability:values a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:range json:Object ;
     skos:example "3"@en,
         "4]"@en,
@@ -658,7 +685,7 @@ cx-reliability:values a owl:DatatypeProperty ;
 
 cx-vehicle:acceleration a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/0_to_60_mph>,
         schema:accelerationTime ;
@@ -671,7 +698,7 @@ cx-vehicle:acceleration a owl:DatatypeProperty ;
 
 cx-vehicle:adblueTankCapacity a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:subPropertyOf cx-vehicle:fuelInformation ;
     skos:example "8"@en ;
@@ -680,7 +707,7 @@ cx-vehicle:adblueTankCapacity a owl:DatatypeProperty ;
 
 cx-vehicle:age a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx-vehicle:stateInformation ;
     skos:definition "The current age of the vehicle in years."@en ;
@@ -691,7 +718,7 @@ cx-vehicle:age a owl:DatatypeProperty ;
 
 cx-vehicle:airConditioningType a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Air_conditioning> ;
     rdfs:subPropertyOf cx-vehicle:interiorInformation ;
@@ -700,7 +727,7 @@ cx-vehicle:airConditioningType a owl:DatatypeProperty ;
     skos:prefLabel "Air Conditioning Type"@en .
 
 cx-vehicle:assemblyCountry a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso schema:countryOfAssembly ;
     rdfs:subPropertyOf cx-vehicle:productionInformation ;
@@ -709,7 +736,7 @@ cx-vehicle:assemblyCountry a owl:DatatypeProperty ;
         "Assembly Country"@en .
 
 cx-vehicle:assemblyPlant a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:productionInformation ;
     skos:prefLabel "Montagewerk"@de,
@@ -717,21 +744,21 @@ cx-vehicle:assemblyPlant a owl:DatatypeProperty ;
 
 cx-vehicle:assistanceSystem a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:suspensionInformation ;
     skos:prefLabel "Assistance System"@en .
 
 cx-vehicle:batteryCapacity a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx-vehicle:batteryInformation ;
     skos:note "in kWhs"@en ;
     skos:prefLabel "Battery Capacity"@en .
 
 cx-vehicle:batteryType a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:batteryInformation ;
     skos:example "Li-Ion"@en ;
@@ -739,7 +766,7 @@ cx-vehicle:batteryType a owl:DatatypeProperty ;
 
 cx-vehicle:batteryWeight a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx-vehicle:batteryInformation ;
     skos:example "250"@en ;
@@ -748,7 +775,7 @@ cx-vehicle:batteryWeight a owl:DatatypeProperty ;
 
 cx-vehicle:bodyStyle a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso schema:bodyType ;
     rdfs:subPropertyOf cx-vehicle:bodyInformation ;
@@ -762,7 +789,7 @@ cx-vehicle:bodyStyle a owl:DatatypeProperty ;
 
 cx-vehicle:bore a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:subPropertyOf cx-vehicle:engineInformation ;
     skos:note "in mm"@en ;
@@ -770,7 +797,7 @@ cx-vehicle:bore a owl:DatatypeProperty ;
 
 cx-vehicle:brand a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso schema:brand ;
     rdfs:subPropertyOf cx-vehicle:modelInformation ;
@@ -784,7 +811,7 @@ cx-vehicle:brand a owl:DatatypeProperty ;
 
 cx-vehicle:breaking a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Brake> ;
     rdfs:subPropertyOf cx-vehicle:performanceInformation ;
@@ -796,7 +823,7 @@ cx-vehicle:breaking a owl:DatatypeProperty ;
 
 cx-vehicle:camshaftValvetrainConfiguration a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:engineInformation ;
     skos:example "DOHC"@en ;
@@ -804,7 +831,7 @@ cx-vehicle:camshaftValvetrainConfiguration a owl:DatatypeProperty ;
 
 cx-vehicle:cargoVolume a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso schema:cargoVolume ;
     rdfs:subPropertyOf cx-vehicle:cargoInformation ;
@@ -816,7 +843,7 @@ cx-vehicle:cargoVolume a owl:DatatypeProperty ;
 
 cx-vehicle:chargingTime a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:subPropertyOf cx-vehicle:batteryInformation ;
     skos:note "in hours"@en ;
@@ -824,14 +851,14 @@ cx-vehicle:chargingTime a owl:DatatypeProperty ;
 
 cx-vehicle:classification a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:EClassType ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:prefLabel "EClass classification"@en .
 
 cx-vehicle:clutchType a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Clutch> ;
     rdfs:subPropertyOf cx-vehicle:powertrainInformation ;
@@ -842,7 +869,7 @@ cx-vehicle:clutchType a owl:DatatypeProperty ;
 
 cx-vehicle:co2Emissions a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:seeAlso schema:emissionsCO2 ;
     rdfs:subPropertyOf cx-vehicle:fuelInformation ;
@@ -853,7 +880,7 @@ cx-vehicle:co2Emissions a owl:DatatypeProperty ;
 
 cx-vehicle:co2EmissionsWltp a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:seeAlso schema:emissionsCO2 ;
     rdfs:subPropertyOf cx-vehicle:fuelInformation ;
@@ -864,14 +891,14 @@ cx-vehicle:co2EmissionsWltp a owl:DatatypeProperty ;
 
 cx-vehicle:configuration a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso schema:vehicleConfiguration ;
     skos:definition "A short text indicating the configuration of the vehicle, e.g. '5dr hatchback ST 2.5 MT 225 hp' or 'limited edition'."@en ;
     skos:prefLabel "Vehicle Configuration"@en .
 
 cx-vehicle:countryOption a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:productionInformation ;
     skos:altLabel "national-market version"@en ;
@@ -883,7 +910,7 @@ cx-vehicle:countryOption a owl:DatatypeProperty ;
 
 cx-vehicle:curbWeight a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Vehicle_weight#Curb_weight> ;
     rdfs:subPropertyOf cx-vehicle:bodyInformation ;
@@ -896,35 +923,35 @@ cx-vehicle:curbWeight a owl:DatatypeProperty ;
         "Vehicle Curb Weight"@en .
 
 cx-vehicle:deliveryCountry a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:productionInformation ;
     skos:prefLabel "Auslieferland"@de,
         "Delivery Country"@en .
 
 cx-vehicle:deliveryDate a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:date ;
     rdfs:subPropertyOf cx-vehicle:productionInformation ;
     skos:prefLabel "Auslieferdatum"@de,
         "Delivery Date"@en .
 
 cx-vehicle:deliveryPrice a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx-vehicle:productionInformation ;
     skos:prefLabel "Lieferpreis"@de,
         "Delivery Price"@en .
 
 cx-vehicle:description a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:prefLabel "Description"@en .
 
 cx-vehicle:developmentSeries a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:modelInformation ;
     skos:altLabel "Baureihe"@de,
@@ -948,7 +975,7 @@ cx-vehicle:developmentSeries a owl:DatatypeProperty ;
 
 cx-vehicle:dragCoefficient a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Automobile_drag_coefficient> ;
     rdfs:subPropertyOf cx-vehicle:bodyInformation ;
@@ -959,7 +986,7 @@ cx-vehicle:dragCoefficient a owl:DatatypeProperty ;
 
 cx-vehicle:driveWheelType a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Drive_wheel>,
         schema:driveWheelConfiguration ;
@@ -974,7 +1001,7 @@ cx-vehicle:driveWheelType a owl:DatatypeProperty ;
 
 cx-vehicle:dryWeight a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Vehicle_weight#Dry_weight> ;
     rdfs:subPropertyOf cx-vehicle:bodyInformation ;
@@ -983,20 +1010,20 @@ cx-vehicle:dryWeight a owl:DatatypeProperty ;
 
 cx-vehicle:eClassType a owl:ObjectProperty ;
     rdfs:domain cx-core:PhysicalObject ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range cx-vehicle:EClassType ;
     rdfs:subPropertyOf cx-core:describedByConceptualObject .
 
 cx-vehicle:electricConsumption a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:subPropertyOf cx-vehicle:batteryInformation ;
     skos:prefLabel "Electric Consumption"@en .
 
 cx-vehicle:electricPower a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx-vehicle:batteryInformation ;
     skos:altLabel "Nennleistung"@de ;
@@ -1005,7 +1032,7 @@ cx-vehicle:electricPower a owl:DatatypeProperty ;
 
 cx-vehicle:electricRange a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx-vehicle:performanceInformation ;
     skos:note "in kilometers"@en ;
@@ -1014,7 +1041,7 @@ cx-vehicle:electricRange a owl:DatatypeProperty ;
 
 cx-vehicle:electricRangeWltp a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx-vehicle:performanceInformation ;
     skos:note "in kilometers"@en ;
@@ -1023,7 +1050,7 @@ cx-vehicle:electricRangeWltp a owl:DatatypeProperty ;
 
 cx-vehicle:emissionClass a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Vehicle_emission_standard> ;
     rdfs:subPropertyOf cx-vehicle:fuelInformation ;
@@ -1037,7 +1064,7 @@ cx-vehicle:emissionClass a owl:DatatypeProperty ;
 
 cx-vehicle:engineAlignment a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:engineInformation ;
     skos:example "longitudinal"@en,
@@ -1047,7 +1074,7 @@ cx-vehicle:engineAlignment a owl:DatatypeProperty ;
 
 cx-vehicle:engineAspiration a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso <https://de.wikipedia.org/wiki/Turbolader> ;
     rdfs:subPropertyOf cx-vehicle:engineInformation ;
@@ -1058,7 +1085,7 @@ cx-vehicle:engineAspiration a owl:DatatypeProperty ;
 
 cx-vehicle:engineCompressionRatio a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Compression_ratio> ;
     rdfs:subPropertyOf cx-vehicle:engineInformation ;
@@ -1068,7 +1095,7 @@ cx-vehicle:engineCompressionRatio a owl:DatatypeProperty ;
 
 cx-vehicle:engineDisplacement a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Engine_displacement>,
         schema:engineDisplacement ;
@@ -1081,7 +1108,7 @@ cx-vehicle:engineDisplacement a owl:DatatypeProperty ;
 
 cx-vehicle:engineFamily a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:engineInformation ;
     skos:example "Inline 4"@en,
@@ -1093,7 +1120,7 @@ cx-vehicle:engineFamily a owl:DatatypeProperty ;
 
 cx-vehicle:engineForm a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Engine_configuration> ;
     rdfs:subPropertyOf cx-vehicle:engineInformation ;
@@ -1108,7 +1135,7 @@ cx-vehicle:engineForm a owl:DatatypeProperty ;
 
 cx-vehicle:engineFuelInjection a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Fuel_injection> ;
     rdfs:subPropertyOf cx-vehicle:engineInformation ;
@@ -1119,7 +1146,7 @@ cx-vehicle:engineFuelInjection a owl:DatatypeProperty ;
 
 cx-vehicle:engineGeneration a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:engineInformation ;
     skos:example "1"@en,
@@ -1130,7 +1157,7 @@ cx-vehicle:engineGeneration a owl:DatatypeProperty ;
 
 cx-vehicle:engineManufacturer a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:engineInformation ;
     skos:example "Audi"@en,
@@ -1142,7 +1169,7 @@ cx-vehicle:engineManufacturer a owl:DatatypeProperty ;
 
 cx-vehicle:engineMaxPower a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso schema:enginePower ;
     rdfs:subPropertyOf cx-vehicle:engineInformation ;
@@ -1155,7 +1182,7 @@ cx-vehicle:engineMaxPower a owl:DatatypeProperty ;
 
 cx-vehicle:engineMaxTorque a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Torque>,
         schema:torque ;
@@ -1168,7 +1195,7 @@ cx-vehicle:engineMaxTorque a owl:DatatypeProperty ;
 
 cx-vehicle:engineName a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso schema:vehicleEngine ;
     rdfs:subPropertyOf cx-vehicle:engineInformation ;
@@ -1179,7 +1206,7 @@ cx-vehicle:engineName a owl:DatatypeProperty ;
 
 cx-vehicle:enginePerformanceClass a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:engineInformation ;
     skos:example "high"@en,
@@ -1190,7 +1217,7 @@ cx-vehicle:enginePerformanceClass a owl:DatatypeProperty ;
 
 cx-vehicle:enginePosition a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:engineInformation ;
     skos:altLabel "Motoranordnung"@de ;
@@ -1202,7 +1229,7 @@ cx-vehicle:enginePosition a owl:DatatypeProperty ;
 
 cx-vehicle:engineSeries a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:engineInformation ;
     skos:example "b38"@en ;
@@ -1211,7 +1238,7 @@ cx-vehicle:engineSeries a owl:DatatypeProperty ;
 
 cx-vehicle:engineTypeCode a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:engineInformation ;
     skos:prefLabel "Motortypschlüssel"@de,
@@ -1219,7 +1246,7 @@ cx-vehicle:engineTypeCode a owl:DatatypeProperty ;
 
 cx-vehicle:engineVersion a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:engineInformation ;
     skos:altLabel "Technische Überarbeitung"@de ;
@@ -1228,7 +1255,7 @@ cx-vehicle:engineVersion a owl:DatatypeProperty ;
 
 cx-vehicle:euEnergyLabel a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/European_Union_energy_label#Cars> ;
     rdfs:subPropertyOf cx-vehicle:fuelInformation ;
@@ -1244,7 +1271,7 @@ cx-vehicle:euEnergyLabel a owl:DatatypeProperty ;
 
 cx-vehicle:euroCarSegment a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Euro_Car_Segment> ;
     rdfs:subPropertyOf cx-vehicle:bodyInformation ;
@@ -1255,7 +1282,7 @@ cx-vehicle:euroCarSegment a owl:DatatypeProperty ;
 
 cx-vehicle:expectedLifetime a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx-vehicle:lifetimeInformation ;
     skos:example "12"@en ;
@@ -1265,7 +1292,7 @@ cx-vehicle:expectedLifetime a owl:DatatypeProperty ;
 
 cx-vehicle:expectedLifetimeMileage a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx-vehicle:lifetimeInformation ;
     skos:example "150000"@en ;
@@ -1275,7 +1302,7 @@ cx-vehicle:expectedLifetimeMileage a owl:DatatypeProperty ;
 
 cx-vehicle:exteriorColor a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso schema:color ;
     rdfs:subPropertyOf cx-vehicle:bodyInformation ;
@@ -1284,7 +1311,7 @@ cx-vehicle:exteriorColor a owl:DatatypeProperty ;
 
 cx-vehicle:frontBrakeDiscDiameter a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:subPropertyOf cx-vehicle:bodyInformation ;
     skos:note "in mm"@en ;
@@ -1292,7 +1319,7 @@ cx-vehicle:frontBrakeDiscDiameter a owl:DatatypeProperty ;
 
 cx-vehicle:frontSpringType a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:suspensionInformation ;
     skos:example "coil"@en ;
@@ -1300,7 +1327,7 @@ cx-vehicle:frontSpringType a owl:DatatypeProperty ;
 
 cx-vehicle:frontSuspension a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Independent_suspension> ;
     rdfs:subPropertyOf cx-vehicle:suspensionInformation ;
@@ -1310,7 +1337,7 @@ cx-vehicle:frontSuspension a owl:DatatypeProperty ;
 
 cx-vehicle:fuelConsumptionCity a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Fuel_economy_in_automobiles>,
         schema:fuelConsumption ;
@@ -1323,7 +1350,7 @@ cx-vehicle:fuelConsumptionCity a owl:DatatypeProperty ;
 
 cx-vehicle:fuelConsumptionCombined a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Fuel_economy_in_automobiles>,
         schema:fuelConsumption ;
@@ -1337,7 +1364,7 @@ cx-vehicle:fuelConsumptionCombined a owl:DatatypeProperty ;
 
 cx-vehicle:fuelConsumptionHighway a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Fuel_economy_in_automobiles>,
         schema:fuelConsumption ;
@@ -1350,7 +1377,7 @@ cx-vehicle:fuelConsumptionHighway a owl:DatatypeProperty ;
 
 cx-vehicle:fuelEfficiency a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso schema:fuelEfficiency ;
     rdfs:subPropertyOf cx-vehicle:fuelInformation ;
@@ -1359,7 +1386,7 @@ cx-vehicle:fuelEfficiency a owl:DatatypeProperty ;
 
 cx-vehicle:fuelTankCapacity a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso schema:fuelCapacity ;
     rdfs:subPropertyOf cx-vehicle:fuelInformation ;
@@ -1371,7 +1398,7 @@ cx-vehicle:fuelTankCapacity a owl:DatatypeProperty ;
 
 cx-vehicle:fuelType a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso schema:fuelType ;
     rdfs:subPropertyOf cx-vehicle:fuelInformation ;
@@ -1383,7 +1410,7 @@ cx-vehicle:fuelType a owl:DatatypeProperty ;
 
 cx-vehicle:grossVehicleMass a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Vehicle_weight#Gross_vehicle_weight_rating> ;
     rdfs:subPropertyOf cx-vehicle:cargoInformation ;
@@ -1400,7 +1427,7 @@ cx-vehicle:grossVehicleMass a owl:DatatypeProperty ;
 
 cx-vehicle:groundClearance a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:subPropertyOf cx-vehicle:bodyInformation ;
     skos:altLabel "Bodenfreiheit"@de ;
@@ -1410,28 +1437,28 @@ cx-vehicle:groundClearance a owl:DatatypeProperty ;
 
 cx-vehicle:hasAutomaticHeadLights a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:boolean ;
     rdfs:subPropertyOf cx-vehicle:lightingInformation ;
     skos:prefLabel "Has Automatic Head Lights"@en .
 
 cx-vehicle:hasFogLights a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:boolean ;
     rdfs:subPropertyOf cx-vehicle:lightingInformation ;
     skos:prefLabel "Has Fog Lights"@en .
 
 cx-vehicle:hasModem a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:boolean ;
     rdfs:subPropertyOf cx-vehicle:communicationInformation ;
     skos:prefLabel "Has Modem"@en .
 
 cx-vehicle:hasNavigation a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:boolean ;
     rdfs:subPropertyOf cx-vehicle:infotainmentInformation ;
     skos:example "yes"@en ;
@@ -1439,14 +1466,14 @@ cx-vehicle:hasNavigation a owl:DatatypeProperty ;
 
 cx-vehicle:hasPart a owl:ObjectProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range cx-vehicle:Part ;
     rdfs:subPropertyOf owl:topObjectProperty ;
     owl:inverseOf cx-vehicle:isPartOf .
 
 cx-vehicle:hasRadio a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:boolean ;
     rdfs:subPropertyOf cx-vehicle:infotainmentInformation ;
     skos:example "yes"@en ;
@@ -1454,7 +1481,7 @@ cx-vehicle:hasRadio a owl:DatatypeProperty ;
 
 cx-vehicle:hasSubpart a owl:ObjectProperty ;
     rdfs:domain cx-vehicle:Part ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range cx-vehicle:Part ;
     rdfs:subPropertyOf owl:topObjectProperty ;
     owl:inverseOf cx-vehicle:isSubpartOf ;
@@ -1462,7 +1489,7 @@ cx-vehicle:hasSubpart a owl:ObjectProperty ;
 
 cx-vehicle:height a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso schema:height ;
     rdfs:subPropertyOf cx-vehicle:bodyInformation ;
@@ -1470,7 +1497,7 @@ cx-vehicle:height a owl:DatatypeProperty ;
     skos:prefLabel "Vehicle Height"@en .
 
 cx-vehicle:id a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:partInformation ;
     skos:prefLabel "Bauteil Id"@de,
@@ -1478,7 +1505,7 @@ cx-vehicle:id a owl:DatatypeProperty ;
 
 cx-vehicle:interiorColor a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso schema:vehicleInteriorColor ;
     rdfs:subPropertyOf cx-vehicle:interiorInformation ;
@@ -1487,7 +1514,7 @@ cx-vehicle:interiorColor a owl:DatatypeProperty ;
 
 cx-vehicle:interiorType a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso schema:vehicleInteriorType ;
     rdfs:subPropertyOf cx-vehicle:interiorInformation ;
@@ -1499,14 +1526,14 @@ cx-vehicle:interiorType a owl:DatatypeProperty ;
 
 cx-vehicle:irdi a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:EClassType ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:prefLabel "EClass IRDI Code"@en .
 
 cx-vehicle:isVariantOf a owl:ObjectProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range cx-vehicle:VehicleModel ;
     rdfs:seeAlso schema:isVariantOf ;
     rdfs:subPropertyOf cx-core:describedByConceptualObject ;
@@ -1514,7 +1541,7 @@ cx-vehicle:isVariantOf a owl:ObjectProperty ;
 
 cx-vehicle:length a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso schema:depth ;
     rdfs:subPropertyOf cx-vehicle:bodyInformation ;
@@ -1522,7 +1549,7 @@ cx-vehicle:length a owl:DatatypeProperty ;
     skos:prefLabel "Vehicle Length"@en .
 
 cx-vehicle:listPrice a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:seeAlso <https://de.wikipedia.org/wiki/Unverbindliche_Preisempfehlung> ;
     rdfs:subPropertyOf cx-vehicle:productionInformation ;
@@ -1537,15 +1564,26 @@ cx-vehicle:listPrice a owl:DatatypeProperty ;
 
 cx-vehicle:location a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:stateInformation ;
     skos:prefLabel "Fahrzeugstandort"@de,
         "Vehicle Location"@en .
 
+cx-vehicle:manufacturer a owl:ObjectProperty ;
+    rdfs:domain cx-vehicle:Vehicle ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf owl:topObjectProperty ;
+    skos:altLabel "OEM"@en,
+        "Vehicle Manufacturer"@en ;
+    skos:definition "The manufacturer of the vehicle."@en ;
+    skos:prefLabel "Hersteller"@de,
+        "Manufacturer"@en .
+
 cx-vehicle:manufacturerKeyNumber a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso <https://de.wikipedia.org/wiki/Herstellerschl%C3%BCsselnummer> ;
     rdfs:subPropertyOf cx-vehicle:registrationInformation ;
@@ -1558,7 +1596,7 @@ cx-vehicle:manufacturerKeyNumber a owl:DatatypeProperty ;
 
 cx-vehicle:maxAxleLoad a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Axle_load> ;
     rdfs:subPropertyOf cx-vehicle:cargoInformation ;
@@ -1568,7 +1606,7 @@ cx-vehicle:maxAxleLoad a owl:DatatypeProperty ;
 
 cx-vehicle:maxPayload a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso schema:payload ;
     rdfs:subPropertyOf cx-vehicle:cargoInformation ;
@@ -1579,7 +1617,7 @@ cx-vehicle:maxPayload a owl:DatatypeProperty ;
 
 cx-vehicle:maxSpeed a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:seeAlso schema:speed ;
     rdfs:subPropertyOf cx-vehicle:performanceInformation ;
@@ -1592,7 +1630,7 @@ cx-vehicle:maxSpeed a owl:DatatypeProperty ;
 
 cx-vehicle:maxTowingCapacity a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso <https://de.wikipedia.org/wiki/Anh%C3%A4ngelast> ;
     rdfs:subPropertyOf cx-vehicle:cargoInformation ;
@@ -1603,7 +1641,7 @@ cx-vehicle:maxTowingCapacity a owl:DatatypeProperty ;
 
 cx-vehicle:mileage a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:seeAlso schema:mileageFromOdometer ;
     rdfs:subPropertyOf cx-vehicle:stateInformation ;
@@ -1615,7 +1653,7 @@ cx-vehicle:mileage a owl:DatatypeProperty ;
 
 cx-vehicle:model a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Car_model>,
         schema:ProductModel,
@@ -1631,7 +1669,7 @@ cx-vehicle:model a owl:DatatypeProperty ;
 
 cx-vehicle:modelArchitecture a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:modelInformation ;
     skos:prefLabel "Fahrzeugarchitektur"@de,
@@ -1639,7 +1677,7 @@ cx-vehicle:modelArchitecture a owl:DatatypeProperty ;
 
 cx-vehicle:modelEndOfProduction a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:date ;
     rdfs:subPropertyOf cx-vehicle:modelInformation ;
     skos:example "present"@en ;
@@ -1648,7 +1686,7 @@ cx-vehicle:modelEndOfProduction a owl:DatatypeProperty ;
 
 cx-vehicle:modelGeneration a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx-vehicle:modelInformation ;
     skos:example "1"@en,
@@ -1659,7 +1697,7 @@ cx-vehicle:modelGeneration a owl:DatatypeProperty ;
 
 cx-vehicle:modelSeries a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso schema:ProductGroup ;
     rdfs:subPropertyOf cx-vehicle:modelInformation ;
@@ -1683,7 +1721,7 @@ cx-vehicle:modelSeries a owl:DatatypeProperty ;
 
 cx-vehicle:modelStartOfProduction a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:date ;
     rdfs:seeAlso schema:vehicleModelDate ;
     rdfs:subPropertyOf cx-vehicle:modelInformation ;
@@ -1693,7 +1731,7 @@ cx-vehicle:modelStartOfProduction a owl:DatatypeProperty ;
 
 cx-vehicle:modelVariant a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Car_model>,
         <https://en.wikipedia.org/wiki/Trim_level_> ;
@@ -1711,12 +1749,12 @@ cx-vehicle:modelVariant a owl:DatatypeProperty ;
         "Model Variant"@en .
 
 cx-vehicle:name a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty .
 
 cx-vehicle:number a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Part_number> ;
     rdfs:subPropertyOf cx-vehicle:partInformation ;
@@ -1729,7 +1767,7 @@ cx-vehicle:number a owl:DatatypeProperty ;
 
 cx-vehicle:numberOfAirbags a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:seeAlso schema:numberOfAirbags ;
     rdfs:subPropertyOf cx-vehicle:safetyInformation ;
@@ -1742,7 +1780,7 @@ cx-vehicle:numberOfAirbags a owl:DatatypeProperty ;
 
 cx-vehicle:numberOfAxles a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:seeAlso schema:numberOfAxles ;
     rdfs:subPropertyOf cx-vehicle:chassisInformation ;
@@ -1754,7 +1792,7 @@ cx-vehicle:numberOfAxles a owl:DatatypeProperty ;
 
 cx-vehicle:numberOfCylinders a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx-vehicle:engineInformation ;
     skos:altLabel "Zylinderanzahl"@de ;
@@ -1769,7 +1807,7 @@ cx-vehicle:numberOfCylinders a owl:DatatypeProperty ;
 
 cx-vehicle:numberOfDoors a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:seeAlso schema:numberOfDoors ;
     rdfs:subPropertyOf cx-vehicle:bodyInformation ;
@@ -1781,7 +1819,7 @@ cx-vehicle:numberOfDoors a owl:DatatypeProperty ;
 
 cx-vehicle:numberOfDriveAxles a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx-vehicle:chassisInformation ;
     skos:example "1"@en,
@@ -1791,7 +1829,7 @@ cx-vehicle:numberOfDriveAxles a owl:DatatypeProperty ;
 
 cx-vehicle:numberOfForwardGears a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:seeAlso schema:numberOfForwardGears ;
     rdfs:subPropertyOf cx-vehicle:powertrainInformation ;
@@ -1805,7 +1843,7 @@ cx-vehicle:numberOfForwardGears a owl:DatatypeProperty ;
 
 cx-vehicle:numberOfPassengers a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx-vehicle:interiorInformation ;
     skos:altLabel "passenger capacity"@en ;
@@ -1819,7 +1857,7 @@ cx-vehicle:numberOfPassengers a owl:DatatypeProperty ;
 
 cx-vehicle:numberOfSeatRows a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx-vehicle:interiorInformation ;
     skos:example "2"@en,
@@ -1829,7 +1867,7 @@ cx-vehicle:numberOfSeatRows a owl:DatatypeProperty ;
 
 cx-vehicle:numberOfSeats a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:seeAlso schema:seatingCapacity,
         schema:vehicleSeatingCapacity ;
@@ -1845,7 +1883,7 @@ cx-vehicle:numberOfSeats a owl:DatatypeProperty ;
 
 cx-vehicle:numberOfStandingPlaces a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:seeAlso <https://de.wikipedia.org/wiki/Stehplatz> ;
     rdfs:subPropertyOf cx-vehicle:interiorInformation ;
@@ -1858,14 +1896,14 @@ cx-vehicle:numberOfStandingPlaces a owl:DatatypeProperty ;
 
 cx-vehicle:numberOfValves a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx-vehicle:engineInformation ;
     skos:prefLabel "Number Of Valves"@en .
 
 cx-vehicle:operatingHours a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx-vehicle:stateInformation ;
     skos:note "in hours"@en ;
@@ -1873,7 +1911,7 @@ cx-vehicle:operatingHours a owl:DatatypeProperty ;
         "Vehicle Operating Hours"@en .
 
 cx-vehicle:orderDate a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:date ;
     rdfs:subPropertyOf cx-vehicle:productionInformation ;
     skos:definition "The date the item was ordered by the owner."@en ;
@@ -1882,7 +1920,7 @@ cx-vehicle:orderDate a owl:DatatypeProperty ;
 
 cx-vehicle:passengerVolume a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:subPropertyOf cx-vehicle:cargoInformation ;
     skos:note "in liters"@en ;
@@ -1890,7 +1928,7 @@ cx-vehicle:passengerVolume a owl:DatatypeProperty ;
 
 cx-vehicle:powertrainLayout a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Powertrain_layout> ;
     rdfs:subPropertyOf cx-vehicle:powertrainInformation ;
@@ -1901,14 +1939,14 @@ cx-vehicle:powertrainLayout a owl:DatatypeProperty ;
 
 cx-vehicle:previousVehicleModel a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:modelInformation ;
     skos:prefLabel "Vorgängermodell"@de,
         "Previous Vehicle Model"@en .
 
 cx-vehicle:productionDate a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:date ;
     rdfs:seeAlso schema:productionDate ;
     rdfs:subPropertyOf cx-vehicle:productionInformation ;
@@ -1917,14 +1955,14 @@ cx-vehicle:productionDate a owl:DatatypeProperty ;
         "Production Date"@en .
 
 cx-vehicle:productionYear a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx-vehicle:productionInformation ;
     skos:prefLabel "Baujahr"@de,
         "Production Year"@en .
 
 cx-vehicle:purchaseDate a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:date ;
     rdfs:seeAlso schema:purchaseDate ;
     rdfs:subPropertyOf cx-vehicle:productionInformation ;
@@ -1933,7 +1971,7 @@ cx-vehicle:purchaseDate a owl:DatatypeProperty ;
         "Purchase Date"@en .
 
 cx-vehicle:purchasePrice a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx-vehicle:productionInformation ;
     skos:prefLabel "Kaufpreis"@de,
@@ -1941,7 +1979,7 @@ cx-vehicle:purchasePrice a owl:DatatypeProperty ;
 
 cx-vehicle:range a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:seeAlso <https://www.wikidata.org/wiki/Property:P2073> ;
     rdfs:subPropertyOf cx-vehicle:performanceInformation ;
@@ -1952,7 +1990,7 @@ cx-vehicle:range a owl:DatatypeProperty ;
 
 cx-vehicle:rangeWltp a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx-vehicle:performanceInformation ;
     skos:example "650"@en ;
@@ -1961,7 +1999,7 @@ cx-vehicle:rangeWltp a owl:DatatypeProperty ;
 
 cx-vehicle:rearSpringType a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:suspensionInformation ;
     skos:example "coil"@en ;
@@ -1969,7 +2007,7 @@ cx-vehicle:rearSpringType a owl:DatatypeProperty ;
 
 cx-vehicle:rearSuspension a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Independent_suspension> ;
     rdfs:subPropertyOf cx-vehicle:suspensionInformation ;
@@ -1979,14 +2017,14 @@ cx-vehicle:rearSuspension a owl:DatatypeProperty ;
 
 cx-vehicle:registrationAuthority a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:registrationInformation ;
     skos:prefLabel "Vehicle Registration Authority"@en .
 
 cx-vehicle:registrationDate a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:date ;
     rdfs:seeAlso schema:dateVehicleFirstRegistered ;
     rdfs:subPropertyOf cx-vehicle:registrationInformation ;
@@ -1995,14 +2033,14 @@ cx-vehicle:registrationDate a owl:DatatypeProperty ;
 
 cx-vehicle:registrationLocation a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:registrationInformation ;
     skos:prefLabel "Vehicle Registration Location"@en .
 
 cx-vehicle:registrationOwner a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Vehicle_title> ;
     rdfs:subPropertyOf cx-vehicle:registrationInformation ;
@@ -2011,7 +2049,7 @@ cx-vehicle:registrationOwner a owl:DatatypeProperty ;
 
 cx-vehicle:registrationPlate a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Vehicle_registration_plate> ;
     rdfs:subPropertyOf cx-vehicle:registrationInformation ;
@@ -2027,7 +2065,7 @@ cx-vehicle:registrationPlate a owl:DatatypeProperty ;
 
 cx-vehicle:rim a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Rim_> ;
     rdfs:subPropertyOf cx-vehicle:suspensionInformation ;
@@ -2035,7 +2073,7 @@ cx-vehicle:rim a owl:DatatypeProperty ;
 
 cx-vehicle:roadNoise a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:seeAlso <https://de.wikipedia.org/wiki/Fahrger%C3%A4usch> ;
     rdfs:subPropertyOf cx-vehicle:performanceInformation ;
@@ -2046,7 +2084,7 @@ cx-vehicle:roadNoise a owl:DatatypeProperty ;
 
 cx-vehicle:specialUsage a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso schema:vehicleSpecialUsage ;
     skos:definition "Indicates whether the vehicle has been used for special purposes, like commercial rental, driving school, or as a taxi. The legislation in many countries requires this information to be revealed when offering a car for sale."@en ;
@@ -2054,14 +2092,14 @@ cx-vehicle:specialUsage a owl:DatatypeProperty ;
 
 cx-vehicle:stateDateTime a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:dateTime ;
     rdfs:subPropertyOf cx-vehicle:stateInformation ;
     skos:prefLabel "Vehicle State Date Time"@en .
 
 cx-vehicle:stationaryNoise a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:seeAlso <https://de.wikipedia.org/wiki/Fahrger%C3%A4usch> ;
     rdfs:subPropertyOf cx-vehicle:performanceInformation ;
@@ -2072,7 +2110,7 @@ cx-vehicle:stationaryNoise a owl:DatatypeProperty ;
 
 cx-vehicle:steeringType a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Steering> ;
     rdfs:subPropertyOf cx-vehicle:powertrainInformation ;
@@ -2082,7 +2120,7 @@ cx-vehicle:steeringType a owl:DatatypeProperty ;
 
 cx-vehicle:steeringWheelPosition a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso schema:steeringPosition ;
     rdfs:subPropertyOf cx-vehicle:powertrainInformation ;
@@ -2093,21 +2131,22 @@ cx-vehicle:steeringWheelPosition a owl:DatatypeProperty ;
 
 cx-vehicle:stroke a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:subPropertyOf cx-vehicle:engineInformation ;
     skos:note "in mm"@en ;
     skos:prefLabel "Stroke"@en .
 
-cx-vehicle:supplier rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf owl:topObjectProperty ;
-                    rdfs:domain cx-vehicle:Part;
-                    rdfs:range rdfs:Resource ;
-                    skos:prefLabel "Part Supplier"@en .
+cx-vehicle:supplier a owl:ObjectProperty ;
+    rdfs:domain cx-vehicle:Part ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf owl:topObjectProperty ;
+    skos:prefLabel "Part Supplier"@en .
 
 cx-vehicle:tire a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Tire> ;
     rdfs:subPropertyOf cx-vehicle:suspensionInformation ;
@@ -2118,7 +2157,7 @@ cx-vehicle:tire a owl:DatatypeProperty ;
 
 cx-vehicle:tongueWeight a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso <https://de.wikipedia.org/wiki/Anh%C3%A4ngelast>,
         schema:tongueWeight ;
@@ -2130,7 +2169,7 @@ cx-vehicle:tongueWeight a owl:DatatypeProperty ;
 
 cx-vehicle:trailerWeight a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso schema:trailerWeight ;
     rdfs:subPropertyOf cx-vehicle:cargoInformation ;
@@ -2140,7 +2179,7 @@ cx-vehicle:trailerWeight a owl:DatatypeProperty ;
 
 cx-vehicle:transmission a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso schema:vehicleTransmission ;
     rdfs:subPropertyOf cx-vehicle:powertrainInformation ;
@@ -2151,7 +2190,7 @@ cx-vehicle:transmission a owl:DatatypeProperty ;
 
 cx-vehicle:trunkVolume a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:subPropertyOf cx-vehicle:cargoInformation ;
     skos:altLabel "trunk capacity"@en ;
@@ -2160,7 +2199,7 @@ cx-vehicle:trunkVolume a owl:DatatypeProperty ;
 
 cx-vehicle:turningRadius a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Turning_radius> ;
     rdfs:subPropertyOf cx-vehicle:bodyInformation ;
@@ -2170,7 +2209,7 @@ cx-vehicle:turningRadius a owl:DatatypeProperty ;
 
 cx-vehicle:typeCode a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:altLabel "Fahrzeugtyp"@de,
@@ -2183,7 +2222,7 @@ cx-vehicle:typeCode a owl:DatatypeProperty ;
 
 cx-vehicle:typeCodeNumber a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso <https://de.wikipedia.org/wiki/Typschl%C3%BCsselnummer> ;
     rdfs:subPropertyOf cx-vehicle:registrationInformation ;
@@ -2195,7 +2234,7 @@ cx-vehicle:typeCodeNumber a owl:DatatypeProperty ;
 
 cx-vehicle:vehicleIdentificationNumber a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Vehicle_identification_number>,
         schema:vehicleIdentificationNumber ;
@@ -2211,7 +2250,7 @@ cx-vehicle:vehicleIdentificationNumber a owl:DatatypeProperty ;
         "Vehicle Identification Number"@en .
 
 cx-vehicle:version a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:partInformation ;
     skos:altLabel "Versionsstand"@de,
@@ -2221,7 +2260,7 @@ cx-vehicle:version a owl:DatatypeProperty ;
 
 cx-vehicle:warrantyMaxDuration a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx-vehicle:warrantyInformation ;
     skos:example "48"@en ;
@@ -2230,7 +2269,7 @@ cx-vehicle:warrantyMaxDuration a owl:DatatypeProperty ;
 
 cx-vehicle:warrantyMaxMileage a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf cx-vehicle:warrantyInformation ;
     skos:example "50000"@en ;
@@ -2239,7 +2278,7 @@ cx-vehicle:warrantyMaxMileage a owl:DatatypeProperty ;
 
 cx-vehicle:weight a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Vehicle_weight>,
         schema:weight ;
@@ -2251,7 +2290,7 @@ cx-vehicle:weight a owl:DatatypeProperty ;
 
 cx-vehicle:weightTotal a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso schema:weightTotal ;
     rdfs:subPropertyOf cx-vehicle:cargoInformation ;
@@ -2261,7 +2300,7 @@ cx-vehicle:weightTotal a owl:DatatypeProperty ;
 
 cx-vehicle:wheelbase a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Wheelbase>,
         schema:wheelbase ;
@@ -2274,26 +2313,16 @@ cx-vehicle:wheelbase a owl:DatatypeProperty ;
 
 cx-vehicle:width a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:double ;
     rdfs:seeAlso schema:width ;
     rdfs:subPropertyOf cx-vehicle:bodyInformation ;
     skos:note "in cm"@en ;
     skos:prefLabel "Vehicle Width"@en .
 
-cx-vehicle:manufacturer rdf:type owl:ObjectProperty ;
-                               rdfs:subPropertyOf owl:topObjectProperty ;
-                               rdfs:domain cx-vehicle:Vehicle ;
-                               rdfs:range rdfs:Resource ;
-                               skos:altLabel "OEM"@en ,
-                                             "Vehicle Manufacturer"@en ;
-                               skos:definition "The manufacturer of the vehicle."@en ;
-                               skos:prefLabel "Hersteller"@de,
-                                              "Manufacturer"@en .
-
 cx-vehicle:worldManufacturerCountry a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:productionInformation ;
     skos:definition "The first 2 digits of the VIN."@en ;
@@ -2302,7 +2331,7 @@ cx-vehicle:worldManufacturerCountry a owl:DatatypeProperty ;
 
 cx-vehicle:worldManufacturerId a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:productionInformation ;
     skos:altLabel "WMI"@en,
@@ -2312,7 +2341,7 @@ cx-vehicle:worldManufacturerId a owl:DatatypeProperty ;
 
 cx-vehicle:worldManufacturerName a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:productionInformation ;
     skos:example "Audi"@en,
@@ -2322,7 +2351,7 @@ cx-vehicle:worldManufacturerName a owl:DatatypeProperty ;
 
 cx-vehicle:worldManufacturerRegion a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf cx-vehicle:productionInformation ;
     skos:definition "The first digit of the VIN."@en ;
@@ -2330,36 +2359,181 @@ cx-vehicle:worldManufacturerRegion a owl:DatatypeProperty ;
         "North America"@en ;
     skos:prefLabel "World Manufacturer Region"@en .
 
+cx-behaviour:bodyClasses a cx-fx:Argument ;
+    dc:description "Classes of Load Spectrum."@en ;
+    dc:title "Loadspectrum Classes" ;
+    rdfs:isDefinedBy <file:ontology/behaviour_ontology.ttl> ;
+    cx-fx:dataType json:Object .
+
+cx-behaviour:bodyCountsList a cx-fx:Argument ;
+    dc:description "Counts List of Load Spectrum."@en ;
+    dc:title "Loadspectrum Counts List" ;
+    rdfs:isDefinedBy <file:ontology/behaviour_ontology.ttl> ;
+    cx-fx:dataType json:Object .
+
+cx-behaviour:classification a cx-fx:Argument ;
+    dc:description "Classification of the notification."@en ;
+    dc:title "Notification Classification" ;
+    rdfs:isDefinedBy <file:ontology/behaviour_ontology.ttl> ;
+    cx-fx:dataType xsd:string .
+
+cx-behaviour:component a cx-fx:Argument ;
+    dc:description "Component of the Predicition."@en ;
+    dc:title "Predicted Component" ;
+    rdfs:isDefinedBy <file:ontology/behaviour_ontology.ttl> ;
+    cx-fx:dataType cx-vehicle:Part .
+
+cx-behaviour:countingMethod a cx-fx:Argument ;
+    dc:description "Counting Method of Load Spectrum."@en ;
+    dc:title "Loadspectrum Counting Method" ;
+    rdfs:isDefinedBy <file:ontology/behaviour_ontology.ttl> ;
+    cx-fx:dataType xsd:string .
+
+cx-behaviour:countingUnit a cx-fx:Argument ;
+    dc:description "Counting Unit of Load Spectrum."@en ;
+    dc:title "Loadspectrum Counting Unit" ;
+    rdfs:isDefinedBy <file:ontology/behaviour_ontology.ttl> ;
+    cx-fx:dataType xsd:string .
+
+cx-behaviour:countingValue a cx-fx:Argument ;
+    dc:description "Counting Value Name of Load Spectrum."@en ;
+    dc:title "Loadspectrum Counting Value" ;
+    rdfs:isDefinedBy <file:ontology/behaviour_ontology.ttl> ;
+    cx-fx:dataType xsd:string .
+
+cx-behaviour:headerChannels a cx-fx:Argument ;
+    dc:description "Channels of Load Spectrum."@en ;
+    dc:title "Loadspectrum Channels" ;
+    rdfs:isDefinedBy <file:ontology/behaviour_ontology.ttl> ;
+    cx-fx:dataType json:Object .
+
+cx-behaviour:metadata a cx-fx:Argument ;
+    dc:description "Additional Metadata of the Loadspectrum."@en ;
+    dc:title "Loadspectrum Metadata" ;
+    rdfs:isDefinedBy <file:ontology/behaviour_ontology.ttl> ;
+    cx-fx:dataType json:Object .
+
+cx-behaviour:notification a cx-fx:Argument ;
+    dc:description "An optional notification output template."@en ;
+    dc:title "Notification Template" ;
+    rdfs:isDefinedBy <file:ontology/behaviour_ontology.ttl> ;
+    cx-fx:dataType json:Object .
+
+cx-behaviour:recipient a cx-fx:Argument ;
+    dc:description "Recipient of the notification as a BPN."@en ;
+    dc:title "Notification Recipient" ;
+    rdfs:isDefinedBy <file:ontology/behaviour_ontology.ttl> ;
+    cx-fx:dataType rdfs:Resource .
+
+cx-behaviour:recipientConnector a cx-fx:Argument ;
+    dc:description "Recipient Address of the notification as a URL."@en ;
+    dc:title "Notification Recipient Address" ;
+    rdfs:isDefinedBy <file:ontology/behaviour_ontology.ttl> ;
+    cx-fx:dataType rdfs:Resource .
+
+cx-behaviour:remainingOperatingHours a cx-fx:ReturnValue ;
+    dc:description "Predicted Operating Hours of Remaining Useful Life Response"@en ;
+    dc:title "Remaining Useful Life Operating Hours" ;
+    rdfs:isDefinedBy <file:ontology/behaviour_ontology.ttl> ;
+    cx-fx:dataType xsd:float .
+
+cx-behaviour:remainingRunningDistance a cx-fx:ReturnValue ;
+    dc:description "Predicted Distance of Remaining Useful Life Response"@en ;
+    dc:title "Remaining Useful Life Distance" ;
+    rdfs:isDefinedBy <file:ontology/behaviour_ontology.ttl> ;
+    cx-fx:dataType xsd:int .
+
+cx-behaviour:response a cx-fx:Result ;
+    dc:description "The asynchronous notification response."@en ;
+    dc:title "Asynchronous notification response." ;
+    rdfs:isDefinedBy <file:ontology/behaviour_ontology.ttl> ;
+    cx-fx:output cx-behaviour:remainingOperatingHours,
+        cx-behaviour:remainingRunningDistance .
+
+cx-behaviour:sender a cx-fx:Argument ;
+    dc:description "Sender of the notification as a BPN."@en ;
+    dc:title "Notification Sender" ;
+    rdfs:isDefinedBy <file:ontology/behaviour_ontology.ttl> ;
+    cx-fx:dataType rdfs:Resource .
+
+cx-behaviour:senderConnector a cx-fx:Argument ;
+    dc:description "Sender Address of the notification as a URL."@en ;
+    dc:title "Notification Sender Address" ;
+    rdfs:isDefinedBy <file:ontology/behaviour_ontology.ttl> ;
+    cx-fx:dataType rdfs:Resource .
+
+cx-behaviour:severity a cx-fx:Argument ;
+    dc:description "Severity of the notification."@en ;
+    dc:title "Notification Severity" ;
+    rdfs:isDefinedBy <file:ontology/behaviour_ontology.ttl> ;
+    cx-fx:dataType xsd:string .
+
+cx-behaviour:status a cx-fx:Argument ;
+    dc:description "Status of the notification."@en ;
+    dc:title "Notification Status" ;
+    rdfs:isDefinedBy <file:ontology/behaviour_ontology.ttl> ;
+    cx-fx:dataType xsd:string .
+
+cx-behaviour:statusDate a cx-fx:Argument ;
+    dc:description "Time of Recording."@en ;
+    dc:title "Loadspectrum Recording Time" ;
+    rdfs:isDefinedBy <file:ontology/behaviour_ontology.ttl> ;
+    cx-fx:dataType xsd:dateTime .
+
+cx-behaviour:statusMileage a cx-fx:Argument ;
+    dc:description "Mileage of Component at Time of Recording."@en ;
+    dc:title "Loadspectrum Mileage" ;
+    rdfs:isDefinedBy <file:ontology/behaviour_ontology.ttl> ;
+    cx-fx:dataType xsd:int .
+
+cx-behaviour:statusOperatingHours a cx-fx:Argument ;
+    dc:description "Operating Hours of Target Component at Time of Recording."@en ;
+    dc:title "Loadspectrum Operating Hours" ;
+    rdfs:isDefinedBy <file:ontology/behaviour_ontology.ttl> ;
+    cx-fx:dataType xsd:float .
+
+cx-behaviour:targetDate a cx-fx:Argument ;
+    dc:description "Target Date of the notification."@en ;
+    dc:title "Notification Target Date" ;
+    rdfs:isDefinedBy <file:ontology/behaviour_ontology.ttl> ;
+    cx-fx:dataType xsd:dateTime .
+
+cx-behaviour:timeStamp a cx-fx:Argument ;
+    dc:description "Timestamp of the notification."@en ;
+    dc:title "Notification Timestamp" ;
+    rdfs:isDefinedBy <file:ontology/behaviour_ontology.ttl> ;
+    cx-fx:dataType xsd:dateTime .
+
 cx-common:AuthenticatedResource a rdfs:Resource ;
     rdfs:comment "An resource that requires authentication."@en ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     skos:prefLabel "Authenticated Resource"@en .
 
 cx-common:FunctionAsset a owl:Class ;
     rdfs:label "Function Asset"@en ;
     rdfs:comment "This subclass of Asset allows performing calculations on asset."@en ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     rdfs:subClassOf cx-common:Asset .
 
 cx-common:GraphAsset a owl:Class ;
     rdfs:label "Graph Asset" ;
     rdfs:comment "This subclass of Asset allows arbitrary data queries to be executed on assets."@en ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     rdfs:subClassOf cx-common:Asset .
 
 cx-common:SkillAsset a owl:Class ;
     rdfs:label "Skill Asset"@en ;
     rdfs:comment "This subclass of Asset allows only the execution of predefined data queries on assets."@en ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     rdfs:subClassOf cx-common:Asset .
 
 cx-core:describesPhysicalObject a owl:ObjectProperty ;
     rdfs:label "describes physical object"@en ;
     rdfs:comment "This property describes that a conceptual object has a descriptive relationship to a physical object."@en ;
     rdfs:domain cx-core:ConceptualObject ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl>,
+        <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range cx-core:PhysicalObject ;
     rdfs:subPropertyOf owl:topObjectProperty .
 
@@ -2367,8 +2541,8 @@ cx-core:refersToConceptualObject a owl:ObjectProperty ;
     rdfs:label "refers to conceptual object"@en ;
     rdfs:comment "This property refers to actively or passively used conceptual objects in an Activity."@en ;
     rdfs:domain cx-core:Activity ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl> ;
     rdfs:range cx-core:ConceptualObject ;
     rdfs:subPropertyOf owl:topObjectProperty .
 
@@ -2376,13 +2550,13 @@ cx-core:refersToPhysicalObject a owl:ObjectProperty ;
     rdfs:label "refers to physical object"@en ;
     rdfs:comment "This property refers to actively or passively used physical objects in an Activity."@en ;
     rdfs:domain cx-core:Activity ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl> ;
     rdfs:range cx-core:ConceptualObject ;
     rdfs:subPropertyOf owl:topObjectProperty .
 
 cx-reliability:LoadSpectrumClass a owl:Class ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:subClassOf cx-reliability:AnalysisResult ;
     skos:altLabel "header"@en ;
     skos:definition "The class contains information about the quantization states related to an axis."@en ;
@@ -2390,43 +2564,43 @@ cx-reliability:LoadSpectrumClass a owl:Class ;
         "Load Spectrum Class"@en .
 
 cx-reliability:OnBoardTelematics a owl:Class ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:subClassOf cx-reliability:Analysis ;
     skos:prefLabel "Onboard Telematics"@en .
 
 cx-vehicle:VehicleModel a owl:Class ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:subClassOf cx-core:ConceptualObject ;
     skos:altLabel "general information"@en ;
     skos:prefLabel "Vehicle Model"@en .
 
 cx-vehicle:communicationInformation a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:prefLabel "Vehicle Communication Information"@en .
 
 cx-vehicle:isPartOf a owl:ObjectProperty ;
     rdfs:domain cx-vehicle:Part ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range cx-vehicle:Vehicle ;
     skos:prefLabel "is part of"@en .
 
 cx-vehicle:isSubpartOf a owl:ObjectProperty ;
     rdfs:domain cx-vehicle:Part ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range cx-vehicle:Part ;
     rdfs:subPropertyOf owl:topObjectProperty ;
     skos:prefLabel "is subpart of"@en .
 
 cx-vehicle:safetyInformation a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:prefLabel "Vehicle Safety Information"@en .
 
 cx-common:BusinessPartner a owl:Class ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Business_partner> ;
     skos:altLabel "BP"@en,
         "business partner"@en ;
@@ -2441,20 +2615,20 @@ cx-common:BusinessPartner a owl:Class ;
 cx-common:authenticationInformation a owl:DatatypeProperty ;
     rdfs:comment "Base property for all authentication informations." ;
     rdfs:domain cx-common:AuthenticatedResource ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf owl:topDataProperty .
 
 cx-core:Address a owl:Class ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> .
+    rdfs:isDefinedBy <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl> .
 
 cx-core:describedByConceptualObject a owl:ObjectProperty ;
     dc:description "Inverse of 'describes physical object' property."@en ;
     rdfs:domain cx-core:PhysicalObject ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl>,
+        <file:ontology/vehicle_ontology.ttl> ;
     rdfs:range cx-core:ConceptualObject ;
     rdfs:subPropertyOf owl:topObjectProperty ;
     owl:inverseOf cx-core:describesPhysicalObject ;
@@ -2462,7 +2636,7 @@ cx-core:describedByConceptualObject a owl:ObjectProperty ;
 
 cx-reliability:analysedObject a owl:ObjectProperty ;
     rdfs:domain cx-reliability:Analysis ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:range cx-core:PhysicalObject ;
     rdfs:subPropertyOf cx-core:refersToPhysicalObject ;
     skos:prefLabel "analysed object"@en .
@@ -2470,104 +2644,86 @@ cx-reliability:analysedObject a owl:ObjectProperty ;
 cx-vehicle:chassisInformation a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Part,
         cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:prefLabel "Vehicle Chassis Information"@en .
 
 cx-vehicle:infotainmentInformation a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:prefLabel "Vehicle Infotainment Information"@en .
 
 cx-vehicle:lifetimeInformation a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:prefLabel "Vehicle Lifetime Information"@en .
 
 cx-vehicle:lightingInformation a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:prefLabel "Vehicle Lighting Information"@en .
 
 cx-vehicle:warrantyInformation a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:prefLabel "Vehicle Warranty Information"@en .
 
 cx-common:SkillDistribution a rdfs:Resource ;
     rdfs:comment "Describes the possibilities how to distribute skills."@en ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     skos:prefLabel "Distribution Mode"@en .
 
-cx-fx:ReturnValue a owl:Class ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/function_ontology.ttl> ;
-    rdfs:subClassOf cx-core:ConceptualObject ;
-    skos:altLabel "Function Return Value Definition"@en ;
-    skos:prefLabel "Return Value"@en .
-
 cx-vehicle:EClassType a owl:Class ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:subClassOf cx-core:ConceptualObject .
 
-json:Object a rdfs:Datatype ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> .
+cx-vehicle:partInformation a owl:DatatypeProperty ;
+    rdfs:domain cx-vehicle:Part ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
+    rdfs:subPropertyOf owl:topDataProperty ;
+    skos:prefLabel "Part Information"@en .
 
 cx-common:DataspaceConnector a owl:Class ;
     rdfs:comment "Dataspace Connector is an interface based on the Eclipse Dataspace Connector technology. A Dataspace Connector makes various assets available through contracts. A contract describes with which policy which asset can be provided."@en ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     rdfs:seeAlso <https://projects.eclipse.org/proposals/eclipse-dataspace-connector> ;
     skos:altLabel "Connector"@en,
         "EDC"@en ;
     skos:prefLabel "Dataspace Connector"@en .
 
-cx-vehicle:partInformation a owl:DatatypeProperty ;
-    rdfs:domain cx-vehicle:Part ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
-    rdfs:subPropertyOf owl:topDataProperty ;
-    skos:prefLabel "Part Information"@en .
-
 cx-core:Actor a owl:Class ;
     dc:description "This class comprises organization or people, either individually or in groups, who have the potential to perform intentional actions of kinds for which someone may be held responsible." ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> .
+    rdfs:isDefinedBy <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl> .
 
 cx-core:Place a owl:Class ;
     rdfs:comment "The class Place is determined by reference to the position of objects such as buildings, cities, or special geographic markers."@en ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> .
+    rdfs:isDefinedBy <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl> .
+
+cx-fx:ReturnValue a owl:Class ;
+    rdfs:isDefinedBy <file:ontology/function_ontology.ttl> ;
+    rdfs:subClassOf cx-core:ConceptualObject ;
+    skos:altLabel "Function Return Value Definition"@en ;
+    skos:prefLabel "Return Value"@en .
 
 cx-vehicle:stateInformation a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:prefLabel "Vehicle State"@en .
 
-cx-fx:Argument a owl:Class ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/function_ontology.ttl> ;
-    rdfs:subClassOf cx-core:ConceptualObject ;
-    skos:altLabel "Function Argument Definition"@en ;
-    skos:prefLabel "Argument"@en .
-
-cx-fx:Result a owl:Class ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/function_ontology.ttl> ;
-    rdfs:subClassOf cx-core:ConceptualObject ;
-    skos:altLabel "Function Result Definition"@en ;
-    skos:prefLabel "Result"@en .
-
 cx-reliability:AnalysisResult a owl:Class ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:subClassOf cx-core:ConceptualObject ;
     skos:prefLabel "Analysis Result"@en .
 
 cx-reliability:LoadSpectrumValues a owl:Class ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:subClassOf cx-reliability:AnalysisResult ;
     skos:altLabel "body"@en ;
     skos:definition "The values contains a list or a matrix with count values of the histogram."@en ;
@@ -2577,30 +2733,36 @@ cx-reliability:LoadSpectrumValues a owl:Class ;
 cx-vehicle:batteryInformation a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Part,
         cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:prefLabel "Vehicle Battery Information"@en .
 
 xsd:date a rdfs:Datatype ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> .
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl>,
+        <file:ontology/vehicle_ontology.ttl> .
+
+cx-fx:Result a owl:Class ;
+    rdfs:isDefinedBy <file:ontology/function_ontology.ttl> ;
+    rdfs:subClassOf cx-core:ConceptualObject ;
+    skos:altLabel "Function Result Definition"@en ;
+    skos:prefLabel "Result"@en .
 
 cx-vehicle:interiorInformation a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:prefLabel "Vehicle Interior Information"@en .
 
 cx-vehicle:powertrainInformation a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Part,
         cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:prefLabel "Vehicle Powertrain Information"@en .
 
 cx-vehicle:registrationInformation a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Motor_vehicle_registration>,
         <https://en.wikipedia.org/wiki/Vehicle_register>,
         <https://en.wikipedia.org/wiki/Vehicle_registration_certificate> ;
@@ -2611,50 +2773,56 @@ cx-vehicle:registrationInformation a owl:DatatypeProperty ;
 cx-vehicle:suspensionInformation a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Part,
         cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:prefLabel "Vehicle Suspension Information"@en .
 
 cx-reliability:Analysis a owl:Class ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:subClassOf cx-core:Activity .
 
 cx-reliability:LoadSpectrumChannel a owl:Class ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:subClassOf cx-reliability:AnalysisResult ;
     skos:altLabel "header"@en ;
     skos:definition "The channel contains information about the axis of the 1d or 2d histogram."@en ;
     skos:prefLabel "Lastkollektiv Kanal"@de,
         "Load Spectrum Channel"@en .
 
+json:Object a rdfs:Datatype ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl>,
+        <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl>,
+        <file:ontology/vehicle_ontology.ttl> .
+
 cx-core:PhysicalObject a owl:Class ;
     rdfs:label "Physical Object"@en ;
     dc:description "This class includes objects of a material nature, which are documentation units and have physical boundaries."@en ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> .
-
-cx-fx:Function a owl:Class ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/function_ontology.ttl> ;
-    rdfs:subClassOf cx-core:ConceptualObject ;
-    skos:altLabel "Function Definition"@en ;
-    skos:prefLabel "Function"@en .
+    rdfs:isDefinedBy <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl>,
+        <file:ontology/vehicle_ontology.ttl> .
 
 cx-vehicle:performanceInformation a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:prefLabel "Vehicle Performance Information"@en .
 
 cx-core:Activity a owl:Class ;
     rdfs:comment "This class comprises actions intentionally carried out by instances of Actor that result in changes of state in physical and conceptual objects."@en ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl> ;
     owl:disjointUnionOf ( cx-core:Actor cx-core:Address cx-core:ConceptualObject cx-core:PhysicalObject cx-core:Place ),
         ( cx-core:Actor cx-core:Address cx-core:ConceptualObject cx-core:PhysicalObject cx-core:Place ) .
 
+cx-fx:Function a owl:Class ;
+    rdfs:isDefinedBy <file:ontology/function_ontology.ttl> ;
+    rdfs:subClassOf cx-core:ConceptualObject ;
+    skos:altLabel "Function Definition"@en ;
+    skos:prefLabel "Function"@en .
+
 cx-reliability:LoadSpectrum a owl:Class ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
     rdfs:seeAlso <https://de.wikipedia.org/wiki/Lastkollektiv>,
         <https://en.wikipedia.org/wiki/Mechanical_load> ;
     rdfs:subClassOf cx-reliability:AnalysisResult ;
@@ -2668,65 +2836,71 @@ cx-reliability:LoadSpectrum a owl:Class ;
 
 cx-vehicle:cargoInformation a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:prefLabel "Vehicle Cargo Information"@en .
 
 cx-vehicle:modelInformation a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:prefLabel "Vehicle Model Information"@en .
 
 cx-vehicle:fuelInformation a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:prefLabel "Vehicle Fuel Information"@en .
 
 cx-common:Asset a owl:Class ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     skos:definition "The Asset class describes the provision via a repository of a specific set of data for a specific purpose."@en ;
     skos:prefLabel "Asset"@en .
 
 cx-core:ConceptualObject a owl:Class ;
     rdfs:label "Conceptual Object"@en ;
     dc:description "This class includes non-material products, human-produced data related to physical objects. The production of such information may have been supported by the use of technical tools."@en ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/core_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> .
+    rdfs:isDefinedBy <file:ontology/core_ontology.ttl>,
+        <file:ontology/reliability_ontology.ttl>,
+        <file:ontology/vehicle_ontology.ttl> .
+
+cx-vehicle:bodyInformation a owl:DatatypeProperty ;
+    rdfs:domain cx-vehicle:Part,
+        cx-vehicle:Vehicle ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
+    rdfs:subPropertyOf owl:topDataProperty ;
+    skos:prefLabel "Vehicle Body Information"@en .
 
 cx-vehicle:Part a owl:Class ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl>,
+        <file:ontology/vehicle_ontology.ttl> ;
     rdfs:subClassOf cx-core:PhysicalObject ;
     owl:disjointWith cx-vehicle:Vehicle ;
     skos:definition "A part in the automotive context is a component of a vehicle. Parts may have sub-parts that perform specific sub-functions."@en ;
     skos:prefLabel "Part"@en .
 
-cx-vehicle:bodyInformation a owl:DatatypeProperty ;
-    rdfs:domain cx-vehicle:Part,
-        cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
-    rdfs:subPropertyOf owl:topDataProperty ;
-    skos:prefLabel "Vehicle Body Information"@en .
-
 cx-vehicle:productionInformation a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:prefLabel "Production Information"@en .
 
 cx-vehicle:engineInformation a owl:DatatypeProperty ;
     rdfs:domain cx-vehicle:Part,
         cx-vehicle:Vehicle ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/vehicle_ontology.ttl> ;
     rdfs:subPropertyOf owl:topDataProperty ;
     skos:definition "Information about the engine or engines of the vehicle."@en ;
     skos:prefLabel "Vehicle Engine Information"@en .
 
+cx-fx:Argument a owl:Class ;
+    rdfs:isDefinedBy <file:ontology/function_ontology.ttl> ;
+    rdfs:subClassOf cx-core:ConceptualObject ;
+    skos:altLabel "Function Argument Definition"@en ;
+    skos:prefLabel "Argument"@en .
+
 cx-vehicle:Vehicle a owl:Class ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl>,
-        <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/vehicle_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl>,
+        <file:ontology/vehicle_ontology.ttl> ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Motor_vehicle> ;
     rdfs:subClassOf cx-core:PhysicalObject ;
     skos:altLabel "KFZ"@de,
@@ -2746,14 +2920,14 @@ cx-vehicle:Vehicle a owl:Class ;
         "Vehicle"@en .
 
 [] a owl:AllDisjointClasses ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/reliability_ontology.ttl> ;
-    owl:members ( cx-reliability:LoadSpectrum cx-reliability:LoadSpectrumChannel cx-reliability:LoadSpectrumValues ) .
-
-[] a owl:AllDisjointClasses ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     owl:members ( cx-common:Asset cx-common:BusinessPartner cx-common:DataspaceConnector ) .
 
 [] a owl:AllDisjointClasses ;
-    rdfs:isDefinedBy <https://raw.github.com/eclipse-tractusx/ontology/main/ontology/common_ontology.ttl> ;
+    rdfs:isDefinedBy <file:ontology/common_ontology.ttl> ;
     owl:members ( cx-common:FunctionAsset cx-common:GraphAsset cx-common:SkillAsset ) .
+
+[] a owl:AllDisjointClasses ;
+    rdfs:isDefinedBy <file:ontology/reliability_ontology.ttl> ;
+    owl:members ( cx-reliability:LoadSpectrum cx-reliability:LoadSpectrumChannel cx-reliability:LoadSpectrumValues ) .
 
