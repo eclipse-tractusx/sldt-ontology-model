@@ -4,21 +4,22 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix json: <https://json-schema.org/draft/2020-12/schema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix schema: <https://schema.org/> .
 @prefix cx-core: <https://w3id.org/catenax/ontology/core#> .
 @prefix cx-vehicle: <https://w3id.org/catenax/ontology/vehicle#> .
 @prefix cx-reliability: <https://w3id.org/catenax/ontology/reliability#> .
-@base <https://w3id.org/catenax/ontology/reliability> .
+@base <https://w3id.org/catenax/ontology/reliability#> .
 
 <https://w3id.org/catenax/ontology/reliability> rdf:type owl:Ontology ;
+                                                 owl:imports <file:core_ontology.ttl> ,
+                                                             <file:vehicle_ontology.ttl> ;
                                                  dc:contributor "Jörg Schulz, Rolf Bosse, Oguzhan Balandi " ;
                                                  dc:creator "Zazralt Magic" ;
                                                  dc:date "2023-02-21"^^xsd:date ;
                                                  dc:title "Reliability Ontology"@en ;
-                                                 owl:imports <file:core_ontology.ttl>;
-                                                 owl:imports <file:vehicle_ontology.ttl>;
                                                  owl:versionInfo "1.9.4" .
 
 #################################################################
@@ -59,6 +60,18 @@ skos:example rdf:type owl:AnnotationProperty .
 
 ###  http://www.w3.org/2004/02/skos/core#prefLabel
 skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+###  https://json-schema.org/draft/2020-12/schema#Object
+json:Object rdf:type rdfs:Datatype .
 
 
 #################################################################
@@ -178,9 +191,13 @@ cx-reliability:analysedVehicle rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/catenax/ontology/reliability#channel
 cx-reliability:channel rdf:type owl:ObjectProperty ;
-                       rdfs:domain cx-reliability:LoadSpectrum ,
-                                   cx-reliability:LoadSpectrumChannel ;
+                       rdfs:domain cx-reliability:LoadSpectrum;
                        rdfs:range cx-reliability:LoadSpectrumChannel .
+
+###  https://w3id.org/catenax/ontology/reliability#class
+cx-reliability:class rdf:type owl:ObjectProperty ;
+                       rdfs:domain cx-reliability:LoadSpectrum ;
+                       rdfs:range cx-reliability:LoadSpectrumClass .
 
 
 ###  https://w3id.org/catenax/ontology/reliability#result
@@ -192,9 +209,8 @@ cx-reliability:result rdf:type owl:ObjectProperty ;
 
 
 ###  https://w3id.org/catenax/ontology/reliability#values
-cx-reliability:values rdf:type owl:ObjectProperty ;
-                      rdfs:domain cx-reliability:LoadSpectrum ,
-                                  cx-reliability:LoadSpectrumValues ;
+cx-reliability:hasValues rdf:type owl:ObjectProperty ;
+                      rdfs:domain cx-reliability:LoadSpectrum ;
                       rdfs:range cx-reliability:LoadSpectrumValues .
 
 
@@ -242,15 +258,20 @@ cx-core:startDateTime rdf:type owl:DatatypeProperty ;
 
 
 ###  https://w3id.org/catenax/ontology/reliability#channel
-cx-reliability:channel rdf:type owl:DatatypeProperty ;
-                       rdfs:range xsd:string .
+cx-reliability:channels rdf:type owl:DatatypeProperty ;
+                       rdfs:range json:Object .
 
+
+###  https://w3id.org/catenax/ontology/reliability#countingValue
+cx-reliability:countingValue rdf:type owl:DatatypeProperty ;
+                              rdfs:domain cx-reliability:LoadSpectrumValues ;
+                              rdfs:range xsd:string ;
+                              skos:prefLabel "Load Spectrum Counting Value"@en .
 
 ###  https://w3id.org/catenax/ontology/reliability#countingMethod
 cx-reliability:countingMethod rdf:type owl:DatatypeProperty ;
                               rdfs:domain cx-reliability:LoadSpectrumValues ;
                               rdfs:range xsd:string ;
-                              rdfs:isDefinedBy <https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/load_spectrum_ontology.ttl> ;
                               skos:prefLabel "Load Spectrum Counting Method"@en .
 
 
@@ -355,16 +376,16 @@ cx-reliability:numberOfBins rdf:type owl:DatatypeProperty ;
 cx-reliability:operatingHoursOfPart rdf:type owl:DatatypeProperty ;
                                     rdfs:subPropertyOf owl:topDataProperty ;
                                     rdfs:domain cx-reliability:Analysis ;
-                                    rdfs:range xsd:integer ;
-                                    skos:prefLabel "operating Hourse of Part"@en .
+                                    rdfs:range xsd:float ;
+                                    skos:prefLabel "operating Hours of Part"@en .
 
 
 ###  https://w3id.org/catenax/ontology/reliability#operatingHoursOfVehicle
 cx-reliability:operatingHoursOfVehicle rdf:type owl:DatatypeProperty ;
                                        rdfs:subPropertyOf owl:topDataProperty ;
                                        rdfs:domain cx-reliability:Analysis ;
-                                       rdfs:range xsd:integer ;
-                                       skos:prefLabel "operating Hourse of Vehicle"@en .
+                                       rdfs:range xsd:float ;
+                                       skos:prefLabel "operating Hours of Vehicle"@en .
 
 
 ###  https://w3id.org/catenax/ontology/reliability#type
@@ -397,8 +418,11 @@ cx-reliability:upperLimit rdf:type owl:DatatypeProperty ;
 
 ###  https://w3id.org/catenax/ontology/reliability#values
 cx-reliability:values rdf:type owl:DatatypeProperty ;
-                      rdfs:range xsd:string .
+                      rdfs:range json:Object .
 
+###  https://w3id.org/catenax/ontology/reliability#classes
+cx-reliability:classes rdf:type owl:DatatypeProperty ;
+                       rdfs:range json:Object .
 
 #################################################################
 #    Classes
@@ -480,6 +504,14 @@ cx-reliability:LoadSpectrumChannel rdf:type owl:Class ;
                                    skos:prefLabel "Lastkollektiv Kanal"@de ,
                                                   "Load Spectrum Channel"@en .
 
+###  https://w3id.org/catenax/ontology/reliability#LoadSpectrumChannel
+cx-reliability:LoadSpectrumClass rdf:type owl:Class ;
+                                   rdfs:subClassOf cx-reliability:AnalysisResult ;
+                                   skos:altLabel "header"@en ;
+                                   skos:definition "The class contains information about the quantization states related to an axis."@en ;
+                                   skos:prefLabel "Lastkollektiv Klasse"@de ,
+                                                  "Load Spectrum Class"@en .
+
 
 ###  https://w3id.org/catenax/ontology/reliability#LoadSpectrumValues
 cx-reliability:LoadSpectrumValues rdf:type owl:Class ;
@@ -519,9 +551,9 @@ cx-vehicle:Vehicle rdf:type owl:Class ;
 cx-reliability:channel skos:prefLabel "load spectrum channel"@en .
 
 
-cx-reliability:values skos:example "[2"@en ,
-                                   "3"@en ,
-                                   "4]"@en ;
+cx-reliability:values skos:example "3"@en ,
+                                   "4]"@en ,
+                                   "[2"@en ;
                       skos:prefLabel "Load Spectrum Channel Values"@en .
 
 
@@ -537,4 +569,4 @@ cx-reliability:values skos:example "[2"@en ,
 ] .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi

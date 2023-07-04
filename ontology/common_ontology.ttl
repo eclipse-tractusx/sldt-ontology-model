@@ -8,6 +8,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix cx-common: <https://w3id.org/catenax/ontology/common#> .
 @base <https://w3id.org/catenax/ontology/common#> .
 
@@ -123,20 +124,26 @@ cx-common:name rdf:type owl:DatatypeProperty ;
                rdfs:comment "This property contains name of asset."@en .
 
 
-###  https://catena-x.net/product-knowledge/ontology/common#protocol
-cx-common:protocol rdf:type owl:DatatypeProperty ;
+###  https://catena-x.net/product-knowledge/ontology/common#implementsProtocol
+cx-common:implementsProtocol rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf owl:topDataProperty ;
                    rdfs:domain cx-common:Asset ;
                    rdfs:range xsd:string ;
-                   rdfs:comment "This property refers to the used protocol."@en .
+                   rdfs:comment "This property refers to the network protocol implemented by the asset."@en .
+
+###  https://catena-x.net/product-knowledge/ontology/common#publishedUnderContract
+cx-common:publishedUnderContract rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:domain cx-common:Asset ;
+                   rdfs:target cx-common:Contract ;
+                   rdfs:comment "This property refers to the contract associated with the asset."@en .
 
 
-###  https://catena-x.net/product-knowledge/ontology/common#shapeGraph
-cx-common:shapeGraph rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf owl:topDataProperty ;
-                     rdfs:domain cx-common:Asset ;
-                     rdfs:range xsd:anyURI ;
-                     rdfs:comment "This property refes to SHACL file, in which the RDF data Contraints are defined. In particular, the structure of the identifiers."@en .
+### http://www.w3.org/ns/shacl#shapesGraph
+sh:shapesGraph rdf:type owl:ObjectProperty;
+               rdfs:domain cx-common:Asset ;
+               rdfs:target rdfs:Resource ;
+               rdfs:comment "This property refers to a SHACL expression in which the RDF data Contraints are defined. In particular, the structure of the identifiers."@en .
 
 
 ###  https://catena-x.net/product-knowledge/ontology/common#url
@@ -145,12 +152,17 @@ cx-common:url rdf:type owl:DatatypeProperty ;
               rdfs:domain cx-common:DataspaceConnector ;
               rdfs:range xsd:anyURI .
 
+###  https://catena-x.net/product-knowledge/ontology/common#AuthenticatedResource
+cx-common:AuthenticatedResource rdf:type rdfs:Resource;
+               rdfs:comment "An resource that requires authentication."@en;
+                skos:prefLabel "Authenticated Resource"@en .
+
 
 ###  https://catena-x.net/product-knowledge/ontology/common#authenticationInformation
 cx-common:authenticationInformation rdf:type owl:DatatypeProperty ;
               rdfs:comment "Base property for all authentication informations.";
               rdfs:subPropertyOf owl:topDataProperty ;
-              rdfs:domain rdfs:Resource ;
+              rdfs:domain cx-common:AuthenticatedResource ;
               rdfs:range xsd:string .
 
 ###  https://catena-x.net/product-knowledge/ontology/common#authenticationCode
@@ -224,6 +236,26 @@ cx-common:SkillAsset rdf:type owl:Class ;
                      rdfs:comment "This subclass of Asset allows only the execution of predefined data queries on assets."@en ;
                      rdfs:label "Skill Asset"@en .
 
+
+###  https://catena-x.net/product-knowledge/ontology/common#SkillDistribution
+cx-common:SkillDistribution rdf:type rdfs:Resource;
+               rdfs:comment "Describes the possibilities how to distribute skills."@en;
+               skos:prefLabel "Distribution Mode"@en .
+
+###  https://catena-x.net/product-knowledge/ontology/common#SkillDistribution?run=provider
+cx-common:SkillDistribution%3Frun%3Dprovider rdf:type cx-common:SkillDistribution;
+               rdfs:comment "The skill may only be invoked local to the computing environment of the provider."@en;
+               skos:prefLabel "Provider Distribution Mode"@en .
+
+###  https://catena-x.net/product-knowledge/ontology/common#SkillDistribution?run=consumer
+cx-common:SkillDistribution%3Frun%3Dconsumer rdf:type cx-common:SkillDistribution;
+               rdfs:comment "The skill may only be invoked remote in the computing environment of the consumer."@en;
+               skos:prefLabel "Consumer Distribution Mode"@en .
+
+###  https://catena-x.net/product-knowledge/ontology/common#SkillDistribution?run=all
+cx-common:SkillDistribution%3Frun%3Dall rdf:type cx-common:SkillDistribution;
+               rdfs:comment "The skill may be invoked in any computing environment (provider or consumer)."@en;
+               skos:prefLabel "All Distribution Mode"@en .
 
 #################################################################
 #    General axioms

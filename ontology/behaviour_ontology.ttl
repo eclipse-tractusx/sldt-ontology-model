@@ -1,0 +1,181 @@
+@prefix : <https://w3id.org/catenax/ontology/behaviour#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix json: <https://json-schema.org/draft/2020-12/schema#> .
+@prefix cx-core: <https://w3id.org/catenax/ontology/core#> .
+@prefix cx-common: <https://w3id.org/catenax/ontology/common#> .
+@prefix cx-fx: <https://w3id.org/catenax/ontology/function#> .
+@prefix cx-behaviour: <https://w3id.org/catenax/ontology/behaviour#> .
+@prefix cx-vehicle: <https://w3id.org/catenax/ontology/vehicle#> .
+@prefix cx-reliability: <https://w3id.org/catenax/ontology/reliability#> .
+@base <https://w3id.org/catenax/ontology/behaviour#> .
+
+<https://w3id.org/catenax/ontology/behaviour> rdf:type owl:Ontology ;
+                                              dc:contributor "Oguzhan Balandi" ;
+                                              dc:creator "Christoph Jung" ;
+                                              dc:date "2023-07-04"^^xsd:date ;
+                                              dc:description "Ontology for behaviour predictions." ;
+                                              dc:title "Behaviour Ontology" ;
+                                              owl:imports <file:common_ontology.ttl>;
+                                              owl:imports <file:core_ontology.ttl>;
+                                              owl:imports <file:function_ontology.ttl>;
+                                              owl:imports <file:vehicle_ontology.ttl>;
+                                              owl:imports <file:reliability_ontology.ttl>;
+                                              owl:versionInfo "1.9.4" .
+
+cx-behaviour:RemainingUsefulLife rdf:type cx-fx:Function;
+  dc:description "Remaining Useful Life is a Prediction of the Estimated Mileage/Runtime until a Breakdown."@en ;
+  dc:title "Remaining Useful Life" ;
+  cx-fx:input cx-behaviour:notification;
+  cx-fx:input cx-behaviour:sender;
+  cx-fx:input cx-behaviour:senderConnector;
+  cx-fx:input cx-behaviour:recipient;
+  cx-fx:input cx-behaviour:recipientConnector;
+  cx-fx:input cx-behaviour:recipient;
+  cx-fx:input cx-behaviour:recipientConnector;
+  cx-fx:input cx-behaviour:severity;
+  cx-fx:input cx-behaviour:status;
+  cx-fx:input cx-behaviour:targetDate;
+  cx-fx:input cx-behaviour:timeStamp;
+  cx-fx:input cx-behaviour:classification;
+  cx-fx:input cx-behaviour:component;
+  cx-fx:input cx-behaviour:metadata;
+  cx-fx:input cx-behaviour:statusDate;
+  cx-fx:input cx-behaviour:statusOperatingHours;
+  cx-fx:input cx-behaviour:statusMileage;
+  cx-fx:input cx-behaviour:countingMethod;
+  cx-fx:input cx-behaviour:countingValue;
+  cx-fx:input cx-behaviour:countingUnit;
+  cx-fx:input cx-behaviour:headerChannels;
+  cx-fx:input cx-behaviour:bodyClasses;
+  cx-fx:input cx-behaviour:bodyCountsList;
+  cx-fx:result cx-behaviour:response.
+
+cx-behaviour:notification rdf:type cx-fx:Argument;
+  dc:description "An optional notification output template."@en ;
+  dc:title "Notification Template";
+  cx-fx:dataType json:Object.
+
+cx-behaviour:sender rdf:type cx-fx:Argument;
+  dc:description "Sender of the notification as a BPN."@en ;
+  dc:title "Notification Sender";
+  cx-fx:dataType rdfs:Resource.
+  
+cx-behaviour:senderConnector rdf:type cx-fx:Argument;
+  dc:description "Sender Address of the notification as a URL."@en ;
+  dc:title "Notification Sender Address";
+  cx-fx:dataType rdfs:Resource.
+
+cx-behaviour:recipient rdf:type cx-fx:Argument;
+  dc:description "Recipient of the notification as a BPN."@en ;
+  dc:title "Notification Recipient";
+  cx-fx:dataType rdfs:Resource.
+
+cx-behaviour:recipientConnector rdf:type cx-fx:Argument;
+  dc:description "Recipient Address of the notification as a URL."@en ;
+  dc:title "Notification Recipient Address";
+  cx-fx:dataType rdfs:Resource.
+
+cx-behaviour:severity rdf:type cx-fx:Argument;
+  dc:description "Severity of the notification."@en ;
+  dc:title "Notification Severity";
+  cx-fx:dataType xsd:string.
+
+cx-behaviour:status rdf:type cx-fx:Argument;
+  dc:description "Status of the notification."@en ;
+  dc:title "Notification Status";
+  cx-fx:dataType xsd:string.
+
+cx-behaviour:targetDate rdf:type cx-fx:Argument;
+  dc:description "Target Date of the notification."@en ;
+  dc:title "Notification Target Date";
+  cx-fx:dataType xsd:dateTime.
+
+cx-behaviour:timeStamp rdf:type cx-fx:Argument;
+  dc:description "Timestamp of the notification."@en ;
+  dc:title "Notification Timestamp";
+  cx-fx:dataType xsd:dateTime.
+
+cx-behaviour:classification rdf:type cx-fx:Argument;
+  dc:description "Classification of the notification."@en ;
+  dc:title "Notification Classification";
+  cx-fx:dataType xsd:string.
+
+cx-behaviour:component rdf:type cx-fx:Argument;
+  dc:description "Component of the Predicition."@en ;
+  dc:title "Predicted Component";
+  cx-fx:dataType cx-vehicle:Part.
+
+cx-behaviour:metadata rdf:type cx-fx:Argument;
+  dc:description "Additional Metadata of the Loadspectrum."@en ;
+  dc:title "Loadspectrum Metadata";
+  cx-fx:dataType json:Object.
+
+cx-behaviour:statusDate rdf:type cx-fx:Argument;
+  dc:description "Time of Recording."@en ;
+  dc:title "Loadspectrum Recording Time";
+  cx-fx:dataType xsd:dateTime.
+
+cx-behaviour:statusOperatingHours rdf:type cx-fx:Argument;
+  dc:description "Operating Hours of Target Component at Time of Recording."@en ;
+  dc:title "Loadspectrum Operating Hours";
+  cx-fx:dataType xsd:float.
+
+cx-behaviour:statusMileage rdf:type cx-fx:Argument;
+  dc:description "Mileage of Component at Time of Recording."@en ;
+  dc:title "Loadspectrum Mileage";
+  cx-fx:dataType xsd:int.
+
+cx-behaviour:countingUnit rdf:type cx-fx:Argument;
+  dc:description "Counting Unit of Load Spectrum."@en ;
+  dc:title "Loadspectrum Counting Unit";
+  cx-fx:dataType xsd:string.
+
+cx-behaviour:countingValue rdf:type cx-fx:Argument;
+  dc:description "Counting Value Name of Load Spectrum."@en ;
+  dc:title "Loadspectrum Counting Value";
+  cx-fx:dataType xsd:string.
+
+cx-behaviour:countingMethod rdf:type cx-fx:Argument;
+  dc:description "Counting Method of Load Spectrum."@en ;
+  dc:title "Loadspectrum Counting Method";
+  cx-fx:dataType xsd:string.
+
+cx-behaviour:headerChannels rdf:type cx-fx:Argument;
+  dc:description "Channels of Load Spectrum."@en ;
+  dc:title "Loadspectrum Channels";
+  cx-fx:dataType json:Object.
+
+cx-behaviour:bodyClasses rdf:type cx-fx:Argument;
+  dc:description "Classes of Load Spectrum."@en ;
+  dc:title "Loadspectrum Classes";
+  cx-fx:dataType json:Object.
+
+cx-behaviour:bodyCountsList rdf:type cx-fx:Argument;
+  dc:description "Counts List of Load Spectrum."@en ;
+  dc:title "Loadspectrum Counts List";
+  cx-fx:dataType json:Object.
+
+cx-behaviour:response rdf:type cx-fx:Result;
+  dc:description "The asynchronous notification response."@en ;
+  dc:title "Asynchronous notification response." ;
+  cx-fx:output cx-behaviour:remainingOperatingHours;
+  cx-fx:output cx-behaviour:remainingRunningDistance.
+
+cx-behaviour:remainingOperatingHours rdf:type cx-fx:ReturnValue;
+  dc:description "Predicted Operating Hours of Remaining Useful Life Response"@en ;
+  dc:title "Remaining Useful Life Operating Hours" ;
+  cx-fx:dataType xsd:float.
+
+cx-behaviour:remainingRunningDistance rdf:type cx-fx:ReturnValue;
+  dc:description "Predicted Distance of Remaining Useful Life Response"@en ;
+  dc:title "Remaining Useful Life Distance" ;
+  cx-fx:dataType xsd:int.
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

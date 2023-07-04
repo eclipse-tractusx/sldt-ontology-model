@@ -1,3 +1,4 @@
+@prefix : <https://catena-x.net/product-knowledge/ontology/core#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -5,6 +6,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix json: <https://json-schema.org/draft/2020-12/schema#> .
 @prefix schema: <https://schema.org/> .
 @prefix cx-core: <https://w3id.org/catenax/ontology/core#> .
 @base <https://catena-x.net/product-knowledge/ontology/core#> .
@@ -51,6 +53,9 @@ skos:example rdf:type owl:AnnotationProperty .
 
 ###  http://www.w3.org/2004/02/skos/core#prefLabel
 skos:prefLabel rdf:type owl:AnnotationProperty .
+
+###  https://json-schema.org/draft/2020-12/schema#Object
+json:Object rdf:type rdfs:Datatype .
 
 #################################################################
 #    Object Properties

@@ -7,17 +7,18 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix schema: <https://schema.org/> .
+@prefix json: <https://json-schema.org/draft/2020-12/schema#> .
 @prefix cx-core: <https://w3id.org/catenax/ontology/core#> .
 @prefix cx-vehicle: <https://w3id.org/catenax/ontology/vehicle#> .
-@base <https://w3id.org/catenax/ontology/vehicle> .
+@base <https://w3id.org/catenax/ontology/vehicle#> .
 
 <https://w3id.org/catenax/ontology/vehicle> rdf:type owl:Ontology ;
+                                             owl:imports <file:core_ontology.ttl> ;
                                              dc:contributor "Rolf Bosse, Jörg Schulz, Oguzhan Balandi" ;
                                              dc:creator "Zazralt Magic" ;
                                              dc:date "2023-02-21"^^xsd:date ;
                                              dc:description "Ontology for vehicles in the automotive industry." ;
                                              dc:title "Vehicle Ontology" ;
-                                             owl:imports <file:core_ontology.ttl>;
                                              owl:versionInfo "1.9.4" .
 
 #################################################################
@@ -71,6 +72,8 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 ###  http://www.w3.org/2001/XMLSchema#date
 xsd:date rdf:type rdfs:Datatype .
 
+###  https://json-schema.org/draft/2020-12/schema#Object
+json:Object rdf:type rdfs:Datatype .
 
 #################################################################
 #    Object Properties
@@ -197,21 +200,19 @@ cx-vehicle:airConditioningType rdf:type owl:DatatypeProperty ;
 ###  https://w3id.org/catenax/ontology/vehicle#assemblyCountry
 cx-vehicle:assemblyCountry rdf:type owl:DatatypeProperty ;
                            rdfs:subPropertyOf cx-vehicle:productionInformation ;
-                           rdfs:domain cx-vehicle:Vehicle ;
                            rdfs:range xsd:string ;
                            rdfs:seeAlso schema:countryOfAssembly ;
-                           skos:definition "The place where the product was assembled."@en ;
-                           skos:prefLabel "Montageland"@de ,
-                                          "Vehicle Assembly Country"@en .
+                           skos:definition "The place where the item was assembled."@en ;
+                           skos:prefLabel "Assembly Country"@en ,
+                                          "Montageland"@de .
 
 
 ###  https://w3id.org/catenax/ontology/vehicle#assemblyPlant
 cx-vehicle:assemblyPlant rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf cx-vehicle:productionInformation ;
-                         rdfs:domain cx-vehicle:Vehicle ;
                          rdfs:range xsd:string ;
-                         skos:prefLabel "Montagewerk"@de ,
-                                        "Vehicle Assembly Plant"@en .
+                         skos:prefLabel "Assembly Plant"@en ,
+                                        "Montagewerk"@de .
 
 
 ###  https://w3id.org/catenax/ontology/vehicle#assistanceSystem
@@ -426,14 +427,13 @@ cx-vehicle:configuration rdf:type owl:DatatypeProperty ;
 ###  https://w3id.org/catenax/ontology/vehicle#countryOption
 cx-vehicle:countryOption rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf cx-vehicle:productionInformation ;
-                         rdfs:domain cx-vehicle:Vehicle ;
                          rdfs:range xsd:string ;
                          skos:altLabel "national-market version"@en ;
                          skos:example "CN"@en ,
                                       "EUR"@en ,
                                       "US"@en ;
-                         skos:prefLabel "Länderausführung"@de ,
-                                        "Vehicle Country Option"@en .
+                         skos:prefLabel "Country Option"@en ,
+                                        "Länderausführung"@de .
 
 
 ###  https://w3id.org/catenax/ontology/vehicle#curbWeight
@@ -454,25 +454,22 @@ cx-vehicle:curbWeight rdf:type owl:DatatypeProperty ;
 ###  https://w3id.org/catenax/ontology/vehicle#deliveryCountry
 cx-vehicle:deliveryCountry rdf:type owl:DatatypeProperty ;
                            rdfs:subPropertyOf cx-vehicle:productionInformation ;
-                           rdfs:domain cx-vehicle:Vehicle ;
                            rdfs:range xsd:string ;
                            skos:prefLabel "Auslieferland"@de ,
-                                          "Vehicle Delivery Country"@en .
+                                          "Delivery Country"@en .
 
 
 ###  https://w3id.org/catenax/ontology/vehicle#deliveryDate
 cx-vehicle:deliveryDate rdf:type owl:DatatypeProperty ;
                         rdfs:subPropertyOf cx-vehicle:productionInformation ;
-                        rdfs:domain cx-vehicle:Vehicle ;
                         rdfs:range xsd:date ;
                         skos:prefLabel "Auslieferdatum"@de ,
-                                       "Vehicle Delivery Date"@en .
+                                       "Delivery Date"@en .
 
 
 ###  https://w3id.org/catenax/ontology/vehicle#deliveryPrice
 cx-vehicle:deliveryPrice rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf cx-vehicle:productionInformation ;
-                         rdfs:domain cx-vehicle:Vehicle ;
                          rdfs:range xsd:integer ;
                          skos:prefLabel "Delivery Price"@en ,
                                         "Lieferpreis"@de .
@@ -1078,7 +1075,6 @@ cx-vehicle:height rdf:type owl:DatatypeProperty ;
 ###  https://w3id.org/catenax/ontology/vehicle#id
 cx-vehicle:id rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf cx-vehicle:partInformation ;
-              rdfs:domain cx-vehicle:Part ;
               rdfs:range xsd:string ;
               skos:prefLabel "Bauteil Id"@de ,
                              "Id"@en .
@@ -1156,7 +1152,6 @@ cx-vehicle:lightingInformation rdf:type owl:DatatypeProperty ;
 ###  https://w3id.org/catenax/ontology/vehicle#listPrice
 cx-vehicle:listPrice rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf cx-vehicle:productionInformation ;
-                     rdfs:domain cx-vehicle:Vehicle ;
                      rdfs:range xsd:integer ;
                      rdfs:seeAlso <https://de.wikipedia.org/wiki/Unverbindliche_Preisempfehlung> ;
                      skos:altLabel "MSRP"@en ,
@@ -1374,7 +1369,6 @@ cx-vehicle:name rdf:type owl:DatatypeProperty ;
 ###  https://w3id.org/catenax/ontology/vehicle#number
 cx-vehicle:number rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf cx-vehicle:partInformation ;
-                  rdfs:domain cx-vehicle:Part ;
                   rdfs:range xsd:string ;
                   rdfs:seeAlso <https://en.wikipedia.org/wiki/Part_number> ;
                   skos:altLabel "Bauteilnummer"@de ,
@@ -1545,16 +1539,16 @@ cx-vehicle:operatingHours rdf:type owl:DatatypeProperty ;
 ###  https://w3id.org/catenax/ontology/vehicle#orderDate
 cx-vehicle:orderDate rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf cx-vehicle:productionInformation ;
-                     rdfs:domain cx-vehicle:Vehicle ;
                      rdfs:range xsd:date ;
-                     skos:definition "The date the vehicle was ordered by the owner."@en ;
+                     skos:definition "The date the item was ordered by the owner."@en ;
                      skos:prefLabel "Bestelldatum"@de ,
-                                    "Vehicle Order Date"@en .
+                                    "Order Date"@en .
 
 
 ###  https://w3id.org/catenax/ontology/vehicle#partInformation
 cx-vehicle:partInformation rdf:type owl:DatatypeProperty ;
                            rdfs:subPropertyOf owl:topDataProperty ;
+                           rdfs:domain cx-vehicle:Part ;
                            skos:prefLabel "Part Information"@en .
 
 
@@ -1606,45 +1600,40 @@ cx-vehicle:previousVehicleModel rdf:type owl:DatatypeProperty ;
 ###  https://w3id.org/catenax/ontology/vehicle#productionDate
 cx-vehicle:productionDate rdf:type owl:DatatypeProperty ;
                           rdfs:subPropertyOf cx-vehicle:productionInformation ;
-                          rdfs:domain cx-vehicle:Vehicle ;
                           rdfs:range xsd:date ;
                           rdfs:seeAlso schema:productionDate ;
-                          skos:definition "The date of production of the vehicle."@en ;
-                          skos:prefLabel "Produktionsdatum"@de ,
-                                         "Vehicle Production Date"@en .
+                          skos:definition "The date of production of the item."@en ;
+                          skos:prefLabel "Production Date"@en ,
+                                         "Produktionsdatum"@de .
 
 
 ###  https://w3id.org/catenax/ontology/vehicle#productionInformation
 cx-vehicle:productionInformation rdf:type owl:DatatypeProperty ;
                                  rdfs:subPropertyOf owl:topDataProperty ;
-                                 rdfs:domain cx-vehicle:Vehicle ;
-                                 skos:prefLabel "Vehicle Production Information"@en .
+                                 skos:prefLabel "Production Information"@en .
 
 
 ###  https://w3id.org/catenax/ontology/vehicle#productionYear
 cx-vehicle:productionYear rdf:type owl:DatatypeProperty ;
                           rdfs:subPropertyOf cx-vehicle:productionInformation ;
-                          rdfs:domain cx-vehicle:Vehicle ;
                           rdfs:range xsd:integer ;
                           skos:prefLabel "Baujahr"@de ,
-                                         "Vehicle Production Year"@en .
+                                         "Production Year"@en .
 
 
 ###  https://w3id.org/catenax/ontology/vehicle#purchaseDate
 cx-vehicle:purchaseDate rdf:type owl:DatatypeProperty ;
                         rdfs:subPropertyOf cx-vehicle:productionInformation ;
-                        rdfs:domain cx-vehicle:Vehicle ;
                         rdfs:range xsd:date ;
                         rdfs:seeAlso schema:purchaseDate ;
-                        skos:definition "The date the vehicle was purchased by the owner."@en ;
+                        skos:definition "The date the item was purchased by the owner."@en ;
                         skos:prefLabel "Kaufdatum"@de ,
-                                       "Vehicle Purchase Date"@en .
+                                       "Purchase Date"@en .
 
 
 ###  https://w3id.org/catenax/ontology/vehicle#purchasePrice
 cx-vehicle:purchasePrice rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf cx-vehicle:productionInformation ;
-                         rdfs:domain cx-vehicle:Vehicle ;
                          rdfs:range xsd:integer ;
                          skos:prefLabel "Kaufpreis"@de ,
                                         "Purchase Price"@en .
@@ -1853,10 +1842,10 @@ cx-vehicle:stroke rdf:type owl:DatatypeProperty ;
 
 
 ###  https://w3id.org/catenax/ontology/vehicle#supplier
-cx-vehicle:supplier rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf cx-vehicle:partInformation ;
-                    rdfs:domain cx-vehicle:Part ;
-                    rdfs:range xsd:string ;
+cx-vehicle:supplier rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdfs:domain cx-vehicle:Part;
+                    rdfs:range rdfs:Resource ;
                     skos:prefLabel "Part Supplier"@en .
 
 
@@ -1985,7 +1974,6 @@ cx-vehicle:vehicleIdentificationNumber rdf:type owl:DatatypeProperty ;
 ###  https://w3id.org/catenax/ontology/vehicle#version
 cx-vehicle:version rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf cx-vehicle:partInformation ;
-                   rdfs:domain cx-vehicle:Part ;
                    rdfs:range xsd:string ;
                    skos:altLabel "Versionsstand"@de ,
                                  "Änderungsindex"@de ;
@@ -2067,6 +2055,17 @@ cx-vehicle:width rdf:type owl:DatatypeProperty ;
                  skos:note "in cm"@en ;
                  skos:prefLabel "Vehicle Width"@en .
 
+
+###  https://w3id.org/catenax/ontology/vehicle#worldManufacturer
+cx-vehicle:manufacturer rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf owl:topObjectProperty ;
+                               rdfs:domain cx-vehicle:Vehicle ;
+                               rdfs:range rdfs:Resource ;
+                               skos:altLabel "OEM"@en ,
+                                             "Vehicle Manufacturer"@en ;
+                               skos:definition "The manufacturer of the vehicle."@en ;
+                               skos:prefLabel "Hersteller"@de,
+                                              "Manufacturer"@en .
 
 ###  https://w3id.org/catenax/ontology/vehicle#worldManufacturerCountry
 cx-vehicle:worldManufacturerCountry rdf:type owl:DatatypeProperty ;
@@ -2168,4 +2167,4 @@ cx-vehicle:VehicleModel rdf:type owl:Class ;
                         skos:prefLabel "Vehicle Model"@en .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
