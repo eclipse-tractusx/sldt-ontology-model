@@ -33,7 +33,7 @@ def create_use_case_template(use_case_name):
     , columns= defined_columns)
 
     #write excel
-    excel_file = 'ontology/ontology_use_case/'+ use_case_name + '_use_case_template.xlsx'
+    excel_file = 'ontology_use_case/'+ use_case_name + '_use_case_template.xlsx'
     if not exists(excel_file):
         print('# writing:', excel_file)
         write_formatted_excel(main_table, excel_file)
@@ -56,7 +56,7 @@ def create_use_case_ontology(use_case_name):
     use_case_ontology.bind('dc',Namespace(DC._NS.__str__()))
     
     #read excel & get selected elements
-    df = pd.read_excel('ontology/ontology_use_case/' + use_case_name + '_use_case_template.xlsx')
+    df = pd.read_excel('ontology_use_case/' + use_case_name + '_use_case_template.xlsx')
     rslt_df = df[(df['relation_selection'] == 'x') | (df['attribute_selection'] == 'x')]
     lisOfClasses = rslt_df['class']
     listOfObjects = rslt_df['object']
@@ -186,7 +186,7 @@ def create_use_case_ontology(use_case_name):
                 use_case_ontology.add((objectPropInExcel, URIRef(cx_s + "provider_role"), Literal(row['provider_roles'] )))
 
     #output 
-    use_case_ontology.serialize(destination= 'ontology/ontology_use_case/' + use_case_name +'_use_case_ontology.ttl', format='turtle')
+    use_case_ontology.serialize(destination= 'ontology_use_case/' + use_case_name +'_use_case_ontology.ttl', format='turtle')
 
 def addOntologyInformationOfClass(main_ontology, use_case_ontology, ontClass, lisOfClasses, listOfObjects):
     cx_s = 'https://raw.githubusercontent.com/catenax-ng/product-knowledge/main/ontology/cx_ontology.ttl#'

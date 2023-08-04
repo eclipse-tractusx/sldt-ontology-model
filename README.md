@@ -64,7 +64,7 @@ Creating a new ontology excel source can be done by invoking
 
 ```
 python 
->>> import ontology.ontology_tools.create_ontology as co
+>>> import ontology_tools.create_ontology as co
 >>>  co.create_ontology_table('test','Schorsch','1.0.0')
 ```
 
@@ -76,3 +76,22 @@ Creating a merged ontology out of several domain ontologies may be done by invok
 python -m ontology_tools.merge_ontology ontology/*_ontology.ttl 
 ```
 
+### Use Case Create
+
+Creating a new use case excel source can be done by invoking
+
+```
+python 
+>>> import ontology_tools.create_use_case as cu
+>>> cu.create_use_case_template('behaviour_twin')
+```
+
+The excel template can then be edited to annotate the required classes, attributes and relations by the stakeholders of the use case.
+
+Deriving a new use case ontology can then be done 
+
+```
+python 
+>>> import ontology_tools.create_use_case as cu
+>>> cu.create_use_case_ontology('behaviour_twin')
+```
