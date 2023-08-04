@@ -13,7 +13,7 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix cx-uc: <https://w3id.org/catenax/usecase/behaviour-twin#> .
+@prefix cx-uc: <https://w3id.org/catenax/usecase/behaviour_twin#> .
 
 cx-uc:CxOntology a owl:Ontology ;
     dc:description "This use case combines telematics and reliability information from an OEM with the modelling and simulation capabilities of a SUPPLIER in order to analyse or predict the behaviour of vehicles in the development, test and field." ;
