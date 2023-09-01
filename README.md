@@ -1,21 +1,44 @@
+<!--
+ * Copyright (c) 2022,2023 Contributors to the Catena-X Association
+ *
+ * See the NOTICE file(s) distributed with this work for additional
+ * information regarding copyright ownership.
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Apache License, Version 2.0 which is available at
+ * https://www.apache.org/licenses/LICENSE-2.0.
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations
+ * under the License.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+-->
+
 # Catena-X Ontology 
 
-This repository hosts semantic models and tools with a focus on the self-description and catalogue capabilities of the 
-[Catena-X Knowledge Agents](https://catenax-ng.github.io/product-knowledge/docs/adoption-view/CX-0084-Federated_Queries_In_Data_Spaces_v1.0.0) standard. 
+This repository hosts semantic models and tools with a focus on self-description and catalogue capabilities of the 
+[Catena-X Knowledge Agents Kit (about to move to: Tractus-X Knowledge Agents Kit)](https://bit.ly/tractusx-agents) KIT with a special attention on Automotive Supply Chains.
 
-They may be used in conjunction with the [Tractus-X Extensions for the Eclipse Dataspace Components](https://github.com/catenax-ng/product-agents-edc) and 
-[Tractus-X Binding Agent Implementations](https://github.com/catenax-ng/product-agents) for dataspace-wide validation, discovery, type inference and binding definitions.
+They may be used in conjunction with the [Tractus-X Extensions for the Eclipse Dataspace Components](https://github.com/eclipse-tractusx/knowledge-agents-edc) and 
+[Tractus-X Binding Agent Implementations](https://github.com/eclipse-tractusx/knowledge-agents) for dataspace-wide validation, discovery, type inference and binding definitions.
 
-* See the [copyright notice](COPYRIGHT.md)
 * See the [authors file](AUTHORS.md)
-* See the [license file](LICENSE.md)
+* See the [license file](LICENSE)
 * See the [code of conduct](CODE_OF_CONDUCT.md)
 * See the [contribution guidelines](CONTRIBUTING.md)
-* See the [dependencies and their licenses](DEPENDENCIES.md)
+* See this [README](README.md)
+* See this [Maven Manifest](pom.xml)
+* See this [Maven Repository Settings](settings.xml)
+* See this [README](README.md)
+* See the [dependencies and their licenses](NOTICE.md)
+* See the [Security disclaimer](SECURITY.md)
 
 ## What's inside?
 
-The Catena-X Ontology is not aimed at being a world model. 
+The [Catena-X Ontology](ontology.ttl) and its initial [Catena-X Taxonomy](taxonomy.ttl) is not aimed at being a world model. 
 Instead it is aimed as an integrative framework with a focus on Automotive Manufacturing.
 
 Therefore, our focus lies on defining practical [domain](ontology)/[use case](ontology_use_case) ontology files (and tools to process/merge them into broader contexts).
@@ -35,16 +58,14 @@ Relations are usually defined in those concepts/domain which cannot exist withou
 
 ## Contents
 
-- [Ontology Tools](tools)
-- [Ontology Tools (Python)](ontology_tools)
-- [Documentation](ontology_documentation)
-- [Example Data Bindings](ontology_mapping)
 - [Catena-X Merged Ontology](ontology.ttl)
 - [Catena-X Taxonomy](taxonomy.ttl)
 - [Catena-X Domain Ontologies](ontology)
+- [Modelling Documentation](docs/README.md)
+- [Ontology Tools](tools)
+- [Ontology Tools (Python)](ontology_tools)
+- [Example Data Bindings](ontology_mapping)
 - [Catena-X Use Case Ontologies](ontology_use_case)
-- [Former Way of Defining Ontologies (Deprecated)](ontology_tables)
-- [Renderings of Catena-X Ontologies (for use in UX components)](vowl)
 
 ## How to use it
 

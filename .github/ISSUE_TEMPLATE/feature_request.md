@@ -4,7 +4,6 @@ about: Suggest an idea for this project
 title: ''
 labels: enhancement
 assignees: ''
-
 ---
 
 _If you are missing a feature or have an idea how to improve this project that should first be

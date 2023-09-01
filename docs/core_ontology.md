@@ -1,3 +1,21 @@
+<!--
+ * Copyright (c) 2022,2023 Contributors to the Catena-X Association
+ *
+ * See the NOTICE file(s) distributed with this work for additional
+ * information regarding copyright ownership.
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Apache License, Version 2.0 which is available at
+ * https://www.apache.org/licenses/LICENSE-2.0.
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations
+ * under the License.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+-->
 # Core Ontology
 
 The Catena-X ontologies consist of the Core Ontology and the Domain Ontologies. The Core Ontology is based on activity-oriented patterns and the Domain Ontologies build on these patterns. In parallel, a taxonomy exists in which the vocabularies created in the Catena-X project are captured in a structured way to realize Domain Ontologies. This taxonomy is not a standard and is used to realize the use cases. It can therefore be replaced or extended by other taxonomies.  
