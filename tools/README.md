@@ -85,7 +85,8 @@ Run the following command to generate test data (currently: for the Traceability
 node tools/src/main/node/testdata.js
 ```
 
-The resulting testdata can be found under [this file](src/test/resources/CX_Testdata_v1.4.1-AsPlanned.json)
+The resulting testdata can be found under [this file](src/test/resources/CX_Testdata_v1.5.2-SNAPSHOT-AsPlanned.json)
+The input file can be found under [this file](src/main/resources/CX_Testdata_v1.5.1-AsPlanned.json)
 
 
 

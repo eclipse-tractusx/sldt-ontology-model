@@ -48,7 +48,7 @@
                                               owl:imports <file:function_ontology.ttl>;
                                               owl:imports <file:vehicle_ontology.ttl>;
                                               owl:imports <file:reliability_ontology.ttl>;
-                                              owl:versionInfo "1.9.4" .
+                                              owl:versionInfo "1.10.2" .
 
 cx-behaviour:RemainingUsefulLife rdf:type cx-fx:Function;
   dc:description "Remaining Useful Life is a Prediction of the Estimated Mileage/Runtime until a Breakdown."@en ;

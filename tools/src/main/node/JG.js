@@ -27,7 +27,7 @@ const crypto = require('crypto');
 
 // use safe crypto random
 exports.randomFloat = function() {
-  return crypto.webcrypto.randomInt(0,Number.MAX_SAFE_INTEGER)*1.0/Number.MAX_SAFE_INTEGER;
+  return crypto.randomInt(0,281474976710655)*1.0/281474976710655;
 };
 
 // The export context is a stack (list) of context maps.
