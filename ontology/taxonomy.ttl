@@ -19,19 +19,19 @@ cx-taxo:Thing a skos:Concept;
     skos:prefLabel "Ding"@de,
         "Thing"@en .
         
-        cx-taxo:PhysicalObject a skos:Concept ;
-            skos:broader cx-taxo:Thing ;
-            skos:prefLabel "Physical Object"@en ;
+cx-taxo:PhysicalObject a skos:Concept ;
+    skos:broader cx-taxo:Thing ;
+    skos:prefLabel "Physical Object"@en ;
         .
         
-        cx-taxo:ConceptionalObject a skos:Concept ;
-            skos:broader cx-taxo:Thing ;
-            skos:prefLabel "Conceptional Object"@en.
+cx-taxo:ConceptionalObject a skos:Concept ;
+    skos:broader cx-taxo:Thing ;
+    skos:prefLabel "Conceptional Object"@en.
             
-            cx-taxo::Asset a skos:Concept ;
-                skos:broader cx-taxo:ConceptionalObject ;
-                skos:prefLabel "Asset"@en ;
-                skos:definition "The Asset concept describes the provision via a repository of a specific set of data for a specific purpose"@en .
+cx-taxo::Asset a skos:Concept ;
+    skos:broader cx-taxo:ConceptionalObject ;
+    skos:prefLabel "Asset"@en ;
+    skos:definition "The Asset concept describes the provision via a repository of a specific set of data for a specific purpose"@en .
 
 cx-taxo:Additive a skos:Concept ;
     rdfs:seeAlso wiki-en:Q350176 ;
@@ -371,8 +371,6 @@ cx-taxo:ChemicalDispersion a skos:Concept ;
     skos:prefLabel "Dispersion"@de,
         "Chemical Dispersion"@en .
 
-
-
 cx-taxo:Substance a skos:Concept ;
     rdfs:seeAlso wiki-en:Substance ;
     skos:broader cx-taxo:MaterialThing ;
@@ -466,10 +464,10 @@ cx-taxo:Actor a skos:Concept ;
     skos:prefLabel "Actor"@de,
         "Actor"@en .
         
-        cx-taxo:Company a skos:Concept ;
-            skos:broader cx-taxo:Actor ;
-            skos:prefLabel "Company"@en,
-             "Unternhemen"@de.
+cx-taxo:Company a skos:Concept ;
+    skos:broader cx-taxo:Actor ;
+    skos:prefLabel "Company"@en,
+        "Unternhemen"@de.
 
 cx-taxo:InformationObject a skos:Concept ;
     skos:broader  cx-taxo:ConceptionalObject;
