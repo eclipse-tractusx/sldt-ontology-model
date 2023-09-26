@@ -28,10 +28,21 @@ cx-taxo:ConceptionalObject a skos:Concept ;
     skos:broader cx-taxo:Thing ;
     skos:prefLabel "Conceptional Object"@en.
             
-cx-taxo::Asset a skos:Concept ;
+cx-taxo:Asset a skos:Concept ;
     skos:broader cx-taxo:ConceptionalObject ;
     skos:prefLabel "Asset"@en ;
     skos:definition "The Asset concept describes the provision via a repository of a specific set of data for a specific purpose"@en .
+
+cx-taxo:DigitalTwinRegistry a skos:Concept;
+    skos:broader cx-taxo:Asset;
+    skos:prefLabel "Digital Twin Registry";
+    skos:definition "The Digital Twin Registry (DTR) is the union of the Catena-X-selected subsets of the Asset Administration Shell Registry and Discovery APIs."
+    skos:example "https://github.com/eclipse-tractusx/sldt-digital-twin-registry"
+
+cx-taxo:Submodel a skos:Concept;
+    skos:broader cx-taxo:Asset;
+    skos:prefLabel "Submodel";
+    skos:definition "The Submodel API serves aspects of a Digital Twin according to the Asset Administration Shell standard."
 
 cx-taxo:Additive a skos:Concept ;
     rdfs:seeAlso wiki-en:Q350176 ;
@@ -43,7 +54,6 @@ cx-taxo:Additive a skos:Concept ;
     skos:example "lubricant"@en ;
     skos:prefLabel "Additiv"@de,
         "Additive"@en .
-
 
 cx-taxo:Aerosol a skos:Concept ;
     rdfs:seeAlso wiki-en:Aerosol ;
