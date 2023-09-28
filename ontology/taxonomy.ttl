@@ -28,10 +28,20 @@ cx-taxo:Thing a skos:Concept;
             skos:broader cx-taxo:Thing ;
             skos:prefLabel "Conceptional Object"@en.
             
-            cx-taxo::Asset a skos:Concept ;
+            cx-taxo:Asset a skos:Concept ;
                 skos:broader cx-taxo:ConceptionalObject ;
                 skos:prefLabel "Asset"@en ;
                 skos:definition "The Asset concept describes the provision via a repository of a specific set of data for a specific purpose"@en .
+                
+                cx-taxo:GraphAsset a skos:Concept ;
+                    skos:broader cx-taxo:Asset ;
+                    skos:prefLabel "Graph Asset"@en ;
+                    skos:definition "This subconcept of Asset allows arbitrary data queries to be executed on assets."@en .
+                
+                cx-taxo:SkillAsset a skos:Concept ;
+                    skos:broader cx-taxo:Asset ;
+                    skos:prefLabel "Skill Asset"@en ;
+                    skos:definition "This subconcept of Asset allows only the execution of predefined data queries on assets."@en .
 
 cx-taxo:Additive a skos:Concept ;
     rdfs:seeAlso wiki-en:Q350176 ;
