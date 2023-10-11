@@ -19,19 +19,65 @@ cx-taxo:Thing a skos:Concept;
     skos:prefLabel "Ding"@de,
         "Thing"@en .
         
-        cx-taxo:PhysicalObject a skos:Concept ;
-            skos:broader cx-taxo:Thing ;
-            skos:prefLabel "Physical Object"@en ;
+cx-taxo:PhysicalObject a skos:Concept ;
+    skos:broader cx-taxo:Thing ;
+    skos:prefLabel "Physical Object"@en ;
         .
         
-        cx-taxo:ConceptionalObject a skos:Concept ;
-            skos:broader cx-taxo:Thing ;
-            skos:prefLabel "Conceptional Object"@en.
+cx-taxo:ConceptionalObject a skos:Concept ;
+    skos:broader cx-taxo:Thing ;
+    skos:prefLabel "Conceptional Object"@en.
             
-            cx-taxo::Asset a skos:Concept ;
-                skos:broader cx-taxo:ConceptionalObject ;
-                skos:prefLabel "Asset"@en ;
-                skos:definition "The Asset concept describes the provision via a repository of a specific set of data for a specific purpose"@en .
+cx-taxo:Asset a skos:Concept ;
+    skos:broader cx-taxo:ConceptionalObject ;
+    skos:prefLabel "Asset"@en ;
+    skos:definition "The Asset concept describes the provision via a repository of a specific set of data for a specific purpose. It is defined by its public API."@en .
+
+cx-taxo:DigitalTwinRegistry a skos:Concept;
+    skos:broader cx-taxo:Asset;
+    skos:prefLabel "Digital Twin Registry";
+    skos:definition "The Digital Twin Registry (DTR) is the union of the Catena-X-selected subsets of the Asset Administration Shell Registry and Discovery APIs."
+    skos:example "https://github.com/eclipse-tractusx/sldt-digital-twin-registry"
+
+cx-taxo:Submodel a skos:Concept;
+    skos:broader cx-taxo:Asset;
+    skos:prefLabel "Submodel";
+    skos:definition "The Submodel API serves aspects of a Digital Twin according to the Asset Administration Shell standard."
+
+cx-taxo:ReceiveQualityInvestigationNotification a skos:Concept;
+    skos:broader cx-taxo:Asset;
+    skos:prefLabel "Receive Quality Investigation Notification";
+    skos:definition "API to receive quality investigation notifications"
+
+cx-taxo:ReceiveQualityAlertNotification a skos:Concept;
+    skos:broader cx-taxo:Asset;
+    skos:prefLabel "Receive Quality Alert Notification";
+    skos:definition "API to receive quality alert notifications"
+
+cx-taxo:UpdateQualityInvestigationNotification a skos:Concept;
+    skos:broader cx-taxo:Asset;
+    skos:prefLabel "Update Quality Investigation Notification";
+    skos:definition "API to update quality investigation notifications"
+
+cx-taxo:UpdateQualityAlertNotification a skos:Concept;
+    skos:broader cx-taxo:Asset;
+    skos:prefLabel "Update Quality Alert Notification";
+    skos:definition "API to update quality Alert notifications"
+
+cx-taxo:ResolveQualityInvestigationNotification a skos:Concept;
+    skos:broader cx-taxo:Asset;
+    skos:prefLabel "Resolve Quality Investigation Notification";
+    skos:definition "API to update quality investigation notifications"
+
+cx-taxo:ResolveQualityAlertNotification a skos:Concept;
+    skos:broader cx-taxo:Asset;
+    skos:prefLabel "Resolve Quality Alert Notification";
+    skos:definition "API to resolve quality Alert notifications"
+
+cx-taxo:PcfExchange a skos:Concept;
+    skos:broader cx-taxo:Asset;
+    skos:prefLabel "PCF Exchange API";
+    skos:definition "API to exchange data on Product Carbon Footprints"
 
 cx-taxo:Additive a skos:Concept ;
     rdfs:seeAlso wiki-en:Q350176 ;
@@ -43,7 +89,6 @@ cx-taxo:Additive a skos:Concept ;
     skos:example "lubricant"@en ;
     skos:prefLabel "Additiv"@de,
         "Additive"@en .
-
 
 cx-taxo:Aerosol a skos:Concept ;
     rdfs:seeAlso wiki-en:Aerosol ;
@@ -371,8 +416,6 @@ cx-taxo:ChemicalDispersion a skos:Concept ;
     skos:prefLabel "Dispersion"@de,
         "Chemical Dispersion"@en .
 
-
-
 cx-taxo:Substance a skos:Concept ;
     rdfs:seeAlso wiki-en:Substance ;
     skos:broader cx-taxo:MaterialThing ;
@@ -466,10 +509,10 @@ cx-taxo:Actor a skos:Concept ;
     skos:prefLabel "Actor"@de,
         "Actor"@en .
         
-        cx-taxo:Company a skos:Concept ;
-            skos:broader cx-taxo:Actor ;
-            skos:prefLabel "Company"@en,
-             "Unternhemen"@de.
+cx-taxo:Company a skos:Concept ;
+    skos:broader cx-taxo:Actor ;
+    skos:prefLabel "Company"@en,
+        "Unternhemen"@de.
 
 cx-taxo:InformationObject a skos:Concept ;
     skos:broader  cx-taxo:ConceptionalObject;
