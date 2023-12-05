@@ -841,6 +841,11 @@ cx-taxo:Thing a skos:Concept;
                 skos:prefLabel "Resolve Quality Alert Notification"@en;
                 skos:definition "API to resolve quality Alert notifications".
 
+            cx-taxo:ReceiveUniqueIdPushNotification a skos:Concept;
+                skos:broader cx-taxo:Asset;
+                skos:prefLabel "Receive Unique ID Push Notification"@en;
+                skos:definition "API to receive Unique Id Push notifications".
+
             cx-taxo:PcfExchange a skos:Concept;
                 skos:broader cx-taxo:Asset;
                 skos:prefLabel "PCF Exchange API"@en;
