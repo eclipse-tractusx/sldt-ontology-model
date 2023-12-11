@@ -22,7 +22,7 @@
     <groupId>io.catenax</groupId>
     <artifactId>ontology</artifactId>
     <packaging>pom</packaging>
-    <version>1.9.4-SNAPSHOT</version>
+    <version>1.10.15-SNAPSHOT</version>
     <name>Catena-X Knowledge Agents Ontology</name>
     <description>Project for all Ontology-Related Artifacts</description>
     <dependencies>
