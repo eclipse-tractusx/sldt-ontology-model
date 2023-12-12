@@ -25,5 +25,6 @@
     <uri id="User Entered Import Resolution" name="file:reliability_ontology.ttl" uri="reliability_ontology.ttl"/>
     <uri id="User Entered Import Resolution" name="file:behaviour_ontology.ttl" uri="behaviour_ontology.ttl"/>
     <uri id="User Entered Import Resolution" name="file:bill-of-material_ontology.ttl" uri="bill-of-material_ontology.ttl"/>
+    <uri id="User Entered Import Resolution" name="file:supply-chain_ontology.ttl" uri="supply-chain_ontology.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
 </catalog>

@@ -25,6 +25,7 @@
     <uri id="User Entered Import Resolution" name="file:ontology/reliability_ontology.ttl" uri="ontology/reliability_ontology.ttl"/>
     <uri id="User Entered Import Resolution" name="file:ontology/behaviour_ontology.ttl" uri="ontology/behaviour_ontology.ttl"/>
     <uri id="User Entered Import Resolution" name="file:ontology/bill-of-material_ontology.ttl" uri="ontology/bill-of-material_ontology.ttl"/>
+    <uri id="User Entered Import Resolution" name="file:ontology/supply-chain_ontology.ttl" uri="ontology/supply-chain_ontology.ttl"/>
     <uri id="User Entered Import Resolution" name="file:common_ontology.ttl" uri="ontology/common_ontology.ttl"/>
     <uri id="User Entered Import Resolution" name="file:core_ontology.ttl" uri="ontology/core_ontology.ttl"/>
     <uri id="User Entered Import Resolution" name="file:vehicle_ontology.ttl" uri="ontology/vehicle_ontology.ttl"/>
@@ -32,5 +33,6 @@
     <uri id="User Entered Import Resolution" name="file:reliability_ontology.ttl" uri="ontology/reliability_ontology.ttl"/>
     <uri id="User Entered Import Resolution" name="file:behaviour_ontology.ttl" uri="ontology/behaviour_ontology.ttl"/>
     <uri id="User Entered Import Resolution" name="file:bill-of-material_ontology.ttl" uri="ontology/bill-of-material_ontology.ttl"/>
+    <uri id="User Entered Import Resolution" name="file:supply-chain_ontology.ttl" uri="ontology/supply-chain_ontology.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
 </catalog>
