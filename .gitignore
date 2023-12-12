@@ -35,3 +35,5 @@ logs/
 .vscode
 .env
 __pycache__
+Gemfile.lock
+_site/
