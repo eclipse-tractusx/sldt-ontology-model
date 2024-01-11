@@ -145,15 +145,15 @@ cx-bom:supportsBom rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/catenax/ontology/bill-of-material#supplier
 cx-bom:supplier rdf:type owl:ObjectProperty ;
                 rdfs:domain cx-bom:BillOfMaterial ;
-                rdfs:range cx-common:BusinessPartner;
-                skos:definition "The supplier of the component."@en ;
+                rdfs:range cx-common:BusinessPartner, cx-common:Site, cx-common:Address ;
+                skos:definition "The supplier of the component(s)."@en ;
                 skos:prefLabel "Supplier"@de ,
                                "Zulieferer"@en .
 
 ###  https://w3id.org/catenax/ontology/bill-of-material#assembler
 cx-bom:assembler rdf:type owl:ObjectProperty ;
                 rdfs:domain cx-bom:BillOfMaterial ;
-                rdfs:range cx-common:BusinessPartner;
+                rdfs:range cx-common:BusinessPartner, cx-common:Site, cx-common:Address ;
                 skos:definition "The assembler of the assembly."@en ;
                 skos:prefLabel "Assembler"@de ,
                                "Fertiger"@en .
