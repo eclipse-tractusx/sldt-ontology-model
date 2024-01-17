@@ -861,6 +861,11 @@ cx-taxo:Thing a skos:Concept;
                 skos:prefLabel "Skill Asset"@en ;
                 skos:definition "This subconcept of Asset allows only the execution of predefined data queries on assets."@en .
 
+            cx-taxo:QualityAsset a skos:Concept ;
+                skos:broader cx-taxo:Asset ;
+                skos:prefLabel "Quality Asset"@en ;
+                skos:definition "This subconcept of Asset signifies that a data offer is associated with the Quality use-case. Assets and data offers are further specified by the dcat:conformsTo property."@en .
+
             
             cx-taxo:FuelType a skos:Concept ;
                 skos:broader cx-taxo:ConceptionalObject ;
