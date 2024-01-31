@@ -44,7 +44,7 @@
                                              owl:versionInfo "0.10.3" .
 
 ###  https://w3id.org/catenax/ontology/bill-of-material#BillOfMaterial
-cx-bom:BillOfMaterial rdf:type cx-core:ConceptualObject ;
+cx-bom:BillOfMaterial rdfs:subClassOf cx-core:ConceptualObject ;
                       dc:description "The Bill Of Material relates qualitatively and quantitatively Assembly Parts to their Components."@en ;
                       rdfs:label "Bill Of Material"@en .
 

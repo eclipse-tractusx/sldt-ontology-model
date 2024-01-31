@@ -43,7 +43,7 @@
                                              dc:title "Supply Chain Ontology" ;
                                              owl:versionInfo "0.11.16" .
 
-cx-scm:SupplyChain rdf:type cx-core:ConceptualObject ;
+cx-scm:SupplyChain rdfs:subClassOf cx-core:ConceptualObject ;
                       dc:description "The Supply Chain relates consumers and a supplier."@en ;
                       rdfs:label "Supply Chain"@en .
 
