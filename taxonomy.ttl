@@ -851,10 +851,10 @@ cx-taxo:Thing a skos:Concept;
                 skos:prefLabel "PCF Exchange API"@en;
                 skos:definition "API to exchange data on Product Carbon Footprints".
 
-             cx-taxo:GraphAsset a skos:Concept ;
-                    skos:broader cx-taxo:Asset ;
-                    skos:prefLabel "Graph Asset"@en ;
-                    skos:definition "This subconcept of Asset allows arbitrary data queries to be executed on assets."@en .
+            cx-taxo:GraphAsset a skos:Concept ;
+                skos:broader cx-taxo:Asset ;
+                skos:prefLabel "Graph Asset"@en ;
+                skos:definition "This subconcept of Asset allows arbitrary data queries to be executed on assets."@en .
                 
             cx-taxo:SkillAsset a skos:Concept ;
                 skos:broader cx-taxo:Asset ;
@@ -866,7 +866,26 @@ cx-taxo:Thing a skos:Concept;
                 skos:prefLabel "Quality Asset"@en ;
                 skos:definition "This subconcept of Asset signifies that a data offer is associated with the Quality use-case. Assets and data offers are further specified by the dcat:conformsTo property."@en .
 
-            
+            cx-taxo:DcmMaterialDemand a skos:Concept;
+                skos:broader cx-taxo:Asset;
+                skos:prefLabel "Receive Material Demand DCM"@en;
+                skos:definition "API to receive a Material Demand in DCM context".
+
+            cx-taxo:DcmWeekBasedCapacityGroup a skos:Concept;
+                skos:broader cx-taxo:Asset;
+                skos:prefLabel "Receive Week Based Capacity Group DCM"@en;
+                skos:definition "API to receive a Week Based Capacity Group in DCM context".
+
+            cx-taxo:DcmIdBasedRequestForUpdate a skos:Concept;
+                skos:broader cx-taxo:Asset;
+                skos:prefLabel "Receive ID Based Request for Update DCM"@en;
+                skos:definition "API to receive an ID Based Request for Update in DCM context".
+
+            cx-taxo:DcmIdBasedComment a skos:Concept;
+                skos:broader cx-taxo:Asset;
+                skos:prefLabel "Receive ID Based Comment for DCM"@en;
+                skos:definition "API to receive an ID Based Comment in DCM context".
+
             cx-taxo:FuelType a skos:Concept ;
                 skos:broader cx-taxo:ConceptionalObject ;
                 rdfs:seeAlso <https://de.wikipedia.org/wiki/Kraftstoffcode>,
