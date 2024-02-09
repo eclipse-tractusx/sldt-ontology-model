@@ -34,11 +34,12 @@
 @prefix : <https://w3id.org/catenax/ontology/core#> .
 
 <https://catena-x.net/product-knowledge/ontology/core> rdf:type owl:Ontology ;
+                                                        dc:contributor "Christoph Jung" ;
                                                         dc:creator "Oguzhan Balandi" ;
                                                         dc:date "2023-05-05"^^xsd:date ;
                                                         dc:description "The Catena-X core ontology contains main domain-independent classes, attributes and relations." ;
                                                         dc:title "Core Ontology" ;
-                                                        owl:versionInfo "1.9.4" .
+                                                        owl:versionInfo "1.9.8" .
 
 #################################################################
 #    Annotation properties

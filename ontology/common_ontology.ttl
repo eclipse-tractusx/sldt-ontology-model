@@ -34,12 +34,12 @@
 @base <https://w3id.org/catenax/ontology/common#> .
 
 <https://w3id.org/catenax/ontology/common> rdf:type owl:Ontology ;
-                                           dc:contributor "Oguzhan Balandi" ;
+                                           dc:contributor "Oguzhan Balandi", "Christoph Jung" ;
                                            dc:creator "Zazralt Magic" ;
                                           dc:date "2023-05-23"^^xsd:date ;
                                           dc:description "The common ontology describes the Dataspace connectors in detail. On the one hand, this includes the information from which Catena-X business partner the connectors are deployed. On the other hand, with which contracts which assets provide the connectors."@en ;
                                           dc:title "Common Ontology" ;
-                                          owl:versionInfo "1.9.4" .
+                                          owl:versionInfo "1.9.8" .
 
 #################################################################
 #    Annotation properties
@@ -203,7 +203,53 @@ cx-common:version rdf:type owl:DatatypeProperty ;
                   rdfs:range xsd:string ;
                   rdfs:comment "This property contains version of asset."@en .
 
+cx-common:isSiteOf rdf:type owl:ObjectProperty;
+               rdfs:domain cx-common:Site ;
+               rdfs:target cx-common:BusinessPartner ;
+               rdfs:comment "Relates a site to its business partner."@en .
 
+cx-common:isAddressOf rdf:type owl:ObjectProperty;
+               rdfs:domain cx-common:Address ;
+               rdfs:target cx-common:Site, cx-common:BusinessPartner ;
+               rdfs:comment "Relates an address to its site or business partner."@en .
+
+cx-common:site rdf:type owl:ObjectProperty;
+               rdfs:domain cx-common:BusinessPartner ;
+               rdfs:target cx-common:Site ;
+               rdfs:comment "Relates a business partner to its sites."@en .
+
+cx-common:address rdf:type owl:ObjectProperty;
+               rdfs:domain cx-common:BusinessPartner, cx-common:Site ;
+               rdfs:target cx-common:Address ;
+               rdfs:comment "Relates a business partner or its site to its addresses."@en .
+
+###  https://w3id.org/catenax/ontology/common#validityPeriod
+cx-common:validityPeriod rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain cx-common:BusinessPartner, cx-common:Site, cx-common:Address ;
+                skos:prefLabel "Validity Period"@en, "Gültigkeitszeitraum"@de .
+
+
+###  https://w3id.org/catenax/ontology/common#validityPeriodStart
+cx-common:validityPeriodStart rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf cx-common:validityPeriod ;
+                       rdfs:domain cx-common:BusinessPartner, cx-common:Site, cx-common:Address ;
+                       rdfs:range xsd:date;
+                       skos:definition "The start of validity."@en ;
+                       skos:example "2023-07-01"@en ;
+                       skos:prefLabel "Validity Period Start"@de ,
+                                      "Gültigkeitsbeginn"@en .
+
+###  https://w3id.org/catenax/ontology/common#validityPeriodEnd
+cx-common:validityPeriodEnd rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf cx-common:validityPeriod ;
+                       rdfs:domain cx-common:BusinessPartner, cx-common:Site, cx-common:Address ;
+                       rdfs:range xsd:date;
+                       skos:definition "The end of validity."@en ;
+                       skos:example "2023-08-31"@en ;
+                       skos:prefLabel "Validity Period End"@de ,
+                                      "Gültigkeitsende"@en .
+                                      
 #################################################################
 #    Classes
 #################################################################
@@ -226,6 +272,18 @@ cx-common:BusinessPartner rdf:type owl:Class ;
                                        "Volkswagen"@en ;
                           skos:prefLabel "Business Partner"@en ,
                                          "Geschäftspartner"@de .
+
+###  https://catena-x.net/product-knowledge/ontology/common#Site
+cx-common:Site rdf:type owl:Class ;
+                          skos:definition "A Site is a facility of a business partner."@en ;
+                          skos:prefLabel "Site"@en ,
+                                         "Niederlassung"@de .
+
+###  https://catena-x.net/product-knowledge/ontology/common#Address
+cx-common:Address rdf:type owl:Class ;
+                          skos:definition "An address is a contact description of a  facility of a business partner."@en ;
+                          skos:prefLabel "Address"@en ,
+                                         "Adresse"@de .
 
 
 ###  https://catena-x.net/product-knowledge/ontology/common#DataspaceConnector
@@ -263,6 +321,8 @@ cx-common:SkillDistribution%3Frun%3Dall rdf:type cx-common:SkillDistribution;
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( cx-common:Asset
                 cx-common:BusinessPartner
+                cx-common:Site
+                cx-common:Address
                 cx-common:DataspaceConnector
               )
 ] .

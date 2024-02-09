@@ -37,11 +37,11 @@
 <https://w3id.org/catenax/ontology/reliability> rdf:type owl:Ontology ;
                                                  owl:imports <file:core_ontology.ttl> ,
                                                              <file:vehicle_ontology.ttl> ;
-                                                 dc:contributor "Jörg Schulz, Rolf Bosse, Oguzhan Balandi " ;
-                                                 dc:creator "Zazralt Magic" ;
+                                                 dc:contributor "Jörg Schulz", "Rolf Bosse", "Zazralt Magic" ;
+                                                 dc:creator "Oguzhan Balandi" ;
                                                  dc:date "2023-02-21"^^xsd:date ;
                                                  dc:title "Reliability Ontology"@en ;
-                                                 owl:versionInfo "1.9.4" .
+                                                 owl:versionInfo "1.10.2" .
 
 #################################################################
 #    Annotation properties

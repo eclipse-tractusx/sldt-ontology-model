@@ -35,12 +35,12 @@
 
 <https://w3id.org/catenax/ontology/vehicle> rdf:type owl:Ontology ;
                                              owl:imports <file:core_ontology.ttl> ;
-                                             dc:contributor "Rolf Bosse, Jörg Schulz, Oguzhan Balandi" ;
+                                             dc:contributor "Rolf Bosse","Jörg Schulz", "Oguzhan Balandi", "Christoph Jung" ;
                                              dc:creator "Zazralt Magic" ;
                                              dc:date "2023-02-21"^^xsd:date ;
                                              dc:description "Ontology for vehicles in the automotive industry." ;
                                              dc:title "Vehicle Ontology" ;
-                                             owl:versionInfo "1.9.4" .
+                                             owl:versionInfo "1.10.3" .
 
 #################################################################
 #    Annotation properties
@@ -1618,15 +1618,23 @@ cx-vehicle:previousVehicleModel rdf:type owl:DatatypeProperty ;
                                                "Vorgängermodell"@de .
 
 
-###  https://w3id.org/catenax/ontology/vehicle#productionDate
-cx-vehicle:productionDate rdf:type owl:DatatypeProperty ;
+###  https://w3id.org/catenax/ontology/vehicle#productionPeriodStart
+cx-vehicle:productionPeriodStart rdf:type owl:DatatypeProperty ;
                           rdfs:subPropertyOf cx-vehicle:productionInformation ;
                           rdfs:range xsd:date ;
                           rdfs:seeAlso schema:productionDate ;
-                          skos:definition "The date of production of the item."@en ;
-                          skos:prefLabel "Production Date"@en ,
-                                         "Produktionsdatum"@de .
+                          skos:definition "The start of the production period of the item."@en ;
+                          skos:prefLabel "Production Period Start"@en ,
+                                         "Produktionsstart"@de .
 
+###  https://w3id.org/catenax/ontology/vehicle#productionPeriodEnd
+cx-vehicle:productionPeriodEnd rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf cx-vehicle:productionInformation ;
+                          rdfs:range xsd:date ;
+                          rdfs:seeAlso schema:productionDate ;
+                          skos:definition "The end of the production period of the item."@en ;
+                          skos:prefLabel "Production Period End"@en ,
+                                         "Produktionsende"@de .
 
 ###  https://w3id.org/catenax/ontology/vehicle#productionInformation
 cx-vehicle:productionInformation rdf:type owl:DatatypeProperty ;
@@ -2080,11 +2088,11 @@ cx-vehicle:width rdf:type owl:DatatypeProperty ;
 ###  https://w3id.org/catenax/ontology/vehicle#worldManufacturer
 cx-vehicle:manufacturer rdf:type owl:ObjectProperty ;
                                rdfs:subPropertyOf owl:topObjectProperty ;
-                               rdfs:domain cx-vehicle:Vehicle ;
+                               rdfs:domain cx-vehicle:Vehicle, cx-vehicle:Part ;
                                rdfs:range rdfs:Resource ;
                                skos:altLabel "OEM"@en ,
-                                             "Vehicle Manufacturer"@en ;
-                               skos:definition "The manufacturer of the vehicle."@en ;
+                                             "Original Equipment Manufacturer"@en ;
+                               skos:definition "The manufacturer of an equipment."@en ;
                                skos:prefLabel "Hersteller"@de,
                                               "Manufacturer"@en .
 
@@ -2157,8 +2165,8 @@ cx-vehicle:Part rdf:type owl:Class ;
                 rdfs:subClassOf cx-core:PhysicalObject ;
                 owl:disjointWith cx-vehicle:Vehicle ;
                 skos:definition "A part in the automotive context is a component of a vehicle. Parts may have sub-parts that perform specific sub-functions."@en ;
-                skos:prefLabel "Part"@en .
-
+                skos:prefLabel "Part"@en ;
+                skos:altLabel "Equipment"@en .
 
 ###  https://w3id.org/catenax/ontology/vehicle#Vehicle
 cx-vehicle:Vehicle rdf:type owl:Class ;
