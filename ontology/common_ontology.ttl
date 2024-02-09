@@ -236,28 +236,6 @@ cx-common:DataspaceConnector rdf:type owl:Class ;
                                            "EDC"@en ;
                              skos:prefLabel "Dataspace Connector"@en .
 
-
-###  https://catena-x.net/product-knowledge/ontology/common#FunctionAsset
-cx-common:FunctionAsset rdf:type owl:Class ;
-                        rdfs:subClassOf cx-common:Asset ;
-                        rdfs:comment "This subclass of Asset allows performing calculations on asset."@en ;
-                        rdfs:label "Function Asset"@en .
-
-
-###  https://catena-x.net/product-knowledge/ontology/common#GraphAsset
-cx-common:GraphAsset rdf:type owl:Class ;
-                     rdfs:subClassOf cx-common:Asset ;
-                     rdfs:comment "This subclass of Asset allows arbitrary data queries to be executed on assets."@en ;
-                     rdfs:label "Graph Asset" .
-
-
-###  https://catena-x.net/product-knowledge/ontology/common#SkillAsset
-cx-common:SkillAsset rdf:type owl:Class ;
-                     rdfs:subClassOf cx-common:Asset ;
-                     rdfs:comment "This subclass of Asset allows only the execution of predefined data queries on assets."@en ;
-                     rdfs:label "Skill Asset"@en .
-
-
 ###  https://catena-x.net/product-knowledge/ontology/common#SkillDistribution
 cx-common:SkillDistribution rdf:type rdfs:Resource;
                rdfs:comment "Describes the possibilities how to distribute skills."@en;
