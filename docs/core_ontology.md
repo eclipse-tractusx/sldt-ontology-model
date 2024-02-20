@@ -36,7 +36,10 @@ This concept enables the exploration of complex questions along the product life
 
 The core ontology consists of the classes Activity, Actor, Place, Physical and Conceptual Object. These are the main entities that are shared in Catene-X. In order to realize secure and consistent exchange and networking, it is necessary that these entities have a [persistent identifier](#Persistent-Identifier), name and access roles.
 
-![core ontology](images/catenaX_core_ontology.jpg)
+
+<div align="center"  width="100%">
+  <img src="images/core_ontology.gv.svg" alt="image" height="auto" />
+</div>
 
 ### Activity
 

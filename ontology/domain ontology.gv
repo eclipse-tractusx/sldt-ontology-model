@@ -1,0 +1,37 @@
+digraph "domain ontology" {
+	graph [fontname="Helvetica,Arial,sans-serif" fontsize=10 splines=ortho]
+	node [fillcolor=gray95 fontname="Helvetica,Arial,sans-serif" fontsize=6 shape=record]
+	edge [arrowsize=0.3 fontname="Helvetica,Arial,sans-serif" fontsize=5 penwidth=0.3]
+	Activity [label=<{<b>Activity</b> | <b> domain:core</b> <br align="left"/>endDateTime:dateTime<br align="left"/>name:string<br align="left"/>startDateTime:dateTime<br align="left"/>}> style=filled]
+	Actor [label=<{<b>Actor</b> | <b> domain:core</b> <br align="left"/>name:string<br align="left"/>}> style=filled]
+	Address [label=<{<b>Address</b> | <b> domain:core</b> <br align="left"/>street:string<br align="left"/>houseNumber:int<br align="left"/>postalCode:string<br align="left"/>city:string<br align="left"/>country:string<br align="left"/>}> style=filled]
+	ConceptualObject [label=<{<b>ConceptualObject</b> | <b> domain:core</b> <br align="left"/>name:string<br align="left"/>}> style=filled]
+	PhysicalObject [label=<{<b>PhysicalObject</b> | <b> domain:core</b> <br align="left"/>name:string<br align="left"/>}> style=filled]
+	Place [label=<{<b>Place</b> | <b> domain:core</b> <br align="left"/>name:string<br align="left"/>}> style=filled]
+	hasAddress [label=hasAddress fillcolor=greenyellow fontsize=5 height=0 shape=plaintext style=filled width=0]
+	describesPhysicalObject [label="describesPhysicalObject / 
+describedByConceptualObject ➝" fillcolor=greenyellow fontsize=5 height=0 shape=plaintext style=filled width=0]
+	hasParticipant [label="hasParticipant / 
+participatesIn ➝" fillcolor=greenyellow fontsize=5 height=0 shape=plaintext style=filled width=0]
+	refersToConceptualObject [label="refersToConceptualObject / 
+involvedIn ➝" fillcolor=greenyellow fontsize=5 height=0 shape=plaintext style=filled width=0]
+	refersToPhysicalObject [label="refersToPhysicalObject / 
+involvedIn ➝" fillcolor=greenyellow fontsize=5 height=0 shape=plaintext style=filled width=0]
+	relatedToPlace [label=relatedToPlace fillcolor=greenyellow fontsize=5 height=0 shape=plaintext style=filled width=0]
+	takesPlaceAt [label="takesPlaceAt / 
+hosts ➝" fillcolor=greenyellow fontsize=5 height=0 shape=plaintext style=filled width=0]
+	Place -> hasAddress [arrowhead=none]
+	hasAddress -> Address
+	ConceptualObject -> describesPhysicalObject [arrowhead=none]
+	describesPhysicalObject -> PhysicalObject
+	Activity -> hasParticipant [arrowhead=none]
+	hasParticipant -> Actor
+	Activity -> refersToConceptualObject [arrowhead=none]
+	refersToConceptualObject -> ConceptualObject
+	Activity -> refersToPhysicalObject [arrowhead=none]
+	refersToPhysicalObject -> PhysicalObject
+	Actor -> relatedToPlace [arrowhead=none]
+	relatedToPlace -> Place
+	Activity -> takesPlaceAt [arrowhead=none]
+	takesPlaceAt -> Place
+}

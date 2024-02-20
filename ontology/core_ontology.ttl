@@ -82,6 +82,13 @@ json:Object rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
+###  https://catena-x.net/product-knowledge/ontology/core#hasAddress
+cx-core:hasAddress rdf:type owl:ObjectProperty ;
+                                    rdfs:subPropertyOf owl:topObjectProperty ;
+                                    rdfs:domain cx-core:Place ;
+                                    rdfs:range cx-core:Address.
+
+
 ###  https://catena-x.net/product-knowledge/ontology/core#describedByConceptualObject
 cx-core:describedByConceptualObject rdf:type owl:ObjectProperty ;
                                     rdfs:subPropertyOf owl:topObjectProperty ;
@@ -113,12 +120,14 @@ cx-core:hasParticipant rdf:type owl:ObjectProperty ;
 ###  https://catena-x.net/product-knowledge/ontology/core#hosts
 cx-core:hosts rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf owl:topObjectProperty ;
+              owl:inverseOf cx-core:takesPlaceAt; 
               rdfs:domain cx-core:Place ;
               rdfs:range cx-core:Activity .
 
 
 ###  https://catena-x.net/product-knowledge/ontology/core#involvedIn
 cx-core:involvedIn rdf:type owl:ObjectProperty ;
+                   owl:inverseOf cx-core:refersToConceptualObject, cx-core:refersToPhysicalObject ; 
                    rdfs:domain cx-core:ConceptualObject ,
                                cx-core:PhysicalObject ;
                    rdfs:range cx-core:Activity ;
@@ -129,6 +138,7 @@ cx-core:involvedIn rdf:type owl:ObjectProperty ;
 ###  https://catena-x.net/product-knowledge/ontology/core#participatesIn
 cx-core:participatesIn rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf owl:topObjectProperty ;
+                       owl:inverseOf cx-core:hasParticipant ;
                        rdfs:domain cx-core:Actor ;
                        rdfs:range cx-core:Activity ;
                        rdfs:comment "Inverse of 'has participant'"@en ;
@@ -148,7 +158,7 @@ cx-core:refersToConceptualObject rdf:type owl:ObjectProperty ;
 cx-core:refersToPhysicalObject rdf:type owl:ObjectProperty ;
                                rdfs:subPropertyOf owl:topObjectProperty ;
                                rdfs:domain cx-core:Activity ;
-                               rdfs:range cx-core:ConceptualObject ;
+                               rdfs:range cx-core:PhysicalObject ;
                                rdfs:comment "This property refers to actively or passively used physical objects in an Activity."@en ;
                                rdfs:label "refers to physical object"@en .
 
@@ -185,14 +195,14 @@ cx-core:endDateTime rdf:type owl:DatatypeProperty ;
 ###  https://catena-x.net/product-knowledge/ontology/core#id
 cx-core:id rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf owl:topDataProperty ;
-           rdfs:domain owl:Thing ;
+           rdfs:domain cx-core:Activity, cx-core:Place, cx-core:Actor, cx-core:ConceptualObject, cx-core:PhysicalObject ;
            rdfs:range xsd:string .
 
 
 ###  https://catena-x.net/product-knowledge/ontology/core#name
 cx-core:name rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf owl:topDataProperty ;
-             rdfs:domain owl:Thing ;
+             rdfs:domain cx-core:Activity, cx-core:Place, cx-core:Actor, cx-core:ConceptualObject, cx-core:PhysicalObject ;
              rdfs:range xsd:string .
 
 
@@ -210,6 +220,31 @@ cx-core:startDateTime rdf:type owl:DatatypeProperty ;
                       rdfs:range xsd:dateTime ;
                       rdfs:comment "Start time of the activity."@en ;
                       rdfs:label "start dateTime"@en .
+
+cx-core:street rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain cx-core:Address ;
+                      rdfs:range xsd:string .
+
+cx-core:houseNumber rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain cx-core:Address ;
+                      rdfs:range xsd:int .
+cx-core:postalCode rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain cx-core:Address ;
+                      rdfs:range xsd:string .
+cx-core:city rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain cx-core:Address ;
+                      rdfs:range xsd:string .
+cx-core:country rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain cx-core:Address ;
+                      rdfs:range xsd:string .
+
+
+
 
 
 #################################################################
@@ -233,7 +268,8 @@ cx-core:Actor rdf:type owl:Class ;
 
 
 ###  https://catena-x.net/product-knowledge/ontology/core#Address
-cx-core:Address rdf:type owl:Class .
+cx-core:Address rdf:type owl:Class;
+                rdfs:subClassOf cx-core:ConceptualObject.
 
 
 ###  https://catena-x.net/product-knowledge/ontology/core#ConceptualObject

@@ -1,0 +1,37 @@
+digraph "domain ontology" {
+	graph [fontname="Helvetica,Arial,sans-serif" fontsize=10 splines=ortho]
+	node [fillcolor=gray95 fontname="Helvetica,Arial,sans-serif" fontsize=7 shape=record]
+	edge [arrowsize=0.3 fontname="Helvetica,Arial,sans-serif" fontsize=5 penwidth=0.3]
+	Activity [label=<{<b>Activity</b> | + property<br align="left"/> ...<br align="left" /> }> style=filled]
+	Actor [label=<{<b>Actor</b> | + property<br align="left"/> ...<br align="left" /> }> style=filled]
+	Address [label=<{<b>Address</b> | + property<br align="left"/> ...<br align="left" /> }> style=filled]
+	ConceptualObject [label=<{<b>ConceptualObject</b> | + property<br align="left"/> ...<br align="left" /> }> style=filled]
+	PhysicalObject [label=<{<b>PhysicalObject</b> | + property<br align="left"/> ...<br align="left" /> }> style=filled]
+	Place [label=<{<b>Place</b> | + property<br align="left"/> ...<br align="left" /> }> style=filled]
+	describesPhysicalObject [label="describesPhysicalObject / 
+describedByConceptualObject" fillcolor=green fontsize=5 height=0 shape=plaintext style=filled width=0]
+	hasParticipant [label="hasParticipant / 
+participatesIn" fillcolor=green fontsize=5 height=0 shape=plaintext style=filled width=0]
+	involvedIn [label=involvedIn fillcolor=green fontsize=5 height=0 shape=plaintext style=filled width=0]
+	refersToConceptualObject [label=refersToConceptualObject fillcolor=green fontsize=5 height=0 shape=plaintext style=filled width=0]
+	refersToPhysicalObject [label=refersToPhysicalObject fillcolor=green fontsize=5 height=0 shape=plaintext style=filled width=0]
+	relatedToPlace [label=relatedToPlace fillcolor=green fontsize=5 height=0 shape=plaintext style=filled width=0]
+	takesPlaceAt [label="takesPlaceAt / 
+hosts" fillcolor=green fontsize=5 height=0 shape=plaintext style=filled width=0]
+	ConceptualObject -> describesPhysicalObject [arrowhead=none]
+	describesPhysicalObject -> PhysicalObject
+	Activity -> hasParticipant [arrowhead=none]
+	hasParticipant -> Actor
+	ConceptualObject -> involvedIn [arrowhead=none]
+	involvedIn -> Activity
+	PhysicalObject -> involvedIn [arrowhead=none]
+	involvedIn -> Activity
+	Activity -> refersToConceptualObject [arrowhead=none]
+	refersToConceptualObject -> ConceptualObject
+	Activity -> refersToPhysicalObject [arrowhead=none]
+	refersToPhysicalObject -> PhysicalObject
+	Actor -> relatedToPlace [arrowhead=none]
+	relatedToPlace -> Place
+	Activity -> takesPlaceAt [arrowhead=none]
+	takesPlaceAt -> Place
+}
