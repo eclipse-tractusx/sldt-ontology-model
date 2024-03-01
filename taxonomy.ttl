@@ -871,6 +871,11 @@ cx-taxo:Thing a skos:Concept;
                 skos:prefLabel "Receive Material Demand DCM"@en;
                 skos:definition "API to receive a Material Demand in DCM context".
 
+            cx-taxo:DcmWeekBasedMaterialDemand a skos:Concept;
+                skos:broader cx-taxo:Asset;
+                skos:prefLabel "Receive Week Based Material Demand DCM"@en;
+                skos:definition "API to receive a Week Based Material Demand in DCM context".
+
             cx-taxo:DcmWeekBasedCapacityGroup a skos:Concept;
                 skos:broader cx-taxo:Asset;
                 skos:prefLabel "Receive Week Based Capacity Group DCM"@en;
