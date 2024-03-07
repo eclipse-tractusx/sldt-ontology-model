@@ -846,6 +846,16 @@ cx-taxo:Thing a skos:Concept;
                 skos:prefLabel "Receive Unique ID Push Notification"@en;
                 skos:definition "API to receive Unique Id Push notifications".
 
+            cx-taxo:UniqueIdPushConnectToParentNotification a skos:Concept;
+                skos:broader cx-taxo:Asset;
+                 skos:prefLabel "Unique ID Push Connect-to-Parent Notification"@en;
+                skos:definition "API to receive a Unique ID Push notification to connect a digital twin with its parent digital twin (bottom-up notification)".
+
+            cx-taxo:UniqueIdPushConnectToChildNotification a skos:Concept;
+                skos:broader cx-taxo:Asset;
+                 skos:prefLabel "Unique ID Push Connect-to-Child Notification"@en;
+                skos:definition "API to receive a Unique ID Push notification to connect a digital twin with its child digital twin (top-down notification)".
+
             cx-taxo:PcfExchange a skos:Concept;
                 skos:broader cx-taxo:Asset;
                 skos:prefLabel "PCF Exchange API"@en;
