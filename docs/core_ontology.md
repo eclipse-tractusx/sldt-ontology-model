@@ -1,141 +1,65 @@
-<!--
- * Copyright (c) 2022,2023 Contributors to the Catena-X Association
- *
- * See the NOTICE file(s) distributed with this work for additional
- * information regarding copyright ownership.
- *
- * This program and the accompanying materials are made available under the
- * terms of the Apache License, Version 2.0 which is available at
- * https://www.apache.org/licenses/LICENSE-2.0.
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations
- * under the License.
- *
- * SPDX-License-Identifier: Apache-2.0
--->
+
+
+
+
 # Core Ontology
 
-The Catena-X ontologies consist of the Core Ontology and the Domain Ontologies. The Core Ontology is based on activity-oriented patterns and the Domain Ontologies build on these patterns. In parallel, a taxonomy exists in which the vocabularies created in the Catena-X project are captured in a structured way to realize Domain Ontologies. This taxonomy is not a standard and is used to realize the use cases. It can therefore be replaced or extended by other taxonomies.  
 
-Catena-X Core Ontology is a practical tool for information integration for the automotive industry. In Catena-X, product data is exchanged over the entire lifecycle from development to recycling. In each of these phases, activities on the product generate new information, e.g. manufacturing data, quality data, battery passport. This information needs to be linked semantically along the lifecycle to gain new knowledge and insights to realize traceability, sustainability, ensuring carbon footprint. For this reason, the Core Ontology is activity-centric. The activities are in the center of the modeling and the all other necessary information is attached to the activities.
+**Title:**  Core Ontology
 
-**Example:**
+**Description:**  The Catena-X core ontology contains main domain-independent classes, attributes and relations.
 
-This concept enables the exploration of complex questions along the product lifecycle using different and distributed data sets. Both general queries such as "get all activities for vehicle with VIN number 123" and specific queries such as "get all diagnostic activities and results of vehicle with VIN number 123" are possible.
+**Creator:**  [@obalandi](https://github.com/obalandi)
 
-![core ontology example](images/example.jpg)
+**Contributor:**  None
 
-<pre>
+**Date:**  2023-05-05
 
-</pre>
+**Version:**  1.9.4  
+  
+![ontology](images/core_ontology.gv.svg)  
 
-**Visual representation of the core ontology:**
+## Classes
+  
 
-The core ontology consists of the classes Activity, Actor, Place, Physical and Conceptual Object. These are the main entities that are shared in Catene-X. In order to realize secure and consistent exchange and networking, it is necessary that these entities have a [persistent identifier](#Persistent-Identifier), name and access roles.
+|Name|Description|Datatype properties|Object properties|Subclass of|
+| :--- | :--- | :--- | :--- | :--- |
+|<span id="Activity">Activity</span>|None|[endDateTime](#endDateTime) , [id](#id) , [name](#name) , [startDateTime](#startDateTime) |[hasParticipant](#hasParticipant) , [refersToConceptualObject](#refersToConceptualObject) , [refersToPhysicalObject](#refersToPhysicalObject) , [takesPlaceAt](#takesPlaceAt) ||
+|<span id="Actor">Actor</span>|This class comprises organization or people, either individually or in groups, who have the potential to perform intentional actions of kinds for which someone may be held responsible.|[id](#id) , [name](#name) |[participatesIn](#participatesIn) , [relatedToPlace](#relatedToPlace) ||
+|<span id="Address">Address</span>|None|[street](#street) , [houseNumber](#houseNumber) , [postalCode](#postalCode) , [city](#city) , [country](#country) ||[ConceptualObject](#ConceptualObject) |
+|<span id="ConceptualObject">ConceptualObject</span>|This class includes non-material products, human-produced data related to physical objects. The production of such information may have been supported by the use of technical tools.|[id](#id) , [name](#name) |[describesPhysicalObject](#describesPhysicalObject) , [involvedIn](#involvedIn) ||
+|<span id="PhysicalObject">PhysicalObject</span>|This class includes objects of a material nature, which are documentation units and have physical boundaries.|[id](#id) , [name](#name) |[describedByConceptualObject](#describedByConceptualObject) , [involvedIn](#involvedIn) ||
+|<span id="Place">Place</span>|None|[id](#id) , [name](#name) |[hasAddress](#hasAddress) , [hosts](#hosts) ||
 
+## Data Properties
+  
 
-<div align="center"  width="100%">
-  <img src="images/core_ontology.gv.svg" alt="image" height="auto" />
-</div>
+|Name|Description|Domain|Range|Subproperty of|
+| :--- | :--- | :--- | :--- | :--- |
+|<span id="endDateTime">endDateTime</span>|None|[Activity](#Activity) |xml : dateTime ||
+|<span id="id">id</span>|None|[Activity](#Activity) , [Place](#Place) , [Actor](#Actor) , [ConceptualObject](#ConceptualObject) , [PhysicalObject](#PhysicalObject) |xml : string ||
+|<span id="name">name</span>|None|[Activity](#Activity) , [Place](#Place) , [Actor](#Actor) , [ConceptualObject](#ConceptualObject) , [PhysicalObject](#PhysicalObject) |xml : string ||
+|<span id="role">role</span>|None|http://www.w3.org/2002/07/owl#Thing |xml : string ||
+|<span id="startDateTime">startDateTime</span>|None|[Activity](#Activity) |xml : dateTime ||
+|<span id="street">street</span>|None|[Address](#Address) |xml : string ||
+|<span id="houseNumber">houseNumber</span>|None|[Address](#Address) |xml : int ||
+|<span id="postalCode">postalCode</span>|None|[Address](#Address) |xml : string ||
+|<span id="city">city</span>|None|[Address](#Address) |xml : string ||
+|<span id="country">country</span>|None|[Address](#Address) |xml : string ||
 
-### Activity
+## Object Properties
+  
 
-* **Description:**
-This class comprises actions intentionally carried out by instances of Actor that result in changes of state in physical and conceptual objects.
-
-* **Properties:**	
-    * **has participant:** This property describes the active or passive participation of instances of Actors in an Activity.
-    * **takes place at:** This property describes the spatial location of an activity. 
-    * **refers to physical object:** This property refers to actively or passively used physical objects in an Activity.
-    * **refers to conceptual object:** This property refers to actively or passively used conceptual objects in an Activity.
-    * **start datetime:** Start time of the activity.
-    * **end datetime:** End time of the activity.
-
-* **Example:**	
-    * Manufacture of a part.
-    * Maintenance of several parts.
-    * Recycling of a vehicle.
-
-### Actor
-
-* **Description:**
-This class comprises organization or people, either individually or in groups, who have the potential to perform intentional actions of kinds for which someone may be held responsible.
-
-* **Properties:**	
-    * **participates in:** Inverse of 'has participant'
-    * **related to place:** This property describes that an actor has a relationship to a particular place, such as reside, own, or manage, etc. 
-
-* **Example:**	
-    * Vehicle Manufacturer BMW
-    * Automobile Association ADAC
-
-### Physical Object
-
-* **Description:**
-This class includes objects of a material nature, which are documentation units and have physical boundaries.
-
-* **Properties:**	
-    * **involved in:** This property describes in which activity the physical object is involved.
-
-* **Example:**	
-    * Vehicle
-    * Part
-
-### Conceptual Object
-
-* **Description:**
-This class includes non-material products, human-produced data related to physical objects. The production of such information may have been supported by the use of technical tools.
-
-* **Properties:**	
-    * **involved in:** This property describes in which activity the conceptual object is involved.
-    * **describes physical object:** This property describes that a conceptual object has a descriptive relationship to a physical object.
-
-* **Example:**	
-    * Used technique in production
-    * Battery passport
-    * CAD design of the part
-
-### Place
-
-* **Description:**
-The class Place is determined by reference to the position of objects such as buildings, cities, or special geographic markers.
-
-* **Properties:**	
-    * **hosts:** This property refers to the hosted activities in a place.
-
-* **Example:**	
-    * BMW Plant Munich.
-    * Rubber plantation in Phuket
-
-<pre>
-
-</pre>
-
-## Persistent Identifier
-A persistent identifier (PI or PID) is a long-lasting reference to a document, file, web page, or other digital object. Most PIDs have a unique identifier which is linked to the current address of the metadata or content.
-
-* Uniform Resource Name (URN)
-
-<pre>
-
-</pre>
-
-## Taxonomy
-All vocabularies used in the Catena-X Knowledge Agent approach to describe data are captured as concepts in a SKOS taxonomy. The way the taxonomy is used in the development of the domain ontology is defined by the [ontology modeling rules](ontology_modelling_rules.md/#Don't-create-subclasses-if-possible).
-
-<pre>
-
-</pre>
-
-## Domain Ontologies
-Domain ontologies are specific extensions of the core ontology, in which a specific domain is described in detail. Currently the following ontologies are developed and used in the Knowledge Agent Kit in different skills.
-
-* Part ontology
-* [Vehicle ontology](vehicle_ontology.md)
-* Vehicle Information Ontology
-* Diagnosis ontology
-* Load spectrum ontology
-* ...
+|Name|Descriptions|Domain|Range|Subproperty of|
+| :--- | :--- | :--- | :--- | :--- |
+|<span id="hasAddress">hasAddress</span>|None|[Place](#Place) |[Address](#Address) ||
+|<span id="describedByConceptualObject">describedByConceptualObject</span>|Inverse of 'describes physical object' property.|[PhysicalObject](#PhysicalObject) |[ConceptualObject](#ConceptualObject) ||
+|<span id="describesPhysicalObject">describesPhysicalObject</span>|None|[ConceptualObject](#ConceptualObject) |[PhysicalObject](#PhysicalObject) ||
+|<span id="hasParticipant">hasParticipant</span>|None|[Activity](#Activity) |[Actor](#Actor) ||
+|<span id="hosts">hosts</span>|None|[Place](#Place) |[Activity](#Activity) ||
+|<span id="involvedIn">involvedIn</span>|None|[ConceptualObject](#ConceptualObject) , [PhysicalObject](#PhysicalObject) |[Activity](#Activity) ||
+|<span id="participatesIn">participatesIn</span>|None|[Actor](#Actor) |[Activity](#Activity) ||
+|<span id="refersToConceptualObject">refersToConceptualObject</span>|None|[Activity](#Activity) |[ConceptualObject](#ConceptualObject) ||
+|<span id="refersToPhysicalObject">refersToPhysicalObject</span>|None|[Activity](#Activity) |[PhysicalObject](#PhysicalObject) ||
+|<span id="relatedToPlace">relatedToPlace</span>|None|[Actor](#Actor) |[Place](#Place) ||
+|<span id="takesPlaceAt">takesPlaceAt</span>|None|[Activity](#Activity) |[Place](#Place) ||

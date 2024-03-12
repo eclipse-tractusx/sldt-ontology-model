@@ -1,61 +1,58 @@
-<!--
- * Copyright (c) 2022,2023 Contributors to the Catena-X Association
- *
- * See the NOTICE file(s) distributed with this work for additional
- * information regarding copyright ownership.
- *
- * This program and the accompanying materials are made available under the
- * terms of the Apache License, Version 2.0 which is available at
- * https://www.apache.org/licenses/LICENSE-2.0.
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations
- * under the License.
- *
- * SPDX-License-Identifier: Apache-2.0
--->
+
+
+
+
 # Common Ontology
 
-The common ontology describes the Dataspace connectors in detail. On the one hand, this includes the information from which Catena-X business partner the connectors are deployed. On the other hand, with which contracts which assets provide the connectors. All this information is provided in the Catena-X main repository so that the connectors are findable.
 
-![core ontology](images/catenaX_common_ontology.jpg)
+**Title:**  Common Ontology
 
-### Business Partner
+**Description:**  The common ontology describes the Dataspace connectors in detail. On the one hand, this includes the information from which Catena-X business partner the connectors are deployed. On the other hand, with which contracts which assets provide the connectors.
 
-* **Description:**
-A Business Partner is a legal entity that is part of the Catena-X network or that stands in a relevant relation to a Catena-X Business Partner.
+**Creator:**  Zazralt Magic
 
-* **Properties:**	
-    * **id:** This property contains unique identifier of business partner.
-    * **has dataspace connector:** This property describes which connectors belong to which business partners.
+**Contributor:**  Oguzhan Balandi
 
-### Dataspace Connector
-* **Description:**
-Dataspace Connector is an interface based on the Eclipse Dataspace Connector technology. A Dataspace Connector makes various assets available through contracts. A contract describes with which policy which asset can be provided.
+**Date:**  2023-05-23
 
-* **Properties:**	
-    * **id:** This property contains unique identifier of dataspace connector.
-    * **url:** This property refers to the URL of the dataspace connectors. A connector can offers multiple assets through one URL. 
-    * **offers:** This property refers to the offered assets.
+**Version:**  1.9.4  
+  
+![ontology](images/common_ontology.gv.svg)  
 
-### Asset
-* **Description:**
-The Asset class describes the provision via a repository of a specific set of data for a specific purpose.
+## Classes
+  
 
-* **Properties:**	
-    * **id:** This property contains unique identifier of asset. 
-    * **name:**  This property contains name of asset. 
-    * **description:** This property contains description of asset.
-    * **version:** This property contains version of asset.
-    * **protocol:** This property refers to the used protocol.
-    * **content type:** This property describes in which format the data will be output, i.e. XML or JSON.
-    * **shape graph:** This property refes to SHACL file, in which the RDF data Contraints are defined. In particular, the structure of the identifiers.
-    * **rdfs:isDefinedBy:** This property refers to the ontology of the RDF data provided.
-    * **is federated:** If this property is set to true, it means that this connector will federate with other connectors.
+|Name|Description|Datatype properties|Object properties|Subclass of|
+| :--- | :--- | :--- | :--- | :--- |
+|<span id="Asset">Asset</span>|None|[contentType](#contentType) , [description](#description) , [isFederated](#isFederated) , [name](#name) , [implementsProtocol](#implementsProtocol) , [version](#version) |[publishedUnderContract](#publishedUnderContract) , [http://www.w3.org/ns/shacl#shapesGraph](#http://www.w3.org/ns/shacl#shapesGraph) ||
+|<span id="BusinessPartner">BusinessPartner</span>|None||[hasDataspaceConnector](#hasDataspaceConnector) ||
+|<span id="DataspaceConnector">DataspaceConnector</span>|None|[url](#url) |[offers](#offers) ||
+|<span id="FunctionAsset">FunctionAsset</span>|None|||[Asset](#Asset) |
+|<span id="GraphAsset">GraphAsset</span>|None|||[Asset](#Asset) |
+|<span id="SkillAsset">SkillAsset</span>|None|||[Asset](#Asset) |
 
-* **SubClasses:**	
-    * **Graph Asset:** This subclass of Asset allows arbitrary data queries to be executed on assets. 
-    * **Skill Asset:** This subclass of Asset allows only the execution of predefined data queries on assets. 
-    * **Function Asset:** This subclass of Asset allows performing calculations on asset. 
+## Data Properties
+  
+
+|Name|Description|Domain|Range|Subproperty of|
+| :--- | :--- | :--- | :--- | :--- |
+|<span id="contentType">contentType</span>|None|[Asset](#Asset) |xml : string ||
+|<span id="description">description</span>|None|[Asset](#Asset) |xml : string ||
+|<span id="id">id</span>|None|http://www.w3.org/2002/07/owl#Thing |xml : string ||
+|<span id="isFederated">isFederated</span>|None|[Asset](#Asset) |xml : boolean ||
+|<span id="name">name</span>|None|[Asset](#Asset) |xml : string ||
+|<span id="implementsProtocol">implementsProtocol</span>|None|[Asset](#Asset) |xml : string ||
+|<span id="url">url</span>|None|[DataspaceConnector](#DataspaceConnector) |xml : anyURI ||
+|<span id="authenticationInformation">authenticationInformation</span>|None|[AuthenticatedResource](#AuthenticatedResource) |xml : string ||
+|<span id="authenticationCode">authenticationCode</span>|None|||[authenticationInformation](#authenticationInformation) |
+|<span id="authenticationKey">authenticationKey</span>|None|||[authenticationInformation](#authenticationInformation) |
+|<span id="version">version</span>|None|[Asset](#Asset) |xml : string ||
+
+## Object Properties
+  
+
+|Name|Descriptions|Domain|Range|Subproperty of|
+| :--- | :--- | :--- | :--- | :--- |
+|<span id="hasDataspaceConnector">hasDataspaceConnector</span>|None|[BusinessPartner](#BusinessPartner) |[DataspaceConnector](#DataspaceConnector) ||
+|<span id="offers">offers</span>|None|[DataspaceConnector](#DataspaceConnector) |[Asset](#Asset) ||
+|<span id="publishedUnderContract">publishedUnderContract</span>|None|[Asset](#Asset) |||

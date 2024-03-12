@@ -1,0 +1,23 @@
+digraph function_ontology {
+	graph [fontname="Helvetica,Arial,sans-serif" fontsize=10 layout=neato overlap=scalexy splines=ortho]
+	node [fillcolor=gray95 fontname="Helvetica,Arial,sans-serif" fontsize=10 shape=record]
+	edge [arrowsize=0.3 fontname="Helvetica,Arial,sans-serif" fontsize=10 penwidth=0.3]
+	"https://w3id.org/catenax/ontology/core#ConceptualObject" [label=<{<b>https://w3id.org/catenax/ontology/core#ConceptualObject</b> | <i><b> domain:core</b></i> <br align="left"/>}> style=filled]
+	Argument [label=<{<b>Argument</b> | <i><b> domain:function</b></i> <br align="left"/>argumentName:string<br align="left"/>default:anyType<br align="left"/>priority:integer<br align="left"/>}> style=filled]
+	Function [label=<{<b>Function</b> | <i><b> domain:function</b></i> <br align="left"/>batch:long<br align="left"/>callbackProperty:string<br align="left"/>inputProperty:string<br align="left"/>invocationIdProperty:string<br align="left"/>invocationMethod:string<br align="left"/>targetUri:string<br align="left"/>}> style=filled]
+	Result [label=<{<b>Result</b> | <i><b> domain:function</b></i> <br align="left"/>callbackProperty:string<br align="left"/>outputProperty:string<br align="left"/>resultIdProperty:string<br align="left"/>}> style=filled]
+	ReturnValue [label=<{<b>ReturnValue</b> | <i><b> domain:function</b></i> <br align="left"/>valuePath:string<br align="left"/>}> style=filled]
+	input [label=input fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
+	output [label=output fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
+	result [label=result fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
+	Function -> input [arrowhead=none]
+	input -> Argument
+	Result -> output [arrowhead=none]
+	output -> ReturnValue
+	Function -> result [arrowhead=none]
+	result -> Result
+	Argument -> https:"//w3id.org/catenax/ontology/core#ConceptualObject" [style=dashed]
+	Function -> https:"//w3id.org/catenax/ontology/core#ConceptualObject" [style=dashed]
+	Result -> https:"//w3id.org/catenax/ontology/core#ConceptualObject" [style=dashed]
+	ReturnValue -> https:"//w3id.org/catenax/ontology/core#ConceptualObject" [style=dashed]
+}

@@ -1,0 +1,22 @@
+digraph common_ontology {
+	graph [fontname="Helvetica,Arial,sans-serif" fontsize=10 layout=neato overlap=scalexy splines=ortho]
+	node [fillcolor=gray95 fontname="Helvetica,Arial,sans-serif" fontsize=10 shape=record]
+	edge [arrowsize=0.3 fontname="Helvetica,Arial,sans-serif" fontsize=10 penwidth=0.3]
+	Asset [label=<{<b>Asset</b> | <i><b> domain:common</b></i> <br align="left"/>contentType:string<br align="left"/>description:string<br align="left"/>isFederated:boolean<br align="left"/>name:string<br align="left"/>implementsProtocol:string<br align="left"/>version:string<br align="left"/>}> style=filled]
+	BusinessPartner [label=<{<b>BusinessPartner</b> | <i><b> domain:common</b></i> <br align="left"/>}> style=filled]
+	DataspaceConnector [label=<{<b>DataspaceConnector</b> | <i><b> domain:common</b></i> <br align="left"/>url:anyURI<br align="left"/>}> style=filled]
+	FunctionAsset [label=<{<b>FunctionAsset</b> | <i><b> domain:common</b></i> <br align="left"/>}> style=filled]
+	GraphAsset [label=<{<b>GraphAsset</b> | <i><b> domain:common</b></i> <br align="left"/>}> style=filled]
+	SkillAsset [label=<{<b>SkillAsset</b> | <i><b> domain:common</b></i> <br align="left"/>}> style=filled]
+	hasDataspaceConnector [label=hasDataspaceConnector fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
+	offers [label=offers fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
+	publishedUnderContract [label=publishedUnderContract fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
+	"http://www.w3.org/ns/shacl#shapesGraph" [label="http://www.w3.org/ns/shacl#shapesGraph" fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
+	BusinessPartner -> hasDataspaceConnector [arrowhead=none]
+	hasDataspaceConnector -> DataspaceConnector
+	DataspaceConnector -> offers [arrowhead=none]
+	offers -> Asset
+	FunctionAsset -> Asset [style=dashed]
+	GraphAsset -> Asset [style=dashed]
+	SkillAsset -> Asset [style=dashed]
+}

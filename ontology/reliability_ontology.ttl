@@ -41,6 +41,7 @@
                                                  dc:creator "Zazralt Magic" ;
                                                  dc:date "2023-02-21"^^xsd:date ;
                                                  dc:title "Reliability Ontology"@en ;
+                                                 dc:description "Ontology for reliability." ;
                                                  owl:versionInfo "1.9.4" .
 
 #################################################################
