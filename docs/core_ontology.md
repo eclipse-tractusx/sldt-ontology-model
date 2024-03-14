@@ -15,7 +15,11 @@
 
 **Date:**  2023-05-05
 
-**Version:**  1.9.4  
+**Version:**  1.9.4
+
+**Imports:**  None
+
+**Link to ontology:**  https://w3id.org/catenax/ontology/core  
   
 ![ontology](images/core_ontology.gv.svg)  
 
@@ -36,16 +40,16 @@
 
 |Name|Description|Domain|Range|Subproperty of|
 | :--- | :--- | :--- | :--- | :--- |
-|<span id="endDateTime">endDateTime</span>|None|[Activity](#Activity) |xml : dateTime ||
-|<span id="id">id</span>|None|[Activity](#Activity) , [Place](#Place) , [Actor](#Actor) , [ConceptualObject](#ConceptualObject) , [PhysicalObject](#PhysicalObject) |xml : string ||
-|<span id="name">name</span>|None|[Activity](#Activity) , [Place](#Place) , [Actor](#Actor) , [ConceptualObject](#ConceptualObject) , [PhysicalObject](#PhysicalObject) |xml : string ||
-|<span id="role">role</span>|None|http://www.w3.org/2002/07/owl#Thing |xml : string ||
-|<span id="startDateTime">startDateTime</span>|None|[Activity](#Activity) |xml : dateTime ||
-|<span id="street">street</span>|None|[Address](#Address) |xml : string ||
-|<span id="houseNumber">houseNumber</span>|None|[Address](#Address) |xml : int ||
-|<span id="postalCode">postalCode</span>|None|[Address](#Address) |xml : string ||
-|<span id="city">city</span>|None|[Address](#Address) |xml : string ||
-|<span id="country">country</span>|None|[Address](#Address) |xml : string ||
+|<span id="endDateTime">endDateTime</span>|None|[Activity](#Activity) |xml:dateTime ||
+|<span id="id">id</span>|None|[Activity](#Activity) , [Place](#Place) , [Actor](#Actor) , [ConceptualObject](#ConceptualObject) , [PhysicalObject](#PhysicalObject) |xml:string ||
+|<span id="name">name</span>|None|[Activity](#Activity) , [Place](#Place) , [Actor](#Actor) , [ConceptualObject](#ConceptualObject) , [PhysicalObject](#PhysicalObject) |xml:string ||
+|<span id="role">role</span>|None|owl:Thing |xml:string ||
+|<span id="startDateTime">startDateTime</span>|None|[Activity](#Activity) |xml:dateTime ||
+|<span id="street">street</span>|None|[Address](#Address) |xml:string ||
+|<span id="houseNumber">houseNumber</span>|None|[Address](#Address) |xml:int ||
+|<span id="postalCode">postalCode</span>|None|[Address](#Address) |xml:string ||
+|<span id="city">city</span>|None|[Address](#Address) |xml:string ||
+|<span id="country">country</span>|None|[Address](#Address) |xml:string ||
 
 ## Object Properties
   

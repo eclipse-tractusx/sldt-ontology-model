@@ -2,12 +2,12 @@ digraph reliability_ontology {
 	graph [fontname="Helvetica,Arial,sans-serif" fontsize=10 layout=neato overlap=scalexy splines=ortho]
 	node [fillcolor=gray95 fontname="Helvetica,Arial,sans-serif" fontsize=10 shape=record]
 	edge [arrowsize=0.3 fontname="Helvetica,Arial,sans-serif" fontsize=10 penwidth=0.3]
-	"https://w3id.org/catenax/ontology/core#Activity" [label=<{<b>https://w3id.org/catenax/ontology/core#Activity</b> | <i><b> domain:core</b></i> <br align="left"/>https://w3id.org/catenax/ontology/core#endDateTime:dateTime<br align="left"/>https://w3id.org/catenax/ontology/core#startDateTime:dateTime<br align="left"/>}> style=filled]
-	"https://w3id.org/catenax/ontology/core#Actor" [label=<{<b>https://w3id.org/catenax/ontology/core#Actor</b> | <i><b> domain:core</b></i> <br align="left"/>}> style=filled]
-	"https://w3id.org/catenax/ontology/core#Address" [label=<{<b>https://w3id.org/catenax/ontology/core#Address</b> | <i><b> domain:core</b></i> <br align="left"/>}> style=filled]
-	"https://w3id.org/catenax/ontology/core#ConceptualObject" [label=<{<b>https://w3id.org/catenax/ontology/core#ConceptualObject</b> | <i><b> domain:core</b></i> <br align="left"/>}> style=filled]
-	"https://w3id.org/catenax/ontology/core#PhysicalObject" [label=<{<b>https://w3id.org/catenax/ontology/core#PhysicalObject</b> | <i><b> domain:core</b></i> <br align="left"/>}> style=filled]
-	"https://w3id.org/catenax/ontology/core#Place" [label=<{<b>https://w3id.org/catenax/ontology/core#Place</b> | <i><b> domain:core</b></i> <br align="left"/>}> style=filled]
+	Activity [label=<{<b>Activity</b> | <i><b> domain:core</b></i> <br align="left"/>https://w3id.org/catenax/ontology/core#endDateTime:dateTime<br align="left"/>https://w3id.org/catenax/ontology/core#startDateTime:dateTime<br align="left"/>}> style=filled]
+	Actor [label=<{<b>Actor</b> | <i><b> domain:core</b></i> <br align="left"/>}> style=filled]
+	Address [label=<{<b>Address</b> | <i><b> domain:core</b></i> <br align="left"/>}> style=filled]
+	ConceptualObject [label=<{<b>ConceptualObject</b> | <i><b> domain:core</b></i> <br align="left"/>}> style=filled]
+	PhysicalObject [label=<{<b>PhysicalObject</b> | <i><b> domain:core</b></i> <br align="left"/>}> style=filled]
+	Place [label=<{<b>Place</b> | <i><b> domain:core</b></i> <br align="left"/>}> style=filled]
 	Analysis [label=<{<b>Analysis</b> | <i><b> domain:reliability</b></i> <br align="left"/>mileageOfVehicle:integer<br align="left"/>operatingHoursOfPart:float<br align="left"/>operatingHoursOfVehicle:float<br align="left"/>}> style=filled]
 	AnalysisResult [label=<{<b>AnalysisResult</b> | <i><b> domain:reliability</b></i> <br align="left"/>}> style=filled]
 	LoadSpectrum [label=<{<b>LoadSpectrum</b> | <i><b> domain:reliability</b></i> <br align="left"/>datetime:dateTime<br align="left"/>description:string<br align="left"/>endDatetime:dateTime<br align="left"/>id:string<br align="left"/>name:string<br align="left"/>type:string<br align="left"/>}> style=filled]
@@ -17,18 +17,18 @@ digraph reliability_ontology {
 	LoadSpectrumValues [label=<{<b>LoadSpectrumValues</b> | <i><b> domain:reliability</b></i> <br align="left"/>countingValue:string<br align="left"/>countingMethod:string<br align="left"/>countingUnit:string<br align="left"/>index:string<br align="left"/>}> style=filled]
 	OnBoardTelematics [label=<{<b>OnBoardTelematics</b> | <i><b> domain:reliability</b></i> <br align="left"/>}> style=filled]
 	TelematicsResult [label=<{<b>TelematicsResult</b> | <i><b> domain:reliability</b></i> <br align="left"/>}> style=filled]
-	"https://w3id.org/catenax/ontology/vehicle#Part" [label=<{<b>https://w3id.org/catenax/ontology/vehicle#Part</b> | <i><b> domain:vehicle</b></i> <br align="left"/>}> style=filled]
-	"https://w3id.org/catenax/ontology/vehicle#Vehicle" [label=<{<b>https://w3id.org/catenax/ontology/vehicle#Vehicle</b> | <i><b> domain:vehicle</b></i> <br align="left"/>}> style=filled]
-	"https://w3id.org/catenax/ontology/core#describesPhysicalObject" [label="https://w3id.org/catenax/ontology/core#describesPhysicalObject / 
+	Part [label=<{<b>Part</b> | <i><b> domain:vehicle</b></i> <br align="left"/>}> style=filled]
+	Vehicle [label=<{<b>Vehicle</b> | <i><b> domain:vehicle</b></i> <br align="left"/>}> style=filled]
+	describesPhysicalObject [label="https://w3id.org/catenax/ontology/core#describesPhysicalObject / 
 https://w3id.org/catenax/ontology/core#describedByConceptualObject ➝" fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
-	"https://w3id.org/catenax/ontology/core#hasParticipant" [label="https://w3id.org/catenax/ontology/core#hasParticipant" fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
-	"https://w3id.org/catenax/ontology/core#hosts" [label="https://w3id.org/catenax/ontology/core#hosts" fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
-	"https://w3id.org/catenax/ontology/core#involvedIn" [label="https://w3id.org/catenax/ontology/core#involvedIn" fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
-	"https://w3id.org/catenax/ontology/core#participatesIn" [label="https://w3id.org/catenax/ontology/core#participatesIn" fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
-	"https://w3id.org/catenax/ontology/core#refersToConceptualObject" [label="https://w3id.org/catenax/ontology/core#refersToConceptualObject" fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
-	"https://w3id.org/catenax/ontology/core#refersToPhysicalObject" [label="https://w3id.org/catenax/ontology/core#refersToPhysicalObject" fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
-	"https://w3id.org/catenax/ontology/core#relatedToPlace" [label="https://w3id.org/catenax/ontology/core#relatedToPlace" fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
-	"https://w3id.org/catenax/ontology/core#takesPlaceAt" [label="https://w3id.org/catenax/ontology/core#takesPlaceAt" fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
+	hasParticipant [label="https://w3id.org/catenax/ontology/core#hasParticipant" fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
+	hosts [label="https://w3id.org/catenax/ontology/core#hosts" fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
+	involvedIn [label="https://w3id.org/catenax/ontology/core#involvedIn" fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
+	participatesIn [label="https://w3id.org/catenax/ontology/core#participatesIn" fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
+	refersToConceptualObject [label="https://w3id.org/catenax/ontology/core#refersToConceptualObject" fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
+	refersToPhysicalObject [label="https://w3id.org/catenax/ontology/core#refersToPhysicalObject" fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
+	relatedToPlace [label="https://w3id.org/catenax/ontology/core#relatedToPlace" fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
+	takesPlaceAt [label="https://w3id.org/catenax/ontology/core#takesPlaceAt" fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
 	analysedObject [label=analysedObject fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
 	analysedPart [label=analysedPart fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
 	analysedVehicle [label=analysedVehicle fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
@@ -36,32 +36,32 @@ https://w3id.org/catenax/ontology/core#describedByConceptualObject ➝" fillcolo
 	class [label=class fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
 	result [label=result fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
 	hasValues [label=hasValues fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
-	https:"//w3id.org/catenax/ontology/core#ConceptualObject" -> https:"//w3id.org/catenax/ontology/core#describesPhysicalObject" [arrowhead=none]
-	https:"//w3id.org/catenax/ontology/core#describesPhysicalObject" -> https:"//w3id.org/catenax/ontology/core#PhysicalObject"
-	https:"//w3id.org/catenax/ontology/core#Activity" -> https:"//w3id.org/catenax/ontology/core#hasParticipant" [arrowhead=none]
-	https:"//w3id.org/catenax/ontology/core#hasParticipant" -> https:"//w3id.org/catenax/ontology/core#Actor"
-	https:"//w3id.org/catenax/ontology/core#Place" -> https:"//w3id.org/catenax/ontology/core#hosts" [arrowhead=none]
-	https:"//w3id.org/catenax/ontology/core#hosts" -> https:"//w3id.org/catenax/ontology/core#Activity"
-	https:"//w3id.org/catenax/ontology/core#ConceptualObject" -> https:"//w3id.org/catenax/ontology/core#involvedIn" [arrowhead=none]
-	https:"//w3id.org/catenax/ontology/core#involvedIn" -> https:"//w3id.org/catenax/ontology/core#Activity"
-	https:"//w3id.org/catenax/ontology/core#PhysicalObject" -> https:"//w3id.org/catenax/ontology/core#involvedIn" [arrowhead=none]
-	https:"//w3id.org/catenax/ontology/core#involvedIn" -> https:"//w3id.org/catenax/ontology/core#Activity"
-	https:"//w3id.org/catenax/ontology/core#Actor" -> https:"//w3id.org/catenax/ontology/core#participatesIn" [arrowhead=none]
-	https:"//w3id.org/catenax/ontology/core#participatesIn" -> https:"//w3id.org/catenax/ontology/core#Activity"
-	https:"//w3id.org/catenax/ontology/core#Activity" -> https:"//w3id.org/catenax/ontology/core#refersToConceptualObject" [arrowhead=none]
-	https:"//w3id.org/catenax/ontology/core#refersToConceptualObject" -> https:"//w3id.org/catenax/ontology/core#ConceptualObject"
-	https:"//w3id.org/catenax/ontology/core#Activity" -> https:"//w3id.org/catenax/ontology/core#refersToPhysicalObject" [arrowhead=none]
-	https:"//w3id.org/catenax/ontology/core#refersToPhysicalObject" -> https:"//w3id.org/catenax/ontology/core#ConceptualObject"
-	https:"//w3id.org/catenax/ontology/core#Actor" -> https:"//w3id.org/catenax/ontology/core#relatedToPlace" [arrowhead=none]
-	https:"//w3id.org/catenax/ontology/core#relatedToPlace" -> https:"//w3id.org/catenax/ontology/core#Place"
-	https:"//w3id.org/catenax/ontology/core#Activity" -> https:"//w3id.org/catenax/ontology/core#takesPlaceAt" [arrowhead=none]
-	https:"//w3id.org/catenax/ontology/core#takesPlaceAt" -> https:"//w3id.org/catenax/ontology/core#Place"
+	ConceptualObject -> describesPhysicalObject [arrowhead=none]
+	describesPhysicalObject -> PhysicalObject
+	Activity -> hasParticipant [arrowhead=none]
+	hasParticipant -> Actor
+	Place -> hosts [arrowhead=none]
+	hosts -> Activity
+	ConceptualObject -> involvedIn [arrowhead=none]
+	involvedIn -> Activity
+	PhysicalObject -> involvedIn [arrowhead=none]
+	involvedIn -> Activity
+	Actor -> participatesIn [arrowhead=none]
+	participatesIn -> Activity
+	Activity -> refersToConceptualObject [arrowhead=none]
+	refersToConceptualObject -> ConceptualObject
+	Activity -> refersToPhysicalObject [arrowhead=none]
+	refersToPhysicalObject -> ConceptualObject
+	Actor -> relatedToPlace [arrowhead=none]
+	relatedToPlace -> Place
+	Activity -> takesPlaceAt [arrowhead=none]
+	takesPlaceAt -> Place
 	Analysis -> analysedObject [arrowhead=none]
-	analysedObject -> https:"//w3id.org/catenax/ontology/core#PhysicalObject"
+	analysedObject -> PhysicalObject
 	Analysis -> analysedPart [arrowhead=none]
-	analysedPart -> https:"//w3id.org/catenax/ontology/vehicle#Part"
+	analysedPart -> Part
 	Analysis -> analysedVehicle [arrowhead=none]
-	analysedVehicle -> https:"//w3id.org/catenax/ontology/vehicle#Vehicle"
+	analysedVehicle -> Vehicle
 	LoadSpectrum -> channel [arrowhead=none]
 	channel -> LoadSpectrumChannel
 	LoadSpectrum -> class [arrowhead=none]
@@ -70,8 +70,8 @@ https://w3id.org/catenax/ontology/core#describedByConceptualObject ➝" fillcolo
 	result -> AnalysisResult
 	LoadSpectrum -> hasValues [arrowhead=none]
 	hasValues -> LoadSpectrumValues
-	Analysis -> https:"//w3id.org/catenax/ontology/core#Activity" [style=dashed]
-	AnalysisResult -> https:"//w3id.org/catenax/ontology/core#ConceptualObject" [style=dashed]
+	Analysis -> Activity [style=dashed]
+	AnalysisResult -> ConceptualObject [style=dashed]
 	LoadSpectrum -> AnalysisResult [style=dashed]
 	LoadSpectrumChannel -> AnalysisResult [style=dashed]
 	LoadSpectrumClass -> AnalysisResult [style=dashed]
@@ -79,6 +79,6 @@ https://w3id.org/catenax/ontology/core#describedByConceptualObject ➝" fillcolo
 	TelematicsResult -> AnalysisResult [style=dashed]
 	LoadSpectrumAnalysis -> OnBoardTelematics [style=dashed]
 	OnBoardTelematics -> Analysis [style=dashed]
-	https:"//w3id.org/catenax/ontology/vehicle#Part" -> https:"//w3id.org/catenax/ontology/core#PhysicalObject" [style=dashed]
-	https:"//w3id.org/catenax/ontology/vehicle#Vehicle" -> https:"//w3id.org/catenax/ontology/core#PhysicalObject" [style=dashed]
+	Part -> PhysicalObject [style=dashed]
+	Vehicle -> PhysicalObject [style=dashed]
 }

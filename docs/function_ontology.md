@@ -15,7 +15,11 @@
 
 **Date:**  2023-06-29
 
-**Version:**  1.9.4  
+**Version:**  1.9.4
+
+**Imports:**  file:common_ontology.ttl
+
+**Link to ontology:**  https://w3id.org/catenax/ontology/function  
   
 ![ontology](images/function_ontology.gv.svg)  
 
@@ -24,29 +28,29 @@
 
 |Name|Description|Datatype properties|Object properties|Subclass of|
 | :--- | :--- | :--- | :--- | :--- |
-|<span id="Argument">Argument</span>|None|[argumentName](#argumentName) , [dataType](#dataType) , [default](#default) , [priority](#priority) ||[https://w3id.org/catenax/ontology/core#ConceptualObject](#https://w3id.org/catenax/ontology/core#ConceptualObject) |
-|<span id="Function">Function</span>|None|[batch](#batch) , [callbackProperty](#callbackProperty) , [inputProperty](#inputProperty) , [invocationIdProperty](#invocationIdProperty) , [invocationMethod](#invocationMethod) , [targetUri](#targetUri) |[input](#input) , [result](#result) |[https://w3id.org/catenax/ontology/core#ConceptualObject](#https://w3id.org/catenax/ontology/core#ConceptualObject) |
-|<span id="Result">Result</span>|None|[callbackProperty](#callbackProperty) , [outputProperty](#outputProperty) , [resultIdProperty](#resultIdProperty) |[output](#output) |[https://w3id.org/catenax/ontology/core#ConceptualObject](#https://w3id.org/catenax/ontology/core#ConceptualObject) |
-|<span id="ReturnValue">ReturnValue</span>|None|[dataType](#dataType) , [valuePath](#valuePath) ||[https://w3id.org/catenax/ontology/core#ConceptualObject](#https://w3id.org/catenax/ontology/core#ConceptualObject) |
+|<span id="Argument">Argument</span>|None|[argumentName](#argumentName) , [dataType](#dataType) , [default](#default) , [priority](#priority) ||[ConceptualObject](./core_ontology.md#ConceptualObject) |
+|<span id="Function">Function</span>|None|[batch](#batch) , [callbackProperty](#callbackProperty) , [inputProperty](#inputProperty) , [invocationIdProperty](#invocationIdProperty) , [invocationMethod](#invocationMethod) , [targetUri](#targetUri) |[input](#input) , [result](#result) |[ConceptualObject](./core_ontology.md#ConceptualObject) |
+|<span id="Result">Result</span>|None|[callbackProperty](#callbackProperty) , [outputProperty](#outputProperty) , [resultIdProperty](#resultIdProperty) |[output](#output) |[ConceptualObject](./core_ontology.md#ConceptualObject) |
+|<span id="ReturnValue">ReturnValue</span>|None|[dataType](#dataType) , [valuePath](#valuePath) ||[ConceptualObject](./core_ontology.md#ConceptualObject) |
 
 ## Data Properties
   
 
 |Name|Description|Domain|Range|Subproperty of|
 | :--- | :--- | :--- | :--- | :--- |
-|<span id="argumentName">argumentName</span>|None|[Argument](#Argument) |xml : string ||
-|<span id="batch">batch</span>|None|[Function](#Function) |xml : long ||
-|<span id="callbackProperty">callbackProperty</span>|None|[Function](#Function) , [Result](#Result) |xml : string ||
+|<span id="argumentName">argumentName</span>|None|[Argument](#Argument) |xml:string ||
+|<span id="batch">batch</span>|None|[Function](#Function) |xml:long ||
+|<span id="callbackProperty">callbackProperty</span>|None|[Function](#Function) , [Result](#Result) |xml:string ||
 |<span id="dataType">dataType</span>|None|[Argument](#Argument) , [ReturnValue](#ReturnValue) |||
-|<span id="default">default</span>|None|[Argument](#Argument) |xml : anyType ||
-|<span id="inputProperty">inputProperty</span>|None|[Function](#Function) |xml : string ||
-|<span id="invocationIdProperty">invocationIdProperty</span>|None|[Function](#Function) |xml : string ||
-|<span id="invocationMethod">invocationMethod</span>|None|[Function](#Function) |xml : string ||
-|<span id="outputProperty">outputProperty</span>|None|[Result](#Result) |xml : string ||
-|<span id="priority">priority</span>|None|[Argument](#Argument) |xml : integer ||
-|<span id="resultIdProperty">resultIdProperty</span>|None|[Result](#Result) |xml : string ||
-|<span id="targetUri">targetUri</span>|None|[Function](#Function) |xml : string ||
-|<span id="valuePath">valuePath</span>|None|[ReturnValue](#ReturnValue) |xml : string ||
+|<span id="default">default</span>|None|[Argument](#Argument) |xml:anyType ||
+|<span id="inputProperty">inputProperty</span>|None|[Function](#Function) |xml:string ||
+|<span id="invocationIdProperty">invocationIdProperty</span>|None|[Function](#Function) |xml:string ||
+|<span id="invocationMethod">invocationMethod</span>|None|[Function](#Function) |xml:string ||
+|<span id="outputProperty">outputProperty</span>|None|[Result](#Result) |xml:string ||
+|<span id="priority">priority</span>|None|[Argument](#Argument) |xml:integer ||
+|<span id="resultIdProperty">resultIdProperty</span>|None|[Result](#Result) |xml:string ||
+|<span id="targetUri">targetUri</span>|None|[Function](#Function) |xml:string ||
+|<span id="valuePath">valuePath</span>|None|[ReturnValue](#ReturnValue) |xml:string ||
 
 ## Object Properties
   

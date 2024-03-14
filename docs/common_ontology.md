@@ -15,7 +15,11 @@
 
 **Date:**  2023-05-23
 
-**Version:**  1.9.4  
+**Version:**  1.9.4
+
+**Imports:**  None
+
+**Link to ontology:**  https://w3id.org/catenax/ontology/common  
   
 ![ontology](images/common_ontology.gv.svg)  
 
@@ -36,17 +40,17 @@
 
 |Name|Description|Domain|Range|Subproperty of|
 | :--- | :--- | :--- | :--- | :--- |
-|<span id="contentType">contentType</span>|None|[Asset](#Asset) |xml : string ||
-|<span id="description">description</span>|None|[Asset](#Asset) |xml : string ||
-|<span id="id">id</span>|None|http://www.w3.org/2002/07/owl#Thing |xml : string ||
-|<span id="isFederated">isFederated</span>|None|[Asset](#Asset) |xml : boolean ||
-|<span id="name">name</span>|None|[Asset](#Asset) |xml : string ||
-|<span id="implementsProtocol">implementsProtocol</span>|None|[Asset](#Asset) |xml : string ||
-|<span id="url">url</span>|None|[DataspaceConnector](#DataspaceConnector) |xml : anyURI ||
-|<span id="authenticationInformation">authenticationInformation</span>|None|[AuthenticatedResource](#AuthenticatedResource) |xml : string ||
+|<span id="contentType">contentType</span>|None|[Asset](#Asset) |xml:string ||
+|<span id="description">description</span>|None|[Asset](#Asset) |xml:string ||
+|<span id="id">id</span>|None|owl:Thing |xml:string ||
+|<span id="isFederated">isFederated</span>|None|[Asset](#Asset) |xml:boolean ||
+|<span id="name">name</span>|None|[Asset](#Asset) |xml:string ||
+|<span id="implementsProtocol">implementsProtocol</span>|None|[Asset](#Asset) |xml:string ||
+|<span id="url">url</span>|None|[DataspaceConnector](#DataspaceConnector) |xml:anyURI ||
+|<span id="authenticationInformation">authenticationInformation</span>|None|[AuthenticatedResource](#AuthenticatedResource) |xml:string ||
 |<span id="authenticationCode">authenticationCode</span>|None|||[authenticationInformation](#authenticationInformation) |
 |<span id="authenticationKey">authenticationKey</span>|None|||[authenticationInformation](#authenticationInformation) |
-|<span id="version">version</span>|None|[Asset](#Asset) |xml : string ||
+|<span id="version">version</span>|None|[Asset](#Asset) |xml:string ||
 
 ## Object Properties
   

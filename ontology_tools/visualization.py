@@ -23,24 +23,42 @@ import os
 from rdflib import Graph, SKOS, OWL, RDFS, RDF
 #from ontology_tools.settings import ontology_path, refactored_path
 
-# only for rectored ontologies
-
+#Only for rectored ontologies
 def getDomainName(cxObject):
     
     cxObject = cxObject.replace('https://w3id.org/catenax/ontology/','').split('#')[0]
     return cxObject
 
+#Customized name
+def customizedName(link:str):
+    
+   # cx_s = 'https://w3id.org/catenax/ontology/' + domain_name + '#'
+    
+    if (link.__contains__('http://www.w3.org/2001/XMLSchema#') ) :
+            return 'xml:' + link.replace('http://www.w3.org/2001/XMLSchema#','')
+    
+    elif (link.__contains__('https://json-schema.org/draft/2020-12/schema#') ) : 
+        return 'json:' + link.replace('https://json-schema.org/draft/2020-12/schema#','')   
+        
+    elif (link.__contains__('http://www.w3.org/2002/07/owl#') ) : 
+        return 'owl:' + link.replace('http://www.w3.org/2002/07/owl#','')  
+  	
+    elif (link.__contains__('http://www.w3.org/2000/01/rdf-schema#') ) : 
+        return 'rdfs:' + link.replace('http://www.w3.org/2000/01/rdf-schema#','')
+    elif ( link.__contains__('catenax')) :
+        return link.replace('https://w3id.org/catenax/ontology/','').split('#')[1]
+    else:
+       return link
+
+#Create visualization
 def create_visualization(domain_name):
     
     xsd = "http://www.w3.org/2001/XMLSchema#" 
     cx_s = 'https://w3id.org/catenax/ontology/' + domain_name + '#'
 
+    #Graph settings
     main_ontology = Graph()
     main_ontology.parse('ontology/' + domain_name + '_ontology.ttl')
-    counter = 0
-    colors = ['deepskyblue', 'yellowgreen', 'yellow', 'magenta', 'orange', 'deeppink', 'purple', 'springgreen', 'green', 'blue' , 'red' , 'white',]
-    dict = {}
-
     dot = graphviz.Digraph(name = domain_name + '_ontology', 
     #,'rankdir':'RL'
     #'label': domain_name + ' ontology', 'labelloc':'t','rankdir':'RL',
@@ -49,11 +67,10 @@ def create_visualization(domain_name):
     node_attr = {'fontsize':'10', 'fontname':'Helvetica,Arial,sans-serif', 'shape':'record', 'fillcolor':'gray95'},
     edge_attr = {'fontsize':'10', 'fontname':'Helvetica,Arial,sans-serif', 'arrowsize':'0.3', 'penwidth':'0.3'})
 
-
-    # add node (classes)
+    #Add node (classes)
     for s, p, o in main_ontology.triples((None, None, OWL.Class)):
         
-        classDesign =  "<{<b>" + s.__str__().replace(cx_s,'') + "</b> | <i><b> domain:" + getDomainName(s.__str__()) + "</b></i> <br align=\"left\"/>"
+        classDesign =  "<{<b>" + customizedName(s.__str__().replace(cx_s,'')) + "</b> | <i><b> domain:" + getDomainName(s.__str__()) + "</b></i> <br align=\"left\"/>"     
         #classDesign = "<{<b>I/O class</b> | <i>This text is normal.</i> <br align=\"left\"/>...<br align=\"left\"/>|+ method<br align=\"left\"/>...<br align=\"left\"/>}>"
         
         for dataType in main_ontology.subjects( RDFS.domain, s):
@@ -63,10 +80,9 @@ def create_visualization(domain_name):
         
         classDesign = classDesign + "}>"
         
-        dot.node(s.__str__().replace(cx_s,''), label = classDesign , style='filled' ) 
+        dot.node(customizedName(s.__str__()), label = classDesign , style='filled' ) 
 
-
-    # add node (edges)
+    #Add node (edges)
     for s, p, o in main_ontology.triples((None, None, OWL.ObjectProperty)):
         if not (s,OWL.inverseOf,None) in main_ontology:
             edgelabel = s.__str__().replace(cx_s,'')
@@ -75,28 +91,31 @@ def create_visualization(domain_name):
                 for inv in main_ontology.subjects( OWL.inverseOf, s):
                     edgelabel = edgelabel + ' / \n' + inv.__str__().replace(cx_s,'') + " ➝"
 
-            dot.node(s.__str__().replace(cx_s,''), label=edgelabel, style='filled' ,  fillcolor = 'greenyellow', shape = 'plaintext', fontsize = '8', width='0', height='0' ) 
+            dot.node(customizedName(s.__str__()), label=edgelabel, style='filled' ,  fillcolor = 'greenyellow', shape = 'plaintext', fontsize = '8', width='0', height='0' ) 
 
-
-    # add edges
+    #Add edges
     for s, p, o in main_ontology.triples((None, None, OWL.ObjectProperty)):
         if not (s,OWL.inverseOf,None) in main_ontology:
             for s1, p1, o1 in main_ontology.triples((s, RDFS.domain, None)):
                 for s2, p2, o2 in main_ontology.triples((s, RDFS.range, None)):
                     
-                    dot.edge(o1.__str__().replace(cx_s,''), s.__str__().replace(cx_s,''),  arrowhead = 'none' ) #label = s.__str__().replace(cx_s,''),
-                    dot.edge(s.__str__().replace(cx_s,''), o2.__str__().replace(cx_s,''),  ) #label = s.__str__().replace(cx_s,'') 
+                    dot.edge(customizedName(o1.__str__()), customizedName(s.__str__()),  arrowhead = 'none' ) #label = s.__str__().replace(cx_s,''),
+                    dot.edge(customizedName(s.__str__()), customizedName(o2.__str__()),  ) #label = s.__str__().replace(cx_s,'') 
 
-    # add sub classes style=dashed
+    #Add sub classes style=dashed
     for s, p, o in main_ontology.triples((None, RDFS.subClassOf, None)):
-        dot.edge(s.__str__().replace(cx_s,''), o.__str__().replace(cx_s,''), style='dashed') 
+        dot.edge(customizedName(s.__str__()), customizedName(o.__str__()), style='dashed') 
 
-    print(dot.source)  
+    #print(dot.source)  
     dot.format='svg'
     dot.render(directory= 'docs/images', view=False).replace('\\', '/')
 
 # Function call
+create_visualization('function')
+create_visualization('reliability')
 create_visualization('common')
+create_visualization('vehicle')
+create_visualization('behaviour')
 
 #listOfontologies = os.listdir('./ontology')
 

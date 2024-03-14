@@ -15,7 +15,11 @@
 
 **Date:**  2023-02-21
 
-**Version:**  1.9.4  
+**Version:**  1.9.4
+
+**Imports:**  file:core_ontology.ttl
+
+**Link to ontology:**  https://w3id.org/catenax/ontology/reliability  
   
 ![ontology](images/reliability_ontology.gv.svg)  
 
@@ -24,8 +28,8 @@
 
 |Name|Description|Datatype properties|Object properties|Subclass of|
 | :--- | :--- | :--- | :--- | :--- |
-|<span id="Analysis">Analysis</span>|None|[mileageOfVehicle](#mileageOfVehicle) , [operatingHoursOfPart](#operatingHoursOfPart) , [operatingHoursOfVehicle](#operatingHoursOfVehicle) |[analysedObject](#analysedObject) , [analysedPart](#analysedPart) , [analysedVehicle](#analysedVehicle) , [result](#result) |[https://w3id.org/catenax/ontology/core#Activity](#https://w3id.org/catenax/ontology/core#Activity) |
-|<span id="AnalysisResult">AnalysisResult</span>|None|||[https://w3id.org/catenax/ontology/core#ConceptualObject](#https://w3id.org/catenax/ontology/core#ConceptualObject) |
+|<span id="Analysis">Analysis</span>|None|[mileageOfVehicle](#mileageOfVehicle) , [operatingHoursOfPart](#operatingHoursOfPart) , [operatingHoursOfVehicle](#operatingHoursOfVehicle) |[analysedObject](#analysedObject) , [analysedPart](#analysedPart) , [analysedVehicle](#analysedVehicle) , [result](#result) |[Activity](./core_ontology.md#Activity) |
+|<span id="AnalysisResult">AnalysisResult</span>|None|||[ConceptualObject](./core_ontology.md#ConceptualObject) |
 |<span id="LoadSpectrum">LoadSpectrum</span>|None|[datetime](#datetime) , [description](#description) , [endDatetime](#endDatetime) , [id](#id) , [name](#name) , [type](#type) |[channel](#channel) , [class](#class) , [hasValues](#hasValues) |[AnalysisResult](#AnalysisResult) |
 |<span id="LoadSpectrumAnalysis">LoadSpectrumAnalysis</span>|None|||[OnBoardTelematics](#OnBoardTelematics) |
 |<span id="LoadSpectrumChannel">LoadSpectrumChannel</span>|None|[lowerLimit](#lowerLimit) , [name](#name) , [numberOfBins](#numberOfBins) , [type](#type) , [unit](#unit) , [upperLimit](#upperLimit) ||[AnalysisResult](#AnalysisResult) |
@@ -39,26 +43,26 @@
 
 |Name|Description|Domain|Range|Subproperty of|
 | :--- | :--- | :--- | :--- | :--- |
-|<span id="channels">channels</span>|None||json : Object ||
-|<span id="countingValue">countingValue</span>|None|[LoadSpectrumValues](#LoadSpectrumValues) |xml : string ||
-|<span id="countingMethod">countingMethod</span>|None|[LoadSpectrumValues](#LoadSpectrumValues) |xml : string ||
-|<span id="countingUnit">countingUnit</span>|None|[LoadSpectrumValues](#LoadSpectrumValues) |xml : string ||
-|<span id="datetime">datetime</span>|None|[LoadSpectrum](#LoadSpectrum) |xml : dateTime ||
-|<span id="description">description</span>|None|[LoadSpectrum](#LoadSpectrum) |xml : string ||
-|<span id="endDatetime">endDatetime</span>|None|[LoadSpectrum](#LoadSpectrum) |xml : dateTime ||
-|<span id="id">id</span>|None|[LoadSpectrum](#LoadSpectrum) |xml : string ||
-|<span id="index">index</span>|None|[LoadSpectrumValues](#LoadSpectrumValues) |xml : string ||
-|<span id="lowerLimit">lowerLimit</span>|None|[LoadSpectrumChannel](#LoadSpectrumChannel) |xml : float ||
-|<span id="mileageOfVehicle">mileageOfVehicle</span>|None|[Analysis](#Analysis) |xml : integer ||
-|<span id="name">name</span>|None|[LoadSpectrum](#LoadSpectrum) , [LoadSpectrumChannel](#LoadSpectrumChannel) |xml : string ||
-|<span id="numberOfBins">numberOfBins</span>|None|[LoadSpectrumChannel](#LoadSpectrumChannel) |xml : integer ||
-|<span id="operatingHoursOfPart">operatingHoursOfPart</span>|None|[Analysis](#Analysis) |xml : float ||
-|<span id="operatingHoursOfVehicle">operatingHoursOfVehicle</span>|None|[Analysis](#Analysis) |xml : float ||
-|<span id="type">type</span>|None|[LoadSpectrum](#LoadSpectrum) , [LoadSpectrumChannel](#LoadSpectrumChannel) |xml : string ||
-|<span id="unit">unit</span>|None|[LoadSpectrumChannel](#LoadSpectrumChannel) |xml : string ||
-|<span id="upperLimit">upperLimit</span>|None|[LoadSpectrumChannel](#LoadSpectrumChannel) |xml : float ||
-|<span id="values">values</span>|None||json : Object ||
-|<span id="classes">classes</span>|None||json : Object ||
+|<span id="channels">channels</span>|None||json:Object ||
+|<span id="countingValue">countingValue</span>|None|[LoadSpectrumValues](#LoadSpectrumValues) |xml:string ||
+|<span id="countingMethod">countingMethod</span>|None|[LoadSpectrumValues](#LoadSpectrumValues) |xml:string ||
+|<span id="countingUnit">countingUnit</span>|None|[LoadSpectrumValues](#LoadSpectrumValues) |xml:string ||
+|<span id="datetime">datetime</span>|None|[LoadSpectrum](#LoadSpectrum) |xml:dateTime ||
+|<span id="description">description</span>|None|[LoadSpectrum](#LoadSpectrum) |xml:string ||
+|<span id="endDatetime">endDatetime</span>|None|[LoadSpectrum](#LoadSpectrum) |xml:dateTime ||
+|<span id="id">id</span>|None|[LoadSpectrum](#LoadSpectrum) |xml:string ||
+|<span id="index">index</span>|None|[LoadSpectrumValues](#LoadSpectrumValues) |xml:string ||
+|<span id="lowerLimit">lowerLimit</span>|None|[LoadSpectrumChannel](#LoadSpectrumChannel) |xml:float ||
+|<span id="mileageOfVehicle">mileageOfVehicle</span>|None|[Analysis](#Analysis) |xml:integer ||
+|<span id="name">name</span>|None|[LoadSpectrum](#LoadSpectrum) , [LoadSpectrumChannel](#LoadSpectrumChannel) |xml:string ||
+|<span id="numberOfBins">numberOfBins</span>|None|[LoadSpectrumChannel](#LoadSpectrumChannel) |xml:integer ||
+|<span id="operatingHoursOfPart">operatingHoursOfPart</span>|None|[Analysis](#Analysis) |xml:float ||
+|<span id="operatingHoursOfVehicle">operatingHoursOfVehicle</span>|None|[Analysis](#Analysis) |xml:float ||
+|<span id="type">type</span>|None|[LoadSpectrum](#LoadSpectrum) , [LoadSpectrumChannel](#LoadSpectrumChannel) |xml:string ||
+|<span id="unit">unit</span>|None|[LoadSpectrumChannel](#LoadSpectrumChannel) |xml:string ||
+|<span id="upperLimit">upperLimit</span>|None|[LoadSpectrumChannel](#LoadSpectrumChannel) |xml:float ||
+|<span id="values">values</span>|None||json:Object ||
+|<span id="classes">classes</span>|None||json:Object ||
 
 ## Object Properties
   

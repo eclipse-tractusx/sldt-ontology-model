@@ -15,7 +15,11 @@
 
 **Date:**  2023-07-04
 
-**Version:**  1.9.4  
+**Version:**  1.9.4
+
+**Imports:**  file:common_ontology.ttl
+
+**Link to ontology:**  https://w3id.org/catenax/ontology/behaviour  
   
 ![ontology](images/behaviour_ontology.gv.svg)  
 

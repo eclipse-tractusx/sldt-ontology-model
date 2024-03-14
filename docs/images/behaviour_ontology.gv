@@ -1,0 +1,5 @@
+digraph behaviour_ontology {
+	graph [fontname="Helvetica,Arial,sans-serif" fontsize=10 layout=neato overlap=scalexy splines=ortho]
+	node [fillcolor=gray95 fontname="Helvetica,Arial,sans-serif" fontsize=10 shape=record]
+	edge [arrowsize=0.3 fontname="Helvetica,Arial,sans-serif" fontsize=10 penwidth=0.3]
+}
