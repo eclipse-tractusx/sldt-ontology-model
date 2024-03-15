@@ -111,11 +111,11 @@ def create_visualization(domain_name):
     dot.render(directory= 'docs/images', view=False).replace('\\', '/')
 
 # Function call
-create_visualization('function')
-create_visualization('reliability')
+#create_visualization('function')
+#create_visualization('reliability')
 create_visualization('common')
-create_visualization('vehicle')
-create_visualization('behaviour')
+#create_visualization('vehicle')
+#create_visualization('behaviour')
 
 #listOfontologies = os.listdir('./ontology')
 

@@ -44,23 +44,23 @@
 |Name|Description|Domain|Range|Subproperty of|
 | :--- | :--- | :--- | :--- | :--- |
 |<span id="channels">channels</span>|None||json:Object ||
-|<span id="countingValue">countingValue</span>|None|[LoadSpectrumValues](#LoadSpectrumValues) |xml:string ||
-|<span id="countingMethod">countingMethod</span>|None|[LoadSpectrumValues](#LoadSpectrumValues) |xml:string ||
-|<span id="countingUnit">countingUnit</span>|None|[LoadSpectrumValues](#LoadSpectrumValues) |xml:string ||
-|<span id="datetime">datetime</span>|None|[LoadSpectrum](#LoadSpectrum) |xml:dateTime ||
-|<span id="description">description</span>|None|[LoadSpectrum](#LoadSpectrum) |xml:string ||
-|<span id="endDatetime">endDatetime</span>|None|[LoadSpectrum](#LoadSpectrum) |xml:dateTime ||
-|<span id="id">id</span>|None|[LoadSpectrum](#LoadSpectrum) |xml:string ||
-|<span id="index">index</span>|None|[LoadSpectrumValues](#LoadSpectrumValues) |xml:string ||
-|<span id="lowerLimit">lowerLimit</span>|None|[LoadSpectrumChannel](#LoadSpectrumChannel) |xml:float ||
-|<span id="mileageOfVehicle">mileageOfVehicle</span>|None|[Analysis](#Analysis) |xml:integer ||
-|<span id="name">name</span>|None|[LoadSpectrum](#LoadSpectrum) , [LoadSpectrumChannel](#LoadSpectrumChannel) |xml:string ||
-|<span id="numberOfBins">numberOfBins</span>|None|[LoadSpectrumChannel](#LoadSpectrumChannel) |xml:integer ||
-|<span id="operatingHoursOfPart">operatingHoursOfPart</span>|None|[Analysis](#Analysis) |xml:float ||
-|<span id="operatingHoursOfVehicle">operatingHoursOfVehicle</span>|None|[Analysis](#Analysis) |xml:float ||
-|<span id="type">type</span>|None|[LoadSpectrum](#LoadSpectrum) , [LoadSpectrumChannel](#LoadSpectrumChannel) |xml:string ||
-|<span id="unit">unit</span>|None|[LoadSpectrumChannel](#LoadSpectrumChannel) |xml:string ||
-|<span id="upperLimit">upperLimit</span>|None|[LoadSpectrumChannel](#LoadSpectrumChannel) |xml:float ||
+|<span id="countingValue">countingValue</span>|None|[LoadSpectrumValues](#LoadSpectrumValues) |xsd:string ||
+|<span id="countingMethod">countingMethod</span>|None|[LoadSpectrumValues](#LoadSpectrumValues) |xsd:string ||
+|<span id="countingUnit">countingUnit</span>|None|[LoadSpectrumValues](#LoadSpectrumValues) |xsd:string ||
+|<span id="datetime">datetime</span>|None|[LoadSpectrum](#LoadSpectrum) |xsd:dateTime ||
+|<span id="description">description</span>|None|[LoadSpectrum](#LoadSpectrum) |xsd:string ||
+|<span id="endDatetime">endDatetime</span>|None|[LoadSpectrum](#LoadSpectrum) |xsd:dateTime ||
+|<span id="id">id</span>|None|[LoadSpectrum](#LoadSpectrum) |xsd:string ||
+|<span id="index">index</span>|None|[LoadSpectrumValues](#LoadSpectrumValues) |xsd:string ||
+|<span id="lowerLimit">lowerLimit</span>|None|[LoadSpectrumChannel](#LoadSpectrumChannel) |xsd:float ||
+|<span id="mileageOfVehicle">mileageOfVehicle</span>|None|[Analysis](#Analysis) |xsd:integer ||
+|<span id="name">name</span>|None|[LoadSpectrum](#LoadSpectrum) , [LoadSpectrumChannel](#LoadSpectrumChannel) |xsd:string ||
+|<span id="numberOfBins">numberOfBins</span>|None|[LoadSpectrumChannel](#LoadSpectrumChannel) |xsd:integer ||
+|<span id="operatingHoursOfPart">operatingHoursOfPart</span>|None|[Analysis](#Analysis) |xsd:float ||
+|<span id="operatingHoursOfVehicle">operatingHoursOfVehicle</span>|None|[Analysis](#Analysis) |xsd:float ||
+|<span id="type">type</span>|None|[LoadSpectrum](#LoadSpectrum) , [LoadSpectrumChannel](#LoadSpectrumChannel) |xsd:string ||
+|<span id="unit">unit</span>|None|[LoadSpectrumChannel](#LoadSpectrumChannel) |xsd:string ||
+|<span id="upperLimit">upperLimit</span>|None|[LoadSpectrumChannel](#LoadSpectrumChannel) |xsd:float ||
 |<span id="values">values</span>|None||json:Object ||
 |<span id="classes">classes</span>|None||json:Object ||
 

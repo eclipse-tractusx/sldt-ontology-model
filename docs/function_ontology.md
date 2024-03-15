@@ -38,19 +38,19 @@
 
 |Name|Description|Domain|Range|Subproperty of|
 | :--- | :--- | :--- | :--- | :--- |
-|<span id="argumentName">argumentName</span>|Determines the name or index of the function argument.|[Argument](#Argument) |xml:string ||
-|<span id="batch">batch</span>|Determines maximal batch size for function invocations. Default is '1' which means that each invocation is done separately|[Function](#Function) |xml:long ||
-|<span id="callbackProperty">callbackProperty</span>|Determines a (set of) paths in the input document and the output response under which the callback address (see <https://w3id.org/catenax/ontology/function#callbackAddress>) and the referring callback id will be transmitted.|[Function](#Function) , [Result](#Result) |xml:string ||
+|<span id="argumentName">argumentName</span>|Determines the name or index of the function argument.|[Argument](#Argument) |xsd:string ||
+|<span id="batch">batch</span>|Determines maximal batch size for function invocations. Default is '1' which means that each invocation is done separately|[Function](#Function) |xsd:long ||
+|<span id="callbackProperty">callbackProperty</span>|Determines a (set of) paths in the input document and the output response under which the callback address (see <https://w3id.org/catenax/ontology/function#callbackAddress>) and the referring callback id will be transmitted.|[Function](#Function) , [Result](#Result) |xsd:string ||
 |<span id="dataType">dataType</span>|Determines the data type of an argument or return value.|[Argument](#Argument) , [ReturnValue](#ReturnValue) |||
-|<span id="default">default</span>|Determines a default for the given argument which is taken if this is a mandatory argument (see <https://w3id.org/catenax/ontology/function#mandatory>)|[Argument](#Argument) |xml:anyType ||
-|<span id="inputProperty">inputProperty</span>|Determines a path/name in the input document under which all input arguments are encoded. Default is '.'|[Function](#Function) |xml:string ||
-|<span id="invocationIdProperty">invocationIdProperty</span>|Determines a (set of) paths in the input document under which the IRI of the invocation (instance of Function) will be transmitted.|[Function](#Function) |xml:string ||
-|<span id="invocationMethod">invocationMethod</span>|Determines the invocation method of the function in case that the target service provides several possibilities.|[Function](#Function) |xml:string ||
-|<span id="outputProperty">outputProperty</span>|Determines a path/name in the output response under which all output arguments are encoded. Default is '.'|[Result](#Result) |xml:string ||
-|<span id="priority">priority</span>|Determines the priority with which the argument is processed. Default is '10'|[Argument](#Argument) |xml:integer ||
-|<span id="resultIdProperty">resultIdProperty</span>|Determines a path in the output response under which the IRI of the result component will be transmitted.|[Result](#Result) |xml:string ||
-|<span id="targetUri">targetUri</span>|The target URI of the function should resolve to some existing service (URL).|[Function](#Function) |xml:string ||
-|<span id="valuePath">valuePath</span>|Determines a path in the output response under which a return value is transmitted.|[ReturnValue](#ReturnValue) |xml:string ||
+|<span id="default">default</span>|Determines a default for the given argument which is taken if this is a mandatory argument (see <https://w3id.org/catenax/ontology/function#mandatory>)|[Argument](#Argument) |xsd:anyType ||
+|<span id="inputProperty">inputProperty</span>|Determines a path/name in the input document under which all input arguments are encoded. Default is '.'|[Function](#Function) |xsd:string ||
+|<span id="invocationIdProperty">invocationIdProperty</span>|Determines a (set of) paths in the input document under which the IRI of the invocation (instance of Function) will be transmitted.|[Function](#Function) |xsd:string ||
+|<span id="invocationMethod">invocationMethod</span>|Determines the invocation method of the function in case that the target service provides several possibilities.|[Function](#Function) |xsd:string ||
+|<span id="outputProperty">outputProperty</span>|Determines a path/name in the output response under which all output arguments are encoded. Default is '.'|[Result](#Result) |xsd:string ||
+|<span id="priority">priority</span>|Determines the priority with which the argument is processed. Default is '10'|[Argument](#Argument) |xsd:integer ||
+|<span id="resultIdProperty">resultIdProperty</span>|Determines a path in the output response under which the IRI of the result component will be transmitted.|[Result](#Result) |xsd:string ||
+|<span id="targetUri">targetUri</span>|The target URI of the function should resolve to some existing service (URL).|[Function](#Function) |xsd:string ||
+|<span id="valuePath">valuePath</span>|Determines a path in the output response under which a return value is transmitted.|[ReturnValue](#ReturnValue) |xsd:string ||
 
 ## Object Properties
   

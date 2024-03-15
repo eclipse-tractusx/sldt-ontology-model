@@ -8,13 +8,16 @@ def customizedLink(domain_name, link:str):
     cx_s = 'https://w3id.org/catenax/ontology/' + domain_name + '#'
     
     if (link.__contains__('http://www.w3.org/2001/XMLSchema#') ) :
-            return 'xml:' + link.replace('http://www.w3.org/2001/XMLSchema#','')
+            return 'xsd:' + link.replace('http://www.w3.org/2001/XMLSchema#','')
     
     elif (link.__contains__('https://json-schema.org/draft/2020-12/schema#') ) : 
         return 'json:' + link.replace('https://json-schema.org/draft/2020-12/schema#','')   
         
     elif (link.__contains__('http://www.w3.org/2002/07/owl#') ) : 
         return 'owl:' + link.replace('http://www.w3.org/2002/07/owl#','')  
+    
+    elif (link.__contains__('http://www.w3.org/ns/shacl#') ) : 
+        return 'owl:' + link.replace('http://www.w3.org/ns/shacl#','')
   	
     elif (link.__contains__('http://www.w3.org/2000/01/rdf-schema#') ) : 
         return 'rdfs:' + link.replace('http://www.w3.org/2000/01/rdf-schema#','')
@@ -191,6 +194,53 @@ def create_md_file_for_domain(domain_name):
     mdFile.new_line()
     mdFile.new_table(columns=5, rows=rowCounter, text=list_of_strings, text_align='left')
     mdFile.create_md_file()
+    
+    # Object Properties
+    mdFile.new_header(2, "Annotation Properties")
+    list_of_strings = ["Name", "Descriptions", "Domain", "Range", "Subproperty of"]
+    rowCounter = 1
+
+    hasAnnotationProperty = False
+    for s, p, o in main_ontology.triples((None, None, OWL.AnnotationProperty)):
+            if(s.__str__().__contains__(domain_name)):
+                hasAnnotationProperty = True
+
+    if(hasAnnotationProperty) :
+        for s, p, o in main_ontology.triples((None, None, OWL.AnnotationProperty)):
+            if(s.__str__().__contains__(domain_name)):
+                
+                #ObjectProperty
+                className = s.__str__().replace(cx_s,'') 
+                className = "<span id=\""+ className +"\">" + className + "</span>"
+                
+                #Description
+                description = main_ontology.value(s, RDFS.comment)
+
+                #Domain
+                domain = ""
+                for s1, p1, o1 in main_ontology.triples((s, RDFS.domain, None)):
+                    domain = domain + customizedLink(domain_name, o1.__str__()) + " , "
+                domain = domain[:-2]
+                    
+                #Range 
+                range = ""
+                for s1, p1, o1 in main_ontology.triples((s, RDFS.range, None)):
+                    range = range +  customizedLink(domain_name, o1.__str__()) + " , "
+                range = range[:-2]
+                
+                #SubPropertyOf 
+                subPropertyOf = ""
+                for s1, p1, o1 in main_ontology.triples((s, RDFS.subPropertyOf, None)):
+                    if not(o1.__str__().__contains__('http://www.w3.org/2002/07/owl#topObjectProperty')):
+                        subPropertyOf = subPropertyOf +  customizedLink(domain_name, o1.__str__()) + " , "
+                subPropertyOf = subPropertyOf[:-2]
+                
+                list_of_strings.extend([className, description , domain, range, subPropertyOf ])
+                rowCounter = rowCounter + 1
+
+        mdFile.new_line()
+        mdFile.new_table(columns=5, rows=rowCounter, text=list_of_strings, text_align='left')
+        mdFile.create_md_file()
     
 # Fuction Call
 listOfontologies = os.listdir('./ontology')

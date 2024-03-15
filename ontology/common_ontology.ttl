@@ -23,23 +23,21 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix json: <https://json-schema.org/draft/2020-12/schema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix schema: <https://schema.org/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix cx-common: <https://w3id.org/catenax/ontology/common#> .
+@prefix cx-core: <https://w3id.org/catenax/ontology/core#> .
 @base <https://w3id.org/catenax/ontology/common#> .
 
 <https://w3id.org/catenax/ontology/common> rdf:type owl:Ontology ;
-                                           dc:contributor "Oguzhan Balandi" ;
-                                           dc:creator "Zazralt Magic" ;
-                                          dc:date "2023-05-23"^^xsd:date ;
-                                          dc:description "The common ontology describes the Dataspace connectors in detail. On the one hand, this includes the information from which Catena-X business partner the connectors are deployed. On the other hand, with which contracts which assets provide the connectors."@en ;
-                                          dc:title "Common Ontology" ;
-                                          owl:versionInfo "1.9.4" .
+                                           dc:contributor "[@drcgjung](https://github.com/drcgjung) , [@obalandi](https://github.com/obalandi)" ;
+                                           dc:creator "[@ZazraltMagic](https://github.com/ZazraltMagic)" ;
+                                           dc:date "2023-05-23"^^xsd:date ;
+                                           dc:description "The common ontology describes the Dataspace connectors in detail. On the one hand, this includes the information from which Catena-X business partner the connectors are deployed. On the other hand, with which contracts which assets provide the connectors."@en ;
+                                           dc:title "Common Ontology" ;
+                                           owl:imports <file:core_ontology.ttl> ;
+                                           owl:versionInfo "1.9.4" .
 
 #################################################################
 #    Annotation properties
@@ -61,30 +59,11 @@ dc:description rdf:type owl:AnnotationProperty .
 dc:title rdf:type owl:AnnotationProperty .
 
 
-###  http://www.w3.org/2004/02/skos/core#altLabel
-skos:altLabel rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#definition
-skos:definition rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#example
-skos:example rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#prefLabel
-skos:prefLabel rdf:type owl:AnnotationProperty .
-
-
-###  https://json-schema.org/draft/2020-12/schema#Object
-json:Object rdf:type rdfs:Datatype .
-
 #################################################################
 #    Object Properties
 #################################################################
 
-###  https://catena-x.net/product-knowledge/ontology/common#hasDataspaceConnector
+###  https://w3id.org/catenax/ontology/common#hasDataspaceConnector
 cx-common:hasDataspaceConnector rdf:type owl:ObjectProperty ;
                                 rdfs:subPropertyOf owl:topObjectProperty ;
                                 rdfs:domain cx-common:BusinessPartner ;
@@ -93,209 +72,189 @@ cx-common:hasDataspaceConnector rdf:type owl:ObjectProperty ;
                                 rdfs:label "has Dataspace Connector"@en .
 
 
-###  https://catena-x.net/product-knowledge/ontology/common#offers
+###  https://w3id.org/catenax/ontology/common#offers
 cx-common:offers rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf owl:topObjectProperty ;
                  rdfs:domain cx-common:DataspaceConnector ;
                  rdfs:range cx-common:Asset ;
-                 rdfs:comment "This property refers to the offered assets."@en .
+                 rdfs:comment "This property refers to the offered assets."@en ;
+                 rdfs:label "offers"@en .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  https://catena-x.net/product-knowledge/ontology/common#contentType
+###  https://w3id.org/catenax/ontology/common#contentType
 cx-common:contentType rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf owl:topDataProperty ;
                       rdfs:domain cx-common:Asset ;
                       rdfs:range xsd:string ;
-                      rdfs:comment "This property describes in which format the data will be output, i.e. XML or JSON."@en .
+                      rdfs:comment "This property describes in which format the data will be output, i.e. XML or JSON."@en ;
+                      rdfs:label "content type"@en .
 
 
-###  https://catena-x.net/product-knowledge/ontology/common#description
+###  https://w3id.org/catenax/ontology/common#description
 cx-common:description rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf owl:topDataProperty ;
                       rdfs:domain cx-common:Asset ;
                       rdfs:range xsd:string ;
-                      rdfs:comment "This property contains description of asset." .
+                      rdfs:comment "This property contains description of asset."@en ;
+                      rdfs:label "description"@en .
 
 
-###  https://catena-x.net/product-knowledge/ontology/common#id
+###  https://w3id.org/catenax/ontology/common#id
 cx-common:id rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf owl:topDataProperty ;
-             rdfs:domain owl:Thing ;
+             rdfs:domain cx-common:Asset ;
              rdfs:range xsd:string ;
-             rdfs:comment "This property contains unique identifier of Bussiness Partner/Connector/Asset."@en .
+             rdfs:comment "This property contains unique identifier of Bussiness Partner/Connector/Asset."@en ;
+             rdfs:label "id"@en .
 
 
-###  https://catena-x.net/product-knowledge/ontology/common#isFederated
-cx-common:isFederated rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf owl:topDataProperty ;
-                      rdfs:domain cx-common:Asset ;
-                      rdfs:range xsd:boolean ;
-                      rdfs:comment "If this property is set to true, it means that this connector will federate with other connectors."@en .
-
-
-###  https://catena-x.net/product-knowledge/ontology/common#name
+###  https://w3id.org/catenax/ontology/common#name
 cx-common:name rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf owl:topDataProperty ;
                rdfs:domain cx-common:Asset ;
                rdfs:range xsd:string ;
-               rdfs:comment "This property contains name of asset."@en .
+               rdfs:comment "This property contains name of asset."@en ;
+               rdfs:label "name"@en .
 
 
-###  https://catena-x.net/product-knowledge/ontology/common#implementsProtocol
-cx-common:implementsProtocol rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf owl:topDataProperty ;
-                   rdfs:domain cx-common:Asset ;
-                   rdfs:range xsd:string ;
-                   rdfs:comment "This property refers to the network protocol implemented by the asset."@en .
-
-###  https://catena-x.net/product-knowledge/ontology/common#publishedUnderContract
-cx-common:publishedUnderContract rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf owl:topObjectProperty ;
-                   rdfs:domain cx-common:Asset ;
-                   rdfs:target cx-common:Contract ;
-                   rdfs:comment "This property refers to the contract associated with the asset."@en .
-
-
-### http://www.w3.org/ns/shacl#shapesGraph
-sh:shapesGraph rdf:type owl:ObjectProperty;
-               rdfs:domain cx-common:Asset ;
-               rdfs:target rdfs:Resource ;
-               rdfs:comment "This property refers to a SHACL expression in which the RDF data Contraints are defined. In particular, the structure of the identifiers."@en .
-
-
-###  https://catena-x.net/product-knowledge/ontology/common#url
-cx-common:url rdf:type owl:DatatypeProperty ;
-              rdfs:subPropertyOf owl:topDataProperty ;
-              rdfs:domain cx-common:DataspaceConnector ;
-              rdfs:range xsd:anyURI .
-
-###  https://catena-x.net/product-knowledge/ontology/common#AuthenticatedResource
-cx-common:AuthenticatedResource rdf:type rdfs:Resource;
-               rdfs:comment "An resource that requires authentication."@en;
-                skos:prefLabel "Authenticated Resource"@en .
-
-
-###  https://catena-x.net/product-knowledge/ontology/common#authenticationInformation
-cx-common:authenticationInformation rdf:type owl:DatatypeProperty ;
-              rdfs:comment "Base property for all authentication informations.";
-              rdfs:subPropertyOf owl:topDataProperty ;
-              rdfs:domain cx-common:AuthenticatedResource ;
-              rdfs:range xsd:string .
-
-###  https://catena-x.net/product-knowledge/ontology/common#authenticationCode
-cx-common:authenticationCode rdf:type owl:DatatypeProperty ;
-              rdfs:comment "An authentication code under which authentication information are transmitted.";
-              rdfs:subPropertyOf cx-common:authenticationInformation.
-
-###  https://catena-x.net/product-knowledge/ontology/common#authenticationKey
-cx-common:authenticationKey rdf:type owl:DatatypeProperty ;
-              rdfs:comment "An authentication key which encodes some authentication proof.";
-              rdfs:subPropertyOf cx-common:authenticationInformation.
-
-###  https://catena-x.net/product-knowledge/ontology/common#version
+###  https://w3id.org/catenax/ontology/common#version
 cx-common:version rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf owl:topDataProperty ;
                   rdfs:domain cx-common:Asset ;
                   rdfs:range xsd:string ;
-                  rdfs:comment "This property contains version of asset."@en .
+                  rdfs:comment "Version of the asset."@en ;
+                  rdfs:label "version"@en .
+
+
+###  https://w3id.org/catenax/ontology/common#implementsProtocol
+cx-common:implementsProtocol rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain cx-common:Asset ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "This property refers to the network protocol implemented by the asset."@en ;
+                   rdfs:label "implements protocol"@en .
+
+###  https://w3id.org/catenax/ontology/common#publishedUnderContract
+cx-common:publishedUnderContract rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain cx-common:Asset ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "This property refers to the contract associated with the asset."@en ;
+                   rdfs:label "published under contract"@en . 
+
+###  https://w3id.org/catenax/ontology/common#satisfiesRole
+cx-common:satisfiesRole rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain cx-common:Asset ;
+                   rdfs:range xsd:anyURI ;
+                   rdfs:comment "Use Case Role IRI."@en ;
+                   rdfs:label "satisfies role"@en . 
+
+
+###  https://w3id.org/catenax/ontology/common#isFederated
+cx-common:isFederated rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain cx-common:Asset ;
+                      rdfs:range xsd:boolean ;
+                      rdfs:comment "If this property is set to true, it means that this connector will federate with other connectors."@en ;
+                      rdfs:label "is federated"@en .
+
+### http://www.w3.org/ns/shacl#shapesGraph
+sh:shapesGraph rdf:type owl:DatatypeProperty;
+               rdfs:domain cx-common:Asset ;
+               rdfs:range xsd:anyURI ;
+               rdfs:comment "This property refers to a SHACL expression in which the RDF data Contraints are defined. In particular, the structure of the identifiers."@en ;
+               rdfs:label "shapes graph"@en .
+
+
+###  https://w3id.org/catenax/ontology/common#url
+cx-common:url rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain cx-common:DataspaceConnector ;
+              rdfs:range xsd:anyURI ;
+               rdfs:comment ""@en ;
+               rdfs:label "url"@en .
+
+
+###  https://w3id.org/catenax/ontology/common#AuthenticatedResource
+cx-common:authenticatedResource rdf:type rdfs:DatatypeProperty;
+                                rdfs:domain cx-common:Asset ;
+                                rdfs:range xsd:anyURI ;
+                                rdfs:comment "An resource that requires authentication."@en;
+                                rdfs:label "Authenticated Resource"@en .
+
+
+###  https://w3id.org/catenax/ontology/common#authenticationInformation
+cx-common:authenticationInformation rdf:type owl:DatatypeProperty ;
+              rdfs:comment "Base property for all authentication informations." ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain cx-common:Asset ;
+              rdfs:range xsd:string ;
+              rdfs:label "authentication information"@en .
+
+
+###  https://w3id.org/catenax/ontology/common#authenticationCode
+cx-common:authenticationCode rdf:type owl:DatatypeProperty ;
+                             rdfs:domain cx-common:Asset ;
+                             rdfs:range xsd:string ;
+                             rdfs:comment "An authentication code under which authentication information are transmitted." ;
+                             rdfs:subPropertyOf cx-common:authenticationInformation ;
+                             rdfs:label "authentication code"@en .
+
+###  https://w3id.org/catenax/ontology/common#authenticationKey
+cx-common:authenticationKey rdf:type owl:DatatypeProperty ;
+                            rdfs:domain cx-common:Asset ;
+                            rdfs:range xsd:string ;
+                            rdfs:comment "An authentication key which encodes some authentication proof." ;
+                            rdfs:subPropertyOf cx-common:authenticationInformation ;
+                             rdfs:label "authentication key"@en .
+
+
+###  https://w3id.org/catenax/ontology/common#SkillDistribution?run=provider
+cx-common:distributionMode rdf:type owl:DatatypeProperty ;
+                           rdfs:domain cx-common:Asset ;
+                           rdfs:range xsd:string ;
+                           rdfs:comment "The skill may only be invoked local to the computing environment of the provider."@en;
+                           rdfs:label "Distribution Mode"@en .
+
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  https://catena-x.net/product-knowledge/ontology/common#Asset
+###  https://w3id.org/catenax/ontology/core#Actor
+cx-core:Actor rdf:type owl:Class .
+
+###  https://w3id.org/catenax/ontology/common#Application
+cx-common:Application rdf:type owl:Class ;
+                rdfs:comment "An application defines a coded software that fulfills a specific purpose."@en ;
+                rdfs:label "Application"@en .
+
+###  https://w3id.org/catenax/ontology/common#Asset
 cx-common:Asset rdf:type owl:Class ;
-                skos:definition "The Asset class describes the provision via a repository of a specific set of data for a specific purpose."@en ;
-                skos:prefLabel "Asset"@en .
+                rdfs:subClassOf cx-common:Application ;
+                rdfs:comment "The Asset class describes the provision via a repository of a specific set of data for a specific purpose."@en ;
+                rdfs:label "Asset"@en .
 
 
-###  https://catena-x.net/product-knowledge/ontology/common#BusinessPartner
+###  https://w3id.org/catenax/ontology/common#BusinessPartner
 cx-common:BusinessPartner rdf:type owl:Class ;
-                          rdfs:seeAlso <https://en.wikipedia.org/wiki/Business_partner> ;
-                          skos:altLabel "BP"@en ,
-                                        "business partner"@en ;
-                          skos:definition "A Business Partner is a legal entity that is part of the Catena-X network or that stands in a relevant relation to a Catena-X Business Partner."@en ;
-                          skos:example "Audi"@en ,
-                                       "BMW"@en ,
-                                       "Mercedes"@en ,
-                                       "Volkswagen"@en ;
-                          skos:prefLabel "Business Partner"@en ,
-                                         "Geschäftspartner"@de .
+                          rdfs:subClassOf cx-core:Actor ;
+                          rdfs:comment "A Business Partner is a legal entity that is part of the Catena-X network or that stands in a relevant relation to a Catena-X Business Partner."@en ;
+                          rdfs:label "Business Partner"@en .
 
 
-###  https://catena-x.net/product-knowledge/ontology/common#DataspaceConnector
+###  https://w3id.org/catenax/ontology/common#DataspaceConnector
 cx-common:DataspaceConnector rdf:type owl:Class ;
+                             rdfs:subClassOf cx-common:Application ;
                              rdfs:comment "Dataspace Connector is an interface based on the Eclipse Dataspace Connector technology. A Dataspace Connector makes various assets available through contracts. A contract describes with which policy which asset can be provided."@en ;
                              rdfs:seeAlso <https://projects.eclipse.org/proposals/eclipse-dataspace-connector> ;
-                             skos:altLabel "Connector"@en ,
-                                           "EDC"@en ;
-                             skos:prefLabel "Dataspace Connector"@en .
-
-
-###  https://catena-x.net/product-knowledge/ontology/common#FunctionAsset
-cx-common:FunctionAsset rdf:type owl:Class ;
-                        rdfs:subClassOf cx-common:Asset ;
-                        rdfs:comment "This subclass of Asset allows performing calculations on asset."@en ;
-                        rdfs:label "Function Asset"@en .
-
-
-###  https://catena-x.net/product-knowledge/ontology/common#GraphAsset
-cx-common:GraphAsset rdf:type owl:Class ;
-                     rdfs:subClassOf cx-common:Asset ;
-                     rdfs:comment "This subclass of Asset allows arbitrary data queries to be executed on assets."@en ;
-                     rdfs:label "Graph Asset" .
-
-
-###  https://catena-x.net/product-knowledge/ontology/common#SkillAsset
-cx-common:SkillAsset rdf:type owl:Class ;
-                     rdfs:subClassOf cx-common:Asset ;
-                     rdfs:comment "This subclass of Asset allows only the execution of predefined data queries on assets."@en ;
-                     rdfs:label "Skill Asset"@en .
-
-
-###  https://catena-x.net/product-knowledge/ontology/common#SkillDistribution
-cx-common:SkillDistribution rdf:type rdfs:Resource;
-               rdfs:comment "Describes the possibilities how to distribute skills."@en;
-               skos:prefLabel "Distribution Mode"@en .
-
-###  https://catena-x.net/product-knowledge/ontology/common#SkillDistribution?run=provider
-cx-common:SkillDistribution%3Frun%3Dprovider rdf:type cx-common:SkillDistribution;
-               rdfs:comment "The skill may only be invoked local to the computing environment of the provider."@en;
-               skos:prefLabel "Provider Distribution Mode"@en .
-
-###  https://catena-x.net/product-knowledge/ontology/common#SkillDistribution?run=consumer
-cx-common:SkillDistribution%3Frun%3Dconsumer rdf:type cx-common:SkillDistribution;
-               rdfs:comment "The skill may only be invoked remote in the computing environment of the consumer."@en;
-               skos:prefLabel "Consumer Distribution Mode"@en .
-
-###  https://catena-x.net/product-knowledge/ontology/common#SkillDistribution?run=all
-cx-common:SkillDistribution%3Frun%3Dall rdf:type cx-common:SkillDistribution;
-               rdfs:comment "The skill may be invoked in any computing environment (provider or consumer)."@en;
-               skos:prefLabel "All Distribution Mode"@en .
-
-#################################################################
-#    General axioms
-#################################################################
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( cx-common:Asset
-                cx-common:BusinessPartner
-                cx-common:DataspaceConnector
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( cx-common:FunctionAsset
-                cx-common:GraphAsset
-                cx-common:SkillAsset
-              )
-] .
+                             rdfs:label "Dataspace Connector"@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

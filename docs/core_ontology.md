@@ -40,15 +40,15 @@
 
 |Name|Description|Domain|Range|Subproperty of|
 | :--- | :--- | :--- | :--- | :--- |
-|<span id="endDateTime">endDateTime</span>|End time of the activity.|[Activity](#Activity) |xml:dateTime ||
-|<span id="id">id</span>|Unique identification of the exchanged Catena-X objects.|[Activity](#Activity) , [Place](#Place) , [Actor](#Actor) , [ConceptualObject](#ConceptualObject) , [PhysicalObject](#PhysicalObject) |xml:string ||
-|<span id="name">name</span>|Global name of an object.|[Activity](#Activity) , [Place](#Place) , [Actor](#Actor) , [ConceptualObject](#ConceptualObject) , [PhysicalObject](#PhysicalObject) |xml:string ||
-|<span id="startDateTime">startDateTime</span>|Start time of an activity.|[Activity](#Activity) |xml:dateTime ||
-|<span id="street">street</span>|Street name of alegal address.|[Address](#Address) |xml:string ||
-|<span id="houseNumber">houseNumber</span>|House number of a legal address.|[Address](#Address) |xml:string ||
-|<span id="postalCode">postalCode</span>|Postal code of a legal address.|[Address](#Address) |xml:string ||
-|<span id="city">city</span>|City name of a legal address.|[Address](#Address) |xml:string ||
-|<span id="country">country</span>|Country name of a legal address.|[Address](#Address) |xml:string ||
+|<span id="endDateTime">endDateTime</span>|End time of the activity.|[Activity](#Activity) |xsd:dateTime ||
+|<span id="id">id</span>|Unique identification of the exchanged Catena-X objects.|[Activity](#Activity) , [Place](#Place) , [Actor](#Actor) , [ConceptualObject](#ConceptualObject) , [PhysicalObject](#PhysicalObject) |xsd:string ||
+|<span id="name">name</span>|Global name of an object.|[Activity](#Activity) , [Place](#Place) , [Actor](#Actor) , [ConceptualObject](#ConceptualObject) , [PhysicalObject](#PhysicalObject) |xsd:string ||
+|<span id="startDateTime">startDateTime</span>|Start time of an activity.|[Activity](#Activity) |xsd:dateTime ||
+|<span id="street">street</span>|Street name of alegal address.|[Address](#Address) |xsd:string ||
+|<span id="houseNumber">houseNumber</span>|House number of a legal address.|[Address](#Address) |xsd:string ||
+|<span id="postalCode">postalCode</span>|Postal code of a legal address.|[Address](#Address) |xsd:string ||
+|<span id="city">city</span>|City name of a legal address.|[Address](#Address) |xsd:string ||
+|<span id="country">country</span>|Country name of a legal address.|[Address](#Address) |xsd:string ||
 
 ## Object Properties
   
