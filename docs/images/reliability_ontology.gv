@@ -2,83 +2,65 @@ digraph reliability_ontology {
 	graph [fontname="Helvetica,Arial,sans-serif" fontsize=10 layout=neato overlap=false splines=ortho]
 	node [fillcolor=darkgoldenrod1 fontname="Helvetica,Arial,sans-serif" fontsize=10 shape=record]
 	edge [arrowsize=0.3 fontname="Helvetica,Arial,sans-serif" fontsize=10 penwidth=0.3]
-	Activity [label=<{<b>Activity</b> | <i><b> domain:core</b></i> <br align="left"/>https://w3id.org/catenax/ontology/core#endDateTime:dateTime<br align="left"/>https://w3id.org/catenax/ontology/core#startDateTime:dateTime<br align="left"/>}> style=filled]
+	Activity [label=<{<b>Activity</b> | <i><b> domain:core</b></i> <br align="left"/>}> style=filled]
 	Actor [label=<{<b>Actor</b> | <i><b> domain:core</b></i> <br align="left"/>}> style=filled]
-	Address [label=<{<b>Address</b> | <i><b> domain:core</b></i> <br align="left"/>}> style=filled]
-	ConceptualObject [label=<{<b>ConceptualObject</b> | <i><b> domain:core</b></i> <br align="left"/>}> style=filled]
 	PhysicalObject [label=<{<b>PhysicalObject</b> | <i><b> domain:core</b></i> <br align="left"/>}> style=filled]
-	Place [label=<{<b>Place</b> | <i><b> domain:core</b></i> <br align="left"/>}> style=filled]
+	ConceptualObject [label=<{<b>ConceptualObject</b> | <i><b> domain:core</b></i> <br align="left"/>}> style=filled]
+	Part [label=<{<b>Part</b> | <i><b> domain:vehicle</b></i> <br align="left"/>}> style=filled]
+	Vehicle [label=<{<b>Vehicle</b> | <i><b> domain:vehicle</b></i> <br align="left"/>}> style=filled]
 	Analysis [label=<{<b>Analysis</b> | <i><b> domain:reliability</b></i> <br align="left"/>mileageOfVehicle:integer<br align="left"/>operatingHoursOfPart:float<br align="left"/>operatingHoursOfVehicle:float<br align="left"/>}> style=filled]
+	AnalysisDevice [label=<{<b>AnalysisDevice</b> | <i><b> domain:reliability</b></i> <br align="left"/>}> style=filled]
 	AnalysisResult [label=<{<b>AnalysisResult</b> | <i><b> domain:reliability</b></i> <br align="left"/>}> style=filled]
+	Diagnosis [label=<{<b>Diagnosis</b> | <i><b> domain:reliability</b></i> <br align="left"/>}> style=filled]
+	DiagnosticTroubleCode [label=<{<b>DiagnosticTroubleCode</b> | <i><b> domain:reliability</b></i> <br align="left"/>diagnosticTroubleCodeId:string<br align="left"/>diagnosticTroubleCodeName:string<br align="left"/>}> style=filled]
+	ErrorCause [label=<{<b>ErrorCause</b> | <i><b> domain:reliability</b></i> <br align="left"/>}> style=filled]
 	LoadSpectrum [label=<{<b>LoadSpectrum</b> | <i><b> domain:reliability</b></i> <br align="left"/>datetime:dateTime<br align="left"/>description:string<br align="left"/>endDatetime:dateTime<br align="left"/>id:string<br align="left"/>name:string<br align="left"/>type:string<br align="left"/>}> style=filled]
 	LoadSpectrumAnalysis [label=<{<b>LoadSpectrumAnalysis</b> | <i><b> domain:reliability</b></i> <br align="left"/>}> style=filled]
 	LoadSpectrumChannel [label=<{<b>LoadSpectrumChannel</b> | <i><b> domain:reliability</b></i> <br align="left"/>lowerLimit:float<br align="left"/>name:string<br align="left"/>numberOfBins:integer<br align="left"/>type:string<br align="left"/>unit:string<br align="left"/>upperLimit:float<br align="left"/>}> style=filled]
 	LoadSpectrumClass [label=<{<b>LoadSpectrumClass</b> | <i><b> domain:reliability</b></i> <br align="left"/>}> style=filled]
-	LoadSpectrumValues [label=<{<b>LoadSpectrumValues</b> | <i><b> domain:reliability</b></i> <br align="left"/>countingValue:string<br align="left"/>countingMethod:string<br align="left"/>countingUnit:string<br align="left"/>index:string<br align="left"/>}> style=filled]
-	OnBoardTelematics [label=<{<b>OnBoardTelematics</b> | <i><b> domain:reliability</b></i> <br align="left"/>}> style=filled]
-	TelematicsResult [label=<{<b>TelematicsResult</b> | <i><b> domain:reliability</b></i> <br align="left"/>}> style=filled]
-	Part [label=<{<b>Part</b> | <i><b> domain:vehicle</b></i> <br align="left"/>}> style=filled]
-	Vehicle [label=<{<b>Vehicle</b> | <i><b> domain:vehicle</b></i> <br align="left"/>}> style=filled]
-	describesPhysicalObject [label="https://w3id.org/catenax/ontology/core#describesPhysicalObject / 
-https://w3id.org/catenax/ontology/core#describedByConceptualObject ➝" fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
-	hasParticipant [label="https://w3id.org/catenax/ontology/core#hasParticipant" fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
-	hosts [label="https://w3id.org/catenax/ontology/core#hosts" fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
-	involvedIn [label="https://w3id.org/catenax/ontology/core#involvedIn" fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
-	participatesIn [label="https://w3id.org/catenax/ontology/core#participatesIn" fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
-	refersToConceptualObject [label="https://w3id.org/catenax/ontology/core#refersToConceptualObject" fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
-	refersToPhysicalObject [label="https://w3id.org/catenax/ontology/core#refersToPhysicalObject" fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
-	relatedToPlace [label="https://w3id.org/catenax/ontology/core#relatedToPlace" fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
-	takesPlaceAt [label="https://w3id.org/catenax/ontology/core#takesPlaceAt" fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
+	LoadSpectrumValue [label=<{<b>LoadSpectrumValue</b> | <i><b> domain:reliability</b></i> <br align="left"/>countingMethod:string<br align="left"/>countingUnit:string<br align="left"/>countingValue:string<br align="left"/>index:string<br align="left"/>}> style=filled]
+	actualCause [label=actualCause fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
 	analysedObject [label=analysedObject fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
 	analysedPart [label=analysedPart fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
 	analysedVehicle [label=analysedVehicle fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
+	carryOut [label=carryOut fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
 	channel [label=channel fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
 	class [label=class fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
+	hasDiagnosticTroubleCode [label=hasDiagnosticTroubleCode fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
+	possibleCause [label=possibleCause fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
 	result [label=result fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
-	hasValues [label=hasValues fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
-	ConceptualObject -> describesPhysicalObject [arrowhead=none]
-	describesPhysicalObject -> PhysicalObject
-	Activity -> hasParticipant [arrowhead=none]
-	hasParticipant -> Actor
-	Place -> hosts [arrowhead=none]
-	hosts -> Activity
-	ConceptualObject -> involvedIn [arrowhead=none]
-	involvedIn -> Activity
-	PhysicalObject -> involvedIn [arrowhead=none]
-	involvedIn -> Activity
-	Actor -> participatesIn [arrowhead=none]
-	participatesIn -> Activity
-	Activity -> refersToConceptualObject [arrowhead=none]
-	refersToConceptualObject -> ConceptualObject
-	Activity -> refersToPhysicalObject [arrowhead=none]
-	refersToPhysicalObject -> ConceptualObject
-	Actor -> relatedToPlace [arrowhead=none]
-	relatedToPlace -> Place
-	Activity -> takesPlaceAt [arrowhead=none]
-	takesPlaceAt -> Place
+	value [label=value fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
+	DiagnosticTroubleCode -> actualCause [arrowhead=none]
+	actualCause -> ErrorCause
 	Analysis -> analysedObject [arrowhead=none]
 	analysedObject -> PhysicalObject
 	Analysis -> analysedPart [arrowhead=none]
 	analysedPart -> Part
 	Analysis -> analysedVehicle [arrowhead=none]
 	analysedVehicle -> Vehicle
+	AnalysisDevice -> carryOut [arrowhead=none]
+	carryOut -> Analysis
 	LoadSpectrum -> channel [arrowhead=none]
 	channel -> LoadSpectrumChannel
 	LoadSpectrum -> class [arrowhead=none]
 	class -> LoadSpectrumClass
+	Diagnosis -> hasDiagnosticTroubleCode [arrowhead=none]
+	hasDiagnosticTroubleCode -> DiagnosticTroubleCode
+	DiagnosticTroubleCode -> possibleCause [arrowhead=none]
+	possibleCause -> ErrorCause
 	Analysis -> result [arrowhead=none]
 	result -> AnalysisResult
-	LoadSpectrum -> hasValues [arrowhead=none]
-	hasValues -> LoadSpectrumValues
+	LoadSpectrum -> value [arrowhead=none]
+	value -> LoadSpectrumValue
 	Analysis -> Activity [style=dashed]
+	AnalysisDevice -> Actor [style=dashed]
 	AnalysisResult -> ConceptualObject [style=dashed]
+	ErrorCause -> ConceptualObject [style=dashed]
+	Diagnosis -> Analysis [style=dashed]
+	LoadSpectrumAnalysis -> Analysis [style=dashed]
+	DiagnosticTroubleCode -> AnalysisResult [style=dashed]
 	LoadSpectrum -> AnalysisResult [style=dashed]
 	LoadSpectrumChannel -> AnalysisResult [style=dashed]
 	LoadSpectrumClass -> AnalysisResult [style=dashed]
-	LoadSpectrumValues -> AnalysisResult [style=dashed]
-	TelematicsResult -> AnalysisResult [style=dashed]
-	LoadSpectrumAnalysis -> OnBoardTelematics [style=dashed]
-	OnBoardTelematics -> Analysis [style=dashed]
-	Part -> PhysicalObject [style=dashed]
-	Vehicle -> PhysicalObject [style=dashed]
+	LoadSpectrumValue -> AnalysisResult [style=dashed]
 }

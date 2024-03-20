@@ -91,3 +91,12 @@
     - Description
     - Last changes and date
     - Use Case specific Queries/Examples
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
