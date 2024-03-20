@@ -2,7 +2,6 @@ digraph vehicle_ontology {
 	graph [fontname="Helvetica,Arial,sans-serif" fontsize=10 layout=neato overlap=false splines=ortho]
 	node [fillcolor=darkgoldenrod1 fontname="Helvetica,Arial,sans-serif" fontsize=10 shape=record]
 	edge [arrowsize=0.3 fontname="Helvetica,Arial,sans-serif" fontsize=10 penwidth=0.3]
-	ConceptualObject [label=<{<b>ConceptualObject</b> | <i><b> domain:core</b></i> <br align="left"/>}> style=filled]
 	PhysicalObject [label=<{<b>PhysicalObject</b> | <i><b> domain:core</b></i> <br align="left"/>}> style=filled]
 	Part [label=<{<b>Part</b> | <i><b> domain:vehicle</b></i> <br align="left"/>}> style=filled]
 	Vehicle [label=<{<b>Vehicle</b> | <i><b> domain:vehicle</b></i> <br align="left"/>mileage:integer<br align="left"/>operatingHours:integer<br align="left"/>vehicleIdentificationNumber:string<br align="left"/>}> style=filled]

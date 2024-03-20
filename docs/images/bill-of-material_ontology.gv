@@ -1,0 +1,40 @@
+digraph "bill-of-material_ontology" {
+	graph [fontname="Helvetica,Arial,sans-serif" fontsize=10 layout=neato overlap=false splines=ortho]
+	node [fillcolor=darkgoldenrod1 fontname="Helvetica,Arial,sans-serif" fontsize=10 shape=record]
+	edge [arrowsize=0.3 fontname="Helvetica,Arial,sans-serif" fontsize=10 penwidth=0.3]
+	structure [label=structure fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
+	component [label=component fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
+	assembly [label=assembly fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
+	hasBom [label=hasBom fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
+	supportsBom [label=supportsBom fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
+	supplier [label=supplier fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
+	assembler [label=assembler fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
+	BillOfMaterial -> component [arrowhead=none]
+	component -> PhysicalObject
+	BillOfMaterial -> component [arrowhead=none]
+	component -> ConceptualObject
+	BillOfMaterial -> assembly [arrowhead=none]
+	assembly -> PhysicalObject
+	BillOfMaterial -> assembly [arrowhead=none]
+	assembly -> ConceptualObject
+	PhysicalObject -> hasBom [arrowhead=none]
+	hasBom -> BillOfMaterial
+	ConceptualObject -> hasBom [arrowhead=none]
+	hasBom -> BillOfMaterial
+	PhysicalObject -> supportsBom [arrowhead=none]
+	supportsBom -> BillOfMaterial
+	ConceptualObject -> supportsBom [arrowhead=none]
+	supportsBom -> BillOfMaterial
+	BillOfMaterial -> supplier [arrowhead=none]
+	supplier -> BusinessPartner
+	BillOfMaterial -> supplier [arrowhead=none]
+	supplier -> Site
+	BillOfMaterial -> supplier [arrowhead=none]
+	supplier -> Address
+	BillOfMaterial -> assembler [arrowhead=none]
+	assembler -> BusinessPartner
+	BillOfMaterial -> assembler [arrowhead=none]
+	assembler -> Site
+	BillOfMaterial -> assembler [arrowhead=none]
+	assembler -> Address
+}

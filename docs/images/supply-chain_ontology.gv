@@ -1,0 +1,24 @@
+digraph "supply-chain_ontology" {
+	graph [fontname="Helvetica,Arial,sans-serif" fontsize=10 layout=neato overlap=false splines=ortho]
+	node [fillcolor=darkgoldenrod1 fontname="Helvetica,Arial,sans-serif" fontsize=10 shape=record]
+	edge [arrowsize=0.3 fontname="Helvetica,Arial,sans-serif" fontsize=10 penwidth=0.3]
+	supplier [label=supplier fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
+	recipient [label=recipient fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
+	good [label=good fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
+	SupplyChain -> supplier [arrowhead=none]
+	supplier -> BusinessPartner
+	SupplyChain -> supplier [arrowhead=none]
+	supplier -> Site
+	SupplyChain -> supplier [arrowhead=none]
+	supplier -> Address
+	SupplyChain -> recipient [arrowhead=none]
+	recipient -> BusinessPartner
+	SupplyChain -> recipient [arrowhead=none]
+	recipient -> Site
+	SupplyChain -> recipient [arrowhead=none]
+	recipient -> Address
+	SupplyChain -> good [arrowhead=none]
+	good -> PhysicalObject
+	SupplyChain -> good [arrowhead=none]
+	good -> ConceptualObject
+}
