@@ -258,6 +258,12 @@ def create_md_file_for_domain(domain_name):
 
         mdFile.new_line()
         mdFile.new_table(columns=5, rows=rowCounter, text=list_of_strings, text_align='left')
+        
+    mdFile.insert_code("import Mdutils\n"
+                "\n"
+                "\n"
+                "mdFile = MdUtils(file_name=\'Example_Markdown\',title=\'Markdown File Example\')\n"
+                "mdFile.create_md_file()", language='python')
 
     mdFile.create_md_file()
 

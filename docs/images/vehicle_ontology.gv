@@ -4,36 +4,14 @@ digraph vehicle_ontology {
 	edge [arrowsize=0.3 fontname="Helvetica,Arial,sans-serif" fontsize=10 penwidth=0.3]
 	ConceptualObject [label=<{<b>ConceptualObject</b> | <i><b> domain:core</b></i> <br align="left"/>}> style=filled]
 	PhysicalObject [label=<{<b>PhysicalObject</b> | <i><b> domain:core</b></i> <br align="left"/>}> style=filled]
-	EClassType [label=<{<b>EClassType</b> | <i><b> domain:vehicle</b></i> <br align="left"/>classification:string<br align="left"/>irdi:string<br align="left"/>}> style=filled]
 	Part [label=<{<b>Part</b> | <i><b> domain:vehicle</b></i> <br align="left"/>}> style=filled]
-	Vehicle [label=<{<b>Vehicle</b> | <i><b> domain:vehicle</b></i> <br align="left"/>acceleration:integer<br align="left"/>adblueTankCapacity:double<br align="left"/>age:integer<br align="left"/>airConditioningType:string<br align="left"/>assistanceSystem:string<br align="left"/>batteryCapacity:integer<br align="left"/>batteryWeight:integer<br align="left"/>bodyStyle:string<br align="left"/>bore:double<br align="left"/>brand:string<br align="left"/>breaking:integer<br align="left"/>camshaftValvetrainConfiguration:string<br align="left"/>cargoVolume:double<br align="left"/>chargingTime:double<br align="left"/>clutchType:string<br align="left"/>co2Emissions:integer<br align="left"/>co2EmissionsWltp:integer<br align="left"/>configuration:string<br align="left"/>curbWeight:double<br align="left"/>developmentSeries:string<br align="left"/>dragCoefficient:double<br align="left"/>driveWheelType:string<br align="left"/>dryWeight:double<br align="left"/>electricConsumption:double<br align="left"/>electricPower:integer<br align="left"/>electricRange:integer<br align="left"/>electricRangeWltp:integer<br align="left"/>emissionClass:string<br align="left"/>engineAlignment:string<br align="left"/>engineAspiration:string<br align="left"/>engineCompressionRatio:double<br align="left"/>engineDisplacement:double<br align="left"/>engineFamily:string<br align="left"/>engineForm:string<br align="left"/>engineFuelInjection:string<br align="left"/>engineGeneration:string<br align="left"/>engineManufacturer:string<br align="left"/>engineMaxPower:double<br align="left"/>engineMaxTorque:double<br align="left"/>engineName:string<br align="left"/>enginePerformanceClass:string<br align="left"/>enginePosition:string<br align="left"/>engineSeries:string<br align="left"/>engineTypeCode:string<br align="left"/>engineVersion:string<br align="left"/>euEnergyLabel:string<br align="left"/>euroCarSegment:string<br align="left"/>expectedLifetime:integer<br align="left"/>expectedLifetimeMileage:integer<br align="left"/>exteriorColor:string<br align="left"/>frontBrakeDiscDiameter:double<br align="left"/>frontSpringType:string<br align="left"/>frontSuspension:string<br align="left"/>fuelConsumptionCity:double<br align="left"/>fuelConsumptionCombined:double<br align="left"/>fuelConsumptionHighway:double<br align="left"/>fuelEfficiency:double<br align="left"/>fuelTankCapacity:double<br align="left"/>fuelType:string<br align="left"/>grossVehicleMass:double<br align="left"/>groundClearance:double<br align="left"/>hasAutomaticHeadLights:boolean<br align="left"/>hasFogLights:boolean<br align="left"/>hasModem:boolean<br align="left"/>hasNavigation:boolean<br align="left"/>hasRadio:boolean<br align="left"/>height:double<br align="left"/>interiorColor:string<br align="left"/>interiorType:string<br align="left"/>length:double<br align="left"/>location:string<br align="left"/>manufacturerKeyNumber:string<br align="left"/>maxAxleLoad:double<br align="left"/>maxPayload:double<br align="left"/>maxSpeed:integer<br align="left"/>maxTowingCapacity:double<br align="left"/>mileage:integer<br align="left"/>model:string<br align="left"/>modelArchitecture:string<br align="left"/>modelEndOfProduction:date<br align="left"/>modelGeneration:integer<br align="left"/>modelSeries:string<br align="left"/>modelStartOfProduction:date<br align="left"/>modelVariant:string<br align="left"/>numberOfAirbags:integer<br align="left"/>numberOfAxles:integer<br align="left"/>numberOfCylinders:integer<br align="left"/>numberOfDoors:integer<br align="left"/>numberOfDriveAxles:integer<br align="left"/>numberOfForwardGears:integer<br align="left"/>numberOfPassengers:integer<br align="left"/>numberOfSeatRows:integer<br align="left"/>numberOfSeats:integer<br align="left"/>numberOfStandingPlaces:integer<br align="left"/>numberOfValves:integer<br align="left"/>operatingHours:integer<br align="left"/>passengerVolume:double<br align="left"/>powertrainLayout:string<br align="left"/>previousVehicleModel:string<br align="left"/>range:integer<br align="left"/>rangeWltp:integer<br align="left"/>rearSpringType:string<br align="left"/>rearSuspension:string<br align="left"/>registrationAuthority:string<br align="left"/>registrationDate:date<br align="left"/>registrationLocation:string<br align="left"/>registrationOwner:string<br align="left"/>registrationPlate:string<br align="left"/>rim:string<br align="left"/>roadNoise:integer<br align="left"/>specialUsage:string<br align="left"/>stateDateTime:dateTime<br align="left"/>stationaryNoise:integer<br align="left"/>steeringType:string<br align="left"/>steeringWheelPosition:string<br align="left"/>stroke:double<br align="left"/>tire:string<br align="left"/>tongueWeight:double<br align="left"/>trailerWeight:double<br align="left"/>transmission:string<br align="left"/>trunkVolume:double<br align="left"/>turningRadius:double<br align="left"/>typeCode:string<br align="left"/>typeCodeNumber:string<br align="left"/>vehicleIdentificationNumber:string<br align="left"/>warrantyMaxDuration:integer<br align="left"/>warrantyMaxMileage:integer<br align="left"/>weight:double<br align="left"/>weightTotal:double<br align="left"/>wheelbase:double<br align="left"/>width:double<br align="left"/>worldManufacturerCountry:string<br align="left"/>worldManufacturerId:string<br align="left"/>worldManufacturerName:string<br align="left"/>worldManufacturerRegion:string<br align="left"/>}> style=filled]
-	VehicleModel [label=<{<b>VehicleModel</b> | <i><b> domain:vehicle</b></i> <br align="left"/>}> style=filled]
-	describesPhysicalObject [label="https://w3id.org/catenax/ontology/core#describesPhysicalObject / 
-https://w3id.org/catenax/ontology/core#describedByConceptualObject ➝" fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
-	eClassType [label=eClassType fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
-	isPartOf [label="isPartOf / 
-hasPart ➝" fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
-	isSubpartOf [label="isSubpartOf / 
-hasSubpart ➝" fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
-	isVariantOf [label=isVariantOf fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
-	supplier [label=supplier fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
-	manufacturer [label=manufacturer fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
-	ConceptualObject -> describesPhysicalObject [arrowhead=none]
-	describesPhysicalObject -> PhysicalObject
-	PhysicalObject -> eClassType [arrowhead=none]
-	eClassType -> EClassType
-	Part -> isPartOf [arrowhead=none]
-	isPartOf -> Vehicle
-	Part -> isSubpartOf [arrowhead=none]
-	isSubpartOf -> Part
-	Vehicle -> isVariantOf [arrowhead=none]
-	isVariantOf -> VehicleModel
-	Part -> supplier [arrowhead=none]
-	supplier -> rdfs:Resource
-	Vehicle -> manufacturer [arrowhead=none]
-	manufacturer -> rdfs:Resource
-	EClassType -> ConceptualObject [style=dashed]
-	VehicleModel -> ConceptualObject [style=dashed]
+	Vehicle [label=<{<b>Vehicle</b> | <i><b> domain:vehicle</b></i> <br align="left"/>mileage:integer<br align="left"/>operatingHours:integer<br align="left"/>vehicleIdentificationNumber:string<br align="left"/>}> style=filled]
+	hasPart [label=hasPart fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
+	hasSubpart [label=hasSubpart fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
+	Vehicle -> hasPart [arrowhead=none]
+	hasPart -> Part
+	Part -> hasSubpart [arrowhead=none]
+	hasSubpart -> Part
 	Part -> PhysicalObject [style=dashed]
 	Vehicle -> PhysicalObject [style=dashed]
 }

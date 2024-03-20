@@ -60,3 +60,12 @@
 | :--- | :--- | :--- | :--- | :--- |
 |<span id="hasDataspaceConnector">hasDataspaceConnector</span>|This property describes which connectors belong to which business partners.|[BusinessPartner](#BusinessPartner) |[DataspaceConnector](#DataspaceConnector) ||
 |<span id="offers">offers</span>|This property refers to the offered assets.|[DataspaceConnector](#DataspaceConnector) |[Asset](#Asset) ||
+
+
+```python
+import Mdutils
+
+
+mdFile = MdUtils(file_name='Example_Markdown',title='Markdown File Example')
+mdFile.create_md_file()
+```

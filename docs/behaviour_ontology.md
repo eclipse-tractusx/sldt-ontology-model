@@ -88,3 +88,12 @@
 |Name|Descriptions|Domain|Range|Subproperty of|
 | :--- | :--- | :--- | :--- | :--- |
 |<span id="component">component</span>|Component of the Predicition.|[RemainingUsefulLife](#RemainingUsefulLife) |[Part](./vehicle_ontology.md#Part) ||
+
+
+```python
+import Mdutils
+
+
+mdFile = MdUtils(file_name='Example_Markdown',title='Markdown File Example')
+mdFile.create_md_file()
+```

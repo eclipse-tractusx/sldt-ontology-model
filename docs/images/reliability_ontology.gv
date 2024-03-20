@@ -16,14 +16,14 @@ digraph reliability_ontology {
 	ErrorCause [label=<{<b>ErrorCause</b> | <i><b> domain:reliability</b></i> <br align="left"/>}> style=filled]
 	LoadSpectrum [label=<{<b>LoadSpectrum</b> | <i><b> domain:reliability</b></i> <br align="left"/>datetime:dateTime<br align="left"/>description:string<br align="left"/>endDatetime:dateTime<br align="left"/>id:string<br align="left"/>name:string<br align="left"/>type:string<br align="left"/>}> style=filled]
 	LoadSpectrumAnalysis [label=<{<b>LoadSpectrumAnalysis</b> | <i><b> domain:reliability</b></i> <br align="left"/>}> style=filled]
-	LoadSpectrumChannel [label=<{<b>LoadSpectrumChannel</b> | <i><b> domain:reliability</b></i> <br align="left"/>lowerLimit:float<br align="left"/>name:string<br align="left"/>numberOfBins:integer<br align="left"/>type:string<br align="left"/>unit:string<br align="left"/>upperLimit:float<br align="left"/>}> style=filled]
+	LoadSpectrumChannel [label=<{<b>LoadSpectrumChannel</b> | <i><b> domain:reliability</b></i> <br align="left"/>lowerLimit:float<br align="left"/>numberOfBins:integer<br align="left"/>type:string<br align="left"/>unit:string<br align="left"/>upperLimit:float<br align="left"/>}> style=filled]
 	LoadSpectrumClass [label=<{<b>LoadSpectrumClass</b> | <i><b> domain:reliability</b></i> <br align="left"/>}> style=filled]
 	LoadSpectrumValue [label=<{<b>LoadSpectrumValue</b> | <i><b> domain:reliability</b></i> <br align="left"/>countingMethod:string<br align="left"/>countingUnit:string<br align="left"/>countingValue:string<br align="left"/>index:string<br align="left"/>}> style=filled]
 	actualCause [label=actualCause fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
 	analysedObject [label=analysedObject fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
 	analysedPart [label=analysedPart fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
 	analysedVehicle [label=analysedVehicle fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
-	carryOut [label=carryOut fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
+	performs [label=performs fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
 	channel [label=channel fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
 	class [label=class fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
 	hasDiagnosticTroubleCode [label=hasDiagnosticTroubleCode fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
@@ -38,8 +38,8 @@ digraph reliability_ontology {
 	analysedPart -> Part
 	Analysis -> analysedVehicle [arrowhead=none]
 	analysedVehicle -> Vehicle
-	AnalysisDevice -> carryOut [arrowhead=none]
-	carryOut -> Analysis
+	AnalysisDevice -> performs [arrowhead=none]
+	performs -> Analysis
 	LoadSpectrum -> channel [arrowhead=none]
 	channel -> LoadSpectrumChannel
 	LoadSpectrum -> class [arrowhead=none]
