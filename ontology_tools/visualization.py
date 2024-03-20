@@ -63,8 +63,8 @@ def create_visualization(domain_name):
     #,'rankdir':'RL'
     #'label': domain_name + ' ontology', 'labelloc':'t','rankdir':'RL',
     #'width':'0', 'height':'0'
-    graph_attr = { 'fontsize':'10', 'fontname' : 'Helvetica,Arial,sans-serif', 'layout':'neato', 'overlap':'scalexy', 'splines':'ortho'},  #'splines':'ortho',
-    node_attr = {'fontsize':'10', 'fontname':'Helvetica,Arial,sans-serif', 'shape':'record', 'fillcolor':'gray95'},
+    graph_attr = { 'fontsize':'10', 'fontname' : 'Helvetica,Arial,sans-serif', 'layout':'neato', 'overlap':'false', 'splines':'ortho'},  #'splines':'ortho',
+    node_attr = {'fontsize':'10', 'fontname':'Helvetica,Arial,sans-serif', 'shape':'record', 'fillcolor':'darkgoldenrod1'},#gray95
     edge_attr = {'fontsize':'10', 'fontname':'Helvetica,Arial,sans-serif', 'arrowsize':'0.3', 'penwidth':'0.3'})
 
     #Add node (classes)
@@ -91,7 +91,7 @@ def create_visualization(domain_name):
                 for inv in main_ontology.subjects( OWL.inverseOf, s):
                     edgelabel = edgelabel + ' / \n' + inv.__str__().replace(cx_s,'') + " ➝"
 
-            dot.node(customizedName(s.__str__()), label=edgelabel, style='filled' ,  fillcolor = 'greenyellow', shape = 'plaintext', fontsize = '8', width='0', height='0' ) 
+            dot.node(customizedName(s.__str__()), label=edgelabel, style='filled' ,  fillcolor = 'darkolivegreen2', shape = 'plaintext', fontsize = '8', width='0', height='0' ) 
 
     #Add edges
     for s, p, o in main_ontology.triples((None, None, OWL.ObjectProperty)):
@@ -111,15 +111,16 @@ def create_visualization(domain_name):
     dot.render(directory= 'docs/images', view=False).replace('\\', '/')
 
 # Function call
-#create_visualization('function')
+#create_visualization('behaviour')
+#create_visualization('core')
 #create_visualization('reliability')
-create_visualization('common')
+#create_visualization('common')
 #create_visualization('vehicle')
 #create_visualization('behaviour')
 
-#listOfontologies = os.listdir('./ontology')
+listOfontologies = os.listdir('./ontology')
 
-#for ontology in listOfontologies:
-#    if(ontology.__contains__('ontology')):
-#        domain_name= ontology.replace('_ontology.ttl','')
-#        create_visualization(domain_name)
+for ontology in listOfontologies:
+    if(ontology.__contains__('ontology')):
+        domain_name= ontology.replace('_ontology.ttl','')
+        create_visualization(domain_name)

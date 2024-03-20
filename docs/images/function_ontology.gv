@@ -1,23 +1,14 @@
 digraph function_ontology {
-	graph [fontname="Helvetica,Arial,sans-serif" fontsize=10 layout=neato overlap=scalexy splines=ortho]
-	node [fillcolor=gray95 fontname="Helvetica,Arial,sans-serif" fontsize=10 shape=record]
+	graph [fontname="Helvetica,Arial,sans-serif" fontsize=10 layout=neato overlap=false splines=ortho]
+	node [fillcolor=darkgoldenrod1 fontname="Helvetica,Arial,sans-serif" fontsize=10 shape=record]
 	edge [arrowsize=0.3 fontname="Helvetica,Arial,sans-serif" fontsize=10 penwidth=0.3]
 	ConceptualObject [label=<{<b>ConceptualObject</b> | <i><b> domain:core</b></i> <br align="left"/>}> style=filled]
-	Argument [label=<{<b>Argument</b> | <i><b> domain:function</b></i> <br align="left"/>argumentName:string<br align="left"/>default:anyType<br align="left"/>priority:integer<br align="left"/>}> style=filled]
-	Function [label=<{<b>Function</b> | <i><b> domain:function</b></i> <br align="left"/>batch:long<br align="left"/>callbackProperty:string<br align="left"/>inputProperty:string<br align="left"/>invocationIdProperty:string<br align="left"/>invocationMethod:string<br align="left"/>targetUri:string<br align="left"/>}> style=filled]
-	Result [label=<{<b>Result</b> | <i><b> domain:function</b></i> <br align="left"/>callbackProperty:string<br align="left"/>outputProperty:string<br align="left"/>resultIdProperty:string<br align="left"/>}> style=filled]
-	ReturnValue [label=<{<b>ReturnValue</b> | <i><b> domain:function</b></i> <br align="left"/>valuePath:string<br align="left"/>}> style=filled]
-	input [label=input fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
-	output [label=output fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
-	result [label=result fillcolor=greenyellow fontsize=8 height=0 shape=plaintext style=filled width=0]
-	Function -> input [arrowhead=none]
-	input -> Argument
-	Result -> output [arrowhead=none]
-	output -> ReturnValue
-	Function -> result [arrowhead=none]
-	result -> Result
-	Argument -> ConceptualObject [style=dashed]
-	Function -> ConceptualObject [style=dashed]
+	Application [label=<{<b>Application</b> | <i><b> domain:common</b></i> <br align="left"/>}> style=filled]
+	Function [label=<{<b>Function</b> | <i><b> domain:function</b></i> <br align="left"/>argument:string<br align="left"/>}> style=filled]
+	Result [label=<{<b>Result</b> | <i><b> domain:function</b></i> <br align="left"/>returnValue:string<br align="left"/>}> style=filled]
+	output [label=output fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
+	Function -> output [arrowhead=none]
+	output -> Result
+	Function -> Application [style=dashed]
 	Result -> ConceptualObject [style=dashed]
-	ReturnValue -> ConceptualObject [style=dashed]
 }

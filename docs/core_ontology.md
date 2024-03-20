@@ -17,7 +17,7 @@
 
 **Version:**  1.9.4
 
-**Imports:**  None
+**Imports:**  
 
 **Link to ontology:**  https://w3id.org/catenax/ontology/core  
   

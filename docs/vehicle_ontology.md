@@ -17,7 +17,7 @@
 
 **Version:**  1.9.4
 
-**Imports:**  file:core_ontology.ttl
+**Imports:**  file:core_ontology.ttl 
 
 **Link to ontology:**  https://w3id.org/catenax/ontology/vehicle  
   
