@@ -124,11 +124,11 @@
        name string
    }
    Place --> Address : hasAddress
-   ConceptualObject <--> PhysicalObject : describesPhysicalObject\ndescribedByConceptualObject
-   Activity <--> Actor : hasParticipant\nparticipatesIn
-   Activity <--> ConceptualObject : refersToConceptualObject\ninvolvedIn
-   Activity <--> PhysicalObject : refersToPhysicalObject\ninvolvedIn
+   ConceptualObject --> PhysicalObject : describesPhysicalObject\ndescribedByConceptualObject
+   Activity --> Actor : hasParticipant\nparticipatesIn
+   Activity --> ConceptualObject : refersToConceptualObject\ninvolvedIn
+   Activity --> PhysicalObject : refersToPhysicalObject\ninvolvedIn
    Actor --> Place : relatedToPlace
-   Activity <--> Place : takesPlaceAt\nhosts
+   Activity --> Place : takesPlaceAt\nhosts
 ```
 
