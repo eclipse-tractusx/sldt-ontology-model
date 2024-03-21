@@ -20,8 +20,32 @@
 **Imports:**  file:common_ontology.ttl , file:core_ontology.ttl 
 
 **Link to ontology:**  https://w3id.org/catenax/ontology/bill-of-material  
-  
-![ontology](images/bill-of-material_ontology.gv.svg)  
+
+
+```mermaid
+classDiagram 
+   class BillOfMaterial~bill-of-material~{
+       quantityMeasure float
+       quantityUnit string
+       validityPeriodEnd date
+       validityPeriodStart date
+   } 
+   class BusinessPartner~common~{
+   } 
+   class ConceptualObject~core~{
+   } 
+   class PhysicalObject~core~{
+   } 
+   BillOfMaterial --> BusinessPartner : assembler
+   BillOfMaterial --> PhysicalObject : assembly
+   BillOfMaterial --> ConceptualObject : assemblyConcept
+   BillOfMaterial --> PhysicalObject : component
+   BillOfMaterial --> ConceptualObject : concept
+   PhysicalObject --> BillOfMaterial : hasBom
+   BillOfMaterial --> BusinessPartner : supplier
+   BillOfMaterial --|> ConceptualObject
+
+```  
 
 ## Classes
   
@@ -54,12 +78,3 @@
 |<span id="concept">concept</span>|Lists the concepts of a bill of material.|[BillOfMaterial](#BillOfMaterial) |[ConceptualObject](./core_ontology.md#ConceptualObject) ||
 |<span id="hasBom">hasBom</span>|Refers the bill of material of an assembly.|[PhysicalObject](./core_ontology.md#PhysicalObject) |[BillOfMaterial](#BillOfMaterial) ||
 |<span id="supplier">supplier</span>|The supplier of the component(s).|[BillOfMaterial](#BillOfMaterial) |[BusinessPartner](./common_ontology.md#BusinessPartner) ||
-
-
-```python
-import Mdutils
-
-
-mdFile = MdUtils(file_name='Example_Markdown',title='Markdown File Example')
-mdFile.create_md_file()
-```

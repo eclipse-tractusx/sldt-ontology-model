@@ -20,8 +20,88 @@
 **Imports:**  file:core_ontology.ttl , file:vehicle_ontology.ttl 
 
 **Link to ontology:**  https://w3id.org/catenax/ontology/reliability  
-  
-![ontology](images/reliability_ontology.gv.svg)  
+
+
+```mermaid
+classDiagram 
+   class Activity~core~{
+   } 
+   class Actor~core~{
+   } 
+   class PhysicalObject~core~{
+   } 
+   class ConceptualObject~core~{
+   } 
+   class Part~vehicle~{
+   } 
+   class Vehicle~vehicle~{
+   } 
+   class Analysis~reliability~{
+       mileageOfVehicle integer
+       operatingHoursOfPart float
+       operatingHoursOfVehicle float
+   } 
+   class AnalysisDevice~reliability~{
+   } 
+   class AnalysisResult~reliability~{
+   } 
+   class Diagnosis~reliability~{
+   } 
+   class DiagnosticTroubleCode~reliability~{
+       diagnosticTroubleCodeId string
+       diagnosticTroubleCodeName string
+   } 
+   class ErrorCause~reliability~{
+   } 
+   class LoadSpectrum~reliability~{
+       datetime dateTime
+       description string
+       endDatetime dateTime
+       id string
+       name string
+       type string
+   } 
+   class LoadSpectrumAnalysis~reliability~{
+   } 
+   class LoadSpectrumChannel~reliability~{
+       lowerLimit float
+       numberOfBins integer
+       type string
+       unit string
+       upperLimit float
+   } 
+   class LoadSpectrumClass~reliability~{
+   } 
+   class LoadSpectrumValue~reliability~{
+       countingMethod string
+       countingUnit string
+       countingValue string
+       index string
+   } 
+   DiagnosticTroubleCode --> ErrorCause : actualCause
+   Analysis --> PhysicalObject : analysedObject
+   Analysis --> Part : analysedPart
+   Analysis --> Vehicle : analysedVehicle
+   AnalysisDevice --> Analysis : performs
+   LoadSpectrum --> LoadSpectrumChannel : channel
+   LoadSpectrum --> LoadSpectrumClass : class
+   Diagnosis --> DiagnosticTroubleCode : hasDiagnosticTroubleCode
+   DiagnosticTroubleCode --> ErrorCause : possibleCause
+   Analysis --> AnalysisResult : result
+   LoadSpectrum --> LoadSpectrumValue : value
+   Analysis --|> Activity
+   AnalysisDevice --|> Actor
+   AnalysisResult --|> ConceptualObject
+   ErrorCause --|> ConceptualObject
+   Diagnosis --|> Analysis
+   LoadSpectrumAnalysis --|> Analysis
+   DiagnosticTroubleCode --|> AnalysisResult
+   LoadSpectrum --|> AnalysisResult
+   LoadSpectrumChannel --|> AnalysisResult
+   LoadSpectrumClass --|> AnalysisResult
+   LoadSpectrumValue --|> AnalysisResult
+
+```  
 
 ## Classes
   
@@ -81,12 +161,3 @@
 |<span id="possibleCause">possibleCause</span>|Refers to possible cause.|[DiagnosticTroubleCode](#DiagnosticTroubleCode) |[ErrorCause](#ErrorCause) ||
 |<span id="result">result</span>|Refers to analysis result.|[Analysis](#Analysis) |[AnalysisResult](#AnalysisResult) |[refersToConceptualObject](./core_ontology.md#refersToConceptualObject) |
 |<span id="value">value</span>|Refers to load spectrum value.|[LoadSpectrum](#LoadSpectrum) |[LoadSpectrumValue](#LoadSpectrumValue) ||
-
-
-```python
-import Mdutils
-
-
-mdFile = MdUtils(file_name='Example_Markdown',title='Markdown File Example')
-mdFile.create_md_file()
-```

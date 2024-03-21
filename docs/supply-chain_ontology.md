@@ -20,8 +20,26 @@
 **Imports:**  file:core_ontology.ttl , file:common_ontology.ttl 
 
 **Link to ontology:**  https://w3id.org/catenax/ontology/supply-chain  
-  
-![ontology](images/supply-chain_ontology.gv.svg)  
+
+
+```mermaid
+classDiagram 
+   class ConceptualObject~core~{
+   } 
+   class PhysicalObject~core~{
+   } 
+   class BusinessPartner~common~{
+   } 
+   class SupplyChain~supply-chain~{
+       validityPeriodStart date
+       validityPeriodEnd date
+   } 
+   SupplyChain --> BusinessPartner : supplier
+   SupplyChain --> BusinessPartner : recipient
+   SupplyChain --> PhysicalObject : good
+   SupplyChain --|> ConceptualObject
+
+```  
 
 ## Classes
   
@@ -47,12 +65,3 @@
 |<span id="supplier">supplier</span>|Refers to the supplier.|[SupplyChain](#SupplyChain) |[BusinessPartner](./common_ontology.md#BusinessPartner) ||
 |<span id="recipient">recipient</span>|Refers to the recipient.|[SupplyChain](#SupplyChain) |[BusinessPartner](./common_ontology.md#BusinessPartner) ||
 |<span id="good">good</span>|Refers to the goods in the supply chain.|[SupplyChain](#SupplyChain) |[PhysicalObject](./core_ontology.md#PhysicalObject) ||
-
-
-```python
-import Mdutils
-
-
-mdFile = MdUtils(file_name='Example_Markdown',title='Markdown File Example')
-mdFile.create_md_file()
-```

@@ -20,8 +20,76 @@
 **Imports:**  file:function_ontology.ttl , file:vehicle_ontology.ttl 
 
 **Link to ontology:**  https://w3id.org/catenax/ontology/behaviour  
-  
-![ontology](images/behaviour_ontology.gv.svg)  
+
+
+```mermaid
+classDiagram 
+   class PrognosisFunction~behaviour~{
+       PrognosisFunctionArgument anyType
+       countingMethod string
+       countingUnit string
+       countingValue string
+       headerChannels Object
+       bodyClasses Object
+       bodyCountsList Object
+   } 
+   class HealthIndication~behaviour~{
+       HealthIndicationArgument anyType
+       adaptionValueList string
+       adaptionValueMileage string
+       adaptionValueOperatingTime string
+       adaptionValueTimestamp string
+       adaptionValueVersion string
+       classifiedLoadCollectiveChannels string
+       classifiedLoadCollectiveClasses string
+       classifiedLoadCollectiveComponentDescription string
+       classifiedLoadCollectiveCountingMethod string
+       classifiedLoadCollectiveCountingUnit string
+       classifiedLoadCollectiveCountingValue string
+       classifiedLoadCollectiveCounts string
+       classifiedLoadCollectiveProjectDescription string
+       requestComponentId string
+   } 
+   class HealthIndicatorResult~behaviour~{
+       healthIndicatorValues Object
+       indicatorVersion string
+       responseComponentId string
+   } 
+   class RemainingUsefulLife~behaviour~{
+       RemainingUsefulLifeArgument anyType
+       classification string
+       metadata Object
+       notification Object
+       recipient anyURI
+       recipientConnector anyURI
+       sender anyURI
+       senderConnector anyURI
+       severity string
+       status string
+       statusDate dateTime
+       statusMileage int
+       statusOperatingHours float
+       targetDate dateTime
+       timeStamp dateTime
+   } 
+   class RemainingUsefulLifeResult~behaviour~{
+       remainingRunningDistance int
+       remainingOperatingHours float
+   } 
+   class Function~function~{
+   } 
+   class Result~function~{
+   } 
+   class Part~vehicle~{
+   } 
+   RemainingUsefulLife --> Part : component
+   PrognosisFunction --|> Function
+   HealthIndication --|> PrognosisFunction
+   RemainingUsefulLife --|> PrognosisFunction
+   HealthIndicatorResult --|> Result
+   RemainingUsefulLifeResult --|> Result
+
+```  
 
 ## Classes
   
@@ -88,12 +156,3 @@
 |Name|Descriptions|Domain|Range|Subproperty of|
 | :--- | :--- | :--- | :--- | :--- |
 |<span id="component">component</span>|Component of the Predicition.|[RemainingUsefulLife](#RemainingUsefulLife) |[Part](./vehicle_ontology.md#Part) ||
-
-
-```python
-import Mdutils
-
-
-mdFile = MdUtils(file_name='Example_Markdown',title='Markdown File Example')
-mdFile.create_md_file()
-```

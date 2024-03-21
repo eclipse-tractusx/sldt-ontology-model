@@ -20,8 +20,42 @@
 **Imports:**  file:core_ontology.ttl 
 
 **Link to ontology:**  https://w3id.org/catenax/ontology/common  
-  
-![ontology](images/common_ontology.gv.svg)  
+
+
+```mermaid
+classDiagram 
+   class Actor~core~{
+   } 
+   class Application~common~{
+   } 
+   class Asset~common~{
+       contentType string
+       description string
+       id string
+       name string
+       version string
+       implementsProtocol string
+       publishedUnderContract string
+       satisfiesRole anyURI
+       isFederated boolean
+       http://www.w3.org/ns/shacl#shapesGraph anyURI
+       authenticationInformation string
+       authenticationCode string
+       authenticationKey string
+       distributionMode string
+   } 
+   class BusinessPartner~common~{
+   } 
+   class DataspaceConnector~common~{
+       url anyURI
+   } 
+   BusinessPartner --> DataspaceConnector : hasDataspaceConnector
+   DataspaceConnector --> Asset : offers
+   Asset --|> Application
+   DataspaceConnector --|> Application
+   BusinessPartner --|> Actor
+
+```  
 
 ## Classes
   
@@ -60,12 +94,3 @@
 | :--- | :--- | :--- | :--- | :--- |
 |<span id="hasDataspaceConnector">hasDataspaceConnector</span>|This property describes which connectors belong to which business partners.|[BusinessPartner](#BusinessPartner) |[DataspaceConnector](#DataspaceConnector) ||
 |<span id="offers">offers</span>|This property refers to the offered assets.|[DataspaceConnector](#DataspaceConnector) |[Asset](#Asset) ||
-
-
-```python
-import Mdutils
-
-
-mdFile = MdUtils(file_name='Example_Markdown',title='Markdown File Example')
-mdFile.create_md_file()
-```

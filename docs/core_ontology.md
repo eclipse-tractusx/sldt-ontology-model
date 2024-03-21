@@ -20,8 +20,49 @@
 **Imports:**  
 
 **Link to ontology:**  https://w3id.org/catenax/ontology/core  
-  
-![ontology](images/core_ontology.gv.svg)  
+
+
+```mermaid
+classDiagram 
+   class Activity~core~{
+       endDateTime dateTime
+       id string
+       name string
+       startDateTime dateTime
+   } 
+   class Actor~core~{
+       id string
+       name string
+   } 
+   class Address~core~{
+       street string
+       houseNumber string
+       postalCode string
+       city string
+       country string
+   } 
+   class ConceptualObject~core~{
+       id string
+       name string
+   } 
+   class PhysicalObject~core~{
+       id string
+       name string
+   } 
+   class Place~core~{
+       id string
+       name string
+   } 
+   Place --> Address : hasAddress
+   ConceptualObject <--> PhysicalObject : describesPhysicalObject/\ndescribedByConceptualObject
+   Activity <--> Actor : hasParticipant/\nparticipatesIn
+   Activity <--> ConceptualObject : refersToConceptualObject/\ninvolvedIn
+   Activity <--> PhysicalObject : refersToPhysicalObject/\ninvolvedIn
+   Actor --> Place : relatedToPlace
+   Activity <--> Place : takesPlaceAt/\nhosts
+   Address --|> ConceptualObject
+
+```  
 
 ## Classes
   
@@ -66,12 +107,3 @@
 |<span id="refersToPhysicalObject">refersToPhysicalObject</span>|This property refers to actively or passively used physical objects in an Activity.|[Activity](#Activity) |[PhysicalObject](#PhysicalObject) ||
 |<span id="relatedToPlace">relatedToPlace</span>|This property describes that an actor has a relationship to a particular place, such as reside, own, or manage, etc.|[Actor](#Actor) |[Place](#Place) ||
 |<span id="takesPlaceAt">takesPlaceAt</span>|This property describes the spatial location of an activity.|[Activity](#Activity) |[Place](#Place) ||
-
-
-```python
-import Mdutils
-
-
-mdFile = MdUtils(file_name='Example_Markdown',title='Markdown File Example')
-mdFile.create_md_file()
-```

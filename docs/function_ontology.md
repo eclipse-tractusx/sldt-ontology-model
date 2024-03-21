@@ -20,8 +20,25 @@
 **Imports:**  file:common_ontology.ttl , file:core_ontology.ttl 
 
 **Link to ontology:**  https://w3id.org/catenax/ontology/function  
-  
-![ontology](images/function_ontology.gv.svg)  
+
+
+```mermaid
+classDiagram 
+   class ConceptualObject~core~{
+   } 
+   class Application~common~{
+   } 
+   class Function~function~{
+       argument string
+   } 
+   class Result~function~{
+       returnValue string
+   } 
+   Function --> Result : output
+   Function --|> Application
+   Result --|> ConceptualObject
+
+```  
 
 ## Classes
   
@@ -67,12 +84,3 @@
 |<span id="resultConfigurationProperty">resultConfigurationProperty</span>|API configuration property for Result.|[Result](#Result) |||
 |<span id="outputProperty">outputProperty</span>|Determines a path/name in the output response under which all output arguments are encoded. Default is '.'|[Result](#Result) |xsd:string |[resultConfigurationProperty](#resultConfigurationProperty) |
 |<span id="resultIdProperty">resultIdProperty</span>|Determines a path in the output response under which the IRI of the result component will be transmitted.|[Result](#Result) |xsd:string |[resultConfigurationProperty](#resultConfigurationProperty) |
-
-
-```python
-import Mdutils
-
-
-mdFile = MdUtils(file_name='Example_Markdown',title='Markdown File Example')
-mdFile.create_md_file()
-```

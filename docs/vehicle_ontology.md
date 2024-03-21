@@ -20,8 +20,25 @@
 **Imports:**  file:core_ontology.ttl 
 
 **Link to ontology:**  https://w3id.org/catenax/ontology/vehicle  
-  
-![ontology](images/vehicle_ontology.gv.svg)  
+
+
+```mermaid
+classDiagram 
+   class PhysicalObject~core~{
+   } 
+   class Part~vehicle~{
+   } 
+   class Vehicle~vehicle~{
+       mileage integer
+       operatingHours integer
+       vehicleIdentificationNumber string
+   } 
+   Vehicle --> Part : hasPart
+   Part --> Part : hasSubpart
+   Part --|> PhysicalObject
+   Vehicle --|> PhysicalObject
+
+```  
 
 ## Classes
   
@@ -49,12 +66,3 @@
 |<span id="hasSubpart">hasSubpart</span>|Refes to parts of main vehicle parts.|[Part](#Part) |[Part](#Part) ||
 |<span id="isPartOf">isPartOf</span>|Inverse of 'hasPart' property.|[Part](#Part) |[Vehicle](#Vehicle) ||
 |<span id="isSubpartOf">isSubpartOf</span>|Inverse of 'hasSubpart' property.|[Part](#Part) |[Part](#Part) ||
-
-
-```python
-import Mdutils
-
-
-mdFile = MdUtils(file_name='Example_Markdown',title='Markdown File Example')
-mdFile.create_md_file()
-```
