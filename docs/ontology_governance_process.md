@@ -99,14 +99,14 @@ title: Bank example
 
 classDiagram
    class Actor
-   Actor : domain:core
+   Actor : domain core
    class Application
-   Application : domain:common
+   Application : domain common
    class Asset
-   Asset : domain:common
+   Asset : domain common
    class BusinessPartner
-   BusinessPartner : domain:common
+   BusinessPartner : domain common
    class DataspaceConnector
-   DataspaceConnector : domain:common
+   DataspaceConnector : domain common
 ```
 

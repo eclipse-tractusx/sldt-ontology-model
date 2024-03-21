@@ -70,7 +70,7 @@ def create_visualization(domain_name):
         mermaid = mermaid + "   class " + className + "\n"
          
         
-        mermaid = mermaid + "   " + className + " : domain:" + getDomainName(s.__str__()) + "\n"     
+        mermaid = mermaid + "   " + className + " : domain " + getDomainName(s.__str__()) + "\n"     
         
         classDesign = ''
         
