@@ -2,23 +2,18 @@ digraph "supply-chain_ontology" {
 	graph [fontname="Helvetica,Arial,sans-serif" fontsize=10 layout=neato overlap=false splines=ortho]
 	node [fillcolor=darkgoldenrod1 fontname="Helvetica,Arial,sans-serif" fontsize=10 shape=record]
 	edge [arrowsize=0.3 fontname="Helvetica,Arial,sans-serif" fontsize=10 penwidth=0.3]
+	ConceptualObject [label=<{<b>ConceptualObject</b> | <i><b> domain:core</b></i> <br align="left"/>}> style=filled]
+	PhysicalObject [label=<{<b>PhysicalObject</b> | <i><b> domain:core</b></i> <br align="left"/>}> style=filled]
+	BusinessPartner [label=<{<b>BusinessPartner</b> | <i><b> domain:common</b></i> <br align="left"/>}> style=filled]
+	SupplyChain [label=<{<b>SupplyChain</b> | <i><b> domain:supply-chain</b></i> <br align="left"/>validityPeriodStart:date<br align="left"/>validityPeriodEnd:date<br align="left"/>}> style=filled]
 	supplier [label=supplier fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
 	recipient [label=recipient fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
 	good [label=good fillcolor=darkolivegreen2 fontsize=8 height=0 shape=plaintext style=filled width=0]
 	SupplyChain -> supplier [arrowhead=none]
 	supplier -> BusinessPartner
-	SupplyChain -> supplier [arrowhead=none]
-	supplier -> Site
-	SupplyChain -> supplier [arrowhead=none]
-	supplier -> Address
 	SupplyChain -> recipient [arrowhead=none]
 	recipient -> BusinessPartner
-	SupplyChain -> recipient [arrowhead=none]
-	recipient -> Site
-	SupplyChain -> recipient [arrowhead=none]
-	recipient -> Address
 	SupplyChain -> good [arrowhead=none]
 	good -> PhysicalObject
-	SupplyChain -> good [arrowhead=none]
-	good -> ConceptualObject
+	SupplyChain -> ConceptualObject [style=dashed]
 }

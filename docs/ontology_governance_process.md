@@ -96,11 +96,17 @@
 ---
 title: Bank example
 ---
+
 classDiagram
-    class BankAccount
-    BankAccount : +String owner
-    BankAccount : +Bigdecimal balance
-    BankAccount : +deposit(amount)
-    BankAccount : +withdrawal(amount)
+   class Actor
+   Actor : domain:core
+   class Application
+   Application : domain:common
+   class Asset
+   Asset : domain:common
+   class BusinessPartner
+   BusinessPartner : domain:common
+   class DataspaceConnector
+   DataspaceConnector : domain:common
 ```
 

@@ -23,23 +23,30 @@
   
 ![ontology](images/supply-chain_ontology.gv.svg)  
 
+## Classes
+  
+
+|Name|Description|Datatype properties|Object properties|Subclass of|
+| :--- | :--- | :--- | :--- | :--- |
+|<span id="SupplyChain">SupplyChain</span>|The Supply Chain relates consumers and a supplier.|[validityPeriod](#validityPeriod) , [validityPeriodStart](#validityPeriodStart) , [validityPeriodEnd](#validityPeriodEnd) |[supplier](#supplier) , [recipient](#recipient) , [good](#good) |[ConceptualObject](./core_ontology.md#ConceptualObject) |
+
 ## Data Properties
   
 
 |Name|Description|Domain|Range|Subproperty of|
 | :--- | :--- | :--- | :--- | :--- |
-|<span id="validityPeriod">validityPeriod</span>|None|[SupplyChain](#SupplyChain) |||
-|<span id="validityPeriodStart">validityPeriodStart</span>|None|[SupplyChain](#SupplyChain) |xsd:date |[validityPeriod](#validityPeriod) |
-|<span id="validityPeriodEnd">validityPeriodEnd</span>|None|[SupplyChain](#SupplyChain) |xsd:date |[validityPeriod](#validityPeriod) |
+|<span id="validityPeriod">validityPeriod</span>|Defines the validity period.|[SupplyChain](#SupplyChain) |||
+|<span id="validityPeriodStart">validityPeriodStart</span>|The start of validity.|[SupplyChain](#SupplyChain) |xsd:date |[validityPeriod](#validityPeriod) |
+|<span id="validityPeriodEnd">validityPeriodEnd</span>|The end of validity.|[SupplyChain](#SupplyChain) |xsd:date |[validityPeriod](#validityPeriod) |
 
 ## Object Properties
   
 
 |Name|Descriptions|Domain|Range|Subproperty of|
 | :--- | :--- | :--- | :--- | :--- |
-|<span id="supplier">supplier</span>|None|[SupplyChain](#SupplyChain) |[BusinessPartner](./common_ontology.md#BusinessPartner) , [Site](./common_ontology.md#Site) , [Address](./common_ontology.md#Address) ||
-|<span id="recipient">recipient</span>|None|[SupplyChain](#SupplyChain) |[BusinessPartner](./common_ontology.md#BusinessPartner) , [Site](./common_ontology.md#Site) , [Address](./common_ontology.md#Address) ||
-|<span id="good">good</span>|None|[SupplyChain](#SupplyChain) |[PhysicalObject](./core_ontology.md#PhysicalObject) , [ConceptualObject](./core_ontology.md#ConceptualObject) ||
+|<span id="supplier">supplier</span>|Refers to the supplier.|[SupplyChain](#SupplyChain) |[BusinessPartner](./common_ontology.md#BusinessPartner) ||
+|<span id="recipient">recipient</span>|Refers to the recipient.|[SupplyChain](#SupplyChain) |[BusinessPartner](./common_ontology.md#BusinessPartner) ||
+|<span id="good">good</span>|Refers to the goods in the supply chain.|[SupplyChain](#SupplyChain) |[PhysicalObject](./core_ontology.md#PhysicalObject) ||
 
 
 ```python
