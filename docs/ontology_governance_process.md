@@ -95,7 +95,7 @@
 ```mermaid
 
 classDiagram
-   class Activity/n~core~{
+   class Activity\n~core~{
        endDateTime dateTime
        id string
        name string
