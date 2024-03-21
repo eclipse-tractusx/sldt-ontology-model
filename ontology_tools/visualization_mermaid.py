@@ -45,6 +45,10 @@ def customizedName(link:str):
   	
     elif (link.__contains__('http://www.w3.org/2000/01/rdf-schema#') ) : 
         return 'rdfs:' + link.replace('http://www.w3.org/2000/01/rdf-schema#','')
+    
+    elif (link.__contains__('http://www.w3.org/ns/shacl#') ) : 
+        return 'sh:' + link.replace('http://www.w3.org/ns/shacl#','')
+    
     elif ( link.__contains__('catenax')) :
         return link.replace('https://w3id.org/catenax/ontology/','').split('#')[1]
     else:
@@ -67,20 +71,20 @@ def create_visualization(domain_name):
         
         className = customizedName(s.__str__().replace(cx_s,''))
         
-        mermaid = mermaid + "   class " + className + "\n"
+        mermaid = mermaid + "   class " + className + "~" + getDomainName(s.__str__()) + "~" + "{\n"
          
         
-        mermaid = mermaid + "   " + className + " : domain " + getDomainName(s.__str__()) + "\n"     
+        #mermaid = mermaid + "   " + className + " : domain " + getDomainName(s.__str__()) + "\n"     
         
         classDesign = ''
         
         for dataType in main_ontology.subjects( RDFS.domain, s):
             if (dataType, RDF.type, OWL.DatatypeProperty) in main_ontology:
                 for range in main_ontology.objects(dataType, RDFS.range):
-                    classDesign = classDesign +  dataType.__str__().replace(cx_s,'') + ":" + range.__str__().replace(xsd,'') + "<br align=\"left\"/>"
-        
-        classDesign = classDesign + "}>"
-        
+                    mermaid = mermaid + "       " + dataType.__str__().replace(cx_s,'') + " " + range.__str__().replace(xsd,'') + "\n"
+                    
+        mermaid = mermaid + "   } \n"
+                    
     #Add node (edges)
     for s, p, o in main_ontology.triples((None, None, OWL.ObjectProperty)):
         if not (s,OWL.inverseOf,None) in main_ontology:
@@ -94,10 +98,10 @@ def create_visualization(domain_name):
 
     #Add edges
     for s, p, o in main_ontology.triples((None, None, OWL.ObjectProperty)):
-        if not (s,OWL.inverseOf,None) in main_ontology:
-            for s1, p1, o1 in main_ontology.triples((s, RDFS.domain, None)):
-                for s2, p2, o2 in main_ontology.triples((s, RDFS.range, None)):
-                    print('')
+        for s1, p1, o1 in main_ontology.triples((s, RDFS.domain, None)):
+            for s2, p2, o2 in main_ontology.triples((s, RDFS.range, None)):
+                if not (s,OWL.inverseOf,None) in main_ontology:
+                    mermaid = mermaid + "   " + customizedName(o1.__str__()) + " --> " + customizedName(o2.__str__()) + " : " + customizedName(s.__str__()) + "\n"
                     
            #         dot.edge(customizedName(o1.__str__()), customizedName(s.__str__()),  arrowhead = 'none' ) #label = s.__str__().replace(cx_s,''),
           #          dot.edge(customizedName(s.__str__()), customizedName(o2.__str__()),  ) #label = s.__str__().replace(cx_s,'') 
@@ -110,4 +114,4 @@ def create_visualization(domain_name):
 
 # Function call
 
-create_visualization('common')
+create_visualization('core')

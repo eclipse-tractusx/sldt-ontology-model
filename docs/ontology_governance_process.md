@@ -97,16 +97,42 @@
 title: Bank example
 ---
 
-classDiagram
-   class Actor["Actor <core>"]
-   Actor : domain core
-   class Application
-   Application : domain common
-   class Asset
-   Asset : domain common
-   class BusinessPartner
-   BusinessPartner : domain common
-   class DataspaceConnector
-   DataspaceConnector : domain common
+classDiagram 
+   class Activity~core~{
+       endDateTime dateTime
+       id string
+       name string
+       startDateTime dateTime
+   }
+   class Actor~core~{
+       id string
+       name string
+   }
+   class Address~core~{
+       street string
+       houseNumber string
+       postalCode string
+       city string
+       country string
+   }
+   class ConceptualObject~core~{
+       id string
+       name string
+   }
+   class PhysicalObject~core~{
+       id string
+       name string
+   }
+   class Place~core~{
+       id string
+       name string
+   }
+   Place --> Address : hasAddress
+   ConceptualObject --> PhysicalObject : describesPhysicalObject
+   Activity --> Actor : hasParticipant
+   Activity --> ConceptualObject : refersToConceptualObject
+   Activity --> PhysicalObject : refersToPhysicalObject
+   Actor --> Place : relatedToPlace
+   Activity --> Place : takesPlaceAt
 ```
 
