@@ -98,7 +98,7 @@ title: Bank example
 ---
 
 classDiagram
-   class Actor
+   class Actor["Actor \n <core>"]
    Actor : domain core
    class Application
    Application : domain common
