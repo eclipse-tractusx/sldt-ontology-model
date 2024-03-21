@@ -95,7 +95,7 @@
 ```mermaid
 
 classDiagram
-   class Activity~core~{
+   class Activity/n~core~{
        endDateTime dateTime
        id string
        name string
@@ -128,7 +128,7 @@ classDiagram
    ConceptualObject <--> PhysicalObject : describesPhysicalObject\ndescribedByConceptualObject
    Activity <--> Actor : hasParticipant\nparticipatesIn
    Activity <--> ConceptualObject : refersToConceptualObject\ninvolvedIn
-   Activity <--> PhysicalObject : refersToPhysicalObject\ninvolvedIn
+   Activity <--> PhysicalObject : refersToPhysicalObject/\ninvolvedIn
    Actor --> Place : relatedToPlace
    Activity <--> Place : takesPlaceAt\nhosts
 ```
