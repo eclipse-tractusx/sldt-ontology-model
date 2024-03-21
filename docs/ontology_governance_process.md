@@ -131,7 +131,7 @@ classDiagram
    ConceptualObject --> PhysicalObject : describesPhysicalObject
    Activity --> Actor : hasParticipant
    Activity --> ConceptualObject : refersToConceptualObject
-   Activity --> PhysicalObject : refersToPhysicalObject
+   Activity --> PhysicalObject : refersToPhysicalObject\nabc
    Actor --> Place : relatedToPlace
    Activity --> Place : takesPlaceAt
 ```
