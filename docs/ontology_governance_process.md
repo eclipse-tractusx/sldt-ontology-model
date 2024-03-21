@@ -93,11 +93,7 @@
     - Use Case specific Queries/Examples
 
 ```mermaid
----
-title: Bank example
----
 
-classDiagram 
    class Activity~core~{
        endDateTime dateTime
        id string
@@ -128,11 +124,11 @@ classDiagram
        name string
    }
    Place --> Address : hasAddress
-   ConceptualObject --> PhysicalObject : describesPhysicalObject
-   Activity --> Actor : hasParticipant
-   Activity --> ConceptualObject : refersToConceptualObject
-   Activity --> PhysicalObject : refersToPhysicalObject\nabc
+   ConceptualObject <--> PhysicalObject : describesPhysicalObject\ndescribedByConceptualObject
+   Activity <--> Actor : hasParticipant\nparticipatesIn
+   Activity <--> ConceptualObject : refersToConceptualObject\ninvolvedIn
+   Activity <--> PhysicalObject : refersToPhysicalObject\ninvolvedIn
    Actor --> Place : relatedToPlace
-   Activity --> Place : takesPlaceAt
+   Activity <--> Place : takesPlaceAt\nhosts
 ```
 

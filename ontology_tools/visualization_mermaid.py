@@ -92,7 +92,7 @@ def create_visualization(domain_name):
         
             if  (None, OWL.inverseOf, s) in main_ontology:
                 for inv in main_ontology.subjects( OWL.inverseOf, s):
-                    edgelabel = edgelabel + ' / \n' + inv.__str__().replace(cx_s,'') + " ➝"
+                    edgelabel = edgelabel + ' / \n' + inv.__str__().replace(cx_s,'') 
 
             #dot.node(customizedName(s.__str__()), label=edgelabel, style='filled' ,  fillcolor = 'darkolivegreen2', shape = 'plaintext', fontsize = '8', width='0', height='0' ) 
 
@@ -101,14 +101,15 @@ def create_visualization(domain_name):
         for s1, p1, o1 in main_ontology.triples((s, RDFS.domain, None)):
             for s2, p2, o2 in main_ontology.triples((s, RDFS.range, None)):
                 if not (s,OWL.inverseOf,None) in main_ontology:
-                    mermaid = mermaid + "   " + customizedName(o1.__str__()) + " --> " + customizedName(o2.__str__()) + " : " + customizedName(s.__str__()) + "\n"
                     
-           #         dot.edge(customizedName(o1.__str__()), customizedName(s.__str__()),  arrowhead = 'none' ) #label = s.__str__().replace(cx_s,''),
-          #          dot.edge(customizedName(s.__str__()), customizedName(o2.__str__()),  ) #label = s.__str__().replace(cx_s,'') 
-
-    #Add sub classes style=dashed
-    #for s, p, o in main_ontology.triples((None, RDFS.subClassOf, None)):
-        #dot.edge(customizedName(s.__str__()), customizedName(o.__str__()), style='dashed') 
+                    edgelabel = s.__str__().replace(cx_s,'')
+                    
+                    if (None, OWL.inverseOf, s) in main_ontology:
+                        for inv in main_ontology.subjects( OWL.inverseOf, s):
+                            edgelabel = edgelabel + '\\n' + inv.__str__().replace(cx_s,'')
+                        mermaid = mermaid + "   " + customizedName(o1.__str__()) + " <--> " + customizedName(o2.__str__()) + " : " + edgelabel + "\n"
+                    else:
+                        mermaid = mermaid + "   " + customizedName(o1.__str__()) + " --> " + customizedName(o2.__str__()) + " : " + edgelabel+ "\n"
 
     print(mermaid)
 
