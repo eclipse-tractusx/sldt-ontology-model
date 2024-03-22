@@ -1,34 +1,37 @@
-
 import os
-from rdflib import Graph, SKOS, OWL, RDFS, RDF, DC, URIRef, Literal, XSD
-#from ontology_tools.settings import ontology_path, refactored_path
+from rdflib import Graph
 
-
-# Main ontology information
-main_ontology = Graph()
-main_ontology.bind("dc", DC)
-
-catenax_ontology = URIRef("https://w3id.org/catenax/ontology")
-
-
-main_ontology.add((catenax_ontology, RDF.type, OWL.Ontology))
-main_ontology.add((catenax_ontology, DC.contributor, Literal("Catena-X Knowledge Agents Team") ))
-main_ontology.add((catenax_ontology, DC.date, Literal("2023-08-04", datatype = XSD.string))) # ^^xsd:date
-main_ontology.add((catenax_ontology, DC.description, Literal("Catena-X Ontology for the Autmotive Industry.") ))
-main_ontology.add((catenax_ontology, DC.title, Literal("Catena-X Ontology") ))
-
-# Files 
-files = os.listdir('ontology')
-
-for file in files:
-
-    domain_ontology = Graph()
-    domain_ontology.parse('ontology/' + file)
+#This function merges ontologies.
+def merge_ontologies(*domain_name):
     
-    #Remove Ontology Information
-    for s, p, o in domain_ontology.triples((None, None, OWL.Ontology)):
-        domain_ontology.remove((s, None, None))
-    
-    main_ontology = main_ontology + domain_ontology
+    # Main ontology information
+    main_ontology = Graph()
 
-main_ontology.serialize(destination="created_ontology.ttl")
+    for file in domain_name:
+
+        domain_ontology = Graph()
+        domain_ontology.parse('ontology/' + file + "_ontology.ttl")
+                
+        main_ontology = main_ontology + domain_ontology
+
+    main_ontology.serialize(destination="created_ontology.ttl")
+
+#This function merges taxonomies  
+def merge_taxonomies():
+    # Main ontology information
+    main_taxo = Graph()
+    
+    # Files 
+    files = os.listdir('taxonomy')
+
+    for file in files:
+
+        domain_taxo = Graph()
+        domain_taxo.parse('taxonomy/' + file)    
+        main_taxo = main_taxo + domain_taxo
+
+    main_taxo.serialize(destination="created_taxonomy.ttl")
+
+merge_ontologies('core', 'common')
+
+merge_taxonomies()

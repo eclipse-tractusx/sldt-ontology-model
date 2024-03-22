@@ -1,0 +1,153 @@
+@prefix cx-taxo: <https://w3id.org/catenax/taxonomy#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cx-taxo:Address a skos:Concept ;
+    skos:broader cx-taxo:ConceptualObject ;
+    skos:definition "The address describes the legal address of places."@en ;
+    skos:prefLabel "Address"@en .
+
+cx-taxo:BusinessPartner a skos:Concept ;
+    skos:broader cx-taxo:Actor ;
+    skos:definietion "A Business Partner is a legal entity that is part of the Catena-X network or that stands in a relevant relation to a Catena-X Business Partner."@en ;
+    skos:prefLabel "Business Partner"@en .
+
+cx-taxo:DigitalTwinRegistry a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "The Digital Twin Registry (DTR) is the union of the Catena-X-selected subsets of the Asset Administration Shell Registry and Discovery APIs." ;
+    skos:example "https://github.com/eclipse-tractusx/sldt-digital-twin-registry" ;
+    skos:prefLabel "Digital Twin Registry"@en .
+
+cx-taxo:GraphAsset a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "This subconcept of Asset allows arbitrary data queries to be executed on assets."@en ;
+    skos:prefLabel "Graph Asset"@en .
+
+cx-taxo:Part a skos:Concept ;
+    skos:broader cx-taxo:PhysicalObject ;
+    skos:definition ""@en ;
+    skos:prefLabel "Part"@en .
+
+cx-taxo:PcfExchange a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to exchange data on Product Carbon Footprints" ;
+    skos:prefLabel "PCF Exchange API"@en .
+
+cx-taxo:ReceiveQualityAlertNotification a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to receive quality alert notifications" ;
+    skos:prefLabel "Receive Quality Alert Notification"@en .
+
+cx-taxo:ReceiveQualityInvestigationNotification a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to receive quality investigation notifications" ;
+    skos:prefLabel "Receive Quality Investigation Notification"@en .
+
+cx-taxo:ReceiveUniqueIdPushNotification a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to receive Unique Id Push notifications" ;
+    skos:prefLabel "Receive Unique ID Push Notification"@en .
+
+cx-taxo:ResolveQualityAlertNotification a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to resolve quality Alert notifications" ;
+    skos:prefLabel "Resolve Quality Alert Notification"@en .
+
+cx-taxo:ResolveQualityInvestigationNotification a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to update quality investigation notifications" ;
+    skos:prefLabel "Resolve Quality Investigation Notification"@en .
+
+cx-taxo:SkillAsset a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "This subconcept of Asset allows only the execution of predefined data queries on assets."@en ;
+    skos:prefLabel "Skill Asset"@en .
+
+cx-taxo:Submodel a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "The Submodel API serves aspects of a Digital Twin according to the Asset Administration Shell standard." ;
+    skos:prefLabel "Submodel"@en .
+
+cx-taxo:UpdateQualityAlertNotification a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to update quality Alert notifications" ;
+    skos:prefLabel "Update Quality Alert Notification"@en .
+
+cx-taxo:UpdateQualityInvestigationNotification a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to update quality investigation notifications" ;
+    skos:prefLabel "Update Quality Investigation Notification"@en .
+
+cx-taxo:Vehicle a skos:Concept ;
+    skos:broader cx-taxo:PhysicalObject ;
+    skos:definition ""@en ;
+    skos:prefLabel "Vehicle"@en .
+
+cx-taxo:catenaXTaxonomy a skos:ConceptScheme ;
+    dc:creator "[@obalandi](https://github.com/obalandi)" ;
+    dc:date "2023-05-05"^^xsd:date ;
+    dc:description "This taxonomy represents and contains all of the concepts that are used in the Catena-X ontologies."@en ;
+    dc:title "Catena-X Taxonomy" ;
+    owl:versionInfo "0.1.0" ;
+    skos:hasTopConcept cx-taxo:Thing ;
+    skos:prefLabel "Catena-X Taxonomy"@en .
+
+cx-taxo:Activity a skos:Concept ;
+    skos:broader cx-taxo:Thing ;
+    skos:definition "This class comprises actions intentionally carried out by instances of Actor that result in changes of state in physical and conceptual objects."@en ;
+    skos:prefLabel "Activity"@en .
+
+cx-taxo:DataspaceConnector a skos:Concept ;
+    skos:broader cx-taxo:Application ;
+    skos:definition "Dataspace Connector is an interface based on the Eclipse Dataspace Connector technology. A Dataspace Connector makes various assets available through contracts. A contract describes with which policy which asset can be provided."@en ;
+    skos:prefLabel "Dataspace Connector"@en .
+
+cx-taxo:Function a skos:Concept ;
+    skos:broader cx-taxo:Application ;
+    skos:definition "A function defines a calculation that is called through an API."@en ;
+    skos:prefLabel "prefered label"@en .
+
+cx-taxo:Place a skos:Concept ;
+    skos:broader cx-taxo:Thing ;
+    skos:definition "The Place is determined by reference to the position of objects such as buildings, cities, or special geographic markers."@en ;
+    skos:prefLabel "Place"@en .
+
+cx-taxo:Actor a skos:Concept ;
+    skos:broader cx-taxo:Thing ;
+    skos:definition "The actor  comprises organization or people, either individually or in groups, who have the potential to perform intentional actions of kinds for which someone may be held responsible."@en ;
+    skos:prefLabel "Actor"@en .
+
+cx-taxo:Application a skos:Concept ;
+    skos:broader cx-taxo:ConceptualObject ;
+    skos:definition "An application defines a coded software that fulfills a specific purpose."@en ;
+    skos:narrower cx-taxo:Asset,
+        cx-taxo:DataspaceConnector,
+        cx-taxo:Function ;
+    skos:prefLabel "Application"@en .
+
+cx-taxo:ConceptualObject a skos:Concept ;
+    skos:broader cx-taxo:Thing ;
+    skos:definition "This concept includes non-material products, human-produced data related to physical objects. The production of such information may have been supported by the use of technical tools."@en ;
+    skos:prefLabel "Conceptional Object"@en .
+
+cx-taxo:PhysicalObject a skos:Concept ;
+    skos:broader cx-taxo:Thing ;
+    skos:definition "This concept includes objects of a material nature, which are documentation units and have physical boundaries."@en ;
+    skos:prefLabel "Physical Object"@en .
+
+cx-taxo:Thing a skos:Concept ;
+    skos:definition "The top concept of all the Catena X concepts."@en ;
+    skos:narrower cx-taxo:Activity,
+        cx-taxo:Actor,
+        cx-taxo:ConceptualObject,
+        cx-taxo:PhysicalObject,
+        cx-taxo:Place ;
+    skos:prefLabel "Thing"@en .
+
+cx-taxo:Asset a skos:Concept ;
+    skos:broader cx-taxo:Application ;
+    skos:definition "The Asset concept describes the provision via a repository of a specific set of data for a specific purpose. It is defined by its public API."@en ;
+    skos:prefLabel "Asset"@en .
+
