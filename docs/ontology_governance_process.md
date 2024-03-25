@@ -71,7 +71,7 @@
     - Update MD File
 
 #### **Review Process**
-- The ontology modelling team checks that the criteria in the standards are met:I
+- The ontology modelling team checks that the criteria in the standards are met:
     - Technical Modelling prerequisites
     - Syntax of Content
     - Understandability of Content
@@ -79,57 +79,4 @@
 - Merge the Branch or send it back to Update
 
 #### **Publishing Process**
-- Publish a new version in W3id.org
-- Write short information about changes in w3id.org.
-
-#### **Content of MD Files**
-- Create a link from the main MD file
-- Add Following Information
-    - Name of Ontology
-    - Creation Date
-    - List of Autoren
-    - Description
-    - Last changes and date
-    - Use Case specific Queries/Examples
-
-```mermaid
-
-classDiagram
-   class Activity~core~{
-       endDateTime dateTime
-       id string
-       name string
-       startDateTime dateTime
-   }
-   class Actor~core~{
-       id string
-       name string
-   }
-   class Address~core~{
-       street string
-       houseNumber string
-       postalCode string
-       city string
-       country string
-   }
-   class ConceptualObject~core~{
-       id string
-       name string
-   }
-   class PhysicalObject~core~{
-       id string
-       name string
-   }
-   class Place~core~{
-       id string
-       name string
-   }
-   Place --> Address : hasAddress
-   ConceptualObject <--> PhysicalObject : describesPhysicalObject\ndescribedByConceptualObject
-   Activity <--> Actor : hasParticipant\nparticipatesIn
-   Activity <--> ConceptualObject : refersToConceptualObject\ninvolvedIn
-   Activity <--> PhysicalObject : refersToPhysicalObject/\ninvolvedIn
-   Actor --> Place : relatedToPlace
-   Activity <--> Place : takesPlaceAt\nhosts
-```
-
+- Publish the new version in W3id.org

@@ -17,13 +17,48 @@
  * SPDX-License-Identifier: Apache-2.0
 -->
 
-# Catena-X Ontology 
+# Ontology Models to realize federated query in Catena-X 
 
-This repository hosts semantic models and tools with a focus on self-description and catalogue capabilities of the 
-[Catena-X Knowledge Agents Kit (about to move to: Tractus-X Knowledge Agents Kit)](https://bit.ly/tractusx-agents) KIT with a special attention on Automotive Supply Chains.
+- This repository hosts ontologies based on the [CX - 0067 Ontology Models to realize federated query in Catena-X v.1.1.0](https://catena-x.net/de/standard-library) standard to realize [Knowledge Agent](https://eclipse-tractusx.github.io/docs-kits/kits/knowledge-agents/adoption-view/intro) applications.
+- The Catena-X Ontology and its initial Catena-X Taxonomy are not intended to be a world model. Instead, it is intended to be an integrative framework with a focus on automotive manufacturing. Therefore, our focus is on defining practical domain ontologies. All definitions in a domain ontology should belong to the same namespace (which is the technical key of the domain) and should use a common prefix. Domain ontologies can refer to classes of other domains by importing concrete versions.
+- The Catena-X taxonomy contains all concepts used in domain ontologies. Furthermore, the defined concepts are not only used in the knowledge agent approach, but are also made available to all Catena-X applications.
+</br>
 
-They may be used in conjunction with the [Tractus-X Extensions for the Eclipse Dataspace Components](https://github.com/eclipse-tractusx/knowledge-agents-edc) and 
-[Tractus-X Binding Agent Implementations](https://github.com/eclipse-tractusx/knowledge-agents) for dataspace-wide validation, discovery, type inference and binding definitions.
+<div align="center"  width="100%">
+  <img src="images/ontologies.png" alt="image" width="900" height="auto" />
+</div>
+
+## Ontology Development & Governance Process
+
+- The ontologies can be developed based on the ontology governance process.
+- The ontologies are developed using the [protégé editor](https://protege.stanford.edu/). Therefore, we prefer to use this editor.
+- After the development of a new ontology is finished, the documentation is automatically generated as a Markdown file and stored in the repository. In addition, the ontologies are published at [w3id.org Catena-X](https://w3id.org/catenax). This also allows access to all versions.
+- You can download the protégé editor, import the core ontology and start modeling!
+
+## Provisioning of Ontology and Taxanomy
+
+- Python Merger for Models
+
+## Implemented Ontologies
+
+Main ontologies:
+
+- [Core Ontology](docs/core_ontology.md)
+- [Common Ontology](docs/common_ontology.md)
+- [Function Ontology](docs/function_ontology.md)
+
+Domain ontologies:
+- [Bill of Material](docs/bill-of-material_ontology.md)
+- [Behaviour](docs/behavior_ontology.md)
+- [Supply Chain Ontology](docs/supply-chain_ontology.md)
+- [Reliability](docs/realibility_ontology.md)
+- [Vehicle Ontology](docs/vehicle_ontology.md)
+
+Taxonomy:
+- [Core Taxonomy](docs/core_taxonomy.md)
+- [Asset Taxonomy](docs/asset_taxonomy.md)
+
+## Related Information
 
 * See the [authors file](AUTHORS.md)
 * See the [license file](LICENSE)
@@ -35,84 +70,3 @@ They may be used in conjunction with the [Tractus-X Extensions for the Eclipse D
 * See this [README](README.md)
 * See the [dependencies and their licenses](NOTICE.md)
 * See the [Security disclaimer](SECURITY.md)
-
-## What's inside?
-
-The [Catena-X Ontology](ontology.ttl) and its initial [Catena-X Taxonomy](taxonomy.ttl) is not aimed at being a world model. 
-Instead it is aimed as an integrative framework with a focus on Automotive Manufacturing.
-
-Therefore, our focus lies on defining practical [domain](ontology)/[use case](ontology_use_case) ontology files (and tools to process/merge them into broader contexts).
-Each domain ontology file is written in a format named [Turtle (TTL)](https://www.w3.org/TeamSubmission/turtle/).
-
-Following the [Resource Description Framework (RDF)](https://en.wikipedia.org/wiki/Resource_Description_Framework), these files defines 
-- semantic concepts (classes of entities/nodes, where a node can have multiple classes)
-- properties (attributes of entities using primitive node types) and 
-- relations/predicates (which are links between nodes where the source node is called subject and the target node is called the object) 
-
-All definitions in a file should belong to the same namespace (which is the technical key of the domain) and should be using a common nickname (prefix)
-that is also the name of the file. Each commit/branch/release tag coincides with a *version* of the respective ontology. Therefore, namespaces and 
-versions are different types of IRIs, the former being represented by URNs the latter by URLs.
-
-Domain ontologies can refer to concepts of other domains/prefixes by importing concrete versions.
-Relations are usually defined in those concepts/domain which cannot exist without the relation.
-
-## Contents
-
-- [Catena-X Merged Ontology](ontology.ttl)
-- [Catena-X Taxonomy](taxonomy.ttl)
-- [Catena-X Domain Ontologies](ontology)
-- [Modelling Documentation](docs/README.md)
-- [Ontology Tools](tools)
-- [Ontology Tools (Python)](ontology_tools)
-- [Example Data Bindings](ontology_mapping)
-- [Catena-X Use Case Ontologies](ontology_use_case)
-
-## How to use it
-
-### Prepare
-
-A suitable [conda](https://conda.io/) environment named `knowledgeagents` can be created
-and activated with:
-
-```
-conda env create -f environment.yaml
-conda activate knowledgeagents
-```
-
-### Ontology Create
-
-Creating a new ontology excel source can be done by invoking
-
-```
-python 
->>> import ontology_tools.create_ontology as co
->>>  co.create_ontology_table('test','Schorsch','1.0.0')
-```
-
-### Ontology Merge
-
-Creating a merged ontology out of several domain ontologies may be done by invoking
-
-```
-python -m ontology_tools.merge_ontology ontology/*_ontology.ttl 
-```
-
-### Use Case Create
-
-Creating a new use case excel source can be done by invoking
-
-```
-python 
->>> import ontology_tools.create_use_case as cu
->>> cu.create_use_case_template('behaviour_twin')
-```
-
-The excel template can then be edited to annotate the required classes, attributes and relations by the stakeholders of the use case.
-
-Deriving a new use case ontology can then be done 
-
-```
-python 
->>> import ontology_tools.create_use_case as cu
->>> cu.create_use_case_ontology('behaviour_twin')
-```
