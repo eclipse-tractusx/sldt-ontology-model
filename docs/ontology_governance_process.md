@@ -13,7 +13,7 @@
 <br/>
 
 <div align="center"  width="100%">
-  <img src="images/OGP.jpg" alt="image" width="1200" height="auto" />
+  <img src="../images/governance_process.jpg" alt="image" width="1200" height="auto" />
 </div>
 
 <br/>

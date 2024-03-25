@@ -37,7 +37,7 @@
 
 ## Provisioning of Ontology and Taxanomy
 
-- Python Merger for Models
+- The ontologies/taxonomies are provided as individual domain files and are simultaneously available as a merged Catena-X ontology/taxonomy in the root directory.
 
 ## Implemented Ontologies
 
@@ -60,13 +60,10 @@ Taxonomy:
 
 ## Related Information
 
-* See the [authors file](AUTHORS.md)
-* See the [license file](LICENSE)
-* See the [code of conduct](CODE_OF_CONDUCT.md)
-* See the [contribution guidelines](CONTRIBUTING.md)
-* See this [README](README.md)
-* See this [Maven Manifest](pom.xml)
-* See this [Maven Repository Settings](settings.xml)
-* See this [README](README.md)
-* See the [dependencies and their licenses](NOTICE.md)
+* See the [Authors file](AUTHORS.md)
+* See the [License file](LICENSE)
+* See the [Code of conduct](CODE_OF_CONDUCT.md)
+* See the [Contribution guidelines](CONTRIBUTING.md)
+* See the [Dependencies and their licenses](NOTICE.md)
 * See the [Security disclaimer](SECURITY.md)
+* See the [Changelog](CHANGELOG.md)
