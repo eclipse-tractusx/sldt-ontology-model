@@ -39,22 +39,6 @@ dc:creator rdf:type owl:AnnotationProperty .
 dc:date rdf:type owl:AnnotationProperty .
 
 
-###  https://w3id.org/catenax/ontology/function#argumentName
-cx-fx:argumentName rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/catenax/ontology/function#dataType
-cx-fx:dataType rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/catenax/ontology/function#mandatory
-cx-fx:mandatory rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/catenax/ontology/function#valuePath
-cx-fx:valuePath rdf:type owl:AnnotationProperty .
-
-
 #################################################################
 #    Datatypes
 #################################################################
@@ -489,14 +473,6 @@ cx-behaviour:responseComponentId rdf:type owl:DatatypeProperty ;
                                  rdfs:range xsd:string .
 
 
-###  https://w3id.org/catenax/ontology/function#argument
-cx-fx:argument rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/catenax/ontology/function#returnValue
-cx-fx:returnValue rdf:type owl:DatatypeProperty .
-
-
 #################################################################
 #    Object properties
 #################################################################
@@ -549,14 +525,3 @@ cx-behaviour:RemainingUsefulLifeResult rdf:type owl:Class ;
                                        rdfs:subClassOf cx-fx:Result ;
                                        rdfs:comment "The asynchronous notification response."@en ;
                                        rdfs:label "Asynchronous notification response."@en .
-
-
-###  https://w3id.org/catenax/ontology/function#Function
-cx-fx:Function rdf:type owl:Class .
-
-
-###  https://w3id.org/catenax/ontology/function#Result
-cx-fx:Result rdf:type owl:Class .
-
-###  https://w3id.org/catenax/ontology/function#Result
-cx-vehicle:Part rdf:type owl:Class .

@@ -176,7 +176,7 @@ cx-common:url rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:domain cx-common:DataspaceConnector ;
               rdfs:range xsd:anyURI ;
-               rdfs:comment ""@en ;
+               rdfs:comment "Uniform Resource Locator of SPARQL Endpoint."@en ;
                rdfs:label "url"@en .
 
 
@@ -220,8 +220,7 @@ cx-common:distributionMode rdf:type owl:DatatypeProperty ;
                            rdfs:range xsd:string ;
                            rdfs:comment "The skill may only be invoked local to the computing environment of the provider."@en;
                            rdfs:label "Distribution Mode"@en .
-
-
+                                      
 
 #################################################################
 #    Classes

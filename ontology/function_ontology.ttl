@@ -37,7 +37,8 @@
                                               dc:creator "[@drcgjung](https://github.com/drcgjung)" ;
                                               dc:date "2023-06-29"^^xsd:date ;
                                               dc:description "Ontology for function invocations." ;
-                                              dc:title "Function Ontology" .
+                                              dc:title "Function Ontology" ;
+                                              owl:versionInfo "1.10.2" .
 
 #################################################################
 #    Annotation properties

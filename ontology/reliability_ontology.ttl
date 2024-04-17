@@ -17,7 +17,7 @@
                                                  dc:creator "[@ZazraltMagic](https://github.com/ZazraltMagic)" ;
                                                  dc:date "2023-02-21"^^xsd:date ;
                                                  dc:title "Reliability Ontology"@en ;
-                                                 owl:versionInfo "1.9.4" .
+                                                 owl:versionInfo "1.10.2" .
 
 #################################################################
 #    Annotation properties

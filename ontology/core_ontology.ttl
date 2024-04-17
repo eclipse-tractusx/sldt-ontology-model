@@ -30,10 +30,11 @@
 
 <https://w3id.org/catenax/ontology/core> rdf:type owl:Ontology ;
                                                         dc:creator "[@obalandi](https://github.com/obalandi)" ;
+                                                        dc:contributor "[@drcgjung](https://github.com/drcgjung)" ;
                                                         dc:date "2023-05-05"^^xsd:date ;
                                                         dc:description "The Catena-X core ontology is an activity-centric top-level ontology and enables the design of domain ontologies on the basis of main classes." ;
                                                         dc:title "Core Ontology" ;
-                                                        owl:versionInfo "1.9.4" .
+                                                        owl:versionInfo "1.9.8" .
 
 #################################################################
 #    Annotation properties
