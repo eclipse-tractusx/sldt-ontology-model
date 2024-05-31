@@ -451,7 +451,7 @@ for ontology in listOfontologies:
         domain_name = ontology.replace('_ontology.ttl','')
         create_md_file_for_ontology(domain_name)
         
-#listOfontologies = os.listdir('./taxonomy')
+listOfontologies = os.listdir('./taxonomy')
 
 for taxonomy in listOfontologies:
     if(taxonomy.__contains__('taxonomy')):

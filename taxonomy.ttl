@@ -1,25 +1,3 @@
-# Copyright (c) 2024 T-Systems International GmbH
-# Copyright (c) 2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
-# Copyright (c) 2024 ZF Friedrichshafen AG 
-# Copyright (c) 2024 Mercedes-Benz AG 
-# Copyright (c) 2024 SAP AG 
-# Copyright (c) 2024 Contributors to the Catena-X Association
-#
-# See the NOTICE file(s) distributed with this work for additional
-# information regarding copyright ownership.
-#
-# This program and the accompanying materials are made available under the
-# terms of the Apache License, Version 2.0 which is available at
-# https://www.apache.org/licenses/LICENSE-2.0.
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
-# License for the specific language governing permissions and limitations
-# under the License.
-#
-# SPDX-License-Identifier: Apache-2.0
-
 @prefix cx-taxo: <https://w3id.org/catenax/taxonomy#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -35,6 +13,11 @@
     owl:versionInfo "0.1.0" ;
     skos:hasTopConcept cx-taxo:Thing ;
     skos:prefLabel "Catena-X Taxonomy"@en .
+
+cx-taxo:Clutch a skos:Concept ;
+    skos:broader cx-taxo:LoadSpectrum ;
+    skos:definition "Load spectrum of a vehicle clutch."@en ;
+    skos:prefLabel "Clutch"@en .
 
 cx-taxo:DcmIdBasedComment a skos:Concept ;
     skos:broader cx-taxo:Asset ;
@@ -71,6 +54,16 @@ cx-taxo:ErrorCause a skos:Concept ;
     skos:broader cx-taxo:ConceptualObject ;
     skos:definition "An analysis result can indicate possible and current error causes. "@en ;
     skos:prefLabel "Error Cause"@en .
+
+cx-taxo:GearOil a skos:Concept ;
+    skos:broader cx-taxo:LoadSpectrum ;
+    skos:definition "Load spectrum of a vehicle gear with respect to heat."@en ;
+    skos:prefLabel "GearOil"@en .
+
+cx-taxo:GearSet a skos:Concept ;
+    skos:broader cx-taxo:LoadSpectrum ;
+    skos:definition "Load spectrum of a vehicle gear with respect to performance."@en ;
+    skos:prefLabel "GearSet"@en .
 
 cx-taxo:GraphAsset a skos:Concept ;
     skos:broader cx-taxo:Asset ;
@@ -187,11 +180,6 @@ cx-taxo:HealthIndication a skos:Concept ;
     skos:definition "Health Indication is an evaluation function operating on batches of load collectives and adaptive values."@en ;
     skos:prefLabel "Health Indication"@en .
 
-cx-taxo:LoadSpectrum a skos:Concept ;
-    skos:broader cx-taxo:AnalysisResult ;
-    skos:definition "Load spectrum is a 2d histogram that contains the load history of a vehicle, i.e. how a vehicle was used, for a given time period."@en ;
-    skos:prefLabel "Load Spectrum"@en .
-
 cx-taxo:Part a skos:Concept ;
     skos:broader cx-taxo:PhysicalObject ;
     skos:definition "A part in the automotive context is a component of a vehicle. Parts may have sub-parts that perform specific sub-functions."@en ;
@@ -275,6 +263,11 @@ cx-taxo:PrognosisFunction a skos:Concept ;
     skos:narrower cx-taxo:HealthIndication,
         cx-taxo:RemainingUsefulLife ;
     skos:prefLabel "Prognosis Function"@en .
+
+cx-taxo:LoadSpectrum a skos:Concept ;
+    skos:broader cx-taxo:AnalysisResult ;
+    skos:definition "Load spectrum is a multi dimensional histogram that contains the state history of a set of vehicle parts, i.e. how a vehicle was driven, for a given time period."@en ;
+    skos:prefLabel "Load Spectrum"@en .
 
 cx-taxo:Thing a skos:Concept ;
     skos:definition "The top concept of all the Catena X concepts."@en ;

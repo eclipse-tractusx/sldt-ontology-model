@@ -97,8 +97,23 @@ cx-taxo:Thing a skos:Concept ;
                 
                 cx-taxo:LoadSpectrum a skos:Concept ;
                     skos:broader cx-taxo:AnalysisResult ;
-                    skos:definition "Load spectrum is a 2d histogram that contains the load history of a vehicle, i.e. how a vehicle was used, for a given time period."@en ;
+                    skos:definition "Load spectrum is a multi dimensional histogram that contains the state history of a set of vehicle parts, i.e. how a vehicle was driven, for a given time period."@en ;
                     skos:prefLabel "Load Spectrum"@en .
+                    
+                    cx-taxo:Clutch a skos:Concept ;
+                        skos:broader cx-taxo:LoadSpectrum ;
+                        skos:definition "Load spectrum of a vehicle clutch."@en ;  
+                        skos:prefLabel "Clutch"@en .
+
+                    cx-taxo:GearSet a skos:Concept ;
+                        skos:broader cx-taxo:LoadSpectrum ;
+                        skos:definition "Load spectrum of a vehicle gear with respect to performance."@en ;  
+                        skos:prefLabel "GearSet"@en .
+
+                    cx-taxo:GearOil a skos:Concept ;
+                        skos:broader cx-taxo:LoadSpectrum ;
+                        skos:definition "Load spectrum of a vehicle gear with respect to heat."@en ;  
+                        skos:prefLabel "GearOil"@en .
                 
                 cx-taxo:DiagnosticTroubleCode a skos:Concept ;
                     skos:broader cx-taxo:AnalysisResult ;
