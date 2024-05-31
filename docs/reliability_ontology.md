@@ -15,7 +15,7 @@
 
 **Date:**  2023-02-21
 
-**Version:**  1.9.4
+**Version:**  1.11.0
 
 **Imports:**  file:core_ontology.ttl , file:vehicle_ontology.ttl 
 

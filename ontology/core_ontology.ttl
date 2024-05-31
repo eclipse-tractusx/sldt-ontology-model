@@ -1,8 +1,8 @@
-# Copyright (c) 2022,2023 T-Systems International GmbH
-# Copyright (c) 2022,2023 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
-# Copyright (c) 2022,2023 ZF Friedrichshafen AG 
-# Copyright (c) 2022,2023 Mercedes-Benz AG 
-# Copyright (c) 2022,2023 Contributors to the Catena-X Association
+# Copyright (c) 2024 T-Systems International GmbH
+# Copyright (c) 2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
+# Copyright (c) 2024 ZF Friedrichshafen AG 
+# Copyright (c) 2024 Mercedes-Benz AG 
+# Copyright (c) 2024 Contributors to the Catena-X Association
 #
 # See the NOTICE file(s) distributed with this work for additional
 # information regarding copyright ownership.
@@ -34,7 +34,7 @@
                                                         dc:date "2023-05-05"^^xsd:date ;
                                                         dc:description "The Catena-X core ontology is an activity-centric top-level ontology and enables the design of domain ontologies on the basis of main classes." ;
                                                         dc:title "Core Ontology" ;
-                                                        owl:versionInfo "1.9.8" .
+                                                        owl:versionInfo "1.9.9" .
 
 #################################################################
 #    Annotation properties

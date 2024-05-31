@@ -1,8 +1,8 @@
-# Copyright (c) 2022,2023 T-Systems International GmbH
-# Copyright (c) 2022,2023 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
-# Copyright (c) 2022,2023 ZF Friedrichshafen AG 
-# Copyright (c) 2022,2023 Mercedes-Benz AG 
-# Copyright (c) 2022,2023 Contributors to the Catena-X Association
+# Copyright (c) 2024 T-Systems International GmbH
+# Copyright (c) 2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
+# Copyright (c) 2024 ZF Friedrichshafen AG 
+# Copyright (c) 2024 Mercedes-Benz AG 
+# Copyright (c) 2024 Contributors to the Catena-X Association
 #
 # See the NOTICE file(s) distributed with this work for additional
 # information regarding copyright ownership.
@@ -37,7 +37,7 @@
                                            dc:description "The common ontology describes the Dataspace connectors in detail. On the one hand, this includes the information from which Catena-X business partner the connectors are deployed. On the other hand, with which contracts which assets provide the connectors."@en ;
                                            dc:title "Common Ontology" ;
                                            owl:imports <file:core_ontology.ttl> ;
-                                           owl:versionInfo "1.9.4" .
+                                           owl:versionInfo "1.9.5" .
 
 #################################################################
 #    Annotation properties
