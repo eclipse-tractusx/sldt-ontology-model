@@ -15,7 +15,7 @@
 
 **Date:**  2023-07-04
 
-**Version:**  1.9.4
+**Version:**  1.9.5
 
 **Imports:**  file:function_ontology.ttl , file:vehicle_ontology.ttl 
 
@@ -75,12 +75,6 @@ classDiagram
    class RemainingUsefulLifeResult~behaviour~{
        remainingRunningDistance int
        remainingOperatingHours float
-   } 
-   class Function~function~{
-   } 
-   class Result~function~{
-   } 
-   class Part~vehicle~{
    } 
    RemainingUsefulLife --> Part : component
    PrognosisFunction --|> Function

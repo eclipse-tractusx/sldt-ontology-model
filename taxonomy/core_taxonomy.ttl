@@ -1,8 +1,8 @@
-# Copyright (c) 2022,2023 T-Systems International GmbH
-# Copyright (c) 2022,2023 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
-# Copyright (c) 2022,2023 ZF Friedrichshafen AG 
-# Copyright (c) 2022,2023 Mercedes-Benz AG 
-# Copyright (c) 2022,2023 Contributors to the Catena-X Association
+# Copyright (c) 2024 T-Systems International GmbH
+# Copyright (c) 2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
+# Copyright (c) 2024 ZF Friedrichshafen AG 
+# Copyright (c) 2024 Mercedes-Benz AG 
+# Copyright (c) 2024 Contributors to the Catena-X Association
 #
 # See the NOTICE file(s) distributed with this work for additional
 # information regarding copyright ownership.
@@ -28,7 +28,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
 
-cx-taxo:catenaXTaxonomy a skos:ConceptScheme ;
+<https://w3id.org/catenax/taxonomy> a skos:ConceptScheme ;
                         dc:creator "[@obalandi](https://github.com/obalandi)" ;
                         dc:date "2023-05-05"^^xsd:date ;
                         dc:description "This taxonomy represents and contains all of the concepts that are used in the Catena-X ontologies."@en ; 
@@ -142,72 +142,6 @@ cx-taxo:Thing a skos:Concept ;
                 skos:broader cx-taxo:Application ;
                 skos:definition "Dataspace Connector is an interface based on the Eclipse Dataspace Connector technology. A Dataspace Connector makes various assets available through contracts. A contract describes with which policy which asset can be provided."@en ;
                 skos:prefLabel "Dataspace Connector"@en .
-
-            cx-taxo:Asset a skos:Concept ;
-                skos:broader cx-taxo:Application ;
-                skos:prefLabel "Asset"@en ;
-                skos:definition "The Asset concept describes the provision via a repository of a specific set of data for a specific purpose. It is defined by its public API."@en .
-
-                cx-taxo:DigitalTwinRegistry a skos:Concept;
-                    skos:broader cx-taxo:Asset;
-                    skos:prefLabel "Digital Twin Registry"@en ;
-                    skos:definition "The Digital Twin Registry (DTR) is the union of the Catena-X-selected subsets of the Asset Administration Shell Registry and Discovery APIs.";
-                    skos:example "https://github.com/eclipse-tractusx/sldt-digital-twin-registry".
-
-                cx-taxo:Submodel a skos:Concept;
-                    skos:broader cx-taxo:Asset;
-                    skos:prefLabel "Submodel"@en ;
-                    skos:definition "The Submodel API serves aspects of a Digital Twin according to the Asset Administration Shell standard.".
-
-                cx-taxo:ReceiveQualityInvestigationNotification a skos:Concept;
-                    skos:broader cx-taxo:Asset;
-                    skos:prefLabel "Receive Quality Investigation Notification"@en;
-                    skos:definition "API to receive quality investigation notifications".
-
-                cx-taxo:ReceiveQualityAlertNotification a skos:Concept;
-                    skos:broader cx-taxo:Asset;
-                    skos:prefLabel "Receive Quality Alert Notification"@en;
-                    skos:definition "API to receive quality alert notifications".
-
-                cx-taxo:UpdateQualityInvestigationNotification a skos:Concept;
-                    skos:broader cx-taxo:Asset;
-                    skos:prefLabel "Update Quality Investigation Notification"@en;
-                    skos:definition "API to update quality investigation notifications".
-
-                cx-taxo:UpdateQualityAlertNotification a skos:Concept;
-                    skos:broader cx-taxo:Asset;
-                    skos:prefLabel "Update Quality Alert Notification"@en;
-                    skos:definition "API to update quality Alert notifications".
-
-                cx-taxo:ResolveQualityInvestigationNotification a skos:Concept;
-                    skos:broader cx-taxo:Asset;
-                    skos:prefLabel "Resolve Quality Investigation Notification"@en;
-                    skos:definition "API to update quality investigation notifications".
-
-                cx-taxo:ResolveQualityAlertNotification a skos:Concept;
-                    skos:broader cx-taxo:Asset;
-                    skos:prefLabel "Resolve Quality Alert Notification"@en;
-                    skos:definition "API to resolve quality Alert notifications".
-
-                cx-taxo:ReceiveUniqueIdPushNotification a skos:Concept;
-                    skos:broader cx-taxo:Asset;
-                    skos:prefLabel "Receive Unique ID Push Notification"@en;
-                    skos:definition "API to receive Unique Id Push notifications".
-
-                cx-taxo:PcfExchange a skos:Concept;
-                    skos:broader cx-taxo:Asset;
-                    skos:prefLabel "PCF Exchange API"@en;
-                    skos:definition "API to exchange data on Product Carbon Footprints".
-
-                cx-taxo:GraphAsset a skos:Concept ;
-                    skos:broader cx-taxo:Asset ;
-                    skos:prefLabel "Graph Asset"@en ;
-                    skos:definition "This subconcept of Asset allows arbitrary data queries to be executed on assets."@en .
-                    
-                cx-taxo:SkillAsset a skos:Concept ;
-                    skos:broader cx-taxo:Asset ;
-                    skos:prefLabel "Skill Asset"@en ;
-                    skos:definition "This subconcept of Asset allows only the execution of predefined data queries on assets."@en .
 
     cx-taxo:Actor a skos:Concept ;
         skos:broader  cx-taxo:Thing ;

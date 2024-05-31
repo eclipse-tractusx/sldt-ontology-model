@@ -1,8 +1,8 @@
-# Copyright (c) 2022,2023 T-Systems International GmbH
-# Copyright (c) 2022,2023 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
-# Copyright (c) 2022,2023 ZF Friedrichshafen AG 
-# Copyright (c) 2022,2023 Mercedes-Benz AG 
-# Copyright (c) 2022,2023 Contributors to the Catena-X Association
+# Copyright (c) 2024 T-Systems International GmbH
+# Copyright (c) 2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
+# Copyright (c) 2024 ZF Friedrichshafen AG 
+# Copyright (c) 2024 Mercedes-Benz AG 
+# Copyright (c) 2024 Contributors to the Catena-X Association
 #
 # See the NOTICE file(s) distributed with this work for additional
 # information regarding copyright ownership.
@@ -38,7 +38,7 @@
                                               dc:date "2023-06-29"^^xsd:date ;
                                               dc:description "Ontology for function invocations." ;
                                               dc:title "Function Ontology" ;
-                                              owl:versionInfo "1.10.2" .
+                                              owl:versionInfo "1.11.0" .
 
 #################################################################
 #    Annotation properties

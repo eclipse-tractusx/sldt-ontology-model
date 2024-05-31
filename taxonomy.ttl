@@ -1,8 +1,9 @@
-# Copyright (c) 2022,2023 T-Systems International GmbH
-# Copyright (c) 2022,2023 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
-# Copyright (c) 2022,2023 ZF Friedrichshafen AG 
-# Copyright (c) 2022,2023 Mercedes-Benz AG 
-# Copyright (c) 2022,2023 Contributors to the Catena-X Association
+# Copyright (c) 2024 T-Systems International GmbH
+# Copyright (c) 2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
+# Copyright (c) 2024 ZF Friedrichshafen AG 
+# Copyright (c) 2024 Mercedes-Benz AG 
+# Copyright (c) 2024 SAP AG 
+# Copyright (c) 2024 Contributors to the Catena-X Association
 #
 # See the NOTICE file(s) distributed with this work for additional
 # information regarding copyright ownership.
@@ -22,2054 +23,280 @@
 @prefix cx-taxo: <https://w3id.org/catenax/taxonomy#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix schema: <https://schema.org/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix wiki-en: <https://en.wikipedia.org/wiki/>.
-@prefix wiki-de: <https://de.wikipedia.org/wiki/>.
-
-cx-taxo:catenaXTaxonomy a skos:ConceptScheme ;
-  skos:title "Catena-X Taxonomy" ;
-  skos:hasTopConcept cx-taxo:Thing;
-  skos:prefLabel "Catena-X Taxonomy"@de,
-        "Catena-X Taxonomy"@en .
-
-cx-taxo:Thing a skos:Concept;
-    skos:prefLabel "Ding"@de,
-        "Thing"@en .
-        
-        cx-taxo:Place a skos:Concept ;
-            skos:broader cx-taxo:Thing ;
-            skos:prefLabel "Place"@en .
-            
-            cx-taxo:Highway a skos:Concept ;
-                skos:broader cx-taxo:Place ;
-                rdfs:seeAlso <https://de.wikipedia.org/wiki/Autobahn>,
-                    <https://en.wikipedia.org/wiki/Controlled-access_highway> ;
-                skos:prefLabel "Autobahn"@de,
-                    "Highway"@en .
-
-        cx-taxo:PhysicalObject a skos:Concept ;
-            skos:broader cx-taxo:Thing ;
-            skos:prefLabel "Physical Object"@en .
-        
-        cx-taxo:Part a skos:Concept ;
-            skos:broader cx-taxo:PhysicalObject ;
-            skos:prefLabel "Part"@en .
-            
-            cx-taxo:NaturalGasVehicle a skos:Concept ;
-                skos:broader cx-taxo:Part ;
-                skos:altLabel "NGV"@en,
-                    "natural gas vehicle"@en ;
-                skos:prefLabel "Erdgasfahrzeug"@de,
-                    "Natural Gas Vehicle"@en .
-            
-            cx-taxo:ConstructionPart a skos:Concept ;
-                skos:broader cx-taxo:ConceptionalObject ;
-                skos:altLabel "part as planned"@en ;
-                skos:definition "A part that has a part number."@en ;
-                skos:note "non-physical object"@en ;
-                skos:prefLabel "Konstruktionsbauteil"@de,
-                "Construction Part"@en .
-            
-            cx-taxo:BatchPart a skos:Concept ;
-                skos:broader cx-taxo:Part ;
-                skos:altLabel "lot part"@en ;
-                skos:definition "A part that has a unique batch number."@en ;
-                skos:note "unique physical object"@en ;
-                skos:prefLabel "Chargenbauteil"@de, "Batch Part"@en .
-            
-            cx-taxo:SerializedPart a skos:Concept ;
-                skos:broader cx-taxo:Part ;
-                skos:altLabel "part as built"@en,
-                "part as produced"@en ;
-                skos:definition "A part that has a unique serial number."@en ;
-                skos:note "unique identifiable physical object"@en ;
-                skos:prefLabel "Serienbauteil"@de,
-                "Serialized Part"@en .
-                
-                cx-taxo:ElectronicPart a skos:Concept ;
-                    skos:broader cx-taxo:SerializedPart ;
-                    skos:definition "A part that has electronics components."@en ;
-                    skos:note "unique physical object"@en ;
-                    skos:prefLabel "Elektronisches Bauteil"@de,
-                    "Electronic Part"@en .
-            
-            cx-taxo:SubAssembly a skos:Concept ;
-                skos:broader cx-taxo:Part ;
-                skos:definition "A sub assembly is a subset of the components that make up a larger assembly."@en ;
-                skos:prefLabel "Unterbaugruppe"@de,
-                "Sub Assembly"@en .
-            
-            cx-taxo:SolitaryPart a skos:Concept ;
-                skos:broader cx-taxo:Part ;
-                skos:altLabel "Solitärteil"@de,
-                "new part"@en ;
-                skos:prefLabel "Neuteil"@de,
-                "Solitary Part"@en .
-
-            cx-taxo:SemiFinishedPart a skos:Concept ;
-                skos:broader cx-taxo:Part ;
-                rdfs:seeAlso <https://de.wikipedia.org/wiki/Halbzeug> ;
-                skos:altLabel "semi-finished product"@en ;
-                skos:prefLabel "Halbzeug"@de,
-                "Semi-Finished Part"@en .
-            
-            cx-taxo:ScopeOfSupply a skos:Concept ;
-                skos:broader cx-taxo:Part ;
-                skos:altLabel "LU"@de,
-                "Lieferumfang"@de,
-                "scope of delivery"@en,
-                "shipping unit"@en ;
-                skos:definition "A part that is composed of other parts."@en ;
-                skos:prefLabel "Lieferumfang"@de,
-                "Scope Of Supply"@en .
-            
-            cx-taxo:RawPart a skos:Concept ;
-                skos:broader cx-taxo:Part ;
-                skos:example "cast part"@en,
-                "smith part"@en ;
-                skos:prefLabel "Rohteil"@de,
-                "Raw Part"@en .
-            
-            cx-taxo:ProductionPart a skos:Concept ;
-                skos:broader cx-taxo:Part ;
-                skos:prefLabel "Produktionsteil"@de, "Production Part"@en .
-            
-            cx-taxo:PlattformPart a skos:Concept ;
-                skos:broader cx-taxo:Part ;
-                rdfs:seeAlso <https://de.wikipedia.org/wiki/Gleichteil> ;
-                skos:altLabel "interchangeable part"@en ;
-                skos:prefLabel "Gleichteil"@de, "Plattform Part"@en .
-            
-            cx-taxo:NormPart a skos:Concept ;
-                skos:broader cx-taxo:Part ;
-                rdfs:seeAlso <https://de.wikipedia.org/wiki/Normteil> ;
-                skos:prefLabel "Normteil"@de, "Norm Part"@en .
-
-            cx-taxo:AssemblyPart a skos:Concept ;
-                skos:broader cx-taxo:Part ;
-                rdfs:seeAlso <https://de.wikipedia.org/wiki/Zusammenbau> ;
-                skos:altLabel "ZB"@de,
-                "Zusammenbau"@de ;
-                skos:definition "A part that is composed of other parts."@en ;
-                skos:prefLabel "Zusammenbau"@de,
-                "Assembly Part"@en .
-                
-                cx-taxo:ModularAssemblyPart a skos:Concept ;
-                    skos:broader cx-taxo:AssemblyPart ;
-                    skos:altLabel "MZ"@de,
-                    "Modularer Zusammenbau"@de ;
-                    skos:prefLabel "Modularer Zusammenbau"@de,
-                    "Modular Assembly Part"@en .
-            
-            cx-taxo:InterstagePart a skos:Concept ;
-                skos:broader cx-taxo:Part ;
-                skos:altLabel "ZZ"@de,
-                "Zwischenzustand"@de,
-                "unfertige Komponente"@de,
-                "intermediate state"@en,
-                "interstage part"@en ;
-                skos:definition "A part that is unfinished component."@en ;
-                skos:prefLabel "Zwischenzustand"@de,
-                "Interstage Part"@en .
-
-            cx-taxo:SparePart a skos:Concept ;
-                skos:broader cx-taxo:Part ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/Spare_part> ;
-                skos:altLabel "service part"@en ;
-                skos:definition "A part that is replaced in a vehicle."@en ;
-                skos:prefLabel "Ersatzteil"@de, "Spare Part"@en .
-                
-                cx-taxo:RefurbishedSparePart a skos:Concept ;
-                    skos:broader cx-taxo:SparePart ;
-                    skos:prefLabel "Aufgearbeiteter Ersatzteil"@de,
-                    "Refurbished Spare Part"@en .
-                
-                cx-taxo:ExchangePart a skos:Concept ;
-                    skos:broader cx-taxo:SparePart ;
-                    rdfs:seeAlso <https://de.wikipedia.org/wiki/Ersatzteil> ;
-                    skos:prefLabel "Tauschteil"@de, "Exchange Part"@en .
-
-        cx-taxo:DirectedPart a skos:Concept ;
-            skos:broader cx-taxo:Part ;
-            skos:prefLabel "Setzteil"@de, "Directed Part"@en .
-        
-        cx-taxo:AlternativePart a skos:Concept ;
-            skos:broader cx-taxo:Part ;
-            skos:definition "Two parts that can be used interchangeably."@en ;
-            skos:prefLabel "Wahlweises Bauteil"@de, "Alternative Part"@en .
-        
-        cx-taxo:Vehicle a skos:Concept ;
-            skos:broader cx-taxo:PhysicalObject ;
-            skos:prefLabel "Vehicle"@en .
-            
-            cx-taxo:MultiPurposeVehicle a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/Minivan> ;
-                skos:altLabel "Kleinbus"@de,
-                    "Kleintransporter"@de,
-                    "Transporter"@de,
-                    "AUV"@en,
-                    "Asian Utility Vehicle"@en,
-                    "MPV"@en,
-                    "MUV"@en,
-                    "multi utility vehicle"@en,
-                    "multi-purpose vehicle"@en,
-                    "van"@en ;
-                skos:definition "< 9 passengers, based on car platform, to transport passengers"@en ;
-                skos:example "V-class"@en,
-                    "VW T6"@en ;
-                skos:prefLabel "Van"@de,
-                    "Minivan"@en .
-            
-            cx-taxo:Van a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/Van> ;
-                skos:altLabel "Lieferwagen"@de,
-                    "full-size van"@en ;
-                skos:example "Crafter"@en,
-                    "Ducato"@en,
-                    "Jumpy"@en,
-                    "Sprinter"@en,
-                    "Transit"@en ;
-                skos:prefLabel "Kleintransporter"@de,
-                    "Van"@en .
-            
-            cx-taxo:InternalCombustionEngineVehicle a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                            rdfs:subClassOf [ a owl:Restriction ;
-                        owl:onProperty cx:hasPart ;
-                        owl:someValuesFrom cx:Engine ],
-                    cx:Vehicle ;
-                skos:altLabel "ICEV"@en,
-                    "internal combustion engine vehicle"@en ;
-                skos:prefLabel "Internal Combustion Engine Vehicle"@en .
-            
-            cx-taxo:PrivateVehicle a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                skos:definition "A vehicle that is used for private purposes."@en ;
-                skos:example "passenger car"@en ;
-                skos:note "ownership"@en ;
-                skos:prefLabel "Privatfahrzeug"@de,
-                    "Private Vehicle"@en .
-            
-            cx-taxo:PetrolVehicle a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                skos:definition "uses petrol"@en ;
-                skos:prefLabel "Benzinfahrzeug"@de,
-                    "Petrol Vehicle"@en .
-            
-            cx-taxo:Motorcycle a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/Motorcycle> ;
-                skos:altLabel "Kraftrad"@de ;
-                skos:definition "2, 3, 4-wheeled motorcycle, max 400kg"@en ;
-                skos:note "Klasse L"@en ;
-                skos:prefLabel "Motorrad"@de,
-                    "Motorcycle"@en .
-            
-            cx-taxo:Minibus a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/Minibus> ;
-                skos:altLabel "Kleinbus"@de,
-                    "Kleintransporter"@de,
-                    "full-size van"@en,
-                    "large passenger van"@en,
-                    "microbus"@en,
-                    "minicoach"@en ;
-                skos:definition "9 < passengers < 23, seated or standing"@en ;
-                skos:prefLabel "Minibus"@de,
-                    "Minibus"@en .
-            
-            cx-taxo:RecreationalVehicle a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/Campervan>,
-                    <https://en.wikipedia.org/wiki/Motorhome>,
-                    <https://en.wikipedia.org/wiki/Recreational_vehicle> ;
-                skos:altLabel "RV"@en,
-                    "campervan"@en,
-                    "motorhome"@en,
-                    "recreational vehicle"@en ;
-                skos:definition "< 10 passengers, only seated"@en ;
-                skos:prefLabel "Wohnmobil"@de,
-                    "Recreational Vehicle"@en .
-            
-            cx-taxo:SelfDrivingCar a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/Self-driving_car> ;
-                skos:altLabel "automatisiertes Fahrzeug"@de,
-                    "automatised vehicle"@en ;
-                skos:note "usage"@en ;
-                skos:prefLabel "Selbstfahrendes Kraftfahrzeug"@de,
-                    "Self-Driving Car"@en .
-            
-            cx-taxo:LiquefiedNaturalGasVehicle a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/Liquefied_natural_gas> ;
-                skos:prefLabel "LNG Fahrzeug"@de,
-                    "Liquefied Natural Gas Vehicle"@en .
-
-            cx-taxo:Microvan a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/Microvan> ;
-                skos:definition "kei car"@en ;
-                skos:example "Agila"@en,
-                    "Carry"@en,
-                    "Ignis"@en,
-                    "Move"@en,
-                    "Porter"@en,
-                    "Wagon R"@en ;
-                skos:prefLabel "Microvan"@de,
-                    "Microvan"@en .
-            
-            cx-taxo:MildHybridElectricVehicle a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                skos:altLabel "MHEV"@en,
-                    "mild hybrid electric vehicle"@en ;
-                skos:prefLabel "Mild Hybrid Electric Vehicle"@en .
-            
-            cx-taxo:MiniMultiPurposeVehicle a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/Mini_MPV> ;
-                skos:altLabel "small MPV"@en ;
-                skos:definition "small MPV, smallest size, based on hatchbacks , < 4.1 m"@en ;
-                skos:example "500L"@en,
-                    "A-class"@en,
-                    "A2"@en,
-                    "B-Max"@en,
-                    "Jazz"@en,
-                    "Meriva"@en,
-                    "Space Star"@en,
-                    "Venga"@en,
-                    "Yaris"@en,
-                    "ix20"@en ;
-                skos:prefLabel "Minivan"@de,
-                    "Mini MPV"@en .
-            
-            cx-taxo:Moped a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                rdfs:seeAlso <https://de.wikipedia.org/wiki/Kleinkraftrad> ;
-                skos:altLabel "Kraftrad"@de ;
-                skos:definition "< 50ccm"@en ;
-                skos:note "Klasse L"@en ;
-                skos:prefLabel "Kleinkraftrad"@de,
-                    "Moped"@en .
-            
-            cx-taxo:OffRoadVehicle a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/Off-road_vehicle> ;
-                skos:prefLabel "Off-Road Vehicle"@en .
-            
-            cx-taxo:PanelVan a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/Panel_van> ;
-                skos:prefLabel "Kastenwagen"@de,
-                    "Panel Van"@en .
-            
-            cx-taxo:PickupTruck a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/Pickup_truck> ;
-                skos:altLabel "pickup"@en ;
-                skos:prefLabel "Pick-up"@de,
-                    "Pickup Truck"@en .
-            
-            cx-taxo:PlugInHybridElectricVehicle a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/Plug-in_electric_vehicle> ;
-                skos:altLabel "NEV"@en,
-                    "PHEV"@en,
-                    "Plug-in Hybrid Electric Vehicle"@en,
-                    "new energy vehicle"@en ;
-                skos:definition "are powered by an electric motor and an internal combustion engine that work together or separately."@en ;
-                skos:prefLabel "Plug-In Hybrid Electric Vehicle"@en .
-            
-            cx-taxo:PoliceCar a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                skos:note "usage"@en ;
-                skos:prefLabel "Polizeiauto"@de,
-                    "Police Car"@en .
-            
-            cx-taxo:RangeExtendedElectricVehicle a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                skos:altLabel "REEV"@en,
-                    "Range extended electric vehicle"@en ;
-                skos:prefLabel "Range Extended Electric Vehicle"@en .
-            
-            cx-taxo:LeisureActivityVehicle a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/Minivan#Leisure_activity_vehicle> ;
-                skos:altLabel "HDK"@de,
-                    "Hochdachkombi"@de,
-                    "LAV"@en,
-                    "leisure activity vehicle"@en,
-                    "small passenger van"@en,
-                    "van-based MPV"@en ;
-                skos:example "Berlingo"@en,
-                    "Caddy"@en,
-                    "Citan"@en,
-                    "Doblo"@en,
-                    "Dokker"@en,
-                    "Kangoo"@en ;
-                skos:prefLabel "Hochdachkombi"@de,
-                    "Leisure Activity Vehicle"@en .
-            
-            cx-taxo:LargeMultiPurposeVehicle a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/M-segment#Large_MPVs> ;
-                skos:altLabel "Großraum-Van"@de,
-                    "Großraumlimousine"@de ;
-                skos:definition "large MPV"@en ;
-                skos:example "Alhambra"@en,
-                    "Espace"@en,
-                    "Galaxy"@en,
-                    "S-Max"@en,
-                    "Sharan"@en ;
-                skos:prefLabel "Van"@de,
-                    "Large MPV"@en .
-            
-            cx-taxo:ConversionVan a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/Conversion_van> ;
-                skos:definition "A conversion van is a full-sized cargo van that is sent to third-party companies to be outfitted with various luxuries for road trips and camping."@en ;
-                skos:prefLabel "Umbauwagen"@de,
-                    "Conversion Van"@en .
-            
-            cx-taxo:CompressedNaturalGasVehicle a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/Compressed_natural_gas> ;
-                skos:prefLabel "CNG Fahrzeug"@de,
-                    "Compressed Natural Gas Vehicle"@en .
-            
-            cx-taxo:CompactMultiPurposeVehicle a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/Compact_MPV> ;
-                skos:definition "mid-sized MPV, middle size, C-segment"@en ;
-                skos:example "2er"@en,
-                    "B-class"@en,
-                    "C-Max"@en,
-                    "Jogger"@en,
-                    "Picasso"@en,
-                    "Scenic"@en,
-                    "Touran"@en,
-                    "Zafira"@en ;
-                skos:prefLabel "Kompaktvan"@de,
-                    "Compact MPV"@en .
-            
-            cx-taxo:TransportVehicle a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/Cargo> ;
-                skos:altLabel "Straßengüterfahrzeug"@de,
-                    "cargo vehicle"@en,
-                    "road freight vehicle"@en ;
-                skos:definition "A vehicle that transports cargo."@en ;
-                skos:example "truck"@en ;
-                skos:note "Klasse N, O"@en ;
-                skos:prefLabel "Transportfahrzeug"@de,
-                    "Transport Vehicle"@en .
-                    
-                    cx-taxo:LightTransportVehicle a skos:Concept ;
-                        skos:broader cx-taxo:TransportVehicle ;
-                        rdfs:seeAlso <https://en.wikipedia.org/wiki/Light_commercial_vehicle> ;
-                        skos:altLabel "LCV"@en,
-                            "light commercial vehicle"@en ;
-                        skos:definition "< 3.5 tons"@en ;
-                        skos:example "Ducato"@en,
-                            "Sprinter"@en,
-                            "Transit"@en ;
-                        skos:note "Klasse N"@en ;
-                        skos:prefLabel "Light Transport Vehicle"@en .
-                    
-                    cx-taxo:HeavyTransportVehicle a skos:Concept ;
-                        skos:broader cx-taxo:TransportVehicle ;
-                        rdfs:seeAlso <https://en.wikipedia.org/wiki/Large_goods_vehicle> ;
-                        skos:altLabel "HGV"@en,
-                            "LGV"@en,
-                            "large goods vehicle"@en,
-                            "or heavy goods vehicle"@en ;
-                        skos:definition "> 3.5 tons"@en ;
-                        skos:note "Klasse N"@en ;
-                        skos:prefLabel "Heavy Transport Vehicle"@en .
-                        
-                        cx-taxo:Truck a skos:Concept ;
-                            skos:broader cx-taxo:HeavyTransportVehicle ;
-                            rdfs:seeAlso <https://en.wikipedia.org/wiki/Truck> ;
-                            skos:altLabel "Güterkraftfahrzeug"@de,
-                                "LKW"@de,
-                                "Lastkraftwagen"@de,
-                                "lorry"@en ;
-                            skos:prefLabel "Lastkraftwagen"@de,
-                                "Truck"@en .
-                                
-                                cx-taxo:SemiTrailerTruck a skos:Concept ;
-                                    skos:broader cx-taxo:HeavyTransportVehicle ;
-                                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Semi-trailer_truck> ;
-                                    skos:altLabel "Lastzug"@de,
-                                        "Sattelkraftfahrzeug"@de,
-                                        "Sattelschlepper"@de,
-                                        "Sattelzugmaschine"@de,
-                                        "Zugmaschine"@de,
-                                        "big rig"@en,
-                                        "eighteen-wheeler"@en,
-                                        "semi"@en,
-                                        "semitrailer"@en,
-                                        "semitruck"@en ;
-                                    skos:prefLabel "Sattelzug"@de,
-                                        "Semi-Trailer Truck"@en .
-                                
-                                cx-taxo:SixAxleSemiTrailerTruck a skos:Concept ;
-                                    skos:broader cx-taxo:Truck ;
-                                    skos:prefLabel "Six-Axle Semi-Trailer Truck"@en .
-                                
-                                cx-taxo:SevenAxleSemiTrailerTruck a skos:Concept ;
-                                    skos:broader cx-taxo:Truck ;
-                                    skos:prefLabel "Seven-Axle Semi-Trailer Truck"@en .
-                                
-                                cx-taxo:FiveAxleSemiTrailerTruck a skos:Concept ;
-                                    skos:broader cx-taxo:Truck ;
-                                    skos:prefLabel "Five-Axle Semi-Trailer Truck"@en .
-                                
-                                cx-taxo:FourAxleSemiTrailerTruck a skos:Concept ;
-                                    skos:broader cx-taxo:Truck ;
-                                    skos:prefLabel "Four-Axle Semi-Trailer Truck"@en .
-                                
-                                cx-taxo:GarbageTruck a skos:Concept ;
-                                    skos:broader cx-taxo:Truck ;
-                                     rdfs:seeAlso <https://en.wikipedia.org/wiki/Garbage_truck> ;
-                                    skos:note "usage"@en ;
-                                    skos:prefLabel "Müllwagen"@de,
-                                        "Garbage Truck"@en .
-                                
-                                cx-taxo:FlatbedTruck a skos:Concept ;
-                                    skos:broader cx-taxo:Truck ;
-                                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Flatbed_truck> ;
-                                    skos:note "usage"@en ;
-                                    skos:prefLabel "Pritschenwagen"@de,
-                                        "Flatbed Truck"@en .
-                                
-                                cx-taxo:DumpTruck a skos:Concept ;
-                                    skos:broader cx-taxo:Truck ;
-                                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Dump_truck> ;
-                                    skos:note "usage"@en ;
-                                    skos:prefLabel "Muldenkipper"@de,
-                                        "Dump Truck"@en .
-                                
-                                cx-taxo:LoggingTruck a skos:Concept ;
-                                    skos:broader cx-taxo:Truck ;
-                                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Logging_truck> ;
-                                    skos:altLabel "timber lorry"@en ;
-                                    skos:note "usage"@en ;
-                                    skos:prefLabel "Langholztransporter"@de,
-                                        "Logging Truck"@en .
-                                
-                                cx-taxo:FireTruck a skos:Concept ;
-                                    skos:broader cx-taxo:Truck ;
-                                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Fire_engine> ;
-                                    skos:altLabel "fire engine"@en,
-                                        "fire lorry"@en ;
-                                    skos:note "usage"@en ;
-                                    skos:prefLabel "Feuerwehrfahrzeug"@de,
-                                        "Fire Truck"@en .
-                                
-                                cx-taxo:ThreeAxleTruck a skos:Concept ;
-                                    skos:broader cx-taxo:Truck ;
-                                    skos:prefLabel "Three-Axle Truck"@en .
-                                
-                                cx-taxo:TwoAxleTruck a skos:Concept ;
-                                    skos:broader cx-taxo:Truck ;
-                                    skos:prefLabel "Two-Axle Truck"@en .
-                                
-                                cx-taxo:TowTruck a skos:Concept ;
-                                    skos:broader cx-taxo:Truck ;
-                                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Tow_truck> ;
-                                    skos:altLabel "Abschlepper"@de ;
-                                    skos:note "usage"@en ;
-                                    skos:prefLabel "Abschleppwagen"@de,
-                                        "Tow Truck"@en .
-                                
-                                cx-taxo:CraneTruck a skos:Concept ;
-                                    skos:broader cx-taxo:Truck ;
-                                    skos:note "usage"@en ;
-                                    skos:prefLabel "Kranwagen"@de,
-                                        "Crane Truck"@en .
-                                
-                                cx-taxo:ConcreteMixerTruck a skos:Concept ;
-                                    skos:broader cx-taxo:Truck ;
-                                    rdfs:seeAlso <https://de.wikipedia.org/wiki/Fahrmischer>,
-                                        <https://en.wikipedia.org/wiki/Concrete_mixer> ;
-                                    skos:note "usage"@en ;
-                                    skos:prefLabel "Fahrmischer"@de,
-                                        "Concrete Mixer Truck"@en .
-                                
-                                cx-taxo:BoxTruck a skos:Concept ;
-                                    skos:broader cx-taxo:Truck ;
-                                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Box_truck> ;
-                                    skos:prefLabel "Kofferaufbau"@de,
-                                        "Box Truck"@en .
-            
-            cx-taxo:ElectricVehicle a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                skos:prefLabel "Electric Vehicle"@en .
-                
-                cx-taxo:HybridElectricVehicle a skos:Concept ;
-                    skos:broader cx-taxo:ElectricVehicle ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Hybrid_electric_vehicle> ;
-                    skos:altLabel "HEV"@en,
-                        "Hybrid Electric Vehicle"@en ;
-                    skos:definition "combine an internal combustion engine and an electric motor that assists the conventional engine, for example during vehicle acceleration."@en ;
-                    skos:prefLabel "Hybrid Electric Vehicle"@en .
-                
-                cx-taxo:FuelCellElectricVehicle a skos:Concept ;
-                    skos:broader cx-taxo:ElectricVehicle ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Fuel_cell_vehicle> ;
-                    skos:altLabel "FCEV"@en,
-                        "FCV"@en,
-                        "Fuel Cell Electric Vehicle"@en,
-                        "fuel cell vehicle"@en ;
-                    skos:prefLabel "Fuel Cell Electric Vehicle"@en .
-                
-                cx-taxo:BatteryElectricVehicle a skos:Concept ;
-                    skos:broader cx-taxo:ElectricVehicle ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Battery_electric_vehicle> ;
-                    skos:altLabel "BEV"@en,
-                        "Battery Electric Vehicle"@en ;
-                    skos:definition "are powered solely by an electric motor, using electricity stored in an on-board battery."@en ;
-                    skos:prefLabel "Battery Electric Vehicle"@en .
-            
-            cx-taxo:PassengerVehicle a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                skos:altLabel "Straßenpersonenfahrzeug"@de ;
-                skos:definition "A vehicle that transports people."@en ;
-                skos:example "car"@en ;
-                skos:note "< 9 passengers, Klasse M"@en ;
-                skos:prefLabel "Passagierfahrzeug"@de,
-                    "Passenger Vehicle"@en .
-                    
-                    cx-taxo:Coach a skos:Concept ;
-                        skos:broader cx-taxo:PassengerVehicle ;
-                        rdfs:seeAlso <https://en.wikipedia.org/wiki/Coach_> ;
-                        skos:altLabel "Fernbus"@de,
-                            "motorcoach"@en ;
-                        skos:definition "> 24 passengers, only seated"@en ;
-                        skos:prefLabel "Reisebus"@de,
-                            "Coach"@en .
-                    
-                    cx-taxo:Bus a skos:Concept ;
-                        skos:broader cx-taxo:PassengerVehicle ;
-                        rdfs:seeAlso <https://en.wikipedia.org/wiki/Bus> ;
-                        skos:altLabel "Omnibus"@de,
-                            "omnibus"@en ;
-                        skos:definition "> 24 passengers, seated or standing"@en ;
-                        skos:prefLabel "Bus"@de,
-                            "Bus"@en .
-                    
-                    cx-taxo:Car a skos:Concept ;
-                        skos:broader cx-taxo:PassengerVehicle ;
-                        rdfs:seeAlso <https://en.wikipedia.org/wiki/Car> ;
-                        skos:altLabel "Automobil"@de,
-                            "Karre"@de,
-                            "PKW"@de,
-                            "Personenkraftwagen"@de,
-                            "automobile"@en,
-                            "passenger car"@en ;
-                        skos:definition "4-wheeled, < 9 passengers"@en ;
-                        skos:prefLabel "Auto"@de,
-                            "Car"@en .
-                            
-                            cx-taxo:ArmouredCar a skos:Concept ;
-                                skos:broader cx-taxo:Car ;
-                                rdfs:seeAlso <https://en.wikipedia.org/wiki/Armored_car_> ;
-                                skos:altLabel "gepanzertes Auto"@de ;
-                                skos:note "usage"@en ;
-                                skos:prefLabel "Sonderschutzfahrzeug"@de,
-                                    "Armoured Car"@en .
-            
-            cx-taxo:CommercialVehicle a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/Commercial_vehicle> ;
-                skos:altLabel "NFZ"@de,
-                    "NKW"@de,
-                    "Nutzfahrzeug"@de,
-                    "Nutzkraftwagen"@de ;
-                skos:definition "A vehicle that transports people or cargo for payment."@en ;
-                skos:note "> 9 passengers"@en ;
-                skos:prefLabel "Nutzfahrzeug"@de,
-                    "Commercial Vehicle"@en .
-                    
-                    cx-taxo:DieselVehicle a skos:Concept ;
-                        skos:broader cx-taxo:CommercialVehicle ;
-                        rdfs:seeAlso <https://en.wikipedia.org/wiki/Diesel_engine> ;
-                        skos:definition "uses diesel"@en ;
-                        skos:prefLabel "Dieselfahrzeug"@de,
-                            "Diesel Vehicle"@en .
-                    
-                    cx-taxo:CompanyVehicle a skos:Concept ;
-                        skos:broader cx-taxo:CommercialVehicle ;
-                        rdfs:seeAlso <https://de.wikipedia.org/wiki/Firmenwagen>,
-                            <https://en.wikipedia.org/wiki/Take-home_vehicle> ;
-                        skos:altLabel "Dienstwagen"@de,
-                            "company car"@en ;
-                        skos:definition "A vehicle that is used for commercial purposes."@en ;
-                        skos:note "ownership"@en ;
-                        skos:prefLabel "Firmenwagen"@de,
-                            "Company Vehicle"@en .
-                    
-                    cx-taxo:RentalVehicle a skos:Concept ;
-                        skos:broader cx-taxo:CommercialVehicle ;
-                        skos:note "usage"@en ;
-                        skos:prefLabel "Mietwagen"@de,
-                            "Rental Vehicle"@en .
-                    
-                    cx-taxo:FuneralCar a skos:Concept ;
-                        skos:broader cx-taxo:CommercialVehicle ;
-                        rdfs:seeAlso <https://en.wikipedia.org/wiki/Hearse> ;
-                        skos:altLabel "funeral coach"@en,
-                            "hearse"@en ;
-                        skos:note "usage"@en ;
-                        skos:prefLabel "Leichenwagen"@de,
-                            "Funeral Car"@en .
-                    
-                    cx-taxo:Taxi a skos:Concept ;
-                        skos:broader cx-taxo:CommercialVehicle ;
-                        skos:altLabel "cab"@en ;
-                        skos:note "usage"@en ;
-                        skos:prefLabel "Taxi"@de,
-                            "Taxi"@en .
-
-                    
-                    cx-taxo:ArmoredVehicle a skos:Concept ;
-                        skos:broader cx-taxo:CommercialVehicle ;
-                        rdfs:seeAlso <https://en.wikipedia.org/wiki/Armored_car_> ;
-                        skos:altLabel "armored cash transport car"@en,
-                            "armoured van"@en,
-                            "armored truck"@en,
-                            "security van"@en ;
-                        skos:note "usage"@en ;
-                        skos:prefLabel "gepanzertes Fahrzeug"@de,
-                            "Armored Vehicle"@en .
-            
-            cx-taxo:SpecialVehicle a skos:Concept ;
-                skos:broader cx-taxo:Vehicle ;
-                skos:altLabel "special-purpose vehicle"@en ;
-                skos:example "disabled vehicle"@en ;
-                skos:note "usage"@en ;
-                skos:prefLabel "Sonderfahrzeug"@de,
-                "Special Vehicle"@en .
-                
-                cx-taxo:FleetVehicle a skos:Concept ;
-                    skos:broader cx-taxo:SpecialVehicle ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Fleet_vehicle> ;
-                    skos:definition "A vehicle that is part of a fleet."@en ;
-                    skos:example "rental car"@en,
-                        "taxi"@en ;
-                    skos:note "usage"@en ;
-                    skos:prefLabel "Flottenfahrzeug"@de,
-                        "Fleet Vehicle"@en .
-                
-                cx-taxo:DrivingSchoolVehicle a skos:Concept ;
-                    skos:broader cx-taxo:SpecialVehicle ;
-                    rdfs:seeAlso <https://de.wikipedia.org/wiki/Fahrschulauto>;
-                    skos:note "usage"@en ;
-                    skos:prefLabel "Fahrschulauto"@de,
-                        "Driving School Vehicle"@en .
-                
-                cx-taxo:Ambulance a skos:Concept ;
-                    skos:broader cx-taxo:SpecialVehicle ;
-                    skos:altLabel "Ambulanz"@de ;
-                    skos:note "usage"@en ;
-                    skos:prefLabel "Krankenwagen"@de,
-                        "Ambulance"@en .
-        
-        cx-taxo:Component a skos:Concept ;
-            skos:broader cx-taxo:PhysicalObject ;
-            skos:prefLabel "Component"@en .
-        
-        cx-taxo:AssemblyGroup a skos:Concept ;
-            skos:broader cx-taxo:Component ;
-            skos:definition "A part that is composed of other parts."@en ;
-            skos:prefLabel "Baugruppe"@de, "Assembly Group"@en .
-        
-        cx-taxo:ConceptionalObject a skos:Concept ;
-            skos:broader cx-taxo:Thing ;
-            skos:prefLabel "Conceptional Object"@en .
-
-            cx-taxo:Asset a skos:Concept ;
-                skos:broader cx-taxo:ConceptionalObject ;
-                skos:prefLabel "Asset"@en ;
-                skos:definition "The Asset concept describes the provision via a repository of a specific set of data for a specific purpose. It is defined by its public API."@en .
-
-            cx-taxo:DigitalTwinRegistry a skos:Concept;
-                skos:broader cx-taxo:Asset;
-                skos:prefLabel "Digital Twin Registry"@en ;
-                skos:definition "The Digital Twin Registry (DTR) is the union of the Catena-X-selected subsets of the Asset Administration Shell Registry and Discovery APIs.";
-                skos:example "https://github.com/eclipse-tractusx/sldt-digital-twin-registry".
-
-            cx-taxo:Submodel a skos:Concept;
-                skos:broader cx-taxo:Asset;
-                skos:prefLabel "Submodel"@en ;
-                skos:definition "The Submodel API serves aspects of a Digital Twin according to the Asset Administration Shell standard.".
-
-            cx-taxo:ReceiveQualityInvestigationNotification a skos:Concept;
-                skos:broader cx-taxo:Asset;
-                skos:prefLabel "Receive Quality Investigation Notification"@en;
-                skos:definition "API to receive quality investigation notifications".
-
-            cx-taxo:ReceiveQualityAlertNotification a skos:Concept;
-                skos:broader cx-taxo:Asset;
-                skos:prefLabel "Receive Quality Alert Notification"@en;
-                skos:definition "API to receive quality alert notifications".
-
-            cx-taxo:UpdateQualityInvestigationNotification a skos:Concept;
-                skos:broader cx-taxo:Asset;
-                skos:prefLabel "Update Quality Investigation Notification"@en;
-                skos:definition "API to update quality investigation notifications".
-
-            cx-taxo:UpdateQualityAlertNotification a skos:Concept;
-                skos:broader cx-taxo:Asset;
-                skos:prefLabel "Update Quality Alert Notification"@en;
-                skos:definition "API to update quality Alert notifications".
-
-            cx-taxo:ResolveQualityInvestigationNotification a skos:Concept;
-                skos:broader cx-taxo:Asset;
-                skos:prefLabel "Resolve Quality Investigation Notification"@en;
-                skos:definition "API to update quality investigation notifications".
-
-            cx-taxo:ResolveQualityAlertNotification a skos:Concept;
-                skos:broader cx-taxo:Asset;
-                skos:prefLabel "Resolve Quality Alert Notification"@en;
-                skos:definition "API to resolve quality Alert notifications".
-
-            cx-taxo:ReceiveUniqueIdPushNotification a skos:Concept;
-                skos:broader cx-taxo:Asset;
-                skos:prefLabel "Receive Unique ID Push Notification"@en;
-                skos:definition "API to receive Unique Id Push notifications".
-
-            cx-taxo:UniqueIdPushConnectToParentNotification a skos:Concept;
-                skos:broader cx-taxo:Asset;
-                 skos:prefLabel "Unique ID Push Connect-to-Parent Notification"@en;
-                skos:definition "API to receive a Unique ID Push notification to connect a digital twin with its parent digital twin (bottom-up notification)".
-
-            cx-taxo:UniqueIdPushConnectToChildNotification a skos:Concept;
-                skos:broader cx-taxo:Asset;
-                 skos:prefLabel "Unique ID Push Connect-to-Child Notification"@en;
-                skos:definition "API to receive a Unique ID Push notification to connect a digital twin with its child digital twin (top-down notification)".
-
-            cx-taxo:PcfExchange a skos:Concept;
-                skos:broader cx-taxo:Asset;
-                skos:prefLabel "PCF Exchange API"@en;
-                skos:definition "API to exchange data on Product Carbon Footprints".
-
-            cx-taxo:GraphAsset a skos:Concept ;
-                skos:broader cx-taxo:Asset ;
-                skos:prefLabel "Graph Asset"@en ;
-                skos:definition "This subconcept of Asset allows arbitrary data queries to be executed on assets."@en .
-                
-            cx-taxo:SkillAsset a skos:Concept ;
-                skos:broader cx-taxo:Asset ;
-                skos:prefLabel "Skill Asset"@en ;
-                skos:definition "This subconcept of Asset allows only the execution of predefined data queries on assets."@en .
-
-            cx-taxo:QualityAsset a skos:Concept ;
-                skos:broader cx-taxo:Asset ;
-                skos:prefLabel "Quality Asset"@en ;
-                skos:definition "This subconcept of Asset signifies that a data offer is associated with the Quality use-case. Assets and data offers are further specified by the dcat:conformsTo property."@en .
-
-            cx-taxo:DcmMaterialDemand a skos:Concept;
-                skos:broader cx-taxo:Asset;
-                skos:prefLabel "Receive Material Demand DCM"@en;
-                skos:definition "API to receive a Material Demand in DCM context".
-
-            cx-taxo:DcmWeekBasedMaterialDemand a skos:Concept;
-                skos:broader cx-taxo:Asset;
-                skos:prefLabel "Receive Week Based Material Demand DCM"@en;
-                skos:definition "API to receive a Week Based Material Demand in DCM context".
-
-            cx-taxo:DcmWeekBasedCapacityGroup a skos:Concept;
-                skos:broader cx-taxo:Asset;
-                skos:prefLabel "Receive Week Based Capacity Group DCM"@en;
-                skos:definition "API to receive a Week Based Capacity Group in DCM context".
-
-            cx-taxo:DcmIdBasedRequestForUpdate a skos:Concept;
-                skos:broader cx-taxo:Asset;
-                skos:prefLabel "Receive ID Based Request for Update DCM"@en;
-                skos:definition "API to receive an ID Based Request for Update in DCM context".
-
-            cx-taxo:DcmIdBasedComment a skos:Concept;
-                skos:broader cx-taxo:Asset;
-                skos:prefLabel "Receive ID Based Comment for DCM"@en;
-                skos:definition "API to receive an ID Based Comment in DCM context".
-
-            cx-taxo:FuelType a skos:Concept ;
-                skos:broader cx-taxo:ConceptionalObject ;
-                rdfs:seeAlso <https://de.wikipedia.org/wiki/Kraftstoffcode>,
-                    <https://en.wikipedia.org/wiki/Fuel> ;
-                skos:prefLabel "Kraftstoff"@de,
-                    "Fuel Type"@en .
-
-                cx-taxo:Biodiesel a skos:Concept ;
-                    skos:broader cx-taxo:FuelType ;
-                    skos:prefLabel "Biodiesel"@de,
-                        "Biodiesel"@en .
-
-                cx-taxo:CompressedNaturalGas a skos:Concept ;
-                                skos:broader cx-taxo:FuelType ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Compressed_natural_gas> ;
-                    skos:altLabel "CNG"@en,
-                        "compressed natural gas"@en ;
-                    skos:prefLabel "CNG-Kraftstoff"@de,
-                        "Compressed Natural Gas"@en .
-
-                cx-taxo:DieselFuel a skos:Concept ;
-                                skos:broader cx-taxo:FuelType ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Diesel_fuel> ;
-                    skos:altLabel "Diesel"@de ;
-                    skos:note "diesel"@en ;
-                    skos:prefLabel "Dieselkraftstoff"@de,
-                        "Diesel Fuel"@en .
-
-                cx-taxo:Ethanol a skos:Concept ;
-                                skos:broader cx-taxo:FuelType ;
-                    skos:prefLabel "Ethanol"@de,
-                        "Ethanol"@en .
-
-                cx-taxo:Hydrogen a skos:Concept ;
-                                skos:broader cx-taxo:FuelType ;
-                    skos:prefLabel "Wasserstoff"@de,
-                        "Hydrogen"@en .
-
-                cx-taxo:LiquefiedNaturalGas a skos:Concept ;
-                                skos:broader cx-taxo:FuelType ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Liquefied_natural_gas> ;
-                    skos:altLabel "LNG"@en,
-                        "liquefied natural gas"@en ;
-                    skos:prefLabel "LNG-Kraftstoff"@de,
-                        "Liquefied Natural Gas"@en .
-
-                cx-taxo:LiquefiedPetroleumGas a skos:Concept ;
-                                skos:broader cx-taxo:FuelType ;
-                    skos:altLabel "LPG"@en,
-                        "liquefied petroleum gas"@en ;
-                    skos:prefLabel "LPG-Kraftstoff"@de,
-                        "Liquefied Petroleum Gas"@en .
-
-                cx-taxo:Methanol a skos:Concept ;
-                                skos:broader cx-taxo:FuelType ;
-                    skos:prefLabel "Methanol"@de,
-                        "Methanol"@en .
-
-                cx-taxo:PetrolFuel a skos:Concept ;
-                                skos:broader cx-taxo:FuelType ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Gasoline> ;
-                    skos:note "gasoline"@en ;
-                    skos:prefLabel "Benzin"@de,
-                        "Petrol Fuel"@en .
-            
-            cx-taxo:EngineAspiration a skos:Concept ;
-                skos:broader cx-taxo:ConceptionalObject ;
-                skos:prefLabel "Engine Aspiration"@en .
-
-                cx-taxo:NaturallyAspiratedEngine a skos:Concept ;
-                    skos:broader cx-taxo:EngineAspiration ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Naturally_aspirated_engine> ;
-                    skos:prefLabel "Naturally Aspirated Engine"@en .
-
-                cx-taxo:Supercharger a skos:Concept ;
-                    skos:broader cx-taxo:EngineAspiration ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Supercharger> ;
-                    skos:prefLabel "Supercharger"@en .
-
-                cx-taxo:Turbocharger a skos:Concept ;
-                                skos:broader cx-taxo:EngineAspiration ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Turbocharger> ;
-                    skos:altLabel "ATL"@de,
-                        "Abgasturbolader"@de ;
-                    skos:prefLabel "Turbolader"@de,
-                        "Turbocharger"@en .
-            
-            cx-taxo:EngineAlignment a skos:Concept ;
-                skos:broader cx-taxo:ConceptionalObject ;
-                skos:prefLabel "Engine Alignment"@en .
-
-                cx-taxo:LongitudinalEngine a skos:Concept ;
-                    skos:broader cx-taxo:EngineAlignment ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Longitudinal_engine> ;
-                    skos:prefLabel "Längsmotor"@de,
-                        "Longitudinal Engine"@en .
-
-                cx-taxo:ransverseEngine a skos:Concept ;
-                    skos:broader cx-taxo:EngineAlignment ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Transverse_engine> ;
-                    skos:prefLabel "Quermotor"@de,
-                        "Transverse Engine"@en .
-            
-            cx-taxo:DriveWheelType a skos:Concept ;
-                skos:broader cx-taxo:ConceptionalObject ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/Drive_wheel> ;
-                skos:prefLabel "Antriebsart"@de,
-                    "Drive Wheel Type"@en .
-
-                cx-taxo:AllWheelDrive a skos:Concept ;
-                    skos:broader cx-taxo:DriveWheelType ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/All-wheel_drive> ;
-                    skos:altLabel "Allrad"@de,
-                        "AWD"@en,
-                        "all-wheel drive"@en ;
-                    skos:prefLabel "Allradantrieb"@de,
-                        "All-Wheel Drive"@en .
-
-                cx-taxo:EightWheelDrive a skos:Concept ;
-                     skos:broader cx-taxo:DriveWheelType ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Eight-wheel_drive> ;
-                    skos:altLabel "8WD"@en,
-                        "8x8"@en,
-                        "eight-wheel drive"@en ;
-                    skos:definition "8WD refers to a four-axled vehicle drivetrain capable of providing torque to all of its wheels simultaneously."@en ;
-                    skos:prefLabel "Achtradantrieb"@de,
-                        "Eight-Wheel Drive"@en .
-
-                cx-taxo:FourWheelDrive a skos:Concept ;
-                                    skos:broader cx-taxo:DriveWheelType ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Four-wheel_drive> ;
-                    skos:altLabel "4WD"@en,
-                        "4x4"@en,
-                        "four-wheel drive"@en ;
-                    skos:definition "4WD refers to a two-axled vehicle drivetrain capable of providing torque to all of its wheels simultaneously."@en ;
-                    skos:prefLabel "Vierradantrieb"@de,
-                        "Four-Wheel Drive"@en .
-
-                cx-taxo:FrontWheelDrive a skos:Concept ;
-                                    skos:broader cx-taxo:DriveWheelType ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Front-wheel_drive> ;
-                    skos:altLabel "FWD"@en,
-                        "Front-wheel drive"@en ;
-                    skos:prefLabel "Frontantrieb"@de,
-                        "Front-Wheel Drive"@en .
-
-                cx-taxo:RearWheelDrive a skos:Concept ;
-                                    skos:broader cx-taxo:DriveWheelType ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Rear-wheel_drive> ;
-                    skos:altLabel "RWD"@en,
-                        "Rear-wheel drive"@en ;
-                    skos:prefLabel "Hinterradantrieb"@de,
-                        "Rear-Wheel Drive"@en .
-
-                cx-taxo:SixByFourWheelDrive a skos:Concept ;
-                                    skos:broader cx-taxo:DriveWheelType ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/6%C3%974_> ;
-                    skos:prefLabel "Six-By-Four-Wheel Drive"@en .
-
-                cx-taxo:SixWheelDrive a skos:Concept ;
-                     skos:broader cx-taxo:DriveWheelType ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Six-wheel_drive> ;
-                    skos:altLabel "6WD"@en,
-                        "6x6"@en,
-                        "six-wheel drive"@en ;
-                    skos:definition "6WD refers to a three-axled vehicle drivetrain capable of providing torque to all of its wheels simultaneously."@en ;
-                    skos:prefLabel "Sechsradantrieb"@de,
-                        "Six-Wheel Drive"@en .
-            
-            cx-taxo:BodyStyle a skos:Concept ;
-                skos:broader cx-taxo:ConceptionalObject ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/Car_body_style> ;
-                skos:altLabel "Karosserie"@de,
-                    "Karosserieversion"@de,
-                    "body category"@en,
-                    "body design"@en,
-                    "body type"@en ;
-                skos:example "sedan"@en ;
-                skos:prefLabel "Body Style"@en .
-
-                cx-taxo:Convertible a skos:Concept ;
-                    skos:broader cx-taxo:BodyStyle ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Convertible> ;
-                    skos:altLabel "Cabrio"@de,
-                        "cabriolet"@en ;
-                    skos:definition "A car that can be driven with or without a roof in place."@en ;
-                    skos:prefLabel "Cabriolet"@de,
-                        "Convertible"@en .
-
-                cx-taxo:Coupe a skos:Concept ;
-                    skos:broader cx-taxo:BodyStyle ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Coupe> ;
-                    skos:altLabel "Kupee"@de,
-                        "Zweitürer"@de,
-                        "coupé"@en ;
-                    skos:definition "A car with a sloping or truncated rear roofline and two doors."@en ;
-                    skos:prefLabel "Coupé"@de,
-                        "Coupe"@en .
-
-                cx-taxo:Hatchback a skos:Concept ;
-                    skos:broader cx-taxo:BodyStyle ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Hatchback> ;
-                    skos:prefLabel "Schrägheck-Limousinen"@de,
-                        "Hatchback"@en .
-
-                cx-taxo:Minivan a skos:Concept ;
-                    skos:broader cx-taxo:BodyStyle ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Minivan> ;
-                    skos:altLabel "MPV"@en,
-                        "Multi Purpose Vehicle"@en ;
-                    skos:prefLabel "Van"@de,
-                        "Van"@en .
-
-                cx-taxo:OffRoadVehicle a skos:Concept ;
-                    skos:broader cx-taxo:BodyStyle ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Off-road_vehicle> ;
-                    skos:altLabel "adventure vehicle"@en,
-                        "overland"@en ;
-                    skos:definition "A car that is capable of driving on and off paved or gravel surface."@en ;
-                    skos:prefLabel "Geländewagen"@de,
-                        "Off-Road Vehicle"@en .
-
-                cx-taxo:Roadster a skos:Concept ;
-                    skos:broader cx-taxo:BodyStyle ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Roadster_> ;
-                    skos:altLabel "spider"@en,
-                        "spyder"@en ;
-                    skos:definition "An open two-seat car with emphasis on sporting appearance or character"@en ;
-                    skos:prefLabel "Roadster"@de,
-                        "Roadster"@en .
-
-                cx-taxo:Sedan a skos:Concept ;
-                    skos:broader cx-taxo:BodyStyle ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Sedan_> ;
-                    skos:altLabel "limousine"@en,
-                        "saloon"@en ;
-                    skos:prefLabel "Limousine"@de,
-                        "Sedan"@en .
-
-                cx-taxo:SportsUtilityVehicle a skos:Concept ;
-                    skos:broader cx-taxo:BodyStyle ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Sport_utility_vehicle> ;
-                    skos:altLabel "SUV"@en,
-                        "sports utility vehicle"@en ;
-                    skos:definition "A car combined with elements of road and off-road cars, such as raised ground clearance and four-wheel drive."@en ;
-                    skos:prefLabel "SUV"@de,
-                        "SUV"@en .
-
-                cx-taxo:StationWagon a skos:Concept ;
-                    skos:broader cx-taxo:BodyStyle ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Station_wagon> ;
-                    skos:altLabel "Kombinationskraftwagen"@de,
-                        "estate"@en,
-                        "estate car"@en,
-                        "touring"@en,
-                        "wagon"@en ;
-                    skos:prefLabel "Kombi"@de,
-                        "Station Wagon"@en .
-
-            cx-taxo:BatteryType a skos:Concept ;
-                skos:broader cx-taxo:ConceptionalObject ;
-                skos:definition "by cathode material"@en ;
-                skos:prefLabel "Battery Type"@en .
-                
-                cx-taxo:LithiumCobaltOxide a skos:Concept ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Lithium_cobalt_oxide> ;
-                    skos:broader cx-taxo:BatteryType ;
-                    skos:altLabel "LCO"@en,
-                        "lithium-cobalt oxide"@en ;
-                    skos:prefLabel "Lithium Cobalt Oxide"@en .
-                
-                cx-taxo:LithiumIronPhosphate a skos:Concept ;
-                    skos:broader cx-taxo:BatteryType ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Lithium_iron_phosphate_battery> ;
-                    skos:altLabel "LiFePO4"@en,
-                        "lithium-iron-phosphate"@en ;
-                    skos:prefLabel "Lithium Iron Phosphate"@en .
-                
-                cx-taxo:LithiumManganeseOxide a skos:Concept ;
-                    skos:broader cx-taxo:BatteryType ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Lithium_ion_manganese_oxide_battery> ;
-                    skos:altLabel "LMO"@en,
-                        "lithium-manganese oxide"@en ;
-                    skos:prefLabel "Lithium Manganese Oxide"@en .
-                
-                cx-taxo:LithiumNickelCobaltAluminiumOxide  a skos:Concept ;
-                    skos:broader cx-taxo:BatteryType ;
-                    rdfs:seeAlso <https://de.wikipedia.org/wiki/Lithium-Nickel-Cobalt-Aluminium-Oxide> ;
-                    skos:altLabel "LiNCA"@en,
-                        "lithium-nickel-cobalt-aluminium oxide"@en ;
-                    skos:prefLabel "Lithium Nickel Cobalt Aluminium Oxide"@en .
-                
-                cx-taxo:LithiumNickelManganeseCobaltOxide a skos:Concept ;
-                    skos:broader cx-taxo:BatteryType ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Lithium_nickel_manganese_cobalt_oxides> ;
-                    skos:altLabel "LiNMC"@en,
-                        "lithium-nickel-manganese-cobalt oxide"@en ;
-                    skos:prefLabel "Lithium Nickel Manganese Cobalt Oxide"@en .
-
-            
-            cx-taxo:Licence a skos:Concept ;
-                skos:broader cx-taxo:ConceptionalObject ;
-                skos:prefLabel "Licence"@en .
-                
-                cx-taxo:EuDrivingLicence a skos:Concept ;
-                    skos:broader cx-taxo:Licence ;
-                    skos:prefLabel "Eu Driving Licence"@en.
-                
-                cx-taxo:EuDrivingLicence_A2 a skos:Concept ;
-                    skos:broader cx-taxo:EuDrivingLicence ;
-                    skos:definition "< 35kW"@en ;
-                    skos:note "motorcycle"@en ;
-                    skos:prefLabel "Leichtkraftrad"@de,
-                        "Motorcycle A2"@en .
-
-                cx-taxo:EuDrivingLicence_Am a skos:Concept ;
-                    skos:broader cx-taxo:EuDrivingLicence ;
-                    skos:definition "< 4kW, < 50 ccm, < 45 km/h"@en ;
-                    skos:note "moped"@en ;
-                    skos:prefLabel "Kleinkraftrad"@de,
-                        "Moped"@en .
-                
-                cx-taxo:EuDrivingLicence_B a skos:Concept ;
-                    skos:broader cx-taxo:EuDrivingLicence ;
-                    skos:definition "< 3.5 t, < 10 passengers"@en ;
-                    skos:note "general motor vehicle"@en ;
-                    skos:prefLabel "Kraftfahrzeug"@de,
-                        "Car B"@en .
-                
-                cx-taxo:EuDrivingLicence_B1 a skos:Concept ;
-                    skos:broader cx-taxo:EuDrivingLicence ;
-                    skos:definition "< 550 t"@en ;
-                    skos:note "general motor vehicle"@en ;
-                    skos:prefLabel "Kraftfahrzeug"@de,
-                        "Car B1"@en .
-                
-                cx-taxo:EuDrivingLicence_C a skos:Concept ;
-                    skos:broader cx-taxo:EuDrivingLicence ;
-                    skos:definition "> 7.5 t, < 10 passengers"@en ;
-                    skos:note "large goods vehicle"@en ;
-                    skos:prefLabel "Kraftfahrzeug"@de,
-                        "Truck C"@en .
-                
-                cx-taxo:EuDrivingLicence_C1 a skos:Concept ;
-                    skos:broader cx-taxo:EuDrivingLicence ;
-                    skos:definition "< 7.5 t, < 10 passengers"@en ;
-                    skos:note "large goods vehicle"@en ;
-                    skos:prefLabel "Kraftfahrzeug"@de,
-                        "Truck C1"@en .
-                
-                cx-taxo:EuDrivingLicence_D a skos:Concept ;
-                    skos:broader cx-taxo:EuDrivingLicence ;
-                    skos:definition "> 9 passengers"@en ;
-                    skos:note "large passenger vehicle"@en ;
-                    skos:prefLabel "Omnibus"@de,
-                        "Bus D"@en .
-                
-                cx-taxo:EuDrivingLicence_D1 a skos:Concept ;
-                    skos:broader cx-taxo:EuDrivingLicence ;
-                    skos:definition "< 17 passengers, < 8 m"@en ;
-                    skos:note "large passenger vehicle"@en ;
-                    skos:prefLabel "Omnibus"@de,
-                        "Bus D1"@en .
-                
-                cx-taxo:EuDrivingLicence_A1 a skos:Concept ;
-                    skos:broader cx-taxo:EuDrivingLicence ;
-                    skos:definition "< 11kW, > 50 ccm, < 125 ccm"@en ;
-                    skos:note "motorcycle"@en ;
-                    skos:prefLabel "Kraftrad"@de,
-                        "Motorcycle A1"@en .
-                
-                cx-taxo:EuDrivingLicence_A a skos:Concept ;
-                    skos:broader cx-taxo:EuDrivingLicence ;
-                    skos:definition "> 15 kW, > 50 ccm"@en ;
-                    skos:note "motorcycle"@en ;
-                    skos:prefLabel "Kraftrad"@de,
-                        "Motorcycle A"@en .
-            
-            cx-taxo:Standard a skos:Concept ;
-                skos:broader cx-taxo:ConceptionalObject ;
-                skos:prefLabel "Standard"@en .
-                
-                cx-taxo:IsoStandard_WorldManufacturerIdentifierCode a skos:Concept ;
-                    skos:broader cx-taxo:Standard ;
-                    rdfs:seeAlso <https://www.iso.org/standard/45844.html> ;
-                    skos:note "ISO 3780:2009"@en ;
-                    skos:prefLabel "World Manufacturer Identifier Code"@en .
-                
-                cx-taxo:IsoStandard_Iso185422 a skos:Concept ;
-                    skos:broader cx-taxo:Standard ;
-                    rdfs:seeAlso <https://www.iso.org/standard/58101.html> ;
-                    skos:altLabel "RMI"@en, "repair maintenance information"@en ;
-                    skos:prefLabel "Terminologie für Reparatur- und Wartungsinformationen"@de,
-                    "ISO 185422"@en .
-
-cx-taxo:Additive a skos:Concept ;
-    rdfs:seeAlso wiki-en:Q350176 ;
-    skos:narrower cx-taxo:A;
-    skos:broader cx-taxo:Material ;
-    skos:altLabel "Hilfsstoff"@de,
-        "Zusatzstoff"@de ;
-    skos:definition "A material that is used in small amounts in the production of a product and becomes part of the product."@en ;
-    skos:example "lubricant"@en ;
-    skos:prefLabel "Additiv"@de,
-        "Additive"@en .
-
-
-cx-taxo:Aerosol a skos:Concept ;
-    rdfs:seeAlso wiki-en:Aerosol ;
-    skos:broader cx-taxo:ChemicalDispersion ;
-    skos:example "fog"@en,
-        "smoke"@en ;
-    skos:prefLabel "Aerosol"@de,
-        "Aerosol"@en .
-
-cx-taxo:Alloy a skos:Concept ;
-    rdfs:seeAlso wiki-en:Alloy;
-    skos:broader cx-taxo:MetalMaterial ;
-    skos:prefLabel "Legierung"@de,
-        "Alloy"@en .
-
-cx-taxo:CeramicMaterial a skos:Concept ;
-    skos:broader cx-taxo:EngineeringMaterial ;
-    skos:altLabel "anorganisch-nichtmetallischer Werkstoff"@de ;
-    skos:prefLabel "Keramisches Material"@de,
-        "Ceramic Material"@en .
-
-cx-taxo:ChemicalCompound a skos:Concept ;
-    rdfs:seeAlso wiki-en:Chemical_compound ;
-    skos:broader cx-taxo:PureSubstance ;
-    skos:prefLabel "Verbindung"@de,
-        "Chemical Compound"@en .
-
-cx-taxo:ChemicalElement a skos:Concept ;
-    rdfs:seeAlso wiki-en:Chemical_element ;
-    skos:broader cx-taxo:PureSubstance ;
-    skos:prefLabel "Element"@de,
-        "Chemical Element"@en .
-
-cx-taxo:ChemicalProperty a skos:Concept ;
-    skos:broader cx-taxo:MaterialProperty ;
-    skos:prefLabel "Chemical Property"@en .
-
-cx-taxo:ChemicalSolution a skos:Concept ;
-    rdfs:seeAlso wiki-en:Solution_ ;
-    skos:broader cx-taxo:ChemicalMixture ;
-    skos:prefLabel "Lösung"@de,
-        "Chemical Solution"@en .
-
-cx-taxo:CompositeMaterial_Carbon a skos:Concept ;
-    skos:broader cx-taxo:CompositeMaterial ;
-    skos:altLabel "DIN EN 14598"@de ;
-    skos:note "body"@en ;
-    skos:prefLabel "Carbon"@en .
-
-cx-taxo:ElectricalProperty a skos:Concept ;
-    skos:broader cx-taxo:MaterialProperty ;
-    skos:prefLabel "Electrical Property"@en .
-
-cx-taxo:Filler a skos:Concept ;
-    rdf:seeAlso wiki-en:Filler_ ;
-    skos:broader cx-taxo:Material ;
-    skos:prefLabel "Füllstoff"@de,
-        "Filler"@en .
-
-cx-taxo:HeavyMetal a skos:Concept ;
-    rdfs:seeAlso wiki-en:Heavy_metals ;
-    skos:broader cx-taxo:MetalMaterial ;
-    skos:definition "density above 5 g/cm³"@en ;
-    skos:prefLabel "Schwermetall"@de,
-        "Heavy Metal"@en .
-
-cx-taxo:Law_SupplyChainAct a skos:Concept; 
-    skos:broader cx-taxo:Law ;
-    rdfs:seeAlso wiki-de:Lieferkettensorgfaltspflichtengesetz,
-        wiki-en:Supply_Chain_Act; ;
-    skos:altLabel "LKSG"@en,
-        "Lieferkettensorgfaltspflichtengesetz"@en,
-        "LkSG"@en ;
-    skos:prefLabel "Lieferkettengesetz"@de,
-        "Supply Chain Act"@en .
-
-cx-taxo:LightMetal a skos:Concept ;
-    rdfs:seeAlso wiki-en:Light_metal ;
-    skos:broader cx-taxo:MetalMaterial ;
-    skos:definition "density below 5 g/cm³"@en ;
-    skos:prefLabel "Leichtmetall"@de,
-        "Light Metal"@en .
-
-cx-taxo:Liquid a skos:Concept ;
-    rdfs:seeAlso wiki-en:Liquid ;
-    skos:broader cx-taxo:ChemicalDispersion ;
-    skos:example "emulsion"@en,
-        "foam"@en,
-        "suspension"@en ;
-    skos:prefLabel "Flüssigkeit"@de,
-        "Liquid"@en .
-
-cx-taxo:LiquidMaterial a skos:Concept ;
-    skos:broader cx-taxo:Material ;
-    skos:prefLabel "Flüssigkeit"@de,
-        "Liquid Material"@en .
-
-cx-taxo:MagneticProperty a skos:Concept ;
-    skos:broader cx-taxo:MaterialProperty ;
-    skos:prefLabel "Magnetic Property"@en .
-
-cx-taxo:MaterialStock a skos:Concept ;
-    skos:broader cx-taxo:InformationObject ;
-    skos:altLabel "Materialbestand"@de ;
-    skos:prefLabel "Materialvorrat"@de,
-        "Material Stock"@en .
-
-cx-taxo:MaterialTesting a skos:Concept ;
-    rdfs:seeAlso wiki-de:Werkstoffpr%C3%BCfung ;
-    skos:broader cx-taxo:Activity;
-    skos:prefLabel "Materialprüfung"@de,
-        "Material Testing"@en .
-
-cx-taxo:MechanicalProperty a skos:Concept ;
-    skos:broader cx-taxo:MaterialProperty ;
-    skos:prefLabel "Mechanical Property"@en .
-
-cx-taxo:MetalMaterial_Aluminium a skos:Concept ;
-    skos:broader cx-taxo:MetalMaterial ;
-    skos:altLabel "DIN EN 573"@de ;
-    skos:note "body"@en ;
-    skos:prefLabel "Aluminium"@en .
-
-cx-taxo:MetalMaterial_Copper a skos:Concept ;
-    skos:broader cx-taxo:MetalMaterial ;
-    skos:altLabel "DIN EN 1173"@de,
-        "DIN EN 1412"@de ;
-    skos:note "electric"@en ;
-    skos:prefLabel "Copper"@en .
-
-cx-taxo:MetalMaterial_Steel a skos:Concept ;
-    skos:broader cx-taxo:MetalMaterial ;
-    rdfs:seeAlso wiki-en:Steel ;
-    skos:altLabel "DIN EN 10027"@de ;
-    skos:note "body"@en ;
-    skos:prefLabel "Steel"@en .
-
-cx-taxo:MineralMaterial a skos:Concept ;
-    rdfs:seeAlso wiki-en:Mineral ;
-    skos:broader cx-taxo:Material ;
-    skos:prefLabel "Mineralstoff"@de,
-        "Mineral Material"@en .
-
-cx-taxo:NanoMaterial a skos:Concept ;
-    rdfs:seeAlso wiki-en:Nanomaterials ;
-    skos:broader cx-taxo:Material ;
-    skos:prefLabel "Nanomaterial"@de,
-        "Nano Material"@en .
-
-cx-taxo:NativeMetal a skos:Concept ;
-    rdfs:seeAlso wiki-en:Native_metal ;
-    skos:broader cx-taxo:MetalMaterial ;
-    skos:prefLabel "Reinmetal"@de,
-        "Native Metal"@en .
-
-cx-taxo:OperatingMaterial a skos:Concept ;
-    rdfs:seeAlso wiki-de:Betriebsstoff ;
-    skos:broader cx-taxo:Material ;
-    skos:altLabel "Betriebsmittel"@de ;
-    skos:definition "A material that is used for production and does not become part of the product."@en ;
-    skos:prefLabel "Betriebsstoff"@de,
-        "Operating Material"@en .
-
-cx-taxo:OpticalProperty a skos:Concept ;
-    skos:broader cx-taxo:MaterialProperty ;
-    skos:prefLabel "Optical Property"@en .
-
-cx-taxo:OrganicMaterial_ArtificialLeather a skos:Concept ; 
-    skos:broader cx-taxo:OrganicMaterial ;
-    rdfs:seeAlso wiki-en:Artificial_leather ;
-    skos:note "interior"@en ;
-    skos:prefLabel "Kunstleder"@de,
-        "Artificial Leather"@en .
-
-cx-taxo:OrganicMaterial_Leather a skos:Concept ;
-    skos:broader cx-taxo:OrganicMaterial ;
-    rdfs:seeAlso wiki-en:Leather ;
-    skos:note "interior"@en ;
-    skos:prefLabel "Leder"@de,
-        "Leather"@en .
-
-cx-taxo:PolymerMaterial_Plastic a skos:Concept ;
-    skos:broader cx-taxo:PolymerMaterial ;
-    skos:altLabel "DIN EN ISO 1043"@de ;
-    skos:note "interior"@en ;
-    skos:prefLabel "Plastic"@en .
-
-cx-taxo:PrimaryRawMaterial a skos:Concept ;
-    skos:broader cx-taxo:RawMaterial ;
-    skos:definition "Raw material that are yielded from natural resources."@en ;
-    skos:example "crude oil"@en ;
-    skos:prefLabel "Primary Raw Material"@en .
-
-cx-taxo:RawMaterial_Cobalt a skos:Concept ;
-    skos:broader cx-taxo:RawMaterial ;
-    skos:note "battery"@en ;
-    skos:prefLabel "Cobalt"@en .
-
-cx-taxo:RawMaterial_Dysprosium a skos:Concept ; 
-    skos:broader cx-taxo:RawMaterial ;
-    skos:note "electric motor"@en ;
-    skos:prefLabel "Dysprosium"@en .
-
-cx-taxo:RawMaterial_Graphite a skos:Concept ; 
-    skos:broader cx-taxo:RawMaterial ;
-    skos:note "battery"@en ;
-    skos:prefLabel "Graphite"@en .
-
-cx-taxo:RawMaterial_Iron a skos:Concept ; 
-    skos:broader cx-taxo:RawMaterial ;
-    skos:note "battery"@en ;
-    skos:prefLabel "Iron"@en .
-
-cx-taxo:RawMaterial_Lithium a skos:Concept ; 
-    skos:broader cx-taxo:RawMaterial ;
-    skos:note "battery"@en ;
-    skos:prefLabel "Lithium"@en .
-
-cx-taxo:RawMaterial_Manganese a skos:Concept ;
-    skos:broader cx-taxo:RawMaterial ;
-    skos:note "battery"@en ;
-    skos:prefLabel "Manganese"@en .
-
-cx-taxo:RawMaterial_Neodymium a skos:Concept ; 
-    skos:broader cx-taxo:RawMaterial ;
-    skos:note "electric motor"@en ;
-    skos:prefLabel "Neodymium"@en .
-
-cx-taxo:RawMaterial_Nickel a skos:Concept ; 
-    skos:broader cx-taxo:RawMaterial ;
-    skos:note "battery"@en ;
-    skos:prefLabel "Nickel"@en .
-
-cx-taxo:RawMaterial_Praseodymium a skos:Concept ;
-    skos:broader cx-taxo:RawMaterial ;
-    skos:note "electric motor"@en ;
-    skos:prefLabel "Praseodymium"@en .
-
-cx-taxo:Regulation a skos:Concept;
-    skos:broader cx-taxo:ConceptionalObject;
-    skos:prefLabel "Regulation"@de,
-        "Regulation"@en .
-
-cx-taxo:Regulation_EuDeforestationRegulation a skos:Concept ; 
-    skos:broader cx-taxo:Regulation ;
-    skos:definition "Regulation on deforestation-free products."@en ;
-    skos:prefLabel "Verordnung zur Entwaldung"@de,
-        "Eu Deforestation Regulation"@en .
-
-cx-taxo:SecondaryRawMaterial a skos:Concept ;
-    rdfs:seeAlso wiki-de:Sekund%C3%A4rrohstoff ;
-    skos:broader cx-taxo:RawMaterial ;
-    skos:altLabel "Recycling-Produkt"@de,
-        "Recyclingrohstoffe"@de,
-        "Rezyklate"@de,
-        "recyclate"@en,
-        "recycling product"@en ;
-    skos:definition "Raw material that yielded from recycling of waste."@en ;
-    skos:example "glas"@en,
-        "metal"@en,
-        "paper"@en ;
-    skos:prefLabel "Secondary Raw Material"@en .
-
-cx-taxo:SemiconductorMaterial a skos:Concept ;
-    rdfs:seeAlso wiki-en:Semiconductor ;
-    skos:broader cx-taxo:EngineeringMaterial ;
-    skos:prefLabel "Halbleiter Material"@de,
-        "Semiconductor Material"@en .
-
-cx-taxo:Solid a skos:Concept ;
-    rdfs:seeAlso wiki-en:Solid ;
-    skos:broader cx-taxo:ChemicalDispersion ;
-    skos:prefLabel "Feststoff"@de,
-        "Solid"@en .
-
-cx-taxo:StrategicRawMaterial a skos:Concept ;
-    rdfs:seeAlso wiki-en:Strategic_material ;
-    skos:broader cx-taxo:RawMaterial ;
-    skos:prefLabel "Strategic Raw Material"@en .
-
-cx-taxo:ThermalProperty a skos:Concept ;
-    skos:broader cx-taxo:MaterialProperty ;
-    skos:prefLabel "Thermal Property"@en .
-
-cx-taxo:CompositeMaterial a skos:Concept ;
-    rdfs:seeAlso wiki-en:Composite_material ;
-    skos:broader cx-taxo:EngineeringMaterial ;
-    skos:definition "mixture of materials"@en ;
-    skos:prefLabel "Verbundwerkstoff"@de,
-        "Composite Material"@en .
-
-cx-taxo:PolymerMaterial a skos:Concept ;
-    rdfs:seeAlso wiki-en:Plastic,
-        wiki-en:Polymer ;
-    skos:broader cx-taxo:EngineeringMaterial ;
-    skos:prefLabel "Kunststoff"@de,
-        "Polymer Material"@en .
-
-cx-taxo:ChemicalMixture a skos:Concept ;
-    rdfs:seeAlso wiki-en:Mixture ;
-    skos:broader cx-taxo:Substance ;
-    skos:prefLabel "Gemisch"@de,
-        "Chemical Mixture"@en .
-
-cx-taxo:OrganicMaterial a skos:Concept ;
-    rdfs:seeAlso wiki-en:Organic_matter ;
-    skos:broader cx-taxo:EngineeringMaterial ;
-    skos:altLabel "Organischer Werkstoff"@de ;
-    skos:example "fiber"@en,
-        "paper"@en,
-        "wood"@en ;
-    skos:prefLabel "Organisches Material"@de,
-        "Organic Material"@en .
-
-cx-taxo:PureSubstance a skos:Concept ;
-    rdfs:seeAlso wiki-de:Reinstoff ;
-    skos:broader cx-taxo:Substance ;
-    skos:altLabel "chemischer Stoff"@de ;
-    skos:prefLabel "Reinstoff"@de,
-        "Pure Substance"@en .
-
-cx-taxo:ChemicalDispersion a skos:Concept ;
-    rdfs:seeAlso wiki-en:Dispersion_ ;
-    skos:broader cx-taxo:ChemicalMixture ;
-    skos:prefLabel "Dispersion"@de,
-        "Chemical Dispersion"@en .
-
-
-
-cx-taxo:Substance a skos:Concept ;
-    rdfs:seeAlso wiki-en:Substance ;
-    skos:broader cx-taxo:MaterialThing ;
-    skos:altLabel "Stoff"@de ;
-    skos:definition "anything that has mass and takes up space"@en ;
-    skos:prefLabel "Substanz"@de,
-        "Substance"@en .
-
-cx-taxo:MetalMaterial a skos:Concept ;
-    rdfs:seeAlso wiki-en:Metal ;
-    skos:broader cx-taxo:EngineeringMaterial ;
-    skos:prefLabel "Metallmaterial"@de,
-        "Metal Material"@en .
-
-cx-taxo:MaterialProperty a skos:Concept ;
-    skos:broader cx-taxo:InformationObject ;
-    skos:prefLabel "Material Property"@en .
-
-cx-taxo:EngineeringMaterial a skos:Concept ;
-    skos:broader cx-taxo:IntermediateProduct;
-    rdfs:seeAlso wiki-de:Werkstoff,
-        wiki-en:Factors_of_production ;
-    skos:altLabel "engineered material"@en,
-        "engineering material"@en,
-        "technische Werkstoff"@en ;
-    skos:definition "A material that is used in the production of a product and becomes part of the product."@en ;
-    skos:example "aluminium alloy"@en ;
-    skos:prefLabel "Werkstoff"@de,
-        "Engineering Material"@en .
-
-cx-taxo:Material a skos:Concept ;
-    skos:broader cx-taxo:IntermediateProduct;
-    rdfs:seeAlso wiki-de:Material_ ;
-    skos:altLabel "Stoff"@de ;
-    skos:definition "Things that are used for the production of a product."@en ;
-    skos:example "rubber"@en ;
-    skos:prefLabel "Material"@de,
-        "Material"@en .
-
-cx-taxo:RawMaterial a skos:Concept ;
-    skos:broader cx-taxo:IntermediateProduct;
-    rdfs:seeAlso wiki-en:Raw_material ;
-    skos:altLabel "Rohmaterial"@de,
-        "commodity"@en,
-        "feedstock"@en,
-        "primary commodity"@en,
-        "unprocessed material"@en ;
-    skos:example "aluminium"@en,
-        "natural rubber"@en ;
-    skos:prefLabel "Rohstoff"@de,
-        "Raw Material"@en .
-
-cx-taxo:Manufacturer a skos:Concept ;
-    rdfs:seeAlso schema:manufacturer ;
-    skos:broader cx-taxo:Company;
-    skos:prefLabel "Hersteller"@de,
-        "Manufacturer"@en .
-        
-        cx-taxo:VehicleManufacturer a skos:Concept ;
-            skos:broader cx-taxo:Manufacturer ;
-            skos:altLabel "OEM"@en,
-                "original equipment manufacturer"@en ;
-            skos:example "Audi"@en,
-                "BMW"@en,
-                "Mercedes"@en,
-                "Volkswagen"@en ;
-            skos:prefLabel "Fahrzeughersteller"@de,
-                "Vehicle Manufacturer"@en .
-        
-        cx-taxo:PartManufacturer a skos:Concept ;
-            skos:broader cx-taxo:Manufacturer ;
-            skos:definition "A manufacturer of a part."@en ;
-            skos:prefLabel "Bauteilhersteller"@de,
-            "Part Manufacturer"@en .
-
-cx-taxo:Supplier a skos:Concept;
-    skos:broader cx-taxo:Company;
-    skos:altLabel "provider"@en,
-        "seller"@en,
-        "supplier"@en,
-        "vendor"@en ;
-    skos:prefLabel "Lieferant"@de,
-        "Supplier"@en .
-        
-        cx-taxo:PartSupplier a skos:Concept ;
-            skos:broader cx-taxo:Supplier ;
-            skos:definition "A supplier of a part."@en ;
-            skos:prefLabel "Bauteillieferant"@de,
-            "Part Supplier"@en .
-
-cx-taxo:MaterialManufacturer a skos:Concept ;
-    skos:broader  cx-taxo:Manufacturer ;
-    skos:prefLabel "Materialhersteller"@de,
-        "Material Manufacturer"@en .
-
-cx-taxo:MaterialSupplier a skos:Concept ;
-    skos:broader  cx-taxo:Supplier ;
-    skos:prefLabel "Materiallieferant"@de,
-        "Material Supplier"@en .
-
-cx-taxo:RawMaterialManufacturer a skos:Concept ;
-    skos:broader  cx-taxo:Manufacturer ;
-    skos:prefLabel "Rohstoffhersteller"@de,
-        "Raw Material Manufacturer"@en .
-
-cx-taxo:RawMaterialSupplier a skos:Concept ;
-    skos:broader  cx-taxo:Supplier ;
-    skos:example "small farmer"@en ;
-    skos:prefLabel "Rohstofflieferant"@de,
-        "Raw Material Supplier"@en .
-
-cx-taxo:Actor a skos:Concept ;
-    skos:broader  cx-taxo:Thing ;
-    rdfs:seeAlso schema:Role ;
-    skos:prefLabel "Actor"@de,
-        "Actor"@en .
-        
-        cx-taxo:Company a skos:Concept ;
-            skos:broader cx-taxo:Actor ;
-            skos:prefLabel "Company"@en,
-             "Unternhemen"@de.
-             
-             cx-taxo:Dealer a skos:Concept ;
-                skos:broader cx-taxo:Company ;
-                skos:prefLabel "Dealer"@en .
-                
-                cx-taxo:IndependentDealer a skos:Concept ;
-                    skos:broader cx-taxo:Dealer ;
-                    skos:prefLabel "Independent Dealer"@en .
-                
-                cx-taxo:UsedCarDealer a skos:Concept ;
-                    skos:broader cx-taxo:Dealer ;
-                    skos:prefLabel "Used Car Dealer"@en .
-                
-                cx-taxo:AuthorizedDealer a skos:Concept ;
-                    skos:broader cx-taxo:Dealer ;
-                    skos:prefLabel "Authorized Dealer"@en .
-
-
-cx-taxo:InformationObject a skos:Concept ;
-    skos:broader  cx-taxo:ConceptionalObject;
-    skos:prefLabel "InformationObject"@de,
-        "InformationObject"@en .
-        
-        cx-taxo:EuroCarSegment a skos:Concept ;
-            skos:broader cx-taxo:InformationObject ;
-            rdfs:seeAlso <https://en.wikipedia.org/wiki/Euro_Car_Segment>,
-                <https://en.wikipedia.org/wiki/Vehicle_size_class> ;
-            skos:definition "Car classification by market segment."@en ;
-            skos:prefLabel "Euro Fahrzeugsegment"@de,
-                "Euro Car Segment"@en .
-                
-                cx-taxo:EuroCarSegment_A a skos:Concept ;
-                    skos:broader cx-taxo:EuroCarSegment ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/A-segment> ;
-                    skos:altLabel "city car"@en,
-                        "minicompact car"@en ;
-                    skos:example "500"@en,
-                        "Panda"@en,
-                        "Smart"@en,
-                        "Twingo"@en,
-                        "Up"@en ;
-                    skos:prefLabel "Kleinstwagen"@de,
-                        "Mini car"@en .
-                
-                cx-taxo:EuroCarSegment_B a skos:Concept ;
-                    skos:broader cx-taxo:EuroCarSegment ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/B-segment> ;
-                    skos:altLabel "subcompact car"@en,
-                        "supermini car"@en ;
-                    skos:example "Fiesta"@en,
-                        "Mini"@en,
-                        "Polo"@en ;
-                    skos:prefLabel "Kleinwagen"@de,
-                        "Small car"@en .
-
-                
-                cx-taxo:EuroCarSegment_C a skos:Concept ;
-                    skos:broader cx-taxo:EuroCarSegment ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/C-segment> ;
-                    skos:altLabel "compact car"@en,
-                        "small family car"@en ;
-                    skos:example "1er"@en,
-                        "A-class"@en,
-                        "Corolla"@en,
-                        "Golf"@en ;
-                    skos:prefLabel "Mittelklasse"@de,
-                        "Medium car"@en .
-                
-                cx-taxo:EuroCarSegment_D a skos:Concept ;
-                    skos:broader cx-taxo:EuroCarSegment ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/D-segment> ;
-                    skos:altLabel "large family car"@en,
-                        "mid-size car"@en ;
-                    skos:example "3er"@en,
-                        "C-class"@en,
-                        "Passat"@en ;
-                    skos:prefLabel "Obere Mittelklasse"@de,
-                        "Large car"@en .
-                
-                cx-taxo:EuroCarSegment_E a skos:Concept ;
-                    skos:broader cx-taxo:EuroCarSegment ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/E-segment> ;
-                    skos:altLabel "full-size car"@en ;
-                    skos:example "5er"@en,
-                        "A6"@en,
-                        "E-class"@en ;
-                    skos:prefLabel "Oberklasse"@de,
-                        "Executive car"@en .
-                
-                cx-taxo:EuroCarSegment_F a skos:Concept ;
-                    skos:broader cx-taxo:EuroCarSegment ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/F-segment> ;
-                    skos:altLabel "full-size luxury car"@en,
-                        "luxury saloon car"@en ;
-                    skos:example "7er"@en,
-                        "A8"@en,
-                        "S-class"@en ;
-                    skos:prefLabel "Luxusklasse"@de,
-                        "Luxury car"@en .
-                
-                cx-taxo:EuroCarSegment_J a skos:Concept ;
-                    skos:broader cx-taxo:EuroCarSegment ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Sport_utility_vehicle> ;
-                    skos:altLabel "SUV"@en,
-                        "sport utility vehicle"@en ;
-                    skos:example "Wrangler"@en,
-                        "X5"@en ;
-                    skos:prefLabel "Geländewagen"@de,
-                        "Sport utility car"@en .
-                
-                cx-taxo:EuroCarSegment_M a skos:Concept ;
-                    skos:broader cx-taxo:EuroCarSegment ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/M-segment> ;
-                    skos:example "Sharan"@en,
-                        "Sprinter"@en ;
-                    skos:prefLabel "Mehrzweckfahrzeuge"@de,
-                        "Multi-purpose car"@en .
-                
-                cx-taxo:EuroCarSegment_S a skos:Concept ;
-                    skos:broader cx-taxo:EuroCarSegment ;
-                    rdfs:seeAlso <https://en.wikipedia.org/wiki/S-segment> ;
-                    skos:altLabel "roadster sport"@en ;
-                    skos:example "TT"@en,
-                        "Z4"@en ;
-                    skos:prefLabel "Sportwagen"@de,
-                        "Sports coupé"@en .
-
-        
-        cx-taxo:EuVehicleClass a skos:Concept ;
-            skos:broader cx-taxo:InformationObject ;
-            rdfs:seeAlso <https://de.wikipedia.org/wiki/EG-Fahrzeugklasse>,
-                <https://en.wikipedia.org/wiki/Vehicle_category#EU_classification> ;
-            skos:prefLabel "Eu Vehicle Class"@en .
-            
-            cx-taxo:EuVehicleClass_G a skos:Concept ;
-                skos:broader cx-taxo:EuVehicleClass ;
-                skos:definition "max 9 passengers"@en ;
-                skos:prefLabel "Geländewagen"@de,
-                    "Off-road"@en .
-            
-            cx-taxo:EuVehicleClass_L a skos:Concept ;
-                skos:broader cx-taxo:EuVehicleClass ;
-                skos:prefLabel "Leichte KFZ"@de,
-                    "Motorcycle"@en .
-            
-            cx-taxo:EuVehicleClass_M a skos:Concept ;
-                skos:broader cx-taxo:EuVehicleClass ;
-                skos:altLabel "Personenbeförderung"@de,
-                    "carriage of passengers"@en ;
-                skos:definition "min 4 wheels"@en ;
-                skos:prefLabel "Motor vehicle"@en .
-            
-            cx-taxo:EuVehicleClass_M1 a skos:Concept ;
-                skos:broader cx-taxo:EuVehicleClass ;
-                skos:altLabel "Automobile und Wohnmobile"@de ;
-                skos:definition "max 9 passengers"@en ;
-                skos:prefLabel "Car"@en .
-            
-            cx-taxo:EuVehicleClass_M2 a skos:Concept ;
-                skos:broader cx-taxo:EuVehicleClass ;
-                skos:definition "> 9 passengers, max 5 t"@en ;
-                skos:prefLabel "Small bus"@en .
-            
-            cx-taxo:EuVehicleClass_M3 a skos:Concept ;
-                skos:broader cx-taxo:EuVehicleClass ;
-                skos:definition "> 9 passengers, > 5 t"@en ;
-                skos:prefLabel "Large bus"@en .
-            
-            cx-taxo:EuVehicleClass_N a skos:Concept ;
-                skos:broader cx-taxo:EuVehicleClass ;
-                skos:altLabel "Güterbeförderung"@de,
-                    "carriage of goods"@en ;
-                skos:definition "min 4 wheels"@en ;
-                skos:prefLabel "Truck"@en .
-            
-            cx-taxo:EuVehicleClass_N1 a skos:Concept ;
-                skos:broader cx-taxo:EuVehicleClass ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/Light_commercial_vehicle> ;
-                skos:definition "max 3.5 t"@en ;
-                skos:prefLabel "Small truck"@en .
-            
-            cx-taxo:EuVehicleClass_N2 a skos:Concept ;
-                skos:broader cx-taxo:EuVehicleClass ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/Large_goods_vehicle> ;
-                skos:definition "> 3.5 t and < 12 t"@en ;
-                skos:prefLabel "Medium truck"@en .
-            
-            cx-taxo:EuVehicleClass_N3 a skos:Concept ;
-                skos:broader cx-taxo:EuVehicleClass ;
-                rdfs:seeAlso <https://en.wikipedia.org/wiki/Large_goods_vehicle> ;
-                skos:definition "> 12 t"@en ;
-                skos:prefLabel "Large truck"@en .
-            
-            cx-taxo:EuVehicleClass_O a skos:Concept ;
-                skos:broader cx-taxo:EuVehicleClass ;
-                skos:prefLabel "Anhänger"@de,
-                    "Trailer"@en .
-        
-        cx-taxo:AcrissCategory a skos:Concept ;
-            skos:broader cx-taxo:InformationObject ;
-            rdfs:seeAlso <https://de.wikipedia.org/wiki/Mietwagenklassifizierung>,
-            <https://en.wikipedia.org/wiki/Association_of_Car_Rental_Industry_Systems_Standards>;
-            skos:altLabel "ACRISS"@en,
-            "Association of Car Rental Industry Systems Standards"@en ;
-            skos:prefLabel "Acriss Category"@en .
-            
-            cx-taxo:AcrissCategory_C a skos:Concept ;
-                skos:broader cx-taxo:AcrissCategory ;
-                skos:prefLabel "Compact"@en .
-
-            cx-taxo:AcrissCategory_D a skos:Concept ;
-                skos:broader cx-taxo:AcrissCategory ;
-                skos:prefLabel "Compact Elite"@en .
-
-            cx-taxo:AcrissCategory_E a skos:Concept ;
-                skos:broader cx-taxo:AcrissCategory ;
-                skos:prefLabel "Economy"@en .
-
-            cx-taxo:AcrissCategory_F a skos:Concept ;
-                skos:broader cx-taxo:AcrissCategory ;
-                skos:prefLabel "Fullsize"@en .
-
-            cx-taxo:AcrissCategory_G a skos:Concept ;
-                skos:broader cx-taxo:AcrissCategory ;
-                skos:prefLabel "Fullsize Elite"@en .
-            
-            cx-taxo:AcrissCategory_H a skos:Concept ;
-                skos:broader cx-taxo:AcrissCategory ;
-                skos:prefLabel "Economy Elite"@en .
-
-            cx-taxo:AcrissCategory_I a skos:Concept ;
-                skos:broader cx-taxo:AcrissCategory ;
-                skos:prefLabel "Intermediate"@en .
-
-            cx-taxo:AcrissCategory_J a skos:Concept ;
-                skos:broader cx-taxo:AcrissCategory ;
-                skos:prefLabel "Intermediate Elite"@en .
-
-            cx-taxo:AcrissCategory_L a skos:Concept ;
-                skos:broader cx-taxo:AcrissCategory ;
-                skos:prefLabel "Luxury"@en .
-
-            cx-taxo:AcrissCategory_M a skos:Concept ;
-                skos:broader cx-taxo:AcrissCategory ;
-                skos:prefLabel "Mini"@en .
-
-            cx-taxo:AcrissCategory_N a skos:Concept ;
-                skos:broader cx-taxo:AcrissCategory ;
-                skos:prefLabel "Mini Elite"@en .
-
-            cx-taxo:AcrissCategory_O a skos:Concept ;
-                skos:broader cx-taxo:AcrissCategory ;
-                skos:prefLabel "Oversize"@en .
-
-            cx-taxo:AcrissCategory_P a skos:Concept ;
-                skos:broader cx-taxo:AcrissCategory ;
-                skos:prefLabel "Premium"@en .
-
-            cx-taxo:AcrissCategory_R a skos:Concept ;
-                skos:broader cx-taxo:AcrissCategory ;
-                skos:prefLabel "Standard Elite"@en .
-
-            cx-taxo:AcrissCategory_S a skos:Concept ;
-                skos:broader cx-taxo:AcrissCategory ;
-                skos:prefLabel "Standard"@en .
-
-            cx-taxo:AcrissCategory_U a skos:Concept ;
-                skos:broader cx-taxo:AcrissCategory ;
-                skos:prefLabel "Premium Elite"@en .
-
-            cx-taxo:AcrissCategory_W a skos:Concept ;
-                skos:broader cx-taxo:AcrissCategory ;
-                skos:prefLabel "Luxury Elite"@en .
-
-            cx-taxo:AcrissCategory_X a skos:Concept ;
-                skos:broader cx-taxo:AcrissCategory ;
-                skos:prefLabel "Special"@en .
+
+<https://w3id.org/catenax/taxonomy> a skos:ConceptScheme ;
+    dc:creator "[@arnoweiss](https://github.com/arnoweiss)",
+        "[@obalandi](https://github.com/obalandi)" ;
+    dc:date "2023-05-05"^^xsd:date ;
+    dc:description "This taxonomy represents and contains all of the concepts that are used in the Catena-X ontologies."@en ;
+    dc:title "Catena-X Taxonomy" ;
+    owl:versionInfo "0.1.0" ;
+    skos:hasTopConcept cx-taxo:Thing ;
+    skos:prefLabel "Catena-X Taxonomy"@en .
+
+cx-taxo:DcmIdBasedComment a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to receive an ID Based Comment in DCM context" ;
+    skos:prefLabel "Receive ID Based Comment for DCM"@en .
+
+cx-taxo:DcmIdBasedRequestForUpdate a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to receive an ID Based Request for Update in DCM context" ;
+    skos:prefLabel "Receive ID Based Request for Update DCM"@en .
+
+cx-taxo:DcmMaterialDemand a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to receive a Material Demand in DCM context" ;
+    skos:prefLabel "Receive Material Demand DCM"@en .
+
+cx-taxo:DcmWeekBasedCapacityGroup a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to receive a Week Based Capacity Group in DCM context" ;
+    skos:prefLabel "Receive Week Based Capacity Group DCM"@en .
+
+cx-taxo:DcmWeekBasedMaterialDemand a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to receive a Week Based Material Demand in DCM context" ;
+    skos:prefLabel "Receive Week Based Material Demand DCM"@en .
+
+cx-taxo:DigitalTwinRegistry a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "The Digital Twin Registry (DTR) is the union of the Catena-X-selected subsets of the Asset Administration Shell Registry and Discovery APIs." ;
+    skos:example "https://github.com/eclipse-tractusx/sldt-digital-twin-registry" ;
+    skos:prefLabel "Digital Twin Registry"@en .
+
+cx-taxo:ErrorCause a skos:Concept ;
+    skos:broader cx-taxo:ConceptualObject ;
+    skos:definition "An analysis result can indicate possible and current error causes. "@en ;
+    skos:prefLabel "Error Cause"@en .
+
+cx-taxo:GraphAsset a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "This subconcept of Asset allows arbitrary data queries to be executed on assets."@en ;
+    skos:prefLabel "Graph Asset"@en .
+
+cx-taxo:LoadSpectrumAnalysis a skos:Concept ;
+    skos:broader cx-taxo:Analysis ;
+    skos:definition "Load spectrum analysis is an analysis that calculates load spectrum values for a vehicle part."@en ;
+    skos:prefLabel "Load Spectrum Analysis"@en .
+
+cx-taxo:PcfExchange a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to exchange data on Product Carbon Footprints" ;
+    skos:prefLabel "PCF Exchange API"@en .
+
+cx-taxo:QualityAsset a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "This subconcept of Asset signifies that a data offer is associated with the Quality use-case. Assets and data offers are further specified by the dcat:conformsTo property."@en ;
+    skos:prefLabel "Quality Asset"@en .
+
+cx-taxo:ReceiveQualityAlertNotification a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to receive quality alert notifications" ;
+    skos:prefLabel "Receive Quality Alert Notification"@en .
+
+cx-taxo:ReceiveQualityInvestigationNotification a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to receive quality investigation notifications" ;
+    skos:prefLabel "Receive Quality Investigation Notification"@en .
+
+cx-taxo:ReceiveUniqueIdPushNotification a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to receive Unique Id Push notifications" ;
+    skos:prefLabel "Receive Unique ID Push Notification"@en .
+
+cx-taxo:ResolveQualityAlertNotification a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to resolve quality Alert notifications" ;
+    skos:prefLabel "Resolve Quality Alert Notification"@en .
+
+cx-taxo:ResolveQualityInvestigationNotification a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to update quality investigation notifications" ;
+    skos:prefLabel "Resolve Quality Investigation Notification"@en .
+
+cx-taxo:SkillAsset a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "This subconcept of Asset allows only the execution of predefined data queries on assets."@en ;
+    skos:prefLabel "Skill Asset"@en .
+
+cx-taxo:Submodel a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "The Submodel API serves aspects of a Digital Twin according to the Asset Administration Shell standard." ;
+    skos:prefLabel "Submodel"@en .
+
+cx-taxo:UniqueIdPushConnectToChildNotification a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to receive a Unique ID Push notification to connect a digital twin with its child digital twin (top-down notification)" ;
+    skos:prefLabel "Unique ID Push Connect-to-Child Notification"@en .
+
+cx-taxo:UniqueIdPushConnectToParentNotification a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to receive a Unique ID Push notification to connect a digital twin with its parent digital twin (bottom-up notification)" ;
+    skos:prefLabel "Unique ID Push Connect-to-Parent Notification"@en .
+
+cx-taxo:UpdateQualityAlertNotification a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to update quality Alert notifications" ;
+    skos:prefLabel "Update Quality Alert Notification"@en .
+
+cx-taxo:UpdateQualityInvestigationNotification a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to update quality investigation notifications" ;
+    skos:prefLabel "Update Quality Investigation Notification"@en .
+
+cx-taxo:Address a skos:Concept ;
+    skos:broader cx-taxo:ConceptualObject ;
+    skos:definition "The address describes the legal address of places."@en ;
+    skos:prefLabel "Address"@en .
+
+cx-taxo:AnalysisDevice a skos:Concept ;
+    skos:broader cx-taxo:Actor ;
+    skos:definition "An analysis device, e.g. a diagnostic device, reads or calculates certain analysis results."@en ;
+    skos:prefLabel "Analysis Device"@en .
+
+cx-taxo:BillOfMaterial a skos:Concept ;
+    skos:broader cx-taxo:ConceptualObject ;
+    skos:definition "The Bill Of Material relates qualitatively and quantitatively Assembly Parts to their Components."@en ;
+    skos:prefLabel "Bill Of Material"@en .
+
+cx-taxo:BusinessPartner a skos:Concept ;
+    skos:broader cx-taxo:Actor ;
+    skos:definition "A Business Partner is a legal entity that is part of the Catena-X network or that stands in a relevant relation to a Catena-X Business Partner."@en ;
+    skos:prefLabel "Business Partner"@en .
+
+cx-taxo:DataspaceConnector a skos:Concept ;
+    skos:broader cx-taxo:Application ;
+    skos:definition "Dataspace Connector is an interface based on the Eclipse Dataspace Connector technology. A Dataspace Connector makes various assets available through contracts. A contract describes with which policy which asset can be provided."@en ;
+    skos:prefLabel "Dataspace Connector"@en .
+
+cx-taxo:Diagnosis a skos:Concept ;
+    skos:broader cx-taxo:Analysis ;
+    skos:definition "Vehicle diagnosis is the identification of a problem or the cause and location of a problem."@en ;
+    skos:prefLabel "Diagnosis"@en .
+
+cx-taxo:DiagnosticTroubleCode a skos:Concept ;
+    skos:broader cx-taxo:AnalysisResult ;
+    skos:definition "Diagnostic Trouble Code, is a code used to diagnose malfunctions in a vehicle."@en ;
+    skos:prefLabel "Diagnostic Trouble Code"@en .
+
+cx-taxo:HealthIndication a skos:Concept ;
+    skos:broader cx-taxo:PrognosisFunction ;
+    skos:definition "Health Indication is an evaluation function operating on batches of load collectives and adaptive values."@en ;
+    skos:prefLabel "Health Indication"@en .
+
+cx-taxo:LoadSpectrum a skos:Concept ;
+    skos:broader cx-taxo:AnalysisResult ;
+    skos:definition "Load spectrum is a 2d histogram that contains the load history of a vehicle, i.e. how a vehicle was used, for a given time period."@en ;
+    skos:prefLabel "Load Spectrum"@en .
+
+cx-taxo:Part a skos:Concept ;
+    skos:broader cx-taxo:PhysicalObject ;
+    skos:definition "A part in the automotive context is a component of a vehicle. Parts may have sub-parts that perform specific sub-functions."@en ;
+    skos:prefLabel "Part"@en .
+
+cx-taxo:Place a skos:Concept ;
+    skos:broader cx-taxo:Thing ;
+    skos:definition "The Place is determined by reference to the position of objects such as buildings, cities, or special geographic markers."@en ;
+    skos:prefLabel "Place"@en .
+
+cx-taxo:RemainingUsefulLife a skos:Concept ;
+    skos:broader cx-taxo:PrognosisFunction ;
+    skos:definition "Remaining Useful Life is a Prediction of the Estimated Mileage/Runtime until a Breakdown."@en ;
+    skos:prefLabel "Remaining Useful Life"@en .
+
+cx-taxo:SupplyChain a skos:Concept ;
+    skos:broader cx-taxo:ConceptualObject ;
+    skos:definition "The Supply Chain relates consumers and a supplier."@en ;
+    skos:prefLabel "Supply Chain"@en .
+
+cx-taxo:Vehicle a skos:Concept ;
+    skos:broader cx-taxo:PhysicalObject ;
+    skos:definition "A vehicle is a motor-powered road vehicle that transports people or cargo ."@en ;
+    skos:prefLabel "Vehicle"@en .
 
 cx-taxo:Activity a skos:Concept ;
-    skos:broader  cx-taxo:Thing;
-    skos:prefLabel "Aktivität"@de,
-        "Activity"@en .
-        
-        cx-taxo:Production a skos:Concept ;
-            skos:broader cx-taxo:Activity ;
-            skos:prefLabel "Production"@en.
-            
-            cx-taxo:Batch a skos:Concept ;
-                skos:broader cx-taxo:Production ;
-                skos:altLabel "lot"@en ;
-                skos:prefLabel "Charge"@de, "Batch"@en .
+    skos:broader cx-taxo:Thing ;
+    skos:definition "This class comprises actions intentionally carried out by instances of Actor that result in changes of state in physical and conceptual objects."@en ;
+    skos:narrower cx-taxo:Analysis ;
+    skos:prefLabel "Activity"@en .
 
-cx-taxo:Law a skos:Concept ;
-    skos:broader  cx-taxo:ConceptionalObject;
-    skos:prefLabel "Gesetz"@de,
-        "Law"@en .
+cx-taxo:AnalysisResult a skos:Concept ;
+    skos:broader cx-taxo:Result ;
+    skos:definition "Results of the analysis activity."@en ;
+    skos:narrower cx-taxo:DiagnosticTroubleCode,
+        cx-taxo:LoadSpectrum ;
+    skos:prefLabel "Analysis Result"@en .
 
-cx-taxo:MaterialThing a skos:Concept;
-    skos:broader  cx-taxo:PhysicalObject;
-    skos:prefLabel "Material"@de,
-        "MaterialThing"@en .
+cx-taxo:Function a skos:Concept ;
+    skos:broader cx-taxo:Application ;
+    skos:definition "A function defines a calculation that is called through an API."@en ;
+    skos:narrower cx-taxo:PrognosisFunction ;
+    skos:prefLabel "Function"@en .
 
-cx-taxo:IntermediateProduct a skos:Concept ;
-    skos:broader  cx-taxo:PhysicalObject;
-    skos:prefLabel "Zwischenprodukt"@de,
-        "IntermediateProduct"@en .
+cx-taxo:Result a skos:Concept ;
+    skos:broader cx-taxo:ConceptualObject ;
+    skos:definition "Specific conceptual outcomes of an activity or application."@en ;
+    skos:prefLabel "Result"@en .
 
-cx-taxo:MaterialInformation a skos:Concept ;
-    skos:broader cx-taxo:InformationObject ;
-    skos:prefLabel "Material Information"@en .
+cx-taxo:Actor a skos:Concept ;
+    skos:broader cx-taxo:Thing ;
+    skos:definition "The actor  comprises organization or people, either individually or in groups, who have the potential to perform intentional actions of kinds for which someone may be held responsible."@en ;
+    skos:narrower cx-taxo:AnalysisDevice,
+        cx-taxo:BusinessPartner ;
+    skos:prefLabel "Actor"@en .
 
-cx-taxo:BuildingMaterial a skos:Concept ;
-    rdfs:seeAlso wiki-en:Building_material ;
-    skos:broader cx-taxo:Material ;
-    skos:prefLabel "Baustoff"@de,
-        "Building Material"@en .
+cx-taxo:Analysis a skos:Concept ;
+    skos:broader cx-taxo:Activity ;
+    skos:definition "An analysis is an activity that includes all types of reliability and quality analyses."@en ;
+    skos:narrower cx-taxo:Diagnosis ;
+    skos:prefLabel "Analysis"@en .
+
+cx-taxo:Application a skos:Concept ;
+    skos:broader cx-taxo:ConceptualObject ;
+    skos:definition "An application defines a coded software that fulfills a specific purpose."@en ;
+    skos:narrower cx-taxo:Asset,
+        cx-taxo:DataspaceConnector,
+        cx-taxo:Function ;
+    skos:prefLabel "Application"@en .
+
+cx-taxo:PhysicalObject a skos:Concept ;
+    skos:broader cx-taxo:Thing ;
+    skos:definition "This concept includes objects of a material nature, which are documentation units and have physical boundaries."@en ;
+    skos:narrower cx-taxo:Part,
+        cx-taxo:Vehicle ;
+    skos:prefLabel "Physical Object"@en .
+
+cx-taxo:PrognosisFunction a skos:Concept ;
+    skos:broader cx-taxo:Function ;
+    skos:definition "In the automotive industry, a prognosis is a prediction of the probable failure of an operational function." ;
+    skos:narrower cx-taxo:HealthIndication,
+        cx-taxo:RemainingUsefulLife ;
+    skos:prefLabel "Prognosis Function"@en .
+
+cx-taxo:Thing a skos:Concept ;
+    skos:definition "The top concept of all the Catena X concepts."@en ;
+    skos:narrower cx-taxo:Activity,
+        cx-taxo:Actor,
+        cx-taxo:ConceptualObject,
+        cx-taxo:PhysicalObject,
+        cx-taxo:Place ;
+    skos:prefLabel "Thing"@en .
+
+cx-taxo:ConceptualObject a skos:Concept ;
+    skos:broader cx-taxo:Thing ;
+    skos:definition "This concept includes non-material products, human-produced data related to physical objects. The production of such information may have been supported by the use of technical tools."@en ;
+    skos:narrower cx-taxo:Address,
+        cx-taxo:Application,
+        cx-taxo:BillOfMaterial,
+        cx-taxo:Result,
+        cx-taxo:SupplyChain ;
+    skos:prefLabel "Conceptional Object"@en .
+
+cx-taxo:Asset a skos:Concept ;
+    skos:broader cx-taxo:ConceptionalObject ;
+    skos:definition "The Asset concept describes the provision via a repository of a specific set of data for a specific purpose. It is defined by its public API."@en ;
+    skos:prefLabel "Asset"@en .
+

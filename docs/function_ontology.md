@@ -15,7 +15,7 @@
 
 **Date:**  2023-06-29
 
-**Version:**  None
+**Version:**  1.11.0
 
 **Imports:**  file:common_ontology.ttl , file:core_ontology.ttl 
 

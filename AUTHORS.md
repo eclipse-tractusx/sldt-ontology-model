@@ -25,5 +25,7 @@ The following people have contributed to this repository:
 * Zazralt Magic, BMW Group, https://github.com/ZazraltMagic
 * Oguzhan Balandi, T-Systems International GmbH, https://github.com/obalandi
 * Rolf Bosse, Mercedes-Benz AG, https://github.com/bosserf
+* Joerg-Schulz, ZF Friedrichshafen AG, https://github.com/Joerg-Schulz
+* Arno Weiss, SAP AG, https://github.com/arnoweiss
 
 Please add yourself to this list, if you contribute to the content.

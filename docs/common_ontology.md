@@ -15,7 +15,7 @@
 
 **Date:**  2023-05-23
 
-**Version:**  1.9.4
+**Version:**  1.9.5
 
 **Imports:**  file:core_ontology.ttl 
 
@@ -81,7 +81,7 @@ classDiagram
 |<span id="publishedUnderContract">publishedUnderContract</span>|This property refers to the contract associated with the asset.|[Asset](#Asset) |xsd:string ||
 |<span id="satisfiesRole">satisfiesRole</span>|Use Case Role IRI.|[Asset](#Asset) |xsd:anyURI ||
 |<span id="isFederated">isFederated</span>|If this property is set to true, it means that this connector will federate with other connectors.|[Asset](#Asset) |xsd:boolean ||
-|<span id="url">url</span>||[DataspaceConnector](#DataspaceConnector) |xsd:anyURI ||
+|<span id="url">url</span>|Uniform Resource Locator of SPARQL Endpoint.|[DataspaceConnector](#DataspaceConnector) |xsd:anyURI ||
 |<span id="authenticationInformation">authenticationInformation</span>|Base property for all authentication informations.|[Asset](#Asset) |xsd:string ||
 |<span id="authenticationCode">authenticationCode</span>|An authentication code under which authentication information are transmitted.|[Asset](#Asset) |xsd:string |[authenticationInformation](#authenticationInformation) |
 |<span id="authenticationKey">authenticationKey</span>|An authentication key which encodes some authentication proof.|[Asset](#Asset) |xsd:string |[authenticationInformation](#authenticationInformation) |
