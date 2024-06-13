@@ -7,9 +7,6 @@
 - Ontologies can be used universally. Therefore, existing ontologies from other sources can be adapted to the Catena-X landscape.
 - The ontologies are developed as part of the Tractus-X project and published on w3id.org.
 
-#### **Core Modelling Team**
-- T-Systems, Mercedes, ZF
-
 <br/>
 
 <div align="center"  width="100%">

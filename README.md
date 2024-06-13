@@ -49,9 +49,9 @@ Main ontologies:
 
 Domain ontologies:
 - [Bill of Material](docs/bill-of-material_ontology.md)
-- [Behaviour](docs/behavior_ontology.md)
+- [Behaviour](docs/behaviour_ontology.md)
 - [Supply Chain Ontology](docs/supply-chain_ontology.md)
-- [Reliability](docs/realibility_ontology.md)
+- [Reliability](docs/reliability_ontology.md)
 - [Vehicle Ontology](docs/vehicle_ontology.md)
 
 Taxonomy:

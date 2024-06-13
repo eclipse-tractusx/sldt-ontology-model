@@ -167,8 +167,7 @@ cx-taxo:Thing a skos:Concept ;
         cx-taxo:AnalysisDevice a skos:Concept ;
             skos:broader cx-taxo:Actor ;
             skos:definition "An analysis device, e.g. a diagnostic device, reads or calculates certain analysis results."@en ;
-            skos:prefLabel "Analysis Device"@en ;
-        .
+            skos:prefLabel "Analysis Device"@en .
         
         cx-taxo:BusinessPartner a skos:Concept ;
             skos:broader cx-taxo:Actor ;
