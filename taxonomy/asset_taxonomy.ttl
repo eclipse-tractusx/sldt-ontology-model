@@ -38,7 +38,7 @@
                         skos:prefLabel "Asset Taxonomy"@en .
 
 cx-taxo:Asset a skos:Concept ;
-                skos:broader cx-taxo:ConceptionalObject ;
+                skos:broader cx-taxo:Application ;
                 skos:prefLabel "Asset"@en ;
                 skos:definition "The Asset concept describes the provision via a repository of a specific set of data for a specific purpose. It is defined by its public API."@en .
 
