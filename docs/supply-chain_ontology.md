@@ -65,3 +65,15 @@ classDiagram
 |<span id="good">good</span>|Refers to the goods in the supply chain.|[SupplyChain](#SupplyChain) |[PhysicalObject](./core_ontology.md#PhysicalObject) ||
 |<span id="recipient">recipient</span>|Refers to the recipient.|[SupplyChain](#SupplyChain) |[BusinessPartner](./common_ontology.md#BusinessPartner) ||
 |<span id="supplier">supplier</span>|Refers to the supplier.|[SupplyChain](#SupplyChain) |[BusinessPartner](./common_ontology.md#BusinessPartner) ||
+
+## NOTICE
+
+This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
+
+- Copyright (c) 2024 T-Systems International GmbH
+- Copyright (c) 2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
+- Copyright (c) 2024 ZF Friedrichshafen AG 
+- Copyright (c) 2024 Mercedes-Benz AG 
+- Copyright (c) 2024 SAP AG
+- Copyright (c) 2024 Catena-X Association
+- Copyright (c) 2024 Contributors to the Eclipse Foundation

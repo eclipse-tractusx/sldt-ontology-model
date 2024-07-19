@@ -107,3 +107,15 @@ classDiagram
 |<span id="refersToPhysicalObject">refersToPhysicalObject</span>|This property refers to actively or passively used physical objects in an Activity.|[Activity](#Activity) |[PhysicalObject](#PhysicalObject) ||
 |<span id="relatedToPlace">relatedToPlace</span>|This property describes that an actor has a relationship to a particular place, such as reside, own, or manage, etc.|[Actor](#Actor) |[Place](#Place) ||
 |<span id="takesPlaceAt">takesPlaceAt</span>|This property describes the spatial location of an activity.|[Activity](#Activity) |[Place](#Place) ||
+
+## NOTICE
+
+This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
+
+- Copyright (c) 2024 T-Systems International GmbH
+- Copyright (c) 2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
+- Copyright (c) 2024 ZF Friedrichshafen AG 
+- Copyright (c) 2024 Mercedes-Benz AG 
+- Copyright (c) 2024 SAP AG
+- Copyright (c) 2024 Catena-X Association
+- Copyright (c) 2024 Contributors to the Eclipse Foundation

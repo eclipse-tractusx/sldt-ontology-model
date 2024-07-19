@@ -161,3 +161,15 @@ classDiagram
 |<span id="possibleCause">possibleCause</span>|Refers to possible cause.|[DiagnosticTroubleCode](#DiagnosticTroubleCode) |[ErrorCause](#ErrorCause) ||
 |<span id="result">result</span>|Refers to analysis result.|[Analysis](#Analysis) |[AnalysisResult](#AnalysisResult) |[refersToConceptualObject](./core_ontology.md#refersToConceptualObject) |
 |<span id="value">value</span>|Refers to load spectrum value.|[LoadSpectrum](#LoadSpectrum) |[LoadSpectrumValue](#LoadSpectrumValue) ||
+
+## NOTICE
+
+This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
+
+- Copyright (c) 2024 T-Systems International GmbH
+- Copyright (c) 2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
+- Copyright (c) 2024 ZF Friedrichshafen AG 
+- Copyright (c) 2024 Mercedes-Benz AG 
+- Copyright (c) 2024 SAP AG
+- Copyright (c) 2024 Catena-X Association
+- Copyright (c) 2024 Contributors to the Eclipse Foundation
