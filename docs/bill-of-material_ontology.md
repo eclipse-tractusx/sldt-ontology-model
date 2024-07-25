@@ -78,3 +78,15 @@ classDiagram
 |<span id="concept">concept</span>|Lists the concepts of a bill of material.|[BillOfMaterial](#BillOfMaterial) |[ConceptualObject](./core_ontology.md#ConceptualObject) ||
 |<span id="hasBom">hasBom</span>|Refers the bill of material of an assembly.|[PhysicalObject](./core_ontology.md#PhysicalObject) |[BillOfMaterial](#BillOfMaterial) ||
 |<span id="supplier">supplier</span>|The supplier of the component(s).|[BillOfMaterial](#BillOfMaterial) |[BusinessPartner](./common_ontology.md#BusinessPartner) ||
+
+## NOTICE
+
+This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
+
+- Copyright (c) 2024 T-Systems International GmbH
+- Copyright (c) 2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
+- Copyright (c) 2024 ZF Friedrichshafen AG 
+- Copyright (c) 2024 Mercedes-Benz AG 
+- Copyright (c) 2024 SAP AG
+- Copyright (c) 2024 Catena-X Association
+- Copyright (c) 2024 Contributors to the Eclipse Foundation

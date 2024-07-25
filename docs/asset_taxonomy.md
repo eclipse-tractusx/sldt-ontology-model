@@ -1,9 +1,4 @@
-
-
-
-
 # Asset Taxonomy
-
 
 **Title:**  Asset Taxonomy
 
@@ -45,3 +40,15 @@
 |<span id="DcmWeekBasedCapacityGroup">DcmWeekBasedCapacityGroup</span>|Receive Week Based Capacity Group DCM|API to receive a Week Based Capacity Group in DCM context|[Asset](#Asset) ||
 |<span id="DcmIdBasedRequestForUpdate">DcmIdBasedRequestForUpdate</span>|Receive ID Based Request for Update DCM|API to receive an ID Based Request for Update in DCM context|[Asset](#Asset) ||
 |<span id="DcmIdBasedComment">DcmIdBasedComment</span>|Receive ID Based Comment for DCM|API to receive an ID Based Comment in DCM context|[Asset](#Asset) ||
+
+## NOTICE
+
+This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
+
+- Copyright (c) 2024 T-Systems International GmbH
+- Copyright (c) 2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
+- Copyright (c) 2024 ZF Friedrichshafen AG 
+- Copyright (c) 2024 Mercedes-Benz AG 
+- Copyright (c) 2024 SAP AG
+- Copyright (c) 2024 Catena-X Association
+- Copyright (c) 2024 Contributors to the Eclipse Foundation

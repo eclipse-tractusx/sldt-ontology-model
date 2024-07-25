@@ -171,3 +171,15 @@ classDiagram
 |<span id="healthIndicatorValues">healthIndicatorValues</span>|Health Indicator Values are percentages.|[HealthIndicatorResult](#HealthIndicatorResult) |json:Object |[returnValue](./function_ontology.md#returnValue) |
 |<span id="metadata">metadata</span>|Additional Metadata of the Loadspectrum.|[RemainingUsefulLife](#RemainingUsefulLife) |json:Object |[prognosisFunctionArgument](#prognosisFunctionArgument) |
 |<span id="notification">notification</span>|An optional notification output template.|[RemainingUsefulLife](#RemainingUsefulLife) |json:Object |[prognosisFunctionArgument](#prognosisFunctionArgument) |
+
+## NOTICE
+
+This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
+
+- Copyright (c) 2024 T-Systems International GmbH
+- Copyright (c) 2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
+- Copyright (c) 2024 ZF Friedrichshafen AG 
+- Copyright (c) 2024 Mercedes-Benz AG 
+- Copyright (c) 2024 SAP AG
+- Copyright (c) 2024 Catena-X Association
+- Copyright (c) 2024 Contributors to the Eclipse Foundation

@@ -84,3 +84,15 @@ classDiagram
 |<span id="resultConfigurationProperty">resultConfigurationProperty</span>|API configuration property for Result.|[Result](#Result) |||
 |<span id="outputProperty">outputProperty</span>|Determines a path/name in the output response under which all output arguments are encoded. Default is '.'|[Result](#Result) |xsd:string |[resultConfigurationProperty](#resultConfigurationProperty) |
 |<span id="resultIdProperty">resultIdProperty</span>|Determines a path in the output response under which the IRI of the result component will be transmitted.|[Result](#Result) |xsd:string |[resultConfigurationProperty](#resultConfigurationProperty) |
+
+## NOTICE
+
+This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
+
+- Copyright (c) 2024 T-Systems International GmbH
+- Copyright (c) 2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
+- Copyright (c) 2024 ZF Friedrichshafen AG 
+- Copyright (c) 2024 Mercedes-Benz AG 
+- Copyright (c) 2024 SAP AG
+- Copyright (c) 2024 Catena-X Association
+- Copyright (c) 2024 Contributors to the Eclipse Foundation

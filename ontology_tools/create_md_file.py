@@ -1,8 +1,10 @@
+###############################################################
 # Copyright (c) 2024 T-Systems International GmbH
 # Copyright (c) 2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
 # Copyright (c) 2024 ZF Friedrichshafen AG 
 # Copyright (c) 2024 Mercedes-Benz AG 
-# Copyright (c) 2024 Contributors to the Catena-X Association
+# Copyright (c) 2024 Catena-X Association
+# Copyright (c) 2022 Contributors to the Eclipse Foundation
 #
 # See the NOTICE file(s) distributed with this work for additional
 # information regarding copyright ownership.
@@ -18,6 +20,7 @@
 # under the License.
 #
 # SPDX-License-Identifier: Apache-2.0
+###############################################################
 
 import operator
 import mdutils

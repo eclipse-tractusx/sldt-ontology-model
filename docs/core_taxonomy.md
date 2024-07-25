@@ -54,3 +54,15 @@
 |<span id="Analysis">Analysis</span>|Analysis|An analysis is an activity that includes all types of reliability and quality analyses.|[Activity](#Activity) |[Diagnosis](#Diagnosis) |
 |<span id="LoadSpectrumAnalysis">LoadSpectrumAnalysis</span>|Load Spectrum Analysis|Load spectrum analysis is an analysis that calculates load spectrum values for a vehicle part.|[Analysis](#Analysis) ||
 |<span id="Diagnosis">Diagnosis</span>|Diagnosis|Vehicle diagnosis is the identification of a problem or the cause and location of a problem.|[Analysis](#Analysis) ||
+
+## NOTICE
+
+This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
+
+- Copyright (c) 2024 T-Systems International GmbH
+- Copyright (c) 2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
+- Copyright (c) 2024 ZF Friedrichshafen AG 
+- Copyright (c) 2024 Mercedes-Benz AG 
+- Copyright (c) 2024 SAP AG
+- Copyright (c) 2024 Catena-X Association
+- Copyright (c) 2024 Contributors to the Eclipse Foundation
