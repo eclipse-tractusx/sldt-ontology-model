@@ -1,0 +1,309 @@
+#######################################################################
+# Copyright (c) 2024 Contributors to the Eclipse Foundation
+#
+# See the NOTICE file(s) distributed with this work for additional
+# information regarding copyright ownership.
+#
+# This work is made available under the terms of the 
+# Creative Commons Attribution 4.0 International (CC-BY-4.0) license, 
+# which is available at
+# https://creativecommons.org/licenses/by/4.0/legalcode.
+#
+# SPDX-License-Identifier: CC-BY-4.0
+#######################################################################
+
+@prefix cx-taxo: <https://w3id.org/catenax/taxonomy#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/catenax/taxonomy> a skos:ConceptScheme ;
+    dc:creator "[@arnoweiss](https://github.com/arnoweiss)",
+        "[@obalandi](https://github.com/obalandi)" ;
+    dc:date "2023-05-05"^^xsd:date ;
+    dc:description "This taxonomy represents and contains all of the concepts that are used in the Catena-X ontologies."@en ;
+    dc:title "Catena-X Taxonomy" ;
+    owl:versionInfo "0.1.0" ;
+    skos:hasTopConcept cx-taxo:Thing ;
+    skos:prefLabel "Catena-X Taxonomy"@en .
+
+cx-taxo:Clutch a skos:Concept ;
+    skos:broader cx-taxo:LoadSpectrum ;
+    skos:definition "Load spectrum of a vehicle clutch."@en ;
+    skos:prefLabel "Clutch"@en .
+
+cx-taxo:DcmIdBasedComment a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to receive an ID Based Comment in DCM context" ;
+    skos:prefLabel "Receive ID Based Comment for DCM"@en .
+
+cx-taxo:DcmIdBasedRequestForUpdate a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to receive an ID Based Request for Update in DCM context" ;
+    skos:prefLabel "Receive ID Based Request for Update DCM"@en .
+
+cx-taxo:DcmMaterialDemand a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to receive a Material Demand in DCM context" ;
+    skos:prefLabel "Receive Material Demand DCM"@en .
+
+cx-taxo:DcmWeekBasedCapacityGroup a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to receive a Week Based Capacity Group in DCM context" ;
+    skos:prefLabel "Receive Week Based Capacity Group DCM"@en .
+
+cx-taxo:DcmWeekBasedMaterialDemand a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to receive a Week Based Material Demand in DCM context" ;
+    skos:prefLabel "Receive Week Based Material Demand DCM"@en .
+
+cx-taxo:DigitalTwinRegistry a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "The Digital Twin Registry (DTR) is the union of the Catena-X-selected subsets of the Asset Administration Shell Registry and Discovery APIs." ;
+    skos:example "https://github.com/eclipse-tractusx/sldt-digital-twin-registry" ;
+    skos:prefLabel "Digital Twin Registry"@en .
+
+cx-taxo:ErrorCause a skos:Concept ;
+    skos:broader cx-taxo:ConceptualObject ;
+    skos:definition "An analysis result can indicate possible and current error causes. "@en ;
+    skos:prefLabel "Error Cause"@en .
+
+cx-taxo:GearOil a skos:Concept ;
+    skos:broader cx-taxo:LoadSpectrum ;
+    skos:definition "Load spectrum of a vehicle gear with respect to heat."@en ;
+    skos:prefLabel "GearOil"@en .
+
+cx-taxo:GearSet a skos:Concept ;
+    skos:broader cx-taxo:LoadSpectrum ;
+    skos:definition "Load spectrum of a vehicle gear with respect to performance."@en ;
+    skos:prefLabel "GearSet"@en .
+
+cx-taxo:GraphAsset a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "This subconcept of Asset allows arbitrary data queries to be executed on assets."@en ;
+    skos:prefLabel "Graph Asset"@en .
+
+cx-taxo:LoadSpectrumAnalysis a skos:Concept ;
+    skos:broader cx-taxo:Analysis ;
+    skos:definition "Load spectrum analysis is an analysis that calculates load spectrum values for a vehicle part."@en ;
+    skos:prefLabel "Load Spectrum Analysis"@en .
+
+cx-taxo:PcfExchange a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to exchange data on Product Carbon Footprints" ;
+    skos:prefLabel "PCF Exchange API"@en .
+
+cx-taxo:QualityAsset a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "This subconcept of Asset signifies that a data offer is associated with the Quality use-case. Assets and data offers are further specified by the dcat:conformsTo property."@en ;
+    skos:prefLabel "Quality Asset"@en .
+
+cx-taxo:ReceiveQualityAlertNotification a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to receive quality alert notifications" ;
+    skos:prefLabel "Receive Quality Alert Notification"@en .
+
+cx-taxo:ReceiveQualityInvestigationNotification a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to receive quality investigation notifications" ;
+    skos:prefLabel "Receive Quality Investigation Notification"@en .
+
+cx-taxo:ReceiveUniqueIdPushNotification a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to receive Unique Id Push notifications" ;
+    skos:prefLabel "Receive Unique ID Push Notification"@en .
+
+cx-taxo:ResolveQualityAlertNotification a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to resolve quality Alert notifications" ;
+    skos:prefLabel "Resolve Quality Alert Notification"@en .
+
+cx-taxo:ResolveQualityInvestigationNotification a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to update quality investigation notifications" ;
+    skos:prefLabel "Resolve Quality Investigation Notification"@en .
+
+cx-taxo:SkillAsset a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "This subconcept of Asset allows only the execution of predefined data queries on assets."@en ;
+    skos:prefLabel "Skill Asset"@en .
+
+cx-taxo:Submodel a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "The Submodel API serves aspects of a Digital Twin according to the Asset Administration Shell standard." ;
+    skos:prefLabel "Submodel"@en .
+
+cx-taxo:UniqueIdPushConnectToChildNotification a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to receive a Unique ID Push notification to connect a digital twin with its child digital twin (top-down notification)" ;
+    skos:prefLabel "Unique ID Push Connect-to-Child Notification"@en .
+
+cx-taxo:UniqueIdPushConnectToParentNotification a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to receive a Unique ID Push notification to connect a digital twin with its parent digital twin (bottom-up notification)" ;
+    skos:prefLabel "Unique ID Push Connect-to-Parent Notification"@en .
+
+cx-taxo:UpdateQualityAlertNotification a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to update quality Alert notifications" ;
+    skos:prefLabel "Update Quality Alert Notification"@en .
+
+cx-taxo:UpdateQualityInvestigationNotification a skos:Concept ;
+    skos:broader cx-taxo:Asset ;
+    skos:definition "API to update quality investigation notifications" ;
+    skos:prefLabel "Update Quality Investigation Notification"@en .
+
+cx-taxo:Address a skos:Concept ;
+    skos:broader cx-taxo:ConceptualObject ;
+    skos:definition "The address describes the legal address of places."@en ;
+    skos:prefLabel "Address"@en .
+
+cx-taxo:AnalysisDevice a skos:Concept ;
+    skos:broader cx-taxo:Actor ;
+    skos:definition "An analysis device, e.g. a diagnostic device, reads or calculates certain analysis results."@en ;
+    skos:prefLabel "Analysis Device"@en .
+
+cx-taxo:BillOfMaterial a skos:Concept ;
+    skos:broader cx-taxo:ConceptualObject ;
+    skos:definition "The Bill Of Material relates qualitatively and quantitatively Assembly Parts to their Components."@en ;
+    skos:prefLabel "Bill Of Material"@en .
+
+cx-taxo:BusinessPartner a skos:Concept ;
+    skos:broader cx-taxo:Actor ;
+    skos:definition "A Business Partner is a legal entity that is part of the Catena-X network or that stands in a relevant relation to a Catena-X Business Partner."@en ;
+    skos:prefLabel "Business Partner"@en .
+
+cx-taxo:DataspaceConnector a skos:Concept ;
+    skos:broader cx-taxo:Application ;
+    skos:definition "Dataspace Connector is an interface based on the Eclipse Dataspace Connector technology. A Dataspace Connector makes various assets available through contracts. A contract describes with which policy which asset can be provided."@en ;
+    skos:prefLabel "Dataspace Connector"@en .
+
+cx-taxo:Diagnosis a skos:Concept ;
+    skos:broader cx-taxo:Analysis ;
+    skos:definition "Vehicle diagnosis is the identification of a problem or the cause and location of a problem."@en ;
+    skos:prefLabel "Diagnosis"@en .
+
+cx-taxo:DiagnosticTroubleCode a skos:Concept ;
+    skos:broader cx-taxo:AnalysisResult ;
+    skos:definition "Diagnostic Trouble Code, is a code used to diagnose malfunctions in a vehicle."@en ;
+    skos:prefLabel "Diagnostic Trouble Code"@en .
+
+cx-taxo:HealthIndication a skos:Concept ;
+    skos:broader cx-taxo:PrognosisFunction ;
+    skos:definition "Health Indication is an evaluation function operating on batches of load collectives and adaptive values."@en ;
+    skos:prefLabel "Health Indication"@en .
+
+cx-taxo:Part a skos:Concept ;
+    skos:broader cx-taxo:PhysicalObject ;
+    skos:definition "A part in the automotive context is a component of a vehicle. Parts may have sub-parts that perform specific sub-functions."@en ;
+    skos:prefLabel "Part"@en .
+
+cx-taxo:Place a skos:Concept ;
+    skos:broader cx-taxo:Thing ;
+    skos:definition "The Place is determined by reference to the position of objects such as buildings, cities, or special geographic markers."@en ;
+    skos:prefLabel "Place"@en .
+
+cx-taxo:RemainingUsefulLife a skos:Concept ;
+    skos:broader cx-taxo:PrognosisFunction ;
+    skos:definition "Remaining Useful Life is a Prediction of the Estimated Mileage/Runtime until a Breakdown."@en ;
+    skos:prefLabel "Remaining Useful Life"@en .
+
+cx-taxo:SupplyChain a skos:Concept ;
+    skos:broader cx-taxo:ConceptualObject ;
+    skos:definition "The Supply Chain relates consumers and a supplier."@en ;
+    skos:prefLabel "Supply Chain"@en .
+
+cx-taxo:Vehicle a skos:Concept ;
+    skos:broader cx-taxo:PhysicalObject ;
+    skos:definition "A vehicle is a motor-powered road vehicle that transports people or cargo ."@en ;
+    skos:prefLabel "Vehicle"@en .
+
+cx-taxo:Activity a skos:Concept ;
+    skos:broader cx-taxo:Thing ;
+    skos:definition "This class comprises actions intentionally carried out by instances of Actor that result in changes of state in physical and conceptual objects."@en ;
+    skos:narrower cx-taxo:Analysis ;
+    skos:prefLabel "Activity"@en .
+
+cx-taxo:AnalysisResult a skos:Concept ;
+    skos:broader cx-taxo:Result ;
+    skos:definition "Results of the analysis activity."@en ;
+    skos:narrower cx-taxo:DiagnosticTroubleCode,
+        cx-taxo:LoadSpectrum ;
+    skos:prefLabel "Analysis Result"@en .
+
+cx-taxo:Function a skos:Concept ;
+    skos:broader cx-taxo:Application ;
+    skos:definition "A function defines a calculation that is called through an API."@en ;
+    skos:narrower cx-taxo:PrognosisFunction ;
+    skos:prefLabel "Function"@en .
+
+cx-taxo:Result a skos:Concept ;
+    skos:broader cx-taxo:ConceptualObject ;
+    skos:definition "Specific conceptual outcomes of an activity or application."@en ;
+    skos:prefLabel "Result"@en .
+
+cx-taxo:Actor a skos:Concept ;
+    skos:broader cx-taxo:Thing ;
+    skos:definition "The actor  comprises organization or people, either individually or in groups, who have the potential to perform intentional actions of kinds for which someone may be held responsible."@en ;
+    skos:narrower cx-taxo:AnalysisDevice,
+        cx-taxo:BusinessPartner ;
+    skos:prefLabel "Actor"@en .
+
+cx-taxo:Analysis a skos:Concept ;
+    skos:broader cx-taxo:Activity ;
+    skos:definition "An analysis is an activity that includes all types of reliability and quality analyses."@en ;
+    skos:narrower cx-taxo:Diagnosis ;
+    skos:prefLabel "Analysis"@en .
+
+cx-taxo:Application a skos:Concept ;
+    skos:broader cx-taxo:ConceptualObject ;
+    skos:definition "An application defines a coded software that fulfills a specific purpose."@en ;
+    skos:narrower cx-taxo:Asset,
+        cx-taxo:DataspaceConnector,
+        cx-taxo:Function ;
+    skos:prefLabel "Application"@en .
+
+cx-taxo:PhysicalObject a skos:Concept ;
+    skos:broader cx-taxo:Thing ;
+    skos:definition "This concept includes objects of a material nature, which are documentation units and have physical boundaries."@en ;
+    skos:narrower cx-taxo:Part,
+        cx-taxo:Vehicle ;
+    skos:prefLabel "Physical Object"@en .
+
+cx-taxo:PrognosisFunction a skos:Concept ;
+    skos:broader cx-taxo:Function ;
+    skos:definition "In the automotive industry, a prognosis is a prediction of the probable failure of an operational function." ;
+    skos:narrower cx-taxo:HealthIndication,
+        cx-taxo:RemainingUsefulLife ;
+    skos:prefLabel "Prognosis Function"@en .
+
+cx-taxo:LoadSpectrum a skos:Concept ;
+    skos:broader cx-taxo:AnalysisResult ;
+    skos:definition "Load spectrum is a multi dimensional histogram that contains the state history of a set of vehicle parts, i.e. how a vehicle was driven, for a given time period."@en ;
+    skos:prefLabel "Load Spectrum"@en .
+
+cx-taxo:Thing a skos:Concept ;
+    skos:definition "The top concept of all the Catena X concepts."@en ;
+    skos:narrower cx-taxo:Activity,
+        cx-taxo:Actor,
+        cx-taxo:ConceptualObject,
+        cx-taxo:PhysicalObject,
+        cx-taxo:Place ;
+    skos:prefLabel "Thing"@en .
+
+cx-taxo:ConceptualObject a skos:Concept ;
+    skos:broader cx-taxo:Thing ;
+    skos:definition "This concept includes non-material products, human-produced data related to physical objects. The production of such information may have been supported by the use of technical tools."@en ;
+    skos:narrower cx-taxo:Address,
+        cx-taxo:Application,
+        cx-taxo:BillOfMaterial,
+        cx-taxo:Result,
+        cx-taxo:SupplyChain ;
+    skos:prefLabel "Conceptional Object"@en .
+
+cx-taxo:Asset a skos:Concept ;
+    skos:broader cx-taxo:Application ;
+    skos:definition "The Asset concept describes the provision via a repository of a specific set of data for a specific purpose. It is defined by its public API."@en ;
+    skos:prefLabel "Asset"@en .
+

@@ -1,0 +1,6 @@
+pypi/pypi/-/graphviz/0.20.1, MIT, restricted, clearlydefined
+pypi/pypi/-/isodate/0.6.1, BSD-3-Clause, approved, #1422
+pypi/pypi/-/mdutils/1.6.0, MIT, approved, clearlydefined
+pypi/pypi/-/pyparsing/3.1.1, GPL-1.0-or-later AND GPL-3.0-only AND MIT AND MIT AND (MIT AND Python-2.0) AND BSD-3-Clause AND BSD-2-Clause AND LicenseRef-scancode-other-permissive AND MIT-CMU AND (LicenseRef-scancode-mit-synopsys AND LicenseRef-scancode-proprietary-license AND MIT), approved, #15047
+pypi/pypi/-/rdflib/7.0.0, BSD-2-Clause, approved, clearlydefined
+pypi/pypi/-/six/1.16.0, MIT, approved, clearlydefined

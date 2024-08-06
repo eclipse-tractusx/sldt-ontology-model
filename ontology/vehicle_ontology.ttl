@@ -1,0 +1,158 @@
+#######################################################################
+# Copyright (c) 2024 T-Systems International GmbH
+# Copyright (c) 2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
+# Copyright (c) 2024 ZF Friedrichshafen AG 
+# Copyright (c) 2024 Mercedes-Benz AG 
+# Copyright (c) 2024 Catena-X Association
+# Copyright (c) 2024 Contributors to the Eclipse Foundation
+#
+# See the NOTICE file(s) distributed with this work for additional
+# information regarding copyright ownership.
+#
+# This work is made available under the terms of the 
+# Creative Commons Attribution 4.0 International (CC-BY-4.0) license, 
+# which is available at
+# https://creativecommons.org/licenses/by/4.0/legalcode.
+#
+# SPDX-License-Identifier: CC-BY-4.0
+#######################################################################
+
+@prefix : <https://w3id.org/catenax/ontology/vehicle#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix json: <https://json-schema.org/draft/2020-12/schema#> .
+@prefix cx-core: <https://w3id.org/catenax/ontology/core#> .
+@prefix cx-vehicle: <https://w3id.org/catenax/ontology/vehicle#> .
+@base <https://w3id.org/catenax/ontology/vehicle#> .
+
+<https://w3id.org/catenax/ontology/vehicle> rdf:type owl:Ontology ;
+                                             owl:imports <file:core_ontology.ttl> ;
+                                             dc:contributor "[@Joerg-Schulz](https://github.com/Joerg-Schulz), [@bosserf](https://github.com/bosserf), [@obalandi](https://github.com/obalandi), [@drcgjung](https://github.com/drcgjung)" ;
+                                             dc:creator "[@ZazraltMagic](https://github.com/ZazraltMagic)" ;
+                                             dc:date "2023-02-21"^^xsd:date ;
+                                             dc:description "Ontology for vehicles in the automotive industry." ;
+                                             dc:title "Vehicle Ontology" ;
+                                             owl:versionInfo "1.11.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+dc:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+dc:date rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+
+###  https://w3id.org/catenax/ontology/vehicle#hasPart
+cx-vehicle:hasPart rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:domain cx-vehicle:Vehicle ;
+                   rdfs:range cx-vehicle:Part ;
+                   rdfs:comment "Refes to parts of vehicle"@en ;
+                   rdfs:label "has part"@en . 
+
+
+###  https://w3id.org/catenax/ontology/vehicle#hasSubpart
+cx-vehicle:hasSubpart rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty ;
+                      rdfs:domain cx-vehicle:Part ;
+                      rdfs:range cx-vehicle:Part ;
+                      rdfs:comment "Refes to parts of main vehicle parts."@en ;
+                      rdfs:label "has subpart"@en .
+
+
+###  https://w3id.org/catenax/ontology/vehicle#isPartOf
+cx-vehicle:isPartOf rdf:type owl:ObjectProperty ;
+                    owl:inverseOf cx-vehicle:isPartOf ;
+                    rdfs:domain cx-vehicle:Part ;
+                    rdfs:range cx-vehicle:Vehicle ;
+                    rdfs:comment "Inverse of 'hasPart' property."@en ;
+                    rdfs:label "is part of"@en .
+
+
+###  https://w3id.org/catenax/ontology/vehicle#isSubpartOf
+cx-vehicle:isSubpartOf rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       owl:inverseOf cx-vehicle:isSubpartOf ;
+                       rdfs:domain cx-vehicle:Part ;
+                       rdfs:range cx-vehicle:Part ;
+                       rdfs:comment "Inverse of 'hasSubpart' property."@en ;
+                       rdfs:label "is subpart of"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/catenax/ontology/vehicle#mileage
+cx-vehicle:mileage rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf cx-vehicle:stateInformation ;
+                   rdfs:domain cx-vehicle:Vehicle ;
+                   rdfs:range xsd:integer ;
+                   rdfs:comment "The current mileage of the vehicle in km."@en ;
+                   rdfs:label "Vehicle Mileage"@en .
+
+
+###  https://w3id.org/catenax/ontology/vehicle#operatingHours
+cx-vehicle:operatingHours rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf cx-vehicle:stateInformation ;
+                          rdfs:domain cx-vehicle:Vehicle ;
+                          rdfs:range xsd:integer ;
+                          rdfs:comment "The current operating hours of the vehicle in h."@en ;
+                          rdfs:label "Vehicle Operating Hours"@en .
+
+
+###  https://w3id.org/catenax/ontology/vehicle#vehicleIdentificationNumber
+cx-vehicle:vehicleIdentificationNumber rdf:type owl:DatatypeProperty ;
+                                       rdfs:subPropertyOf owl:topDataProperty ;
+                                       rdfs:domain cx-vehicle:Vehicle ;
+                                       rdfs:range xsd:string ;
+                                       rdfs:comment "The Vehicle Identification Number  is a unique serial number used by the automotive industry to identify individual motor vehicles."@en ;
+                                       rdfs:label "Vehicle Identification Number"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+
+###  https://w3id.org/catenax/ontology/core#PhysicalObject
+cx-core:PhysicalObject rdf:type owl:Class  .
+
+
+###  https://w3id.org/catenax/ontology/vehicle#Part
+cx-vehicle:Part rdf:type owl:Class ;
+                rdfs:subClassOf cx-core:PhysicalObject ;
+                owl:disjointWith cx-vehicle:Vehicle ;
+                rdfs:comment "A part in the automotive context is a component of a vehicle. Parts may have sub-parts that perform specific sub-functions."@en ;
+                rdfs:label "Part"@en .
+
+
+###  https://w3id.org/catenax/ontology/vehicle#Vehicle
+cx-vehicle:Vehicle rdf:type owl:Class ;
+                   rdfs:subClassOf cx-core:PhysicalObject ;
+                   rdfs:comment "A vehicle is a motor-powered road vehicle that transports people or cargo ."@en ;
+                   rdfs:label "Vehicle"@en .

@@ -1,0 +1,640 @@
+#######################################################################
+# Copyright (c) 2024 T-Systems International GmbH
+# Copyright (c) 2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
+# Copyright (c) 2024 ZF Friedrichshafen AG 
+# Copyright (c) 2024 Mercedes-Benz AG 
+# Copyright (c) 2024 Catena-X Association
+# Copyright (c) 2024 Contributors to the Eclipse Foundation
+#
+# See the NOTICE file(s) distributed with this work for additional
+# information regarding copyright ownership.
+#
+# This work is made available under the terms of the 
+# Creative Commons Attribution 4.0 International (CC-BY-4.0) license, 
+# which is available at
+# https://creativecommons.org/licenses/by/4.0/legalcode.
+#
+# SPDX-License-Identifier: CC-BY-4.0
+#######################################################################
+
+@prefix : <https://w3id.org/catenax/ontology/behaviour#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix json: <https://json-schema.org/draft/2020-12/schema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cx-fx: <https://w3id.org/catenax/ontology/function#> .
+@prefix cx-core: <https://w3id.org/catenax/ontology/core#> .
+@prefix cx-vehicle: <https://w3id.org/catenax/ontology/vehicle#> .
+@prefix cx-behaviour: <https://w3id.org/catenax/ontology/behaviour#> .
+@prefix cx-reliability: <https://w3id.org/catenax/ontology/reliability#> .
+@base <https://w3id.org/catenax/ontology/behaviour#> .
+
+<https://w3id.org/catenax/ontology/behaviour> rdf:type owl:Ontology ;
+                                               owl:imports <file:function_ontology.ttl> ,
+                                                           <file:vehicle_ontology.ttl> ;
+                                               dc:contributor "[@obalandi](https://github.com/obalandi)" ;
+                                               dc:creator "[@drcgjung](https://github.com/drcgjung)" ;
+                                               dc:date "2023-07-04"^^xsd:date ;
+                                               dc:description "The Behaviour Ontology is an implementation of the Function Ontology for behaviour predictions. It contains prognosis functions for specific vehicle parts."@en ;
+                                               dc:title "Behaviour Ontology" ;
+                                               owl:versionInfo "1.9.5" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+dc:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+dc:date rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/catenax/ontology/function#argumentName
+cx-fx:argumentName rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/catenax/ontology/function#dataType
+cx-fx:dataType rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/catenax/ontology/function#mandatory
+cx-fx:mandatory rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/catenax/ontology/function#valuePath
+cx-fx:valuePath rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#anyType
+xsd:anyType rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/catenax/ontology/behaviour#bodyClasses
+cx-behaviour:bodyClasses rdf:type owl:ObjectProperty ;
+                         rdfs:domain cx-behaviour:PrognosisFunction ;
+                         rdfs:range json:Object .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#bodyCountsList
+cx-behaviour:bodyCountsList rdf:type owl:ObjectProperty ;
+                            rdfs:domain cx-behaviour:PrognosisFunction ;
+                            rdfs:range json:Object .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#component
+cx-behaviour:component rdf:type owl:ObjectProperty ;
+                       rdfs:domain cx-behaviour:RemainingUsefulLife ;
+                       rdfs:range cx-vehicle:Part ;
+                       rdfs:comment "Component of the Predicition."@en ;
+                       rdfs:label "Predicted Component"@en ;
+                       cx-fx:dataType cx-vehicle:Part .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#headerChannels
+cx-behaviour:headerChannels rdf:type owl:ObjectProperty ;
+                            rdfs:domain cx-behaviour:PrognosisFunction ;
+                            rdfs:range json:Object .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#healthIndicatorValues
+cx-behaviour:healthIndicatorValues rdf:type owl:ObjectProperty ;
+                                   rdfs:domain cx-behaviour:HealthIndicatorResult ;
+                                   rdfs:range json:Object .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#metadata
+cx-behaviour:metadata rdf:type owl:ObjectProperty ;
+                      rdfs:domain cx-behaviour:RemainingUsefulLife ;
+                      rdfs:range json:Object .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#notification
+cx-behaviour:notification rdf:type owl:ObjectProperty ;
+                          rdfs:domain cx-behaviour:RemainingUsefulLife ;
+                          rdfs:range json:Object .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/catenax/ontology/behaviour#HealthIndicationArgument
+cx-behaviour:HealthIndicationArgument rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                                      rdfs:domain cx-behaviour:HealthIndication ;
+                                      rdfs:range xsd:anyType ;
+                                      rdfs:comment "Super property of health indication function arguments."@en ;
+                                      rdfs:label "Health Indication Argument"@en .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#RemainingUsefulLifeArgument
+cx-behaviour:RemainingUsefulLifeArgument rdf:type owl:DatatypeProperty ;
+                                         rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                                         rdfs:domain cx-behaviour:RemainingUsefulLife ;
+                                         rdfs:range xsd:anyType ;
+                                         rdfs:comment "Super property of remaining useful life function arguments."@en ;
+                                         rdfs:label "Remaining Useful Life Argument"@en .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#adaptionValueList
+cx-behaviour:adaptionValueList rdf:type owl:DatatypeProperty ;
+                               rdfs:subPropertyOf cx-behaviour:HealthIndicationArgument ;
+                               rdfs:domain cx-behaviour:HealthIndication ;
+                               rdfs:range xsd:string ;
+                               rdfs:comment "A Health Indicator Adaption needs an array of adaption values."@en ;
+                               rdfs:label "Adaption Value List Values"@en ;
+                               cx-fx:argumentName "adaptionValueList.values" .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#adaptionValueMileage
+cx-behaviour:adaptionValueMileage rdf:type owl:DatatypeProperty ;
+                                  rdfs:subPropertyOf cx-behaviour:HealthIndicationArgument ;
+                                  rdfs:domain cx-behaviour:HealthIndication ;
+                                  rdfs:range xsd:string ;
+                                  rdfs:comment "A Health Indicator Adaption needs a mileage of the embedding vehicle."@en ;
+                                  rdfs:label "Adaption Value List Mileage"@en ;
+                                  cx-fx:argumentName "adaptionValueList.mileage_km" .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#adaptionValueOperatingTime
+cx-behaviour:adaptionValueOperatingTime rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf cx-behaviour:HealthIndicationArgument ;
+                                        rdfs:domain cx-behaviour:HealthIndication ;
+                                        rdfs:range xsd:string ;
+                                        rdfs:comment "A Health Indicator Adaption needs an operating time of the embedding vehicle."@en ;
+                                        rdfs:label "Adaption Value List Operating Time"@en ;
+                                        cx-fx:argumentName "adaptionValueList.operatingtime_s" .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#adaptionValueTimestamp
+cx-behaviour:adaptionValueTimestamp rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf cx-behaviour:HealthIndicationArgument ;
+                                    rdfs:domain cx-behaviour:HealthIndication ;
+                                    rdfs:range xsd:string ;
+                                    rdfs:comment "A Health Indicator Adaption needs a timestamp."@en ;
+                                    rdfs:label "Adaption Value List Timestamp"@en ;
+                                    cx-fx:argumentName "adaptionValueList.timestamp" .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#adaptionValueVersion
+cx-behaviour:adaptionValueVersion rdf:type owl:DatatypeProperty ;
+                                  rdfs:subPropertyOf cx-behaviour:HealthIndicationArgument ;
+                                  rdfs:domain cx-behaviour:HealthIndication ;
+                                  rdfs:range xsd:string ;
+                                  rdfs:comment "A Health Indicator Adaption needs a version."@en ;
+                                  rdfs:label "Adaption Value List Version"@en ;
+                                  cx-fx:argumentName "adaptionValueList.version" .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#bodyClasses
+cx-behaviour:bodyClasses rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#bodyCountsList
+cx-behaviour:bodyCountsList rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#classification
+cx-behaviour:classification rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                            rdfs:domain cx-behaviour:RemainingUsefulLife ;
+                            rdfs:range xsd:string ;
+                            rdfs:comment "Classification of the notification."@en ;
+                            rdfs:label "Notification Classification"@en ;
+                            cx-fx:dataType xsd:string .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#classifiedLoadCollectiveChannels
+cx-behaviour:classifiedLoadCollectiveChannels rdf:type owl:DatatypeProperty ;
+                                              rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                                              rdfs:domain cx-behaviour:HealthIndication ;
+                                              rdfs:range xsd:string ;
+                                              rdfs:comment "A Load Collective has descriptors for all channels."@en ;
+                                              rdfs:label "Classified Load Collective Channels"@en ;
+                                              cx-fx:argumentName "classifiedLoadCollective.header.channels" .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#classifiedLoadCollectiveClasses
+cx-behaviour:classifiedLoadCollectiveClasses rdf:type owl:DatatypeProperty ;
+                                             rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                                             rdfs:domain cx-behaviour:HealthIndication ;
+                                             rdfs:range xsd:string ;
+                                             rdfs:comment "A Load Collective has a body with the class indices."@en ;
+                                             rdfs:label "Classified Load Collective Classes"@en ;
+                                             cx-fx:argumentName "classifiedLoadCollective.body.classes" .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#classifiedLoadCollectiveComponentDescription
+cx-behaviour:classifiedLoadCollectiveComponentDescription rdf:type owl:DatatypeProperty ;
+                                                          rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                                                          rdfs:domain cx-behaviour:HealthIndication ;
+                                                          rdfs:range xsd:string ;
+                                                          rdfs:comment "A Load Collective has a component description."@en ;
+                                                          rdfs:label "Classified Load Collective Component Description"@en ;
+                                                          cx-fx:argumentName "classifiedLoadCollective.metadata.componentDescription" .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#classifiedLoadCollectiveCountingMethod
+cx-behaviour:classifiedLoadCollectiveCountingMethod rdf:type owl:DatatypeProperty ;
+                                                    rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                                                    rdfs:domain cx-behaviour:HealthIndication ;
+                                                    rdfs:range xsd:string ;
+                                                    rdfs:comment "A Load Collective has a method for the counting dimension."@en ;
+                                                    rdfs:label "Classified Load Collective Counting Method"@en ;
+                                                    cx-fx:argumentName "classifiedLoadCollective.header.countingMethod" .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#classifiedLoadCollectiveCountingUnit
+cx-behaviour:classifiedLoadCollectiveCountingUnit rdf:type owl:DatatypeProperty ;
+                                                  rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                                                  rdfs:domain cx-behaviour:HealthIndication ;
+                                                  rdfs:range xsd:string ;
+                                                  rdfs:comment "A Load Collective has a unit for the counting dimension."@en ;
+                                                  rdfs:label "Classified Load Collective Counting Unit"@en ;
+                                                  cx-fx:argumentName "classifiedLoadCollective.header.countingUnit" .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#classifiedLoadCollectiveCountingValue
+cx-behaviour:classifiedLoadCollectiveCountingValue rdf:type owl:DatatypeProperty ;
+                                                   rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                                                   rdfs:domain cx-behaviour:HealthIndication ;
+                                                   rdfs:range xsd:string ;
+                                                   rdfs:comment "A Load Collective has a value for the counting dimension."@en ;
+                                                   rdfs:label "Classified Load Collective Counting Value"@en ;
+                                                   cx-fx:argumentName "classifiedLoadCollective.header.countingValue" ;
+                                                   cx-fx:mandatory "false"^^xsd:boolean .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#classifiedLoadCollectiveCounts
+cx-behaviour:classifiedLoadCollectiveCounts rdf:type owl:DatatypeProperty ;
+                                            rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                                            rdfs:domain cx-behaviour:HealthIndication ;
+                                            rdfs:range xsd:string ;
+                                            rdfs:comment "A Load Collective has a body with the raw measurements."@en ;
+                                            rdfs:label "Classified Load Collective Counts"@en ;
+                                            cx-fx:argumentName "classifiedLoadCollective.body.counts" .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#classifiedLoadCollectiveProjectDescription
+cx-behaviour:classifiedLoadCollectiveProjectDescription rdf:type owl:DatatypeProperty ;
+                                                        rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                                                        rdfs:domain cx-behaviour:HealthIndication ;
+                                                        rdfs:range xsd:string ;
+                                                        rdfs:comment "A Load Collective has a project description."@en ;
+                                                        rdfs:label "Classified Load Collective Project Description"@en ;
+                                                        cx-fx:argumentName "classifiedLoadCollective.metadata.projectDescription" ;
+                                                        cx-fx:mandatory "false"^^xsd:boolean .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#countingMethod
+cx-behaviour:countingMethod rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                            rdfs:domain cx-behaviour:PrognosisFunction ;
+                            rdfs:range xsd:string ;
+                            rdfs:comment "Counting Method of Load Spectrum."@en ;
+                            rdfs:label "Loadspectrum Counting Method"@en ;
+                            cx-fx:dataType xsd:string .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#countingUnit
+cx-behaviour:countingUnit rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                          rdfs:domain cx-behaviour:PrognosisFunction ;
+                          rdfs:range xsd:string ;
+                          rdfs:comment "Counting Unit of Load Spectrum."@en ;
+                          rdfs:label "Loadspectrum Counting Unit"@en ;
+                          cx-fx:dataType xsd:string .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#countingValue
+cx-behaviour:countingValue rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                           rdfs:domain cx-behaviour:PrognosisFunction ;
+                           rdfs:range xsd:string ;
+                           rdfs:comment "Counting Value Name of Load Spectrum."@en ;
+                           rdfs:label "Loadspectrum Counting Value"@en ;
+                           cx-fx:dataType xsd:string .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#headerChannels
+cx-behaviour:headerChannels rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#healthIndicatorValues
+cx-behaviour:healthIndicatorValues rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf cx-fx:returnValue .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#indicatorVersion
+cx-behaviour:indicatorVersion rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf cx-fx:returnValue ;
+                              rdfs:domain cx-behaviour:HealthIndicatorResult ;
+                              rdfs:range xsd:string ;
+                              rdfs:comment "Version of the health indicator prognosis."@en ;
+                              rdfs:label "Health Indicator Prognosis Version" ;
+                              cx-fx:dataType xsd:string ;
+                              cx-fx:valuePath "version" .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#metadata
+cx-behaviour:metadata rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#notification
+cx-behaviour:notification rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#observationType
+cx-behaviour:observationType rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                             rdfs:domain cx-behaviour:PrognosisFunction ;
+                             rdfs:range xsd:anyURI .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#prognosisFunctionArgument
+cx-behaviour:prognosisFunctionArgument rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain cx-behaviour:PrognosisFunction ;
+                                       rdfs:comment "Prognosis Function Argument"@en ;
+                                       rdfs:label "Prognosis Function Argument"@en .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#recipient
+cx-behaviour:recipient rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                       rdfs:domain cx-behaviour:RemainingUsefulLife ;
+                       rdfs:range xsd:anyURI ;
+                       rdfs:comment "Recipient of the notification as a BPN."@en ;
+                       rdfs:label "Notification Recipient"@en ;
+                       cx-fx:dataType xsd:anyURI .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#recipientConnector
+cx-behaviour:recipientConnector rdf:type owl:DatatypeProperty ;
+                                rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                                rdfs:domain cx-behaviour:RemainingUsefulLife ;
+                                rdfs:range xsd:anyURI ;
+                                rdfs:comment "Recipient Address of the notification as a URL."@en ;
+                                rdfs:label "Notification Recipient Address"@en ;
+                                cx-fx:dataType xsd:anyURI .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#remainingOperatingHours
+cx-behaviour:remainingOperatingHours rdf:type owl:DatatypeProperty ;
+                                     rdfs:subPropertyOf cx-fx:returnValue ;
+                                     rdfs:domain cx-behaviour:RemainingUsefulLifeResult ;
+                                     rdfs:range xsd:float ;
+                                     rdfs:comment "Predicted Operating Hours of Remaining Useful Life Response"@en ;
+                                     rdfs:label "Remaining Useful Life Operating Hours"@en ;
+                                     cx-fx:dataType xsd:float .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#remainingRunningDistance
+cx-behaviour:remainingRunningDistance rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf cx-fx:returnValue ;
+                                      rdfs:domain cx-behaviour:RemainingUsefulLifeResult ;
+                                      rdfs:range xsd:int ;
+                                      rdfs:comment "Predicted Distance of Remaining Useful Life Response"@en ;
+                                      rdfs:label "Remaining Useful Life Distance"@en ;
+                                      cx-fx:dataType xsd:int .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#requestComponentId
+cx-behaviour:requestComponentId rdf:type owl:DatatypeProperty ;
+                                rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                                rdfs:domain cx-behaviour:HealthIndication ;
+                                rdfs:range xsd:string ;
+                                rdfs:comment "A Health Indicator Input relates to a component."@en ;
+                                rdfs:label "Prognosis Component Id"@en ;
+                                cx-fx:argumentName "componentId" .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#responseComponentId
+cx-behaviour:responseComponentId rdf:type owl:DatatypeProperty ;
+                                 rdfs:subPropertyOf cx-fx:returnValue ;
+                                 rdfs:domain cx-behaviour:HealthIndicatorResult ;
+                                 rdfs:range xsd:string ;
+                                 rdfs:comment "Component Id of the health indicator prognosis."@en ;
+                                 rdfs:label "Health Indicator Prognosis Component Id"@en ;
+                                 cx-fx:dataType xsd:string ;
+                                 cx-fx:valuePath "componentId" .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#sender
+cx-behaviour:sender rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                    rdfs:domain cx-behaviour:RemainingUsefulLife ;
+                    rdfs:range xsd:anyURI ;
+                    rdfs:comment "Sender of the notification as a BPN."@en ;
+                    rdfs:label "Notification Sender"@en ;
+                    cx-fx:dataType xsd:anyURI .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#senderConnector
+cx-behaviour:senderConnector rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                             rdfs:domain cx-behaviour:RemainingUsefulLife ;
+                             rdfs:range xsd:anyURI ;
+                             rdfs:comment "Sender Address of the notification as a URL."@en ;
+                             rdfs:label "Notification Sender Address"@en ;
+                             cx-fx:dataType xsd:anyURI .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#severity
+cx-behaviour:severity rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                      rdfs:domain cx-behaviour:RemainingUsefulLife ;
+                      rdfs:range xsd:string ;
+                      rdfs:comment "Severity of the notification."@en ;
+                      rdfs:label "Notification Severity"@en ;
+                      cx-fx:dataType xsd:string .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#status
+cx-behaviour:status rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                    rdfs:domain cx-behaviour:RemainingUsefulLife ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "Status of the notification."@en ;
+                    rdfs:label "Notification Status"@en ;
+                    cx-fx:dataType xsd:string .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#statusDate
+cx-behaviour:statusDate rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                        rdfs:domain cx-behaviour:RemainingUsefulLife ;
+                        rdfs:range xsd:dateTime ;
+                        rdfs:comment "Time of Recording."@en ;
+                        rdfs:label "Loadspectrum Recording Time"@en ;
+                        cx-fx:dataType xsd:dateTime .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#statusMileage
+cx-behaviour:statusMileage rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                           rdfs:domain cx-behaviour:RemainingUsefulLife ;
+                           rdfs:range xsd:int ;
+                           rdfs:comment "Mileage of Component at Time of Recording."@en ;
+                           rdfs:label "Loadspectrum Mileage"@en ;
+                           cx-fx:dataType xsd:int .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#statusOperatingHours
+cx-behaviour:statusOperatingHours rdf:type owl:DatatypeProperty ;
+                                  rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                                  rdfs:domain cx-behaviour:RemainingUsefulLife ;
+                                  rdfs:range xsd:float ;
+                                  rdfs:comment "Operating Hours of Target Component at Time of Recording."@en ;
+                                  rdfs:label "Loadspectrum Operating Hours"@en ;
+                                  cx-fx:dataType xsd:float .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#targetDate
+cx-behaviour:targetDate rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                        rdfs:domain cx-behaviour:RemainingUsefulLife ;
+                        rdfs:range xsd:dateTime ;
+                        rdfs:comment "Target Date of the notification."@en ;
+                        rdfs:label "Notification Target Date"@en ;
+                        cx-fx:dataType xsd:dateTime .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#timeStamp
+cx-behaviour:timeStamp rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf cx-behaviour:prognosisFunctionArgument ;
+                       rdfs:domain cx-behaviour:RemainingUsefulLife ;
+                       rdfs:range xsd:dateTime ;
+                       rdfs:comment "Timestamp of the notification."@en ;
+                       rdfs:label "Notification Timestamp"@en ;
+                       cx-fx:dataType xsd:dateTime .
+
+
+###  https://w3id.org/catenax/ontology/function#returnValue
+cx-fx:returnValue rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://json-schema.org/draft/2020-12/schema#Object
+json:Object rdf:type owl:Class .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#HealthIndication
+cx-behaviour:HealthIndication rdf:type owl:Class ;
+                              rdfs:subClassOf cx-behaviour:PrognosisFunction ;
+                              rdfs:comment "Health Indication is an evaluation function operating on batches of load collectives and adaptive values."@en ;
+                              rdfs:label "Health Indication"@en .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#HealthIndicatorResult
+cx-behaviour:HealthIndicatorResult rdf:type owl:Class ;
+                                   rdfs:subClassOf cx-fx:Result ;
+                                   rdfs:comment "Health Indicator is part of a indicator batch."@en ;
+                                   rdfs:label "Health Indicator"@en .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#PrognosisFunction
+cx-behaviour:PrognosisFunction rdf:type owl:Class ;
+                               rdfs:subClassOf cx-fx:Function ;
+                               rdfs:comment "Super class of prognosis functions."@en ;
+                               rdfs:label "Prognosis Function"@en .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#RemainingUsefulLife
+cx-behaviour:RemainingUsefulLife rdf:type owl:Class ;
+                                 rdfs:subClassOf cx-behaviour:PrognosisFunction ;
+                                 rdfs:comment "Remaining Useful Life is a Prediction of the Estimated Mileage/Runtime until a Breakdown."@en ;
+                                 rdfs:label "Remaining Useful Life"@en .
+
+
+###  https://w3id.org/catenax/ontology/behaviour#RemainingUsefulLifeResult
+cx-behaviour:RemainingUsefulLifeResult rdf:type owl:Class ;
+                                       rdfs:subClassOf cx-fx:Result ;
+                                       rdfs:comment "The asynchronous notification response."@en ;
+                                       rdfs:label "Asynchronous notification response."@en .
+
+
+###  https://w3id.org/catenax/ontology/function#Function
+cx-fx:Function rdf:type owl:Class .
+
+
+###  https://w3id.org/catenax/ontology/function#Result
+cx-fx:Result rdf:type owl:Class .
+
+
+###  https://w3id.org/catenax/ontology/vehicle#Part
+cx-vehicle:Part rdf:type owl:Class .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+cx-behaviour:bodyClasses rdfs:comment "Classes of Load Spectrum."@en ;
+                         rdfs:label "Loadspectrum Classes"@en ;
+                         cx-fx:dataType json:Object .
+
+
+cx-behaviour:bodyCountsList rdfs:comment "Counts List of Load Spectrum."@en ;
+                            rdfs:label "Loadspectrum Counts List"@en ;
+                            cx-fx:dataType json:Object .
+
+
+cx-behaviour:headerChannels rdfs:comment "Channels of Load Spectrum."@en ;
+                            rdfs:label "Loadspectrum Channels"@en ;
+                            cx-fx:dataType json:Object .
+
+
+cx-behaviour:healthIndicatorValues rdfs:comment "Health Indicator Values are percentages."@en ;
+                                   rdfs:label "Health Indicator Values"@en ;
+                                   cx-fx:dataType json:Object ;
+                                   cx-fx:valuePath "healthIndicatorValues" .
+
+
+cx-behaviour:metadata rdfs:comment "Additional Metadata of the Loadspectrum."@en ;
+                      rdfs:label "Loadspectrum Metadata"@en ;
+                      cx-fx:dataType json:Object .
+
+
+cx-behaviour:notification rdfs:comment "An optional notification output template."@en ;
+                          rdfs:label "Notification Template"@en ;
+                          cx-fx:dataType json:Object .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
