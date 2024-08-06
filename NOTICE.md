@@ -2,7 +2,7 @@
 
 This content is produced and maintained by the Eclipse Tractus-X project.
 
-* Project home: https://projects.eclipse.org/projects/automotive.tractusx
+* Project home: <https://projects.eclipse.org/projects/automotive.tractusx>
 
 See the AUTHORS file(s) distributed with this work for additional information regarding authorship.
 
@@ -23,21 +23,26 @@ The Tractus-X project uses the following licenses:
 - Apache-2.0 for code
 - CC-BY-4.0 for non-code
 
-Apache-2.0:
-This program and the accompanying materials are made available under the terms of the Apache License, Version 2.0 which is available at https://www.apache.org/licenses/LICENSE-2.0.
+### Apache-2.0:
+
+This program and the accompanying materials are made available under the terms of the Apache License, Version 2.0 which
+is available at https://www.apache.org/licenses/LICENSE-2.0.
+
 SPDX-License-Identifier: Apache-2.0
 
-CC-BY-4.0:
-The materials in this repository are made available under the terms of the Creative Commons Attribution 4.0 International License, which is available at https://spdx.org/licenses/CC-BY-4.0.html.
-SPDX-License-Identifier: CC-BY-4.0
+### CC-BY-4.0:
 
+The materials in this repository are made available under the terms of the Creative Commons Attribution 4.0
+International License, which is available at https://spdx.org/licenses/CC-BY-4.0.html.
+
+SPDX-License-Identifier: CC-BY-4.0
 
 ## Source Code
 
 The project maintains the following source code repositories
-in the GitHub organization https://github.com/eclipse-tractusx:
+in the GitHub organization <https://github.com/eclipse-tractusx>:
 
-* https://github.com/eclipse-tractusx/testdata-provider
+* <https://github.com/eclipse-tractusx/sldt-ontology-model>
 
 ## Third-party Content
 

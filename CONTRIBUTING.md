@@ -42,7 +42,7 @@ Getting started:
 
 The project maintains the following source code repositories
 
-* https://github.com/eclipse-tractusx/testdata-provider/
+* https://github.com/eclipse-tractusx/sldt-ontology-model
 
 ## Eclipse Development Process
 
