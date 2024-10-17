@@ -1,0 +1,142 @@
+#######################################################################
+# Copyright (c) 2024 T-Systems International GmbH
+# Copyright (c) 2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
+# Copyright (c) 2024 ZF Friedrichshafen AG 
+# Copyright (c) 2024 Mercedes-Benz AG 
+# Copyright (c) 2024 SAP AG
+# Copyright (c) 2024 Catena-X Association
+# Copyright (c) 2024 Contributors to the Eclipse Foundation
+#
+# See the NOTICE file(s) distributed with this work for additional
+# information regarding copyright ownership.
+#
+# This work is made available under the terms of the 
+# Creative Commons Attribution 4.0 International (CC-BY-4.0) license, 
+# which is available at
+# https://creativecommons.org/licenses/by/4.0/legalcode.
+#
+# SPDX-License-Identifier: CC-BY-4.0
+#######################################################################
+
+@prefix cx-taxo: <https://w3id.org/catenax/taxonomy#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+
+<https://w3id.org/catenax/taxonomy> a skos:ConceptScheme ;
+                        dc:creator "[@arnoweiss](https://github.com/arnoweiss)" ;
+                        dc:date "2024-01-01"^^xsd:date ;
+                        dc:description "This taxonomy represents and contains concepts of the asset."@en ; 
+                        owl:versionInfo "0.1.0" ;
+                        dc:title "Asset Taxonomy" ;
+                        skos:prefLabel "Asset Taxonomy"@en .
+
+cx-taxo:Asset a skos:Concept ;
+                skos:broader cx-taxo:Application ;
+                skos:prefLabel "Asset"@en ;
+                skos:definition "The Asset concept describes the provision via a repository of a specific set of data for a specific purpose. It is defined by its public API."@en .
+
+    cx-taxo:DigitalTwinRegistry a skos:Concept;
+        skos:broader cx-taxo:Asset;
+        skos:prefLabel "Digital Twin Registry"@en ;
+        skos:definition "The Digital Twin Registry (DTR) is the union of the Catena-X-selected subsets of the Asset Administration Shell Registry and Discovery APIs.";
+        skos:example "https://github.com/eclipse-tractusx/sldt-digital-twin-registry".
+
+    cx-taxo:Submodel a skos:Concept;
+        skos:broader cx-taxo:Asset;
+        skos:prefLabel "Submodel"@en ;
+        skos:definition "The Submodel API serves aspects of a Digital Twin according to the Asset Administration Shell standard.".
+
+    cx-taxo:ReceiveQualityInvestigationNotification a skos:Concept;
+        skos:broader cx-taxo:Asset;
+        skos:prefLabel "Receive Quality Investigation Notification"@en;
+        skos:definition "API to receive quality investigation notifications".
+
+    cx-taxo:ReceiveQualityAlertNotification a skos:Concept;
+        skos:broader cx-taxo:Asset;
+        skos:prefLabel "Receive Quality Alert Notification"@en;
+        skos:definition "API to receive quality alert notifications".
+
+    cx-taxo:UpdateQualityInvestigationNotification a skos:Concept;
+        skos:broader cx-taxo:Asset;
+        skos:prefLabel "Update Quality Investigation Notification"@en;
+        skos:definition "API to update quality investigation notifications".
+
+    cx-taxo:UpdateQualityAlertNotification a skos:Concept;
+        skos:broader cx-taxo:Asset;
+        skos:prefLabel "Update Quality Alert Notification"@en;
+        skos:definition "API to update quality Alert notifications".
+
+    cx-taxo:ResolveQualityInvestigationNotification a skos:Concept;
+        skos:broader cx-taxo:Asset;
+        skos:prefLabel "Resolve Quality Investigation Notification"@en;
+        skos:definition "API to update quality investigation notifications".
+
+    cx-taxo:ResolveQualityAlertNotification a skos:Concept;
+        skos:broader cx-taxo:Asset;
+        skos:prefLabel "Resolve Quality Alert Notification"@en;
+        skos:definition "API to resolve quality Alert notifications".
+
+    cx-taxo:ReceiveUniqueIdPushNotification a skos:Concept;
+        skos:broader cx-taxo:Asset;
+        skos:prefLabel "Receive Unique ID Push Notification"@en;
+        skos:definition "API to receive Unique Id Push notifications".
+
+    cx-taxo:UniqueIdPushConnectToParentNotification a skos:Concept;
+        skos:broader cx-taxo:Asset;
+            skos:prefLabel "Unique ID Push Connect-to-Parent Notification"@en;
+        skos:definition "API to receive a Unique ID Push notification to connect a digital twin with its parent digital twin (bottom-up notification)".
+
+    cx-taxo:UniqueIdPushConnectToChildNotification a skos:Concept;
+        skos:broader cx-taxo:Asset;
+            skos:prefLabel "Unique ID Push Connect-to-Child Notification"@en;
+        skos:definition "API to receive a Unique ID Push notification to connect a digital twin with its child digital twin (top-down notification)".
+
+    cx-taxo:PcfExchange a skos:Concept;
+        skos:broader cx-taxo:Asset;
+        skos:prefLabel "PCF Exchange API"@en;
+        skos:definition "API to exchange data on Product Carbon Footprints".
+
+    cx-taxo:GraphAsset a skos:Concept ;
+        skos:broader cx-taxo:Asset ;
+        skos:prefLabel "Graph Asset"@en ;
+        skos:definition "This subconcept of Asset allows arbitrary data queries to be executed on assets."@en .
+        
+    cx-taxo:SkillAsset a skos:Concept ;
+        skos:broader cx-taxo:Asset ;
+        skos:prefLabel "Skill Asset"@en ;
+        skos:definition "This subconcept of Asset allows only the execution of predefined data queries on assets."@en .
+
+    cx-taxo:QualityAsset a skos:Concept ;
+        skos:broader cx-taxo:Asset ;
+        skos:prefLabel "Quality Asset"@en ;
+        skos:definition "This subconcept of Asset signifies that a data offer is associated with the Quality use-case. Assets and data offers are further specified by the dcat:conformsTo property."@en .
+
+    cx-taxo:DcmMaterialDemand a skos:Concept;
+        skos:broader cx-taxo:Asset;
+        skos:prefLabel "Receive Material Demand DCM"@en;
+        skos:definition "API to receive a Material Demand in DCM context".
+
+    cx-taxo:DcmWeekBasedMaterialDemand a skos:Concept;
+        skos:broader cx-taxo:Asset;
+        skos:prefLabel "Receive Week Based Material Demand DCM"@en;
+        skos:definition "API to receive a Week Based Material Demand in DCM context".
+
+    cx-taxo:DcmWeekBasedCapacityGroup a skos:Concept;
+        skos:broader cx-taxo:Asset;
+        skos:prefLabel "Receive Week Based Capacity Group DCM"@en;
+        skos:definition "API to receive a Week Based Capacity Group in DCM context".
+
+    cx-taxo:DcmIdBasedRequestForUpdate a skos:Concept;
+        skos:broader cx-taxo:Asset;
+        skos:prefLabel "Receive ID Based Request for Update DCM"@en;
+        skos:definition "API to receive an ID Based Request for Update in DCM context".
+
+    cx-taxo:DcmIdBasedComment a skos:Concept;
+        skos:broader cx-taxo:Asset;
+        skos:prefLabel "Receive ID Based Comment for DCM"@en;
+        skos:definition "API to receive an ID Based Comment in DCM context".

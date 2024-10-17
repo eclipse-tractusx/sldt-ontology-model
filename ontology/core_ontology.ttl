@@ -1,0 +1,284 @@
+#######################################################################
+# Copyright (c) 2024 T-Systems International GmbH
+# Copyright (c) 2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
+# Copyright (c) 2024 ZF Friedrichshafen AG 
+# Copyright (c) 2024 Mercedes-Benz AG 
+# Copyright (c) 2024 Catena-X Association
+# Copyright (c) 2024 Contributors to the Eclipse Foundation
+#
+# See the NOTICE file(s) distributed with this work for additional
+# information regarding copyright ownership.
+#
+# This work is made available under the terms of the 
+# Creative Commons Attribution 4.0 International (CC-BY-4.0) license, 
+# which is available at
+# https://creativecommons.org/licenses/by/4.0/legalcode.
+#
+# SPDX-License-Identifier: CC-BY-4.0
+#######################################################################
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cx-core: <https://w3id.org/catenax/ontology/core#> .
+@base <https://w3id.org/catenax/ontology/core#> .
+@prefix : <https://w3id.org/catenax/ontology/core#> .
+
+<https://w3id.org/catenax/ontology/core> rdf:type owl:Ontology ;
+                                                        dc:creator "[@obalandi](https://github.com/obalandi)" ;
+                                                        dc:contributor "[@drcgjung](https://github.com/drcgjung)" ;
+                                                        dc:date "2023-05-05"^^xsd:date ;
+                                                        dc:description "The Catena-X core ontology is an activity-centric top-level ontology and enables the design of domain ontologies on the basis of main classes." ;
+                                                        dc:title "Core Ontology" ;
+                                                        owl:versionInfo "1.9.9" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+dc:date rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/catenax/ontology/core#hasAddress
+cx-core:hasAddress rdf:type owl:ObjectProperty ;
+                                    rdfs:subPropertyOf owl:topObjectProperty ;
+                                    rdfs:domain cx-core:Place ;
+                                    rdfs:range cx-core:Address ;
+                                    rdfs:comment "Inverse of 'describes physical object' property."@en ;
+                                    rdfs:label "has address"@en .                    
+
+###  https://w3id.org/catenax/ontology/core#describedByConceptualObject
+cx-core:describedByConceptualObject rdf:type owl:ObjectProperty ;
+                                    rdfs:subPropertyOf owl:topObjectProperty ;
+                                    owl:inverseOf cx-core:describesPhysicalObject ;
+                                    rdfs:domain cx-core:PhysicalObject ;
+                                    rdfs:range cx-core:ConceptualObject ;
+                                    rdfs:comment "Inverse of 'describes physical object' property."@en ;
+                                    rdfs:label "described by conceptual object"@en .
+
+
+###  https://w3id.org/catenax/ontology/core#describesPhysicalObject
+cx-core:describesPhysicalObject rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf owl:topObjectProperty ;
+                                rdfs:domain cx-core:ConceptualObject ;
+                                rdfs:range cx-core:PhysicalObject ;
+                                rdfs:comment "This property describes that a conceptual object has a descriptive relationship to a physical object."@en ;
+                                rdfs:label "describes physical object"@en .
+
+
+###  https://w3id.org/catenax/ontology/core#hasParticipant
+cx-core:hasParticipant rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdfs:domain cx-core:Activity ;
+                       rdfs:range cx-core:Actor ;
+                       rdfs:comment "This property describes the active or passive participation of instances of Actors in an Activity."@en ;
+                       rdfs:label "has participant"@en .
+
+
+###  https://w3id.org/catenax/ontology/core#hosts
+cx-core:hosts rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              owl:inverseOf cx-core:takesPlaceAt; 
+              rdfs:domain cx-core:Place ;
+              rdfs:range cx-core:Activity ;
+              rdfs:comment "Inverse of 'takes place at' property." ;
+              rdfs:label "hosts"@en .
+
+
+###  https://w3id.org/catenax/ontology/core#involvedIn
+cx-core:involvedIn rdf:type owl:ObjectProperty ;
+                   owl:inverseOf cx-core:refersToConceptualObject, cx-core:refersToPhysicalObject ; 
+                   rdfs:domain cx-core:ConceptualObject ,
+                               cx-core:PhysicalObject ;
+                   rdfs:range cx-core:Activity ;
+                   rdfs:comment "This property describes in which activity the physical object is involved."@en ;
+                   rdfs:label "involved in"@en .
+
+
+###  https://w3id.org/catenax/ontology/core#participatesIn
+cx-core:participatesIn rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       owl:inverseOf cx-core:hasParticipant ;
+                       rdfs:domain cx-core:Actor ;
+                       rdfs:range cx-core:Activity ;
+                       rdfs:comment "Inverse of 'has participant' property."@en ;
+                       rdfs:label "participates in"@en .
+
+
+###  https://w3id.org/catenax/ontology/core#refersToConceptualObject
+cx-core:refersToConceptualObject rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf owl:topObjectProperty ;
+                                 rdfs:domain cx-core:Activity ;
+                                 rdfs:range cx-core:ConceptualObject ;
+                                 rdfs:comment "This property refers to actively or passively used conceptual objects in an Activity."@en ;
+                                 rdfs:label "refers to conceptual object."@en .
+
+
+###  https://w3id.org/catenax/ontology/core#refersToPhysicalObject
+cx-core:refersToPhysicalObject rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf owl:topObjectProperty ;
+                               rdfs:domain cx-core:Activity ;
+                               rdfs:range cx-core:PhysicalObject ;
+                               rdfs:comment "This property refers to actively or passively used physical objects in an Activity."@en ;
+                               rdfs:label "refers to physical object."@en .
+
+
+###  https://w3id.org/catenax/ontology/core#relatedToPlace
+cx-core:relatedToPlace rdf:type owl:ObjectProperty ;
+                       rdfs:domain cx-core:Actor ;
+                       rdfs:range cx-core:Place ;
+                       rdfs:comment "This property describes that an actor has a relationship to a particular place, such as reside, own, or manage, etc."@en ;
+                       rdfs:label "related to place."@en .
+
+
+###  https://w3id.org/catenax/ontology/core#takesPlaceAt
+cx-core:takesPlaceAt rdf:type owl:ObjectProperty ;
+                     rdfs:domain cx-core:Activity ;
+                     rdfs:range cx-core:Place ;
+                     rdfs:comment "This property describes the spatial location of an activity."@en ;
+                     rdfs:label "takes place at"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/catenax/ontology/core#endDateTime
+cx-core:endDateTime rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty ;
+                    rdfs:domain cx-core:Activity ;
+                    rdfs:range xsd:dateTime ;
+                    rdfs:comment "End time of the activity."@en ;
+                    rdfs:label "end dateTime"@en .
+
+
+###  https://w3id.org/catenax/ontology/core#id
+cx-core:id rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain cx-core:Activity, cx-core:Place, cx-core:Actor, cx-core:ConceptualObject, cx-core:PhysicalObject ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Unique identification of the exchanged Catena-X objects."@en ;
+           rdfs:label "id"@en .
+
+
+###  https://w3id.org/catenax/ontology/core#name
+cx-core:name rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain cx-core:Activity, cx-core:Place, cx-core:Actor, cx-core:ConceptualObject, cx-core:PhysicalObject ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Global name of an object."@en ;
+             rdfs:label "name"@en .
+
+
+###  https://w3id.org/catenax/ontology/core#startDateTime
+cx-core:startDateTime rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain cx-core:Activity ;
+                      rdfs:range xsd:dateTime ;
+                      rdfs:comment "Start time of an activity."@en ;
+                      rdfs:label "start dateTime"@en .
+
+
+cx-core:street rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain cx-core:Address ;
+                      rdfs:range xsd:string ;
+                      rdfs:comment "Street name of alegal address."@en ;
+                      rdfs:label "street"@en .
+
+
+cx-core:houseNumber rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain cx-core:Address ;
+                      rdfs:range xsd:string ;
+                      rdfs:comment "House number of a legal address."@en ;
+                      rdfs:label "house number"@en .
+
+
+cx-core:postalCode rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain cx-core:Address ;
+                      rdfs:range xsd:string ;
+                      rdfs:comment "Postal code of a legal address."@en ;
+                      rdfs:label "postal code"@en .
+
+
+cx-core:city rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain cx-core:Address ;
+                      rdfs:range xsd:string ;
+                      rdfs:comment "City name of a legal address."@en ;
+                      rdfs:label "city"@en .
+
+
+cx-core:country rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain cx-core:Address ;
+                      rdfs:range xsd:string ;
+                      rdfs:comment "Country name of a legal address."@en ;
+                      rdfs:label "country"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/catenax/ontology/core#Activity
+cx-core:Activity rdf:type owl:Class ;
+                 owl:disjointUnionOf ( cx-core:Actor
+                                       cx-core:Address
+                                       cx-core:ConceptualObject
+                                       cx-core:PhysicalObject
+                                       cx-core:Place
+                                     ) ;
+                 rdfs:comment "This class comprises actions intentionally carried out by instances of Actor that result in changes of state in physical and conceptual objects."@en ;
+                 rdfs:label "Activity"@en .
+
+
+###  https://w3id.org/catenax/ontology/core#Actor
+cx-core:Actor rdf:type owl:Class ;
+              rdfs:comment "This class comprises organization or people, either individually or in groups, who have the potential to perform intentional actions of kinds for which someone may be held responsible."@en ;
+              rdfs:label "Actor".
+
+
+###  https://w3id.org/catenax/ontology/core#Address
+cx-core:Address rdf:type owl:Class;
+                rdfs:subClassOf cx-core:ConceptualObject ;
+                rdfs:comment "This class describes the legal address of places."@en ;
+                rdfs:label "Address"@en .
+
+###  https://w3id.org/catenax/ontology/core#ConceptualObject
+cx-core:ConceptualObject rdf:type owl:Class ;
+                         rdfs:comment "This class includes non-material products, human-produced data related to physical objects. The production of such information may have been supported by the use of technical tools."@en ;
+                         rdfs:label "Conceptual Object"@en .
+
+
+###  https://w3id.org/catenax/ontology/core#PhysicalObject
+cx-core:PhysicalObject rdf:type owl:Class ;
+                       rdfs:comment "This class includes objects of a material nature, which are documentation units and have physical boundaries."@en ;
+                       rdfs:label "Physical Object"@en .
+
+
+###  https://w3id.org/catenax/ontology/core#Place
+cx-core:Place rdf:type owl:Class ;
+              rdfs:comment "The class Place is determined by reference to the position of objects such as buildings, cities, or special geographic markers."@en ;
+              rdfs:label "Place"@en .

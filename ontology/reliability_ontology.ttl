@@ -1,0 +1,450 @@
+#######################################################################
+# Copyright (c) 2024 T-Systems International GmbH
+# Copyright (c) 2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
+# Copyright (c) 2024 ZF Friedrichshafen AG 
+# Copyright (c) 2024 Mercedes-Benz AG 
+# Copyright (c) 2024 Catena-X Association
+# Copyright (c) 2024 Contributors to the Eclipse Foundation
+#
+# See the NOTICE file(s) distributed with this work for additional
+# information regarding copyright ownership.
+#
+# This work is made available under the terms of the 
+# Creative Commons Attribution 4.0 International (CC-BY-4.0) license, 
+# which is available at
+# https://creativecommons.org/licenses/by/4.0/legalcode.
+#
+# SPDX-License-Identifier: CC-BY-4.0
+#######################################################################
+
+@prefix : <https://w3id.org/catenax/ontology/reliability#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix json: <https://json-schema.org/draft/2020-12/schema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cx-core: <https://w3id.org/catenax/ontology/core#> .
+@prefix cx-vehicle: <https://w3id.org/catenax/ontology/vehicle#> .
+@prefix cx-reliability: <https://w3id.org/catenax/ontology/reliability#> .
+@base <https://w3id.org/catenax/ontology/reliability> .
+
+<https://w3id.org/catenax/ontology/reliability> rdf:type owl:Ontology ;
+                                                 owl:imports <file:core_ontology.ttl> ,
+                                                             <file:vehicle_ontology.ttl> ;
+                                                 dc:contributor "[@Joerg-Schulz](https://github.com/Joerg-Schulz), [@bosserf](https://github.com/bosserf), [@obalandi](https://github.com/obalandi), [@drcgjung](https://github.com/drcgjung)" ;
+                                                 dc:creator "[@ZazraltMagic](https://github.com/ZazraltMagic)" ;
+                                                 dc:date "2023-02-21"^^xsd:date ;
+                                                 dc:title "Reliability Ontology"@en ;
+                                                 owl:versionInfo "1.11.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+dc:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+dc:date rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+###  https://json-schema.org/draft/2020-12/schema#Object
+json:Object rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+
+###  https://w3id.org/catenax/ontology/reliability#actualCause
+cx-reliability:actualCause rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf owl:topObjectProperty ;
+                           rdfs:domain cx-reliability:DiagnosticTroubleCode ;
+                           rdfs:range cx-reliability:ErrorCause ;
+                           rdfs:comment "Refers to the actual error cause."@en ;
+                           rdfs:label "actual cause"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#analysedObject
+cx-reliability:analysedObject rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf cx-core:refersToPhysicalObject ;
+                              rdfs:domain cx-reliability:Analysis ;
+                              rdfs:range cx-core:PhysicalObject ;
+                              rdfs:comment "Refers to analysed object."@en ;
+                              rdfs:label "analysed object"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#analysedPart
+cx-reliability:analysedPart rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf cx-reliability:analysedObject ;
+                            rdfs:domain cx-reliability:Analysis ;
+                            rdfs:range cx-vehicle:Part ;
+                            rdfs:comment "Refers to the analysed part."@en ;
+                            rdfs:label "analysed Part"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#analysedVehicle
+cx-reliability:analysedVehicle rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf cx-reliability:analysedObject ;
+                               rdfs:domain cx-reliability:Analysis ;
+                               rdfs:range cx-vehicle:Vehicle ;
+                               rdfs:comment "Refers to the analysed vehicle."@en ;
+                               rdfs:label "analysed Vehicle"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#carryOut
+cx-reliability:performs rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf owl:topObjectProperty ;
+                        rdfs:domain cx-reliability:AnalysisDevice ;
+                        rdfs:range cx-reliability:Analysis ;
+                        rdfs:comment "A device performs an analysis."@en ;
+                        rdfs:label "performs"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#channel
+cx-reliability:channel rdf:type owl:ObjectProperty ;
+                       rdfs:domain cx-reliability:LoadSpectrum ;
+                       rdfs:range cx-reliability:LoadSpectrumChannel ;
+                       rdfs:comment "Refers to load spectrum channel."@en ;
+                       rdfs:label "load spectrum channel"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#class
+cx-reliability:class rdf:type owl:ObjectProperty ;
+                     rdfs:domain cx-reliability:LoadSpectrum ;
+                     rdfs:range cx-reliability:LoadSpectrumClass ;
+                     rdfs:comment "Refers to load spectrum class."@en ;
+                     rdfs:label "load spectrum class"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#hasDiagnosticTroubleCode
+cx-reliability:hasDiagnosticTroubleCode rdf:type owl:ObjectProperty ;
+                                        rdfs:domain cx-reliability:Diagnosis ;
+                                        rdfs:range cx-reliability:DiagnosticTroubleCode ;
+                                        rdfs:comment "Refers to diagnostic trouble code."@en ;
+                                        rdfs:label "has diagnostic trouble code"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#possibleCause
+cx-reliability:possibleCause rdf:type owl:ObjectProperty ;
+                             rdfs:domain cx-reliability:DiagnosticTroubleCode ;
+                             rdfs:range cx-reliability:ErrorCause ;
+                             rdfs:comment "Refers to possible cause."@en ;
+                             rdfs:label "possible cause"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#result
+cx-reliability:result rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf cx-core:refersToConceptualObject ;
+                      rdfs:domain cx-reliability:Analysis ;
+                      rdfs:range cx-reliability:AnalysisResult ;
+                      rdfs:comment "Refers to analysis result."@en ;
+                      rdfs:label "result"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#value
+cx-reliability:value rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdfs:domain cx-reliability:LoadSpectrum ;
+                     rdfs:range cx-reliability:LoadSpectrumValue ;
+                     rdfs:comment "Refers to load spectrum value."@en ;
+                     rdfs:label "load spectrum value"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+
+###  https://w3id.org/catenax/ontology/reliability#countingMethod
+cx-reliability:countingMethod rdf:type owl:DatatypeProperty ;
+                              rdfs:domain cx-reliability:LoadSpectrumValue ;
+                              rdfs:range xsd:string ;
+                              rdfs:comment "Counting method of Load spectrum."@en ;
+                              rdfs:label "Load Spectrum Counting Method"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#countingUnit
+cx-reliability:countingUnit rdf:type owl:DatatypeProperty ;
+                            rdfs:domain cx-reliability:LoadSpectrumValue ;
+                            rdfs:range xsd:string ;
+                            rdfs:comment "Counting unit of load spectrum."@en ;
+                            rdfs:label "Load Spectrum Counting Unit"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#countingValue
+cx-reliability:countingValue rdf:type owl:DatatypeProperty ;
+                             rdfs:domain cx-reliability:LoadSpectrumValue ;
+                             rdfs:range xsd:string ;
+                             rdfs:comment "Counting value of load spectrum."@en ;
+                             rdfs:label "Load Spectrum Counting Value"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#datetime
+cx-reliability:datetime rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf owl:topDataProperty ;
+                        rdfs:domain cx-reliability:LoadSpectrum ;
+                        rdfs:range xsd:dateTime ;
+                        rdfs:comment "Start of the measurement of load spectrum."@en ;
+                        rdfs:label "Load Spectrum Start Datetime"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#description
+cx-reliability:description rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf owl:topDataProperty ;
+                           rdfs:domain cx-reliability:LoadSpectrum ;
+                           rdfs:range xsd:string ;
+                           rdfs:comment "Details about the load spectrum: who, what, where, when, how?"@en ;
+                           rdfs:label "Load Spectrum Description"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#diagnosticTroubleCodeId
+cx-reliability:diagnosticTroubleCodeId rdf:type owl:DatatypeProperty ;
+                                       rdfs:subPropertyOf owl:topDataProperty ;
+                                       rdfs:domain cx-reliability:DiagnosticTroubleCode ;
+                                       rdfs:range xsd:string ;
+                                       rdfs:comment "Id of diagnostic trouble code."@en ;
+                                       rdfs:label "Diagnostic Trouble Code Id"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#diagnosticTroubleCodeName
+cx-reliability:diagnosticTroubleCodeName rdf:type owl:DatatypeProperty ;
+                                         rdfs:subPropertyOf cx-reliability:name ;
+                                         rdfs:domain cx-reliability:DiagnosticTroubleCode ;
+                                         rdfs:range xsd:string ;
+                                         rdfs:comment "Name of diagnostic trouble code."@en ;
+                                         rdfs:label "Diagnostic Trouble Code Name"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#endDatetime
+cx-reliability:endDatetime rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf owl:topDataProperty ;
+                           rdfs:domain cx-reliability:LoadSpectrum ;
+                           rdfs:range xsd:dateTime ;
+                           rdfs:comment "End of the measurement of load spectrum."@en ;
+                           rdfs:label "Load Spectrum End Datetime"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#id
+cx-reliability:id rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain cx-reliability:LoadSpectrum ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "Id of load spectrum."@en ;
+                  rdfs:label "Load Spectrum Id"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#index
+cx-reliability:index rdf:type owl:DatatypeProperty ;
+                     rdfs:domain cx-reliability:LoadSpectrumValue ;
+                     rdfs:range xsd:string ;
+                     rdfs:comment "Index of load spectrum values."@en ;
+                     rdfs:label "Load Spectrum Index"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#lowerLimit
+cx-reliability:lowerLimit rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf owl:topDataProperty ;
+                          rdfs:domain cx-reliability:LoadSpectrumChannel ;
+                          rdfs:range xsd:float ;
+                          rdfs:comment "Lower limit of load spectrum channel."@en ;
+                          rdfs:label "Load Spectrum Channel Lower Limit"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#mileageOfVehicle
+cx-reliability:mileageOfVehicle rdf:type owl:DatatypeProperty ;
+                                rdfs:subPropertyOf owl:topDataProperty ;
+                                rdfs:domain cx-reliability:Analysis ;
+                                rdfs:range xsd:integer ;
+                                rdfs:comment "Mileage of analysed vehicle."@en ;
+                                rdfs:label "Mileage of Vehicle"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#name
+cx-reliability:name rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty ;
+                    rdfs:domain cx-reliability:LoadSpectrum ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "Name of load spectrum"@en ;
+                    rdfs:label "Load Spectrum Name"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#numberOfBins
+cx-reliability:numberOfBins rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf owl:topDataProperty ;
+                            rdfs:domain cx-reliability:LoadSpectrumChannel ;
+                            rdfs:range xsd:integer ;
+                            rdfs:comment "Bins number of load spectrum channel."@en; 
+                            rdfs:label "Load Spectrum Channel Number Of Bins"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#operatingHoursOfPart
+cx-reliability:operatingHoursOfPart rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf owl:topDataProperty ;
+                                    rdfs:domain cx-reliability:Analysis ;
+                                    rdfs:range xsd:float ;
+                                    rdfs:comment "Operating hours Of analysed part."@en ;
+                                    rdfs:label "operating Hours of Part"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#operatingHoursOfVehicle
+cx-reliability:operatingHoursOfVehicle rdf:type owl:DatatypeProperty ;
+                                       rdfs:subPropertyOf owl:topDataProperty ;
+                                       rdfs:domain cx-reliability:Analysis ;
+                                       rdfs:range xsd:float ;
+                                       rdfs:comment "Operating hours Of  vehicle."@en ;
+                                       rdfs:label "operating Hours of Vehicle"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#type
+cx-reliability:type rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty ;
+                    rdfs:domain cx-reliability:LoadSpectrum ,
+                                cx-reliability:LoadSpectrumChannel ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "Type of load spectrum."@en ;
+                    rdfs:label "Load Spectrum Type"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#unit
+cx-reliability:unit rdf:type owl:DatatypeProperty ;
+                    rdfs:domain cx-reliability:LoadSpectrumChannel ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "Unit of load spectrum."@en ;
+                    rdfs:label "Load Spectrum Channel Unit"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#upperLimit
+cx-reliability:upperLimit rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf owl:topDataProperty ;
+                          rdfs:domain cx-reliability:LoadSpectrumChannel ;
+                          rdfs:range xsd:float ;
+                          rdfs:comment "Upper limit of load spectrum."@en ;
+                          rdfs:label "Load Spectrum Channel Upper Limit"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/catenax/ontology/core#Activity
+cx-core:Activity rdf:type owl:Class .
+
+
+###  https://w3id.org/catenax/ontology/core#Actor
+cx-core:Actor rdf:type owl:Class .
+
+###  https://w3id.org/catenax/ontology/core#PhysicalObject
+cx-core:PhysicalObject rdf:type owl:Class .
+
+
+###  https://w3id.org/catenax/ontology/core#ConceptualObject
+cx-core:ConceptualObject rdf:type owl:Class .
+
+
+###  https://w3id.org/catenax/ontology/vehicle#Part
+cx-vehicle:Part rdf:type owl:Class .
+
+
+###  https://w3id.org/catenax/ontology/vehicle#Vehicle
+cx-vehicle:Vehicle rdf:type owl:Class  .
+
+
+###  https://w3id.org/catenax/ontology/reliability#Analysis
+cx-reliability:Analysis rdf:type owl:Class ;
+                        rdfs:subClassOf cx-core:Activity ;
+                        rdfs:comment "An analysis is an activity that includes all types of reliability and quality analyses."@en ;
+                        rdfs:label "Analysis"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#AnalysisDevice
+cx-reliability:AnalysisDevice rdf:type owl:Class ;
+                              rdfs:subClassOf cx-core:Actor ;
+                              rdfs:comment "An analysis device, e.g. a diagnostic device, reads or calculates certain analysis results."@en ;
+                              rdfs:label "Analysis Device"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#AnalysisResult
+cx-reliability:AnalysisResult rdf:type owl:Class ;
+                              rdfs:subClassOf cx-core:ConceptualObject ;
+                              rdfs:comment "Results of the analysis activity."@en ;
+                              rdfs:label "Analysis Result"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#Diagnosis
+cx-reliability:Diagnosis rdf:type owl:Class ;
+                         rdfs:subClassOf cx-reliability:Analysis ;
+                         rdfs:comment "Vehicle diagnosis is the identification of a problem or the cause and location of a problem."@en ;
+                         rdfs:label "Diagnosis"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#DiagnosticTroubleCode
+cx-reliability:DiagnosticTroubleCode rdf:type owl:Class ;
+                                     rdfs:subClassOf cx-reliability:AnalysisResult ;
+                                     rdfs:comment "Diagnostic Trouble Code, is a code used to diagnose malfunctions in a vehicle."@en ;
+                                     rdfs:label "Diagnostic Trouble Code"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#ErrorCause
+cx-reliability:ErrorCause rdf:type owl:Class ;
+                          rdfs:subClassOf cx-core:ConceptualObject ;
+                          rdfs:comment "An analysis result can indicate possible and current error causes.  Example: Temperature values above a certain limit indicate overheating."@en ;
+                          rdfs:label "Error Cause"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#LoadSpectrum
+cx-reliability:LoadSpectrum rdf:type owl:Class ;
+                            rdfs:subClassOf cx-reliability:AnalysisResult ;
+                            rdfs:comment "Load spectrum is a 2d histogram that contains the load history of a vehicle, i.e. how a vehicle was used, for a given time period."@en ;
+                            rdfs:label "Load Spectrum"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#LoadSpectrumAnalysis
+cx-reliability:LoadSpectrumAnalysis rdf:type owl:Class ;
+                                    rdfs:subClassOf cx-reliability:Analysis ;
+                                    rdfs:comment "Load spectrum analysis is an analysis that calculates load spectrum values for a vehicle part."@en ;
+                                    rdfs:label "Load Spectrum Analysis"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#LoadSpectrumChannel
+cx-reliability:LoadSpectrumChannel rdf:type owl:Class ;
+                                   rdfs:subClassOf cx-reliability:AnalysisResult ;
+                                   rdfs:comment "The channel contains information about the axis of the 1d or 2d histogram."@en ;
+                                   rdfs:label "Load Spectrum Channel"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#LoadSpectrumClass
+cx-reliability:LoadSpectrumClass rdf:type owl:Class ;
+                                 rdfs:subClassOf cx-reliability:AnalysisResult ;
+                                 rdfs:comment "The class contains information about the quantization states related to an axis."@en ;
+                                 rdfs:label "Load Spectrum Class"@en .
+
+
+###  https://w3id.org/catenax/ontology/reliability#LoadSpectrumValue
+cx-reliability:LoadSpectrumValue rdf:type owl:Class ;
+                                 rdfs:subClassOf cx-reliability:AnalysisResult ;
+                                 rdfs:comment "The values contains a list or a matrix with count values of the histogram."@en ;
+                                 rdfs:label "Load Spectrum Value"@en .
