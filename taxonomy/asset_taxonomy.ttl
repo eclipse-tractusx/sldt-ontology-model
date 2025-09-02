@@ -145,3 +145,8 @@ cx-taxo:Asset a skos:Concept ;
         skos:broader cx-taxo:Asset;
         skos:prefLabel "CompanyCertificateManagementNotificationApi"@en;
         skos:definition "API to enable Catena-X Members to send and receive Notifications in regards with the Company Certificates Data Exchange".
+
+    cx-taxo:DemandAndCapacityNotificationApi a skos:Concept;
+        skos:broader cx-taxo:Asset;
+        skos:prefLabel "Receive Demand And Capacity Notification"@en;
+        skos:definition "API to receive an Demand And Capacity Notifications to inform about disruptions in supply chains".
