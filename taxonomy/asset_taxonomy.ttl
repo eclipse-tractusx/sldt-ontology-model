@@ -150,3 +150,23 @@ cx-taxo:Asset a skos:Concept ;
         skos:broader cx-taxo:Asset;
         skos:prefLabel "Receive Demand And Capacity Notification"@en;
         skos:definition "API to receive an Demand And Capacity Notifications to inform about disruptions in supply chains".
+
+    cx-taxo:CertificateSubmodelQuery a skos:Concept;
+        skos:broader cx-taxo:Asset;
+        skos:prefLabel "Query Certificate Metadata"@en;
+        skos:definition "API to query certificate metadata in CCM context".
+
+    cx-taxo:CertificateBinaryData a skos:Concept;
+        skos:broader cx-taxo:Asset;
+        skos:prefLabel "Download certificate document files (binary data)"@en;
+        skos:definition "API to download a certificate document file (a pdf file) in CCM context".
+
+    cx-taxo:CompanyCertificateManagementConsumerApi a skos:Concept;
+        skos:broader cx-taxo:Asset;
+        skos:prefLabel "Receive certificate notifications as Data Consumer"@en;
+        skos:definition "API to receive Certificate Notifications send by the Data Provider in CCM context".
+
+    cx-taxo:CompanyCertificateManagementProviderApi a skos:Concept;
+        skos:broader cx-taxo:Asset;
+        skos:prefLabel "Receive certificate notifications as Data Provider"@en;
+        skos:definition "API to receive Certificate Notifications send by the Data Consumer in CCM context".
